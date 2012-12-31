@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KSPDocumentation</name>
+    </assembly>
+    <members>
+        <member name="M:FlightGlobals.getAltitudeAtPos(UnityEngine.Vector3)">
+            <summary>
+            The altitude above the sea level of the current main body of the given world space position. 
+            </summary>
+            <param name="position">World space position</param>
+            <returns>Altitude above sea level</returns>
+        </member>
+        <member name="M:FlightGlobals.getAltitudeAtPos(Vector3d)">
+            <summary>
+            The altitude above the sea level of the current main body of the given world space position. 
+            </summary>
+            <param name="position">World space position</param>
+            <returns>Altitude above sea level</returns>
+        </member>
+        <member name="M:FlightGlobals.getAltitudeAtPos(Vector3d,CelestialBody)">
+            <summary>
+            The altitude above the sea level of the given body of the given world space position. 
+            </summary>
+            <param name="position">World space position</param>
+            <param name="body">The body in question</param>
+            <returns>Altitude above sea level</returns>
+        </member>
+        <member name="M:FlightGlobals.getAtmDensity(System.Double)">
+            <summary>
+            Converts an atmospheric pressure into an atmospheric density. Atmospheric density is what
+            appears in the KSP drag equation. This function seems to just multiply the input by 1.2230948554874
+            </summary>
+            <param name="pressure">Use the output of getStaticPressure</param>
+            <returns>An atmospheric density, suitable for use in calculating drag.</returns>
+        </member>
+        <member name="M:FlightGlobals.getExternalTemperature(Vector3d)">
+            <summary>
+            Finds the temperature at a given world space position.
+            </summary>
+            <param name="pos">World space position</param>
+            <returns>Temperature</returns>
+        </member>
+        <member name="M:FlightGlobals.getExternalTemperature(System.Single,CelestialBody)">
+            <summary>
+            Finds the temperature at a given altitude above a given body.
+            </summary>
+            <param name="altitude">An altitude (in meters?)</param>
+            <param name="body">The body of interest</param>
+            <returns>Temperture</returns>
+        </member>
+        <member name="M:FlightGlobals.getGeeForceAtPosition(Vector3d)">
+            <summary>
+            Returns the gravitational *acceleration* vector at a given position.
+            Contrary to its name, it does *not* return force.
+            </summary>
+            <param name="pos">World space position</param>
+            <returns>Gravitational acceleration vector</returns>
+        </member>
+        <member name="M:FlightGlobals.getMainBody">
+            <summary>
+            Returns the current dominant body?
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FlightGlobals.getMainBody(Vector3d)">
+            <summary>
+            Returns the body whose sphere of influence contains a given position?
+            </summary>
+            <param name="refPos">World space position?</param>
+            <returns></returns>
+        </member>
+        <member name="M:FlightGlobals.getStaticPressure">
+            <summary>
+            Returns the current atmospheric pressure?
+            </summary>
+            <returns>Atmospheric pressure, in units of Kerbin's atmospheric pressure at sea level</returns>
+        </member>
+        <member name="M:FlightGlobals.getStaticPressure(Vector3d)">
+            <summary>
+            Returns the atmospheric pressure at a given position. Feed the output of this
+            function into getAtmDensity to get the atmopsheric density.
+            </summary>
+            <param name="position">World space position</param>
+            <returns>Atmospheric pressure, in units of Kerbin's atmospheric pressure at sea level</returns>
+        </member>
+        <member name="M:FlightGlobals.getStaticPressure(System.Double,CelestialBody)">
+            <summary>
+            Returns the atmospheric pressure at a given altitude above a given body
+            </summary>
+            <param name="altitude">Altitude in meters?</param>
+            <param name="body">The body in question</param>
+            <returns>Atmospheric pressure, in units of Kerbin's atmospheric pressure at sea level</returns>
+        </member>
+        <member name="M:FlightGlobals.getStaticPressure(Vector3d,CelestialBody)">
+            <summary>
+            Returns the atmospheric pressure of a given body's atmopshere at a given position
+            </summary>
+            <param name="position">World space position</param>
+            <param name="body">The body in question</param>
+            <returns>Atmospheric pressure, in units of Kerbin's atmospheric pressure at sea level</returns>
+        </member>
+        <member name="M:FlightGlobals.SetVesselTarget(ITargetable)">
+            <summary>
+            Sets the currently selected target vessel, celestial body, or docking node
+            </summary>
+            <param name="tgt">The Vessel, CelestialBody, or ModuleDockingNode to target</param>
+        </member>
+        <member name="P:FlightGlobals.ActiveVessel">
+            <summary>
+            The vessel the player is currently controlling.
+            </summary>
+        </member>
+        <member name="P:FlightGlobals.Bodies">
+            <summary>
+            A list of all CelestialBodies in the universe. Contents in 0.18.2: 
+            <para>Bodies[0] = Sun</para>
+            <para>Bodies[1] = Kerbin</para>
+            <para>Bodies[2] = Mun</para>
+            <para>Bodies[3] = Minmus</para>
+            <para>Bodies[4] = Moho</para>
+            <para>Bodies[5] = Eve</para>
+            <para>Bodies[6] = Dun</para>
+            <para>Bodies[7] = Ike</para>
+            <para>Bodies[8] = Jool</para>
+            <para>Bodies[9] = Laythe</para>
+            <para>Bodies[10] = Vall</para>
+            <para>Bodies[11] = Bop</para>
+            <para>Bodies[12] = Tylo</para>
+            <para>Bodies[13] = Gilly</para>
+            <para>Bodies[14] = Pol</para>
+            <para>Bodies[15] = Dres</para>
+            <para>Bodies[16] = Eeloo</para>
+            </summary>
+        </member>
+        <member name="P:FlightGlobals.DragMultiplier">
+            <summary>
+            The KSP formula for the drag force on a part is
+            (1/2) * DragMultiplier * part.mass * part.mass_drag * airspeed^2
+            </summary>
+        </member>
+        <member name="P:FlightGlobals.RefFrameIsRotating">
+            <summary>
+            Whether KSP is doing its computations in an inertial reference frame, or the reference frame that 
+            rotates with the current dominant celestial body.
+            </summary>
+        </member>
+        <member name="P:FlightGlobals.Vessels">
+            <summary>
+            A list of all the Vessels that currently exist
+            </summary>
+        </member>
+        <member name="P:FlightGlobals.VesselTarget">
+            <summary>
+            The currently selected target vessel, celestial body, or docking node.
+            </summary>
+        </member>
+    </members>
+</doc>
