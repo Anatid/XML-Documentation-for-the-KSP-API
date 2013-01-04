@@ -6,6 +6,10 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// FlightGlobals contains lists of all CelestialBodies and Vessels in the game. 
+/// It also provides static utility functions for computing the atmospheric and gravitational properties of CelestialBodies.
+/// </summary>
 public class FlightGlobals : MonoBehaviour
 {
     public static Part activeTarget;
@@ -15,6 +19,10 @@ public class FlightGlobals : MonoBehaviour
     public static Vector3d camera_position;
     public static CelestialBody currentMainBody;
     public float drag_multiplier;
+    /// <summary>
+    /// Use this FlightGlobals instance to access non-static members of FlightGlobals.
+    /// For example, the current target is FlightGlobals.fetch.VesselTarget.
+    /// </summary>
     public static FlightGlobals fetch;
     public static FoRModes FoRMode;
     public Camera mainCameraRef;
@@ -100,7 +108,7 @@ public class FlightGlobals : MonoBehaviour
     /// </summary>
     public extern static List<Vessel> Vessels { get; }
     /// <summary>
-    /// The currently selected target vessel, celestial body, or docking node.
+    /// The currently selected target vessel, celestial body, or docking node. If no target is selected, this is null.
     /// </summary>
     public extern ITargetable VesselTarget { get; }
     public extern FlightGlobals.VesselTargetModes vesselTargetMode { get; }

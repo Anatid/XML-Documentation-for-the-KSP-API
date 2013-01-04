@@ -1,0 +1,629 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KSPDocumentation</name>
+    </assembly>
+    <members>
+        <member name="T:PartModule">
+            <summary>
+            Extending PartModule lets you add new functionality to parts. The main class of many plugins
+            will be a subclass of PartModule. See this forum thread for the official instructions on
+            using PartModule:
+            
+            <para>http://forum.kerbalspaceprogram.com/showthread.php/10296-0-15-code-update-PartModule-KSPField-KSPEvent-ConfigNode-and-PartResource</para>
+            </summary>
+        </member>
+        <member name="M:PartModule.GetInfo">
+            <summary>
+            The return value of this function appears in the part's description in the editor.
+            </summary>
+            <returns>Editor info for the part</returns>
+        </member>
+        <member name="M:PartModule.OnActive">
+            <summary>
+            This function is called once when the part gets activated.
+            </summary>
+        </member>
+        <member name="M:PartModule.OnAwake">
+            <summary>
+            This function gets called once when the parts loaded? See the Unity documentation on Awake for more information.
+            </summary>
+        </member>
+        <member name="M:PartModule.OnFixedUpdate">
+            <summary>
+            This function gets called once every Unity FixedUpdate cycle (once per physics frame) once the part has been activated. 
+            See the Unity documentation on FixedUpdate for more information. You can get the time between FixedUpdates from 
+            TimeWarp.fixedDeltaTime. Do any physics stuff in OnFixedUpdate, not OnUpdate.
+            </summary>
+        </member>
+        <member name="M:PartModule.OnInactive">
+            <summary>
+            When does this get called?
+            </summary>
+        </member>
+        <member name="M:PartModule.OnLoad(ConfigNode)">
+            <summary>
+            This function is called to initialize the part. The ConfigNode contains the parameters of the module
+            as specified in the part.cfg file, or as you last saved them in OnSave. 
+            </summary>
+            <param name="node">A ConfigNode containing the module's parameters from part.cfg or persistent.sfs</param>
+        </member>
+        <member name="M:PartModule.OnSave(ConfigNode)">
+            <summary>
+            This function is called when the game is saved to let the part save persistent data. Add any data you want
+            to persist to the ConfigNode. The ConfigNode will then be saved as part of persistent.sfs.
+            When the game is resumed, you can then read this data back out in OnLoad.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="M:PartModule.OnStart(PartModule.StartState)">
+            <summary>
+            Called when the flight starts, or when the part is created in the editor.
+            </summary>
+            <param name="state">Some information about what situation the vessel is starting in.</param>
+        </member>
+        <member name="M:PartModule.OnUpdate">
+            <summary>
+            Called once per Unity Update cycle once the part has been activated. See the
+            Unity documentation on Update for more information. Poll for user input in OnUpdate, not OnFixedUpdate
+            </summary>
+        </member>
+        <member name="P:PartModule.Actions">
+            <summary>
+            A list of KSPActions which can be added to action groups.
+            </summary>
+        </member>
+        <member name="P:PartModule.Events">
+            <summary>
+            A list of KSPEvents, which can be triggered by code or by the user through the part's right-click menu.
+            </summary>
+        </member>
+        <member name="P:PartModule.Fields">
+            <summary>
+            A list of the KSPFields which the module lods from the part.cfg file.
+            </summary>
+        </member>
+        <member name="P:PartModule.part">
+            <summary>
+            The Part to which this PartModule is attached. Use this to reference the part from your module code.
+            </summary>
+        </member>
+        <member name="P:PartModule.vessel">
+            <summary>
+            The Vessel of the Part to which this PartModule is attached.
+            </summary>
+        </member>
+        <member name="T:PartModule.StartState">
+            <summary>
+            A StartState is passed on OnStart in order to provide the PartModule with some information
+            about where it is starting up.
+            </summary>
+        </member>
+        <member name="T:FlightGlobals">
+            <summary>
+            FlightGlobals contains lists of all CelestialBodies and Vessels in the game. 
+            It also provides static utility functions for computing the atmospheric and gravitational properties of CelestialBodies.
+            </summary>
+        </member>
+        <member name="F:FlightGlobals.fetch">
+            <summary>
+            Use this FlightGlobals instance to access non-static members of FlightGlobals.
+            For example, the current target is FlightGlobals.fetch.VesselTarget.
+            </summary>
+        </member>
+        <member name="M:FlightGlobals.getAltitudeAtPos(UnityEngine.Vector3)">
+            <summary>
+            The altitude above the sea level of the current main body of the given world space position. 
+            </summary>
+            <param name="position">World space position</param>
+            <returns>Altitude above sea level</returns>
+        </member>
+        <member name="M:FlightGlobals.getAltitudeAtPos(Vector3d)">
+            <summary>
+            The altitude above the sea level of the current main body of the given world space position. 
+            </summary>
+            <param name="position">World space position</param>
+            <returns>Altitude above sea level</returns>
+        </member>
+        <member name="M:FlightGlobals.getAltitudeAtPos(Vector3d,CelestialBody)">
+            <summary>
+            The altitude above the sea level of the given body of the given world space position. 
+            </summary>
+            <param name="position">World space position</param>
+            <param name="body">The body in question</param>
+            <returns>Altitude above sea level</returns>
+        </member>
+        <member name="M:FlightGlobals.getAtmDensity(System.Double)">
+            <summary>
+            Converts an atmospheric pressure into an atmospheric density. Atmospheric density is what
+            appears in the KSP drag equation. This function seems to just multiply the input by 1.2230948554874
+            </summary>
+            <param name="pressure">Use the output of getStaticPressure</param>
+            <returns>An atmospheric density, suitable for use in calculating drag.</returns>
+        </member>
+        <member name="M:FlightGlobals.getExternalTemperature(Vector3d)">
+            <summary>
+            Finds the temperature at a given world space position.
+            </summary>
+            <param name="pos">World space position</param>
+            <returns>Temperature</returns>
+        </member>
+        <member name="M:FlightGlobals.getExternalTemperature(System.Single,CelestialBody)">
+            <summary>
+            Finds the temperature at a given altitude above a given body.
+            </summary>
+            <param name="altitude">An altitude (in meters?)</param>
+            <param name="body">The body of interest</param>
+            <returns>Temperture</returns>
+        </member>
+        <member name="M:FlightGlobals.getGeeForceAtPosition(Vector3d)">
+            <summary>
+            Returns the gravitational *acceleration* vector at a given position.
+            Contrary to its name, it does *not* return force.
+            </summary>
+            <param name="pos">World space position</param>
+            <returns>Gravitational acceleration vector</returns>
+        </member>
+        <member name="M:FlightGlobals.getMainBody">
+            <summary>
+            Returns the current dominant body?
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FlightGlobals.getMainBody(Vector3d)">
+            <summary>
+            Returns the body whose sphere of influence contains a given position?
+            </summary>
+            <param name="refPos">World space position?</param>
+            <returns></returns>
+        </member>
+        <member name="M:FlightGlobals.getStaticPressure">
+            <summary>
+            Returns the current atmospheric pressure?
+            </summary>
+            <returns>Atmospheric pressure, in units of Kerbin's atmospheric pressure at sea level</returns>
+        </member>
+        <member name="M:FlightGlobals.getStaticPressure(Vector3d)">
+            <summary>
+            Returns the atmospheric pressure at a given position. Feed the output of this
+            function into getAtmDensity to get the atmopsheric density.
+            </summary>
+            <param name="position">World space position</param>
+            <returns>Atmospheric pressure, in units of Kerbin's atmospheric pressure at sea level</returns>
+        </member>
+        <member name="M:FlightGlobals.getStaticPressure(System.Double,CelestialBody)">
+            <summary>
+            Returns the atmospheric pressure at a given altitude above a given body
+            </summary>
+            <param name="altitude">Altitude in meters?</param>
+            <param name="body">The body in question</param>
+            <returns>Atmospheric pressure, in units of Kerbin's atmospheric pressure at sea level</returns>
+        </member>
+        <member name="M:FlightGlobals.getStaticPressure(Vector3d,CelestialBody)">
+            <summary>
+            Returns the atmospheric pressure of a given body's atmopshere at a given position
+            </summary>
+            <param name="position">World space position</param>
+            <param name="body">The body in question</param>
+            <returns>Atmospheric pressure, in units of Kerbin's atmospheric pressure at sea level</returns>
+        </member>
+        <member name="M:FlightGlobals.SetVesselTarget(ITargetable)">
+            <summary>
+            Sets the currently selected target vessel, celestial body, or docking node
+            </summary>
+            <param name="tgt">The Vessel, CelestialBody, or ModuleDockingNode to target</param>
+        </member>
+        <member name="P:FlightGlobals.ActiveVessel">
+            <summary>
+            The vessel the player is currently controlling.
+            </summary>
+        </member>
+        <member name="P:FlightGlobals.Bodies">
+            <summary>
+            A list of all CelestialBodies in the universe. Contents in 0.18.2: 
+            <para>Bodies[0] = Sun</para>
+            <para>Bodies[1] = Kerbin</para>
+            <para>Bodies[2] = Mun</para>
+            <para>Bodies[3] = Minmus</para>
+            <para>Bodies[4] = Moho</para>
+            <para>Bodies[5] = Eve</para>
+            <para>Bodies[6] = Dun</para>
+            <para>Bodies[7] = Ike</para>
+            <para>Bodies[8] = Jool</para>
+            <para>Bodies[9] = Laythe</para>
+            <para>Bodies[10] = Vall</para>
+            <para>Bodies[11] = Bop</para>
+            <para>Bodies[12] = Tylo</para>
+            <para>Bodies[13] = Gilly</para>
+            <para>Bodies[14] = Pol</para>
+            <para>Bodies[15] = Dres</para>
+            <para>Bodies[16] = Eeloo</para>
+            </summary>
+        </member>
+        <member name="P:FlightGlobals.DragMultiplier">
+            <summary>
+            The KSP formula for the drag force on a part is
+            (1/2) * DragMultiplier * part.mass * part.mass_drag * airspeed^2
+            </summary>
+        </member>
+        <member name="P:FlightGlobals.RefFrameIsRotating">
+            <summary>
+            Whether KSP is doing its computations in an inertial reference frame, or the reference frame that 
+            rotates with the current dominant celestial body.
+            </summary>
+        </member>
+        <member name="P:FlightGlobals.Vessels">
+            <summary>
+            A list of all the Vessels that currently exist
+            </summary>
+        </member>
+        <member name="P:FlightGlobals.VesselTarget">
+            <summary>
+            The currently selected target vessel, celestial body, or docking node. If no target is selected, this is null.
+            </summary>
+        </member>
+        <member name="F:CelestialBody.angularV">
+            <summary>
+            The magnitude of the angular velocity of the body's rotation, in radians per second.
+            </summary>
+        </member>
+        <member name="F:CelestialBody.angularVelocity">
+            <summary>
+            The body's angular velocity vector, in rotations per second. This points along the axis of
+            rotation and its magnitude is the rotation rate in radians per second.
+            </summary>
+        </member>
+        <member name="F:CelestialBody.atmosphereMultiplier">
+            <summary>
+            Seems to be the pressure of the body's atmosphere at sea level, in units of Kerbin atmospheres at sea level.
+            </summary>
+        </member>
+        <member name="F:CelestialBody.atmosphereScaleHeight">
+            <summary>
+            The atmosphere's scale height, in KILOMETERS (not meters). The atmospheric pressure at a given altitude
+            above sea level is proportional to Math.Exp(-altitude / atmosphereScaleHeight).
+            </summary>
+        </member>
+        <member name="F:CelestialBody.bodyName">
+            <summary>
+            The name of the body, as a string.
+            </summary>
+        </member>
+        <member name="F:CelestialBody.GeeASL">
+            <summary>
+            The gravitational acceleration of the body at sea level, in units of gees (1 gee = 9.81 m/s^2)
+            </summary>
+        </member>
+        <member name="F:CelestialBody.gMagnitudeAtCenter">
+            <summary>
+            The gravitational acceleration (in m/s^2) at a radius r (in m) from the body's center is gMagnitudeAtCenter / r^2
+            </summary>
+        </member>
+        <member name="F:CelestialBody.gravParameter">
+            <summary>
+            The gravitational parameter GM is the universal gravitational constant G times the mass M of the body. 
+            In KSP the gravitational constant G is exactly 6.673 m^3 / (kg s^2), and the body mass is measured in
+            kilograms.
+            </summary>
+        </member>
+        <member name="F:CelestialBody.Mass">
+            <summary>
+            The mass of the body in kilograms.
+            </summary>
+        </member>
+        <member name="F:CelestialBody.maxAtmosphereAltitude">
+            <summary>
+            The height of the upper edge of the body's atmosphere, in meters above sea level. It seems
+            that the drag force may actually go to exactly zero below this height.
+            </summary>
+        </member>
+        <member name="F:CelestialBody.orbitingBodies">
+            <summary>
+            A list of this body's moons (or, in the case of the Sun, a list of the planets).
+            </summary>
+        </member>
+        <member name="F:CelestialBody.pqsController">
+            <summary>
+            The pqsController computes the terrain of the planet. Note that for the Sun, pqsController = null.
+            </summary>
+        </member>
+        <member name="F:CelestialBody.Radius">
+            <summary>
+            The radius of the planet in meters. Note that this is only the radius of "sea level"; the actual terrain may be higher.
+            </summary>
+        </member>
+        <member name="F:CelestialBody.timeWarpAltitudeLimits">
+            <summary>
+            Presumably, this gives the minimum altitude you must have in order to be allowed to use each
+            warp rate when in this body's sphere of influence.
+            </summary>
+        </member>
+        <member name="M:CelestialBody.GetAltitude(Vector3d)">
+            <summary>
+            Gets the height of a given position above this body's sea level, in meters.
+            </summary>
+            <param name="worldPos">A position in world coordinates</param>
+            <returns>Altitude in meters</returns>
+        </member>
+        <member name="M:CelestialBody.GetLatitude(Vector3d)">
+            <summary>
+            Gets the latitude of a given position, in degrees.
+            </summary>
+            <param name="worldPos">A position in world coordinates</param>
+            <returns>Latitude in degrees</returns>
+        </member>
+        <member name="M:CelestialBody.GetLongitude(Vector3d)">
+            <summary>
+            Gets the longitude of a given position, in degrees. Note that you CANNOT count on this value being in any particular range.
+            This function may for example return 420, meaning 60 degrees east. You would be well advised to coerce it into a standard
+            range like -180 to 180 before using it.
+            </summary>
+            <param name="worldPos">A position in world coordinates</param>
+            <returns>Longitude in degrees</returns>
+        </member>
+        <member name="M:CelestialBody.getRFrmVel(Vector3d)">
+            <summary>
+            Returns the velocity at a given position of the frame of reference that rotates with the planet.
+            This velocity is the difference between the "orbit" and "surface" velocities.
+            </summary>
+            <param name="worldPos">A position in world coordinates</param>
+            <returns>Velocity of the rotating reference frame</returns>
+        </member>
+        <member name="M:CelestialBody.GetSurfaceNVector(System.Double,System.Double)">
+            <summary>
+            Returns a unit vector perpendicular to the surface of the body at the given latitude and
+            longitude (pretending for the moment that the body is a perfect sphere).
+            </summary>
+            <param name="lat">Latitude in degrees</param>
+            <param name="lon">Longitude in degrees</param>
+            <returns>A unit normal vector to the surface</returns>
+        </member>
+        <member name="P:CelestialBody.orbit">
+            <summary>
+            Describes the orbit of this body around its primary.
+            </summary>
+        </member>
+        <member name="P:CelestialBody.position">
+            <summary>
+            The position of the center of the body, in world coordinates.
+            </summary>
+        </member>
+        <member name="F:Vessel.acceleration">
+            <summary>
+            Presumably, this is the current acceleration vector of the vessel, in m/s^2?
+            </summary>
+        </member>
+        <member name="F:Vessel.altitude">
+            <summary>
+            Presumably, this is the current altitude above sea of the vessel, in meters?
+            </summary>
+        </member>
+        <member name="F:Vessel.angularMomentum">
+            <summary>
+            Presumably, this is the current angular momentum of the vessel?
+            </summary>
+        </member>
+        <member name="F:Vessel.angularVelocity">
+            <summary>
+            The current angular velocity vector of the vessel.
+            </summary>
+        </member>
+        <member name="F:Vessel.atmDensity">
+            <summary>
+            Presumably, this is the current density of the atmosphere at the vessel's position?
+            </summary>
+        </member>
+        <member name="F:Vessel.CoM">
+            <summary>
+            Presumably, this is the position of the center of mass of the vessel?
+            </summary>
+        </member>
+        <member name="F:Vessel.currentStage">
+            <summary>
+            Presumably, the current stage of the vessel as seen e.g. in the staging display
+            </summary>
+        </member>
+        <member name="F:Vessel.isEVA">
+            <summary>
+            Presumably, which this vessel is an EVAing kerbal.
+            </summary>
+        </member>
+        <member name="F:Vessel.Landed">
+            <summary>
+            Whether the vessel is currently sitting on the ground.
+            </summary>
+        </member>
+        <member name="F:Vessel.latitude">
+            <summary>
+            Presumably, the current latitude of the vessel in degrees.
+            </summary>
+        </member>
+        <member name="F:Vessel.launchTime">
+            <summary>
+            The universal time at which the vessel was launched, in seconds?
+            </summary>
+        </member>
+        <member name="F:Vessel.loaded">
+            <summary>
+            Whether the vessel is currently loaded. Vessels are only loaded when they come
+            within about 2.5km of the active vessel.
+            </summary>
+        </member>
+        <member name="F:Vessel.OnFlyByWire">
+            <summary>
+            You can add your own function to this callback to register a function that can provide flight control input
+            to the vessel. Once you've registered this callback, it will be called once per FixedUpdate. Provide flight
+            control input by modifying the FlightCtrlState passed to your function. This FlightCtrlState will already
+            contain the player's input, which you can modify or override as desired.
+            </summary>
+            <example>
+            <code>
+            void MyAutopilotFunction(FlightCtrlState s) {
+              s.yaw = 1;
+            }
+            ...
+            vessel.OnFlyByWire += MyAutopilotFunction
+            </code>
+            This will create an autopilot that always yaws hard to the right. You can probably devise something more useful, though...
+            </example>
+        </member>
+        <member name="F:Vessel.OnJustAboutToBeDestroyed">
+            <summary>
+            You can add a function to this callback, and the function will be called when the vessel is "just about to be destroyed."
+            </summary>
+        </member>
+        <member name="F:Vessel.packed">
+            <summary>
+            Whether the vessel is currently packed. Vessels are only packed when the come within about 300m of the active vessel.
+            </summary>
+        </member>
+        <member name="F:Vessel.parts">
+            <summary>
+            A list of the parts in the vessel. Note that when the vessel is not loaded, this list will be empty.
+            </summary>
+        </member>
+        <member name="F:Vessel.patchedConicSolver">
+            <summary>
+            Among other things, the patchedConicSolver stores information about the player's current set of maneuver nodes.
+            </summary>
+        </member>
+        <member name="F:Vessel.protoVessel">
+            <summary>
+            The protoVessel can be used to get some saved information about unloaded vessels.
+            </summary>
+        </member>
+        <member name="F:Vessel.rootPart">
+            <summary>
+            The root of the tree of parts that comprises the vessel. Usually this is the original command pod placed when constructing the vessel.
+            </summary>
+        </member>
+        <member name="F:Vessel.situation">
+            <summary>
+            Some coarse information about the current state of the vessel.
+            </summary>
+        </member>
+        <member name="F:Vessel.Splashed">
+            <summary>
+            Whether the vessel is currently splashed down.
+            </summary>
+        </member>
+        <member name="F:Vessel.srf_velocity">
+            <summary>
+            Presumably, the velocity of the vessel in the "surface" reference frame.
+            </summary>
+        </member>
+        <member name="F:Vessel.staticPressure">
+            <summary>
+            Presumably, the atmospheric pressure at the vessel's current location.
+            </summary>
+        </member>
+        <member name="F:Vessel.upAxis">
+            <summary>
+            Presumably, a unit vector in the up (radially outward from the planet) direction.
+            </summary>
+        </member>
+        <member name="F:Vessel.verticalSpeed">
+            <summary>
+            Presumably, the vertical speed of the vessel in m/s.
+            </summary>
+        </member>
+        <member name="F:Vessel.vesselName">
+            <summary>
+            The name of the vessel as it appears in e.g. the tracking station.
+            </summary>
+        </member>
+        <member name="F:Vessel.vesselType">
+            <summary>
+            The type of the vessel, as shown by the type of icon on the map view.
+            </summary>
+        </member>
+        <member name="M:Vessel.ChangeWorldVelocity(Vector3d)">
+            <summary>
+            Add a given velocity offset to the vessels current velocity, instantaneously (may only work for loaded vessels?)
+            </summary>
+            <param name="velOffset"></param>
+        </member>
+        <member name="M:Vessel.findWorldCenterOfMass">
+            <summary>
+            Computes and returns the position of the center of mass of the vessel, in world coordinates.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Vessel.GetCrewCount">
+            <summary>
+            The number of kerbals inside the vessel. This is ONLY reliable when the vessel is loaded (vessel.loaded == true). 
+            When the vessel is unloaded you can compute the crew count as 
+            <code>vessel.protoVessel.protoPartSnapshots.Sum(pps => pps.protoModuleCrew.Count))</code>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Vessel.GoOffRails">
+            <summary>
+            Pulls the vessel off rails?
+            </summary>
+        </member>
+        <member name="M:Vessel.GoOnRails">
+            <summary>
+            Puts the vessel on rails?
+            </summary>
+        </member>
+        <member name="M:Vessel.SetWorldVelocity(Vector3d)">
+            <summary>
+            Sets the velocity of the vessel to a new value, instantaneously. May only work for loaded vessels?
+            </summary>
+            <param name="vel"></param>
+        </member>
+        <member name="P:Vessel.isActiveVessel">
+            <summary>
+            Whether the player is currently controlling this vessel.
+            </summary>
+        </member>
+        <member name="P:Vessel.LandedOrSplashed">
+            <summary>
+            Landed || Splashed; use this to determined whether the vessel is on the ground somewhere, whether on land or water.
+            </summary>
+        </member>
+        <member name="P:Vessel.mainBody">
+            <summary>
+            The body whose sphere of influence the vessel is currently in.
+            </summary>
+        </member>
+        <member name="P:Vessel.orbit">
+            <summary>
+            The current orbit of the vessel. 
+            </summary>
+        </member>
+        <member name="P:Vessel.Parts">
+            <summary>
+            A list of the parts this vessel is composed of.
+            </summary>
+        </member>
+        <member name="P:Vessel.Item(System.Int32)">
+            <summary>
+            Presumably, this lets you access the vessel's parts by index.
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Vessel.Situations">
+            <summary>
+            The type of Vessel.situation
+            </summary>
+        </member>
+        <member name="F:Vessel.Situations.PRELAUNCH">
+            <summary>
+            Waiting on the launchpad, ready to be launched
+            </summary>
+        </member>
+        <member name="F:Vessel.Situations.SUB_ORBITAL">
+            <summary>
+            On a collision course with the ground
+            </summary>
+        </member>
+        <member name="F:Vessel.Situations.ESCAPING">
+            <summary>
+            On a hyperbolic trajectory
+            </summary>
+        </member>
+    </members>
+</doc>
