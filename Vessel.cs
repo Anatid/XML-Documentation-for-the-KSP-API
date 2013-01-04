@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
 
-public class Vessel : MonoBehaviour, IShipconstruct
+public class Vessel : MonoBehaviour
 {
     /// <summary>
     /// Presumably, this is the current acceleration vector of the vessel, in m/s^2?
