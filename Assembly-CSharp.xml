@@ -262,6 +262,401 @@
             The currently selected target vessel, celestial body, or docking node. If no target is selected, this is null.
             </summary>
         </member>
+        <member name="F:ManeuverNode.DeltaV">
+            <summary>
+            The delta-V of the burn represented by this maneuver node, in m/s. NOTE: maneuver nodes use a special coordinate system for delta-V.
+            The x-component of DeltaV represents the delta-V in the radial-plus direction. The y-component of DeltaV 
+            represents the delta-V in the normal-minus direction. The z-component of DeltaV represents the delta-V in the
+            prograde direction.
+            </summary>
+        </member>
+        <member name="F:ManeuverNode.nextPatch">
+            <summary>
+            The orbit patch that starts at this maneuver node.
+            </summary>
+        </member>
+        <member name="F:ManeuverNode.patch">
+            <summary>
+            The orbit patch that ends at this maneuver node?
+            </summary>
+        </member>
+        <member name="F:ManeuverNode.UT">
+            <summary>
+            The universal time of the burn represented by this maneuver node.
+            </summary>
+        </member>
+        <member name="M:ManeuverNode.GetBurnVector(Orbit)">
+            <summary>
+            Perhaps this translates the DeltaV vector into a world-space vector?
+            </summary>
+            <param name="currentOrbit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ManeuverNode.OnGizmoUpdated(Vector3d,System.Double)">
+            <summary>
+            You can call this function to change the delta-V and time of a maneuver node.
+            </summary>
+            <param name="dV">The new delta-V. See the DeltaV for notes about the coordinate system used.</param>
+            <param name="ut">The new universal time.</param>
+        </member>
+        <member name="F:FlightCtrlState.fastThrottle">
+            <summary>
+            Unused?
+            </summary>
+        </member>
+        <member name="F:FlightCtrlState.gearDown">
+            <summary>
+            Unused? Landing gear are lowered by sending an Event.
+            </summary>
+        </member>
+        <member name="F:FlightCtrlState.gearUp">
+            <summary>
+            Unused? Landing gear are raised by sending an Event.
+            </summary>
+        </member>
+        <member name="F:FlightCtrlState.headlight">
+            <summary>
+            Presumably, whether the EVA headlight is turned on.
+            </summary>
+        </member>
+        <member name="F:FlightCtrlState.killRot">
+            <summary>
+            Whether SAS is turned on.
+            </summary>
+        </member>
+        <member name="F:FlightCtrlState.mainThrottle">
+            <summary>
+            The throttle setting; this must be between 0 and 1.
+            </summary>
+        </member>
+        <member name="F:FlightCtrlState.pitch">
+            <summary>
+            The pitch control input; this must be between -1 and 1.
+            </summary>
+        </member>
+        <member name="F:FlightCtrlState.pitchTrim">
+            <summary>
+            Presumably, the pitch trim setting, i.e., the pitch input that will
+            be given if no other input is given.
+            </summary>
+        </member>
+        <member name="F:FlightCtrlState.roll">
+            <summary>
+            The roll control input; this must be between -1 and 1.
+            </summary>
+        </member>
+        <member name="F:FlightCtrlState.rollTrim">
+            <summary>
+            Presumably, the roll trim setting, i.e., the roll input that will
+            be given if no other input is given.
+            </summary>
+        </member>
+        <member name="F:FlightCtrlState.X">
+            <summary>
+            The RCS x-axis control input.
+            </summary>
+        </member>
+        <member name="F:FlightCtrlState.Y">
+            <summary>
+            The RCS y-axis control input.
+            </summary>
+        </member>
+        <member name="F:FlightCtrlState.yaw">
+            <summary>
+            The yaw control input; this must be between -1 and 1.
+            </summary>
+        </member>
+        <member name="F:FlightCtrlState.yawTrim">
+            <summary>
+            Presumably, the yaw trim input; i.e., the yaw input that will be
+            given if no other input is given.
+            </summary>
+        </member>
+        <member name="F:FlightCtrlState.Z">
+            <summary>
+            The RCS z-axis control input.
+            </summary>
+        </member>
+        <member name="M:FlightCtrlState.CopyFrom(FlightCtrlState)">
+            <summary>
+            Presumably, copies the state of the FlightCtrlState st into this FlightCtrlState object.
+            </summary>
+            <param name="st"></param>
+        </member>
+        <member name="P:FlightCtrlState.isNeutral">
+            <summary>
+            Presumably, whether this flight control represents "neutral" controls, i.e., no input and zero throttle.
+            </summary>
+        </member>
+        <member name="F:ScreenMessages.activeMessages">
+            <summary>
+            The set of currently active screen messages. This is a non-static member, but you can get a
+            reference to the ScreenMessages instance via
+            <code>ScreenMessages sm = (ScreenMessages)GameObject.FindObjectOfType(typeof(ScreenMessages));</code>
+            </summary>
+        </member>
+        <member name="M:ScreenMessages.PostScreenMessage(ScreenMessage)">
+            <summary>
+            Post a temporary message to the screen. Examples of screen messages are the "Warp = {number}x" message
+            and the "Quicksaving..." message.
+            </summary>
+            <param name="msg">The message to post</param>
+        </member>
+        <member name="M:ScreenMessages.PostScreenMessage(System.String)">
+            <summary>
+            Post a temporary message to the screen. Examples of screen messages are the "Warp = {number}x" message
+            and the "Quicksaving..." message.
+            </summary>
+            <param name="message">The message to post.</param>
+            <returns>A reference to the posted message</returns>
+        </member>
+        <member name="M:ScreenMessages.PostScreenMessage(System.String,System.Single)">
+            <summary>
+            Post a temporary message to the screen. Examples of screen messages are the "Warp = {number}x" message
+            and the "Quicksaving..." message.
+            </summary>
+            <param name="message">The message to post</param>
+            <param name="duration">How long the message should remain on the screen, in seconds.</param>
+            <returns>A reference to the posted message</returns>
+        </member>
+        <member name="M:ScreenMessages.PostScreenMessage(System.String,System.Single,ScreenMessageStyle)">
+            <summary>
+            Post a temporary message to the screen. Examples of screen messages are the "Warp = {number}x" message
+            and the "Quicksaving..." message.
+            </summary>
+            <param name="message">The message to post</param>
+            <param name="duration">How long the message should remain on the screen, in seconds.</param>
+            <param name="style">Which style of screen message to post--for instance, should it by like the warp message, the quicksaving message, etc.</param>
+            <returns>A reference to the posted message</returns>
+        </member>
+        <member name="M:ScreenMessages.RemoveMessage(ScreenMessage)">
+            <summary>
+            Remove a currently active message from the screen.
+            </summary>
+            <param name="msg">The message to remove</param>
+        </member>
+        <member name="F:ScreenMessageStyle.UPPER_CENTER">
+            <summary>
+            This results in a message in the same font and position as the "Warp = {number}x" message.
+            </summary>
+        </member>
+        <member name="F:ScreenMessageStyle.UPPER_LEFT">
+            <summary>
+            What sort of message style does this produce?
+            </summary>
+        </member>
+        <member name="F:ScreenMessageStyle.UPPER_RIGHT">
+            <summary>
+            This results in a message in the same font and position as the "Quicksaving..." message.
+            </summary>
+        </member>
+        <member name="F:ScreenMessageStyle.LOWER_CENTER">
+            <summary>
+            What sort of message style does this produce?
+            </summary>
+        </member>
+        <member name="F:Part.ActivatesEvenIfDisconnected">
+            <summary>
+            Whether this part will actually activate if it schedule to be activated in the same stage as it 
+            is decoupled from the rocket. In particular, sepratrons must have ActivatesEvenIfDisconnected set
+            to true if they are to function properly.
+            </summary>
+        </member>
+        <member name="F:Part.attachNodes">
+            <summary>
+            An AttachNode represents the link between two attached parts. attachNodes is a list of possible nodes to
+            which other parts can be attached to this part. You can find the parts that actually are attached using
+            AttachNode.attachedPart. 
+            </summary>
+        </member>
+        <member name="F:Part.children">
+            <summary>
+            The parts that are children of this part in the part tree (parts that were attached to this part in the editor
+            after this part was already part of the vessel).
+            </summary>
+        </member>
+        <member name="F:Part.CrewCapacity">
+            <summary>
+            How many crew members this part can fit.
+            </summary>
+        </member>
+        <member name="F:Part.dragModel">
+            <summary>
+            Unused?
+            </summary>
+        </member>
+        <member name="F:Part.dragModelType">
+            <summary>
+            Unused?
+            </summary>
+        </member>
+        <member name="F:Part.fuelCrossFeed">
+            <summary>
+            Whether this part allows fuel crossfeed.
+            </summary>
+        </member>
+        <member name="F:Part.fuelLookupTargets">
+            <summary>
+            Seems to be always empty?
+            </summary>
+        </member>
+        <member name="F:Part.inverseStage">
+            <summary>
+            The stage in which this part will activate, as shown in the staging display. (Possibly called inverseStage
+            because the stages in KSP count down instead of up).
+            </summary>
+        </member>
+        <member name="F:Part.mass">
+            <summary>
+            The DRY mass of this part, not including the mass of any resources it contains
+            </summary>
+        </member>
+        <member name="F:Part.maximum_drag">
+            <summary>
+            The drag coefficient of this part is equal to (total mass) * (maximum_drag)
+            </summary>
+        </member>
+        <member name="F:Part.maxTemp">
+            <summary>
+            The temperature at which this part will explode.
+            </summary>
+        </member>
+        <member name="F:Part.minimum_drag">
+            <summary>
+            Unused.
+            </summary>
+        </member>
+        <member name="F:Part.NoCrossFeedNodeKey">
+            <summary>
+            Specifies the name of a node through which this part will NOT draw resources. See the part.cfg of the 
+            stock tricoupler for an example of using this to prevent fuel from flowing backwards.
+            </summary>
+        </member>
+        <member name="F:Part.OnEditorAttach">
+            <summary>
+            Add a function to this callback and it will be called when your part is attached to another part in the editor.
+            </summary>
+        </member>
+        <member name="F:Part.OnEditorDestroy">
+            <summary>
+            Add a function to this callback and it will be called when your part is deleted in the editor.
+            </summary>
+        </member>
+        <member name="F:Part.OnEditorDetach">
+            <summary>
+            Add a function to this callback and it will be called when your part is detached, or is part of a set of parts
+            that are detached, in the editor.
+            </summary>
+        </member>
+        <member name="F:Part.OnJustAboutToBeDestroyed">
+            <summary>
+            Add a function to this callback and it will be called when your part is about to be destroyed during flight.
+            </summary>
+        </member>
+        <member name="F:Part.parent">
+            <summary>
+            The parent of this part in the part tree: the part to which this part was attached in the editor.
+            </summary>
+        </member>
+        <member name="F:Part.partInfo">
+            <summary>
+            Some of the part info that is displayed about this part in the editor.
+            </summary>
+        </member>
+        <member name="F:Part.physicalSignificance">
+            <summary>
+            If physicalSignificance == Part.PhysicalSignificance.NONE, then this part doesn't actually
+            have any physics. In particular, it has no mass, regardless of what its "mass" field is set to, and no drag.
+            </summary>
+        </member>
+        <member name="F:Part.PhysicsSignificance">
+            <summary>
+            Unused?
+            </summary>
+        </member>
+        <member name="F:Part.srfAttachNode">
+            <summary>
+            IF this part is surface-attached to its parent, srfAttachNode is the attach node describing this connection.
+            </summary>
+        </member>
+        <member name="F:Part.stackIcon">
+            <summary>
+            The sicon shown for this part in the staging display.
+            </summary>
+        </member>
+        <member name="F:Part.temperature">
+            <summary>
+            The temperature of this part, in some arbitrary units.
+            </summary>
+        </member>
+        <member name="F:Part.vessel">
+            <summary>
+            The vessel to which this part belongs. Beware that vessel == null in the editor.
+            </summary>
+        </member>
+        <member name="M:Part.AddModule(System.String)">
+            <summary>
+            Add a PartModule to this part. PartModules that are dynamically added to parts and don't exist in the original
+            part.cfg will not be properly restored from persistence.
+            </summary>
+            <param name="moduleName">The class name of the PartModule to add, as a string</param>
+            <returns>The added PartModule</returns>
+        </member>
+        <member name="M:Part.explode">
+            <summary>
+            Calling this causes the part to explode. But you guessed that, didn't you?
+            </summary>
+        </member>
+        <member name="M:Part.findAttachNode(System.String)">
+            <summary>
+            Find an AttachNode by its name, as a string.
+            </summary>
+            <param name="nodeId">The name of the node to search for. The names of nodes are found in the part.cfg. For instance,
+            node_stack_top describes a node with name "stack_top."</param>
+            <returns>The AttachNode of the given name.</returns>
+        </member>
+        <member name="M:Part.force_activate">
+            <summary>
+            Activates the part now, regardless of when it was scheduled to be activated in the staging order.
+            </summary>
+        </member>
+        <member name="M:Part.GetResourceMass">
+            <summary>
+            The total mass of the resources held by the part. The total mass of the part is <code>mass + GetResourceMass()</code>
+            </summary>
+            <returns>Total resource mass, in tonnes</returns>
+        </member>
+        <member name="P:Part.orbit">
+            <summary>
+            Don't use this; use Vessel.orbit instead.
+            </summary>
+        </member>
+        <member name="P:Part.Resources">
+            <summary>
+            A list of the resources contained by this part. You can loop over them with
+            <code>foreach(PartResource resource in part.Resources) { ... }</code>
+            </summary>
+        </member>
+        <member name="P:Part.Rigidbody">
+            <summary>
+            The rigidbody of this part. See the Unity documentation on rigidbodies for more information.
+            </summary>
+        </member>
+        <member name="F:Part.PhysicalSignificance.FULL">
+            <summary>
+            Part is a normal, physics-enabled part.
+            </summary>
+        </member>
+        <member name="F:Part.PhysicalSignificance.NONE">
+            <summary>
+            Part has no physics, and in particular no mass or drag.
+            </summary>
+        </member>
+        <member name="P:EditorLogic.SortedShipList">
+            <summary>
+            A list of all parts in the vessel that is being edited.
+            </summary>
+        </member>
         <member name="F:CelestialBody.angularV">
             <summary>
             The magnitude of the angular velocity of the body's rotation, in radians per second.
@@ -386,6 +781,151 @@
         <member name="P:CelestialBody.position">
             <summary>
             The position of the center of the body, in world coordinates.
+            </summary>
+        </member>
+        <member name="F:PatchedConicSolver.maneuverNodes">
+            <summary>
+            A list of the maneuver nodes that are currently planned for this vessel.
+            </summary>
+        </member>
+        <member name="M:PatchedConicSolver.AddManeuverNode(System.Double)">
+            <summary>
+            Add a maneuver node to the flight plan.
+            </summary>
+            <param name="UT">The universal time of the maneuver node.</param>
+            <returns>A reference to the maneuver node</returns>
+        </member>
+        <member name="M:PatchedConicSolver.RemoveManeuverNode(ManeuverNode)">
+            <summary>
+            Remove a maneuver node from the flight plane.
+            </summary>
+            <param name="node">The maneuver node to be removed.</param>
+        </member>
+        <member name="F:Orbit.activePatch">
+            <summary>
+            Whether this patch actually represents a real orbit patch in the projected flight path. Often
+            Orbit.nextPatch for the last real will not be null, but will be some sort of bogus Orbit object.
+            You can recognize these because activePatch will be false.
+            </summary>
+        </member>
+        <member name="F:Orbit.eccentricity">
+            <summary>
+            The eccentricity of the orbit.
+            </summary>
+        </member>
+        <member name="F:Orbit.eccVec">
+            <summary>
+            A vector that points toward periapsis, with mangitude equal to the eccentricity.
+            NOTE: All Vector3d's returned by Orbit class functions have their y and z axes flipped. You have
+            to flip these back to get the vectors in world coordinates.
+            </summary>
+        </member>
+        <member name="F:Orbit.EndUT">
+            <summary>
+            The universal time at which this patch ends.
+            </summary>
+        </member>
+        <member name="F:Orbit.inclination">
+            <summary>
+            The inclination of this orbit with respect to the equator of the central body (in radians or degrees?)
+            </summary>
+        </member>
+        <member name="F:Orbit.LAN">
+            <summary>
+            The longitude of the ascending node of the orbit (in what coordinate system?)
+            </summary>
+        </member>
+        <member name="F:Orbit.period">
+            <summary>
+            The period of the orbit, in seconds.
+            </summary>
+        </member>
+        <member name="F:Orbit.referenceBody">
+            <summary>
+            The body orbited.
+            </summary>
+        </member>
+        <member name="F:Orbit.semiMajorAxis">
+            <summary>
+            The semi-major axis of the orbit, in meters. Equal to (PeR + ApR)/2
+            </summary>
+        </member>
+        <member name="F:Orbit.timeToAp">
+            <summary>
+            The time until the object will reach apoapsis, in seconds.
+            </summary>
+        </member>
+        <member name="F:Orbit.timeToPe">
+            <summary>
+            The time unti lthe object will reach periapsis, in seconds.
+            </summary>
+        </member>
+        <member name="M:Orbit.GetOrbitNormal">
+            <summary>
+            A unit vector normal to the plane of the orbit. NOTE: All Vector3d's returned by Orbit class functions have their y and z axes flipped. You have
+            to flip these back to get the vectors in world coordinates.
+            </summary>
+            <returns>A unit normal vector.</returns>
+        </member>
+        <member name="M:Orbit.getRelativePositionAtUT(System.Double)">
+            <summary>
+            Gets the predicted displacement of the orbiting object from the center of the main
+            body at a given universal time. NOTE: All Vector3d's returned by Orbit class functions have their y and z axes flipped. You have
+            to flip these back to get the vectors in world coordinates.
+            </summary>
+            <param name="UT">A univeral time.</param>
+            <returns>Position relative to the main body (YZ flipped)</returns>
+        </member>
+        <member name="M:Orbit.GetVel">
+            <summary>
+            The current orbital velocity of the orbiting body. Unlike most other methods of the orbit
+            class, the returned vector seems to already be in world coordinates and doesn't need to have
+            its Y and Z axes flipped.
+            </summary>
+            <returns>Orbital velocity vector at current time.</returns>
+        </member>
+        <member name="M:Orbit.RadiusAtTrueAnomaly(System.Double)">
+            <summary>
+            The distance the orbiting object will be from the center of the main body when it reaches the given true anomaly.
+            </summary>
+            <param name="tA">True anomaly (in degrees or radians?)</param>
+            <returns>Distance from the main body's center, in meters</returns>
+        </member>
+        <member name="M:Orbit.TrueAnomalyAtRadius(System.Double)">
+            <summary>
+            The true anomaly at which the orbiting object will achieve the given distance from the center of the main body.
+            </summary>
+            <param name="R">Distance from the center of the main body, in meters.</param>
+            <returns>True anomaly, in radians.</returns>
+        </member>
+        <member name="M:Orbit.UpdateFromStateVectors(Vector3d,Vector3d,CelestialBody,System.Double)">
+            <summary>
+            Updates this orbit to reflect the orbit that will be taken around the given body by an object with the
+            given position and velocity at the given universal time.
+            </summary>
+            <param name="pos">The initial position of the object RELATIVE TO refBody at UT (YZ flipped)</param>
+            <param name="vel">The initial velocity of the object (YZ flipped)</param>
+            <param name="refBody">The main body</param>
+            <param name="UT">The universal time at which to start the orbit.</param>
+        </member>
+        <member name="P:Orbit.ApA">
+            <summary>
+            The apoapsis of the orbit in meters, measured from sea level.
+            </summary>
+        </member>
+        <member name="P:Orbit.ApR">
+            <summary>
+            The apoapsis of the orbit in meters, measured from the center of the main body.
+            </summary>
+        </member>
+        <member name="P:Orbit.PeA">
+            <summary>
+            The periapsis of the orbit in meters, measured from sea level.
+            </summary>
+        </member>
+        <member name="P:Orbit.PeR">
+            <summary>
+            The periapsis of the orbit in meters, measured from the center of the main body.
             </summary>
         </member>
         <member name="F:Vessel.acceleration">
@@ -625,292 +1165,6 @@
             On a hyperbolic trajectory
             </summary>
         </member>
-        <member name="F:Part.ActivatesEvenIfDisconnected">
-            <summary>
-            Whether this part will actually activate if it schedule to be activated in the same stage as it 
-            is decoupled from the rocket. In particular, sepratrons must have ActivatesEvenIfDisconnected set
-            to true if they are to function properly.
-            </summary>
-        </member>
-        <member name="F:Part.attachNodes">
-            <summary>
-            An AttachNode represents the link between two attached parts. attachNodes is a list of possible nodes to
-            which other parts can be attached to this part. You can find the parts that actually are attached using
-            AttachNode.attachedPart. 
-            </summary>
-        </member>
-        <member name="F:Part.children">
-            <summary>
-            The parts that are children of this part in the part tree (parts that were attached to this part in the editor
-            after this part was already part of the vessel).
-            </summary>
-        </member>
-        <member name="F:Part.CrewCapacity">
-            <summary>
-            How many crew members this part can fit.
-            </summary>
-        </member>
-        <member name="F:Part.dragModel">
-            <summary>
-            Unused?
-            </summary>
-        </member>
-        <member name="F:Part.dragModelType">
-            <summary>
-            Unused?
-            </summary>
-        </member>
-        <member name="F:Part.fuelCrossFeed">
-            <summary>
-            Whether this part allows fuel crossfeed.
-            </summary>
-        </member>
-        <member name="F:Part.fuelLookupTargets">
-            <summary>
-            Seems to be always empty?
-            </summary>
-        </member>
-        <member name="F:Part.inverseStage">
-            <summary>
-            The stage in which this part will activate, as shown in the staging display. (Possibly called inverseStage
-            because the stages in KSP count down instead of up).
-            </summary>
-        </member>
-        <member name="F:Part.mass">
-            <summary>
-            The DRY mass of this part, not including the mass of any resources it contains
-            </summary>
-        </member>
-        <member name="F:Part.maximum_drag">
-            <summary>
-            The drag coefficient of this part is equal to (total mass) * (maximum_drag)
-            </summary>
-        </member>
-        <member name="F:Part.maxTemp">
-            <summary>
-            The temperature at which this part will explode.
-            </summary>
-        </member>
-        <member name="F:Part.minimum_drag">
-            <summary>
-            Unused.
-            </summary>
-        </member>
-        <member name="F:Part.NoCrossFeedNodeKey">
-            <summary>
-            Specifies the name of a node through which this part will NOT draw resources. See the part.cfg of the 
-            stock tricoupler for an example of using this to prevent fuel from flowing backwards.
-            </summary>
-        </member>
-        <member name="F:Part.OnEditorAttach">
-            <summary>
-            Add a function to this callback and it will be called when your part is attached to another part in the editor.
-            </summary>
-        </member>
-        <member name="F:Part.OnEditorDestroy">
-            <summary>
-            Add a function to this callback and it will be called when your part is deleted in the editor.
-            </summary>
-        </member>
-        <member name="F:Part.OnEditorDetach">
-            <summary>
-            Add a function to this callback and it will be called when your part is detached, or is part of a set of parts
-            that are detached, in the editor.
-            </summary>
-        </member>
-        <member name="F:Part.OnJustAboutToBeDestroyed">
-            <summary>
-            Add a function to this callback and it will be called when your part is about to be destroyed during flight.
-            </summary>
-        </member>
-        <member name="F:Part.parent">
-            <summary>
-            The parent of this part in the part tree: the part to which this part was attached in the editor.
-            </summary>
-        </member>
-        <member name="F:Part.partInfo">
-            <summary>
-            Some of the part info that is displayed about this part in the editor.
-            </summary>
-        </member>
-        <member name="F:Part.physicalSignificance">
-            <summary>
-            If physicalSignificance == Part.PhysicalSignificance.NONE, then this part doesn't actually
-            have any physics. In particular, it has no mass, regardless of what its "mass" field is set to, and no drag.
-            </summary>
-        </member>
-        <member name="F:Part.PhysicsSignificance">
-            <summary>
-            Unused?
-            </summary>
-        </member>
-        <member name="F:Part.srfAttachNode">
-            <summary>
-            IF this part is surface-attached to its parent, srfAttachNode is the attach node describing this connection.
-            </summary>
-        </member>
-        <member name="F:Part.stackIcon">
-            <summary>
-            The sicon shown for this part in the staging display.
-            </summary>
-        </member>
-        <member name="F:Part.temperature">
-            <summary>
-            The temperature of this part, in some arbitrary units.
-            </summary>
-        </member>
-        <member name="F:Part.vessel">
-            <summary>
-            The vessel to which this part belongs. Beware that vessel == null in the editor.
-            </summary>
-        </member>
-        <member name="M:Part.AddModule(System.String)">
-            <summary>
-            Add a PartModule to this part. PartModules that are dynamically added to parts and don't exist in the original
-            part.cfg will not be properly restored from persistence.
-            </summary>
-            <param name="moduleName">The class name of the PartModule to add, as a string</param>
-            <returns>The added PartModule</returns>
-        </member>
-        <member name="M:Part.explode">
-            <summary>
-            Calling this causes the part to explode. But you guessed that, didn't you?
-            </summary>
-        </member>
-        <member name="M:Part.findAttachNode(System.String)">
-            <summary>
-            Find an AttachNode by its name, as a string.
-            </summary>
-            <param name="nodeId">The name of the node to search for. The names of nodes are found in the part.cfg. For instance,
-            node_stack_top describes a node with name "stack_top."</param>
-            <returns>The AttachNode of the given name.</returns>
-        </member>
-        <member name="M:Part.force_activate">
-            <summary>
-            Activates the part now, regardless of when it was scheduled to be activated in the staging order.
-            </summary>
-        </member>
-        <member name="M:Part.GetResourceMass">
-            <summary>
-            The total mass of the resources held by the part. The total mass of the part is <code>mass + GetResourceMass()</code>
-            </summary>
-            <returns>Total resource mass, in tonnes</returns>
-        </member>
-        <member name="P:Part.orbit">
-            <summary>
-            Don't use this; use Vessel.orbit instead.
-            </summary>
-        </member>
-        <member name="P:Part.Resources">
-            <summary>
-            A list of the resources contained by this part. You can loop over them with
-            <code>foreach(PartResource resource in part.Resources) { ... }</code>
-            </summary>
-        </member>
-        <member name="P:Part.Rigidbody">
-            <summary>
-            The rigidbody of this part. See the Unity documentation on rigidbodies for more information.
-            </summary>
-        </member>
-        <member name="F:Part.PhysicalSignificance.FULL">
-            <summary>
-            Part is a normal, physics-enabled part.
-            </summary>
-        </member>
-        <member name="F:Part.PhysicalSignificance.NONE">
-            <summary>
-            Part has no physics, and in particular no mass or drag.
-            </summary>
-        </member>
-        <member name="F:FlightCtrlState.fastThrottle">
-            <summary>
-            Unused?
-            </summary>
-        </member>
-        <member name="F:FlightCtrlState.gearDown">
-            <summary>
-            Unused? Landing gear are lowered by sending an Event.
-            </summary>
-        </member>
-        <member name="F:FlightCtrlState.gearUp">
-            <summary>
-            Unused? Landing gear are raised by sending an Event.
-            </summary>
-        </member>
-        <member name="F:FlightCtrlState.headlight">
-            <summary>
-            Presumably, whether the EVA headlight is turned on.
-            </summary>
-        </member>
-        <member name="F:FlightCtrlState.killRot">
-            <summary>
-            Whether SAS is turned on.
-            </summary>
-        </member>
-        <member name="F:FlightCtrlState.mainThrottle">
-            <summary>
-            The throttle setting; this must be between 0 and 1.
-            </summary>
-        </member>
-        <member name="F:FlightCtrlState.pitch">
-            <summary>
-            The pitch control input; this must be between -1 and 1.
-            </summary>
-        </member>
-        <member name="F:FlightCtrlState.pitchTrim">
-            <summary>
-            Presumably, the pitch trim setting, i.e., the pitch input that will
-            be given if no other input is given.
-            </summary>
-        </member>
-        <member name="F:FlightCtrlState.roll">
-            <summary>
-            The roll control input; this must be between -1 and 1.
-            </summary>
-        </member>
-        <member name="F:FlightCtrlState.rollTrim">
-            <summary>
-            Presumably, the roll trim setting, i.e., the roll input that will
-            be given if no other input is given.
-            </summary>
-        </member>
-        <member name="F:FlightCtrlState.X">
-            <summary>
-            The RCS x-axis control input.
-            </summary>
-        </member>
-        <member name="F:FlightCtrlState.Y">
-            <summary>
-            The RCS y-axis control input.
-            </summary>
-        </member>
-        <member name="F:FlightCtrlState.yaw">
-            <summary>
-            The yaw control input; this must be between -1 and 1.
-            </summary>
-        </member>
-        <member name="F:FlightCtrlState.yawTrim">
-            <summary>
-            Presumably, the yaw trim input; i.e., the yaw input that will be
-            given if no other input is given.
-            </summary>
-        </member>
-        <member name="F:FlightCtrlState.Z">
-            <summary>
-            The RCS z-axis control input.
-            </summary>
-        </member>
-        <member name="M:FlightCtrlState.CopyFrom(FlightCtrlState)">
-            <summary>
-            Presumably, copies the state of the FlightCtrlState st into this FlightCtrlState object.
-            </summary>
-            <param name="st"></param>
-        </member>
-        <member name="P:FlightCtrlState.isNeutral">
-            <summary>
-            Presumably, whether this flight control represents "neutral" controls, i.e., no input and zero throttle.
-            </summary>
-        </member>
         <member name="F:FlightInputHandler.fetch">
             <summary>
             Use this FlightInputHandler instance to access non-static members of the class.
@@ -947,258 +1201,80 @@
             Whether RCS is enabled.
             </summary>
         </member>
-        <member name="F:ScreenMessages.activeMessages">
+        <member name="F:TimeWarp.altitudeLimits">
             <summary>
-            The set of currently active screen messages. This is a non-static member, but you can get a
-            reference to the ScreenMessages instance via
-            <code>ScreenMessages sm = (ScreenMessages)GameObject.FindObjectOfType(typeof(ScreenMessages));</code>
+            Unused? CelestialBodies have their own sets of altitude limits.
             </summary>
         </member>
-        <member name="M:ScreenMessages.PostScreenMessage(ScreenMessage)">
+        <member name="F:TimeWarp.fetch">
             <summary>
-            Post a temporary message to the screen. Examples of screen messages are the "Warp = {number}x" message
-            and the "Quicksaving..." message.
-            </summary>
-            <param name="msg">The message to post</param>
-        </member>
-        <member name="M:ScreenMessages.PostScreenMessage(System.String)">
-            <summary>
-            Post a temporary message to the screen. Examples of screen messages are the "Warp = {number}x" message
-            and the "Quicksaving..." message.
-            </summary>
-            <param name="message">The message to post.</param>
-            <returns>A reference to the posted message</returns>
-        </member>
-        <member name="M:ScreenMessages.PostScreenMessage(System.String,System.Single)">
-            <summary>
-            Post a temporary message to the screen. Examples of screen messages are the "Warp = {number}x" message
-            and the "Quicksaving..." message.
-            </summary>
-            <param name="message">The message to post</param>
-            <param name="duration">How long the message should remain on the screen, in seconds.</param>
-            <returns>A reference to the posted message</returns>
-        </member>
-        <member name="M:ScreenMessages.PostScreenMessage(System.String,System.Single,ScreenMessageStyle)">
-            <summary>
-            Post a temporary message to the screen. Examples of screen messages are the "Warp = {number}x" message
-            and the "Quicksaving..." message.
-            </summary>
-            <param name="message">The message to post</param>
-            <param name="duration">How long the message should remain on the screen, in seconds.</param>
-            <param name="style">Which style of screen message to post--for instance, should it by like the warp message, the quicksaving message, etc.</param>
-            <returns>A reference to the posted message</returns>
-        </member>
-        <member name="M:ScreenMessages.RemoveMessage(ScreenMessage)">
-            <summary>
-            Remove a currently active message from the screen.
-            </summary>
-            <param name="msg">The message to remove</param>
-        </member>
-        <member name="F:ScreenMessageStyle.UPPER_CENTER">
-            <summary>
-            This results in a message in the same font and position as the "Warp = {number}x" message.
+            Use this TimeWarp instance to access non-static members. 
             </summary>
         </member>
-        <member name="F:ScreenMessageStyle.UPPER_LEFT">
+        <member name="F:TimeWarp.physicsWarpRates">
             <summary>
-            What sort of message style does this produce?
+            The available physics warp rates. In 0.18.2 these are {1, 2, 3, 4} by default. You can modify the
+            available rates by modifying this array.
             </summary>
         </member>
-        <member name="F:ScreenMessageStyle.UPPER_RIGHT">
+        <member name="F:TimeWarp.warpRates">
             <summary>
-            This results in a message in the same font and position as the "Quicksaving..." message.
+            The available regular warp rates. In 0.18.2 these are {1, 5, 10, 50, 100, 1000, 10000, 100000} by default.
+            You can modify the available rates by modifying this array.
             </summary>
         </member>
-        <member name="F:ScreenMessageStyle.LOWER_CENTER">
+        <member name="M:TimeWarp.GetAltitudeLimit(System.Int32,CelestialBody)">
             <summary>
-            What sort of message style does this produce?
+            Presumably, gets the minimum altitude in meters above the sea level of the given body at which the
+            given warp rate index is allowed.
+            </summary>
+            <param name="i">A warp rate index</param>
+            <param name="body">The body in question</param>
+            <returns>The minimum altitude in meters at which that warp rate index is allowed</returns>
+        </member>
+        <member name="M:TimeWarp.SetRate(System.Int32,System.Boolean)">
+            <summary>
+            Changes the warp rate to either warpRates[rateIndex] or physicsWarpRates[rate_index], depending
+            on whether WarpMode is HIGH or LOW.
+            </summary>
+            <param name="rate_index">The index of the desired new warp rate</param>
+            <param name="instant">If false, KSP will gradually smoothly adjust the warp rate up or down until it reaches the target.
+            If true, the warp rate will change instantly.</param>
+        </member>
+        <member name="P:TimeWarp.CurrentRate">
+            <summary>
+            The current warp rate, e.g. 50 if the current warp rate is 50x. This number
+            may not be equal to one of the entries in warpRates, because KSP will smoothly
+            interpolate between two warp rates over a period of time when you increase
+            or decrease the warp.
             </summary>
         </member>
-        <member name="P:EditorLogic.SortedShipList">
+        <member name="P:TimeWarp.CurrentRateIndex">
             <summary>
-            A list of all parts in the vessel that is being edited.
+            The index of the current current warp rate in either warpRates or physicsWarpRates, depending
+            on whether WarpMode is HIGH or LOW. Note that CurrentRate may not equal the warp rate indexed
+            by CurrentRateIndex if KSP has not finished interpolating the last warp change.
             </summary>
         </member>
-        <member name="F:ManeuverNode.DeltaV">
+        <member name="P:TimeWarp.fixedDeltaTime">
             <summary>
-            The delta-V of the burn represented by this maneuver node, in m/s. NOTE: maneuver nodes use a special coordinate system for delta-V.
-            The x-component of DeltaV represents the delta-V in the radial-plus direction. The y-component of DeltaV 
-            represents the delta-V in the normal-minus direction. The z-component of DeltaV represents the delta-V in the
-            prograde direction.
+            The time between FixedUpdate cycles (i.e., the time between physics steps). See the Unity FixedUpdate
+            documentation for more details.
             </summary>
         </member>
-        <member name="F:ManeuverNode.nextPatch">
+        <member name="P:TimeWarp.WarpMode">
             <summary>
-            The orbit patch that starts at this maneuver node.
+            Whether we are in regular warp mode or physics warp mode
             </summary>
         </member>
-        <member name="F:ManeuverNode.patch">
+        <member name="F:TimeWarp.Modes.HIGH">
             <summary>
-            The orbit patch that ends at this maneuver node?
+            Reguar time warp mode
             </summary>
         </member>
-        <member name="F:ManeuverNode.UT">
+        <member name="F:TimeWarp.Modes.LOW">
             <summary>
-            The universal time of the burn represented by this maneuver node.
-            </summary>
-        </member>
-        <member name="M:ManeuverNode.GetBurnVector(Orbit)">
-            <summary>
-            Perhaps this translates the DeltaV vector into a world-space vector?
-            </summary>
-            <param name="currentOrbit"></param>
-            <returns></returns>
-        </member>
-        <member name="M:ManeuverNode.OnGizmoUpdated(Vector3d,System.Double)">
-            <summary>
-            You can call this function to change the delta-V and time of a maneuver node.
-            </summary>
-            <param name="dV">The new delta-V. See the DeltaV for notes about the coordinate system used.</param>
-            <param name="ut">The new universal time.</param>
-        </member>
-        <member name="F:PatchedConicSolver.maneuverNodes">
-            <summary>
-            A list of the maneuver nodes that are currently planned for this vessel.
-            </summary>
-        </member>
-        <member name="M:PatchedConicSolver.AddManeuverNode(System.Double)">
-            <summary>
-            Add a maneuver node to the flight plan.
-            </summary>
-            <param name="UT">The universal time of the maneuver node.</param>
-            <returns>A reference to the maneuver node</returns>
-        </member>
-        <member name="M:PatchedConicSolver.RemoveManeuverNode(ManeuverNode)">
-            <summary>
-            Remove a maneuver node from the flight plane.
-            </summary>
-            <param name="node">The maneuver node to be removed.</param>
-        </member>
-        <member name="F:Orbit.activePatch">
-            <summary>
-            Whether this patch actually represents a real orbit patch in the projected flight path. Often
-            Orbit.nextPatch for the last real will not be null, but will be some sort of bogus Orbit object.
-            You can recognize these because activePatch will be false.
-            </summary>
-        </member>
-        <member name="F:Orbit.eccentricity">
-            <summary>
-            The eccentricity of the orbit.
-            </summary>
-        </member>
-        <member name="F:Orbit.eccVec">
-            <summary>
-            A vector that points toward periapsis, with mangitude equal to the eccentricity.
-            NOTE: All Vector3d's returned by Orbit class functions have their y and z axes flipped. You have
-            to flip these back to get the vectors in world coordinates.
-            </summary>
-        </member>
-        <member name="F:Orbit.EndUT">
-            <summary>
-            The universal time at which this patch ends.
-            </summary>
-        </member>
-        <member name="F:Orbit.inclination">
-            <summary>
-            The inclination of this orbit with respect to the equator of the central body (in radians or degrees?)
-            </summary>
-        </member>
-        <member name="F:Orbit.LAN">
-            <summary>
-            The longitude of the ascending node of the orbit (in what coordinate system?)
-            </summary>
-        </member>
-        <member name="F:Orbit.period">
-            <summary>
-            The period of the orbit, in seconds.
-            </summary>
-        </member>
-        <member name="F:Orbit.referenceBody">
-            <summary>
-            The body orbited.
-            </summary>
-        </member>
-        <member name="F:Orbit.semiMajorAxis">
-            <summary>
-            The semi-major axis of the orbit, in meters. Equal to (PeR + ApR)/2
-            </summary>
-        </member>
-        <member name="F:Orbit.timeToAp">
-            <summary>
-            The time until the object will reach apoapsis, in seconds.
-            </summary>
-        </member>
-        <member name="F:Orbit.timeToPe">
-            <summary>
-            The time unti lthe object will reach periapsis, in seconds.
-            </summary>
-        </member>
-        <member name="M:Orbit.GetOrbitNormal">
-            <summary>
-            A unit vector normal to the plane of the orbit. NOTE: All Vector3d's returned by Orbit class functions have their y and z axes flipped. You have
-            to flip these back to get the vectors in world coordinates.
-            </summary>
-            <returns>A unit normal vector.</returns>
-        </member>
-        <member name="M:Orbit.getRelativePositionAtUT(System.Double)">
-            <summary>
-            Gets the predicted displacement of the orbiting object from the center of the main
-            body at a given universal time. NOTE: All Vector3d's returned by Orbit class functions have their y and z axes flipped. You have
-            to flip these back to get the vectors in world coordinates.
-            </summary>
-            <param name="UT">A univeral time.</param>
-            <returns>Position relative to the main body (YZ flipped)</returns>
-        </member>
-        <member name="M:Orbit.GetVel">
-            <summary>
-            The current orbital velocity of the orbiting body. Unlike most other methods of the orbit
-            class, the returned vector seems to already be in world coordinates and doesn't need to have
-            its Y and Z axes flipped.
-            </summary>
-            <returns>Orbital velocity vector at current time.</returns>
-        </member>
-        <member name="M:Orbit.RadiusAtTrueAnomaly(System.Double)">
-            <summary>
-            The distance the orbiting object will be from the center of the main body when it reaches the given true anomaly.
-            </summary>
-            <param name="tA">True anomaly (in degrees or radians?)</param>
-            <returns>Distance from the main body's center, in meters</returns>
-        </member>
-        <member name="M:Orbit.TrueAnomalyAtRadius(System.Double)">
-            <summary>
-            The true anomaly at which the orbiting object will achieve the given distance from the center of the main body.
-            </summary>
-            <param name="R">Distance from the center of the main body, in meters.</param>
-            <returns>True anomaly, in radians.</returns>
-        </member>
-        <member name="M:Orbit.UpdateFromStateVectors(Vector3d,Vector3d,CelestialBody,System.Double)">
-            <summary>
-            Updates this orbit to reflect the orbit that will be taken around the given body by an object with the
-            given position and velocity at the given universal time.
-            </summary>
-            <param name="pos">The initial position of the object RELATIVE TO refBody at UT (YZ flipped)</param>
-            <param name="vel">The initial velocity of the object (YZ flipped)</param>
-            <param name="refBody">The main body</param>
-            <param name="UT">The universal time at which to start the orbit.</param>
-        </member>
-        <member name="P:Orbit.ApA">
-            <summary>
-            The apoapsis of the orbit in meters, measured from sea level.
-            </summary>
-        </member>
-        <member name="P:Orbit.ApR">
-            <summary>
-            The apoapsis of the orbit in meters, measured from the center of the main body.
-            </summary>
-        </member>
-        <member name="P:Orbit.PeA">
-            <summary>
-            The periapsis of the orbit in meters, measured from sea level.
-            </summary>
-        </member>
-        <member name="P:Orbit.PeR">
-            <summary>
-            The periapsis of the orbit in meters, measured from the center of the main body.
+            Physics warp mode
             </summary>
         </member>
     </members>
