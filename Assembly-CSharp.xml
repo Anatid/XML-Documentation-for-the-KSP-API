@@ -668,6 +668,16 @@
             rotation and its magnitude is the rotation rate in radians per second.
             </summary>
         </member>
+        <member name="F:CelestialBody.atmosphere">
+            <summary>
+            Whether this body has an atmosphere
+            </summary>
+        </member>
+        <member name="F:CelestialBody.atmosphereContainsOxygen">
+            <summary>
+            Presumably, whether jet engines will work in this body's atmosphere
+            </summary>
+        </member>
         <member name="F:CelestialBody.atmosphereMultiplier">
             <summary>
             Seems to be the pressure of the body's atmosphere at sea level, in units of Kerbin atmospheres at sea level.
@@ -701,15 +711,25 @@
             kilograms.
             </summary>
         </member>
+        <member name="F:CelestialBody.hillSphere">
+            <summary>
+            Unused?
+            </summary>
+        </member>
         <member name="F:CelestialBody.Mass">
             <summary>
-            The mass of the body in kilograms.
+            The mass of the body in kilograms. Computed 
             </summary>
         </member>
         <member name="F:CelestialBody.maxAtmosphereAltitude">
             <summary>
             The height of the upper edge of the body's atmosphere, in meters above sea level. It seems
             that the drag force may actually go to exactly zero below this height.
+            </summary>
+        </member>
+        <member name="F:CelestialBody.ocean">
+            <summary>
+            Whether this planet has an ocean at "sea level"
             </summary>
         </member>
         <member name="F:CelestialBody.orbitingBodies">
@@ -725,6 +745,21 @@
         <member name="F:CelestialBody.Radius">
             <summary>
             The radius of the planet in meters. Note that this is only the radius of "sea level"; the actual terrain may be higher.
+            </summary>
+        </member>
+        <member name="F:CelestialBody.rotationPeriod">
+            <summary>
+            The time, in seconds, for the body to complete one rotation around its axis
+            </summary>
+        </member>
+        <member name="F:CelestialBody.sphereOfInfluence">
+            <summary>
+            The radius of this body's sphere of influence (measured from the center of the body), in meters.
+            </summary>
+        </member>
+        <member name="F:CelestialBody.tidallyLocked">
+            <summary>
+            Presumably, whether this body is tidally locked to the body around with it orbits.
             </summary>
         </member>
         <member name="F:CelestialBody.timeWarpAltitudeLimits">
@@ -756,6 +791,15 @@
             <param name="worldPos">A position in world coordinates</param>
             <returns>Longitude in degrees</returns>
         </member>
+        <member name="M:CelestialBody.GetRelSurfacePosition(System.Double,System.Double,System.Double)">
+            <summary>
+            Returns a vector pointing from the center of the body to the given latitude, longitude, and altitude.
+            </summary>
+            <param name="lat">Latitude in degrees</param>
+            <param name="lon">Longitude in degrees</param>
+            <param name="alt">Altitude above sea level in meters</param>
+            <returns>A position vector relative to the center of the body</returns>
+        </member>
         <member name="M:CelestialBody.getRFrmVel(Vector3d)">
             <summary>
             Returns the velocity at a given position of the frame of reference that rotates with the planet.
@@ -773,6 +817,15 @@
             <param name="lon">Longitude in degrees</param>
             <returns>A unit normal vector to the surface</returns>
         </member>
+        <member name="M:CelestialBody.GetWorldSurfacePosition(System.Double,System.Double,System.Double)">
+            <summary>
+            Returns the position, in world coordinates, of a given latitude, longitude, and altitude
+            </summary>
+            <param name="lat">Latitude in degrees</param>
+            <param name="lon">Longitude in degrees</param>
+            <param name="alt">Altitude above sea level in meters</param>
+            <returns>Position in world coordinates</returns>
+        </member>
         <member name="P:CelestialBody.orbit">
             <summary>
             Describes the orbit of this body around its primary.
@@ -781,6 +834,87 @@
         <member name="P:CelestialBody.position">
             <summary>
             The position of the center of the body, in world coordinates.
+            </summary>
+        </member>
+        <member name="P:CelestialBody.referenceBody">
+            <summary>
+            Presumably, the body this body orbits around
+            </summary>
+        </member>
+        <member name="F:TimeWarp.altitudeLimits">
+            <summary>
+            Unused? CelestialBodies have their own sets of altitude limits.
+            </summary>
+        </member>
+        <member name="F:TimeWarp.fetch">
+            <summary>
+            Use this TimeWarp instance to access non-static members. 
+            </summary>
+        </member>
+        <member name="F:TimeWarp.physicsWarpRates">
+            <summary>
+            The available physics warp rates. In 0.18.2 these are {1, 2, 3, 4} by default. You can modify the
+            available rates by modifying this array.
+            </summary>
+        </member>
+        <member name="F:TimeWarp.warpRates">
+            <summary>
+            The available regular warp rates. In 0.18.2 these are {1, 5, 10, 50, 100, 1000, 10000, 100000} by default.
+            You can modify the available rates by modifying this array.
+            </summary>
+        </member>
+        <member name="M:TimeWarp.GetAltitudeLimit(System.Int32,CelestialBody)">
+            <summary>
+            Presumably, gets the minimum altitude in meters above the sea level of the given body at which the
+            given warp rate index is allowed.
+            </summary>
+            <param name="i">A warp rate index</param>
+            <param name="body">The body in question</param>
+            <returns>The minimum altitude in meters at which that warp rate index is allowed</returns>
+        </member>
+        <member name="M:TimeWarp.SetRate(System.Int32,System.Boolean)">
+            <summary>
+            Changes the warp rate to either warpRates[rateIndex] or physicsWarpRates[rate_index], depending
+            on whether WarpMode is HIGH or LOW.
+            </summary>
+            <param name="rate_index">The index of the desired new warp rate</param>
+            <param name="instant">If false, KSP will gradually smoothly adjust the warp rate up or down until it reaches the target.
+            If true, the warp rate will change instantly.</param>
+        </member>
+        <member name="P:TimeWarp.CurrentRate">
+            <summary>
+            The current warp rate, e.g. 50 if the current warp rate is 50x. This number
+            may not be equal to one of the entries in warpRates, because KSP will smoothly
+            interpolate between two warp rates over a period of time when you increase
+            or decrease the warp.
+            </summary>
+        </member>
+        <member name="P:TimeWarp.CurrentRateIndex">
+            <summary>
+            The index of the current current warp rate in either warpRates or physicsWarpRates, depending
+            on whether WarpMode is HIGH or LOW. Note that CurrentRate may not equal the warp rate indexed
+            by CurrentRateIndex if KSP has not finished interpolating the last warp change.
+            </summary>
+        </member>
+        <member name="P:TimeWarp.fixedDeltaTime">
+            <summary>
+            The time between FixedUpdate cycles (i.e., the time between physics steps). See the Unity FixedUpdate
+            documentation for more details.
+            </summary>
+        </member>
+        <member name="P:TimeWarp.WarpMode">
+            <summary>
+            Whether we are in regular warp mode or physics warp mode
+            </summary>
+        </member>
+        <member name="F:TimeWarp.Modes.HIGH">
+            <summary>
+            Reguar time warp mode
+            </summary>
+        </member>
+        <member name="F:TimeWarp.Modes.LOW">
+            <summary>
+            Physics warp mode
             </summary>
         </member>
         <member name="F:PatchedConicSolver.maneuverNodes">
@@ -1201,80 +1335,202 @@
             Whether RCS is enabled.
             </summary>
         </member>
-        <member name="F:TimeWarp.altitudeLimits">
+        <member name="F:Planetarium.CurrentMainBody">
             <summary>
-            Unused? CelestialBodies have their own sets of altitude limits.
+            Presumably, the main body of the active vessel?
             </summary>
         </member>
-        <member name="F:TimeWarp.fetch">
+        <member name="F:Planetarium.fetch">
             <summary>
-            Use this TimeWarp instance to access non-static members. 
+            Use this instance to access non-static fields.
             </summary>
         </member>
-        <member name="F:TimeWarp.physicsWarpRates">
+        <member name="F:Planetarium.Sun">
             <summary>
-            The available physics warp rates. In 0.18.2 these are {1, 2, 3, 4} by default. You can modify the
-            available rates by modifying this array.
+            Presumably, the CelestialBody representing the Sun.
             </summary>
         </member>
-        <member name="F:TimeWarp.warpRates">
+        <member name="M:Planetarium.FrameIsRotating">
             <summary>
-            The available regular warp rates. In 0.18.2 these are {1, 5, 10, 50, 100, 1000, 10000, 100000} by default.
-            You can modify the available rates by modifying this array.
+            Presumably, whether the game is currently using a rotating
+            frame for physics (as opposed to an unrotating inertial frame). 
+            Below a certain altitude (CelestialBody.inverseRot
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Planetarium.GetUniversalTime">
+            <summary>
+            The simulation time, in seconds, since this save was started.
+            </summary>
+            <returns>Universal time, in seconds</returns>
+        </member>
+        <member name="M:PartResourceLibrary.GetDefinition(System.Int32)">
+            <summary>
+            Gets information about a resource, specified by its integer ID.
+            </summary>
+            <param name="id">The integer ID of the resource</param>
+            <returns>A PartResourceDefinition, which contains all the information about the resource</returns>
+        </member>
+        <member name="M:PartResourceLibrary.GetDefinition(System.String)">
+            <summary>
+            Gets information about a resource, specified by its name as a string.
+            </summary>
+            <param name="name">The name of the resource, e.g. "ElectricCharge"</param>
+            <returns>A PartResourceDefinition, which contains all the information about the resource</returns>
+        </member>
+        <member name="P:PartResourceLibrary.Instance">
+            <summary>
+            Use this instance to access the methods of this class
             </summary>
         </member>
-        <member name="M:TimeWarp.GetAltitudeLimit(System.Int32,CelestialBody)">
+        <member name="F:PartResource.amount">
             <summary>
-            Presumably, gets the minimum altitude in meters above the sea level of the given body at which the
-            given warp rate index is allowed.
-            </summary>
-            <param name="i">A warp rate index</param>
-            <param name="body">The body in question</param>
-            <returns>The minimum altitude in meters at which that warp rate index is allowed</returns>
-        </member>
-        <member name="M:TimeWarp.SetRate(System.Int32,System.Boolean)">
-            <summary>
-            Changes the warp rate to either warpRates[rateIndex] or physicsWarpRates[rate_index], depending
-            on whether WarpMode is HIGH or LOW.
-            </summary>
-            <param name="rate_index">The index of the desired new warp rate</param>
-            <param name="instant">If false, KSP will gradually smoothly adjust the warp rate up or down until it reaches the target.
-            If true, the warp rate will change instantly.</param>
-        </member>
-        <member name="P:TimeWarp.CurrentRate">
-            <summary>
-            The current warp rate, e.g. 50 if the current warp rate is 50x. This number
-            may not be equal to one of the entries in warpRates, because KSP will smoothly
-            interpolate between two warp rates over a period of time when you increase
-            or decrease the warp.
+            How much of the resource is in this part, in whatever units the resource uses.
             </summary>
         </member>
-        <member name="P:TimeWarp.CurrentRateIndex">
+        <member name="F:PartResource.info">
             <summary>
-            The index of the current current warp rate in either warpRates or physicsWarpRates, depending
-            on whether WarpMode is HIGH or LOW. Note that CurrentRate may not equal the warp rate indexed
-            by CurrentRateIndex if KSP has not finished interpolating the last warp change.
+            The definition of this type of resource, which contains all information about this resource type.
             </summary>
         </member>
-        <member name="P:TimeWarp.fixedDeltaTime">
+        <member name="F:PartResource.maxAmount">
             <summary>
-            The time between FixedUpdate cycles (i.e., the time between physics steps). See the Unity FixedUpdate
-            documentation for more details.
+            The maximum amount of this resource that this part can hold.
             </summary>
         </member>
-        <member name="P:TimeWarp.WarpMode">
+        <member name="F:PartResource.part">
             <summary>
-            Whether we are in regular warp mode or physics warp mode
+            The part whose stored resource this object represents
             </summary>
         </member>
-        <member name="F:TimeWarp.Modes.HIGH">
+        <member name="F:PartResource.resourceName">
             <summary>
-            Reguar time warp mode
+            The name of this resource, as a string, e.g. "ElectricCharge"
             </summary>
         </member>
-        <member name="F:TimeWarp.Modes.LOW">
+        <member name="P:PartResourceDefinition.density">
             <summary>
-            Physics warp mode
+            The mass of this resource, per unit. This is not necessarily per unit volume, as resources
+            don't have defined volumes. Instead resource "density" is the mass of one units of the resourc.e
+            </summary>
+        </member>
+        <member name="P:PartResourceDefinition.id">
+            <summary>
+            The integer ID of this resource type.
+            </summary>
+        </member>
+        <member name="P:PartResourceDefinition.name">
+            <summary>
+            The string ID of this resource type
+            </summary>
+        </member>
+        <member name="P:PartResourceDefinition.resourceFlowMode">
+            <summary>
+            How this resource does or does not flow between parts on a ship in response
+            to resource requests by engines and the like.
+            </summary>
+        </member>
+        <member name="P:PartResourceDefinition.resourceTransferMode">
+            <summary>
+            How this resource does or does not flow when using the resource transfer function?
+            </summary>
+        </member>
+        <member name="F:ResourceFlowMode.NO_FLOW">
+            <summary>
+            This resource cannot flow between parts (like SolidFuel).
+            </summary>
+        </member>
+        <member name="F:ResourceFlowMode.ALL_VESSEL">
+            <summary>
+            This resource can flow between any two parts on the ship
+            without restrictions or intermediate fuel lines (like MonoPropellant).
+            </summary>
+        </member>
+        <member name="F:ResourceFlowMode.EVEN_FLOW">
+            <summary>
+            Unused?
+            </summary>
+        </member>
+        <member name="F:ResourceFlowMode.STACK_PRIORITY_SEARCH">
+            <summary>
+            This resource behaves like LiquidFuel or Oxidizer, and can only flow
+            through crossfeed-enabled parts and fuel lines.
+            </summary>
+        </member>
+        <member name="F:MapView.MapIsEnabled">
+            <summary>
+            Whether the game is currently in map view or not.
+            </summary>
+        </member>
+        <member name="M:MapView.EnterMapView">
+            <summary>
+            Calling this function will cause the game to switch to map view from the flight view.
+            </summary>
+        </member>
+        <member name="M:MapView.ExitMapView">
+            <summary>
+            Calling this function will cause the game to switch to flight view from the map view.
+            </summary>
+        </member>
+        <member name="F:PlanetariumCamera.fetch">
+            <summary>
+            Use this instance to access non-static members of this class.
+            </summary>
+        </member>
+        <member name="P:PlanetariumCamera.Camera">
+            <summary>
+            This is the Camera that looks at the planetarium scene. See the Unity documentation on Camera
+            to see what you can do with this object.
+            </summary>
+        </member>
+        <member name="P:FlightCamera.CamHdg">
+            <summary>
+            You can set this to change the look direction of the in-flight camera (value is in radians).
+            </summary>
+        </member>
+        <member name="P:FlightCamera.CamPitch">
+            <summary>
+            You can set this to change the look direction of the in-flight camera (value is in radians).
+            </summary>
+        </member>
+        <member name="M:ScaledSpace.LocalToScaledSpace(Vector3d)">
+            <summary>
+            Convert a position in world coordinates into a position in planetarium coordinates.
+            </summary>
+            <param name="localSpacePoint">A position in world coordinates</param>
+            <returns>The corresponding position in planetarium coordinates</returns>
+        </member>
+        <member name="M:ScaledSpace.ScaledToLocalSpace(Vector3d)">
+            <summary>
+            Convert a position in planetarium coordinates into a position in world coordinates.
+            </summary>
+            <param name="scaledSpacePoint">A position in planetarium coordinates.</param>
+            <returns>The corresponding position in world coordinates.</returns>
+        </member>
+        <member name="P:ScaledSpace.ScaleFactor">
+            <summary>
+            "Scaled space" is the coordinate system used by the planetarium view. It's the same coordinate system as
+            the world coordinates used by the physics, except scaled down by this scale factor.
+            </summary>
+        </member>
+        <member name="F:HighLogic.fetch">
+            <summary>
+            Use this instance to access non-static members of this class.
+            </summary>
+        </member>
+        <member name="F:HighLogic.LoadedSceneIsEditor">
+            <summary>
+            Whether the game is currently in the VAB or SPH scenes.
+            </summary>
+        </member>
+        <member name="F:HighLogic.LoadedSceneIsFlight">
+            <summary>
+            Whether the game is currently in the flight scene.
+            </summary>
+        </member>
+        <member name="P:HighLogic.Skin">
+            <summary>
+            The GUISkin used by the game. Set GUI.skin = HighLogic.Skin at the start of your GUI function to use it yourself.
             </summary>
         </member>
     </members>

@@ -20,7 +20,13 @@ public class CelestialBody : MonoBehaviour
     /// </summary>
     public Vector3d angularVelocity;
     public float atmoshpereTemperatureMultiplier;
+    /// <summary>
+    /// Whether this body has an atmosphere
+    /// </summary>
     public bool atmosphere;
+    /// <summary>
+    /// Presumably, whether jet engines will work in this body's atmosphere
+    /// </summary>
     public bool atmosphereContainsOxygen;
     /// <summary>
     /// Seems to be the pressure of the body's atmosphere at sea level, in units of Kerbin atmospheres at sea level.
@@ -52,12 +58,15 @@ public class CelestialBody : MonoBehaviour
     /// kilograms.
     /// </summary>
     public double gravParameter;
+    /// <summary>
+    /// Unused?
+    /// </summary>
     public double hillSphere;
     public double initialRotation;
     public bool inverseRotation;
     public float inverseRotThresholdAltitude;
     /// <summary>
-    /// The mass of the body in kilograms.
+    /// The mass of the body in kilograms. Computed 
     /// </summary>
     public double Mass;
     /// <summary>
@@ -65,6 +74,9 @@ public class CelestialBody : MonoBehaviour
     /// that the drag force may actually go to exactly zero below this height.
     /// </summary>
     public float maxAtmosphereAltitude;
+    /// <summary>
+    /// Whether this planet has an ocean at "sea level"
+    /// </summary>
     public bool ocean;
     public OrbitDriver orbitDriver;
     /// <summary>
@@ -86,11 +98,20 @@ public class CelestialBody : MonoBehaviour
     public bool rotates;
     public QuaternionD rotation;
     public double rotationAngle;
+    /// <summary>
+    /// The time, in seconds, for the body to complete one rotation around its axis
+    /// </summary>
     public double rotationPeriod;
+    /// <summary>
+    /// The radius of this body's sphere of influence (measured from the center of the body), in meters.
+    /// </summary>
     public double sphereOfInfluence;
     public double staticPressureASL;
     public AnimationCurve temperatureCurve;
     public PlanetQuadTreeController terrainController;
+    /// <summary>
+    /// Presumably, whether this body is tidally locked to the body around with it orbits.
+    /// </summary>
     public bool tidallyLocked;
     /// <summary>
     /// Presumably, this gives the minimum altitude you must have in order to be allowed to use each
@@ -112,6 +133,9 @@ public class CelestialBody : MonoBehaviour
     /// The position of the center of the body, in world coordinates.
     /// </summary>
     public extern Vector3d position { get; set; }
+    /// <summary>
+    /// Presumably, the body this body orbits around
+    /// </summary>
     public extern CelestialBody referenceBody { get; }
     public extern string theName { get; }
 
@@ -149,6 +173,13 @@ public class CelestialBody : MonoBehaviour
     public extern Vector3d getPositionAtUT(double UT);
     public extern Vector3d GetRelSurfaceNVector(double lat, double lon);
     public extern Vector3d GetRelSurfacePosition(Vector3d worldPosition);
+    /// <summary>
+    /// Returns a vector pointing from the center of the body to the given latitude, longitude, and altitude.
+    /// </summary>
+    /// <param name="lat">Latitude in degrees</param>
+    /// <param name="lon">Longitude in degrees</param>
+    /// <param name="alt">Altitude above sea level in meters</param>
+    /// <returns>A position vector relative to the center of the body</returns>
     public extern Vector3d GetRelSurfacePosition(double lat, double lon, double alt);
     /// <summary>
     /// Returns the velocity at a given position of the frame of reference that rotates with the planet.
@@ -169,6 +200,13 @@ public class CelestialBody : MonoBehaviour
     public extern Transform GetTransform();
     public extern Vector3d getTruePositionAtUT(double UT);
     public extern Vessel GetVessel();
+    /// <summary>
+    /// Returns the position, in world coordinates, of a given latitude, longitude, and altitude
+    /// </summary>
+    /// <param name="lat">Latitude in degrees</param>
+    /// <param name="lon">Longitude in degrees</param>
+    /// <param name="alt">Altitude above sea level in meters</param>
+    /// <returns>Position in world coordinates</returns>
     public extern Vector3d GetWorldSurfacePosition(double lat, double lon, double alt);
     public extern bool HasChild(CelestialBody body);
     public extern bool HasParent(CelestialBody body);
