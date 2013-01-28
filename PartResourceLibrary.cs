@@ -5,6 +5,9 @@
 using System;
 using UnityEngine;
 
+/// <summary>
+/// The PartResourceLibrary lets you retrieve information about a resource type, given its name or integer id.
+/// </summary>
 public class PartResourceLibrary : MonoBehaviour
 {
     [SerializeField]

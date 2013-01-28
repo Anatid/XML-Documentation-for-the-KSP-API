@@ -5,6 +5,9 @@
 using System;
 using UnityEngine;
 
+/// <summary>
+/// A PartResource object represents the store of a single type of resource within a Part.
+/// </summary>
 public class PartResource : MonoBehaviour
 {
     /// <summary>

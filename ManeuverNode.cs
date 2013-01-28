@@ -5,6 +5,10 @@
 using System;
 using UnityEngine;
 
+
+/// <summary>
+/// Represents a maneuver node.
+/// </summary>
 [Serializable]
 public class ManeuverNode
 {

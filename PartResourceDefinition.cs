@@ -4,6 +4,9 @@
 
 using System;
 
+/// <summary>
+/// A PartResourceDefinition contains the basic information defining a type of resource.
+/// </summary>
 [Serializable]
 public class PartResourceDefinition
 {

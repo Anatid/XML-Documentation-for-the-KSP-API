@@ -4,6 +4,10 @@
 
 using System;
 
+/// <summary>
+/// A FlightCtrlState is a snapshot of the state of all control inputs to a vessel at a given instant in time.
+/// See FlightInputHandler.state and Vessel.OnFlyByWire.
+/// </summary>
 public class FlightCtrlState
 {
     /// <summary>

@@ -262,6 +262,11 @@
             The currently selected target vessel, celestial body, or docking node. If no target is selected, this is null.
             </summary>
         </member>
+        <member name="T:ManeuverNode">
+            <summary>
+            Represents a maneuver node.
+            </summary>
+        </member>
         <member name="F:ManeuverNode.DeltaV">
             <summary>
             The delta-V of the burn represented by this maneuver node, in m/s. NOTE: maneuver nodes use a special coordinate system for delta-V.
@@ -298,6 +303,12 @@
             </summary>
             <param name="dV">The new delta-V. See the DeltaV for notes about the coordinate system used.</param>
             <param name="ut">The new universal time.</param>
+        </member>
+        <member name="T:FlightCtrlState">
+            <summary>
+            A FlightCtrlState is a snapshot of the state of all control inputs to a vessel at a given instant in time.
+            See FlightInputHandler.state and Vessel.OnFlyByWire.
+            </summary>
         </member>
         <member name="F:FlightCtrlState.fastThrottle">
             <summary>
@@ -388,6 +399,119 @@
             Presumably, whether this flight control represents "neutral" controls, i.e., no input and zero throttle.
             </summary>
         </member>
+        <member name="T:ResourceFlowMode">
+            <summary>
+            An enumeration of the different behaviors resources can have with respect to fuel flow.
+            </summary>
+        </member>
+        <member name="F:ResourceFlowMode.NO_FLOW">
+            <summary>
+            This resource cannot flow between parts (like SolidFuel).
+            </summary>
+        </member>
+        <member name="F:ResourceFlowMode.ALL_VESSEL">
+            <summary>
+            This resource can flow between any two parts on the ship
+            without restrictions or intermediate fuel lines (like MonoPropellant).
+            </summary>
+        </member>
+        <member name="F:ResourceFlowMode.EVEN_FLOW">
+            <summary>
+            Unused?
+            </summary>
+        </member>
+        <member name="F:ResourceFlowMode.STACK_PRIORITY_SEARCH">
+            <summary>
+            This resource behaves like LiquidFuel or Oxidizer, and can only flow
+            through crossfeed-enabled parts and fuel lines.
+            </summary>
+        </member>
+        <member name="T:PlanetariumCamera">
+            <summary>
+            A class related to the map view camera.
+            </summary>
+        </member>
+        <member name="F:PlanetariumCamera.fetch">
+            <summary>
+            Use this instance to access non-static members of this class.
+            </summary>
+        </member>
+        <member name="P:PlanetariumCamera.Camera">
+            <summary>
+            This is the Camera that looks at the planetarium scene. See the Unity documentation on Camera
+            to see what you can do with this object.
+            </summary>
+        </member>
+        <member name="T:Planetarium">
+            <summary>
+            Probably the most useful function here is Planetarium.GetUniversalTime().
+            </summary>
+        </member>
+        <member name="F:Planetarium.CurrentMainBody">
+            <summary>
+            Presumably, the main body of the active vessel?
+            </summary>
+        </member>
+        <member name="F:Planetarium.fetch">
+            <summary>
+            Use this instance to access non-static fields.
+            </summary>
+        </member>
+        <member name="F:Planetarium.Sun">
+            <summary>
+            The CelestialBody representing the Sun.
+            </summary>
+        </member>
+        <member name="M:Planetarium.FrameIsRotating">
+            <summary>
+            Presumably, whether the game is currently using a rotating
+            frame for physics (as opposed to an unrotating inertial frame). 
+            Below a certain altitude (CelestialBody.inverseRot
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Planetarium.GetUniversalTime">
+            <summary>
+            The simulation time, in seconds, since this save was started.
+            </summary>
+            <returns>Universal time, in seconds</returns>
+        </member>
+        <member name="T:PartResource">
+            <summary>
+            A PartResource object represents the store of a single type of resource within a Part.
+            </summary>
+        </member>
+        <member name="F:PartResource.amount">
+            <summary>
+            How much of the resource is in this part, in whatever units the resource uses.
+            </summary>
+        </member>
+        <member name="F:PartResource.info">
+            <summary>
+            The definition of this type of resource, which contains all information about this resource type.
+            </summary>
+        </member>
+        <member name="F:PartResource.maxAmount">
+            <summary>
+            The maximum amount of this resource that this part can hold.
+            </summary>
+        </member>
+        <member name="F:PartResource.part">
+            <summary>
+            The part whose stored resource this object represents
+            </summary>
+        </member>
+        <member name="F:PartResource.resourceName">
+            <summary>
+            The name of this resource, as a string, e.g. "ElectricCharge"
+            </summary>
+        </member>
+        <member name="T:ScreenMessages">
+            <summary>
+            A class that lets you post temporary messages to the screen. If you use this class your messages will
+            automatically have the same style as regular in-game messages.
+            </summary>
+        </member>
         <member name="F:ScreenMessages.activeMessages">
             <summary>
             The set of currently active screen messages. This is a non-static member, but you can get a
@@ -435,6 +559,11 @@
             </summary>
             <param name="msg">The message to remove</param>
         </member>
+        <member name="T:ScreenMessageStyle">
+            <summary>
+            An enumeration of the different styles of message you can display.
+            </summary>
+        </member>
         <member name="F:ScreenMessageStyle.UPPER_CENTER">
             <summary>
             This results in a message in the same font and position as the "Warp = {number}x" message.
@@ -453,6 +582,13 @@
         <member name="F:ScreenMessageStyle.LOWER_CENTER">
             <summary>
             What sort of message style does this produce?
+            </summary>
+        </member>
+        <member name="T:Part">
+            <summary>
+            Each part on a vessel is represented by a Part object. Plugins can add new functionality to parts by defining new
+            PartModules, which can then be added to Parts. It is also possible to define new subclasses of Part, but this
+            is deprecated in favor of PartModules.
             </summary>
         </member>
         <member name="F:Part.ActivatesEvenIfDisconnected">
@@ -652,9 +788,129 @@
             Part has no physics, and in particular no mass or drag.
             </summary>
         </member>
+        <member name="T:MapView">
+            <summary>
+            This class stores some global information related to the map view.
+            </summary>
+        </member>
+        <member name="F:MapView.MapIsEnabled">
+            <summary>
+            Whether the game is currently in map view or not.
+            </summary>
+        </member>
+        <member name="M:MapView.EnterMapView">
+            <summary>
+            Calling this function will cause the game to switch to map view from the flight view.
+            </summary>
+        </member>
+        <member name="M:MapView.ExitMapView">
+            <summary>
+            Calling this function will cause the game to switch to flight view from the map view.
+            </summary>
+        </member>
+        <member name="T:HighLogic">
+            <summary>
+            This class stores some very high-level information about the current game state.
+            </summary>
+        </member>
+        <member name="F:HighLogic.fetch">
+            <summary>
+            Use this instance to access non-static members of this class.
+            </summary>
+        </member>
+        <member name="F:HighLogic.LoadedSceneIsEditor">
+            <summary>
+            Whether the game is currently in the VAB or SPH scenes.
+            </summary>
+        </member>
+        <member name="F:HighLogic.LoadedSceneIsFlight">
+            <summary>
+            Whether the game is currently in the flight scene.
+            </summary>
+        </member>
+        <member name="P:HighLogic.Skin">
+            <summary>
+            The GUISkin used by the game. Set GUI.skin = HighLogic.Skin at the start of your GUI function to use it yourself.
+            </summary>
+        </member>
+        <member name="T:ScaledSpace">
+            <summary>
+            A class that handles the transformations between the scaled-down coordinate system used by the map view and the 
+            regular coordinate system used by the main flight view and the physics.
+            </summary>
+        </member>
+        <member name="M:ScaledSpace.LocalToScaledSpace(Vector3d)">
+            <summary>
+            Convert a position in world coordinates into a position in planetarium coordinates.
+            </summary>
+            <param name="localSpacePoint">A position in world coordinates</param>
+            <returns>The corresponding position in planetarium coordinates</returns>
+        </member>
+        <member name="M:ScaledSpace.ScaledToLocalSpace(Vector3d)">
+            <summary>
+            Convert a position in planetarium coordinates into a position in world coordinates.
+            </summary>
+            <param name="scaledSpacePoint">A position in planetarium coordinates.</param>
+            <returns>The corresponding position in world coordinates.</returns>
+        </member>
+        <member name="P:ScaledSpace.ScaleFactor">
+            <summary>
+            "Scaled space" is the coordinate system used by the planetarium view. It's the same coordinate system as
+            the world coordinates used by the physics, except scaled down by this scale factor.
+            </summary>
+        </member>
+        <member name="T:EditorLogic">
+            <summary>
+            This class has information about what is going on in the editor. In particular see SortedShipList.
+            </summary>
+        </member>
         <member name="P:EditorLogic.SortedShipList">
             <summary>
             A list of all parts in the vessel that is being edited.
+            </summary>
+        </member>
+        <member name="T:PartResourceLibrary">
+            <summary>
+            The PartResourceLibrary lets you retrieve information about a resource type, given its name or integer id.
+            </summary>
+        </member>
+        <member name="M:PartResourceLibrary.GetDefinition(System.Int32)">
+            <summary>
+            Gets information about a resource, specified by its integer ID.
+            </summary>
+            <param name="id">The integer ID of the resource</param>
+            <returns>A PartResourceDefinition, which contains all the information about the resource</returns>
+        </member>
+        <member name="M:PartResourceLibrary.GetDefinition(System.String)">
+            <summary>
+            Gets information about a resource, specified by its name as a string.
+            </summary>
+            <param name="name">The name of the resource, e.g. "ElectricCharge"</param>
+            <returns>A PartResourceDefinition, which contains all the information about the resource</returns>
+        </member>
+        <member name="P:PartResourceLibrary.Instance">
+            <summary>
+            Use this instance to access the methods of this class
+            </summary>
+        </member>
+        <member name="T:FlightCamera">
+            <summary>
+            This class is related to control of the main camera used in the flight scene.
+            </summary>
+        </member>
+        <member name="P:FlightCamera.CamHdg">
+            <summary>
+            You can set this to change the look direction of the in-flight camera (value is in radians).
+            </summary>
+        </member>
+        <member name="P:FlightCamera.CamPitch">
+            <summary>
+            You can set this to change the look direction of the in-flight camera (value is in radians).
+            </summary>
+        </member>
+        <member name="T:CelestialBody">
+            <summary>
+            The Sun, the planets, and the moons are all CelestialBodies.
             </summary>
         </member>
         <member name="F:CelestialBody.angularV">
@@ -841,6 +1097,11 @@
             Presumably, the body this body orbits around
             </summary>
         </member>
+        <member name="T:TimeWarp">
+            <summary>
+            The class that handles time warp.
+            </summary>
+        </member>
         <member name="F:TimeWarp.altitudeLimits">
             <summary>
             Unused? CelestialBodies have their own sets of altitude limits.
@@ -917,6 +1178,12 @@
             Physics warp mode
             </summary>
         </member>
+        <member name="T:PatchedConicSolver">
+            <summary>
+            Each vessel has a PatchedConicSolver, which stores the predicted patched conics trajectory and
+            any maneuver nodes that currently exist.
+            </summary>
+        </member>
         <member name="F:PatchedConicSolver.maneuverNodes">
             <summary>
             A list of the maneuver nodes that are currently planned for this vessel.
@@ -934,6 +1201,14 @@
             Remove a maneuver node from the flight plane.
             </summary>
             <param name="node">The maneuver node to be removed.</param>
+        </member>
+        <member name="T:Orbit">
+            <summary>
+            <para>An Orbit class represents a Keplerian orbit. Each Vessel and each CelestialBody has an Orbit. CelestialBodies and
+            on-rails Vessels follow their Orbits exactly. Off-rails vessels (the active vessel and any nearby vessels) 
+            do not follow their orbits exactly; instead their motion is computed frame-by-frame from the forces acting on them.</para>
+            <para>A patched consics trajectory consists of a series of Orbits, called patches.</para>
+            </summary>
         </member>
         <member name="F:Orbit.activePatch">
             <summary>
@@ -1060,6 +1335,12 @@
         <member name="P:Orbit.PeR">
             <summary>
             The periapsis of the orbit in meters, measured from the center of the main body.
+            </summary>
+        </member>
+        <member name="T:Vessel">
+            <summary>
+            A Vessel object represents a single vessel. Parts that break off from a vessel become their own Vessels. Vessels that merge
+            via docking become one Vessel.
             </summary>
         </member>
         <member name="F:Vessel.acceleration">
@@ -1299,6 +1580,43 @@
             On a hyperbolic trajectory
             </summary>
         </member>
+        <member name="T:PartResourceDefinition">
+            <summary>
+            A PartResourceDefinition contains the basic information defining a type of resource.
+            </summary>
+        </member>
+        <member name="P:PartResourceDefinition.density">
+            <summary>
+            The mass of this resource, per unit. This is not necessarily per unit volume, as resources
+            don't have defined volumes. Instead resource "density" is the mass of one units of the resourc.e
+            </summary>
+        </member>
+        <member name="P:PartResourceDefinition.id">
+            <summary>
+            The integer ID of this resource type.
+            </summary>
+        </member>
+        <member name="P:PartResourceDefinition.name">
+            <summary>
+            The string ID of this resource type
+            </summary>
+        </member>
+        <member name="P:PartResourceDefinition.resourceFlowMode">
+            <summary>
+            How this resource does or does not flow between parts on a ship in response
+            to resource requests by engines and the like.
+            </summary>
+        </member>
+        <member name="P:PartResourceDefinition.resourceTransferMode">
+            <summary>
+            How this resource does or does not flow when using the resource transfer function?
+            </summary>
+        </member>
+        <member name="T:FlightInputHandler">
+            <summary>
+            FlightInputHandler stores some global information about the control of the current active vessel.
+            </summary>
+        </member>
         <member name="F:FlightInputHandler.fetch">
             <summary>
             Use this FlightInputHandler instance to access non-static members of the class.
@@ -1335,202 +1653,112 @@
             Whether RCS is enabled.
             </summary>
         </member>
-        <member name="F:Planetarium.CurrentMainBody">
+        <member name="T:FuelLine">
             <summary>
-            Presumably, the main body of the active vessel?
+            Stock fuel lines are not yet PartModules, but are implemented through this class.
             </summary>
         </member>
-        <member name="F:Planetarium.fetch">
+        <member name="F:FuelLine.target">
             <summary>
-            Use this instance to access non-static fields.
+            The part that can draw fuel through this fuel line. This fuel line in turn draws fuel from its parent.
             </summary>
         </member>
-        <member name="F:Planetarium.Sun">
+        <member name="T:ModuleEngines">
             <summary>
-            Presumably, the CelestialBody representing the Sun.
+            A PartModule that can be configured to behave like many different kinds of engines. All stock
+            propulsion systems except for RCS are implemented through ModuleEngines.
             </summary>
         </member>
-        <member name="M:Planetarium.FrameIsRotating">
+        <member name="F:ModuleEngines.atmosphereCurve">
             <summary>
-            Presumably, whether the game is currently using a rotating
-            frame for physics (as opposed to an unrotating inertial frame). 
-            Below a certain altitude (CelestialBody.inverseRot
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Planetarium.GetUniversalTime">
-            <summary>
-            The simulation time, in seconds, since this save was started.
-            </summary>
-            <returns>Universal time, in seconds</returns>
-        </member>
-        <member name="M:PartResourceLibrary.GetDefinition(System.Int32)">
-            <summary>
-            Gets information about a resource, specified by its integer ID.
-            </summary>
-            <param name="id">The integer ID of the resource</param>
-            <returns>A PartResourceDefinition, which contains all the information about the resource</returns>
-        </member>
-        <member name="M:PartResourceLibrary.GetDefinition(System.String)">
-            <summary>
-            Gets information about a resource, specified by its name as a string.
-            </summary>
-            <param name="name">The name of the resource, e.g. "ElectricCharge"</param>
-            <returns>A PartResourceDefinition, which contains all the information about the resource</returns>
-        </member>
-        <member name="P:PartResourceLibrary.Instance">
-            <summary>
-            Use this instance to access the methods of this class
+            Represents the specific impulse (Isp) of the engine as a function of altitude. To get
+            the Isp at a certain height h (in meters), use <code>atmosphereCurve.Evaluate(h)</code>.
             </summary>
         </member>
-        <member name="F:PartResource.amount">
+        <member name="F:ModuleEngines.engineAccelerationSpeed">
             <summary>
-            How much of the resource is in this part, in whatever units the resource uses.
+            How quickly the engine spools up? (in what units?)
             </summary>
         </member>
-        <member name="F:PartResource.info">
+        <member name="F:ModuleEngines.engineDecelerationSpeed">
             <summary>
-            The definition of this type of resource, which contains all information about this resource type.
+            How quickly the eninge spools down? (in what units?)
             </summary>
         </member>
-        <member name="F:PartResource.maxAmount">
+        <member name="F:ModuleEngines.EngineIgnited">
             <summary>
-            The maximum amount of this resource that this part can hold.
+            Whether the engine has ever been turned on?
             </summary>
         </member>
-        <member name="F:PartResource.part">
+        <member name="F:ModuleEngines.exhaustDamage">
             <summary>
-            The part whose stored resource this object represents
+            Whether the engine's exhaust will damage parts that it hits. A ray is cast back
+            along the engine's thrust vector and if that ray hits a part then that part gets heated
+            up, and may explode if it exceeds its maximum temperature.
             </summary>
         </member>
-        <member name="F:PartResource.resourceName">
+        <member name="F:ModuleEngines.maxThrust">
             <summary>
-            The name of this resource, as a string, e.g. "ElectricCharge"
+            The thrust this engine produces at maximum throttle.
             </summary>
         </member>
-        <member name="P:PartResourceDefinition.density">
+        <member name="F:ModuleEngines.minThrust">
             <summary>
-            The mass of this resource, per unit. This is not necessarily per unit volume, as resources
-            don't have defined volumes. Instead resource "density" is the mass of one units of the resourc.e
+            The thrust this engine produces at minimum throttle.
             </summary>
         </member>
-        <member name="P:PartResourceDefinition.id">
+        <!-- Badly formed XML comment ignored for member "F:ModuleEngines.propellants" -->
+        <member name="F:ModuleEngines.realIsp">
             <summary>
-            The integer ID of this resource type.
+            The current specific impulse of this engine, in seconds.
             </summary>
         </member>
-        <member name="P:PartResourceDefinition.name">
+        <member name="F:ModuleEngines.throttleLocked">
             <summary>
-            The string ID of this resource type
+            Whether this engine always produces maximum thrust once activated (like solid rocket boosters).
             </summary>
         </member>
-        <member name="P:PartResourceDefinition.resourceFlowMode">
+        <member name="F:ModuleEngines.thrustTransforms">
             <summary>
-            How this resource does or does not flow between parts on a ship in response
-            to resource requests by engines and the like.
+            These transforms store the locations and directions at which the thrust this engine generates is applied to the part.
+            Which component of the transform rotation gives the thrust vector?
             </summary>
         </member>
-        <member name="P:PartResourceDefinition.resourceTransferMode">
+        <member name="F:ModuleEngines.useVelocityCurve">
             <summary>
-            How this resource does or does not flow when using the resource transfer function?
+            Whether this engine's thrust varies with airspeed?
             </summary>
         </member>
-        <member name="F:ResourceFlowMode.NO_FLOW">
+        <member name="F:ModuleEngines.velocityCurve">
             <summary>
-            This resource cannot flow between parts (like SolidFuel).
+            How this engines thrust varies with airspeed?
             </summary>
         </member>
-        <member name="F:ResourceFlowMode.ALL_VESSEL">
+        <member name="P:ModuleEngines.getFlameoutState">
             <summary>
-            This resource can flow between any two parts on the ship
-            without restrictions or intermediate fuel lines (like MonoPropellant).
+            If this is true, the engine is not producing thrust because it can't get enough resources.
             </summary>
         </member>
-        <member name="F:ResourceFlowMode.EVEN_FLOW">
+        <member name="T:ModuleEngines.Propellant">
             <summary>
-            Unused?
+            A class that represents the resource requirements of an engine.
             </summary>
         </member>
-        <member name="F:ResourceFlowMode.STACK_PRIORITY_SEARCH">
+        <member name="F:ModuleEngines.Propellant.id">
             <summary>
-            This resource behaves like LiquidFuel or Oxidizer, and can only flow
-            through crossfeed-enabled parts and fuel lines.
+            The integer ID of the resource consumed.
             </summary>
         </member>
-        <member name="F:MapView.MapIsEnabled">
+        <member name="F:ModuleEngines.Propellant.name">
             <summary>
-            Whether the game is currently in map view or not.
+            The string name of the resource consumed, e.g. "LiquidFuel"
             </summary>
         </member>
-        <member name="M:MapView.EnterMapView">
+        <member name="F:ModuleEngines.Propellant.ratio">
             <summary>
-            Calling this function will cause the game to switch to map view from the flight view.
-            </summary>
-        </member>
-        <member name="M:MapView.ExitMapView">
-            <summary>
-            Calling this function will cause the game to switch to flight view from the map view.
-            </summary>
-        </member>
-        <member name="F:PlanetariumCamera.fetch">
-            <summary>
-            Use this instance to access non-static members of this class.
-            </summary>
-        </member>
-        <member name="P:PlanetariumCamera.Camera">
-            <summary>
-            This is the Camera that looks at the planetarium scene. See the Unity documentation on Camera
-            to see what you can do with this object.
-            </summary>
-        </member>
-        <member name="P:FlightCamera.CamHdg">
-            <summary>
-            You can set this to change the look direction of the in-flight camera (value is in radians).
-            </summary>
-        </member>
-        <member name="P:FlightCamera.CamPitch">
-            <summary>
-            You can set this to change the look direction of the in-flight camera (value is in radians).
-            </summary>
-        </member>
-        <member name="M:ScaledSpace.LocalToScaledSpace(Vector3d)">
-            <summary>
-            Convert a position in world coordinates into a position in planetarium coordinates.
-            </summary>
-            <param name="localSpacePoint">A position in world coordinates</param>
-            <returns>The corresponding position in planetarium coordinates</returns>
-        </member>
-        <member name="M:ScaledSpace.ScaledToLocalSpace(Vector3d)">
-            <summary>
-            Convert a position in planetarium coordinates into a position in world coordinates.
-            </summary>
-            <param name="scaledSpacePoint">A position in planetarium coordinates.</param>
-            <returns>The corresponding position in world coordinates.</returns>
-        </member>
-        <member name="P:ScaledSpace.ScaleFactor">
-            <summary>
-            "Scaled space" is the coordinate system used by the planetarium view. It's the same coordinate system as
-            the world coordinates used by the physics, except scaled down by this scale factor.
-            </summary>
-        </member>
-        <member name="F:HighLogic.fetch">
-            <summary>
-            Use this instance to access non-static members of this class.
-            </summary>
-        </member>
-        <member name="F:HighLogic.LoadedSceneIsEditor">
-            <summary>
-            Whether the game is currently in the VAB or SPH scenes.
-            </summary>
-        </member>
-        <member name="F:HighLogic.LoadedSceneIsFlight">
-            <summary>
-            Whether the game is currently in the flight scene.
-            </summary>
-        </member>
-        <member name="P:HighLogic.Skin">
-            <summary>
-            The GUISkin used by the game. Set GUI.skin = HighLogic.Skin at the start of your GUI function to use it yourself.
+            How much of this resource is consumed by the engine, in proportion to other resources. For example if the
+            engine consumes three resources (A, B, C) with A.ratio = 3, B.ratio = 2, C.ratio = 1, then 3 units of every
+            will be consumed for every 2 units of B and 1 unit of C.
             </summary>
         </member>
     </members>

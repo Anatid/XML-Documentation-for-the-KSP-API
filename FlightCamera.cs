@@ -5,6 +5,9 @@
 using System;
 using UnityEngine;
 
+/// <summary>
+/// This class is related to control of the main camera used in the flight scene.
+/// </summary>
 public class FlightCamera : MonoBehaviour
 {
     public FlightCamera.Modes autoMode;

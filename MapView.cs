@@ -5,6 +5,9 @@
 using System;
 using UnityEngine;
 
+/// <summary>
+/// This class stores some global information related to the map view.
+/// </summary>
 public class MapView : MonoBehaviour
 {
     public float camDistance;

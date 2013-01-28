@@ -5,6 +5,9 @@
 using System;
 using UnityEngine;
 
+/// <summary>
+/// FlightInputHandler stores some global information about the control of the current active vessel.
+/// </summary>
 public class FlightInputHandler : MonoBehaviour
 {
     public static int currentTarget;

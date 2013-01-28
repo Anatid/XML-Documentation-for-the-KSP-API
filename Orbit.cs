@@ -5,6 +5,12 @@
 using System;
 using UnityEngine;
 
+/// <summary>
+/// <para>An Orbit class represents a Keplerian orbit. Each Vessel and each CelestialBody has an Orbit. CelestialBodies and
+/// on-rails Vessels follow their Orbits exactly. Off-rails vessels (the active vessel and any nearby vessels) 
+/// do not follow their orbits exactly; instead their motion is computed frame-by-frame from the forces acting on them.</para>
+/// <para>A patched consics trajectory consists of a series of Orbits, called patches.</para>
+/// </summary>
 [Serializable]
 public class Orbit
 {

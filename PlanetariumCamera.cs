@@ -6,6 +6,9 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// A class related to the map view camera.
+/// </summary>
 public class PlanetariumCamera : MonoBehaviour
 {
     public float cameraWobbleSensitivity;

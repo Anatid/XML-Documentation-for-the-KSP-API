@@ -6,6 +6,9 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Probably the most useful function here is Planetarium.GetUniversalTime().
+/// </summary>
 public class Planetarium : MonoBehaviour
 {
     /// <summary>
@@ -22,7 +25,7 @@ public class Planetarium : MonoBehaviour
     public bool pause;
     public QuaternionD rotation;
     /// <summary>
-    /// Presumably, the CelestialBody representing the Sun.
+    /// The CelestialBody representing the Sun.
     /// </summary>
     public CelestialBody Sun;
     public double time;

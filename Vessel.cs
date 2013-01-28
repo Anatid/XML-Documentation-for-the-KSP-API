@@ -7,6 +7,10 @@ using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
 
+/// <summary>
+/// A Vessel object represents a single vessel. Parts that break off from a vessel become their own Vessels. Vessels that merge
+/// via docking become one Vessel.
+/// </summary>
 public class Vessel : MonoBehaviour
 {
     /// <summary>

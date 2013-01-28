@@ -5,6 +5,9 @@
 using System;
 using UnityEngine;
 
+/// <summary>
+/// The class that handles time warp.
+/// </summary>
 public class TimeWarp : MonoBehaviour
 {
     /// <summary>

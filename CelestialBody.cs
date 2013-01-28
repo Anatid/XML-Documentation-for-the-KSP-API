@@ -6,6 +6,9 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// The Sun, the planets, and the moons are all CelestialBodies.
+/// </summary>
 public class CelestialBody : MonoBehaviour
 {
     public float altitudeMultiplier;

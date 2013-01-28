@@ -4,6 +4,9 @@
 
 using System;
 
+/// <summary>
+/// An enumeration of the different behaviors resources can have with respect to fuel flow.
+/// </summary>
 public enum ResourceFlowMode
 {
     /// <summary>

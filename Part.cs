@@ -8,6 +8,11 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
 
+/// <summary>
+/// Each part on a vessel is represented by a Part object. Plugins can add new functionality to parts by defining new
+/// PartModules, which can then be added to Parts. It is also possible to define new subclasses of Part, but this
+/// is deprecated in favor of PartModules.
+/// </summary>
 public class Part : MonoBehaviour
 {
     /// <summary>

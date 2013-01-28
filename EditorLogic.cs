@@ -6,6 +6,9 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This class has information about what is going on in the editor. In particular see SortedShipList.
+/// </summary>
 public class EditorLogic : MonoBehaviour
 {
     public UIButton actionPanelBtn;

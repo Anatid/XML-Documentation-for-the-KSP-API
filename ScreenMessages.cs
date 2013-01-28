@@ -6,6 +6,10 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// A class that lets you post temporary messages to the screen. If you use this class your messages will
+/// automatically have the same style as regular in-game messages.
+/// </summary>
 public class ScreenMessages : MonoBehaviour
 {
     /// <summary>
@@ -56,6 +60,9 @@ public class ScreenMessages : MonoBehaviour
     public extern static void RemoveMessage(ScreenMessage msg);
 }
 
+/// <summary>
+/// An enumeration of the different styles of message you can display.
+/// </summary>
 public enum ScreenMessageStyle
 {
     /// <summary>

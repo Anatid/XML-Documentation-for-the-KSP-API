@@ -6,6 +6,10 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// A class that handles the transformations between the scaled-down coordinate system used by the map view and the 
+/// regular coordinate system used by the main flight view and the physics.
+/// </summary>
 public class ScaledSpace : MonoBehaviour
 {
     public Transform originTarget;

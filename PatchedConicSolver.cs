@@ -6,6 +6,10 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Each vessel has a PatchedConicSolver, which stores the predicted patched conics trajectory and
+/// any maneuver nodes that currently exist.
+/// </summary>
 [RequireComponent(typeof(OrbitDriver))]
 public class PatchedConicSolver : MonoBehaviour
 {

@@ -5,6 +5,10 @@
 using System;
 using UnityEngine;
 
+
+/// <summary>
+/// This class stores some very high-level information about the current game state.
+/// </summary>
 public class HighLogic : MonoBehaviour
 {
     public Game currentGame;
