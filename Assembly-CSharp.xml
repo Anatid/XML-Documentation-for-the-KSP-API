@@ -506,82 +506,9 @@
             The name of this resource, as a string, e.g. "ElectricCharge"
             </summary>
         </member>
-        <member name="T:ScreenMessages">
+        <member name="T:FuelLine">
             <summary>
-            A class that lets you post temporary messages to the screen. If you use this class your messages will
-            automatically have the same style as regular in-game messages.
-            </summary>
-        </member>
-        <member name="F:ScreenMessages.activeMessages">
-            <summary>
-            The set of currently active screen messages. This is a non-static member, but you can get a
-            reference to the ScreenMessages instance via
-            <code>ScreenMessages sm = (ScreenMessages)GameObject.FindObjectOfType(typeof(ScreenMessages));</code>
-            </summary>
-        </member>
-        <member name="M:ScreenMessages.PostScreenMessage(ScreenMessage)">
-            <summary>
-            Post a temporary message to the screen. Examples of screen messages are the "Warp = {number}x" message
-            and the "Quicksaving..." message.
-            </summary>
-            <param name="msg">The message to post</param>
-        </member>
-        <member name="M:ScreenMessages.PostScreenMessage(System.String)">
-            <summary>
-            Post a temporary message to the screen. Examples of screen messages are the "Warp = {number}x" message
-            and the "Quicksaving..." message.
-            </summary>
-            <param name="message">The message to post.</param>
-            <returns>A reference to the posted message</returns>
-        </member>
-        <member name="M:ScreenMessages.PostScreenMessage(System.String,System.Single)">
-            <summary>
-            Post a temporary message to the screen. Examples of screen messages are the "Warp = {number}x" message
-            and the "Quicksaving..." message.
-            </summary>
-            <param name="message">The message to post</param>
-            <param name="duration">How long the message should remain on the screen, in seconds.</param>
-            <returns>A reference to the posted message</returns>
-        </member>
-        <member name="M:ScreenMessages.PostScreenMessage(System.String,System.Single,ScreenMessageStyle)">
-            <summary>
-            Post a temporary message to the screen. Examples of screen messages are the "Warp = {number}x" message
-            and the "Quicksaving..." message.
-            </summary>
-            <param name="message">The message to post</param>
-            <param name="duration">How long the message should remain on the screen, in seconds.</param>
-            <param name="style">Which style of screen message to post--for instance, should it by like the warp message, the quicksaving message, etc.</param>
-            <returns>A reference to the posted message</returns>
-        </member>
-        <member name="M:ScreenMessages.RemoveMessage(ScreenMessage)">
-            <summary>
-            Remove a currently active message from the screen.
-            </summary>
-            <param name="msg">The message to remove</param>
-        </member>
-        <member name="T:ScreenMessageStyle">
-            <summary>
-            An enumeration of the different styles of message you can display.
-            </summary>
-        </member>
-        <member name="F:ScreenMessageStyle.UPPER_CENTER">
-            <summary>
-            This results in a message in the same font and position as the "Warp = {number}x" message.
-            </summary>
-        </member>
-        <member name="F:ScreenMessageStyle.UPPER_LEFT">
-            <summary>
-            What sort of message style does this produce?
-            </summary>
-        </member>
-        <member name="F:ScreenMessageStyle.UPPER_RIGHT">
-            <summary>
-            This results in a message in the same font and position as the "Quicksaving..." message.
-            </summary>
-        </member>
-        <member name="F:ScreenMessageStyle.LOWER_CENTER">
-            <summary>
-            What sort of message style does this produce?
+            Stock fuel lines are not yet PartModules, but are implemented through this class.
             </summary>
         </member>
         <member name="T:Part">
@@ -786,6 +713,89 @@
         <member name="F:Part.PhysicalSignificance.NONE">
             <summary>
             Part has no physics, and in particular no mass or drag.
+            </summary>
+        </member>
+        <member name="F:FuelLine.target">
+            <summary>
+            The part that can draw fuel through this fuel line. This fuel line in turn draws fuel from its parent.
+            </summary>
+        </member>
+        <member name="T:ScreenMessages">
+            <summary>
+            A class that lets you post temporary messages to the screen. If you use this class your messages will
+            automatically have the same style as regular in-game messages.
+            </summary>
+        </member>
+        <member name="F:ScreenMessages.activeMessages">
+            <summary>
+            The set of currently active screen messages. This is a non-static member, but you can get a
+            reference to the ScreenMessages instance via
+            <code>ScreenMessages sm = (ScreenMessages)GameObject.FindObjectOfType(typeof(ScreenMessages));</code>
+            </summary>
+        </member>
+        <member name="M:ScreenMessages.PostScreenMessage(ScreenMessage)">
+            <summary>
+            Post a temporary message to the screen. Examples of screen messages are the "Warp = {number}x" message
+            and the "Quicksaving..." message.
+            </summary>
+            <param name="msg">The message to post</param>
+        </member>
+        <member name="M:ScreenMessages.PostScreenMessage(System.String)">
+            <summary>
+            Post a temporary message to the screen. Examples of screen messages are the "Warp = {number}x" message
+            and the "Quicksaving..." message.
+            </summary>
+            <param name="message">The message to post.</param>
+            <returns>A reference to the posted message</returns>
+        </member>
+        <member name="M:ScreenMessages.PostScreenMessage(System.String,System.Single)">
+            <summary>
+            Post a temporary message to the screen. Examples of screen messages are the "Warp = {number}x" message
+            and the "Quicksaving..." message.
+            </summary>
+            <param name="message">The message to post</param>
+            <param name="duration">How long the message should remain on the screen, in seconds.</param>
+            <returns>A reference to the posted message</returns>
+        </member>
+        <member name="M:ScreenMessages.PostScreenMessage(System.String,System.Single,ScreenMessageStyle)">
+            <summary>
+            Post a temporary message to the screen. Examples of screen messages are the "Warp = {number}x" message
+            and the "Quicksaving..." message.
+            </summary>
+            <param name="message">The message to post</param>
+            <param name="duration">How long the message should remain on the screen, in seconds.</param>
+            <param name="style">Which style of screen message to post--for instance, should it by like the warp message, the quicksaving message, etc.</param>
+            <returns>A reference to the posted message</returns>
+        </member>
+        <member name="M:ScreenMessages.RemoveMessage(ScreenMessage)">
+            <summary>
+            Remove a currently active message from the screen.
+            </summary>
+            <param name="msg">The message to remove</param>
+        </member>
+        <member name="T:ScreenMessageStyle">
+            <summary>
+            An enumeration of the different styles of message you can display.
+            </summary>
+        </member>
+        <member name="F:ScreenMessageStyle.UPPER_CENTER">
+            <summary>
+            This results in a message in the same font and position as the "Warp = {number}x" message.
+            </summary>
+        </member>
+        <member name="F:ScreenMessageStyle.UPPER_LEFT">
+            <summary>
+            What sort of message style does this produce?
+            </summary>
+        </member>
+        <member name="F:ScreenMessageStyle.UPPER_RIGHT">
+            <summary>
+            This results in a message in the same font and position as the "Quicksaving..." message.
+            </summary>
+        </member>
+        <member name="F:ScreenMessageStyle.LOWER_CENTER">
+            <summary>
+            What sort of message style does this produce?
             </summary>
         </member>
         <member name="T:MapView">
@@ -1612,57 +1622,6 @@
             How this resource does or does not flow when using the resource transfer function?
             </summary>
         </member>
-        <member name="T:FlightInputHandler">
-            <summary>
-            FlightInputHandler stores some global information about the control of the current active vessel.
-            </summary>
-        </member>
-        <member name="F:FlightInputHandler.fetch">
-            <summary>
-            Use this FlightInputHandler instance to access non-static members of the class.
-            </summary>
-        </member>
-        <member name="F:FlightInputHandler.precisionMode">
-            <summary>
-            Presumably, whether precision mode is engaged.
-            </summary>
-        </member>
-        <member name="F:FlightInputHandler.rcslock">
-            <summary>
-            Whether RCS is enabled.
-            </summary>
-        </member>
-        <member name="F:FlightInputHandler.stageLock">
-            <summary>
-            Presumably, whether staging has been locked via Alt-L.
-            </summary>
-        </member>
-        <member name="F:FlightInputHandler.state">
-            <summary>
-            The FlightCtrlState that represents player input. You can change the on-screen throttle
-            by setting FlightCtrlState.state.mainThrottle.
-            </summary>
-        </member>
-        <member name="M:FlightInputHandler.SetNeutralControls">
-            <summary>
-            Call this to set neutral controls; in particular this wil turn off the throttle.
-            </summary>
-        </member>
-        <member name="P:FlightInputHandler.RCSLock">
-            <summary>
-            Whether RCS is enabled.
-            </summary>
-        </member>
-        <member name="T:FuelLine">
-            <summary>
-            Stock fuel lines are not yet PartModules, but are implemented through this class.
-            </summary>
-        </member>
-        <member name="F:FuelLine.target">
-            <summary>
-            The part that can draw fuel through this fuel line. This fuel line in turn draws fuel from its parent.
-            </summary>
-        </member>
         <member name="T:ModuleEngines">
             <summary>
             A PartModule that can be configured to behave like many different kinds of engines. All stock
@@ -1759,6 +1718,176 @@
             How much of this resource is consumed by the engine, in proportion to other resources. For example if the
             engine consumes three resources (A, B, C) with A.ratio = 3, B.ratio = 2, C.ratio = 1, then 3 units of every
             will be consumed for every 2 units of B and 1 unit of C.
+            </summary>
+        </member>
+        <member name="T:FlightInputHandler">
+            <summary>
+            FlightInputHandler stores some global information about the control of the current active vessel.
+            </summary>
+        </member>
+        <member name="F:FlightInputHandler.fetch">
+            <summary>
+            Use this FlightInputHandler instance to access non-static members of the class.
+            </summary>
+        </member>
+        <member name="F:FlightInputHandler.precisionMode">
+            <summary>
+            Presumably, whether precision mode is engaged.
+            </summary>
+        </member>
+        <member name="F:FlightInputHandler.rcslock">
+            <summary>
+            Whether RCS is enabled.
+            </summary>
+        </member>
+        <member name="F:FlightInputHandler.stageLock">
+            <summary>
+            Presumably, whether staging has been locked via Alt-L.
+            </summary>
+        </member>
+        <member name="F:FlightInputHandler.state">
+            <summary>
+            The FlightCtrlState that represents player input. You can change the on-screen throttle
+            by setting FlightCtrlState.state.mainThrottle.
+            </summary>
+        </member>
+        <member name="M:FlightInputHandler.SetNeutralControls">
+            <summary>
+            Call this to set neutral controls; in particular this wil turn off the throttle.
+            </summary>
+        </member>
+        <member name="P:FlightInputHandler.RCSLock">
+            <summary>
+            Whether RCS is enabled.
+            </summary>
+        </member>
+        <member name="T:KSPField">
+            <summary>
+            Apply this attribute to a field in a PartModule or ScenarioModule to make the field 
+            get automatically initialized from the cfg file, and optionally persistent. See
+            
+            http://forum.kerbalspaceprogram.com/showthread.php/10296-0-15-code-update-PartModule-KSPField-KSPEvent-ConfigNode-and-PartResource
+            </summary>
+        </member>
+        <member name="F:KSPField.guiActive">
+            <summary>
+            Whether to show the value of this field in the right click menu of the part.
+            </summary>
+        </member>
+        <member name="F:KSPField.guiFormat">
+            <summary>
+            The format string that will be passed to ToString when displaying the value of your field
+            in the right click menu of the part?
+            E.g. "F3" for a floating point number with 3 digits past the decimal point.
+            </summary>
+        </member>
+        <member name="F:KSPField.guiName">
+            <summary>
+            The name that will be shown for this field in the right click menu of the part.
+            </summary>
+        </member>
+        <member name="F:KSPField.guiUnits">
+            <summary>
+            The units that will be shown for this field in the right click menu of the part.
+            </summary>
+        </member>
+        <member name="F:KSPField.isPersistant">
+            <summary>
+            Whether to store the value of this field in persistent.sfs when the game state is saved, and
+            reload it from persistent.sfs when the game state is loaded.
+            </summary>
+        </member>
+        <member name="T:Vector3d">
+            <summary>
+            A Vector3d in 3D space.
+            Vector3d is just like Unity's Vector3 class, except it uses doubles instead of floats,
+            so refer to the Unity documentation on Vector3.
+            Vector3d also adds a few functions.
+            </summary>
+        </member>
+        <member name="M:Vector3d.Exclude(Vector3d,Vector3d)">
+            <summary>
+            Returns <code>fromThat - Vector3d.Project(fromThat, excludeThis)</code>. That is, it removes
+            the component of fromThat that is parallel to excludeThis and returns the remainder, which will
+            be perpendicular to excludeThis.
+            </summary>
+            <param name="excludeThis">The direction to exclude from the result.</param>
+            <param name="fromThat">The starting vector</param>
+            <returns>A vector perpendicular to excludeThis and pointing in the same general direction as fromThat.</returns>
+        </member>
+        <member name="P:Vector3d.back">
+            <summary>
+            Minus forward
+            </summary>
+        </member>
+        <member name="P:Vector3d.down">
+            <summary>
+            Minus up
+            </summary>
+        </member>
+        <member name="P:Vector3d.left">
+            <summary>
+            Minus right.
+            </summary>
+        </member>
+        <member name="P:Vector3d.xzy">
+            <summary>
+            Returs a new Vector3d with the y and z coordinates swapped?
+            </summary>
+        </member>
+        <member name="T:KSPEvent">
+            <summary>
+            Apply this attribute to a function in a PartModule to make it callable by the player via
+            the right click menu of the part, or from other plugin code via Part.SendEvent.
+            </summary>
+        </member>
+        <member name="F:KSPEvent.active">
+            <summary>
+            Whether this event can be triggered through Part.SendEvent.
+            </summary>
+        </member>
+        <member name="F:KSPEvent.externalToEVAOnly">
+            <summary>
+            Whether the event is only available when out on EVA.
+            </summary>
+        </member>
+        <member name="F:KSPEvent.guiActive">
+            <summary>
+            Whether the event is shown as available in the right click menu (active must also be true).
+            </summary>
+        </member>
+        <member name="F:KSPEvent.guiActiveUnfocused">
+            <summary>
+            Whether the event is shown as available in the right click menu even when
+            the part is on a ship not currently being controlled by the player (but
+            close enough to right click).
+            </summary>
+        </member>
+        <member name="F:KSPEvent.guiName">
+            <summary>
+            The name shown for the event in the right click menu.
+            </summary>
+        </member>
+        <member name="F:KSPEvent.name">
+            <summary>
+            The name of the event, which can be used to trigger the event using from plugin code using Part.SendEvent.
+            </summary>
+        </member>
+        <member name="F:KSPEvent.unfocusedRange">
+            <summary>
+            When the part is on a ship not being controlled by the player,
+            how close the player needs to be (in meters) in order for the event to appear in the right click menu.
+            </summary>
+        </member>
+        <member name="T:KSPAction">
+            <summary>
+            Apply this attribute to a function to allow it to be called via action groups.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:KSPAction.actionGroup" -->
+        <member name="F:KSPAction.guiName">
+            <summary>
+            The name of this action as it appears in the action group editor.
             </summary>
         </member>
     </members>
