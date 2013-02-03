@@ -55,7 +55,7 @@ public class PartModule : MonoBehaviour
     /// </summary>
     public extern virtual void OnActive();
     /// <summary>
-    /// This function gets called once when the parts loaded? See the Unity documentation on Awake for more information.
+    /// This function gets called only once, during the KSP loading screen. See the Unity documentation on Awake for more information.
     /// </summary>
     public extern virtual void OnAwake();
     /// <summary>
@@ -82,7 +82,8 @@ public class PartModule : MonoBehaviour
     /// <param name="node"></param>
     public extern virtual void OnSave(ConfigNode node);
     /// <summary>
-    /// Called when the flight starts, or when the part is created in the editor.
+    /// Called when the flight starts, or when the part is created in the editor. OnStart will be called
+    /// before OnUpdate or OnFixedUpdate are ever called.
     /// </summary>
     /// <param name="state">Some information about what situation the vessel is starting in.</param>
     public extern virtual void OnStart(PartModule.StartState state);

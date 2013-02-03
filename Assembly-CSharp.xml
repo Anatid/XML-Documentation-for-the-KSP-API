@@ -26,7 +26,7 @@
         </member>
         <member name="M:PartModule.OnAwake">
             <summary>
-            This function gets called once when the parts loaded? See the Unity documentation on Awake for more information.
+            This function gets called only once, during the KSP loading screen. See the Unity documentation on Awake for more information.
             </summary>
         </member>
         <member name="M:PartModule.OnFixedUpdate">
@@ -58,7 +58,8 @@
         </member>
         <member name="M:PartModule.OnStart(PartModule.StartState)">
             <summary>
-            Called when the flight starts, or when the part is created in the editor.
+            Called when the flight starts, or when the part is created in the editor. OnStart will be called
+            before OnUpdate or OnFixedUpdate are ever called.
             </summary>
             <param name="state">Some information about what situation the vessel is starting in.</param>
         </member>
@@ -303,6 +304,50 @@
             </summary>
             <param name="dV">The new delta-V. See the DeltaV for notes about the coordinate system used.</param>
             <param name="ut">The new universal time.</param>
+        </member>
+        <member name="T:KSPEvent">
+            <summary>
+            Apply this attribute to a function in a PartModule to make it callable by the player via
+            the right click menu of the part, or from other plugin code via Part.SendEvent.
+            </summary>
+        </member>
+        <member name="F:KSPEvent.active">
+            <summary>
+            Whether this event can be triggered through Part.SendEvent.
+            </summary>
+        </member>
+        <member name="F:KSPEvent.externalToEVAOnly">
+            <summary>
+            Whether the event is only available when out on EVA.
+            </summary>
+        </member>
+        <member name="F:KSPEvent.guiActive">
+            <summary>
+            Whether the event is shown as available in the right click menu (active must also be true).
+            </summary>
+        </member>
+        <member name="F:KSPEvent.guiActiveUnfocused">
+            <summary>
+            Whether the event is shown as available in the right click menu even when
+            the part is on a ship not currently being controlled by the player (but
+            close enough to right click).
+            </summary>
+        </member>
+        <member name="F:KSPEvent.guiName">
+            <summary>
+            The name shown for the event in the right click menu.
+            </summary>
+        </member>
+        <member name="F:KSPEvent.name">
+            <summary>
+            The name of the event, which can be used to trigger the event using from plugin code using Part.SendEvent.
+            </summary>
+        </member>
+        <member name="F:KSPEvent.unfocusedRange">
+            <summary>
+            When the part is on a ship not being controlled by the player,
+            how close the player needs to be (in meters) in order for the event to appear in the right click menu.
+            </summary>
         </member>
         <member name="T:FlightCtrlState">
             <summary>
@@ -1347,6 +1392,53 @@
             The periapsis of the orbit in meters, measured from the center of the main body.
             </summary>
         </member>
+        <member name="T:KSPAction">
+            <summary>
+            Apply this attribute to a function to allow it to be called via action groups.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:KSPAction.actionGroup" -->
+        <member name="F:KSPAction.guiName">
+            <summary>
+            The name of this action as it appears in the action group editor.
+            </summary>
+        </member>
+        <member name="T:KSPField">
+            <summary>
+            Apply this attribute to a field in a PartModule or ScenarioModule to make the field 
+            get automatically initialized from the cfg file, and optionally persistent. See
+            
+            http://forum.kerbalspaceprogram.com/showthread.php/10296-0-15-code-update-PartModule-KSPField-KSPEvent-ConfigNode-and-PartResource
+            </summary>
+        </member>
+        <member name="F:KSPField.guiActive">
+            <summary>
+            Whether to show the value of this field in the right click menu of the part.
+            </summary>
+        </member>
+        <member name="F:KSPField.guiFormat">
+            <summary>
+            The format string that will be passed to ToString when displaying the value of your field
+            in the right click menu of the part?
+            E.g. "F3" for a floating point number with 3 digits past the decimal point.
+            </summary>
+        </member>
+        <member name="F:KSPField.guiName">
+            <summary>
+            The name that will be shown for this field in the right click menu of the part.
+            </summary>
+        </member>
+        <member name="F:KSPField.guiUnits">
+            <summary>
+            The units that will be shown for this field in the right click menu of the part.
+            </summary>
+        </member>
+        <member name="F:KSPField.isPersistant">
+            <summary>
+            Whether to store the value of this field in persistent.sfs when the game state is saved, and
+            reload it from persistent.sfs when the game state is loaded.
+            </summary>
+        </member>
         <member name="T:Vessel">
             <summary>
             A Vessel object represents a single vessel. Parts that break off from a vessel become their own Vessels. Vessels that merge
@@ -1720,6 +1812,44 @@
             will be consumed for every 2 units of B and 1 unit of C.
             </summary>
         </member>
+        <member name="T:Vector3d">
+            <summary>
+            A Vector3d in 3D space.
+            Vector3d is just like Unity's Vector3 class, except it uses doubles instead of floats,
+            so refer to the Unity documentation on Vector3.
+            Vector3d also adds a few functions.
+            </summary>
+        </member>
+        <member name="M:Vector3d.Exclude(Vector3d,Vector3d)">
+            <summary>
+            Returns <code>fromThat - Vector3d.Project(fromThat, excludeThis)</code>. That is, it removes
+            the component of fromThat that is parallel to excludeThis and returns the remainder, which will
+            be perpendicular to excludeThis.
+            </summary>
+            <param name="excludeThis">The direction to exclude from the result.</param>
+            <param name="fromThat">The starting vector</param>
+            <returns>A vector perpendicular to excludeThis and pointing in the same general direction as fromThat.</returns>
+        </member>
+        <member name="P:Vector3d.back">
+            <summary>
+            Minus forward
+            </summary>
+        </member>
+        <member name="P:Vector3d.down">
+            <summary>
+            Minus up
+            </summary>
+        </member>
+        <member name="P:Vector3d.left">
+            <summary>
+            Minus right.
+            </summary>
+        </member>
+        <member name="P:Vector3d.xzy">
+            <summary>
+            Returs a new Vector3d with the y and z coordinates swapped?
+            </summary>
+        </member>
         <member name="T:FlightInputHandler">
             <summary>
             FlightInputHandler stores some global information about the control of the current active vessel.
@@ -1761,134 +1891,858 @@
             Whether RCS is enabled.
             </summary>
         </member>
-        <member name="T:KSPField">
+        <member name="T:KSPDocumentation.AtmosphericEngine">
             <summary>
-            Apply this attribute to a field in a PartModule or ScenarioModule to make the field 
-            get automatically initialized from the cfg file, and optionally persistent. See
-            
-            http://forum.kerbalspaceprogram.com/showthread.php/10296-0-15-code-update-PartModule-KSPField-KSPEvent-ConfigNode-and-PartResource
+            The old, deprecated class that implemented jet engine parts before PartModules.
+            Use an appropriately configured ModuleEngines instead of this class.
             </summary>
         </member>
-        <member name="F:KSPField.guiActive">
+        <member name="T:AttachNode">
             <summary>
-            Whether to show the value of this field in the right click menu of the part.
+            An AttachNode represents the physical connection between a Part and its parent Part.
             </summary>
         </member>
-        <member name="F:KSPField.guiFormat">
+        <member name="F:AttachNode.attachedPart">
             <summary>
-            The format string that will be passed to ToString when displaying the value of your field
-            in the right click menu of the part?
-            E.g. "F3" for a floating point number with 3 digits past the decimal point.
+            The part attached to this node. Null if no part is attached.
             </summary>
         </member>
-        <member name="F:KSPField.guiName">
+        <member name="F:AttachNode.nodeType">
             <summary>
-            The name that will be shown for this field in the right click menu of the part.
+            Whether this node is a surface-attach node, a stack node, or a docking node.
             </summary>
         </member>
-        <member name="F:KSPField.guiUnits">
+        <member name="F:AttachNode.NodeType.Stack">
             <summary>
-            The units that will be shown for this field in the right click menu of the part.
+            A stack node, like the connections between stacked fuel tanks
             </summary>
         </member>
-        <member name="F:KSPField.isPersistant">
+        <member name="F:AttachNode.NodeType.Surface">
             <summary>
-            Whether to store the value of this field in persistent.sfs when the game state is saved, and
-            reload it from persistent.sfs when the game state is loaded.
+            A surface node, like the connection between a radial decoupler and its parent.
             </summary>
         </member>
-        <member name="T:Vector3d">
+        <member name="F:AttachNode.NodeType.Dock">
             <summary>
-            A Vector3d in 3D space.
-            Vector3d is just like Unity's Vector3 class, except it uses doubles instead of floats,
-            so refer to the Unity documentation on Vector3.
-            Vector3d also adds a few functions.
+            The type of node that connects two docking ports?
             </summary>
         </member>
-        <member name="M:Vector3d.Exclude(Vector3d,Vector3d)">
+        <member name="T:AvailablePart">
             <summary>
-            Returns <code>fromThat - Vector3d.Project(fromThat, excludeThis)</code>. That is, it removes
-            the component of fromThat that is parallel to excludeThis and returns the remainder, which will
-            be perpendicular to excludeThis.
-            </summary>
-            <param name="excludeThis">The direction to exclude from the result.</param>
-            <param name="fromThat">The starting vector</param>
-            <returns>A vector perpendicular to excludeThis and pointing in the same general direction as fromThat.</returns>
-        </member>
-        <member name="P:Vector3d.back">
-            <summary>
-            Minus forward
+            An AvailablePart object contains the summary information about a single type of part
+            which is shown in the editor.
             </summary>
         </member>
-        <member name="P:Vector3d.down">
+        <member name="F:AvailablePart.category">
             <summary>
-            Minus up
+            Which tab this part shows up in in the editor.
             </summary>
         </member>
-        <member name="P:Vector3d.left">
+        <member name="F:AvailablePart.cost">
             <summary>
-            Minus right.
+            The cost of this part, as displayed in the editor.
             </summary>
         </member>
-        <member name="P:Vector3d.xzy">
+        <member name="F:AvailablePart.description">
             <summary>
-            Returs a new Vector3d with the y and z coordinates swapped?
+            The description of this part, as displayed in the editor? 
+            Does this include the GetInfo() of the part's PartModules?
             </summary>
         </member>
-        <member name="T:KSPEvent">
+        <member name="F:AvailablePart.partPrefab">
             <summary>
-            Apply this attribute to a function in a PartModule to make it callable by the player via
-            the right click menu of the part, or from other plugin code via Part.SendEvent.
+            The object that gets cloned when you create a new instance of this part in the editor?
             </summary>
         </member>
-        <member name="F:KSPEvent.active">
+        <member name="T:Decoupler">
             <summary>
-            Whether this event can be triggered through Part.SendEvent.
+            The old, deprecated class that used to be used to implement decouplers before PartModules.
+            Use ModuleDecouple or ModuleAnchoredDecoupler instead.
             </summary>
         </member>
-        <member name="F:KSPEvent.externalToEVAOnly">
+        <member name="T:DecouplerGUI">
             <summary>
-            Whether the event is only available when out on EVA.
+            An old, deprecated class that used to be used to implement decouplers before PartModules.
+            Use ModuleDecouple or ModuleAnchoredDecoupler instead.
             </summary>
         </member>
-        <member name="F:KSPEvent.guiActive">
+        <member name="T:DockingPort">
             <summary>
-            Whether the event is shown as available in the right click menu (active must also be true).
+            An unused class; use ModuleDockingNode instead.
             </summary>
         </member>
-        <member name="F:KSPEvent.guiActiveUnfocused">
+        <member name="T:FloatCurve">
             <summary>
-            Whether the event is shown as available in the right click menu even when
-            the part is on a ship not currently being controlled by the player (but
-            close enough to right click).
+            Represents a function of one variable. The function is interpolated from a given set of points,
+            and optionally the tangents at those points can be specified.
             </summary>
         </member>
-        <member name="F:KSPEvent.guiName">
+        <member name="M:FloatCurve.Evaluate(System.Single)">
             <summary>
-            The name shown for the event in the right click menu.
+            Evaluate the function at a given value of the input parameter.
+            </summary>
+            <param name="time">The input parameter (not necessarily a time).</param>
+            <returns>The value of the function.</returns>
+        </member>
+        <member name="T:FuelTank">
+            <summary>
+            The old, deprecated class that implemented fuel tanks before the resource system.
+            Don't use this class: to allow a part to store a resource add a RESOURCE block to the part.cfg.
             </summary>
         </member>
-        <member name="F:KSPEvent.name">
+        <member name="T:FuelTankGUI">
             <summary>
-            The name of the event, which can be used to trigger the event using from plugin code using Part.SendEvent.
+            An unused class.
             </summary>
         </member>
-        <member name="F:KSPEvent.unfocusedRange">
+        <member name="T:GamePersistence">
             <summary>
-            When the part is on a ship not being controlled by the player,
-            how close the player needs to be (in meters) in order for the event to appear in the right click menu.
+            Contains some functions you can call to save the game state to a persistence file, or load the game state from a persistence file.
             </summary>
         </member>
-        <member name="T:KSPAction">
+        <member name="M:GamePersistence.SaveGame(System.String,System.String,SaveMode)">
             <summary>
-            Apply this attribute to a function to allow it to be called via action groups.
+            Creates a persistence file containing the current game state. Probably persistent.sfs and quicksave.sfs are
+            generated by calls to this function.
+            </summary>
+            <param name="saveFileName">The name of the persistence file to create (".sfs" will be appended to the file name).</param>
+            <param name="saveFolder">The folder in which to create the save file. Try using HighLogic.SaveFolder.</param>
+            <param name="saveMode">Whether to overwrite, append, or abort if the given file already exists?</param>
+            <returns>?</returns>
+        </member>
+        <member name="T:KerbalEVA">
+            <summary>
+            Kerbals on EVA are represented as vessels with a single part. That part contains a KerbalEVA PartModule.
             </summary>
         </member>
-        <!-- Badly formed XML comment ignored for member "F:KSPAction.actionGroup" -->
-        <member name="F:KSPAction.guiName">
+        <member name="P:KerbalEVA.OnALadder">
             <summary>
-            The name of this action as it appears in the action group editor.
+            Whether the kerbal is currently hanging on to a ladder.
             </summary>
+        </member>
+        <member name="T:KerbalFSM">
+            <summary>
+            A finite state machine. States are represented by KFSMState objects, and 
+            "events" (transitions between states) are represented by KFSMEvent objects.
+            </summary>
+        </member>
+        <member name="F:KerbalFSM.currentStateName">
+            <summary>
+            The name of the state the machine is currently in.
+            </summary>
+        </member>
+        <member name="F:KerbalFSM.lastEventName">
+            <summary>
+            The name of the last event that occurred.
+            </summary>
+        </member>
+        <member name="M:KerbalFSM.AddEvent(KFSMEvent,KFSMState[])">
+            <summary>
+            Add a new event (possible transition) to the finite state machine.
+            </summary>
+            <param name="ev">The event to add.</param>
+            <param name="toStates">The states to add the event to. The event can only be triggered when
+            the machine is in one of these states.</param>
+        </member>
+        <member name="M:KerbalFSM.AddEventExcluding(KFSMEvent,KFSMState[])">
+            <summary>
+            Add a new event (possible transition) to the finite state machine.
+            </summary>
+            <param name="ev">The event to add.</param>
+            <param name="excStates">A list of states *not* to add the event to. The event can only be triggered
+            when the machine is *not* in one of these states.</param>
+        </member>
+        <member name="M:KerbalFSM.AddState(KFSMState)">
+            <summary>
+            Add a new possible state to the machine.
+            </summary>
+            <param name="st">The state to add.</param>
+        </member>
+        <member name="M:KerbalFSM.RunEvent(KFSMEvent)">
+            <summary>
+            Cause the machine to execute the transition specified by evt.
+            </summary>
+            <param name="evt">The event to execute.</param>
+        </member>
+        <member name="M:KerbalFSM.StartFSM(KFSMState)">
+            <summary>
+            Start the state machine in a given initial state.
+            </summary>
+            <param name="initialState">The state to start in.</param>
+        </member>
+        <member name="M:KerbalFSM.StartFSM(System.String)">
+            <summary>
+            Start the state machine in a given initial state.
+            </summary>
+            <param name="initialStateName">The name of the state to start in</param>
+        </member>
+        <member name="P:KerbalFSM.CurrentState">
+            <summary>
+            The state the machine is currently in.
+            </summary>
+        </member>
+        <member name="P:KerbalFSM.FramesInCurrentState">
+            <summary>
+            How many frames the machine has been in this state.
+            </summary>
+        </member>
+        <member name="P:KerbalFSM.LastEvent">
+            <summary>
+            The last event that occurred.
+            </summary>
+        </member>
+        <member name="P:KerbalFSM.LastState">
+            <summary>
+            The state the machine was in before this state.
+            </summary>
+        </member>
+        <member name="P:KerbalFSM.Started">
+            <summary>
+            Whether the state machine has been started.
+            </summary>
+        </member>
+        <member name="P:KerbalFSM.TimeAtCurrentState">
+            <summary>
+            How long the machine has been in the current state, in seconds.
+            </summary>
+        </member>
+        <member name="T:KFSMEvent">
+            <summary>
+            A KFSMEvent represents a possible transition between two KFSMStates in a KerbalFSM
+            finite state machine.
+            </summary>
+        </member>
+        <member name="F:KFSMEvent.GoToStateOnEvent">
+            <summary>
+            Which state to transition to when this event is triggered.
+            </summary>
+        </member>
+        <member name="F:KFSMEvent.name">
+            <summary>
+            The name of the event.
+            </summary>
+        </member>
+        <member name="F:KFSMEvent.OnCheckCondition">
+            <summary>
+            You can assign to this field a delegate that takes a KFSMState (the current state)
+            and returns a bool. The function will be called each frame and if it returns true,
+            the event is triggered.
+            </summary>
+        </member>
+        <member name="F:KFSMEvent.OnEvent">
+            <summary>
+            You can assign a delegate to this field, and the delegate will be run when the event is triggered.
+            </summary>
+        </member>
+        <member name="F:KFSMEvent.updateMode">
+            <summary>
+            Specifies when OnCheckCondition should be checked?
+            </summary>
+        </member>
+        <member name="M:KFSMEvent.#ctor(System.String)">
+            <summary>
+            Creates a new KFSMEvent
+            </summary>
+            <param name="name">The name of the event.</param>
+        </member>
+        <member name="M:KFSMEvent.IsValid(KFSMState)">
+            <summary>
+            Whether this event can be triggered when the state machine is in the given state.
+            Events must be added to states through KerbalFSM.AddEvent before they can be triggered,
+            and they can only be triggered when the machine is in one of the states to which they
+            have been added.
+            </summary>
+            <param name="state">The state to check.</param>
+            <returns>Whether the event can be triggered from the given state.</returns>
+        </member>
+        <member name="T:KFSMState">
+            <summary>
+            Represents a state in a KerbalFSM finite state machine.
+            </summary>
+        </member>
+        <member name="F:KFSMState.name">
+            <summary>
+            The name of this state.
+            </summary>
+        </member>
+        <member name="F:KFSMState.OnEnter">
+            <summary>
+            You can assign to this field a delegate that takes a KFSMState (which will be this state).
+            The delegate will be called when the state machine enters this state.
+            </summary>
+        </member>
+        <member name="F:KFSMState.OnFixedUpdate">
+            <summary>
+            You can assign a delegate to this field, and the delegate will be called during each FixedUpdate
+            while the state machine is in this state.
+            </summary>
+        </member>
+        <member name="F:KFSMState.OnLateUpdate">
+            <summary>
+            You can assign a delegate to this field, and the delegate will be called during each LateUpdate
+            while the state machine is in this state.
+            </summary>
+        </member>
+        <member name="F:KFSMState.OnLeave">
+            <summary>
+            You can assign to this field a delegate that takes a KFSMState. The delegate will be called
+            when the state machine leaves this state, and the argument passed to the delegate will be
+            the new state that the machine is transitioning to.
+            </summary>
+        </member>
+        <member name="F:KFSMState.OnUpdate">
+            <summary>
+            You can assign a delegate to this field, and the delegate will be call during each Update while
+            the state machine is in this state.
+            </summary>
+        </member>
+        <member name="M:KFSMState.#ctor(System.String)">
+            <summary>
+            Create a new KFSMState with a given name.
+            </summary>
+            <param name="name">The name of the new state.</param>
+        </member>
+        <member name="M:KFSMState.AddEvent(KFSMEvent)">
+            <summary>
+            Add an event (possible transition) to this state.
+            </summary>
+            <param name="ev">The event to add.</param>
+        </member>
+        <member name="M:KFSMState.IsValid(KFSMEvent)">
+            <summary>
+            Whether the given event can be triggered from this state. An event must be added to a state before
+            it can be triggered from that state.
+            </summary>
+            <param name="ev">The event to check.</param>
+            <returns>Whether the event can be triggered from this state.</returns>
+        </member>
+        <member name="P:KFSMState.StateEvents">
+            <summary>
+            The set of events that are valid for this state (i.e., the possible transitions from this state).
+            </summary>
+        </member>
+        <member name="T:KSP.IO.BinaryReader">
+            <summary>
+            Identical to System.IO.BinaryReader, but with added IDisposable methods (for use in using structures), and a factory method instead of constructors.
+            </summary>
+        </member>
+        <member name="M:KSP.IO.BinaryReader.CreateForType``1(System.String,Vessel)">
+            <summary>
+            Create a binary reader with the desired filename.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="filename"></param>
+            <param name="flight"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.BinaryReader.Dispose">
+            <summary>
+            Close the stream and any resources (e.g. files) it has open.
+            </summary>
+        </member>
+        <member name="M:KSP.IO.BinaryReader.Read(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Read a block of bytes from the stream.
+            </summary>
+            <param name="buffer"></param>
+            <param name="index"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.BinaryReader.Read(System.Char[],System.Int32,System.Int32)">
+            <summary>
+            Read a block of chars from the stream.
+            </summary>
+            <param name="buffer"></param>
+            <param name="index"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="T:KSP.IO.BinaryWriter">
+            <summary>
+            Identical to System.IO.BinaryWriter, but with added IDisposable methods (for use in using structures), and a factory method instead of constructors.
+            </summary>
+        </member>
+        <member name="M:KSP.IO.BinaryWriter.CreateForType``1(System.String,Vessel)">
+            <summary>
+            Create a binary file writer.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="filename"></param>
+            <param name="flight"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.File.AppendAllText``1(System.String,System.String,Vessel)">
+            <summary>
+            Append a string to a file, or creates it if it doesn't exist.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="data"></param>
+            <param name="filename"></param>
+            <param name="flight"></param>
+        </member>
+        <member name="M:KSP.IO.File.AppendText``1(System.String,Vessel)">
+            <summary>
+            Open a stream that appends to a file.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="filename"></param>
+            <param name="flight"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.File.Create``1(System.String,Vessel)">
+            <summary>
+            Open a stream that creates a file.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="filename"></param>
+            <param name="flight"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.File.CreateText``1(System.String,Vessel)">
+            <summary>
+            Open a stream that creates a file.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="filename"></param>
+            <param name="flight"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.File.Delete``1(System.String,Vessel)">
+            <summary>
+            Delete a file in your IO sandbox.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="filename"></param>
+            <param name="flight"></param>
+        </member>
+        <member name="M:KSP.IO.File.Exists``1(System.String,Vessel)">
+            <summary>
+            Find out if a file in your IO sandbox exists.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="filename"></param>
+            <param name="flight"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.File.Open``1(System.String,KSP.IO.FileMode,Vessel)">
+            <summary>
+            Open a stream that operates on a file.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="filename"></param>
+            <param name="mode"></param>
+            <param name="flight"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.File.OpenText``1(System.String,Vessel)">
+            <summary>
+            Open a stream that operates on a file.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="filename"></param>
+            <param name="flight"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.File.OpenWrite``1(System.String,Vessel)">
+            <summary>
+            Open a stream that writes to a file.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="filename"></param>
+            <param name="flight"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.File.ReadAllBytes``1(System.String,Vessel)">
+            <summary>
+            Read all the bytes from a file in your IO sandbox.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="data"></param>
+            <param name="filename"></param>
+            <param name="flight"></param>
+        </member>
+        <member name="M:KSP.IO.File.ReadAllLines``1(System.String,Vessel)">
+            <summary>
+            Read all lines from a file in your IO sandbox.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="filename"></param>
+            <param name="flight"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.File.ReadAllText``1(System.String,Vessel)">
+            <summary>
+            Read all the text from a file in your IO sandbox.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="filename"></param>
+            <param name="flight"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.File.WriteAllBytes``1(System.Byte[],System.String,Vessel)">
+            <summary>
+            Write a bunch of bytes to a file on disk
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="data"></param>
+            <param name="filename"></param>
+            <param name="flight"></param>
+        </member>
+        <member name="M:KSP.IO.File.WriteAllLines``1(System.String[],System.String,Vessel)">
+            <summary>
+            Write an array of strings to a file, with each string becoming a line.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="data"></param>
+            <param name="filename"></param>
+            <param name="flight"></param>
+        </member>
+        <member name="M:KSP.IO.File.WriteAllText``1(System.String,System.String,Vessel)">
+            <summary>
+            Write a string to a file.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="data"></param>
+            <param name="filename"></param>
+            <param name="flight"></param>
+        </member>
+        <member name="T:KSP.IO.FileInfo">
+            <summary>
+            A surrogate for System.IO.FileInfo.
+            </summary>
+        </member>
+        <member name="M:KSP.IO.FileInfo.AppendText">
+            <summary>
+            Creates a System.IO.StreamWriter that appends text to the file represented by this instance of the System.IO.FileInfo.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.FileInfo.CopyTo(System.String)">
+            <summary>
+            Copies an existing file to a new file, disallowing the overwriting of an existing file.
+            </summary>
+            <param name="destFileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.FileInfo.CopyTo(System.String,System.Boolean)">
+            <summary>
+            Copies an existing file to a new file, allowing the overwriting of an existing file.
+            </summary>
+            <param name="destFileName"></param>
+            <param name="overwrite"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.FileInfo.Create">
+            <summary>
+            Creates a file.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.FileInfo.CreateForType``1(System.String,Vessel)">
+            <summary>
+            Create a text reader stream.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="filename"></param>
+            <param name="flight"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.FileInfo.CreateText">
+            <summary>
+            Creates a KSP.IO.TextWriter that writes a new text file.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.FileInfo.Decrypt">
+            <summary>
+            Decrypts a file that was encrypted by the current account using the System.IO.FileInfo.Encrypt() method.
+            </summary>
+        </member>
+        <member name="M:KSP.IO.FileInfo.Delete">
+            <summary>
+            Permanently deletes a file.
+            </summary>
+        </member>
+        <member name="M:KSP.IO.FileInfo.Encrypt">
+            <summary>
+            Encrypts a file so that only the account used to encrypt the file can decrypt it.
+            </summary>
+        </member>
+        <member name="M:KSP.IO.FileInfo.MoveTo(System.String)">
+            <summary>
+            Moves a specified file to a new location, providing the option to specify a new file name.
+            </summary>
+            <param name="destFileName"></param>
+        </member>
+        <member name="M:KSP.IO.FileInfo.Open(KSP.IO.FileMode)">
+            <summary>
+            Opens a file in the specified mode.
+            </summary>
+            <param name="mode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.FileInfo.Open(KSP.IO.FileMode,KSP.IO.FileAccess)">
+            <summary>
+            Opens a file in the specified mode with read, write, or read/write access.
+            </summary>
+            <param name="mode"></param>
+            <param name="access"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.FileInfo.Open(KSP.IO.FileMode,KSP.IO.FileAccess,KSP.IO.FileShare)">
+            <summary>
+            Opens a file in the specified mode with read, write, or read/write access and the specified sharing option.
+            </summary>
+            <param name="mode"></param>
+            <param name="access"></param>
+            <param name="share"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.FileInfo.OpenRead">
+            <summary>
+            Creates a read-only System.IO.FileStream.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.FileInfo.OpenText">
+            <summary>
+            Creates a System.IO.StreamReader with UTF8 encoding that reads from an existing text file.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.FileInfo.OpenWrite">
+            <summary>
+            Creates a write-only System.IO.FileStream.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.FileInfo.Replace(System.String,System.String)">
+            <summary>
+            Replaces the contents of a specified file with the file described by the current System.IO.FileInfo object, deleting the original file, and creating a backup of the replaced file.
+            </summary>
+            <param name="destinationFileName"></param>
+            <param name="destinationBackupFileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.FileInfo.Replace(System.String,System.String,System.Boolean)">
+            <summary>
+            Replaces the contents of a specified file with the file described by the current System.IO.FileInfo object, deleting the original file, and creating a backup of the replaced file. Also specifies whether to ignore merge errors.
+            </summary>
+            <param name="destinationFileName"></param>
+            <param name="destinationBackupFileName"></param>
+            <param name="ignoreMetadataErrors"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.FileInfo.ToString">
+            <summary>
+            Returns the path as a string.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:KSP.IO.FileInfo.DirectoryName">
+            <summary>
+            Gets a string representing the directory's full path.
+            </summary>
+        </member>
+        <member name="P:KSP.IO.FileInfo.Exists">
+            <summary>
+            Gets a value indicating whether a file exists.
+            </summary>
+        </member>
+        <member name="P:KSP.IO.FileInfo.IsReadOnly">
+            <summary>
+            Gets or sets a value that determines if the current file is read only.
+            </summary>
+        </member>
+        <member name="P:KSP.IO.FileInfo.Length">
+            <summary>
+            Gets the size, in bytes, of the current file.
+            </summary>
+        </member>
+        <member name="P:KSP.IO.FileInfo.Name">
+            <summary>
+            Gets the name of the file.
+            </summary>
+        </member>
+        <member name="T:KSP.IO.IOException">
+            <summary>
+            A surrogate for System.IO.IOException.
+            </summary>
+        </member>
+        <member name="T:KSP.IO.IOUtils">
+            <summary>
+            Has some useful little tools and utilities.
+            </summary>
+        </member>
+        <member name="M:KSP.IO.IOUtils.DeserializeFromBinary(System.Byte[])">
+            <summary>
+            Deserialize a binary serialized object
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.IOUtils.GetFilePathFor(System.Type,System.String,Vessel)">
+            <summary>
+            Return the full path for a given filename, provided a class from the plugin. 
+            <para>PluginData/[.flights/FLIGHT_UUID/]assemblyname/file</para>
+            </summary>
+            <param name="T"></param>
+            <param name="file"></param>
+            <param name="flight"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.IOUtils.SerializeToBinary(System.Object)">
+            <summary>
+            Serialize an object (same as using a BinaryFormatter).
+            </summary>
+            <param name="something"></param>
+            <returns></returns>
+        </member>
+        <member name="T:KSP.IO.MemoryStream">
+            <summary>
+            Useful for manipulating bytes in memory.
+            </summary>
+        </member>
+        <member name="T:KSP.IO.PluginConfigNode">
+            <summary>
+            A node full of configuration values.
+            </summary>
+        </member>
+        <member name="M:KSP.IO.PluginConfigNode.GetParent">
+            <summary>
+            Gets the parent of this node.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.PluginConfigNode.GetValue``1(System.String)">
+            <summary>
+            Get the value of a configuration key.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.PluginConfigNode.GetValue``1(System.String,``0)">
+            <summary>
+            Get the value of a configuration key.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <param name="_default"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.PluginConfigNode.SetValue(System.String,System.Object)">
+            <summary>
+            Set the value of a configuration key
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="P:KSP.IO.PluginConfigNode.Item(System.String)">
+            <summary>
+            Get or set the value of a configuration key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:KSP.IO.PluginConfiguration" -->
+        <member name="M:KSP.IO.PluginConfiguration.CreateForType``1(Vessel)">
+            <summary>
+            Initialize the configuration object
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="flight"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.PluginConfiguration.GetValue``1(System.String)">
+            <summary>
+            Get a typed value from the root node.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.PluginConfiguration.GetValue``1(System.String,``0)">
+            <summary>
+            Get a typed value from the root node, and set to a default if it doesn't exist.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <param name="_default"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KSP.IO.PluginConfiguration.load">
+            <summary>
+            Load from disk
+            </summary>
+        </member>
+        <member name="M:KSP.IO.PluginConfiguration.save">
+            <summary>
+            Commit changes to disk
+            </summary>
+        </member>
+        <member name="M:KSP.IO.PluginConfiguration.SetValue(System.String,System.Object)">
+            <summary>
+            Set a configuration key's value
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="P:KSP.IO.PluginConfiguration.Item(System.String)">
+            <summary>
+            Return configuration key from the root node
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:KSP.IO.SeekOrigin">
+            <summary>
+            This enum is a replacement for its System.IO equivalent. It's used to determine from where one wishes to seek in a file stream.
+            </summary>
+        </member>
+        <member name="F:KSP.IO.SeekOrigin.Begin">
+            <summary>
+            Seek from the beginning of the stream.
+            </summary>
+        </member>
+        <member name="F:KSP.IO.SeekOrigin.Current">
+            <summary>
+            Seek from the current position in the stream.
+            </summary>
+        </member>
+        <member name="F:KSP.IO.SeekOrigin.End">
+            <summary>
+            Seek from the end of the stream.
+            </summary>
+        </member>
+        <member name="T:KSP.IO.TextReader">
+            <summary>
+            Identical to System.IO.TextReader, but with added IDisposable methods (for use in using() statements), and a factory method instead of constructors.
+            </summary>
+        </member>
+        <member name="M:KSP.IO.TextReader.CreateForType``1(System.String,Vessel)">
+            <summary>
+            Create a text reader stream.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="filename"></param>
+            <param name="flight"></param>
+            <returns></returns>
+        </member>
+        <member name="T:KSP.IO.TextWriter">
+            <summary>
+            Identical to System.IO.TextWriter, but with added IDisposable methods (for use in using() statements), and a factory method instead of constructors.
+            </summary>
+        </member>
+        <member name="M:KSP.IO.TextWriter.CreateForType``1(System.String,Vessel)">
+            <summary>
+            Create a text writing stream
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="filename"></param>
+            <param name="flight"></param>
+            <returns></returns>
         </member>
     </members>
 </doc>
