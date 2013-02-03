@@ -2744,5 +2744,46 @@
             <param name="flight"></param>
             <returns></returns>
         </member>
+        <member name="T:Krakensbane">
+            <summary>
+            The physics simulation has problems if vessels move too fast relative to 
+            the underlying reference frame used by the simulation, or get too far from
+            the origin of the coordinate system. Krakensbane shifts the reference frame
+            origin and velocity so that the active vessel is always near the origin of,
+            and moving slowly with respect to, the underlying coordinate system used by the
+            physics simulation.
+            </summary>
+        </member>
+        <member name="M:Krakensbane.GetFrameVelocity">
+            <summary>
+            Returns the velocity of the Krakensbane velocity frame.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Krakensbane.GetFrameVelocityV3f">
+            <summary>
+            Returns the velocity of the Krakensbane velocity frame as a single-precision vector.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Krakensbane.GetLastCorrection">
+            <summary>
+            Returns the last velocity correction performed.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Krakensbane.ResetVelocityFrame">
+            <summary>
+            sets the frame velocity back to 0m/s. Use this if setting the worldspace velocity of vessels directly.
+            </summary>
+        </member>
+        <member name="M:Krakensbane.setOffset(Vector3d)">
+            <summary>
+            Moves all vessels not on rails by the given position offset. This will usually only affect the active vessel,
+            unless there are other vessels nearby. The offset can be very large and the vessels
+            will not break, unlike for Vessel.SetPosition.
+            </summary>
+            <param name="offset"></param>
+        </member>
     </members>
 </doc>
