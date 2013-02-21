@@ -19,6 +19,7 @@ public class Vessel : MonoBehaviour
     public Vector3d acceleration;
     /// <summary>
     /// Presumably, this is the current altitude above sea of the vessel, in meters?
+    /// Is equal to pqsAltitude + heightFromTerrain (where heightFromTerrain is not -1).
     /// </summary>
     public double altitude;
     /// <summary>
@@ -45,12 +46,19 @@ public class Vessel : MonoBehaviour
     public FlightIntegrator flightIntegrator;
     public double geeForce;
     public double geeForce_immediate;
+    /// <summary>
+    /// Appears to always be -1?
+    /// </summary>
     public float heightFromSurface;
+    /// <summary>
+    /// The vertical distance in meters between the vessel and the nearest terrain (including buildings), 
+    /// or -1 when sea depth is greater than 600m (terrainAltitude <= -600).
+    /// </summary>
     public float heightFromTerrain;
     public double horizontalSrfSpeed;
     public Guid id;
     /// <summary>
-    /// Presumably, which this vessel is an EVAing kerbal.
+    /// Presumably, whether this vessel is an EVAing kerbal.
     /// </summary>
     public bool isEVA;
     /// <summary>
@@ -114,6 +122,12 @@ public class Vessel : MonoBehaviour
     /// </summary>
     public PatchedConicSolver patchedConicSolver;
     public Vector3d perturbation;
+    /// <summary>
+    /// Presumably, the height in meters of the planet's terrain QuadSphere directly under the vessel, compared to sea level.
+    /// This does not take the height of buildings into account. It is generally within +/- 1m of terrainAltitude, 
+    /// except when over buildings (terrainAltitude does account for buildings) or sea with a depth of greater
+    /// than 600m (terrainAltitude <= -600, heightFromTerrain == -1).
+    /// </summary>
     public double pqsAltitude;
     /// <summary>
     /// The protoVessel can be used to get some saved information about unloaded vessels.
@@ -144,6 +158,10 @@ public class Vessel : MonoBehaviour
     /// Presumably, the atmospheric pressure at the vessel's current location.
     /// </summary>
     public double staticPressure;
+    /// <summary>
+    /// The height in meters of the nearest terrain (including buildings) directly under the vessel, compared to sea level.
+    /// Ground which is underwater will have a negative terrainAltitude.
+    /// </summary>
     public double terrainAltitude;
     public Vector3 terrainNormal;
     public static float unloadDistance;

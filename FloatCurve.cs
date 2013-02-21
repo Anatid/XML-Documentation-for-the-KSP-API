@@ -9,7 +9,7 @@ using System;
 /// and optionally the tangents at those points can be specified.
 /// </summary>
 [Serializable]
-public class FloatCurve : IConfigNode
+public class FloatCurve /*: IConfigNode*/
 {
     public extern FloatCurve();
 
@@ -24,6 +24,6 @@ public class FloatCurve : IConfigNode
     /// <param name="time">The input parameter (not necessarily a time).</param>
     /// <returns>The value of the function.</returns>
     public extern float Evaluate(float time);
-    public extern void Load(ConfigNode node);
-    public extern void Save(ConfigNode node);
+    public void Load(ConfigNode node) { }
+    public void Save(ConfigNode node) { }
 }
