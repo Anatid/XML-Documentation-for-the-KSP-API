@@ -6,7 +6,8 @@ using System;
 using UnityEngine;
 
 /// <summary>
-/// This class is related to control of the main camera used in the flight scene.
+/// This class is related to control of the main camera used in the flight scene. Its transform is the
+/// parent of the actual Camera objects.
 /// </summary>
 public class FlightCamera : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class FlightCamera : MonoBehaviour
     public float camHdg;
     public float camPitch;
     public Vector3 endDirection;
+    /// <summary>
+    /// Returns the singleton FlightCamera object.
+    /// </summary>
     public static FlightCamera fetch;
     public FoRModes FoRMode;
     public float fovDefault;
@@ -52,7 +56,13 @@ public class FlightCamera : MonoBehaviour
     public extern static FoRModes FrameOfReferenceMode { get; }
     public extern Quaternion pivotRotation { get; }
 
+    /// <summary>
+    /// Enables mouse control of the camera.
+    /// </summary>
     public extern void ActivateUpdate();
+    /// <summary>
+    /// Disables mouse control of the camera.
+    /// </summary>
     public extern void DeactivateUpdate();
     public extern void DisableCamera();
     public extern void EnableCamera();
