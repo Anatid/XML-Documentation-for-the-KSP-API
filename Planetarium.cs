@@ -35,13 +35,27 @@ public class Planetarium : MonoBehaviour
 
     public extern Planetarium();
 
+    /// <summary>
+    /// Along with "up" and "right," one of the three vectors defining the fixed celestial
+    /// reference frame. 
+    /// </summary>
     public extern static Vector3d forward { get; }
     public extern static double InverseRotAngle { get; set; }
     public extern static List<OrbitDriver> Orbits { get; }
     public extern static bool Pause { get; }
+    /// <summary>
+    /// Along with "up" and "forward," one of the three vectors defining the fixed celestial
+    /// reference frame. The LAN (longitude of the ascending node) of every orbit is defined
+    /// in reference to Planetarium.right. Specifically, the LAN is the angle between
+    /// Planetarium.right and the orbit's ascending node, as viewed along Planetarium.up.
+    /// </summary>
     public extern static Vector3d right { get; }
     public extern static QuaternionD Rotation { get; set; }
     public extern static double TimeScale { get; set; }
+    /// <summary>
+    /// Along with "right" and "forward," one of the three vectors defining the fixed celestial
+    /// reference frame. As of 0.23.5, all planet rotation axes are aligned with Planetarium.up.
+    /// </summary>
     public extern static Vector3d up { get; }
     public extern static QuaternionD ZupRotation { get; set; }
 

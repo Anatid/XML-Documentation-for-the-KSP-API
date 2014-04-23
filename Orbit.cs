@@ -22,6 +22,9 @@ public class Orbit
     public bool activePatch;
     public double altitude;
     public Vector3d an;
+    /// <summary>
+    /// The angle between the ascending node and the periapsis, in degrees.
+    /// </summary>
     public double argumentOfPeriapsis;
     public double ClAppr;
     public double ClEctr1;
@@ -53,22 +56,37 @@ public class Orbit
     /// The universal time at which this patch ends.
     /// </summary>
     public double EndUT;
+    /// <summary>
+    /// A special UT at which the parameters of the Orbit are defined. See meanAnomalyAtEpoch.
+    /// </summary>
     public double epoch;
     public double FEVp;
     public double FEVs;
     public double fromE;
     public double fromV;
+    /// <summary>
+    /// The specific orbital angular momentum, maybe? 
+    /// </summary>
     public Vector3d h;
     /// <summary>
     /// The inclination of this orbit with respect to the equator of the central body (in radians or degrees?)
     /// </summary>
     public double inclination;
     /// <summary>
-    /// The longitude of the ascending node of the orbit (in what coordinate system?)
+    /// The longitude of the ascending node of the orbit, in degrees. The LAN
+    /// is the angle between the ascending node and Planetarium.right, as viewed along
+    /// Planetarium.up.
     /// </summary>
     public double LAN;
     public double mag;
+    /// <summary>
+    /// Mean anomaly is the fraction of the orbit that has been completed, measured starting
+    /// from the periapsis, multiplied by 2π. Look it up.
+    /// </summary>
     public double meanAnomaly;
+    /// <summary>
+    /// The mean anomaly of the orbit at the special UT given by Orbit.epoch.
+    /// </summary>
     public double meanAnomalyAtEpoch;
     public double nearestTT;
     public Orbit nextPatch;
@@ -80,6 +98,9 @@ public class Orbit
     public double orbitalEnergy;
     public double orbitalSpeed;
     public double orbitPercent;
+    /// <summary>
+    /// How the next patch follows onto this one, or FINAL if there is no patch after this one.
+    /// </summary>
     public Orbit.PatchTransitionType patchEndTransition;
     public Orbit.PatchTransitionType patchStartTransition;
     /// <summary>

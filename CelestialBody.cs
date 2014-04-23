@@ -1,16 +1,13 @@
-﻿#region Assembly Assembly-CSharp.dll, v2.0.50727
-// C:\greg\games\KSP 0.18.2\KSP_Data\Managed\Assembly-CSharp.dll
-#endregion
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+
 
 /// <summary>
 /// The Sun, the planets, and the moons are all CelestialBodies.
 /// </summary>
 public class CelestialBody : MonoBehaviour
-{
+{   
     public float altitudeMultiplier;
     public float altitudeOffset;
     /// <summary>
@@ -41,10 +38,13 @@ public class CelestialBody : MonoBehaviour
     /// </summary>
     public double atmosphereScaleHeight;
     public Color atmosphericAmbientColor;
+    public CBAttributeMap BiomeMap;
+    public string bodyDescription;
     /// <summary>
     /// The name of the body, as a string.
     /// </summary>
     public string bodyName;
+    public Transform bodyTransform;
     public CelestialBodyType bodyType;
     public double directRotAngle;
     /// <summary>
@@ -73,8 +73,9 @@ public class CelestialBody : MonoBehaviour
     /// </summary>
     public double Mass;
     /// <summary>
-    /// The height of the upper edge of the body's atmosphere, in meters above sea level. It seems
-    /// that the drag force may actually go to exactly zero below this height.
+    /// The height of the upper edge of the body's atmosphere, in meters above sea level. Except,
+    /// not really. The atmosphere really cuts off at an altitude (in meters) of 
+    /// <code>body.atmosphereScaleHeight * 1000 * Math.Log(1e6)</code>
     /// </summary>
     public float maxAtmosphereAltitude;
     /// <summary>
@@ -96,8 +97,6 @@ public class CelestialBody : MonoBehaviour
     /// The radius of the planet in meters. Note that this is only the radius of "sea level"; the actual terrain may be higher.
     /// </summary>
     public double Radius;
-    public Texture2D resourceMap;
-    public PlanetaryResource resources;
     public bool rotates;
     public QuaternionD rotation;
     public double rotationAngle;
@@ -105,6 +104,7 @@ public class CelestialBody : MonoBehaviour
     /// The time, in seconds, for the body to complete one rotation around its axis
     /// </summary>
     public double rotationPeriod;
+    public CelestialBodyScienceParams scienceValues;
     /// <summary>
     /// The radius of this body's sphere of influence (measured from the center of the body), in meters.
     /// </summary>
@@ -119,7 +119,6 @@ public class CelestialBody : MonoBehaviour
     /// <summary>
     /// Presumably, this gives the minimum altitude you must have in order to be allowed to use each
     /// warp rate when in this body's sphere of influence.
-    /// </summary>
     public float[] timeWarpAltitudeLimits;
     public bool use_The_InName;
     public bool useLegacyAtmosphere;
@@ -127,6 +126,8 @@ public class CelestialBody : MonoBehaviour
 
     public extern CelestialBody();
 
+    public extern DiscoveryInfo DiscoveryInfo { get; }
+    public extern int flightGlobalsIndex { get; set; }
     public extern string name { get; }
     /// <summary>
     /// Describes the orbit of this body around its primary.
@@ -140,11 +141,14 @@ public class CelestialBody : MonoBehaviour
     /// Presumably, the body this body orbits around
     /// </summary>
     public extern CelestialBody referenceBody { get; }
+    public extern Texture2D ResourceMap { get; }
+    public extern PResource Resources { get; }
     public extern string theName { get; }
 
     public extern void CBUpdate();
     [ContextMenu("Debug Time Warp Limits")]
     public extern void debugTimeWarpLimits();
+    public extern void DisplaySurfaceResource(int resourceID);
     /// <summary>
     /// Gets the height of a given position above this body's sea level, in meters.
     /// </summary>
@@ -200,6 +204,7 @@ public class CelestialBody : MonoBehaviour
     /// <param name="lon">Longitude in degrees</param>
     /// <returns>A unit normal vector to the surface</returns>
     public extern Vector3d GetSurfaceNVector(double lat, double lon);
+    public extern VesselTargetModes GetTargetingMode();
     public extern Transform GetTransform();
     public extern Vector3d getTruePositionAtUT(double UT);
     public extern Vessel GetVessel();
@@ -213,6 +218,13 @@ public class CelestialBody : MonoBehaviour
     public extern Vector3d GetWorldSurfacePosition(double lat, double lon, double alt);
     public extern bool HasChild(CelestialBody body);
     public extern bool HasParent(CelestialBody body);
+    public extern void HideSurfaceResource();
     [ContextMenu("Reset Time Warp Limits")]
     public extern void resetTimeWarpLimits();
+    public extern double RevealAltitude();
+    public extern float RevealMass();
+    public extern string RevealName();
+    public extern string RevealSituationString();
+    public extern double RevealSpeed();
+    public extern string RevealType();
 }
