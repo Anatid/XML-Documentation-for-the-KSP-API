@@ -40,20 +40,14 @@ public class ModuleAsteroid : PartModule, IVesselAutoRename
 	/// <returns>The original asteroid name, not that of any docked ships</returns>
 	///
 	/// <remarks>Implements IVesselAutoRename</remarks>
-	public string GetVesselName ()
-	{
-		return this.AsteroidName;
-	}
+	public string GetVesselName ();
 
 	/// <summary>Returns the ship class</summary>
 	///
 	/// <returns>Returns VesselType.SpaceObject</returns>
 	///
 	/// <remarks>Implements IVesselAutoRename</remarks>
-	public VesselType GetVesselType ()
-	{
-		return base.part.vesselType;
-	}
+	public VesselType GetVesselType ();
 
 	/// <summary>Called when the player selects the asteroid's center of mass as their target</summary>
 	[KSPEvent] public void MakeTarget ();
