@@ -1,8 +1,8 @@
 How to use this documentation
 -----------------------------
 
-1. Download [Assembly-CSharp.xml](https://raw.githubusercontent.com/Anatid/XML-Documentation-for-the-KSP-API/master/Assembly-CSharp.xml) 
-2. Place Assembly-CSharp.xml in the same place as the Assembly-CSharp.dll that you link to when building your KSP plugin (the KSP_Data/Managed folder). 
+1. Download [Assembly-CSharp.xml](https://raw.githubusercontent.com/Anatid/XML-Documentation-for-the-KSP-API/master/Assembly-CSharp.xml) and [UnityEngine.xml](https://raw.githubusercontent.com/Anatid/XML-Documentation-for-the-KSP-API/master/UnityEngine.xml)
+2. Place Assembly-CSharp.xml and UnityEngine.xml in the same place as the Assembly-CSharp.dll and UnityEngine.dll that you link to when building your KSP plugin (the KSP_Data/Managed folder). 
 3. Restart Visual Studio.
 
 Now when you use the Object Browser to examine the contents of Assembly-CSharp.dll you will find helpful comments for some classes. These comments will also show up through IntelliSense when writing code. The classes that have at least some documentation are the ones listed above.
