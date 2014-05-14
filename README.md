@@ -24,7 +24,8 @@ To add info on a new class:
 
 1. Highlight the class in the source code of your KSP plugin.
 2. Press F12. Visual Studio will create a fake source file for the class. 
-3. Add your comments to the fake source file. 
-4. Fork this project.
-5. Add your new fake source file to your version of the project. 
-6. Send me a pull request.
+3. Copy Visual Studio's uneditable source file into a new file you can edit.
+4. Add your comments to the fake source file. 
+5. Fork this project.
+6. Add your new fake source file to your version of the project. 
+7. Send me a pull request.
