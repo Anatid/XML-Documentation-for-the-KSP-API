@@ -1,3 +1,6 @@
+using System.Collections;
+using System.Diagnostics;
+
 /// <summary>Key module in PART[PotatoRoid]</summary>
 ///
 /// <remarks> 
@@ -8,19 +11,19 @@
 public class ModuleAsteroid : PartModule, IVesselAutoRename
 {
 	/// <summary>Density of asteroid, in tons/m^3. Used to calculate part mass.</summary>
-	[KSPField] public float density = 0.03;
+	[KSPField] public float density = 0.03f;
 
 	/// <summary>Largest allowed radius relative to nominal radius for that asteroid class</summary>
-	[KSPField] public float maxRadiusMultiplier = 1.25;
+	[KSPField] public float maxRadiusMultiplier = 1.25f;
 
 	/// <summary>The fraction of science recovered by transmitting back to Kerbin.</summary>
-	[KSPField] public float sampleExperimentXmitScalar = 0.3;
+	[KSPField] public float sampleExperimentXmitScalar = 0.3f;
 
 	/// <summary>The science experiment triggered by sampling this asteroid.</summary>
 	[KSPField] public string sampleExperimentId = "asteroidSample";
 
 	/// <summary>Smallest allowed radius relative to nominal radius for that asteroid class</summary>
-	[KSPField] public float minRadiusMultiplier = 0.75;
+	[KSPField] public float minRadiusMultiplier = 0.75f;
 
 	/// <summary>Stores the original name of the asteroid, before any ships docked with it</summary>
 	[KSPField (isPersistant = true)] public string AsteroidName;
@@ -40,26 +43,30 @@ public class ModuleAsteroid : PartModule, IVesselAutoRename
 	/// <returns>The original asteroid name, not that of any docked ships</returns>
 	///
 	/// <remarks>Implements IVesselAutoRename</remarks>
-	public string GetVesselName ();
+    public extern string GetVesselName();
 
 	/// <summary>Returns the ship class</summary>
 	///
 	/// <returns>Returns VesselType.SpaceObject</returns>
 	///
 	/// <remarks>Implements IVesselAutoRename</remarks>
-	public VesselType GetVesselType ();
+    public extern VesselType GetVesselType();
 
 	/// <summary>Called when the player selects the asteroid's center of mass as their target</summary>
-	[KSPEvent] public void MakeTarget ();
+    [KSPEvent]
+    public extern void MakeTarget();
 
 	/// <summary>Initializes the asteroid</summary>
-	public override void OnStart (PartModule.StartState state);
+    public extern override void OnStart(PartModule.StartState state);
 
-	[DebuggerHidden] public IEnumerator PostInit ();
+    [DebuggerHidden]
+    public extern IEnumerator PostInit();
 
 	/// <summary> Called when the player manually renames the asteroid</summary>
-	[KSPEvent] public void RenameAsteroidEvent ();
+    [KSPEvent]
+    public extern void RenameAsteroidEvent();
 
 	/// <summary>Called when the player takes a surface sample</summary>
-	[KSPEvent] public void TakeSampleEVAEvent ();
+	[KSPEvent] 
+    public extern void TakeSampleEVAEvent ();
 }

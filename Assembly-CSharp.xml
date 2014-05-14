@@ -4,7 +4,7 @@
         <name>XMLDocumentation</name>
     </assembly>
     <members>
-        <member name="T:KSPDocumentation.AtmosphericEngine">
+        <member name="T:AtmosphericEngine">
             <summary>
             The old, deprecated class that implemented jet engine parts before PartModules.
             Use an appropriately configured ModuleEngines instead of this class.
@@ -2250,6 +2250,67 @@
             <summary>
             Useful for manipulating bytes in memory.
             </summary>
+        </member>
+        <member name="T:ModuleAsteroid">
+             <summary>Key module in PART[PotatoRoid]</summary>
+            
+             <remarks> 
+             Although this module is included in the PotatoRoid config file, it is not saved 
+             in the VESSEL trees of unvisited asteroids. The module is initialized when an asteroid 
+             first enters physics range
+             </remarks>
+        </member>
+        <member name="F:ModuleAsteroid.density">
+            <summary>Density of asteroid, in tons/m^3. Used to calculate part mass.</summary>
+        </member>
+        <member name="F:ModuleAsteroid.maxRadiusMultiplier">
+            <summary>Largest allowed radius relative to nominal radius for that asteroid class</summary>
+        </member>
+        <member name="F:ModuleAsteroid.sampleExperimentXmitScalar">
+            <summary>The fraction of science recovered by transmitting back to Kerbin.</summary>
+        </member>
+        <member name="F:ModuleAsteroid.sampleExperimentId">
+            <summary>The science experiment triggered by sampling this asteroid.</summary>
+        </member>
+        <member name="F:ModuleAsteroid.minRadiusMultiplier">
+            <summary>Smallest allowed radius relative to nominal radius for that asteroid class</summary>
+        </member>
+        <member name="F:ModuleAsteroid.AsteroidName">
+            <summary>Stores the original name of the asteroid, before any ships docked with it</summary>
+        </member>
+        <member name="F:ModuleAsteroid.seed">
+            <summary>Used to generate asteroid mesh</summary>
+        </member>
+        <member name="F:ModuleAsteroid.prefabBaseURL">
+             <summary>Stores some kind of resource.</summary>
+            
+             <example>"Procedural/PA_C"</example>
+        </member>
+        <member name="M:ModuleAsteroid.GetVesselName">
+             <summary>Returns asteroid name</summary>
+            
+             <returns>The original asteroid name, not that of any docked ships</returns>
+            
+             <remarks>Implements IVesselAutoRename</remarks>
+        </member>
+        <member name="M:ModuleAsteroid.GetVesselType">
+             <summary>Returns the ship class</summary>
+            
+             <returns>Returns VesselType.SpaceObject</returns>
+            
+             <remarks>Implements IVesselAutoRename</remarks>
+        </member>
+        <member name="M:ModuleAsteroid.MakeTarget">
+            <summary>Called when the player selects the asteroid's center of mass as their target</summary>
+        </member>
+        <member name="M:ModuleAsteroid.OnStart(PartModule.StartState)">
+            <summary>Initializes the asteroid</summary>
+        </member>
+        <member name="M:ModuleAsteroid.RenameAsteroidEvent">
+            <summary> Called when the player manually renames the asteroid</summary>
+        </member>
+        <member name="M:ModuleAsteroid.TakeSampleEVAEvent">
+            <summary>Called when the player takes a surface sample</summary>
         </member>
         <member name="T:ModuleEngines">
             <summary>
