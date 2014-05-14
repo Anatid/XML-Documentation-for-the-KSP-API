@@ -7,6 +7,8 @@ How to use this documentation
 
 Now when you use the Object Browser to examine the contents of Assembly-CSharp.dll you will find helpful comments for some classes. These comments will also show up through IntelliSense when writing code. The classes that have at least some documentation are the ones listed above.
 
+Probably you can use Assembly-CSharp.xml in MonoDevelop too but I don't use MonoDevelop so I don't know.
+
 How to contribute to this documentation
 ---------------------------------------
 
