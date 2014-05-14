@@ -1,3 +1,5 @@
+using UnityEngine;
+
 /// <summary>Stores information on asteroid spawning</summary>
 ///
 /// <remarks>Executed while in Flight, Tracking Station, and Space Center scenes</remarks>
@@ -19,13 +21,13 @@ public class ScenarioDiscoverableObjects : ScenarioModule
 	///	12% class A, 13% class B, 49% class C, 13% class D, and 12% class E
 	/// </remarks>
 	///
-	[KSPField (isPersistant = true)] public FloatCurve sizeCurve = new FloatCurve
+	[KSPField (isPersistant = true)] public FloatCurve sizeCurve /* = new FloatCurve
 	{
 		{0  , 0   , 1.5  , 1.5  }, 
 		{0.3, 0.45, 0.875, 0.875}, 
 		{0.7, 0.55, 0.875, 0.875}, 
 		{1  , 1   , 1.5  , 1.5  }
-	};
+	}*/;
 
 	/// <summary>Controls the fraction of spawn checks in which new asteroids are generated</summary>
 	/// <remarks>
@@ -39,15 +41,15 @@ public class ScenarioDiscoverableObjects : ScenarioModule
 	/// These are seconds of time spent playing KSP, regardless of the time warp rate. The faster 
 	///	your time warp, the longer the in-game interval between asteroid detections.
 	/// </remarks>
-	public float spawnInterval = 15.0;
+	public float spawnInterval = 15.0f;
 
 	/// <summary>Longest time an asteroid can go untracked before disappearing, in Earth days</summary>
 	/// <seealso cref="DiscoveryInfo.unobservedLifetime" />
-	public float maxUntrackedLifetime = 20.0;
+	public float maxUntrackedLifetime = 20.0f;
 
 	/// <summary>Shortest time an asteroid can go untracked before disappearing, in Earth days</summary>
 	/// <seealso cref="DiscoveryInfo.unobservedLifetime" />
-	public float minUntrackedLifetime = 1.0;
+	public float minUntrackedLifetime = 1.0f;
 
 	//----------------------------------------------------------------------
 
@@ -55,14 +57,15 @@ public class ScenarioDiscoverableObjects : ScenarioModule
 	///
 	/// <seealso cref="spawnOddsAgainst" />
 	/// <seealso cref="spawnInterval" />
-	[ContextMenu ()] public void debugSpawnProbability();
+	/*[ContextMenu ()]*/ public extern void debugSpawnProbability();
 
-	public override void OnAwake();
-	public override void OnLoad(ConfigNode node);
-	public override void OnSave(ConfigNode node);
+    public extern /*override*/ void OnAwake();
+    public extern /*override*/ void OnLoad(ConfigNode node);
+    public extern /*override*/ void OnSave(ConfigNode node);
 
 	/// <summary>Creates a random asteroid and Kerbin-intercepting orbit</summary>
-	[ContextMenu ()] public void SpawnAsteroid ();
+    /*[ContextMenu()]*/
+    public extern void SpawnAsteroid();
 
 	/// <summary>Creates a random asteroid and Kerbin-intercepting orbit.</summary>
 	///
@@ -72,7 +75,7 @@ public class ScenarioDiscoverableObjects : ScenarioModule
 	///
 	/// Intended for debugging?
 	/// </remarks>
-	[ContextMenu ()] public void SpawnLastAsteroid ();
+	/*[ContextMenu ()]*/ public extern void SpawnLastAsteroid ();
 
-	public void Start ();
+	public extern void Start ();
 }

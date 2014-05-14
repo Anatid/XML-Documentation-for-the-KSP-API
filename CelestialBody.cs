@@ -6,7 +6,7 @@ using UnityEngine;
 /// <summary>
 /// The Sun, the planets, and the moons are all CelestialBodies.
 /// </summary>
-public class CelestialBody : MonoBehaviour, ITargetable, IDiscoverable
+public class CelestialBody /*: MonoBehaviour, ITargetable, IDiscoverable*/
 {   
     public float altitudeMultiplier;
     public float altitudeOffset;
@@ -119,6 +119,7 @@ public class CelestialBody : MonoBehaviour, ITargetable, IDiscoverable
     /// <summary>
     /// Presumably, this gives the minimum altitude you must have in order to be allowed to use each
     /// warp rate when in this body's sphere of influence.
+    /// </summary>
     public float[] timeWarpAltitudeLimits;
     public bool use_The_InName;
     public bool useLegacyAtmosphere;
@@ -243,7 +244,7 @@ public class CelestialBody : MonoBehaviour, ITargetable, IDiscoverable
 
     /// <summary>Describes the state of the body</summary>
     ///
-    /// <returns>A string containing the sphere of influence and trajectory of the object
+    /// <returns>A string containing the sphere of influence and trajectory of the object</returns>
     /// 
     /// <example>"Orbiting the Sun"</example>
     /// 

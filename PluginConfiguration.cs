@@ -33,14 +33,14 @@ namespace KSP.IO
     ///  
     /// <para>Despite looking a bit messy, it's actually a lot easier to use and doesn't have as many drawbacks as INI files. Newlines are preserved, and most importantly, types are also preserved. Oh, and it's UTF-8 encoded, so internationalization won't be as much as a problem, theoretically. Here's how to use it:</para>
     /// <para><code>
-    /// PluginConfiguration cfg = PluginConfiguration.CreateForType<MyCoolModule>();
+    /// PluginConfiguration cfg = PluginConfiguration.CreateForType&lt;MyCoolModule&gt;();
     /// cfg["a string"] = "I love KSP!";
     /// cfg["another setting"] = new Vector3d(0,1,2);
     /// cfg.save();
     /// // Later...
     /// cfg.load();
-    /// settingAString = cfg.GetValue<string>("a string");
-    /// settingAVector = cfg.GetValue<Vector3d>("another setting");
+    /// settingAString = cfg.GetValue&lt;string&gt;("a string");
+    /// settingAVector = cfg.GetValue&lt;Vector3d&gt;("another setting");
     /// </code></para>
     /// </summary>
     public class PluginConfiguration

@@ -1,3 +1,6 @@
+using UnityEngine;
+using System;
+
 /// <summary>Generates an asteroid shape</summary>
 public class ProceduralAsteroid : MonoBehaviour
 {
@@ -18,7 +21,7 @@ public class ProceduralAsteroid : MonoBehaviour
 	///
 	/// <returns>An object containing all relevant meshes and key statistics</returns>
 	/// </remarks>
-	public PAsteroid Generate (int seed, float radius, Transform parent);
+	public extern PAsteroid Generate (int seed, float radius, Transform parent);
 
 	//----------------------------------------------------------------------
 

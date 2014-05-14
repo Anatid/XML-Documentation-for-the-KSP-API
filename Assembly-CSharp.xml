@@ -433,7 +433,12 @@
             Presumably, whether this body is tidally locked to the body around with it orbits.
             </summary>
         </member>
-        <!-- Badly formed XML comment ignored for member "F:CelestialBody.timeWarpAltitudeLimits" -->
+        <member name="F:CelestialBody.timeWarpAltitudeLimits">
+            <summary>
+            Presumably, this gives the minimum altitude you must have in order to be allowed to use each
+            warp rate when in this body's sphere of influence.
+            </summary>
+        </member>
         <member name="M:CelestialBody.GetAltitude(Vector3d)">
             <summary>
             Gets the height of a given position above this body's sea level, in meters.
@@ -491,6 +496,51 @@
             <param name="lon">Longitude in degrees</param>
             <param name="alt">Altitude above sea level in meters</param>
             <returns>Position in world coordinates</returns>
+        </member>
+        <member name="M:CelestialBody.RevealAltitude">
+             <summary>Returns the body's altitude above the reference sphere of its primary</summary>
+             
+             <remarks>Implements IDiscoverable</remarks>
+            
+        </member>
+        <member name="M:CelestialBody.RevealMass">
+             <summary>Returns the body's mass, in kg</summary>
+             
+             <remarks>Implements IDiscoverable</remarks>
+            
+        </member>
+        <member name="M:CelestialBody.RevealName">
+             <summary>Returns the body's tracking station name</summary>
+             
+             <remarks>Implements IDiscoverable</remarks>
+            
+        </member>
+        <member name="M:CelestialBody.RevealSituationString">
+             <summary>Describes the state of the body</summary>
+            
+             <returns>A string containing the sphere of influence and trajectory of the object</returns>
+             
+             <example>"Orbiting the Sun"</example>
+             
+             <remarks>Implements IDiscoverable</remarks>
+            
+        </member>
+        <member name="M:CelestialBody.RevealSpeed">
+             <summary>Returns the body's speed</summary>
+             
+             <remarks>Implements IDiscoverable</remarks>
+            
+        </member>
+        <member name="M:CelestialBody.RevealType">
+             <summary>Returns the type of the body</summary>
+            
+             <returns>One of "Sun", "Planet", or "Moon"</returns>
+             
+             <remarks>Implements IDiscoverable</remarks>
+            
+        </member>
+        <member name="P:CelestialBody.DiscoveryInfo">
+            <summary>Describes to what extent this body has been explored</summary>
         </member>
         <member name="P:CelestialBody.orbit">
             <summary>
@@ -623,6 +673,249 @@
             Use ModuleDecouple or ModuleAnchoredDecoupler instead.
             </summary>
         </member>
+        <member name="T:DiscoverableObjectsUtil">
+            <summary>Static methods used by asteroids</summary>
+        </member>
+        <member name="M:DiscoverableObjectsUtil.GenerateAsteroidName">
+             <summary>Generates an suitably science-y asteroid name</summary>
+              
+             <returns>A random string of the form "XXX-###".</returns>
+            
+        </member>
+        <member name="T:DiscoveryInfo">
+             <summary>Represents the "remote sensing" information available for an IDiscoverable</summary>
+            
+             <invariant>this.fadeUT = this.lastObservedTime + this.unobservedLifetime</invariant>
+            
+        </member>
+        <member name="F:DiscoveryInfo.distance">
+             <summary>Tracking station wrapper for IDiscoverable.RevealAltitude()</summary>
+             
+             <remarks>Requires DiscoveryLevels.StateVectors</remarks>
+            
+        </member>
+        <member name="F:DiscoveryInfo.situation">
+             <summary>Tracking station wrapper for IDiscoverable.RevealSituationString()</summary>
+             
+             <remarks>Requires DiscoveryLevels.StateVectors</remarks>
+            
+        </member>
+        <member name="F:DiscoveryInfo.speed">
+             <summary>Tracking station wrapper for IDiscoverable.RevealSpeed()</summary>
+             
+             <remarks>Requires DiscoveryLevels.StateVectors</remarks>
+            
+        </member>
+        <member name="F:DiscoveryInfo.mass">
+             <summary>Tracking station wrapper for IDiscoverable.RevealMass()</summary>
+             
+             <remarks>Requires DiscoveryLevels.Appearance</remarks>
+            
+        </member>
+        <member name="F:DiscoveryInfo.type">
+             <summary>Tracking station wrapper for IDiscoverable.RevealType()</summary>
+             
+             <remarks>Requires DiscoveryLevels.Appearance</remarks>
+            
+        </member>
+        <member name="F:DiscoveryInfo.size">
+             <summary>Tracking station wrapper for this.objectSize</summary>
+             
+             <remarks>Always visible</remarks>
+            
+        </member>
+        <member name="F:DiscoveryInfo.trackingStatus">
+             <summary>Tracking station wrapper for Level?</summary>
+             
+             <remarks>Always visible</remarks>
+            
+        </member>
+        <member name="F:DiscoveryInfo.signalStrengthPercent">
+             <summary>Tracking station wrapper for GetSignalStrength()</summary>
+             
+             <remarks>Rounded to the nearest 0.1%.
+            
+             Always visible</remarks>
+            
+        </member>
+        <member name="F:DiscoveryInfo.name">
+             <summary>Tracking station wrapper for IDiscoverable.RevealName()</summary>
+             
+             <remarks>Requires DiscoveryLevels.Name</remarks>
+            
+        </member>
+        <member name="F:DiscoveryInfo.signalStrengthLevel">
+             <summary>Tracking station wrapper for GetSignalStrengthCaption()</summary>
+             
+             <remarks>Always visible</remarks>
+            
+        </member>
+        <member name="M:DiscoveryInfo.#ctor(IDiscoverable,DiscoveryLevels,System.Double)">
+             <summary>Initializes a Class C asteroid</summary>
+            
+             <param name="host">The vessel or celestial body to which this DiscoveryInfo applies</param>
+             <param name="level">The amount of knowledge for the asteroid</param>
+             <param name="untrackedLifetime">The amount of time the asteroid can remain untracked 
+             	before disappearing</param>
+            
+        </member>
+        <member name="M:DiscoveryInfo.#ctor(IDiscoverable,System.Double)">
+             <summary>Initializes a Class C asteroid, and assumes all properties are already known.</summary>
+            
+             <param name="host">The vessel or celestial body to which this DiscoveryInfo applies</param>
+             <param name="untrackedLifetime">The amount of time the asteroid can remain untracked 
+             	before disappearing</param>
+            
+        </member>
+        <member name="M:DiscoveryInfo.#ctor(IDiscoverable)">
+             <summary>Initializes a Class C asteroid, and assumes all properties are already known.</summary>
+            
+             <param name="host">The vessel or celestial body to which this DiscoveryInfo applies</param>
+            
+        </member>
+        <member name="M:DiscoveryInfo.GetSignalStrengthCaption(System.Double)">
+             <summary>Returns a text description of the signal strength</summary>
+             
+             <returns>If <paramref name="signal"/> is in [0.0, 0.2), returns "Very Weak"</returns>
+             <returns>If <paramref name="signal"/> is in [0.2, 0.4), returns "Weak"</returns>
+             <returns>If <paramref name="signal"/> is in [0.4, 0.6), returns "Average"</returns>
+             <returns>If <paramref name="signal"/> is in [0.6, 0.8), returns "Good"</returns>
+             <returns>If <paramref name="signal"/> is in [0.8, 1.0], returns "Strong"</returns>
+            
+        </member>
+        <member name="M:DiscoveryInfo.GetSizeClassDescription(UntrackedObjectClass)">
+             <summary>Returns long description of asteroid type</summary>
+            
+             <param name="sizeClass">The asteroid type to label</param>
+            
+             <returns>The asteroid class explanation printed on the tracking station's info panel.
+            
+             <example>"Class C Objects are about average-sized..."</example>
+            
+             If not a valid value of UntrackedObjectClass, returns "This seems to be a non-standard size class. Who knows what it'll look like?"
+             </returns>
+        </member>
+        <member name="M:DiscoveryInfo.GetSizeClassSizes(UntrackedObjectClass)">
+             <summary>Returns asteroid size displayed in map view</summary>
+            
+             <param name="sizeClass">The asteroid type to label</param>
+            
+             <returns>The asteroid class printed beneath an untracked asteroid.
+            
+             <example>"C (Medium)"</example>
+            
+             If not a valid value of UntrackedObjectClass, returns "???"
+             </returns>
+        </member>
+        <member name="M:DiscoveryInfo.GetSignalLife(System.Double)">
+             <summary>Returns the fraction of the asteroid's unobservedLifetime that remains</summary>
+            
+             <param name="UT">The time at which the signal life is measured</param>
+             
+             <remarks>GetSignalLife(t_discover) == 1.0
+             GetSignalLife(fadeUT) == 0.0</remarks>
+            
+        </member>
+        <member name="M:DiscoveryInfo.GetSignalStrength(System.Double)">
+             <summary>Returns amount of time remaining until the asteroid is lost, in units of referenceLifetime</summary>
+            
+             <param name="UT">The time at which the signal strength is measured</param>
+             
+             <remarks>GetSignalStrength(t_discover) == unobservedLifetime / referenceLifetime
+             GetSignalStrength(fadeUT) == 0.0</remarks>
+            
+        </member>
+        <member name="M:DiscoveryInfo.HaveKnowledgeAbout(DiscoveryLevels)">
+             <summary>Function testing if an asteroid has a particular discovery level</summary>
+            
+             <param name="lvl">The flag(s) whose presence must be tested.</param>
+             
+             <returns>True if at least one of the flags in <paramref name="lvl"/> is in 
+            	this object, false otherwise</returns>
+            
+        </member>
+        <member name="M:DiscoveryInfo.SetLastObservedTime(System.Double)">
+             <summary>Logs an asteroid observation</summary>
+            
+             <param name="UT">The new time of last observation</param>
+            
+        </member>
+        <member name="M:DiscoveryInfo.SetLevel(DiscoveryLevels)">
+             <summary>Sets the level of knowledge the player has for the asteroid</summary>
+            
+             <param name="level">The flags representing the asteroid's exploration state</param>
+            
+        </member>
+        <member name="M:DiscoveryInfo.SetReferenceLifetime(System.Double)">
+             <summary>Updates the reference lifetime</summary>
+            
+             <param name="time">Changes the scaling of signal strength.</param>
+            
+        </member>
+        <member name="M:DiscoveryInfo.SetUnobservedLifetime(System.Double)">
+             <summary>Updates the time for which the asteroid can go untracked, preserving class invariants</summary>
+            
+             <param name="time">The maximum time to track the asteroid</param>
+            
+        </member>
+        <member name="M:DiscoveryInfo.SetUntrackedObjectSize(UntrackedObjectClass)">
+             <summary>Updates the asteroid size</summary>
+            
+             <param name="size">The asteroid class (A-E)</param>
+            
+        </member>
+        <member name="P:DiscoveryInfo.fadeUT">
+            <summary>The time at which the asteroid is scheduled to be deleted</summary>
+        </member>
+        <member name="P:DiscoveryInfo.lastObservedTime">
+             <summary>The time at which the asteroid was last tracked</summary>
+            
+             <remarks>Stored in persistence file</remarks>
+        </member>
+        <member name="P:DiscoveryInfo.Level">
+             <summary>The asteroid's tracking state</summary>
+            
+             <remarks>Stored in persistence file as state</remarks>
+        </member>
+        <member name="P:DiscoveryInfo.objectSize">
+             <summary>The size class (A-E) of the asteroid</summary>
+            
+             <remarks>Stored in persistence file as size</remarks>
+        </member>
+        <member name="P:DiscoveryInfo.referenceLifetime">
+             <summary>The time for which an asteroid can go untracked if it starts at full signal strength</summary>
+            
+             <remarks>Alternate definition: the time needed for the signal strength to fall by 1 unit.
+            
+             Always equals 1728000 seconds, or 20 Earth days
+             
+             Stored in persistence file as refTime</remarks>
+        </member>
+        <member name="P:DiscoveryInfo.unobservedLifetime">
+            <summary>The time for which the asteroid can go untracked before it is deleted</summary>
+            
+            <remarks>Stored in persistence file as lifetime</remarks>
+        </member>
+        <member name="T:DiscoveryLevels">
+            <summary>Describes an IDiscoverable object's state regarding tracking and exploration</summary>
+        </member>
+        <member name="F:DiscoveryLevels.Presence">
+            <summary>Object has been detected in tracking station</summary>
+        </member>
+        <member name="F:DiscoveryLevels.Name">
+            <summary>Object has been tracked</summary>
+        </member>
+        <member name="F:DiscoveryLevels.StateVectors">
+            <summary>Object is currently tracked</summary>
+        </member>
+        <member name="F:DiscoveryLevels.Appearance">
+            <summary>Unlocks mass and type fields; intended for discoverable CelestialBodies?</summary>
+        </member>
+        <member name="F:DiscoveryLevels.Owned">
+            <summary>Alias for "all flags"</summary>
+            
+            <remarks>Set for docked asteroids and all normal ship parts.</remarks>
+        </member>
         <member name="T:DockingPort">
             <summary>
             An unused class; use ModuleDockingNode instead.
@@ -724,7 +1017,6 @@
             Read all the bytes from a file in your IO sandbox.
             </summary>
             <typeparam name="T"></typeparam>
-            <param name="data"></param>
             <param name="filename"></param>
             <param name="flight"></param>
         </member>
@@ -1335,6 +1627,57 @@
             The GUISkin used by the game. Set GUI.skin = HighLogic.Skin at the start of your GUI function to use it yourself.
             </summary>
         </member>
+        <member name="T:IDiscoverable">
+             <summary>Methods allowing information for celestial bodies or ships to be hidden at game start</summary>
+            
+             <remarks>
+             These methods appear to be used in the tracking station.
+            
+             Implemented by CelestialBody
+             Implemented by Vessel
+             </remarks>
+        </member>
+        <member name="M:IDiscoverable.RevealAltitude">
+             <summary>Returns the object's altitude</summary>
+             
+             <returns>The height above the reference sphere of the Celestial Body in 
+            	whose sphere of influence the object lies, in meters.</returns>
+            
+        </member>
+        <member name="M:IDiscoverable.RevealMass">
+             <summary>Returns the object's mass</summary>
+            
+             <remarks>Units are implementation-dependent.</remarks>
+        </member>
+        <member name="M:IDiscoverable.RevealName">
+             <summary>Returns the object's tracking station name</summary>
+            
+             <returns>The string to display in the tracking station</returns>
+             
+        </member>
+        <member name="M:IDiscoverable.RevealSituationString">
+             <summary>Describes the state of the object</summary>
+            
+             <returns>A string containing the sphere of influence and trajectory of the object
+             
+             <example>"Orbiting the Sun"</example>
+             </returns>
+        </member>
+        <member name="M:IDiscoverable.RevealSpeed">
+             <summary>Returns the speed of the object</summary>
+            
+             <returns>The inertial speed relative to the Celestial Body in whose sphere of influence 
+            	the object lies, in meters per second.</returns>
+            
+        </member>
+        <member name="M:IDiscoverable.RevealType">
+            <summary>Gives the type of object used</summary>
+            
+            <remarks>Meaning is implementation-dependent.</remarks>
+        </member>
+        <member name="P:IDiscoverable.DiscoveryInfo">
+            <summary>Describes to what extent this object has been explored</summary>
+        </member>
         <member name="T:KSP.IO.IOException">
             <summary>
             A surrogate for System.IO.IOException.
@@ -1748,7 +2091,14 @@
             Apply this attribute to a function to allow it to be called via action groups.
             </summary>
         </member>
-        <!-- Badly formed XML comment ignored for member "F:KSPAction.actionGroup" -->
+        <member name="F:KSPAction.actionGroup">
+            <summary>
+            Which action groups this action is currently a part of? Probably you can test
+            whether this action is part of a given action group (say, the Abort group) with
+            
+            <para><code>if((actionGroup &amp; KSPActionGroup.Abort) != 0)</code></para>
+            </summary>
+        </member>
         <member name="F:KSPAction.guiName">
             <summary>
             The name of this action as it appears in the action group editor.
@@ -1945,7 +2295,11 @@
             The thrust this engine produces at minimum throttle.
             </summary>
         </member>
-        <!-- Badly formed XML comment ignored for member "F:ModuleEngines.propellants" -->
+        <member name="F:ModuleEngines.propellants">
+            <summary>
+            <para>The resources used by this engine, and their relative ratios.</para>
+            </summary>
+        </member>
         <member name="F:ModuleEngines.realIsp">
             <summary>
             The current specific impulse of this engine, in seconds.
@@ -2253,6 +2607,18 @@
             Use this instance to access the methods of this class
             </summary>
         </member>
+        <member name="T:PAsteroid">
+            <summary>Stores information on an asteroid's shape</summary>
+        </member>
+        <member name="F:PAsteroid.highestPoint">
+            <summary>The largest distance of any vertex to the mesh center</summary>
+        </member>
+        <member name="F:PAsteroid.volume">
+            <summary>The (approximate?) volume of the asteroid mesh</summary>
+        </member>
+        <member name="M:PAsteroid.Setup(UnityEngine.Mesh,UnityEngine.Material,System.String,System.String,UnityEngine.Mesh,UnityEngine.PhysicMaterial,System.String,System.String,UnityEngine.Mesh,UnityEngine.PhysicMaterial,System.String,System.String)">
+            <summary>Combines premade elements into visual, collider, and convex meshes.</summary>
+        </member>
         <member name="T:PatchedConicSolver">
             <summary>
             Each vessel has a PatchedConicSolver, which stores the predicted patched conics trajectory and
@@ -2389,7 +2755,44 @@
             <param name="key"></param>
             <returns></returns>
         </member>
-        <!-- Badly formed XML comment ignored for member "T:KSP.IO.PluginConfiguration" -->
+        <member name="T:KSP.IO.PluginConfiguration">
+            <summary>
+            From N3X15: PluginConfiguration was something I threw together a while ago to try and improve settings serialization. The INI files we were using just couldn't cope with newlines and had all sorts of horrible workarounds. Instead of INI files, it writes structured XML files that look like this:
+            
+            <para><code>
+            &lt;config&gt;
+               &lt;int name="int"\&gt;4&lt;/int&gt;
+               &lt;long name="long"&gt;45&lt;/long&gt;
+               &lt;short name="short"&gt;4&lt;/short&gt;
+               &lt;byte name="byte"&gt;255&lt;/byte&gt;
+               &lt;bool name="bool"&gt;1&lt;/bool&gt;
+               &lt;vector3 name="vector3"&gt;
+                   &lt;x&gt;0&lt;/x&gt;
+                   &lt;y&gt;1&lt;/y&gt;
+                   &lt;z&gt;2&lt;/z&gt;
+               &lt;/vector3&gt;
+               &lt;vector3d name="vector3d"&gt;
+                   &lt;x&gt;0&lt;/x&gt;
+                   &lt;y&gt;1&lt;/y&gt;
+                   &lt;z&gt;2.05&lt;/z&gt;
+               &lt;/vector3d&gt;
+               &lt;string name="string"&gt;string&lt;/string&gt;
+             &lt;/config&gt;
+             </code></para>
+             
+            <para>Despite looking a bit messy, it's actually a lot easier to use and doesn't have as many drawbacks as INI files. Newlines are preserved, and most importantly, types are also preserved. Oh, and it's UTF-8 encoded, so internationalization won't be as much as a problem, theoretically. Here's how to use it:</para>
+            <para><code>
+            PluginConfiguration cfg = PluginConfiguration.CreateForType&lt;MyCoolModule&gt;();
+            cfg["a string"] = "I love KSP!";
+            cfg["another setting"] = new Vector3d(0,1,2);
+            cfg.save();
+            // Later...
+            cfg.load();
+            settingAString = cfg.GetValue&lt;string&gt;("a string");
+            settingAVector = cfg.GetValue&lt;Vector3d&gt;("another setting");
+            </code></para>
+            </summary>
+        </member>
         <member name="M:KSP.IO.PluginConfiguration.CreateForType``1(Vessel)">
             <summary>
             Initialize the configuration object
@@ -2438,6 +2841,35 @@
             </summary>
             <param name="key"></param>
             <returns></returns>
+        </member>
+        <member name="T:ProceduralAsteroid">
+            <summary>Generates an asteroid shape</summary>
+        </member>
+        <member name="F:ProceduralAsteroid.radius">
+            <summary>The desired reference surface of the asteroid mesh</summary>
+        </member>
+        <member name="M:ProceduralAsteroid.Generate(System.Int32,System.Single,UnityEngine.Transform)">
+             <summary>Initializes a randomly generated asteroid shape</summary>
+            
+             <remarks>
+             <param name='seed'>Used to randomize the mesh</param>
+             <param name='radius'>The desired reference surface of the asteroid mesh</param>
+             <param name='parent'>The reference frame in which the asteroid is to be oriented</param>
+            
+             Note: <paramref name="parent"/> may not be null, even though UnityEngine.Transforms 
+            	are usually allowed to have null parents.
+            
+             <returns>An object containing all relevant meshes and key statistics</returns>
+             </remarks>
+        </member>
+        <member name="F:ProceduralAsteroid.ModValue.minValue">
+            <summary>Smallest mesh height that can be randomly chosen, in units of the asteroid radius</summary>
+        </member>
+        <member name="F:ProceduralAsteroid.ModValue.maxValue">
+            <summary>Largest mesh height that can be randomly chosen, in units of the asteroid radius</summary>
+        </member>
+        <member name="F:ProceduralAsteroid.ModValue.radiusFactor">
+            <summary>Size multiplier in addition to ProceduralAsteroid.radius</summary>
         </member>
         <member name="T:ResourceFlowMode">
             <summary>
@@ -2491,6 +2923,70 @@
             "Scaled space" is the coordinate system used by the planetarium view. It's the same coordinate system as
             the world coordinates used by the physics, except scaled down by this scale factor.
             </summary>
+        </member>
+        <member name="T:ScenarioDiscoverableObjects">
+             <summary>Stores information on asteroid spawning</summary>
+            
+             <remarks>Executed while in Flight, Tracking Station, and Space Center scenes</remarks>
+            
+        </member>
+        <member name="F:ScenarioDiscoverableObjects.spawnGroupMinLimit">
+            <summary>Number of untracked asteroids at which spawn rate begins to slow</summary>
+        </member>
+        <member name="F:ScenarioDiscoverableObjects.spawnGroupMaxLimit">
+            <summary>Number of untracked asteroids at which spawn rate stops completely</summary>
+        </member>
+        <member name="F:ScenarioDiscoverableObjects.sizeCurve">
+             <summary>Sets size distribution for asteroids</summary>
+             <remarks>
+             The output range of [0, 1) is divided equally among the classes. So [0, 0.2) is class A, 
+             [0.2, 0.4) is class B, ..., [0.8, 1) is class E.
+            
+             Default curve translates to 
+            	12% class A, 13% class B, 49% class C, 13% class D, and 12% class E
+             </remarks>
+            
+        </member>
+        <member name="F:ScenarioDiscoverableObjects.spawnOddsAgainst">
+            <summary>Controls the fraction of spawn checks in which new asteroids are generated</summary>
+            <remarks>
+            The probability of spawning an asteroid is 1 / (1 + spawnOddsAgainst)
+            </remarks>
+        </member>
+        <member name="F:ScenarioDiscoverableObjects.spawnInterval">
+             <summary>Number of seconds between asteroid checks</summary>
+            
+             <remarks>
+             These are seconds of time spent playing KSP, regardless of the time warp rate. The faster 
+            	your time warp, the longer the in-game interval between asteroid detections.
+             </remarks>
+        </member>
+        <member name="F:ScenarioDiscoverableObjects.maxUntrackedLifetime">
+            <summary>Longest time an asteroid can go untracked before disappearing, in Earth days</summary>
+            <seealso cref="P:DiscoveryInfo.unobservedLifetime"/>
+        </member>
+        <member name="F:ScenarioDiscoverableObjects.minUntrackedLifetime">
+            <summary>Shortest time an asteroid can go untracked before disappearing, in Earth days</summary>
+            <seealso cref="P:DiscoveryInfo.unobservedLifetime"/>
+        </member>
+        <member name="M:ScenarioDiscoverableObjects.debugSpawnProbability">
+             <summary>Returns a description of the current spawn interval and spawn odds</summary>
+            
+             <seealso cref="F:ScenarioDiscoverableObjects.spawnOddsAgainst"/>
+             <seealso cref="F:ScenarioDiscoverableObjects.spawnInterval"/>
+        </member>
+        <member name="M:ScenarioDiscoverableObjects.SpawnAsteroid">
+            <summary>Creates a random asteroid and Kerbin-intercepting orbit</summary>
+        </member>
+        <member name="M:ScenarioDiscoverableObjects.SpawnLastAsteroid">
+             <summary>Creates a random asteroid and Kerbin-intercepting orbit.</summary>
+            
+             <remarks>
+             <seealso cref="M:ScenarioDiscoverableObjects.SpawnAsteroid">Asteroid is identical to the last 
+            	call of SpawnAsteroid()</seealso>
+            
+             Intended for debugging?
+             </remarks>
         </member>
         <member name="T:ScreenMessages">
             <summary>
@@ -2854,6 +3350,9 @@
             </summary>
             <param name="condition"></param>
         </member>
+        <member name="T:UntrackedObjectClass">
+            <summary>Describes an asteroid's size</summary>
+        </member>
         <member name="T:Vector3d">
             <summary>
             A Vector3d in 3D space.
@@ -2939,7 +3438,12 @@
             Appears to always be -1?
             </summary>
         </member>
-        <!-- Badly formed XML comment ignored for member "F:Vessel.heightFromTerrain" -->
+        <member name="F:Vessel.heightFromTerrain">
+            <summary>
+            The vertical distance in meters between the vessel and the nearest terrain (including buildings), 
+            or -1 when sea depth is greater than 600m (terrainAltitude &lt;= -600).
+            </summary>
+        </member>
         <member name="F:Vessel.isEVA">
             <summary>
             Presumably, whether this vessel is an EVAing kerbal.
@@ -3004,7 +3508,14 @@
             Among other things, the patchedConicSolver stores information about the player's current set of maneuver nodes.
             </summary>
         </member>
-        <!-- Badly formed XML comment ignored for member "F:Vessel.pqsAltitude" -->
+        <member name="F:Vessel.pqsAltitude">
+            <summary>
+            Presumably, the height in meters of the planet's terrain QuadSphere directly under the vessel, compared to sea level.
+            This does not take the height of buildings into account. It is generally within +/- 1m of terrainAltitude, 
+            except when over buildings (terrainAltitude does account for buildings) or sea with a depth of greater
+            than 600m (terrainAltitude &lt;= -600, heightFromTerrain == -1).
+            </summary>
+        </member>
         <member name="F:Vessel.protoVessel">
             <summary>
             The protoVessel can be used to get some saved information about unloaded vessels.
@@ -3096,6 +3607,52 @@
             Sets the velocity of the vessel to a new value, instantaneously. May only work for loaded vessels?
             </summary>
             <param name="vel"></param>
+        </member>
+        <member name="M:Vessel.RevealAltitude">
+             <summary>Returns the vessel's altitude above the reference sphere of 
+            		the CelestialBody it orbits</summary>
+             
+             <remarks>Implements IDiscoverable</remarks>
+            
+        </member>
+        <member name="M:Vessel.RevealMass">
+             <summary>Returns the vessel's mass, in tons</summary>
+             
+             <remarks>Implements IDiscoverable</remarks>
+            
+        </member>
+        <member name="M:Vessel.RevealName">
+             <summary>Returns the vessel's tracking station name</summary>
+             
+             <remarks>Implements IDiscoverable</remarks>
+            
+        </member>
+        <member name="M:Vessel.RevealSituationString">
+             <summary>Describes the state of the vessel</summary>
+            
+             <returns>A string containing the sphere of influence and trajectory of the object</returns>
+             
+             <example>"Orbiting the Sun"</example>
+             
+             <remarks>Implements IDiscoverable</remarks>
+            
+        </member>
+        <member name="M:Vessel.RevealSpeed">
+             <summary>Returns the vessel's speed</summary>
+             
+             <remarks>Implements IDiscoverable</remarks>
+            
+        </member>
+        <member name="M:Vessel.RevealType">
+             <summary>Returns the type of the vessel</summary>
+            
+             <returns>A string representation of vesselType</returns>
+             
+             <remarks>Implements IDiscoverable</remarks>
+            
+        </member>
+        <member name="P:Vessel.DiscoveryInfo">
+            <summary>Describes to what extent this object has been explored</summary>
         </member>
         <member name="P:Vessel.isActiveVessel">
             <summary>

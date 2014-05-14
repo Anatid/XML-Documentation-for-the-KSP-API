@@ -11,7 +11,7 @@ using UnityEngine;
 /// A Vessel object represents a single vessel. Parts that break off from a vessel become their own Vessels. Vessels that merge
 /// via docking become one Vessel.
 /// </summary>
-public class Vessel : MonoBehaviour, ITargetable, IShipconstruct, IDiscoverable
+public class Vessel /*: MonoBehaviour, ITargetable, IShipconstruct, IDiscoverable*/
 {
     /// <summary>
     /// Presumably, this is the current acceleration vector of the vessel, in m/s^2?
@@ -52,7 +52,7 @@ public class Vessel : MonoBehaviour, ITargetable, IShipconstruct, IDiscoverable
     public float heightFromSurface;
     /// <summary>
     /// The vertical distance in meters between the vessel and the nearest terrain (including buildings), 
-    /// or -1 when sea depth is greater than 600m (terrainAltitude <= -600).
+    /// or -1 when sea depth is greater than 600m (terrainAltitude &lt;= -600).
     /// </summary>
     public float heightFromTerrain;
     public double horizontalSrfSpeed;
@@ -126,7 +126,7 @@ public class Vessel : MonoBehaviour, ITargetable, IShipconstruct, IDiscoverable
     /// Presumably, the height in meters of the planet's terrain QuadSphere directly under the vessel, compared to sea level.
     /// This does not take the height of buildings into account. It is generally within +/- 1m of terrainAltitude, 
     /// except when over buildings (terrainAltitude does account for buildings) or sea with a depth of greater
-    /// than 600m (terrainAltitude <= -600, heightFromTerrain == -1).
+    /// than 600m (terrainAltitude &lt;= -600, heightFromTerrain == -1).
     /// </summary>
     public double pqsAltitude;
     /// <summary>
@@ -338,7 +338,7 @@ public class Vessel : MonoBehaviour, ITargetable, IShipconstruct, IDiscoverable
 
     /// <summary>Describes the state of the vessel</summary>
     ///
-    /// <returns>A string containing the sphere of influence and trajectory of the object
+    /// <returns>A string containing the sphere of influence and trajectory of the object</returns>
     /// 
     /// <example>"Orbiting the Sun"</example>
     /// 

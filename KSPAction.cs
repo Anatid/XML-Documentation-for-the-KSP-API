@@ -14,7 +14,7 @@ public class KSPAction : Attribute
     /// Which action groups this action is currently a part of? Probably you can test
     /// whether this action is part of a given action group (say, the Abort group) with
     /// 
-    /// <para><code>if((actionGroup & KSPActionGroup.Abort) != 0)</code></para>
+    /// <para><code>if((actionGroup &amp; KSPActionGroup.Abort) != 0)</code></para>
     /// </summary>
     public KSPActionGroup actionGroup;
     /// <summary>

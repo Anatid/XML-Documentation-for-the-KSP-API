@@ -1,3 +1,5 @@
+using UnityEngine;
+
 /// <summary>Stores information on an asteroid's shape</summary>
 public class PAsteroid : MonoBehaviour
 {
@@ -10,7 +12,7 @@ public class PAsteroid : MonoBehaviour
 	//----------------------------------------------------------------------
 
 	/// <summary>Combines premade elements into visual, collider, and convex meshes.</summary>
-	public void Setup (Mesh visualMesh, Material visualMaterial, string visualLayer, string visualTag, 
+	public extern void Setup (Mesh visualMesh, Material visualMaterial, string visualLayer, string visualTag, 
 		Mesh colliderMesh, PhysicMaterial colliderMaterial, string colliderLayer, string colliderTag, 
 		Mesh convexMesh, PhysicMaterial convexMaterial, string convexLayer, string convexTag);
 }

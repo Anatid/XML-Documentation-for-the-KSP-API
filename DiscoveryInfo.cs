@@ -1,8 +1,10 @@
+using System;
+
 /// <summary>Represents the "remote sensing" information available for an IDiscoverable</summary>
 ///
 /// <invariant>this.fadeUT = this.lastObservedTime + this.unobservedLifetime</invariant>
 ///
-[Serializable] public class DiscoveryInfo : IConfigNode {
+[Serializable] public class DiscoveryInfo /*: IConfigNode*/ {
 	/// <summary>Tracking station wrapper for IDiscoverable.RevealAltitude()</summary>
 	/// 
 	/// <remarks>Requires DiscoveryLevels.StateVectors</remarks>
@@ -121,38 +123,38 @@
 
 	/// <summary>Initializes a Class C asteroid</summary>
 	///
-	/// <param name="host">The vessel or celestial body to which this DiscoveryInfo applies<param>
+	/// <param name="host">The vessel or celestial body to which this DiscoveryInfo applies</param>
 	/// <param name="level">The amount of knowledge for the asteroid</param>
 	/// <param name="untrackedLifetime">The amount of time the asteroid can remain untracked 
 	/// 	before disappearing</param>
 	///
-	public DiscoveryInfo (IDiscoverable host, DiscoveryLevels level, double untrackedLifetime);
+    public extern DiscoveryInfo(IDiscoverable host, DiscoveryLevels level, double untrackedLifetime);
 
 	/// <summary>Initializes a Class C asteroid, and assumes all properties are already known.</summary>
 	///
-	/// <param name="host">The vessel or celestial body to which this DiscoveryInfo applies<param>
+	/// <param name="host">The vessel or celestial body to which this DiscoveryInfo applies</param>
 	/// <param name="untrackedLifetime">The amount of time the asteroid can remain untracked 
 	/// 	before disappearing</param>
 	///
-	public DiscoveryInfo (IDiscoverable host, double untrackedLifetime);
+    public extern DiscoveryInfo(IDiscoverable host, double untrackedLifetime);
 
 	/// <summary>Initializes a Class C asteroid, and assumes all properties are already known.</summary>
 	///
-	/// <param name="host">The vessel or celestial body to which this DiscoveryInfo applies<param>
+	/// <param name="host">The vessel or celestial body to which this DiscoveryInfo applies</param>
 	///
-	public DiscoveryInfo (IDiscoverable host);
+    public extern DiscoveryInfo(IDiscoverable host);
 
 	//----------------------------------------------------------------------
 
 	/// <summary>Returns a text description of the signal strength</summary>
 	/// 
-	/// <returns>If <paramref name="signal"> is in [0.0, 0.2), returns "Very Weak"</returns>
-	/// <returns>If <paramref name="signal"> is in [0.2, 0.4), returns "Weak"</returns>
-	/// <returns>If <paramref name="signal"> is in [0.4, 0.6), returns "Average"</returns>
-	/// <returns>If <paramref name="signal"> is in [0.6, 0.8), returns "Good"</returns>
-	/// <returns>If <paramref name="signal"> is in [0.8, 1.0], returns "Strong"</returns>
+	/// <returns>If <paramref name="signal"/> is in [0.0, 0.2), returns "Very Weak"</returns>
+	/// <returns>If <paramref name="signal"/> is in [0.2, 0.4), returns "Weak"</returns>
+	/// <returns>If <paramref name="signal"/> is in [0.4, 0.6), returns "Average"</returns>
+	/// <returns>If <paramref name="signal"/> is in [0.6, 0.8), returns "Good"</returns>
+	/// <returns>If <paramref name="signal"/> is in [0.8, 1.0], returns "Strong"</returns>
 	///
-	public static string GetSignalStrengthCaption(double signal);
+    public static extern string GetSignalStrengthCaption(double signal);
 
 	/// <summary>Returns long description of asteroid type</summary>
 	///
@@ -164,9 +166,9 @@
 	///
 	/// If not a valid value of UntrackedObjectClass, returns "This seems to be a non-standard size class. Who knows what it'll look like?"
 	/// </returns>
-	public static string GetSizeClassDescription (UntrackedObjectClass sizeClass);
+    public static extern string GetSizeClassDescription(UntrackedObjectClass sizeClass);
 
-	/// <summary>Returns asteroid size displayed in map view
+	/// <summary>Returns asteroid size displayed in map view</summary>
 	///
 	/// <param name="sizeClass">The asteroid type to label</param>
 	///
@@ -176,7 +178,7 @@
 	///
 	/// If not a valid value of UntrackedObjectClass, returns "???"
 	/// </returns>
-	public static string GetSizeClassSizes (UntrackedObjectClass sizeClass);
+    public static extern string GetSizeClassSizes(UntrackedObjectClass sizeClass);
 
 	//----------------------------------------------------------------------
 
@@ -187,7 +189,7 @@
 	/// <remarks>GetSignalLife(t_discover) == 1.0
 	/// GetSignalLife(fadeUT) == 0.0</remarks>
 	///
-	public double GetSignalLife (double UT);
+    public extern double GetSignalLife(double UT);
 
 	/// <summary>Returns amount of time remaining until the asteroid is lost, in units of referenceLifetime</summary>
 	///
@@ -196,47 +198,47 @@
 	/// <remarks>GetSignalStrength(t_discover) == unobservedLifetime / referenceLifetime
 	/// GetSignalStrength(fadeUT) == 0.0</remarks>
 	///
-	public double GetSignalStrength (double UT);
+    public extern double GetSignalStrength(double UT);
 
 	/// <summary>Function testing if an asteroid has a particular discovery level</summary>
 	///
 	/// <param name="lvl">The flag(s) whose presence must be tested.</param>
 	/// 
 	/// <returns>True if at least one of the flags in <paramref name="lvl"/> is in 
-	//	this object, false otherwise</returns>
+	///	this object, false otherwise</returns>
 	///
-	public bool HaveKnowledgeAbout (DiscoveryLevels lvl);
+    public extern bool HaveKnowledgeAbout(DiscoveryLevels lvl);
 
-	public void Load (ConfigNode node);
-	public void Save (ConfigNode node);
+    public extern void Load(ConfigNode node);
+    public extern void Save(ConfigNode node);
 
 	/// <summary>Logs an asteroid observation</summary>
 	///
 	/// <param name="UT">The new time of last observation</param>
 	///
-	public void SetLastObservedTime (double UT);
+    public extern void SetLastObservedTime(double UT);
 
 	/// <summary>Sets the level of knowledge the player has for the asteroid</summary>
 	///
 	/// <param name="level">The flags representing the asteroid's exploration state</param>
 	///
-	public void SetLevel (DiscoveryLevels level);
+    public extern void SetLevel(DiscoveryLevels level);
 
 	/// <summary>Updates the reference lifetime</summary>
 	///
 	/// <param name="time">Changes the scaling of signal strength.</param>
 	///
-	public void SetReferenceLifetime (double time);
+    public extern void SetReferenceLifetime(double time);
 
 	/// <summary>Updates the time for which the asteroid can go untracked, preserving class invariants</summary>
 	///
 	/// <param name="time">The maximum time to track the asteroid</param>
 	///
-	public void SetUnobservedLifetime (double time);
+    public extern void SetUnobservedLifetime(double time);
 
 	/// <summary>Updates the asteroid size</summary>
 	///
 	/// <param name="size">The asteroid class (A-E)</param>
 	///
-	public void SetUntrackedObjectSize (UntrackedObjectClass size);
+	public extern void SetUntrackedObjectSize (UntrackedObjectClass size);
 }

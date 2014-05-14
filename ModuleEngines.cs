@@ -77,7 +77,7 @@ public class ModuleEngines : PartModule
     public float minThrust;
     public float mixtureDensity;
     /// <summary>
-    /// <para>The resources used by this engine, and their relative ratios.
+    /// <para>The resources used by this engine, and their relative ratios.</para>
     /// </summary>
     public List<ModuleEngines.Propellant> propellants;
     /// <summary>

@@ -1,4 +1,6 @@
-﻿/// <summary>Describes an IDiscoverable object's state regarding tracking and exploration</summary>
+﻿using System;
+
+/// <summary>Describes an IDiscoverable object's state regarding tracking and exploration</summary>
 [Flags] public enum DiscoveryLevels {
 	None,
 	/// <summary>Object has been detected in tracking station</summary>

@@ -5,5 +5,5 @@ public static class DiscoverableObjectsUtil
 	///  
 	/// <returns>A random string of the form "XXX-###".</returns>
 	///
-	public static string GenerateAsteroidName();
+	public static extern string GenerateAsteroidName();
 }

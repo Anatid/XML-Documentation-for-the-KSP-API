@@ -9,7 +9,7 @@ using System;
 /// and optionally the tangents at those points can be specified.
 /// </summary>
 [Serializable]
-public class FloatCurve /*: IConfigNode*/
+public class FloatCurve /* : IConfigNode */
 {
     public extern FloatCurve();
 

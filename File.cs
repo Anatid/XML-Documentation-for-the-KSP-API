@@ -86,7 +86,6 @@ namespace KSP.IO
         /// Read all the bytes from a file in your IO sandbox.
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <param name="data"></param>
         /// <param name="filename"></param>
         /// <param name="flight"></param>
         public extern static byte[] ReadAllBytes<T>(string filename, Vessel flight = null);
