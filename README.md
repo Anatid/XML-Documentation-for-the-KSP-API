@@ -9,6 +9,8 @@ Now when you use the Object Browser to examine the contents of Assembly-CSharp.d
 
 Probably you can use Assembly-CSharp.xml in MonoDevelop too but I don't use MonoDevelop so I don't know.
 
+You can also check out [this web version](http://anatid.github.io/XML-Documentation-for-the-KSP-API/annotated.html) of the documentation, generated using Doxygen. Currently only classes that have at least some documentation appear in the web documentation.
+
 How to contribute to this documentation
 ---------------------------------------
 
