@@ -6,7 +6,7 @@ using UnityEngine;
 /// <summary>
 /// The Sun, the planets, and the moons are all CelestialBodies.
 /// </summary>
-public class CelestialBody : MonoBehaviour
+public class CelestialBody : MonoBehaviour, ITargetable, IDiscoverable
 {   
     public float altitudeMultiplier;
     public float altitudeOffset;
@@ -126,6 +126,7 @@ public class CelestialBody : MonoBehaviour
 
     public extern CelestialBody();
 
+    /// <summary>Describes to what extent this body has been explored</summary>
     public extern DiscoveryInfo DiscoveryInfo { get; }
     public extern int flightGlobalsIndex { get; set; }
     public extern string name { get; }
@@ -221,10 +222,46 @@ public class CelestialBody : MonoBehaviour
     public extern void HideSurfaceResource();
     [ContextMenu("Reset Time Warp Limits")]
     public extern void resetTimeWarpLimits();
+
+    /// <summary>Returns the body's altitude above the reference sphere of its primary</summary>
+    /// 
+    /// <remarks>Implements IDiscoverable</remarks>
+    ///
     public extern double RevealAltitude();
+
+    /// <summary>Returns the body's mass, in kg</summary>
+    /// 
+    /// <remarks>Implements IDiscoverable</remarks>
+    ///
     public extern float RevealMass();
+
+    /// <summary>Returns the body's tracking station name</summary>
+    /// 
+    /// <remarks>Implements IDiscoverable</remarks>
+    ///
     public extern string RevealName();
+
+    /// <summary>Describes the state of the body</summary>
+    ///
+    /// <returns>A string containing the sphere of influence and trajectory of the object
+    /// 
+    /// <example>"Orbiting the Sun"</example>
+    /// 
+    /// <remarks>Implements IDiscoverable</remarks>
+    ///
     public extern string RevealSituationString();
+
+    /// <summary>Returns the body's speed</summary>
+    /// 
+    /// <remarks>Implements IDiscoverable</remarks>
+    ///
     public extern double RevealSpeed();
+
+    /// <summary>Returns the type of the body</summary>
+    ///
+    /// <returns>One of "Sun", "Planet", or "Moon"</returns>
+    /// 
+    /// <remarks>Implements IDiscoverable</remarks>
+    ///
     public extern string RevealType();
 }

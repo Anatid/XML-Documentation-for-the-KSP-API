@@ -11,7 +11,7 @@ using UnityEngine;
 /// A Vessel object represents a single vessel. Parts that break off from a vessel become their own Vessels. Vessels that merge
 /// via docking become one Vessel.
 /// </summary>
-public class Vessel : MonoBehaviour
+public class Vessel : MonoBehaviour, ITargetable, IShipconstruct, IDiscoverable
 {
     /// <summary>
     /// Presumably, this is the current acceleration vector of the vessel, in m/s^2?
@@ -185,6 +185,8 @@ public class Vessel : MonoBehaviour
     public extern Vessel();
 
     public extern ActionGroupList ActionGroups { get; }
+    /// <summary>Describes to what extent this object has been explored</summary>
+    public extern DiscoveryInfo DiscoveryInfo { get; }
     public extern bool HoldPhysics { get; }
     /// <summary>
     /// Whether the player is currently controlling this vessel.
@@ -314,6 +316,49 @@ public class Vessel : MonoBehaviour
     public extern void Translate(Vector3 offset);
     [ContextMenu("Unload")]
     public extern void Unload();
+
+    /// <summary>Returns the vessel's altitude above the reference sphere of 
+    ///		the CelestialBody it orbits</summary>
+    /// 
+    /// <remarks>Implements IDiscoverable</remarks>
+    ///
+    public extern double RevealAltitude();
+
+    /// <summary>Returns the vessel's mass, in tons</summary>
+    /// 
+    /// <remarks>Implements IDiscoverable</remarks>
+    ///
+    public extern float RevealMass();
+
+    /// <summary>Returns the vessel's tracking station name</summary>
+    /// 
+    /// <remarks>Implements IDiscoverable</remarks>
+    ///
+    public extern string RevealName();
+
+    /// <summary>Describes the state of the vessel</summary>
+    ///
+    /// <returns>A string containing the sphere of influence and trajectory of the object
+    /// 
+    /// <example>"Orbiting the Sun"</example>
+    /// 
+    /// <remarks>Implements IDiscoverable</remarks>
+    ///
+    public extern string RevealSituationString();
+
+    /// <summary>Returns the vessel's speed</summary>
+    /// 
+    /// <remarks>Implements IDiscoverable</remarks>
+    ///
+    public extern double RevealSpeed();
+
+    /// <summary>Returns the type of the vessel</summary>
+    ///
+    /// <returns>A string representation of vesselType</returns>
+    /// 
+    /// <remarks>Implements IDiscoverable</remarks>
+    ///
+    public extern string RevealType();
 
     /// <summary>
     /// The type of Vessel.situation
