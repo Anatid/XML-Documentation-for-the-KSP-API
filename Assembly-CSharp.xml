@@ -2434,6 +2434,11 @@
             The angle between the ascending node and the periapsis, in degrees.
             </summary>
         </member>
+        <member name="F:Orbit.eccentricAnomaly">
+            <summary>
+            A quantity used in the math describing Keplerian orbits; Google it.
+            </summary>
+        </member>
         <member name="F:Orbit.eccentricity">
             <summary>
             The eccentricity of the orbit.
@@ -2482,6 +2487,21 @@
         <member name="F:Orbit.meanAnomalyAtEpoch">
             <summary>
             The mean anomaly of the orbit at the special UT given by Orbit.epoch.
+            </summary>
+        </member>
+        <member name="F:Orbit.ObT">
+            <summary>
+            Time since periapsis, in seconds.
+            </summary>
+        </member>
+        <member name="F:Orbit.ObTAtEpoch">
+            <summary>
+            The value of ObT at the universal time given by epoch.
+            </summary>
+        </member>
+        <member name="F:Orbit.orbitPercent">
+            <summary>
+            Equal to <code>>ObT / period</code>?
             </summary>
         </member>
         <member name="F:Orbit.patchEndTransition">
@@ -2580,6 +2600,16 @@
         <member name="P:Orbit.PeR">
             <summary>
             The periapsis of the orbit in meters, measured from the center of the main body.
+            </summary>
+        </member>
+        <member name="P:Orbit.semiLatusRectum">
+            <summary>
+            A property of ellipses, parabolas and hyperbolas; Google it.
+            </summary>
+        </member>
+        <member name="P:Orbit.semiMinorAxis">
+            <summary>
+            A property of ellipses; Google it.
             </summary>
         </member>
         <member name="T:PartResource">
