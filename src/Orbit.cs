@@ -41,6 +41,9 @@ public class Orbit
     public Vector3 debugPos;
     public Vector3 debugVel;
     public double E;
+    /// <summary>
+    /// A quantity used in the math describing Keplerian orbits; Google it.
+    /// </summary>
     public double eccentricAnomaly;
     /// <summary>
     /// The eccentricity of the orbit.
@@ -93,10 +96,19 @@ public class Orbit
     public double nextTT;
     [Obsolete("Use VesselType or CelestialBodyType instead")]
     public Orbit.ObjectType objectType;
+    /// <summary>
+    /// Time since periapsis, in seconds.
+    /// </summary>
     public double ObT;
+    /// <summary>
+    /// The value of ObT at the universal time given by epoch.
+    /// </summary>
     public double ObTAtEpoch;
     public double orbitalEnergy;
     public double orbitalSpeed;
+    /// <summary>
+    /// Equal to <code>>ObT / period</code>?
+    /// </summary>
     public double orbitPercent;
     /// <summary>
     /// How the next patch follows onto this one, or FINAL if there is no patch after this one.
@@ -161,7 +173,13 @@ public class Orbit
     /// The periapsis of the orbit in meters, measured from the center of the main body.
     /// </summary>
     public extern double PeR { get; }
+    /// <summary>
+    /// A property of ellipses, parabolas and hyperbolas; Google it.
+    /// </summary>
     public extern double semiLatusRectum { get; }
+    /// <summary>
+    /// A property of ellipses; Google it.
+    /// </summary>
     public extern double semiMinorAxis { get; }
 
     public extern void DrawOrbit();
