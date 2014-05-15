@@ -1,6 +1,8 @@
 var searchData=
 [
   ['objectsize',['objectSize',['../class_discovery_info.html#aab5d6b5fe3046e4b13f227fbac9a6411',1,'DiscoveryInfo']]],
+  ['obt',['ObT',['../class_orbit.html#a1b171937b91935a51a6eb29e037096dd',1,'Orbit']]],
+  ['obtatepoch',['ObTAtEpoch',['../class_orbit.html#af4c1c2c656a7fecd6095c3bb79883b9d',1,'Orbit']]],
   ['ocean',['ocean',['../class_celestial_body.html#a1c745c7069956da566ca5fc75057d2a2',1,'CelestialBody']]],
   ['onactive',['OnActive',['../class_module_engines.html#a57f858c5fb9f722d6f47cfd4b4fe7005',1,'ModuleEngines.OnActive()'],['../class_part_module.html#ac07319a028fb17f959e1b732dd6b4709',1,'PartModule.OnActive()']]],
   ['onadvanceconditionmet',['onAdvanceConditionMet',['../class_tutorial_scenario_1_1_tutorial_page.html#aca64315ba6f850b522292680f745951c',1,'TutorialScenario::TutorialPage']]],
@@ -35,5 +37,6 @@ var searchData=
   ['openwrite',['OpenWrite',['../class_k_s_p_1_1_i_o_1_1_file_info.html#a676b221e983f2fd961daee0e05f519b7',1,'KSP::IO::FileInfo']]],
   ['openwrite_3c_20t_20_3e',['OpenWrite&lt; T &gt;',['../class_k_s_p_1_1_i_o_1_1_file.html#acbc621fdad4a7ec9ba428452570785ff',1,'KSP::IO::File']]],
   ['orbit',['Orbit',['../class_orbit.html',1,'Orbit'],['../class_celestial_body.html#aee0713b155fadfde0e67356f3c56ffec',1,'CelestialBody.orbit()'],['../class_part.html#a6c318f704311a4e03169b1e57caf6a89',1,'Part.orbit()'],['../class_vessel.html#a6e033170289d392001eb56f2ad7dcc77',1,'Vessel.orbit()']]],
-  ['orbitingbodies',['orbitingBodies',['../class_celestial_body.html#ae77adca32fa91cb1d2811c465f90c364',1,'CelestialBody']]]
+  ['orbitingbodies',['orbitingBodies',['../class_celestial_body.html#ae77adca32fa91cb1d2811c465f90c364',1,'CelestialBody']]],
+  ['orbitpercent',['orbitPercent',['../class_orbit.html#a05ed6d0e9eb71184910e78d2ec96d5c2',1,'Orbit']]]
 ];
