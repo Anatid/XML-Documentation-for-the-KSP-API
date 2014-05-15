@@ -1,7 +1,3 @@
-﻿#region Assembly Assembly-CSharp.dll, v2.0.50727
-// C:\Users\David\Documents\Visual Studio 2010\Projects\KSP Science\KSP DEV\Kerbal Space Program\KSP_Data\Managed\Assembly-CSharp.dll
-#endregion
-
 using System;
 
 /// <summary>
