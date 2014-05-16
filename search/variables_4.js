@@ -9,5 +9,9 @@ var searchData=
   ['engineignited',['EngineIgnited',['../class_module_engines.html#a6b30194aa379f2bad0491160a4bbf310',1,'ModuleEngines']]],
   ['epoch',['epoch',['../class_orbit.html#a1856e63f9a84f12a41299bf8073abadb',1,'Orbit']]],
   ['exhaustdamage',['exhaustDamage',['../class_module_engines.html#a12c3ccc99ccdfe6f387459f2eeb7c20b',1,'ModuleEngines']]],
+  ['experiment',['experiment',['../class_module_science_experiment.html#a918bb9e7f500eb5b67a7d210d5cbcfcb',1,'ModuleScienceExperiment']]],
+  ['experimentactionname',['experimentActionName',['../class_module_science_experiment.html#aef764d93eac12de2c9f930eff7ba2c68',1,'ModuleScienceExperiment']]],
+  ['experimentid',['experimentID',['../class_module_science_experiment.html#a78c0e0007d9aa3e85682254dfd15faf3',1,'ModuleScienceExperiment']]],
+  ['experimenttitle',['experimentTitle',['../class_science_experiment.html#ae4cf27f2130b761e4ebe5160cc6578ff',1,'ScienceExperiment']]],
   ['externaltoevaonly',['externalToEVAOnly',['../class_k_s_p_event.html#a09964cff211d82641509a3197ff024e3',1,'KSPEvent']]]
 ];

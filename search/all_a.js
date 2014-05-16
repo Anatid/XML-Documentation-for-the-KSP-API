@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['labboost',['labBoost',['../class_science_data.html#ad8689d8a5634d11f17110727d4263af6',1,'ScienceData']]],
   ['lan',['LAN',['../class_orbit.html#a7863ba9163bb190ee831772f37a5dd38',1,'Orbit']]],
   ['landed',['Landed',['../class_vessel.html#aa507f70d19c9421fe97da4d3321d9520',1,'Vessel']]],
   ['landedorsplashed',['LandedOrSplashed',['../class_vessel.html#a1b27e6628cb0246f8d71a6c985c0028b',1,'Vessel']]],

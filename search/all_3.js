@@ -1,5 +1,8 @@
 var searchData=
 [
+  ['dataamount',['dataAmount',['../class_science_data.html#a2accf24a1112bfdfcc6a0e4c6139c444',1,'ScienceData']]],
+  ['dataiscollectable',['dataIsCollectable',['../class_module_science_experiment.html#a81e42fa31b9b074ca52d08b58d231667',1,'ModuleScienceExperiment']]],
+  ['datascale',['dataScale',['../class_science_experiment.html#a95c7062658a9b91b1e438f3fdd36d040',1,'ScienceExperiment.dataScale()'],['../class_science_subject.html#a6a888479023bf63ffd9dd9c4174bf3e0',1,'ScienceSubject.dataScale()']]],
   ['deactivateupdate',['DeactivateUpdate',['../class_flight_camera.html#a9f2fc24c3f57b6df47d108b439bf2baa',1,'FlightCamera']]],
   ['debugspawnprobability',['debugSpawnProbability',['../class_scenario_discoverable_objects.html#a05d553c28b2cd3a29bd96a49eeb9f2f8',1,'ScenarioDiscoverableObjects']]],
   ['decoupler',['Decoupler',['../class_decoupler.html',1,'']]],
@@ -9,6 +12,8 @@ var searchData=
   ['delete_3c_20t_20_3e',['Delete&lt; T &gt;',['../class_k_s_p_1_1_i_o_1_1_file.html#a3e01bf65c8b2a0bec22aad9e3372d4fd',1,'KSP::IO::File']]],
   ['deltav',['DeltaV',['../class_maneuver_node.html#a75a0905cb441d1e37698a82776b190ae',1,'ManeuverNode']]],
   ['density',['density',['../class_module_asteroid.html#a9f367f63ede0f89c68947550553adc57',1,'ModuleAsteroid.density()'],['../class_part_resource_definition.html#aa254abc8f0f38214d6fa9cb24a743ae1',1,'PartResourceDefinition.density()']]],
+  ['deployaction',['DeployAction',['../class_module_science_experiment.html#aa3ddf1cf066a7a561708f47f4e6c5420',1,'ModuleScienceExperiment']]],
+  ['deployexperiment',['DeployExperiment',['../class_module_science_experiment.html#aa2386a6654bf7c5db6b1330c79d05319',1,'ModuleScienceExperiment']]],
   ['description',['description',['../class_available_part.html#ab540bb89a14c83592355ba444b62cc0f',1,'AvailablePart']]],
   ['deserializefrombinary',['DeserializeFromBinary',['../class_k_s_p_1_1_i_o_1_1_i_o_utils.html#ac5befd79b65b5f516d26aca0678b39c7',1,'KSP::IO::IOUtils']]],
   ['directoryname',['DirectoryName',['../class_k_s_p_1_1_i_o_1_1_file_info.html#a2f8b3986438fa65411035094e5eb8717',1,'KSP::IO::FileInfo']]],
@@ -20,5 +25,6 @@ var searchData=
   ['down',['down',['../struct_vector3d.html#a4b62363b3fea4ad3a0ed80eba49e4290',1,'Vector3d']]],
   ['dragmodel',['dragModel',['../class_part.html#ad6e3ca2353021cd4d3369764677a062d',1,'Part']]],
   ['dragmodeltype',['dragModelType',['../class_part.html#aebdfd2e3de9a064930575adc13bc0fa6',1,'Part']]],
-  ['dragmultiplier',['DragMultiplier',['../class_flight_globals.html#aa3b9318b0de2ae5ccff3d57ddfcda351',1,'FlightGlobals']]]
+  ['dragmultiplier',['DragMultiplier',['../class_flight_globals.html#aa3b9318b0de2ae5ccff3d57ddfcda351',1,'FlightGlobals']]],
+  ['dumpdata',['DumpData',['../interface_i_science_data_container.html#ad0e51c8c6fb042ca5837296412ff7d23',1,'IScienceDataContainer.DumpData()'],['../class_module_science_experiment.html#abf814b16653576fc6c5fc61e12339b5d',1,'ModuleScienceExperiment.DumpData()']]]
 ];

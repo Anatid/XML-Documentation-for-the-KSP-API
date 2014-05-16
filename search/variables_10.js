@@ -2,11 +2,15 @@ var searchData=
 [
   ['sampleexperimentid',['sampleExperimentId',['../class_module_asteroid.html#a966f3ff23d258096be4215404bb917e2',1,'ModuleAsteroid']]],
   ['sampleexperimentxmitscalar',['sampleExperimentXmitScalar',['../class_module_asteroid.html#a8ff3dd9c1bd6005daba6da957cb25f95',1,'ModuleAsteroid']]],
+  ['science',['science',['../class_science_subject.html#a28fc8df8f6837c788956a4d04fd538f3',1,'ScienceSubject']]],
+  ['sciencecap',['scienceCap',['../class_science_experiment.html#a672a9f9ab648919e38822f378e0252ab',1,'ScienceExperiment.scienceCap()'],['../class_science_subject.html#a6655dd4cd61b8981900224896ea27f07',1,'ScienceSubject.scienceCap()']]],
+  ['scientificvalue',['scientificValue',['../class_science_subject.html#a94d1de7d162c0a4781644e0ba3364895',1,'ScienceSubject']]],
   ['seed',['seed',['../class_module_asteroid.html#a8cc0da3528ec32e5c24ce7e56e1145c4',1,'ModuleAsteroid']]],
   ['semimajoraxis',['semiMajorAxis',['../class_orbit.html#abe25c458c2fbef9902d72d265919df2f',1,'Orbit']]],
   ['signalstrengthlevel',['signalStrengthLevel',['../class_discovery_info.html#a9eec0e7473b8bcea62fe745ded41375e',1,'DiscoveryInfo']]],
   ['signalstrengthpercent',['signalStrengthPercent',['../class_discovery_info.html#ac64f2b0e2107f1915db3f7c0ed0efd65',1,'DiscoveryInfo']]],
   ['situation',['situation',['../class_discovery_info.html#a51fb6e41bf607d6506dd4c65d752d0ca',1,'DiscoveryInfo.situation()'],['../class_vessel.html#a10f73f5e6a3ed602411a7ffff14206b8',1,'Vessel.situation()']]],
+  ['situationmask',['situationMask',['../class_science_experiment.html#af5d40efde72ed85b98fe50b12e622872',1,'ScienceExperiment']]],
   ['size',['size',['../class_discovery_info.html#a9703894fd97dea8a77178a1cd03116c1',1,'DiscoveryInfo']]],
   ['sizecurve',['sizeCurve',['../class_scenario_discoverable_objects.html#afe965be5eccb7addf7596d9c476e28ab',1,'ScenarioDiscoverableObjects']]],
   ['spawngroupmaxlimit',['spawnGroupMaxLimit',['../class_scenario_discoverable_objects.html#aa77e8809b3a894aa57c5263916b1ee94',1,'ScenarioDiscoverableObjects']]],
@@ -22,5 +26,7 @@ var searchData=
   ['stagelock',['stageLock',['../class_flight_input_handler.html#af584e6282300b0f0a9de25194d17f113',1,'FlightInputHandler']]],
   ['state',['state',['../class_flight_input_handler.html#ab309a576ff6585b88866641ea108b86b',1,'FlightInputHandler']]],
   ['staticpressure',['staticPressure',['../class_vessel.html#a5bb263ab191f7f6a66caf575b3c20cbe',1,'Vessel']]],
+  ['subjectid',['subjectID',['../class_science_data.html#a9a1694badbc1e1b5af810a5302a0dc1f',1,'ScienceData']]],
+  ['subjectvalue',['subjectValue',['../class_science_subject.html#a2e89024ee7901c9f8fbdf06f26524917',1,'ScienceSubject']]],
   ['sun',['Sun',['../class_planetarium.html#a48b7aed7d7a87d3ea233aced4ecccc35',1,'Planetarium']]]
 ];
