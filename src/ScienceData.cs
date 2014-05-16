@@ -3,7 +3,7 @@ using System;
 /// <summary>
 /// Class containing information on science reports, stored in the persistent file in modules using IScienceDataContainer.
 /// </summary>
-public class ScienceData : IConfigNode
+public class ScienceData /*: IConfigNode*/
 {
     /// <summary>
     /// Amount of data, in mits, to be transmitted or recovered. Affects transmission time and energy usage.
@@ -26,7 +26,7 @@ public class ScienceData : IConfigNode
     /// </summary>
     public float transmitValue;
 
-    public ScienceData(ConfigNode node);
+    public extern ScienceData(ConfigNode node);
     /// <summary>
     /// Generate Science Data based on Science Subject values.
     /// </summary>
@@ -35,9 +35,9 @@ public class ScienceData : IConfigNode
     /// <param name="labBoost">Current state of science lab boost</param>
     /// <param name="id">Matches Science Subject ID</param>
     /// <param name="dataName">Title of science data</param>
-    public ScienceData(float amount, float xmitValue, float labBoost, string id, string dataName);
+    public extern ScienceData(float amount, float xmitValue, float labBoost, string id, string dataName);
 
-    public static ScienceData CopyOf(ScienceData src);
-    public void Load(ConfigNode node);
-    public void Save(ConfigNode node);
+    public extern static ScienceData CopyOf(ScienceData src);
+    public extern void Load(ConfigNode node);
+    public extern void Save(ConfigNode node);
 }
