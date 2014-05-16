@@ -40,23 +40,23 @@ public class ScienceExperiment
     /// </summary>
     public uint situationMask;
 
-    public ScienceExperiment();
+    public extern ScienceExperiment();
 
-    public Dictionary<string, string> Results { get; }
+    extern Dictionary<string, string> Results { get; }
 
     /// <summary>
     /// Checks if the biome is relevent to the experiment given the biomeMask specified in the ScienceDefs file.
     /// </summary>
     /// <param name="situation">Current Experiment Situation</param>
     /// <returns></returns>
-    public bool BiomeIsRelevantWhile(ExperimentSituations situation);
+    public extern bool BiomeIsRelevantWhile(ExperimentSituations situation);
     /// <summary>
     /// Determines if the experiment is available given the situationMask and requireAtmosphere values specified in the ScienceDefs file.
     /// </summary>
     /// <param name="situation">Current Experiment Situation</param>
     /// <param name="body">Current Celestial Body</param>
     /// <returns></returns>
-    public bool IsAvailableWhile(ExperimentSituations situation, CelestialBody body);
-    public void Load(ConfigNode node);
-    public void Save(ConfigNode node);
+    public extern bool IsAvailableWhile(ExperimentSituations situation, CelestialBody body);
+    public extern void Load(ConfigNode node);
+    public extern void Save(ConfigNode node);
 }

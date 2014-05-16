@@ -105,91 +105,91 @@ public class ModuleScienceExperiment : PartModule, IScienceDataContainer
     [KSPField]
     public float xmitDataScalar;
 
-    public ModuleScienceExperiment();
+    public extern ModuleScienceExperiment();
 
     /// <summary>
     /// Transfers data from the part to an EVA Kerbal.
     /// </summary>
     [KSPEvent(active = true, guiActiveUnfocused = true, externalToEVAOnly = true, guiActive = false, unfocusedRange = 1.5f)]
-    public void CollectDataExternalEvent();
+    public extern void CollectDataExternalEvent();
     /// <summary>
     /// Initiates the experiment from an action group.
     /// </summary>
     /// <param name="actParams"></param>
     [KSPAction("Deploy")]
-    public void DeployAction(KSPActionParam actParams);
+    public extern void DeployAction(KSPActionParam actParams);
     /// <summary>
     /// Initiates the experiment from a right-click button.
     /// </summary>
     [KSPEvent(guiName = "Deploy", active = true, guiActive = true)]
-    public void DeployExperiment();
+    public extern void DeployExperiment();
     /// <summary>
     /// Removes science data from the part, called after transmission. Implements IScienceDataContainer.
     /// </summary>
     /// <param name="data">The Science Data to be removed</param>
-    public void DumpData(ScienceData data);
+    public extern void DumpData(ScienceData data);
     /// <summary>
     /// Returns all Science Data stored in the module. Implements IScienceDataContainer.
     /// </summary>
     /// <returns></returns>
-    public ScienceData[] GetData();
+    public extern ScienceData[] GetData();
     /// <summary>
     /// A count of how many Science Data reports are stored in the module. Implements IScienceDataContainer.
     /// </summary>
     /// <returns></returns>
-    public int GetScienceCount();
+    public extern int GetScienceCount();
     /// <summary>
     /// Is the experiment rerunnable? Refers to rerunnable field. Implements IScienceDataContainer.
     /// </summary>
     /// <returns></returns>
-    public bool IsRerunnable();
-    public override void OnActive();
-    public override void OnAwake();
-    public void OnDestroy();
+    public extern bool IsRerunnable();
+    public extern override void OnActive();
+    public extern override void OnAwake();
+    public extern void OnDestroy();
     /// <summary>
     /// Stores any Science Data in the persistent file.
     /// </summary>
     /// <param name="node"></param>
-    public override void OnLoad(ConfigNode node);
+    public extern override void OnLoad(ConfigNode node);
     /// <summary>
     /// Loads any Science Data stored in the persistent file.
     /// </summary>
     /// <param name="node"></param>
-    public override void OnSave(ConfigNode node);
-    public override void OnStart(PartModule.StartState state);
-    public void OnVesselSituationChange(GameEvents.HostedFromToAction<Vessel, Vessel.Situations> vcs);
+    public extern override void OnSave(ConfigNode node);
+    public extern override void OnStart(PartModule.StartState state);
+    public extern void OnVesselSituationChange(GameEvents.HostedFromToAction<Vessel, Vessel.Situations> vcs);
     /// <summary>
     /// Resets the experiment from an action group. Science Data is lost. Experiment can be re-run.
     /// </summary>
     /// <param name="actParams"></param>
     [KSPAction("Reset")]
-    public void ResetAction(KSPActionParam actParams);
+    public extern void ResetAction(KSPActionParam actParams);
     /// <summary>
     /// Resets the experiment from a right-click button. Science Data is lost. Experiment can be re-run.
     /// </summary>
     [KSPEvent(guiName = "Reset", active = true, guiActive = true)]
-    public void ResetExperiment();
+    public extern void ResetExperiment();
     /// <summary>
     /// Resets the experiment from an EVA right-click button. Science Data is lost. Experiment can be re-run.
     /// </summary>
     [KSPEvent(guiName = "Reset", active = true, guiActiveUnfocused = true, externalToEVAOnly = true, guiActive = false)]
-    public void ResetExperimentExternal();
+    public extern void ResetExperimentExternal();
     /// <summary>
     /// Opens experimental results dialog. Implements IScienceDataContainer.
     /// </summary>
-    public void ReviewData();
+    public extern void ReviewData();
     /// <summary>
     /// Review stored Science Data from a right-click button.
     /// </summary>
     [KSPEvent(guiName = "Review Data", active = true, guiActive = true)]
-    public void ReviewDataEvent();
+    public extern void ReviewDataEvent();
     /// <summary>
     /// Review individual Science Data reports? Implements IScienceDataContainer.
     /// </summary>
     /// <param name="data"></param>
-    public void ReviewDataItem(ScienceData data);
+    public extern void ReviewDataItem(ScienceData data);
     /// <summary>
     /// Sets the Inoperable bool, determines whether experiment can be performed again.
     /// </summary>
-    public void SetInoperable();
+    public extern void SetInoperable();
 }

@@ -1,10 +1,10 @@
 using System;
 
 /// <summary>
-/// Class containing information on a specific science result, data stored in the persistent file under the R&D node.
+/// Class containing information on a specific science result, data stored in the persistent file under the R&amp;D node.
 /// </summary>
 [Serializable]
-public class ScienceSubject : IConfigNode
+public class ScienceSubject /*: IConfigNode*/
 {
     /// <summary>
     /// Multiply science value by this dataScale value to determine data amount in mits.
@@ -39,7 +39,7 @@ public class ScienceSubject : IConfigNode
     /// Return a Science Subject from Research and Development node in the persistent file.
     /// </summary>
     /// <param name="node"></param>
-    public ScienceSubject(ConfigNode node);
+    public extern ScienceSubject(ConfigNode node);
     /// <summary>
     /// Generate new Science Subject.
     /// </summary>
@@ -47,10 +47,10 @@ public class ScienceSubject : IConfigNode
     /// <param name="sit">Current experimantal situation, based on VesselSituation</param>
     /// <param name="body">Current Celestial Body</param>
     /// <param name="biome">Current biome if applicable, empty string if not</param>
-    public ScienceSubject(ScienceExperiment exp, ExperimentSituations sit, CelestialBody body, string biome = "");
-    public ScienceSubject(string id, string title, float dataScale, float subjectValue, float scienceCap);
-    public ScienceSubject(ScienceExperiment exp, ExperimentSituations sit, string sourceUid, string sourceTitle, CelestialBody body, string biome = "");
+    public extern ScienceSubject(ScienceExperiment exp, ExperimentSituations sit, CelestialBody body, string biome = "");
+    public extern ScienceSubject(string id, string title, float dataScale, float subjectValue, float scienceCap);
+    public extern ScienceSubject(ScienceExperiment exp, ExperimentSituations sit, string sourceUid, string sourceTitle, CelestialBody body, string biome = "");
 
-    public void Load(ConfigNode node);
-    public void Save(ConfigNode node);
+    public extern void Load(ConfigNode node);
+    public extern void Save(ConfigNode node);
 }
