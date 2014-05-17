@@ -103,7 +103,8 @@ using System;
 	///
 	/// <remarks>Alternate definition: the time needed for the signal strength to fall by 1 unit.
 	///
-	/// Always equals 1728000 seconds, or 20 Earth days
+	/// Always equals 86400 × ScenarioDiscoverableObjects.maxUntrackedLifetime.
+	/// For the default spawn settings, this is 1728000 seconds, or 20 Earth days.
 	/// 
 	/// Stored in persistence file as refTime</remarks>
 	public double referenceLifetime {

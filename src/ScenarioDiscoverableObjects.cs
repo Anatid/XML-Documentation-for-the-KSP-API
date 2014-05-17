@@ -2,8 +2,22 @@ using UnityEngine;
 
 /// <summary>Stores information on asteroid spawning</summary>
 ///
-/// <remarks>Executed while in Flight, Tracking Station, and Space Center scenes</remarks>
+/// <remarks>
+/// Executed while in Flight, Tracking Station, and Space Center scenes
 ///
+/// The module schedules periodic "spawn checks" while the game clock is running, at an interval 
+/// set by spawnInterval. At each spawn check, any asteroids that have gone untracked for too long 
+/// are removed from the game.
+/// 
+/// To add an element of randomness, only a fraction of checks (controlled by spawnOddsAgainst) 
+/// have a chance to produce asteroids. No asteroids are produced if the number of untracked 
+/// asteroids already in the game exceeds spawnGroupMaxLimit. Because spawn checks happen 
+/// very frequently, the number of detected asteroids in a game where the player never 
+/// tracks an asteroid will almost always be close to spawnGroupMaxLimit.
+/// 
+/// The timing of spawn checks appears to be independent of the warp rate, but at high time warp 
+/// multiple asteroids may be spawned per check. (Needs confirmation)
+/// </remarks>
 public class ScenarioDiscoverableObjects : ScenarioModule
 {
 	/// <summary>Number of untracked asteroids at which spawn rate begins to slow</summary>
@@ -40,6 +54,9 @@ public class ScenarioDiscoverableObjects : ScenarioModule
 	/// <remarks>
 	/// These are seconds of time spent playing KSP, regardless of the time warp rate. The faster 
 	///	your time warp, the longer the in-game interval between asteroid detections.
+	///
+	/// Since asteroids are removed during spawn checks, spawnInterval also controls the 
+	/// 	asteroid removal rate.
 	/// </remarks>
 	public float spawnInterval = 15.0f;
 
