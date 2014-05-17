@@ -5,7 +5,7 @@ How to use this documentation
 2. Place Assembly-CSharp.xml and UnityEngine.xml in the same place as the Assembly-CSharp.dll and UnityEngine.dll that you link to when building your KSP plugin (the KSP_Data/Managed folder). 
 3. Restart Visual Studio.
 
-Now when you use the Object Browser to examine the contents of Assembly-CSharp.dll you will find helpful comments for some classes. These comments will also show up through IntelliSense when writing code. The classes that have at least some documentation are the ones listed above.
+Now when you use the Object Browser to examine the contents of Assembly-CSharp.dll you will find helpful comments for some classes. These comments will also show up through IntelliSense when writing code.
 
 Probably you can use Assembly-CSharp.xml in MonoDevelop too but I don't use MonoDevelop so I don't know.
 
