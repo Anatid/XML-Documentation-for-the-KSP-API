@@ -661,6 +661,19 @@
             </summary>
             <returns>A serialized version of this ConfigNode</returns>
         </member>
+        <member name="T:ControlTypes">
+            <summary>
+            The different controls that it is possible to lock the player out of
+            using InputLockManager. You can OR them together to lock the player
+            out of multiple controls at once.
+            </summary>
+        </member>
+        <member name="F:ControlTypes.ALL_SHIP_CONTROLS">
+            <summary>
+            Locking ALL_SHIP_CONTROLS will prevent the player from steering the ship,
+            as if they had run out of ElectricCharge.
+            </summary>
+        </member>
         <member name="T:Decoupler">
             <summary>
             The old, deprecated class that used to be used to implement decouplers before PartModules.
@@ -1677,6 +1690,40 @@
         </member>
         <member name="P:IDiscoverable.DiscoveryInfo">
             <summary>Describes to what extent this object has been explored</summary>
+        </member>
+        <member name="T:InputLockManager">
+            <summary>
+            This class lets you lock the player out of certain controls. It's
+            probably what KSP uses internally to lock controls during time warp,
+            or when out of electric charge. 
+            </summary>
+            <remarks>
+            You can view the current set of locks in-game with the Alt-F12 debug menu.
+            </remarks>
+        </member>
+        <member name="F:InputLockManager.lockStack">
+            <summary>
+            The set of locks currently in place?
+            </summary>
+        </member>
+        <member name="M:InputLockManager.RemoveControlLock(System.String)">
+            <summary>
+            Unlock a set of controls that were earlier locked with SetControlLock.
+            </summary>
+            <param name="lockID">The string ID passed to SetControlLock.</param>
+        </member>
+        <member name="M:InputLockManager.SetControlLock(ControlTypes,System.String)">
+            <summary>
+            Locks a set of controls.
+            </summary>
+            <param name="locks">Which controls to lock. You can OR several ControlTypes together to lock several types of controls at once.</param>
+            <param name="lockID">A unique string ID that you will pass to RemoveControlLock to unlock these controls.</param>
+            <returns>?</returns>
+        </member>
+        <member name="P:InputLockManager.LockMask">
+            <summary>
+            If <code>ControlTypes.X &amp; LockMask != 0</code> then ControlTypes.X is locked?
+            </summary>
         </member>
         <member name="T:KSP.IO.IOException">
             <summary>
