@@ -661,6 +661,19 @@
             </summary>
             <returns>A serialized version of this ConfigNode</returns>
         </member>
+        <member name="T:ControlTypes">
+            <summary>
+            The different controls that it is possible to lock the player out of
+            using InputLockManager. You can OR them together to lock the player
+            out of multiple controls at once.
+            </summary>
+        </member>
+        <member name="F:ControlTypes.ALL_SHIP_CONTROLS">
+            <summary>
+            Locking ALL_SHIP_CONTROLS will prevent the player from steering the ship,
+            as if they had run out of ElectricCharge.
+            </summary>
+        </member>
         <member name="T:Decoupler">
             <summary>
             The old, deprecated class that used to be used to implement decouplers before PartModules.
@@ -1678,6 +1691,40 @@
         <member name="P:IDiscoverable.DiscoveryInfo">
             <summary>Describes to what extent this object has been explored</summary>
         </member>
+        <member name="T:InputLockManager">
+            <summary>
+            This class lets you lock the player out of certain controls. It's
+            probably what KSP uses internally to lock controls during time warp,
+            or when out of electric charge. 
+            </summary>
+            <remarks>
+            You can view the current set of locks in-game with the Alt-F12 debug menu.
+            </remarks>
+        </member>
+        <member name="F:InputLockManager.lockStack">
+            <summary>
+            The set of locks currently in place?
+            </summary>
+        </member>
+        <member name="M:InputLockManager.RemoveControlLock(System.String)">
+            <summary>
+            Unlock a set of controls that were earlier locked with SetControlLock.
+            </summary>
+            <param name="lockID">The string ID passed to SetControlLock.</param>
+        </member>
+        <member name="M:InputLockManager.SetControlLock(ControlTypes,System.String)">
+            <summary>
+            Locks a set of controls.
+            </summary>
+            <param name="locks">Which controls to lock. You can OR several ControlTypes together to lock several types of controls at once.</param>
+            <param name="lockID">A unique string ID that you will pass to RemoveControlLock to unlock these controls.</param>
+            <returns>?</returns>
+        </member>
+        <member name="P:InputLockManager.LockMask">
+            <summary>
+            If <code>ControlTypes.X &amp; LockMask != 0</code> then ControlTypes.X is locked?
+            </summary>
+        </member>
         <member name="T:KSP.IO.IOException">
             <summary>
             A surrogate for System.IO.IOException.
@@ -1711,6 +1758,46 @@
             </summary>
             <param name="something"></param>
             <returns></returns>
+        </member>
+        <member name="T:IScienceDataContainer">
+            <summary>
+            Interface used by ModuleScienceExperiment and ModuleScienceContainer. Used for storing, transfering and transmitting Science Data.
+            </summary>
+        </member>
+        <member name="M:IScienceDataContainer.DumpData(ScienceData)">
+            <summary>
+            Removes science data from the part, called after transmission or EVA data collection.
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="M:IScienceDataContainer.GetData">
+            <summary>
+            Returns an array of all Science Data stored in the module.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IScienceDataContainer.GetScienceCount">
+            <summary>
+            Returns a count of Science Data reports stored in the module.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IScienceDataContainer.IsRerunnable">
+            <summary>
+            Can the experiment be run more than once?
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IScienceDataContainer.ReviewData">
+            <summary>
+            Opens the experimental results dialog page, displays stored Science Data.
+            </summary>
+        </member>
+        <member name="M:IScienceDataContainer.ReviewDataItem(ScienceData)">
+            <summary>
+            Opens the experimental results dialog page, displays stored Science Data.
+            </summary>
+            <param name="data"></param>
         </member>
         <member name="T:KerbalEVA">
             <summary>
@@ -2414,6 +2501,195 @@
             will be consumed for every 2 units of B and 1 unit of C.
             </summary>
         </member>
+        <member name="T:ModuleScienceExperiment">
+            <summary>
+            Part module for initiating and describing science experiments.
+            </summary>
+        </member>
+        <member name="F:ModuleScienceExperiment.collectActionName">
+            <summary>
+            Name for the right-click option to collect science data from the part while on EVA.
+            </summary>
+        </member>
+        <member name="F:ModuleScienceExperiment.collectWarningText">
+            <summary>
+            Text for warning pop-up while collecting science data from a non-repeatable experiment while on EVA.
+            </summary>
+        </member>
+        <member name="F:ModuleScienceExperiment.dataIsCollectable">
+            <summary>
+            Is EVA science data collection available?
+            </summary>
+        </member>
+        <member name="F:ModuleScienceExperiment.experiment">
+            <summary>
+            The relevant experiment based on experimentID and info from ScienceDefs file.
+            </summary>
+        </member>
+        <member name="F:ModuleScienceExperiment.experimentActionName">
+            <summary>
+            Right-click and action group name for initiating experiment.
+            </summary>
+        </member>
+        <member name="F:ModuleScienceExperiment.experimentID">
+            <summary>
+            Must match applicable ID field in the ScienceDefs.cfg file.
+            </summary>
+        </member>
+        <member name="F:ModuleScienceExperiment.fxModuleIndices">
+            <summary>
+            Set to 1 to trigger animation in ModuleAnimateGeneric on activation.
+            </summary>
+        </member>
+        <member name="F:ModuleScienceExperiment.hideUIwhenUnavailable">
+            <summary>
+            Hide right-click experiment button when experiment cannot be performed.
+            </summary>
+        </member>
+        <member name="F:ModuleScienceExperiment.Inoperable">
+            <summary>
+            Can the experiment be performed? Only relevant for non-rerunnable experiments.
+            </summary>
+        </member>
+        <member name="F:ModuleScienceExperiment.interactionRange">
+            <summary>
+            EVA interaction range for data collection or experiment reset.
+            </summary>
+        </member>
+        <member name="F:ModuleScienceExperiment.rerunnable">
+            <summary>
+            Can the experiment be run more than once before requiring Science Lab reset?
+            </summary>
+        </member>
+        <member name="F:ModuleScienceExperiment.resetActionName">
+            <summary>
+            Right-click, action group, and EVA button name to reset the experiment, science data will be lost.
+            </summary>
+        </member>
+        <member name="F:ModuleScienceExperiment.resettableOnEVA">
+            <summary>
+            Can the experiment be reset on EVA? Science data will be lost.
+            </summary>
+        </member>
+        <member name="F:ModuleScienceExperiment.resourceResetCost">
+            <summary>
+            Cost for cleaning the experiment at the science lab. Units * dataScale * baseValue?
+            </summary>
+        </member>
+        <member name="F:ModuleScienceExperiment.resourceToReset">
+            <summary>
+            Resource to be used for cleaning the experiment at the science lab.
+            </summary>
+        </member>
+        <member name="F:ModuleScienceExperiment.reviewActionName">
+            <summary>
+            Right-click and action group name for reviewing collected science data.
+            </summary>
+        </member>
+        <member name="F:ModuleScienceExperiment.transmitWarningText">
+            <summary>
+            Warning displayed before transmitting data from a non-rerunnable experiment.
+            </summary>
+        </member>
+        <member name="F:ModuleScienceExperiment.useActionGroups">
+            <summary>
+            Allow action groups to be set for the experiment, rather than right-click buttons only.
+            </summary>
+        </member>
+        <member name="F:ModuleScienceExperiment.xmitDataScalar">
+            <summary>
+            Percentage of data allowed to be transmitted, 1 equals the amount gained from returning the sample to Kerbin.
+            </summary>
+        </member>
+        <member name="M:ModuleScienceExperiment.CollectDataExternalEvent">
+            <summary>
+            Transfers data from the part to an EVA Kerbal.
+            </summary>
+        </member>
+        <member name="M:ModuleScienceExperiment.DeployAction(KSPActionParam)">
+            <summary>
+            Initiates the experiment from an action group.
+            </summary>
+            <param name="actParams"></param>
+        </member>
+        <member name="M:ModuleScienceExperiment.DeployExperiment">
+            <summary>
+            Initiates the experiment from a right-click button.
+            </summary>
+        </member>
+        <member name="M:ModuleScienceExperiment.DumpData(ScienceData)">
+            <summary>
+            Removes science data from the part, called after transmission. Implements IScienceDataContainer.
+            </summary>
+            <param name="data">The Science Data to be removed</param>
+        </member>
+        <member name="M:ModuleScienceExperiment.GetData">
+            <summary>
+            Returns all Science Data stored in the module. Implements IScienceDataContainer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ModuleScienceExperiment.GetScienceCount">
+            <summary>
+            A count of how many Science Data reports are stored in the module. Implements IScienceDataContainer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ModuleScienceExperiment.IsRerunnable">
+            <summary>
+            Is the experiment rerunnable? Refers to rerunnable field. Implements IScienceDataContainer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ModuleScienceExperiment.OnLoad(ConfigNode)">
+            <summary>
+            Stores any Science Data in the persistent file.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="M:ModuleScienceExperiment.OnSave(ConfigNode)">
+            <summary>
+            Loads any Science Data stored in the persistent file.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="M:ModuleScienceExperiment.ResetAction(KSPActionParam)">
+            <summary>
+            Resets the experiment from an action group. Science Data is lost. Experiment can be re-run.
+            </summary>
+            <param name="actParams"></param>
+        </member>
+        <member name="M:ModuleScienceExperiment.ResetExperiment">
+            <summary>
+            Resets the experiment from a right-click button. Science Data is lost. Experiment can be re-run.
+            </summary>
+        </member>
+        <member name="M:ModuleScienceExperiment.ResetExperimentExternal">
+            <summary>
+            Resets the experiment from an EVA right-click button. Science Data is lost. Experiment can be re-run.
+            </summary>
+        </member>
+        <member name="M:ModuleScienceExperiment.ReviewData">
+            <summary>
+            Opens experimental results dialog. Implements IScienceDataContainer.
+            </summary>
+        </member>
+        <member name="M:ModuleScienceExperiment.ReviewDataEvent">
+            <summary>
+            Review stored Science Data from a right-click button.
+            </summary>
+        </member>
+        <member name="M:ModuleScienceExperiment.ReviewDataItem(ScienceData)">
+            <summary>
+            Review individual Science Data reports? Implements IScienceDataContainer.
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="M:ModuleScienceExperiment.SetInoperable">
+            <summary>
+            Sets the Inoperable bool, determines whether experiment can be performed again.
+            </summary>
+        </member>
         <member name="T:Orbit">
             <summary>
             <para>An Orbit class represents a Keplerian orbit. Each Vessel and each CelestialBody has an Orbit. CelestialBodies and
@@ -2432,6 +2708,11 @@
         <member name="F:Orbit.argumentOfPeriapsis">
             <summary>
             The angle between the ascending node and the periapsis, in degrees.
+            </summary>
+        </member>
+        <member name="F:Orbit.eccentricAnomaly">
+            <summary>
+            A quantity used in the math describing Keplerian orbits; Google it.
             </summary>
         </member>
         <member name="F:Orbit.eccentricity">
@@ -2482,6 +2763,21 @@
         <member name="F:Orbit.meanAnomalyAtEpoch">
             <summary>
             The mean anomaly of the orbit at the special UT given by Orbit.epoch.
+            </summary>
+        </member>
+        <member name="F:Orbit.ObT">
+            <summary>
+            Time since periapsis, in seconds.
+            </summary>
+        </member>
+        <member name="F:Orbit.ObTAtEpoch">
+            <summary>
+            The value of ObT at the universal time given by epoch.
+            </summary>
+        </member>
+        <member name="F:Orbit.orbitPercent">
+            <summary>
+            Equal to <code>>ObT / period</code>?
             </summary>
         </member>
         <member name="F:Orbit.patchEndTransition">
@@ -2580,6 +2876,16 @@
         <member name="P:Orbit.PeR">
             <summary>
             The periapsis of the orbit in meters, measured from the center of the main body.
+            </summary>
+        </member>
+        <member name="P:Orbit.semiLatusRectum">
+            <summary>
+            A property of ellipses, parabolas and hyperbolas; Google it.
+            </summary>
+        </member>
+        <member name="P:Orbit.semiMinorAxis">
+            <summary>
+            A property of ellipses; Google it.
             </summary>
         </member>
         <member name="T:PartResource">
@@ -3048,6 +3354,161 @@
             
              Intended for debugging?
              </remarks>
+        </member>
+        <member name="T:ScienceData">
+            <summary>
+            Class containing information on science reports, stored in the persistent file in modules using IScienceDataContainer.
+            </summary>
+        </member>
+        <member name="F:ScienceData.dataAmount">
+            <summary>
+            Amount of data, in mits, to be transmitted or recovered. Affects transmission time and energy usage.
+            </summary>
+        </member>
+        <member name="F:ScienceData.labBoost">
+            <summary>
+            Level of science lab boost, less than 1 is un-boosted, 1.5 is the standard lab boosted value, higher levels don't appear to be used.
+            </summary>
+        </member>
+        <member name="F:ScienceData.subjectID">
+            <summary>
+            ID of science data in Experimentname@CelestialbodynameExperimentalsituationBiome format, matches Science Subject id.
+            </summary>
+        </member>
+        <member name="F:ScienceData.title">
+            <summary>
+            Science data title, displayed on experimental results dialog page and recovery summary.
+            </summary>
+        </member>
+        <member name="F:ScienceData.transmitValue">
+            <summary>
+            Percentage of science value that can be transmitted. 1 is equal to the amount gained by returning to Kerbin.
+            </summary>
+        </member>
+        <member name="M:ScienceData.#ctor(System.Single,System.Single,System.Single,System.String,System.String)">
+            <summary>
+            Generate Science Data based on Science Subject values.
+            </summary>
+            <param name="amount">Amount of data, it mits.</param>
+            <param name="xmitValue">Transmission value</param>
+            <param name="labBoost">Current state of science lab boost</param>
+            <param name="id">Matches Science Subject ID</param>
+            <param name="dataName">Title of science data</param>
+        </member>
+        <member name="T:ScienceExperiment">
+            <summary>
+            Class containing information from the experiment stored in the ScienceDefs file.
+            </summary>
+        </member>
+        <member name="F:ScienceExperiment.baseValue">
+            <summary>
+            Base science value from ScienceDefs file.
+            </summary>
+        </member>
+        <member name="F:ScienceExperiment.biomeMask">
+            <summary>
+            Bitmask to determine when biomes are relevant.
+            </summary>
+        </member>
+        <member name="F:ScienceExperiment.dataScale">
+            <summary>
+            Multiplier to increase data amount in mits.
+            </summary>
+        </member>
+        <member name="F:ScienceExperiment.experimentTitle">
+            <summary>
+            Title to be displayed for experimental results dialog and science archives.
+            </summary>
+        </member>
+        <member name="F:ScienceExperiment.id">
+            <summary>
+            Matches ID from ModuleScienceExperiment field.
+            </summary>
+        </member>
+        <member name="F:ScienceExperiment.requireAtmosphere">
+            <summary>
+            Can the experiment only be performed on planets with an atmosphere?
+            </summary>
+        </member>
+        <member name="F:ScienceExperiment.scienceCap">
+            <summary>
+            Maximum science value available for each experimental result.
+            </summary>
+        </member>
+        <member name="F:ScienceExperiment.situationMask">
+            <summary>
+            Bitmask to determine which Experiment Situations the experiment can be performed in.
+            </summary>
+        </member>
+        <member name="M:ScienceExperiment.BiomeIsRelevantWhile(ExperimentSituations)">
+            <summary>
+            Checks if the biome is relevent to the experiment given the biomeMask specified in the ScienceDefs file.
+            </summary>
+            <param name="situation">Current Experiment Situation</param>
+            <returns></returns>
+        </member>
+        <member name="M:ScienceExperiment.IsAvailableWhile(ExperimentSituations,CelestialBody)">
+            <summary>
+            Determines if the experiment is available given the situationMask and requireAtmosphere values specified in the ScienceDefs file.
+            </summary>
+            <param name="situation">Current Experiment Situation</param>
+            <param name="body">Current Celestial Body</param>
+            <returns></returns>
+        </member>
+        <member name="T:ScienceSubject">
+            <summary>
+            Class containing information on a specific science result, data stored in the persistent file under the R&amp;D node.
+            </summary>
+        </member>
+        <member name="F:ScienceSubject.dataScale">
+            <summary>
+            Multiply science value by this dataScale value to determine data amount in mits.
+            </summary>
+        </member>
+        <member name="F:ScienceSubject.id">
+            <summary>
+            Subject ID in Experimentname@CelestialbodyExperimentalsituationBiome format
+            </summary>
+        </member>
+        <member name="F:ScienceSubject.science">
+            <summary>
+            Amount of science already earned from this subject, not updated until after transmission/recovery.
+            </summary>
+        </member>
+        <member name="F:ScienceSubject.scienceCap">
+            <summary>
+            Total science allowable for this subject, based on subjectValue.
+            </summary>
+        </member>
+        <member name="F:ScienceSubject.scientificValue">
+            <summary>
+            Diminishing value multiplier for decreasing the science value returned from repeated experiments.
+            </summary>
+        </member>
+        <member name="F:ScienceSubject.subjectValue">
+            <summary>
+            Multiplier for specific Celestial Body/Experiment Situation combination.
+            </summary>
+        </member>
+        <member name="F:ScienceSubject.title">
+            <summary>
+            Title of science subject, displayed in science archives.
+            </summary>
+        </member>
+        <member name="M:ScienceSubject.#ctor(ConfigNode)">
+            <summary>
+            Return a Science Subject from Research and Development node in the persistent file.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="M:ScienceSubject.#ctor(ScienceExperiment,ExperimentSituations,CelestialBody,System.String)">
+            <summary>
+            Generate new Science Subject.
+            </summary>
+            <param name="exp">Science Experiment from ScienceDefs file and ModuleScienceExperiment</param>
+            <param name="sit">Current experimantal situation, based on VesselSituation</param>
+            <param name="body">Current Celestial Body</param>
+            <param name="biome">Current biome if applicable, empty string if not</param>
         </member>
         <member name="T:ScreenMessages">
             <summary>
