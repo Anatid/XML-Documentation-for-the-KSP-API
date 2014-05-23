@@ -152,6 +152,9 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Stores information on asteroid spawning</p>
 <p>Executed while in Flight, Tracking Station, and Space Center scenes</p>
+<p>The module schedules periodic "spawn checks" while the game clock is running, at an interval set by spawnInterval. At each spawn check, any asteroids that have gone untracked for too long are removed from the game.</p>
+<p>To add an element of randomness, only a fraction of checks (controlled by spawnOddsAgainst) have a chance to produce asteroids. No asteroids are produced if the number of untracked asteroids already in the game exceeds spawnGroupMaxLimit. Because spawn checks happen very frequently, the number of detected asteroids in a game where the player never tracks an asteroid will almost always be close to spawnGroupMaxLimit.</p>
+<p>The timing of spawn checks appears to be independent of the warp rate, but at high time warp multiple asteroids may be spawned per check. (Needs confirmation) </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a05d553c28b2cd3a29bd96a49eeb9f2f8"></a>
 <div class="memitem">
@@ -294,7 +297,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Number of seconds between asteroid checks</p>
-<p>These are seconds of time spent playing <a class="el" href="namespace_k_s_p.html">KSP</a>, regardless of the time warp rate. The faster your time warp, the longer the in-game interval between asteroid detections. </p>
+<p>These are seconds of time spent playing <a class="el" href="namespace_k_s_p.html">KSP</a>, regardless of the time warp rate. The faster your time warp, the longer the in-game interval between asteroid detections.</p>
+<p>Since asteroids are removed during spawn checks, spawnInterval also controls the asteroid removal rate. </p>
 
 </div>
 </div>
@@ -319,7 +323,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 15 2014 23:29:25 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 22 2014 21:30:21 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

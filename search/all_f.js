@@ -4,7 +4,7 @@ var searchData=
   ['radiusattrueanomaly',['RadiusAtTrueAnomaly',['../class_orbit.html#af581cf4bae5fc1cecb386f110a1dd2e1',1,'Orbit']]],
   ['radiusfactor',['radiusFactor',['../class_procedural_asteroid_1_1_mod_value.html#a148015e6cfabbba8a710d2d37c6eaa0a',1,'ProceduralAsteroid::ModValue']]],
   ['ratio',['ratio',['../class_module_engines_1_1_propellant.html#aec794856c019ffe0762d79bc05125c5b',1,'ModuleEngines::Propellant']]],
-  ['rcslock',['RCSLock',['../class_flight_input_handler.html#aba75f12f13fae0ed7500dcfa176636e8',1,'FlightInputHandler.RCSLock()'],['../class_flight_input_handler.html#a362a8f956c675b9b6dba739aee5249da',1,'FlightInputHandler.rcslock()']]],
+  ['rcslock',['rcslock',['../class_flight_input_handler.html#a362a8f956c675b9b6dba739aee5249da',1,'FlightInputHandler.rcslock()'],['../class_flight_input_handler.html#aba75f12f13fae0ed7500dcfa176636e8',1,'FlightInputHandler.RCSLock()']]],
   ['read',['Read',['../class_k_s_p_1_1_i_o_1_1_binary_reader.html#a7081c9b8fe06083b780d6c1d669298a8',1,'KSP.IO.BinaryReader.Read(byte[] buffer, int index, int count)'],['../class_k_s_p_1_1_i_o_1_1_binary_reader.html#a0e350d2fc1d4ec8b5c97ecd1e993fa34',1,'KSP.IO.BinaryReader.Read(char[] buffer, int index, int count)']]],
   ['readallbytes_3c_20t_20_3e',['ReadAllBytes&lt; T &gt;',['../class_k_s_p_1_1_i_o_1_1_file.html#ac61bbedf51fe538332524625869a0f0a',1,'KSP::IO::File']]],
   ['readalllines_3c_20t_20_3e',['ReadAllLines&lt; T &gt;',['../class_k_s_p_1_1_i_o_1_1_file.html#a601cb26ae1635b795d91bb51ba51a80f',1,'KSP::IO::File']]],
