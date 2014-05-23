@@ -900,7 +900,8 @@
             
              <remarks>Alternate definition: the time needed for the signal strength to fall by 1 unit.
             
-             Always equals 1728000 seconds, or 20 Earth days
+             Always equals 86400 × ScenarioDiscoverableObjects.maxUntrackedLifetime.
+             For the default spawn settings, this is 1728000 seconds, or 20 Earth days.
              
              Stored in persistence file as refTime</remarks>
         </member>
@@ -2975,7 +2976,10 @@
             </summary>
         </member>
         <member name="T:PAsteroid">
-            <summary>Stores information on an asteroid's shape</summary>
+             <summary>Stores information on an asteroid's shape</summary>
+            
+             <see cref="M:ProceduralAsteroid.Generate(System.Int32,System.Single,UnityEngine.Transform)"/> for a 
+            	factory method creating PAsteroids
         </member>
         <member name="F:PAsteroid.highestPoint">
             <summary>The largest distance of any vertex to the mesh center</summary>
@@ -3294,8 +3298,22 @@
         <member name="T:ScenarioDiscoverableObjects">
              <summary>Stores information on asteroid spawning</summary>
             
-             <remarks>Executed while in Flight, Tracking Station, and Space Center scenes</remarks>
+             <remarks>
+             Executed while in Flight, Tracking Station, and Space Center scenes
             
+             The module schedules periodic "spawn checks" while the game clock is running, at an interval 
+             set by spawnInterval. At each spawn check, any asteroids that have gone untracked for too long 
+             are removed from the game.
+             
+             To add an element of randomness, only a fraction of checks (controlled by spawnOddsAgainst) 
+             have a chance to produce asteroids. No asteroids are produced if the number of untracked 
+             asteroids already in the game exceeds spawnGroupMaxLimit. Because spawn checks happen 
+             very frequently, the number of detected asteroids in a game where the player never 
+             tracks an asteroid will almost always be close to spawnGroupMaxLimit.
+             
+             The timing of spawn checks appears to be independent of the warp rate, but at high time warp 
+             multiple asteroids may be spawned per check. (Needs confirmation)
+             </remarks>
         </member>
         <member name="F:ScenarioDiscoverableObjects.spawnGroupMinLimit">
             <summary>Number of untracked asteroids at which spawn rate begins to slow</summary>
@@ -3326,6 +3344,9 @@
              <remarks>
              These are seconds of time spent playing KSP, regardless of the time warp rate. The faster 
             	your time warp, the longer the in-game interval between asteroid detections.
+            
+             Since asteroids are removed during spawn checks, spawnInterval also controls the 
+             	asteroid removal rate.
              </remarks>
         </member>
         <member name="F:ScenarioDiscoverableObjects.maxUntrackedLifetime">
@@ -3874,6 +3895,21 @@
         </member>
         <member name="T:UntrackedObjectClass">
             <summary>Describes an asteroid's size</summary>
+        </member>
+        <member name="F:UntrackedObjectClass.A">
+            <summary>Standard radius = ???</summary>
+        </member>
+        <member name="F:UntrackedObjectClass.B">
+            <summary>Standard radius = 5.5 m?</summary>
+        </member>
+        <member name="F:UntrackedObjectClass.C">
+            <summary>Standard radius = 8.5 m?</summary>
+        </member>
+        <member name="F:UntrackedObjectClass.D">
+            <summary>Standard radius = 15 m?</summary>
+        </member>
+        <member name="F:UntrackedObjectClass.E">
+            <summary>Standard radius = 25 m?</summary>
         </member>
         <member name="T:Vector3d">
             <summary>
