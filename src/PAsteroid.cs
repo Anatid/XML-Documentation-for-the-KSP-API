@@ -1,6 +1,9 @@
 using UnityEngine;
 
 /// <summary>Stores information on an asteroid's shape</summary>
+///
+/// <see cref="ProceduralAsteroid.Generate(int, float, Transform)"/> for a 
+///	factory method creating PAsteroids
 public class PAsteroid : MonoBehaviour
 {
 	/// <summary>The largest distance of any vertex to the mesh center</summary>
