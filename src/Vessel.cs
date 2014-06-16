@@ -238,6 +238,10 @@ public class Vessel /*: MonoBehaviour, ITargetable, IShipconstruct, IDiscoverabl
     public extern void FeedInputFeed();
     public extern VesselType FindDefaultVesselType();
     public extern Vector3 findLocalCenterOfMass();
+	/// <summary>
+    /// Broken Function with expensive runtime. Do not use. (If it worked it'd do as the name says but it doesn't as of 0.23.5)
+    /// </summary>
+    /// <returns></returns>
     public extern Vector3 findLocalCenterOfPressure();
     public extern Vector3 findLocalMOI();
     public extern Vector3 findLocalMOI(Vector3 worldCoM);
