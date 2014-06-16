@@ -32,6 +32,10 @@ public class AttachNode
     public Vector3 position;
     public float radius;
     public bool requestGate;
+    /// <summary>
+    /// Wether or not resource cross feed can pass through this node.
+    /// </summary>	
+	public bool ResourceXFeed;	
     public int size;
 
     public extern AttachNode();
