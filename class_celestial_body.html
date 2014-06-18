@@ -229,7 +229,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>atmoshpereTemperatur
 <tr class="memdesc:a4ec6516eb8af3f15bd13d0cdb45b1d56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Presumably, whether jet engines will work in this body's atmosphere  <a href="#a4ec6516eb8af3f15bd13d0cdb45b1d56">More...</a><br /></td></tr>
 <tr class="separator:a4ec6516eb8af3f15bd13d0cdb45b1d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5ee9078aa33d878bc5a11d0ee69b84c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_celestial_body.html#aa5ee9078aa33d878bc5a11d0ee69b84c">atmosphereMultiplier</a></td></tr>
-<tr class="memdesc:aa5ee9078aa33d878bc5a11d0ee69b84c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seems to be the pressure of the body's atmosphere at sea level, in units of Kerbin atmospheres at sea level.  <a href="#aa5ee9078aa33d878bc5a11d0ee69b84c">More...</a><br /></td></tr>
+<tr class="memdesc:aa5ee9078aa33d878bc5a11d0ee69b84c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seems to be the pressure of the body's atmosphere at sea level, in units of Kerbin atmospheres at sea level. Appears to only have an effect when useLegacyAtmosphere is toggled on  <a href="#aa5ee9078aa33d878bc5a11d0ee69b84c">More...</a><br /></td></tr>
 <tr class="separator:aa5ee9078aa33d878bc5a11d0ee69b84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade98696c94b8a580c9d37411b7e76059"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_celestial_body.html#ade98696c94b8a580c9d37411b7e76059">atmosphereScaleHeight</a></td></tr>
 <tr class="memdesc:ade98696c94b8a580c9d37411b7e76059"><td class="mdescLeft">&#160;</td><td class="mdescRight">The atmosphere's scale height, in KILOMETERS (not meters). The atmospheric pressure at a given altitude above sea level is proportional to Math.Exp(-altitude / atmosphereScaleHeight).  <a href="#ade98696c94b8a580c9d37411b7e76059">More...</a><br /></td></tr>
@@ -285,8 +285,8 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>inverseRotThresholdA
 <tr class="memitem:a1c745c7069956da566ca5fc75057d2a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_celestial_body.html#a1c745c7069956da566ca5fc75057d2a2">ocean</a></td></tr>
 <tr class="memdesc:a1c745c7069956da566ca5fc75057d2a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this planet has an ocean at "sea level"  <a href="#a1c745c7069956da566ca5fc75057d2a2">More...</a><br /></td></tr>
 <tr class="separator:a1c745c7069956da566ca5fc75057d2a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9472c0aa1f1edf6ac45d18495237d31"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac9472c0aa1f1edf6ac45d18495237d31"></a>
-OrbitDriver&#160;</td><td class="memItemRight" valign="bottom"><b>orbitDriver</b></td></tr>
+<tr class="memitem:ac9472c0aa1f1edf6ac45d18495237d31"><td class="memItemLeft" align="right" valign="top">OrbitDriver&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_celestial_body.html#ac9472c0aa1f1edf6ac45d18495237d31">orbitDriver</a></td></tr>
+<tr class="memdesc:ac9472c0aa1f1edf6ac45d18495237d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">this is what gives the celestial body its orbit and makes it go along the orbit as well  <a href="#ac9472c0aa1f1edf6ac45d18495237d31">More...</a><br /></td></tr>
 <tr class="separator:ac9472c0aa1f1edf6ac45d18495237d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae77adca32fa91cb1d2811c465f90c364"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_celestial_body.html">CelestialBody</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_celestial_body.html#ae77adca32fa91cb1d2811c465f90c364">orbitingBodies</a></td></tr>
 <tr class="memdesc:ae77adca32fa91cb1d2811c465f90c364"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of this body's moons (or, in the case of the Sun, a list of the planets).  <a href="#ae77adca32fa91cb1d2811c465f90c364">More...</a><br /></td></tr>
@@ -339,8 +339,8 @@ PlanetQuadTreeController&#160;</td><td class="memItemRight" valign="bottom"><b>t
 <tr class="memitem:a90795853c5a0303b987fad4a7bd820b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90795853c5a0303b987fad4a7bd820b0"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>use_The_InName</b></td></tr>
 <tr class="separator:a90795853c5a0303b987fad4a7bd820b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d777241c845e5c26f1f5489e0bd6e9c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d777241c845e5c26f1f5489e0bd6e9c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>useLegacyAtmosphere</b></td></tr>
+<tr class="memitem:a6d777241c845e5c26f1f5489e0bd6e9c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_celestial_body.html#a6d777241c845e5c26f1f5489e0bd6e9c">useLegacyAtmosphere</a></td></tr>
+<tr class="memdesc:a6d777241c845e5c26f1f5489e0bd6e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">It appears that this setting toggles between old and new atmosphere system  <a href="#a6d777241c845e5c26f1f5489e0bd6e9c">More...</a><br /></td></tr>
 <tr class="separator:a6d777241c845e5c26f1f5489e0bd6e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dc9ceb63a999a33c81da1ad621d45b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9dc9ceb63a999a33c81da1ad621d45b7"></a>
 <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>zUpAngularVelocity</b></td></tr>
@@ -779,7 +779,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>theName</b><code> [
       </table>
 </div><div class="memdoc">
 
-<p>Seems to be the pressure of the body's atmosphere at sea level, in units of Kerbin atmospheres at sea level. </p>
+<p>Seems to be the pressure of the body's atmosphere at sea level, in units of Kerbin atmospheres at sea level. Appears to only have an effect when useLegacyAtmosphere is toggled on </p>
 
 </div>
 </div>
@@ -910,6 +910,20 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>theName</b><code> [
 
 </div>
 </div>
+<a class="anchor" id="ac9472c0aa1f1edf6ac45d18495237d31"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OrbitDriver CelestialBody.orbitDriver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>this is what gives the celestial body its orbit and makes it go along the orbit as well </p>
+
+</div>
+</div>
 <a class="anchor" id="ae77adca32fa91cb1d2811c465f90c364"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1008,6 +1022,20 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>theName</b><code> [
 
 </div>
 </div>
+<a class="anchor" id="a6d777241c845e5c26f1f5489e0bd6e9c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CelestialBody.useLegacyAtmosphere</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>It appears that this setting toggles between old and new atmosphere system </p>
+
+</div>
+</div>
 <h2 class="groupheader">Property Documentation</h2>
 <a class="anchor" id="a3fbcc68b94e37cc11c724fbfbf2fcdca"></a>
 <div class="memitem">
@@ -1103,7 +1131,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>theName</b><code> [
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 22 2014 21:30:20 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 17 2014 21:40:21 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

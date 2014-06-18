@@ -237,10 +237,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>GetTrueAnomalyOfZup
 double&#160;</td><td class="memItemRight" valign="bottom"><b>GetUTforTrueAnomaly</b> (double tA, double wrapAfterSeconds)</td></tr>
 <tr class="separator:a465681aad2db3169f3b9dfe1189fa09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa18079fb12ccbe63c1a6b9d75c3ba578"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#aa18079fb12ccbe63c1a6b9d75c3ba578">GetVel</a> ()</td></tr>
-<tr class="memdesc:aa18079fb12ccbe63c1a6b9d75c3ba578"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current orbital velocity of the orbiting body. Unlike most other methods of the orbit class, the returned vector seems to already be in world coordinates and doesn't need to have its Y and Z axes flipped.  <a href="#aa18079fb12ccbe63c1a6b9d75c3ba578">More...</a><br /></td></tr>
+<tr class="memdesc:aa18079fb12ccbe63c1a6b9d75c3ba578"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current orbital velocity of the orbiting body. Unlike most other methods of the orbit class, the returned vector seems to already be in world coordinates and doesn't need to have its Y and Z axes flipped. (Y and Z axes already being flipped is confirmed for V0.23.5)  <a href="#aa18079fb12ccbe63c1a6b9d75c3ba578">More...</a><br /></td></tr>
 <tr class="separator:aa18079fb12ccbe63c1a6b9d75c3ba578"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcb8420085bdf2915ddd4a3cf9dc5f6f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abcb8420085bdf2915ddd4a3cf9dc5f6f"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetWorldSpaceVel</b> ()</td></tr>
+<tr class="memitem:abcb8420085bdf2915ddd4a3cf9dc5f6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#abcb8420085bdf2915ddd4a3cf9dc5f6f">GetWorldSpaceVel</a> ()</td></tr>
+<tr class="memdesc:abcb8420085bdf2915ddd4a3cf9dc5f6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">like GetVel but adjusted for the rotational velocity of the body the vessel is orbiting, presumably?  <a href="#abcb8420085bdf2915ddd4a3cf9dc5f6f">More...</a><br /></td></tr>
 <tr class="separator:abcb8420085bdf2915ddd4a3cf9dc5f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bee77b7c30964ed62a6a51fd3ce350b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6bee77b7c30964ed62a6a51fd3ce350b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> ()</td></tr>
@@ -372,10 +372,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>fromE</b></td></tr>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>fromV</b></td></tr>
 <tr class="separator:a85163a2ee6fd2005478c182efae594e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a956c6e129cba9ff4afcdd811d04717f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a956c6e129cba9ff4afcdd811d04717f6">h</a></td></tr>
-<tr class="memdesc:a956c6e129cba9ff4afcdd811d04717f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The specific orbital angular momentum, maybe?  <a href="#a956c6e129cba9ff4afcdd811d04717f6">More...</a><br /></td></tr>
+<tr class="memdesc:a956c6e129cba9ff4afcdd811d04717f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The specific orbital angular momentum  <a href="#a956c6e129cba9ff4afcdd811d04717f6">More...</a><br /></td></tr>
 <tr class="separator:a956c6e129cba9ff4afcdd811d04717f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1a1cf661f3b6b5690f1797d5a14eff5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#af1a1cf661f3b6b5690f1797d5a14eff5">inclination</a></td></tr>
-<tr class="memdesc:af1a1cf661f3b6b5690f1797d5a14eff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The inclination of this orbit with respect to the equator of the central body (in radians or degrees?)  <a href="#af1a1cf661f3b6b5690f1797d5a14eff5">More...</a><br /></td></tr>
+<tr class="memdesc:af1a1cf661f3b6b5690f1797d5a14eff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The inclination of this orbit with respect to the equator of the central body in degrees  <a href="#af1a1cf661f3b6b5690f1797d5a14eff5">More...</a><br /></td></tr>
 <tr class="separator:af1a1cf661f3b6b5690f1797d5a14eff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7863ba9163bb190ee831772f37a5dd38"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a7863ba9163bb190ee831772f37a5dd38">LAN</a></td></tr>
 <tr class="memdesc:a7863ba9163bb190ee831772f37a5dd38"><td class="mdescLeft">&#160;</td><td class="mdescRight">The longitude of the ascending node of the orbit, in degrees. The LAN is the angle between the ascending node and <a class="el" href="class_planetarium.html#acb8953402ccf0c815294fe6b4c690aa3" title="Along with &quot;up&quot; and &quot;forward,&quot; one of the three vectors defining the fixed celestial reference frame...">Planetarium.right</a>, as viewed along <a class="el" href="class_planetarium.html#a19176ac1e758068b7f31709ff933aa67" title="Along with &quot;right&quot; and &quot;forward,&quot; one of the three vectors defining the fixed celestial reference fra...">Planetarium.up</a>.  <a href="#a7863ba9163bb190ee831772f37a5dd38">More...</a><br /></td></tr>
@@ -573,8 +573,25 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The current orbital velocity of the orbiting body. Unlike most other methods of the orbit class, the returned vector seems to already be in world coordinates and doesn't need to have its Y and Z axes flipped. </p>
+<p>The current orbital velocity of the orbiting body. Unlike most other methods of the orbit class, the returned vector seems to already be in world coordinates and doesn't need to have its Y and Z axes flipped. (Y and Z axes already being flipped is confirmed for V0.23.5) </p>
 <dl class="section return"><dt>Returns</dt><dd>Orbital velocity vector at current time.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abcb8420085bdf2915ddd4a3cf9dc5f6f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Orbit.GetWorldSpaceVel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>like GetVel but adjusted for the rotational velocity of the body the vessel is orbiting, presumably? </p>
 
 </div>
 </div>
@@ -786,7 +803,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The specific orbital angular momentum, maybe? </p>
+<p>The specific orbital angular momentum </p>
 
 </div>
 </div>
@@ -800,7 +817,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The inclination of this orbit with respect to the equator of the central body (in radians or degrees?) </p>
+<p>The inclination of this orbit with respect to the equator of the central body in degrees </p>
 
 </div>
 </div>
@@ -885,7 +902,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Equal to </p>
-<p><code>&gt;ObT / period</code>? </p>
+<p><code>&gt;ObT / period</code> </p>
 
 </div>
 </div>
@@ -1112,7 +1129,7 @@ Properties</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 22 2014 21:30:20 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 17 2014 21:40:22 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

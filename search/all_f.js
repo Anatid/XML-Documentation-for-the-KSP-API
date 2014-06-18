@@ -31,6 +31,7 @@ var searchData=
   ['resources',['Resources',['../class_part.html#aa1fabb1056160af3a5760d4d96764a92',1,'Part']]],
   ['resourcetoreset',['resourceToReset',['../class_module_science_experiment.html#a92655f600e41340af448c383f4b0ec8a',1,'ModuleScienceExperiment']]],
   ['resourcetransfermode',['resourceTransferMode',['../class_part_resource_definition.html#a650257c98f3529bfc88ea1da13977d16',1,'PartResourceDefinition']]],
+  ['resourcexfeed',['ResourceXFeed',['../class_attach_node.html#aff9b4dc624b7775279a3702de37e1b81',1,'AttachNode']]],
   ['revealaltitude',['RevealAltitude',['../class_celestial_body.html#af3915f79c7489f0e84915ed9ca64cdb5',1,'CelestialBody.RevealAltitude()'],['../interface_i_discoverable.html#a944c996387e94d3abe374a1599af1fa3',1,'IDiscoverable.RevealAltitude()'],['../class_vessel.html#ab504c470fffdc8434cfa7892ace28026',1,'Vessel.RevealAltitude()']]],
   ['revealmass',['RevealMass',['../class_celestial_body.html#acb8d0ae63cf1e1a6285a4a52ac6fde5b',1,'CelestialBody.RevealMass()'],['../interface_i_discoverable.html#a0521f244ab1ac46f48e027d82365c52c',1,'IDiscoverable.RevealMass()'],['../class_vessel.html#aa6c955b2f046ebfd0a92130f0423d1e0',1,'Vessel.RevealMass()']]],
   ['revealname',['RevealName',['../class_celestial_body.html#a6aa694ae2e2ba4845b3c211017f9cb3f',1,'CelestialBody.RevealName()'],['../interface_i_discoverable.html#acd05ba016f1165da7975f8cbff86edf7',1,'IDiscoverable.RevealName()'],['../class_vessel.html#a65951fd2c2df0c88b44de6ba652139c3',1,'Vessel.RevealName()']]],

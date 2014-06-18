@@ -37,6 +37,7 @@ var searchData=
   ['openwrite',['OpenWrite',['../class_k_s_p_1_1_i_o_1_1_file_info.html#a676b221e983f2fd961daee0e05f519b7',1,'KSP::IO::FileInfo']]],
   ['openwrite_3c_20t_20_3e',['OpenWrite&lt; T &gt;',['../class_k_s_p_1_1_i_o_1_1_file.html#acbc621fdad4a7ec9ba428452570785ff',1,'KSP::IO::File']]],
   ['orbit',['Orbit',['../class_orbit.html',1,'Orbit'],['../class_celestial_body.html#aee0713b155fadfde0e67356f3c56ffec',1,'CelestialBody.orbit()'],['../class_part.html#a6c318f704311a4e03169b1e57caf6a89',1,'Part.orbit()'],['../class_vessel.html#a6e033170289d392001eb56f2ad7dcc77',1,'Vessel.orbit()']]],
+  ['orbitdriver',['orbitDriver',['../class_celestial_body.html#ac9472c0aa1f1edf6ac45d18495237d31',1,'CelestialBody']]],
   ['orbitingbodies',['orbitingBodies',['../class_celestial_body.html#ae77adca32fa91cb1d2811c465f90c364',1,'CelestialBody']]],
   ['orbitpercent',['orbitPercent',['../class_orbit.html#a05ed6d0e9eb71184910e78d2ec96d5c2',1,'Orbit']]]
 ];

@@ -43,6 +43,7 @@ var searchData=
   ['getvel',['GetVel',['../class_orbit.html#aa18079fb12ccbe63c1a6b9d75c3ba578',1,'Orbit']]],
   ['getvesselname',['GetVesselName',['../class_module_asteroid.html#a36d85f98c73bb97eabf2b25483a3c9a5',1,'ModuleAsteroid']]],
   ['getvesseltype',['GetVesselType',['../class_module_asteroid.html#ace8715deedcad49921ab7c12caadb03c',1,'ModuleAsteroid']]],
+  ['getworldspacevel',['GetWorldSpaceVel',['../class_orbit.html#abcb8420085bdf2915ddd4a3cf9dc5f6f',1,'Orbit']]],
   ['getworldsurfaceposition',['GetWorldSurfacePosition',['../class_celestial_body.html#aa7a1697e517a2d083cb80f4762d244fa',1,'CelestialBody']]],
   ['gmagnitudeatcenter',['gMagnitudeAtCenter',['../class_celestial_body.html#a872ff243a5fab8022b13493abaf1ac37',1,'CelestialBody']]],
   ['gooffrails',['GoOffRails',['../class_vessel.html#a62c2f48e73bda7e0a4c345084ac29c41',1,'Vessel']]],

@@ -13,6 +13,7 @@ var searchData=
   ['resourcename',['resourceName',['../class_part_resource.html#afea9f9ccf4a2acaf8baf75ed317a7a8a',1,'PartResource']]],
   ['resourceresetcost',['resourceResetCost',['../class_module_science_experiment.html#ae8411cfa9bf27be77005e3708bf9f724',1,'ModuleScienceExperiment']]],
   ['resourcetoreset',['resourceToReset',['../class_module_science_experiment.html#a92655f600e41340af448c383f4b0ec8a',1,'ModuleScienceExperiment']]],
+  ['resourcexfeed',['ResourceXFeed',['../class_attach_node.html#aff9b4dc624b7775279a3702de37e1b81',1,'AttachNode']]],
   ['reviewactionname',['reviewActionName',['../class_module_science_experiment.html#a5e39804ab7ae61df30c709dbeb4b3fc8',1,'ModuleScienceExperiment']]],
   ['roll',['roll',['../class_flight_ctrl_state.html#a8b1c924ae0f8d7e0122935f5905ae1a2',1,'FlightCtrlState']]],
   ['rolltrim',['rollTrim',['../class_flight_ctrl_state.html#ac82095d46194db07ab22fddecb59562e',1,'FlightCtrlState']]],
