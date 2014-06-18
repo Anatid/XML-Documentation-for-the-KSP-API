@@ -229,6 +229,11 @@
             Whether this node is a surface-attach node, a stack node, or a docking node.
             </summary>
         </member>
+        <member name="F:AttachNode.ResourceXFeed">
+            <summary>
+            Wether or not resource cross feed can pass through this node.
+            </summary>	
+        </member>
         <member name="F:AttachNode.NodeType.Stack">
             <summary>
             A stack node, like the connections between stacked fuel tanks
@@ -351,6 +356,7 @@
         <member name="F:CelestialBody.atmosphereMultiplier">
             <summary>
             Seems to be the pressure of the body's atmosphere at sea level, in units of Kerbin atmospheres at sea level.
+            Appears to only have an effect when useLegacyAtmosphere is toggled on
             </summary>
         </member>
         <member name="F:CelestialBody.atmosphereScaleHeight">
@@ -403,6 +409,11 @@
             Whether this planet has an ocean at "sea level"
             </summary>
         </member>
+        <member name="F:CelestialBody.orbitDriver">
+            <summary>
+            this is what gives the celestial body its orbit and makes it go along the orbit as well
+            </summary>
+        </member>
         <member name="F:CelestialBody.orbitingBodies">
             <summary>
             A list of this body's moons (or, in the case of the Sun, a list of the planets).
@@ -437,6 +448,11 @@
             <summary>
             Presumably, this gives the minimum altitude you must have in order to be allowed to use each
             warp rate when in this body's sphere of influence.
+            </summary>
+        </member>
+        <member name="F:CelestialBody.useLegacyAtmosphere">
+            <summary>
+            It appears that this setting toggles between old and new atmosphere system
             </summary>
         </member>
         <member name="M:CelestialBody.GetAltitude(Vector3d)">
@@ -2740,12 +2756,12 @@
         </member>
         <member name="F:Orbit.h">
             <summary>
-            The specific orbital angular momentum, maybe? 
+            The specific orbital angular momentum 
             </summary>
         </member>
         <member name="F:Orbit.inclination">
             <summary>
-            The inclination of this orbit with respect to the equator of the central body (in radians or degrees?)
+            The inclination of this orbit with respect to the equator of the central body in degrees
             </summary>
         </member>
         <member name="F:Orbit.LAN">
@@ -2778,7 +2794,7 @@
         </member>
         <member name="F:Orbit.orbitPercent">
             <summary>
-            Equal to <code>>ObT / period</code>?
+            Equal to <code>>ObT / period</code>
             </summary>
         </member>
         <member name="F:Orbit.patchEndTransition">
@@ -2831,9 +2847,14 @@
             <summary>
             The current orbital velocity of the orbiting body. Unlike most other methods of the orbit
             class, the returned vector seems to already be in world coordinates and doesn't need to have
-            its Y and Z axes flipped.
+            its Y and Z axes flipped. (Y and Z axes already being flipped is confirmed for V0.23.5)
             </summary>
             <returns>Orbital velocity vector at current time.</returns>
+        </member>
+        <member name="M:Orbit.GetWorldSpaceVel">
+            <summary>
+            like GetVel but adjusted for the rotational velocity of the body the vessel is orbiting, presumably?
+            </summary>
         </member>
         <member name="M:Orbit.RadiusAtTrueAnomaly(System.Double)">
             <summary>
@@ -4135,6 +4156,12 @@
             Add a given velocity offset to the vessels current velocity, instantaneously (may only work for loaded vessels?)
             </summary>
             <param name="velOffset"></param>
+        </member>
+        <member name="M:Vessel.findLocalCenterOfPressure">
+            <summary>
+            Broken Function with expensive runtime. Do not use. (If it worked it'd do as the name says but it doesn't as of 0.23.5)
+            </summary>
+            <returns></returns>
         </member>
         <member name="M:Vessel.findWorldCenterOfMass">
             <summary>
