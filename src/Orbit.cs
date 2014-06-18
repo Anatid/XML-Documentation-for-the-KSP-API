@@ -68,11 +68,11 @@ public class Orbit
     public double fromE;
     public double fromV;
     /// <summary>
-    /// The specific orbital angular momentum, maybe? 
+    /// The specific orbital angular momentum 
     /// </summary>
     public Vector3d h;
     /// <summary>
-    /// The inclination of this orbit with respect to the equator of the central body (in radians or degrees?)
+    /// The inclination of this orbit with respect to the equator of the central body in degrees
     /// </summary>
     public double inclination;
     /// <summary>
@@ -107,7 +107,7 @@ public class Orbit
     public double orbitalEnergy;
     public double orbitalSpeed;
     /// <summary>
-    /// Equal to <code>>ObT / period</code>?
+    /// Equal to <code>>ObT / period</code>
     /// </summary>
     public double orbitPercent;
     /// <summary>
@@ -232,10 +232,13 @@ public class Orbit
     /// <summary>
     /// The current orbital velocity of the orbiting body. Unlike most other methods of the orbit
     /// class, the returned vector seems to already be in world coordinates and doesn't need to have
-    /// its Y and Z axes flipped.
+    /// its Y and Z axes flipped. (Y and Z axes already being flipped is confirmed for V0.23.5)
     /// </summary>
     /// <returns>Orbital velocity vector at current time.</returns>
     public extern Vector3d GetVel();
+    /// <summary>
+	/// like GetVel but adjusted for the rotational velocity of the body the vessel is orbiting, presumably?
+    /// </summary>
     public extern Vector3d GetWorldSpaceVel();
     public extern void Init();
     public extern static bool PeApIntersects(Orbit primary, Orbit secondary, double threshold);
