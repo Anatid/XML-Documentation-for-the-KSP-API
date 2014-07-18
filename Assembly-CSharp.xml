@@ -4163,6 +4163,10 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:Vessel.findLocalMOI(UnityEngine.Vector3)">
+            <summary>Returns the vessel's moment of inertia around its center of mass.</summary>
+            <warning>Returns nonsense answers; DO NOT USE</warning>
+        </member>
         <member name="M:Vessel.findWorldCenterOfMass">
             <summary>
             Computes and returns the position of the center of mass of the vessel, in world coordinates.
