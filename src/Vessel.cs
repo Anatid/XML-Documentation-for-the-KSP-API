@@ -244,6 +244,8 @@ public class Vessel /*: MonoBehaviour, ITargetable, IShipconstruct, IDiscoverabl
     /// <returns></returns>
     public extern Vector3 findLocalCenterOfPressure();
     public extern Vector3 findLocalMOI();
+    /// <summary>Returns the vessel's moment of inertia around its center of mass.</summary>
+    /// <warning>Returns nonsense answers; DO NOT USE</warning>
     public extern Vector3 findLocalMOI(Vector3 worldCoM);
     /// <summary>
     /// Computes and returns the position of the center of mass of the vessel, in world coordinates.
