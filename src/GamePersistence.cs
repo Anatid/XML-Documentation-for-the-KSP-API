@@ -22,8 +22,8 @@ public class GamePersistence : MonoBehaviour
     /// </summary>
     /// <param name="saveFileName">The name of the persistence file to create (".sfs" will be appended to the file name).</param>
     /// <param name="saveFolder">The folder in which to create the save file. Try using HighLogic.SaveFolder.</param>
-    /// <param name="saveMode">Whether to overwrite, append, or abort if the given file already exists?</param>
-    /// <returns>?</returns>
+    /// <param name="saveMode">Whether to overwrite, append, or abort if the given file already exists.</param>
+    /// <returns>Returns the filename on success. Returns an empty string when the file already exists and SaveMode.ABORT is used.</returns>
     public extern static string SaveGame(string saveFileName, string saveFolder, SaveMode saveMode);
     public extern static string SaveGame(Game game, string saveFileName, string saveFolder, SaveMode saveMode);
 }
