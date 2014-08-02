@@ -1617,6 +1617,13 @@
             An unused class.
             </summary>
         </member>
+        <member name="F:GameEvents.onPartCouple">
+            <summary>
+            Called on docking. Passes your event handler a FromToAction&lt;Part, Part&gt; ev.
+            ev.from and ev.to are the two parts (docking nodes) that have been coupled together.
+            Actually this event fires twice on docking, with ev.from and ev.to swapped the second time.
+            </summary>
+        </member>
         <member name="T:GamePersistence">
             <summary>
             Contains some functions you can call to save the game state to a persistence file, or load the game state from a persistence file.
