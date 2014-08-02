@@ -25,5 +25,6 @@ var searchData=
   ['experimentid',['experimentID',['../class_module_science_experiment.html#a78c0e0007d9aa3e85682254dfd15faf3',1,'ModuleScienceExperiment']]],
   ['experimenttitle',['experimentTitle',['../class_science_experiment.html#ae4cf27f2130b761e4ebe5160cc6578ff',1,'ScienceExperiment']]],
   ['explode',['explode',['../class_part.html#a6d6b342ce51f06e84958badbb1ed59c0',1,'Part']]],
+  ['explosionreaction',['ExplosionReaction',['../struct_game_events_1_1_explosion_reaction.html',1,'GameEvents']]],
   ['externaltoevaonly',['externalToEVAOnly',['../class_k_s_p_event.html#a09964cff211d82641509a3197ff024e3',1,'KSPEvent']]]
 ];

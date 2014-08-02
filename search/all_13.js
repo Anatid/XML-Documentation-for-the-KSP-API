@@ -8,6 +8,8 @@ var searchData=
   ['vessel',['Vessel',['../class_vessel.html',1,'Vessel'],['../class_part.html#a4ea96005c7aba98ff58e947a25004e60',1,'Part.vessel()'],['../class_part_module.html#a3bf2e168e521ad9de4e14de27bd3324f',1,'PartModule.vessel()']]],
   ['vesselname',['vesselName',['../class_vessel.html#aace882f92061891abf0a30143d39ea77',1,'Vessel']]],
   ['vessels',['Vessels',['../class_flight_globals.html#a6e6fd433e47adf7128a78eb977d2bf2a',1,'FlightGlobals']]],
+  ['vesselsituation',['VesselSituation',['../class_game_events_1_1_vessel_situation.html',1,'GameEvents']]],
+  ['vesselspawninfo',['VesselSpawnInfo',['../struct_game_events_1_1_vessel_spawn_info.html',1,'GameEvents']]],
   ['vesseltarget',['VesselTarget',['../class_flight_globals.html#a448e6f9d59f5808c17ba8cef008bc4ff',1,'FlightGlobals']]],
   ['vesseltype',['vesselType',['../class_vessel.html#ae46388a47c90d6f1f6783be683487265',1,'Vessel']]],
   ['volume',['volume',['../class_p_asteroid.html#a441982426053ed43cfcff836af639e78',1,'PAsteroid']]]

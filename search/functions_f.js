@@ -7,6 +7,7 @@ var searchData=
   ['sciencesubject',['ScienceSubject',['../class_science_subject.html#a973ec40249fb124c2493439349431eba',1,'ScienceSubject.ScienceSubject(ConfigNode node)'],['../class_science_subject.html#a6b07e53204f1b12a089cbdd98c628daf',1,'ScienceSubject.ScienceSubject(ScienceExperiment exp, ExperimentSituations sit, CelestialBody body, string biome=&quot;&quot;)']]],
   ['serializetobinary',['SerializeToBinary',['../class_k_s_p_1_1_i_o_1_1_i_o_utils.html#a0e4cbbfe5991d26ae147493bfc76e6c1',1,'KSP::IO::IOUtils']]],
   ['setadvancecondition',['SetAdvanceCondition',['../class_tutorial_scenario_1_1_tutorial_page.html#ad30cb6a8ab113b0cc21a84b07e0476a7',1,'TutorialScenario::TutorialPage']]],
+  ['setcontrollock',['SetControlLock',['../class_input_lock_manager.html#a08c85b946277316c637e656db5ac595b',1,'InputLockManager']]],
   ['setdialogrect',['SetDialogRect',['../class_tutorial_scenario.html#ad0e7b4b3d6581a8bd02b3db9325c8da0',1,'TutorialScenario']]],
   ['setinoperable',['SetInoperable',['../class_module_science_experiment.html#acf742cc9d17e45e3b6ecc1bc67e16339',1,'ModuleScienceExperiment']]],
   ['setlastobservedtime',['SetLastObservedTime',['../class_discovery_info.html#a3f6ca8d02e900cebd12d7050a06a4811',1,'DiscoveryInfo']]],

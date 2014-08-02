@@ -18,7 +18,7 @@ var searchData=
   ['pea',['PeA',['../class_orbit.html#a5d2fc15df21ea351193124dc73939192',1,'Orbit']]],
   ['per',['PeR',['../class_orbit.html#a5834c2b15205c7a07032c2b2a653da1b',1,'Orbit']]],
   ['period',['period',['../class_orbit.html#a3b21188489acf2642322ae49dbbfffff',1,'Orbit']]],
-  ['physicalsignificance',['physicalSignificance',['../class_part.html#ac90e954db86d2791e344dc8a88401b67',1,'Part.physicalSignificance()'],['../class_part.html#a096ba07cc5a00c2c74bbdd83982c8df5',1,'Part.PhysicalSignificance()']]],
+  ['physicalsignificance',['PhysicalSignificance',['../class_part.html#a096ba07cc5a00c2c74bbdd83982c8df5',1,'Part.PhysicalSignificance()'],['../class_part.html#ac90e954db86d2791e344dc8a88401b67',1,'Part.physicalSignificance()']]],
   ['physicssignificance',['PhysicsSignificance',['../class_part.html#a8f6f778ee2dc4356862ce2536632e64d',1,'Part']]],
   ['physicswarprates',['physicsWarpRates',['../class_time_warp.html#a61f4f34c6c49f25973c99072b913924b',1,'TimeWarp']]],
   ['pitch',['pitch',['../class_flight_ctrl_state.html#a53f358c54da2792c0462ae3d3bebbc8b',1,'FlightCtrlState']]],

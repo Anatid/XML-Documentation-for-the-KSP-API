@@ -9,5 +9,7 @@ var searchData=
   ['high',['HIGH',['../class_time_warp.html#aa35d942317381d27dd5ba64316c09123ab89de3b4b81c4facfac906edf29aec8c',1,'TimeWarp']]],
   ['highestpoint',['highestPoint',['../class_p_asteroid.html#adadce98deedb0007119e1d65a6584e0c',1,'PAsteroid']]],
   ['highlogic',['HighLogic',['../class_high_logic.html',1,'']]],
-  ['hillsphere',['hillSphere',['../class_celestial_body.html#ab4de9a062a1180879d6778699e7eacd7',1,'CelestialBody']]]
+  ['hillsphere',['hillSphere',['../class_celestial_body.html#ab4de9a062a1180879d6778699e7eacd7',1,'CelestialBody']]],
+  ['hostedfromtoaction_3c_20a_2c_20b_20_3e',['HostedFromToAction&lt; A, B &gt;',['../struct_game_events_1_1_hosted_from_to_action_3_01_a_00_01_b_01_4.html',1,'GameEvents']]],
+  ['hosttargetaction_3c_20a_2c_20b_20_3e',['HostTargetAction&lt; A, B &gt;',['../struct_game_events_1_1_host_target_action_3_01_a_00_01_b_01_4.html',1,'GameEvents']]]
 ];
