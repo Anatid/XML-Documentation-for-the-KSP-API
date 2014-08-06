@@ -1,3 +1,5 @@
+You can find me on #kspmodders or the KSP forums as **The_Duck**.
+
 How to use this documentation
 -----------------------------
 
