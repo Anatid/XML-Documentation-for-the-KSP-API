@@ -45,6 +45,10 @@ public class EditorLogic : MonoBehaviour
     public UIButton saveBtn;
     public int sceneToLoad;
     public Vector3 selPartGrabOffset;
+    /// <summary>
+    /// EditorLogic.fetch.ship.parts is a list of the parts in the ship currently under construction,
+    /// ordered by the order in which they were added to the ship.
+    /// </summary>
     public ShipConstruct ship;
     public GUISkin shipBrowserSkin;
     public Texture2D shipFileImage;

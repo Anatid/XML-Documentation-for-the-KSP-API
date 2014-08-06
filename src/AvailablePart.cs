@@ -35,6 +35,9 @@ public class AvailablePart
     public ConfigNode internalConfig;
     public string manufacturer;
     public string moduleInfo;
+    /// <summary>
+    /// The name of this kind of part, as specified in the "name =" line of its part.cfg.
+    /// </summary>
     public string name;
     /// <summary>
     /// The object that gets cloned when you create a new instance of this part in the editor?

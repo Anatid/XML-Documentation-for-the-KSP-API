@@ -26,6 +26,9 @@ public class Part : MonoBehaviour
     protected bool attached;
     public Joint attachJoint;
     public AttachNodeMethod attachMethod;
+    /// <summary>
+    /// Whether this part is attached to its parent via a stack AttachNode or a surface AttachNode.
+    /// </summary>
     public AttachModes attachMode;
     /// <summary>
     /// An AttachNode represents the link between two attached parts. attachNodes is a list of possible nodes to
@@ -80,7 +83,10 @@ public class Part : MonoBehaviour
     /// </summary>
     public bool fuelCrossFeed;
     /// <summary>
-    /// Seems to be always empty?
+    /// In the flight scene, fuelLookupTargets is the list of fuel lines through
+    /// which this part can draw fuel. Also if this part is a docking node docked
+    /// to a another docking node through which it can draw fuel, then the attached
+    /// docking node will also be in fuelLookupTargets.
     /// </summary>
     public List<Part> fuelLookupTargets;
     public static uint fuelRequestID;
@@ -275,6 +281,11 @@ public class Part : MonoBehaviour
     [ContextMenu("Die")]
     public extern void Die();
     public extern void disconnect(bool controlledSeparation = false);
+    /// <summary>
+    /// Deprecated.
+    /// </summary>
+    /// <param name="amount"></param>
+    /// <returns></returns>
     public extern virtual bool DrainFuel(float amount);
     public extern void drawStats();
     /// <summary>
@@ -288,6 +299,12 @@ public class Part : MonoBehaviour
     /// node_stack_top describes a node with name "stack_top."</param>
     /// <returns>The AttachNode of the given name.</returns>
     public extern AttachNode findAttachNode(string nodeId);
+    /// <summary>
+    /// Given a child part of this part, find the AttachNode representing the connection between this
+    /// part and that child.
+    /// </summary>
+    /// <param name="connectedPart">A child part of this part.</param>
+    /// <returns>The AttachNode connecting this part to the given child.</returns>
     public extern AttachNode findAttachNodeByPart(Part connectedPart);
     public extern AttachNode[] findAttachNodes(string partialNodeId);
     public extern T FindChildPart<T>() where T : Part;
@@ -384,7 +401,20 @@ public class Part : MonoBehaviour
     public extern void RemoveOnMouseDown(Part.OnActionDelegate method);
     public extern void RemoveOnMouseEnter(Part.OnActionDelegate method);
     public extern void RemoveOnMouseExit(Part.OnActionDelegate method);
+    /// <summary>
+    /// Deprecated.
+    /// </summary>
+    /// <param name="source"></param>
+    /// <param name="amount"></param>
+    /// <param name="reqId"></param>
+    /// <returns></returns>
     public extern virtual bool RequestFuel(Part source, float amount, uint reqId);
+    /// <summary>
+    /// Deprecated.
+    /// </summary>
+    /// <param name="amount"></param>
+    /// <param name="earliestStage"></param>
+    /// <returns></returns>
     public extern virtual bool RequestRCS(float amount, int earliestStage);
     public extern double RequestResource(int resourceID, double demand);
     public extern float RequestResource(int resourceID, float demand);
@@ -433,6 +463,9 @@ public class Part : MonoBehaviour
         AlwaysOn = 2,
     }
 
+    /// <summary>
+    /// Represents whether a part has physics.
+    /// </summary>
     public enum PhysicalSignificance
     {
         /// <summary>
@@ -446,4 +479,23 @@ public class Part : MonoBehaviour
     }
 
     public delegate void OnActionDelegate(Part p);
+}
+
+
+
+/// <summary>
+/// Describes the two possibilities for how a part can be attached to its parent.
+/// </summary>
+public enum AttachModes
+{
+    /// <summary>
+    /// The part is attached to its parent via a stack node; for example this is
+    /// how vertically stacked fuel tanks are attached
+    /// </summary>
+    STACK = 0,
+    /// <summary>
+    /// This part is attached to the surface of its parent; for example this is how
+    /// radial decouplers are attached.
+    /// </summary>
+    SRF_ATTACH = 1,
 }

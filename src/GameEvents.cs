@@ -1,9 +1,8 @@
-﻿#region Assembly Assembly-CSharp.dll, v1.0.0.0
-// C:\greg\ksp\KSP_Data\Managed\Assembly-CSharp.dll
-#endregion
+﻿using System;
 
-using System;
-
+/// <summary>
+/// GameEvents lets you register callbacks for lots of in-game events.
+/// </summary>
 public static class GameEvents
 {
     public static bool debugEvents;
@@ -29,7 +28,13 @@ public static class GameEvents
     public static EventData<ConfigNode> onGameStateSave;
     public static EventData<Game> onGameStateSaved;
     public static EventVoid onGameUnpause;
+    /// <summary>
+    /// Called when the player exits to the main menu and the ApplicationLauncher toolbar is destroyed.
+    /// </summary>
     public static EventVoid onGUIApplicationLauncherDestroyed;
+    /// <summary>
+    /// Called when the ApplicationLauncher toolbar is ready to have buttons added to it.
+    /// </summary>
     public static EventVoid onGUIApplicationLauncherReady;
     public static EventVoid onGUIAstronautComplexDespawn;
     public static EventVoid onGUIAstronautComplexSpawn;
@@ -44,6 +49,10 @@ public static class GameEvents
     public static EventData<MissionRecoveryDialog> onGUIRecoveryDialogSpawn;
     public static EventVoid onGUIRnDComplexDespawn;
     public static EventVoid onGUIRnDComplexSpawn;
+    /// <summary>
+    /// Called when the player hides the UI by pressing F2. Register for this callback (and for onShowUI)
+    /// so that you can hide your UI too.
+    /// </summary>
     public static EventVoid onHideUI;
     public static EventData<GameEvents.FromToAction<ControlTypes, ControlTypes>> onInputLocksModified;
     public static EventData<EventReport> onJointBreak;
@@ -87,6 +96,10 @@ public static class GameEvents
     public static EventData<GameEvents.FromToAction<ModuleDockingNode, ModuleDockingNode>> onSameVesselUndock;
     public static EventData<float> OnScienceChanged;
     public static EventData<float, ScienceSubject> OnScienceRecieved;
+    /// <summary>
+    /// Called when the player un-hides the UI by pressing F2. Register for this callback (and onHideUI)
+    /// so that you can un-hide your UI too.
+    /// </summary>
     public static EventVoid onShowUI;
     public static EventData<EventReport> onSplashDamage;
     public static EventData<int> onStageActivate;
@@ -113,6 +126,9 @@ public static class GameEvents
     public static EventData<Vessel> onVesselWasModified;
     public static EventData<Vessel> onVesselWillDestroy;
 
+    /// <summary>
+    /// Lets you register callbacks related to contracts.
+    /// </summary>
     public static class Contract
     {
         public static EventData<Contracts.Contract> onAccepted;
@@ -127,6 +143,9 @@ public static class GameEvents
         public static EventData<Contracts.Contract, Contracts.ContractParameter> onParameterChange;
     }
 
+    /// <summary>
+    /// Lets you register callbacks related to changes in the vessel situation.
+    /// </summary>
     public static class VesselSituation
     {
         public static EventData<Vessel, CelestialBody> onEscape;

@@ -1,8 +1,4 @@
-﻿#region Assembly Assembly-CSharp.dll, v2.0.50727
-// C:\greg\games\KSP 0.18.2\KSP_Data\Managed\Assembly-CSharp.dll
-#endregion
-
-using System;
+﻿using System;
 
 /// <summary>
 /// An enumeration of the different behaviors resources can have with respect to fuel flow.
@@ -14,14 +10,19 @@ public enum ResourceFlowMode
     /// </summary>
     NO_FLOW = 0,
     /// <summary>
-    /// This resource can flow between any two parts on the ship
-    /// without restrictions or intermediate fuel lines (like MonoPropellant).
+    /// The flow scheme used by the stock ElectricCharge and IntakeAir resources.
     /// </summary>
     ALL_VESSEL = 1,
     /// <summary>
     /// Unused?
     /// </summary>
     EVEN_FLOW = 2,
+    /// <summary>
+    /// The flow scheme used by the stock MonoPropellant and XenonGas resources.
+    /// Resource can be draw from any container by any consumer, but it tries to
+    /// prioritize drawing from continers in earlier stages.
+    /// </summary>
+    STAGE_PRIORITY_FLOW = 2,
     /// <summary>
     /// This resource behaves like LiquidFuel or Oxidizer, and can only flow
     /// through crossfeed-enabled parts and fuel lines.
