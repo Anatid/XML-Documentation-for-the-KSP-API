@@ -4,6 +4,135 @@
         <name>XMLDocumentation</name>
     </assembly>
     <members>
+        <member name="T:ApplicationLauncher">
+            <summary>
+            The application launcher is the set of buttons that appear in the upper right, including
+            for example the resource tab. You can add your own buttons to this toolbar. 
+            
+            See http://forum.kerbalspaceprogram.com/threads/86682-Appilcation-Launcher-and-Mods?p=1303921#post1303921
+            </summary>
+        </member>
+        <member name="F:ApplicationLauncher.Ready">
+            <summary>
+            Don't try to add buttons before ApplicationLauncher.Ready is true. If it's currently false, you
+            can register for the GameEvents.onGUIApplicationLauncherReady event which will fire when the
+            application launcher becomes ready to have buttons added to it.
+            </summary>
+        </member>
+        <member name="M:ApplicationLauncher.AddModApplication(RUIToggleButton.OnTrue,RUIToggleButton.OnFalse,RUIToggleButton.OnHover,RUIToggleButton.OnHoverOut,RUIToggleButton.OnEnable,RUIToggleButton.OnDisable,ApplicationLauncher.AppScenes,PackedSprite)">
+            <summary>
+            Add a MOD(3rd party) application to the Application Launcher. Use ApplicationLauncherButton.VisibleInScenes to set where the button should be displayed.
+            </summary>
+            <remarks>
+            Note that the application launcher is destroyed when the player exits to the main menu. If the player then 
+            loads up a new save the application launcher will be recreated and you will have to re-add your button. 
+            Register for GameEvents.onGUIApplicationLauncherDestroyed and GameEvents.onGUIApplicationLauncherReady
+            to detect when the application launcher has been destroyed and when it has been re-created.
+            </remarks>
+            <param name="onTrue">Callback for when the button is toggeled on</param>
+            <param name="onFalse">Callback for when the button is toggeled off</param>
+            <param name="onHover">Callback for when the mouse is hovering over the button</param>
+            <param name="onHoverOut">Callback for when the mouse hoveris off the button</param>
+            <param name="onEnable">Callback for when the button is shown or enabled by the application launcher</param>
+            <param name="onDisable">Callback for when the button is hidden or disabled by the application launcher</param>
+            <param name="visibleInScenes">The "scenes" this button will be visible in. For example VisibleInScenes = ApplicationLauncher.AppScenes.FLIGHT | ApplicationLauncher.AppScenes.MAPVIEW;</param>
+            <param name="sprite">The 38x38 PackedSprite animation to use for the button icon. Use ApplicationLauncherButton.PlayAnim() to play the animation.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApplicationLauncher.AddModApplication(RUIToggleButton.OnTrue,RUIToggleButton.OnFalse,RUIToggleButton.OnHover,RUIToggleButton.OnHoverOut,RUIToggleButton.OnEnable,RUIToggleButton.OnDisable,ApplicationLauncher.AppScenes,UnityEngine.Texture)">
+            <summary>
+            Add a MOD(3rd party) application to the Application Launcher. Use ApplicationLauncherButton.VisibleInScenes to set where the button should be displayed.
+            </summary>
+            <remarks>
+            Note that the application launcher is destroyed when the player exits to the main menu. If the player then 
+            loads up a new save the application launcher will be recreated and you will have to re-add your button. 
+            Register for GameEvents.onGUIApplicationLauncherDestroyed and GameEvents.onGUIApplicationLauncherReady
+            to detect when the application launcher has been destroyed and when it has been re-created.
+            </remarks>
+            <param name="onTrue">Callback for when the button is toggeled on</param>
+            <param name="onFalse">Callback for when the button is toggeled off</param>
+            <param name="onHover">Callback for when the mouse is hovering over the button</param>
+            <param name="onHoverOut">Callback for when the mouse hoveris off the button</param>
+            <param name="onEnable">Callback for when the button is shown or enabled by the application launcher</param>
+            <param name="onDisable">Callback for when the button is hidden or disabled by the application launcher</param>
+            <param name="visibleInScenes">The "scenes" this button will be visible in. For example VisibleInScenes = ApplicationLauncher.AppScenes.FLIGHT | ApplicationLauncher.AppScenes.MAPVIEW;</param>
+            <param name="texture">The 38x38 Texture to use for the button icon.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApplicationLauncher.AddOnHideCallback(ApplicationLauncher.OnHide)">
+            <summary>
+            Register a method that will be called when the ApplicationLauncher GUI hides itself.
+            </summary>
+            <param name="del"></param>
+        </member>
+        <member name="M:ApplicationLauncher.AddOnRepositionCallback(ApplicationLauncher.OnReposition)">
+            <summary>
+            Register a method that will be called when the ApplicationLauncher moves from the top
+            right to the bottom right, or vice versa.
+            </summary>
+            <param name="del"></param>
+        </member>
+        <member name="M:ApplicationLauncher.AddOnShowCallback(ApplicationLauncher.OnShow)">
+            <summary>
+            Register a method that will be called when the ApplicationLauncher GUI shows itself.
+            </summary>
+            <param name="del"></param>
+        </member>
+        <member name="M:ApplicationLauncher.DisableMutuallyExclusive(ApplicationLauncherButton)">
+            <summary>
+            Reverses the effect of EnableMutuallyExclusive()
+            </summary>
+            <param name="launcherButton"></param>
+        </member>
+        <member name="M:ApplicationLauncher.EnableMutuallyExclusive(ApplicationLauncherButton)">
+            <summary>
+            Makes your application hide the stock applications when opened, and  makes stock applications hide
+            your appliction when opened.
+            </summary>
+            <param name="launcherButton"></param>
+        </member>
+        <member name="M:ApplicationLauncher.RemoveModApplication(ApplicationLauncherButton)">
+            <summary>
+            Removes your button from the application launcher toolbar.
+            </summary>
+            <param name="button"></param>
+        </member>
+        <member name="M:ApplicationLauncher.RemoveOnHideCallback(ApplicationLauncher.OnHide)">
+            <summary>
+            Un-register a method that will be called when the ApplicationLauncher GUI hides itself.
+            </summary>
+            <param name="del"></param>
+        </member>
+        <member name="M:ApplicationLauncher.RemoveOnRepositionCallback(ApplicationLauncher.OnReposition)">
+            <summary>
+            Un-register a method that will be called when the ApplicationLauncher moves from the top
+            right to the bottom right, or vice versa.
+            </summary>
+            <param name="del"></param>
+        </member>
+        <member name="M:ApplicationLauncher.RemoveOnShowCallback(ApplicationLauncher.OnShow)">
+            <summary>
+            Un-register a method that will be called when the ApplicationLauncher GUI shows itself.
+            </summary>
+            <param name="del"></param>
+        </member>
+        <member name="P:ApplicationLauncher.Instance">
+            <summary>
+            The single instance of ApplicationLauncher; call all the methods of this class using this instance.
+            </summary>
+        </member>
+        <member name="P:ApplicationLauncher.IsPositionedAtTop">
+            <summary>
+            Whether the application launcher toolbar is positioned in the top right or in the bottom right
+            (it's in the bottom right in the editor).
+            </summary>
+        </member>
+        <member name="T:ApplicationLauncher.AppScenes">
+            <summary>
+            Or together these flags and pass them to AddModApplication to specify when your button
+            should appear on the application launcher toolbar.
+            </summary>
+        </member>
         <member name="T:AtmosphericEngine">
             <summary>
             The old, deprecated class that implemented jet engine parts before PartModules.
@@ -22,6 +151,11 @@
             Whether this part will actually activate if it schedule to be activated in the same stage as it 
             is decoupled from the rocket. In particular, sepratrons must have ActivatesEvenIfDisconnected set
             to true if they are to function properly.
+            </summary>
+        </member>
+        <member name="F:Part.attachMode">
+            <summary>
+            Whether this part is attached to its parent via a stack AttachNode or a surface AttachNode.
             </summary>
         </member>
         <member name="F:Part.attachNodes">
@@ -59,7 +193,10 @@
         </member>
         <member name="F:Part.fuelLookupTargets">
             <summary>
-            Seems to be always empty?
+            In the flight scene, fuelLookupTargets is the list of fuel lines through
+            which this part can draw fuel. Also if this part is a docking node docked
+            to a another docking node through which it can draw fuel, then the attached
+            docking node will also be in fuelLookupTargets.
             </summary>
         </member>
         <member name="F:Part.inverseStage">
@@ -164,6 +301,13 @@
             <param name="moduleName">The class name of the PartModule to add, as a string</param>
             <returns>The added PartModule</returns>
         </member>
+        <member name="M:Part.DrainFuel(System.Single)">
+            <summary>
+            Deprecated.
+            </summary>
+            <param name="amount"></param>
+            <returns></returns>
+        </member>
         <member name="M:Part.explode">
             <summary>
             Calling this causes the part to explode. But you guessed that, didn't you?
@@ -177,6 +321,14 @@
             node_stack_top describes a node with name "stack_top."</param>
             <returns>The AttachNode of the given name.</returns>
         </member>
+        <member name="M:Part.findAttachNodeByPart(Part)">
+            <summary>
+            Given a child part of this part, find the AttachNode representing the connection between this
+            part and that child.
+            </summary>
+            <param name="connectedPart">A child part of this part.</param>
+            <returns>The AttachNode connecting this part to the given child.</returns>
+        </member>
         <member name="M:Part.force_activate">
             <summary>
             Activates the part now, regardless of when it was scheduled to be activated in the staging order.
@@ -187,6 +339,23 @@
             The total mass of the resources held by the part. The total mass of the part is <code>mass + GetResourceMass()</code>
             </summary>
             <returns>Total resource mass, in tonnes</returns>
+        </member>
+        <member name="M:Part.RequestFuel(Part,System.Single,System.UInt32)">
+            <summary>
+            Deprecated.
+            </summary>
+            <param name="source"></param>
+            <param name="amount"></param>
+            <param name="reqId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Part.RequestRCS(System.Single,System.Int32)">
+            <summary>
+            Deprecated.
+            </summary>
+            <param name="amount"></param>
+            <param name="earliestStage"></param>
+            <returns></returns>
         </member>
         <member name="P:Part.orbit">
             <summary>
@@ -202,6 +371,11 @@
         <member name="P:Part.Rigidbody">
             <summary>
             The rigidbody of this part. See the Unity documentation on rigidbodies for more information.
+            </summary>
+        </member>
+        <member name="T:Part.PhysicalSignificance">
+            <summary>
+            Represents whether a part has physics.
             </summary>
         </member>
         <member name="F:Part.PhysicalSignificance.FULL">
@@ -269,6 +443,11 @@
             <summary>
             The description of this part, as displayed in the editor? 
             Does this include the GetInfo() of the part's PartModules?
+            </summary>
+        </member>
+        <member name="F:AvailablePart.name">
+            <summary>
+            The name of this kind of part, as specified in the "name =" line of its part.cfg.
             </summary>
         </member>
         <member name="F:AvailablePart.partPrefab">
@@ -956,6 +1135,12 @@
             This class has information about what is going on in the editor. In particular see SortedShipList.
             </summary>
         </member>
+        <member name="F:EditorLogic.ship">
+            <summary>
+            EditorLogic.fetch.ship.parts is a list of the parts in the ship currently under construction,
+            ordered by the order in which they were added to the ship.
+            </summary>
+        </member>
         <member name="P:EditorLogic.SortedShipList">
             <summary>
             A list of all parts in the vessel that is being edited.
@@ -1617,11 +1802,48 @@
             An unused class.
             </summary>
         </member>
+        <member name="T:GameEvents">
+            <summary>
+            GameEvents lets you register callbacks for lots of in-game events.
+            </summary>
+        </member>
+        <member name="F:GameEvents.onGUIApplicationLauncherDestroyed">
+            <summary>
+            Called when the player exits to the main menu and the ApplicationLauncher toolbar is destroyed.
+            </summary>
+        </member>
+        <member name="F:GameEvents.onGUIApplicationLauncherReady">
+            <summary>
+            Called when the ApplicationLauncher toolbar is ready to have buttons added to it.
+            </summary>
+        </member>
+        <member name="F:GameEvents.onHideUI">
+            <summary>
+            Called when the player hides the UI by pressing F2. Register for this callback (and for onShowUI)
+            so that you can hide your UI too.
+            </summary>
+        </member>
         <member name="F:GameEvents.onPartCouple">
             <summary>
             Called on docking. Passes your event handler a FromToAction&lt;Part, Part&gt; ev.
             ev.from and ev.to are the two parts (docking nodes) that have been coupled together.
             Actually this event fires twice on docking, with ev.from and ev.to swapped the second time.
+            </summary>
+        </member>
+        <member name="F:GameEvents.onShowUI">
+            <summary>
+            Called when the player un-hides the UI by pressing F2. Register for this callback (and onHideUI)
+            so that you can un-hide your UI too.
+            </summary>
+        </member>
+        <member name="T:GameEvents.Contract">
+            <summary>
+            Lets you register callbacks related to contracts.
+            </summary>
+        </member>
+        <member name="T:GameEvents.VesselSituation">
+            <summary>
+            Lets you register callbacks related to changes in the vessel situation.
             </summary>
         </member>
         <member name="T:GamePersistence">
@@ -2917,6 +3139,23 @@
             A property of ellipses; Google it.
             </summary>
         </member>
+        <member name="T:AttachModes">
+            <summary>
+            Describes the two possibilities for how a part can be attached to its parent.
+            </summary>
+        </member>
+        <member name="F:AttachModes.STACK">
+            <summary>
+            The part is attached to its parent via a stack node; for example this is
+            how vertically stacked fuel tanks are attached
+            </summary>
+        </member>
+        <member name="F:AttachModes.SRF_ATTACH">
+            <summary>
+            This part is attached to the surface of its parent; for example this is how
+            radial decouplers are attached.
+            </summary>
+        </member>
         <member name="T:PartResource">
             <summary>
             A PartResource object represents the store of a single type of resource within a Part.
@@ -3282,13 +3521,19 @@
         </member>
         <member name="F:ResourceFlowMode.ALL_VESSEL">
             <summary>
-            This resource can flow between any two parts on the ship
-            without restrictions or intermediate fuel lines (like MonoPropellant).
+            The flow scheme used by the stock ElectricCharge and IntakeAir resources.
             </summary>
         </member>
         <member name="F:ResourceFlowMode.EVEN_FLOW">
             <summary>
             Unused?
+            </summary>
+        </member>
+        <member name="F:ResourceFlowMode.STAGE_PRIORITY_FLOW">
+            <summary>
+            The flow scheme used by the stock MonoPropellant and XenonGas resources.
+            Resource can be draw from any container by any consumer, but it tries to
+            prioritize drawing from continers in earlier stages.
             </summary>
         </member>
         <member name="F:ResourceFlowMode.STACK_PRIORITY_SEARCH">
@@ -3655,6 +3900,11 @@
         <member name="F:KSP.IO.SeekOrigin.End">
             <summary>
             Seek from the end of the stream.
+            </summary>
+        </member>
+        <member name="F:ShipConstruct.parts">
+            <summary>
+            A list of all the parts in the ShipConstruct.
             </summary>
         </member>
         <member name="T:KSP.IO.TextReader">
