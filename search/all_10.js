@@ -37,6 +37,8 @@ var searchData=
   ['setvalue',['SetValue',['../class_k_s_p_1_1_i_o_1_1_plugin_config_node.html#afc7d679d74b3374678de95010e4bc179',1,'KSP.IO.PluginConfigNode.SetValue()'],['../class_k_s_p_1_1_i_o_1_1_plugin_configuration.html#a433cdad99eb619628215d8e6fffd9348',1,'KSP.IO.PluginConfiguration.SetValue()']]],
   ['setvesseltarget',['SetVesselTarget',['../class_flight_globals.html#a1792d17424ded4bda94c98e66406badb',1,'FlightGlobals']]],
   ['setworldvelocity',['SetWorldVelocity',['../class_vessel.html#a97bca2d88f72473acadc57e220e3bd5a',1,'Vessel']]],
+  ['ship',['ship',['../class_editor_logic.html#a0f8fd6c8d6feaca92c94a19e37a75433',1,'EditorLogic']]],
+  ['shipconstruct',['ShipConstruct',['../class_ship_construct.html',1,'']]],
   ['signalstrengthlevel',['signalStrengthLevel',['../class_discovery_info.html#a9eec0e7473b8bcea62fe745ded41375e',1,'DiscoveryInfo']]],
   ['signalstrengthpercent',['signalStrengthPercent',['../class_discovery_info.html#ac64f2b0e2107f1915db3f7c0ed0efd65',1,'DiscoveryInfo']]],
   ['situation',['situation',['../class_discovery_info.html#a51fb6e41bf607d6506dd4c65d752d0ca',1,'DiscoveryInfo.situation()'],['../class_vessel.html#a10f73f5e6a3ed602411a7ffff14206b8',1,'Vessel.situation()']]],

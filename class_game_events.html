@@ -89,10 +89,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">GameEvents Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="class_game_events.html" title="GameEvents lets you register callbacks for lots of in-game events. ">GameEvents</a> lets you register callbacks for lots of in-game events.  
+ <a href="class_game_events.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_events_1_1_contract.html">Contract</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lets you register callbacks related to contracts.  <a href="class_game_events_1_1_contract.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_game_events_1_1_explosion_reaction.html">ExplosionReaction</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -103,6 +107,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_game_events_1_1_host_target_action_3_01_a_00_01_b_01_4.html">HostTargetAction&lt; A, B &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_events_1_1_vessel_situation.html">VesselSituation</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lets you register callbacks related to changes in the vessel situation.  <a href="class_game_events_1_1_vessel_situation.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_game_events_1_1_vessel_spawn_info.html">VesselSpawnInfo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,7 +148,7 @@ static EventData<br class="typebreak" />
 &lt; <a class="el" href="class_celestial_body.html">CelestialBody</a>, <a class="el" href="class_celestial_body.html">CelestialBody</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>onDominantBodyChange</b></td></tr>
 <tr class="separator:a5555694a6b4264ff6a7e86c3a614a299"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb278bbefd38b4c57380373a5560a202"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb278bbefd38b4c57380373a5560a202"></a>
-static EventData&lt; ShipConstruct &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>onEditorShipModified</b></td></tr>
+static EventData&lt; <a class="el" href="class_ship_construct.html">ShipConstruct</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>onEditorShipModified</b></td></tr>
 <tr class="separator:afb278bbefd38b4c57380373a5560a202"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa018343ae91ed13d9100450a6e9066f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa018343ae91ed13d9100450a6e9066f2"></a>
 static EventData&lt; <a class="el" href="class_vessel.html">Vessel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>onFlagPlant</b></td></tr>
@@ -184,11 +189,11 @@ static EventData&lt; Game &gt;&#160;</td><td class="memItemRight" valign="bottom
 <tr class="memitem:a80b977ee8a49448bb02730d48a3e2c8f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80b977ee8a49448bb02730d48a3e2c8f"></a>
 static EventVoid&#160;</td><td class="memItemRight" valign="bottom"><b>onGameUnpause</b></td></tr>
 <tr class="separator:a80b977ee8a49448bb02730d48a3e2c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5777e3888d925fe37bb2e7b1bb072a84"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5777e3888d925fe37bb2e7b1bb072a84"></a>
-static EventVoid&#160;</td><td class="memItemRight" valign="bottom"><b>onGUIApplicationLauncherDestroyed</b></td></tr>
+<tr class="memitem:a5777e3888d925fe37bb2e7b1bb072a84"><td class="memItemLeft" align="right" valign="top">static EventVoid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_events.html#a5777e3888d925fe37bb2e7b1bb072a84">onGUIApplicationLauncherDestroyed</a></td></tr>
+<tr class="memdesc:a5777e3888d925fe37bb2e7b1bb072a84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the player exits to the main menu and the <a class="el" href="class_application_launcher.html" title="The application launcher is the set of buttons that appear in the upper right, including for example ...">ApplicationLauncher</a> toolbar is destroyed.  <a href="#a5777e3888d925fe37bb2e7b1bb072a84">More...</a><br /></td></tr>
 <tr class="separator:a5777e3888d925fe37bb2e7b1bb072a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26297049a3f6e4e105e780a5d68680dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26297049a3f6e4e105e780a5d68680dd"></a>
-static EventVoid&#160;</td><td class="memItemRight" valign="bottom"><b>onGUIApplicationLauncherReady</b></td></tr>
+<tr class="memitem:a26297049a3f6e4e105e780a5d68680dd"><td class="memItemLeft" align="right" valign="top">static EventVoid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_events.html#a26297049a3f6e4e105e780a5d68680dd">onGUIApplicationLauncherReady</a></td></tr>
+<tr class="memdesc:a26297049a3f6e4e105e780a5d68680dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the <a class="el" href="class_application_launcher.html" title="The application launcher is the set of buttons that appear in the upper right, including for example ...">ApplicationLauncher</a> toolbar is ready to have buttons added to it.  <a href="#a26297049a3f6e4e105e780a5d68680dd">More...</a><br /></td></tr>
 <tr class="separator:a26297049a3f6e4e105e780a5d68680dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab855f021b80c69642f6fc1686aa04e4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab855f021b80c69642f6fc1686aa04e4b"></a>
 static EventVoid&#160;</td><td class="memItemRight" valign="bottom"><b>onGUIAstronautComplexDespawn</b></td></tr>
@@ -232,8 +237,8 @@ static EventVoid&#160;</td><td class="memItemRight" valign="bottom"><b>onGUIRnDC
 <tr class="memitem:a8c38afab8fc430aa58b4aad3c43361a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c38afab8fc430aa58b4aad3c43361a1"></a>
 static EventVoid&#160;</td><td class="memItemRight" valign="bottom"><b>onGUIRnDComplexSpawn</b></td></tr>
 <tr class="separator:a8c38afab8fc430aa58b4aad3c43361a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6413deda1cf88dfb47ec9a091d24e3e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6413deda1cf88dfb47ec9a091d24e3e"></a>
-static EventVoid&#160;</td><td class="memItemRight" valign="bottom"><b>onHideUI</b></td></tr>
+<tr class="memitem:af6413deda1cf88dfb47ec9a091d24e3e"><td class="memItemLeft" align="right" valign="top">static EventVoid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_events.html#af6413deda1cf88dfb47ec9a091d24e3e">onHideUI</a></td></tr>
+<tr class="memdesc:af6413deda1cf88dfb47ec9a091d24e3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the player hides the UI by pressing F2. Register for this callback (and for onShowUI) so that you can hide your UI too.  <a href="#af6413deda1cf88dfb47ec9a091d24e3e">More...</a><br /></td></tr>
 <tr class="separator:af6413deda1cf88dfb47ec9a091d24e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cc901610710584ff90e2e71ad7b30e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8cc901610710584ff90e2e71ad7b30e6"></a>
 static EventData<br class="typebreak" />
@@ -373,8 +378,8 @@ static EventData&lt; float &gt;&#160;</td><td class="memItemRight" valign="botto
 static EventData&lt; float, <br class="typebreak" />
 <a class="el" href="class_science_subject.html">ScienceSubject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OnScienceRecieved</b></td></tr>
 <tr class="separator:a6e0c814e13e00c3165b9df3ecd0a6621"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8479848abb61a8a88e793367d95d87c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8479848abb61a8a88e793367d95d87c2"></a>
-static EventVoid&#160;</td><td class="memItemRight" valign="bottom"><b>onShowUI</b></td></tr>
+<tr class="memitem:a8479848abb61a8a88e793367d95d87c2"><td class="memItemLeft" align="right" valign="top">static EventVoid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_events.html#a8479848abb61a8a88e793367d95d87c2">onShowUI</a></td></tr>
+<tr class="memdesc:a8479848abb61a8a88e793367d95d87c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the player un-hides the UI by pressing F2. Register for this callback (and onHideUI) so that you can un-hide your UI too.  <a href="#a8479848abb61a8a88e793367d95d87c2">More...</a><br /></td></tr>
 <tr class="separator:a8479848abb61a8a88e793367d95d87c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af05e7fc168b800539d840b59467a7427"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af05e7fc168b800539d840b59467a7427"></a>
 static EventData&lt; EventReport &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>onSplashDamage</b></td></tr>
@@ -437,7 +442,7 @@ static EventData<br class="typebreak" />
 &lt; <a class="el" href="class_vessel.html">Vessel</a>, string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>onVesselRename</b></td></tr>
 <tr class="separator:ac33be814da1e56b014f0659c3d987d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6ab188f688d71ac7954309911cff8d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6ab188f688d71ac7954309911cff8d2"></a>
-static EventData&lt; ShipConstruct &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OnVesselRollout</b></td></tr>
+static EventData&lt; <a class="el" href="class_ship_construct.html">ShipConstruct</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OnVesselRollout</b></td></tr>
 <tr class="separator:ac6ab188f688d71ac7954309911cff8d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31f5274d8e7f74dba43d0eb4ba5c2f2e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31f5274d8e7f74dba43d0eb4ba5c2f2e"></a>
 static EventData<br class="typebreak" />
@@ -459,7 +464,75 @@ static EventData&lt; <a class="el" href="class_vessel.html">Vessel</a> &gt;&#160
 static EventData&lt; <a class="el" href="class_vessel.html">Vessel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>onVesselWillDestroy</b></td></tr>
 <tr class="separator:a5ad11dc074c06e67daa231558849f640"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="class_game_events.html" title="GameEvents lets you register callbacks for lots of in-game events. ">GameEvents</a> lets you register callbacks for lots of in-game events. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a5777e3888d925fe37bb2e7b1bb072a84"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EventVoid GameEvents.onGUIApplicationLauncherDestroyed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the player exits to the main menu and the <a class="el" href="class_application_launcher.html" title="The application launcher is the set of buttons that appear in the upper right, including for example ...">ApplicationLauncher</a> toolbar is destroyed. </p>
+
+</div>
+</div>
+<a class="anchor" id="a26297049a3f6e4e105e780a5d68680dd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EventVoid GameEvents.onGUIApplicationLauncherReady</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the <a class="el" href="class_application_launcher.html" title="The application launcher is the set of buttons that appear in the upper right, including for example ...">ApplicationLauncher</a> toolbar is ready to have buttons added to it. </p>
+
+</div>
+</div>
+<a class="anchor" id="af6413deda1cf88dfb47ec9a091d24e3e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EventVoid GameEvents.onHideUI</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the player hides the UI by pressing F2. Register for this callback (and for onShowUI) so that you can hide your UI too. </p>
+
+</div>
+</div>
 <a class="anchor" id="a35b96d4b3fac6c8132b805abc4735925"></a>
 <div class="memitem">
 <div class="memproto">
@@ -482,13 +555,35 @@ static EventData&lt; <a class="el" href="class_vessel.html">Vessel</a> &gt;&#160
 
 </div>
 </div>
+<a class="anchor" id="a8479848abb61a8a88e793367d95d87c2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EventVoid GameEvents.onShowUI</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the player un-hides the UI by pressing F2. Register for this callback (and onHideUI) so that you can un-hide your UI too. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/GameEvents.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 1 2014 21:45:09 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 6 2014 00:43:20 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

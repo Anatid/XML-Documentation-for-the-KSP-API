@@ -3,7 +3,7 @@ var searchData=
   ['mainthrottle',['mainThrottle',['../class_flight_ctrl_state.html#a87ddba08c5c32a6389fd32ab9f7bc77f',1,'FlightCtrlState']]],
   ['maneuvernodes',['maneuverNodes',['../class_patched_conic_solver.html#a2ee990a150f748835e811bf711efd454',1,'PatchedConicSolver']]],
   ['mapisenabled',['MapIsEnabled',['../class_map_view.html#af4e18e2604f6baddb6a0700d7ac1a76d',1,'MapView']]],
-  ['mass',['Mass',['../class_celestial_body.html#a021299779a00a94408cf43b9f6507548',1,'CelestialBody.Mass()'],['../class_discovery_info.html#a4dd6960eeba7ac7604931ecd57b6894a',1,'DiscoveryInfo.mass()'],['../class_part.html#a0358ead54bece4092b7f6611ba3e00b1',1,'Part.mass()']]],
+  ['mass',['mass',['../class_discovery_info.html#a4dd6960eeba7ac7604931ecd57b6894a',1,'DiscoveryInfo.mass()'],['../class_part.html#a0358ead54bece4092b7f6611ba3e00b1',1,'Part.mass()'],['../class_celestial_body.html#a021299779a00a94408cf43b9f6507548',1,'CelestialBody.Mass()']]],
   ['maxamount',['maxAmount',['../class_part_resource.html#a56a6de157ffd5759d1d0d93bebecee2b',1,'PartResource']]],
   ['maxatmospherealtitude',['maxAtmosphereAltitude',['../class_celestial_body.html#af78c3d8f6cbb0d43150de113a665ba47',1,'CelestialBody']]],
   ['maximum_5fdrag',['maximum_drag',['../class_part.html#a9b06542b58b7a6ac6f58f8a28ae2e21a',1,'Part']]],

@@ -7,6 +7,7 @@ var searchData=
   ['scientificvalue',['scientificValue',['../class_science_subject.html#a94d1de7d162c0a4781644e0ba3364895',1,'ScienceSubject']]],
   ['seed',['seed',['../class_module_asteroid.html#a8cc0da3528ec32e5c24ce7e56e1145c4',1,'ModuleAsteroid']]],
   ['semimajoraxis',['semiMajorAxis',['../class_orbit.html#abe25c458c2fbef9902d72d265919df2f',1,'Orbit']]],
+  ['ship',['ship',['../class_editor_logic.html#a0f8fd6c8d6feaca92c94a19e37a75433',1,'EditorLogic']]],
   ['signalstrengthlevel',['signalStrengthLevel',['../class_discovery_info.html#a9eec0e7473b8bcea62fe745ded41375e',1,'DiscoveryInfo']]],
   ['signalstrengthpercent',['signalStrengthPercent',['../class_discovery_info.html#ac64f2b0e2107f1915db3f7c0ed0efd65',1,'DiscoveryInfo']]],
   ['situation',['situation',['../class_discovery_info.html#a51fb6e41bf607d6506dd4c65d752d0ca',1,'DiscoveryInfo.situation()'],['../class_vessel.html#a10f73f5e6a3ed602411a7ffff14206b8',1,'Vessel.situation()']]],

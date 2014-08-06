@@ -6,7 +6,7 @@ var searchData=
   ['part',['part',['../class_part_resource.html#ad514ca3ec4d1657e89d5fe34d04f16e7',1,'PartResource']]],
   ['partinfo',['partInfo',['../class_part.html#a464fb3cfa849ced2a81b123c7b856805',1,'Part']]],
   ['partprefab',['partPrefab',['../class_available_part.html#a9eddfffd5104378fa0661f40ae7d57b7',1,'AvailablePart']]],
-  ['parts',['parts',['../class_vessel.html#ac7375355e4d264fcfbddc80b4e47ef76',1,'Vessel']]],
+  ['parts',['parts',['../class_ship_construct.html#ade08e9616fd45d9f966aacc937ed62a4',1,'ShipConstruct.parts()'],['../class_vessel.html#ac7375355e4d264fcfbddc80b4e47ef76',1,'Vessel.parts()']]],
   ['patch',['patch',['../class_maneuver_node.html#ac415714af9ecfcd13f98ac8fddbbe882',1,'ManeuverNode']]],
   ['patchedconicsolver',['patchedConicSolver',['../class_vessel.html#a2fef60d44303f13195dd92d513e5ef80',1,'Vessel']]],
   ['patchendtransition',['patchEndTransition',['../class_orbit.html#a85c869d9dd4bff3e0a9e6935bdc187ab',1,'Orbit']]],

@@ -5,5 +5,6 @@ var searchData=
   ['sciencedata',['ScienceData',['../class_science_data.html',1,'']]],
   ['scienceexperiment',['ScienceExperiment',['../class_science_experiment.html',1,'']]],
   ['sciencesubject',['ScienceSubject',['../class_science_subject.html',1,'']]],
-  ['screenmessages',['ScreenMessages',['../class_screen_messages.html',1,'']]]
+  ['screenmessages',['ScreenMessages',['../class_screen_messages.html',1,'']]],
+  ['shipconstruct',['ShipConstruct',['../class_ship_construct.html',1,'']]]
 ];

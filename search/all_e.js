@@ -10,7 +10,7 @@ var searchData=
   ['partresource',['PartResource',['../class_part_resource.html',1,'']]],
   ['partresourcedefinition',['PartResourceDefinition',['../class_part_resource_definition.html',1,'']]],
   ['partresourcelibrary',['PartResourceLibrary',['../class_part_resource_library.html',1,'']]],
-  ['parts',['parts',['../class_vessel.html#ac7375355e4d264fcfbddc80b4e47ef76',1,'Vessel.parts()'],['../class_vessel.html#a3fbd809e39b6d8f147cb19ece4478ea0',1,'Vessel.Parts()']]],
+  ['parts',['Parts',['../class_vessel.html#a3fbd809e39b6d8f147cb19ece4478ea0',1,'Vessel.Parts()'],['../class_ship_construct.html#ade08e9616fd45d9f966aacc937ed62a4',1,'ShipConstruct.parts()'],['../class_vessel.html#ac7375355e4d264fcfbddc80b4e47ef76',1,'Vessel.parts()']]],
   ['pasteroid',['PAsteroid',['../class_p_asteroid.html',1,'']]],
   ['patch',['patch',['../class_maneuver_node.html#ac415714af9ecfcd13f98ac8fddbbe882',1,'ManeuverNode']]],
   ['patchedconicsolver',['PatchedConicSolver',['../class_patched_conic_solver.html',1,'PatchedConicSolver'],['../class_vessel.html#a2fef60d44303f13195dd92d513e5ef80',1,'Vessel.patchedConicSolver()']]],
