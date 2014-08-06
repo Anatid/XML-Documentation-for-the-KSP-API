@@ -4264,6 +4264,12 @@
             Presumably, this is the position of the center of mass of the vessel?
             </summary>
         </member>
+        <member name="F:Vessel.ctrlState">
+            <summary>
+            The set of flight inputs currently being fed to the vessel. For example the current
+            throttle being applied to the vesesl is vessel.ctrlState.mainThrottle.
+            </summary>
+        </member>
         <member name="F:Vessel.currentStage">
             <summary>
             Presumably, the current stage of the vessel as seen e.g. in the staging display
@@ -4280,6 +4286,11 @@
             or -1 when sea depth is greater than 600m (terrainAltitude &lt;= -600).
             </summary>
         </member>
+        <member name="F:Vessel.horizontalSrfSpeed">
+            <summary>
+            Presumably, the horizontal component of srf_velocity, in m/s.
+            </summary>
+        </member>
         <member name="F:Vessel.isEVA">
             <summary>
             Presumably, whether this vessel is an EVAing kerbal.
@@ -4292,7 +4303,7 @@
         </member>
         <member name="F:Vessel.latitude">
             <summary>
-            Presumably, the current latitude of the vessel in degrees.
+            The current latitude of the vessel over the current mainBody, in degrees.
             </summary>
         </member>
         <member name="F:Vessel.launchTime">
@@ -4304,6 +4315,21 @@
             <summary>
             Whether the vessel is currently loaded. Vessels are only loaded when they come
             within about 2.5km of the active vessel.
+            </summary>
+        </member>
+        <member name="F:Vessel.longitude">
+            <summary>
+            The current longitude of the vessel over the current mainBody, in degrees
+            </summary>
+        </member>
+        <member name="F:Vessel.missionTime">
+            <summary>
+            Mission elapsed time, in seconds, maybe?
+            </summary>
+        </member>
+        <member name="F:Vessel.obt_velocity">
+            <summary>
+            The current velocity of the vessel, in world coordinates, in the nonrotating inertial reference frame.
             </summary>
         </member>
         <member name="F:Vessel.OnFlyByWire">
@@ -4374,7 +4400,7 @@
         </member>
         <member name="F:Vessel.srf_velocity">
             <summary>
-            Presumably, the velocity of the vessel in the "surface" reference frame.
+            The velocity of the vessel in the "surface" reference frame, the reference frame that rotates with the planet.
             </summary>
         </member>
         <member name="F:Vessel.staticPressure">
@@ -4435,6 +4461,13 @@
             The number of kerbals inside the vessel. This is ONLY reliable when the vessel is loaded (vessel.loaded == true). 
             When the vessel is unloaded you can compute the crew count as 
             <code>vessel.protoVessel.protoPartSnapshots.Sum(pps => pps.protoModuleCrew.Count))</code>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Vessel.GetTransform">
+            <summary>
+            Gets the transform of the part the vessel is being controlled from (i.e., the part
+            set by the "control from here" right click option).
             </summary>
             <returns></returns>
         </member>
@@ -4527,10 +4560,17 @@
         </member>
         <member name="P:Vessel.Item(System.Int32)">
             <summary>
-            Presumably, this lets you access the vessel's parts by index.
+            Get a part by its index, in some order.
             </summary>
-            <param name="index"></param>
-            <returns></returns>
+            <param name="index">Index of the part to get.</param>
+            <returns>The "index"th part in the vessel.</returns>
+        </member>
+        <member name="P:Vessel.Item(System.UInt32)">
+            <summary>
+            Get a part by its part.flightID value
+            </summary>
+            <param name="flightID">The flightID value of some part in the vessel</param>
+            <returns>The matching part, or null if there is  no part with that flightID.</returns>
         </member>
         <member name="T:Vessel.Situations">
             <summary>
