@@ -38,6 +38,10 @@ public class Vessel /*: MonoBehaviour, ITargetable, IShipconstruct, IDiscoverabl
     /// Presumably, this is the position of the center of mass of the vessel?
     /// </summary>
     public Vector3 CoM;
+    /// <summary>
+    /// The set of flight inputs currently being fed to the vessel. For example the current
+    /// throttle being applied to the vesesl is vessel.ctrlState.mainThrottle.
+    /// </summary>
     public FlightCtrlState ctrlState;
     /// <summary>
     /// Presumably, the current stage of the vessel as seen e.g. in the staging display
@@ -55,6 +59,9 @@ public class Vessel /*: MonoBehaviour, ITargetable, IShipconstruct, IDiscoverabl
     /// or -1 when sea depth is greater than 600m (terrainAltitude &lt;= -600).
     /// </summary>
     public float heightFromTerrain;
+    /// <summary>
+    /// Presumably, the horizontal component of srf_velocity, in m/s.
+    /// </summary>
     public double horizontalSrfSpeed;
     public Guid id;
     /// <summary>
@@ -67,7 +74,7 @@ public class Vessel /*: MonoBehaviour, ITargetable, IShipconstruct, IDiscoverabl
     public bool Landed;
     public string landedAt;
     /// <summary>
-    /// Presumably, the current latitude of the vessel in degrees.
+    /// The current latitude of the vessel over the current mainBody, in degrees.
     /// </summary>
     public double latitude;
     /// <summary>
@@ -81,9 +88,18 @@ public class Vessel /*: MonoBehaviour, ITargetable, IShipconstruct, IDiscoverabl
     /// </summary>
     public bool loaded;
     public Vector3 localCoM;
+    /// <summary>
+    /// The current longitude of the vessel over the current mainBody, in degrees
+    /// </summary>
     public double longitude;
+    /// <summary>
+    /// Mission elapsed time, in seconds, maybe?
+    /// </summary>
     public double missionTime;
     public Vector3 MOI;
+    /// <summary>
+    /// The current velocity of the vessel, in world coordinates, in the nonrotating inertial reference frame.
+    /// </summary>
     public Vector3d obt_velocity;
     /// <summary>
     /// You can add your own function to this callback to register a function that can provide flight control input
@@ -149,7 +165,7 @@ public class Vessel /*: MonoBehaviour, ITargetable, IShipconstruct, IDiscoverabl
     /// </summary>
     public bool Splashed;
     /// <summary>
-    /// Presumably, the velocity of the vessel in the "surface" reference frame.
+    /// The velocity of the vessel in the "surface" reference frame, the reference frame that rotates with the planet.
     /// </summary>
     public Vector3d srf_velocity;
     public Quaternion srfRelRotation;
@@ -214,11 +230,16 @@ public class Vessel /*: MonoBehaviour, ITargetable, IShipconstruct, IDiscoverabl
     public extern Transform ReferenceTransform { get; }
 
     /// <summary>
-    /// Presumably, this lets you access the vessel's parts by index.
+    /// Get a part by its index, in some order.
     /// </summary>
-    /// <param name="index"></param>
-    /// <returns></returns>
+    /// <param name="index">Index of the part to get.</param>
+    /// <returns>The "index"th part in the vessel.</returns>
     public extern Part this[int index] { get; }
+    /// <summary>
+    /// Get a part by its part.flightID value
+    /// </summary>
+    /// <param name="flightID">The flightID value of some part in the vessel</param>
+    /// <returns>The matching part, or null if there is  no part with that flightID.</returns>
     public extern Part this[uint flightID] { get; }
 
     public extern ProtoVessel BackupVessel();
@@ -272,6 +293,11 @@ public class Vessel /*: MonoBehaviour, ITargetable, IShipconstruct, IDiscoverabl
     public extern static string GetSituationString(Vessel v);
     public extern Vector3 GetSrfVelocity();
     public extern float GetTotalMass();
+    /// <summary>
+    /// Gets the transform of the part the vessel is being controlled from (i.e., the part
+    /// set by the "control from here" right click option).
+    /// </summary>
+    /// <returns></returns>
     public extern Transform GetTransform();
     public extern Vessel GetVessel();
     public extern List<ProtoCrewMember> GetVesselCrew();
