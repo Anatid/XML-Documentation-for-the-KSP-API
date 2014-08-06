@@ -27,6 +27,7 @@ var searchData=
   ['createtext',['CreateText',['../class_k_s_p_1_1_i_o_1_1_file_info.html#a474fe26bbd2118b46e2e6a36a4bf9d33',1,'KSP::IO::FileInfo']]],
   ['createtext_3c_20t_20_3e',['CreateText&lt; T &gt;',['../class_k_s_p_1_1_i_o_1_1_file.html#a82ecc8b30d1f49b5218c9805d723b375',1,'KSP::IO::File']]],
   ['crewcapacity',['CrewCapacity',['../class_part.html#a991e045874cd9ecf3b111f63a4d1ebfe',1,'Part']]],
+  ['ctrlstate',['ctrlState',['../class_vessel.html#a19dfac406cfd1dc08ccb585d1d96191c',1,'Vessel']]],
   ['current',['Current',['../namespace_k_s_p_1_1_i_o.html#aadc015abbe4df720ab22abbb4e0840b3a222a267cc5778206b253be35ee3ddab5',1,'KSP::IO']]],
   ['currentmainbody',['CurrentMainBody',['../class_planetarium.html#a8aff321e99fe100e419887f680a7cd56',1,'Planetarium']]],
   ['currentrate',['CurrentRate',['../class_time_warp.html#a6d3a8a1edcc57f330cef65cea0c126f2',1,'TimeWarp']]],

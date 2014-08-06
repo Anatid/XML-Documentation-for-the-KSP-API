@@ -208,8 +208,8 @@ Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>GetSrfVelocity</b>
 <tr class="memitem:a5f5aa50edff7f5b58df6fe4ff4ec298c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f5aa50edff7f5b58df6fe4ff4ec298c"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>GetTotalMass</b> ()</td></tr>
 <tr class="separator:a5f5aa50edff7f5b58df6fe4ff4ec298c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb683058132dbf7b1a6f940dc57d2973"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb683058132dbf7b1a6f940dc57d2973"></a>
-Transform&#160;</td><td class="memItemRight" valign="bottom"><b>GetTransform</b> ()</td></tr>
+<tr class="memitem:abb683058132dbf7b1a6f940dc57d2973"><td class="memItemLeft" align="right" valign="top">Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#abb683058132dbf7b1a6f940dc57d2973">GetTransform</a> ()</td></tr>
+<tr class="memdesc:abb683058132dbf7b1a6f940dc57d2973"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the transform of the part the vessel is being controlled from (i.e., the part set by the "control from here" right click option).  <a href="#abb683058132dbf7b1a6f940dc57d2973">More...</a><br /></td></tr>
 <tr class="separator:abb683058132dbf7b1a6f940dc57d2973"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0cf9ed9227dc45e31ff708ad3d21c62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0cf9ed9227dc45e31ff708ad3d21c62"></a>
 <a class="el" href="class_vessel.html">Vessel</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetVessel</b> ()</td></tr>
@@ -358,8 +358,8 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a7840de9c960cc10e713ec39f6d4cb240"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a7840de9c960cc10e713ec39f6d4cb240">CoM</a></td></tr>
 <tr class="memdesc:a7840de9c960cc10e713ec39f6d4cb240"><td class="mdescLeft">&#160;</td><td class="mdescRight">Presumably, this is the position of the center of mass of the vessel?  <a href="#a7840de9c960cc10e713ec39f6d4cb240">More...</a><br /></td></tr>
 <tr class="separator:a7840de9c960cc10e713ec39f6d4cb240"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19dfac406cfd1dc08ccb585d1d96191c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19dfac406cfd1dc08ccb585d1d96191c"></a>
-<a class="el" href="class_flight_ctrl_state.html">FlightCtrlState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ctrlState</b></td></tr>
+<tr class="memitem:a19dfac406cfd1dc08ccb585d1d96191c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_flight_ctrl_state.html">FlightCtrlState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a19dfac406cfd1dc08ccb585d1d96191c">ctrlState</a></td></tr>
+<tr class="memdesc:a19dfac406cfd1dc08ccb585d1d96191c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The set of flight inputs currently being fed to the vessel. For example the current throttle being applied to the vesesl is vessel.ctrlState.mainThrottle.  <a href="#a19dfac406cfd1dc08ccb585d1d96191c">More...</a><br /></td></tr>
 <tr class="separator:a19dfac406cfd1dc08ccb585d1d96191c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad58062960e5dfe4e5d50d015bc073712"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#ad58062960e5dfe4e5d50d015bc073712">currentStage</a></td></tr>
 <tr class="memdesc:ad58062960e5dfe4e5d50d015bc073712"><td class="mdescLeft">&#160;</td><td class="mdescRight">Presumably, the current stage of the vessel as seen e.g. in the staging display  <a href="#ad58062960e5dfe4e5d50d015bc073712">More...</a><br /></td></tr>
@@ -379,8 +379,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>geeForce_immediate<
 <tr class="memitem:ae9a93a55eea818b71ff0f37adf6e3626"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#ae9a93a55eea818b71ff0f37adf6e3626">heightFromTerrain</a></td></tr>
 <tr class="memdesc:ae9a93a55eea818b71ff0f37adf6e3626"><td class="mdescLeft">&#160;</td><td class="mdescRight">The vertical distance in meters between the vessel and the nearest terrain (including buildings), or -1 when sea depth is greater than 600m (terrainAltitude &lt;= -600).  <a href="#ae9a93a55eea818b71ff0f37adf6e3626">More...</a><br /></td></tr>
 <tr class="separator:ae9a93a55eea818b71ff0f37adf6e3626"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46e554a370bcf9a9b9f5157c516cb75a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46e554a370bcf9a9b9f5157c516cb75a"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>horizontalSrfSpeed</b></td></tr>
+<tr class="memitem:a46e554a370bcf9a9b9f5157c516cb75a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a46e554a370bcf9a9b9f5157c516cb75a">horizontalSrfSpeed</a></td></tr>
+<tr class="memdesc:a46e554a370bcf9a9b9f5157c516cb75a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Presumably, the horizontal component of srf_velocity, in m/s.  <a href="#a46e554a370bcf9a9b9f5157c516cb75a">More...</a><br /></td></tr>
 <tr class="separator:a46e554a370bcf9a9b9f5157c516cb75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61de1d4ed16ec99c786eff645f692d79"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61de1d4ed16ec99c786eff645f692d79"></a>
 Guid&#160;</td><td class="memItemRight" valign="bottom"><b>id</b></td></tr>
@@ -395,7 +395,7 @@ Guid&#160;</td><td class="memItemRight" valign="bottom"><b>id</b></td></tr>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>landedAt</b></td></tr>
 <tr class="separator:ad021d4a05ee833c448e8f181207e7f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa036adb7118e171cbcc749f64915c80c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#aa036adb7118e171cbcc749f64915c80c">latitude</a></td></tr>
-<tr class="memdesc:aa036adb7118e171cbcc749f64915c80c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Presumably, the current latitude of the vessel in degrees.  <a href="#aa036adb7118e171cbcc749f64915c80c">More...</a><br /></td></tr>
+<tr class="memdesc:aa036adb7118e171cbcc749f64915c80c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current latitude of the vessel over the current mainBody, in degrees.  <a href="#aa036adb7118e171cbcc749f64915c80c">More...</a><br /></td></tr>
 <tr class="separator:aa036adb7118e171cbcc749f64915c80c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b4c3c568be7fa474a603fa894b35229"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a7b4c3c568be7fa474a603fa894b35229">launchTime</a></td></tr>
 <tr class="memdesc:a7b4c3c568be7fa474a603fa894b35229"><td class="mdescLeft">&#160;</td><td class="mdescRight">The universal time at which the vessel was launched, in seconds?  <a href="#a7b4c3c568be7fa474a603fa894b35229">More...</a><br /></td></tr>
@@ -406,17 +406,17 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>landedAt</b></td></
 <tr class="memitem:a7271d800ed0f4b07598f41d0026c15a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7271d800ed0f4b07598f41d0026c15a5"></a>
 Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>localCoM</b></td></tr>
 <tr class="separator:a7271d800ed0f4b07598f41d0026c15a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06440c13d75aca69bba9dd0ffdafb907"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06440c13d75aca69bba9dd0ffdafb907"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>longitude</b></td></tr>
+<tr class="memitem:a06440c13d75aca69bba9dd0ffdafb907"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a06440c13d75aca69bba9dd0ffdafb907">longitude</a></td></tr>
+<tr class="memdesc:a06440c13d75aca69bba9dd0ffdafb907"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current longitude of the vessel over the current mainBody, in degrees  <a href="#a06440c13d75aca69bba9dd0ffdafb907">More...</a><br /></td></tr>
 <tr class="separator:a06440c13d75aca69bba9dd0ffdafb907"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae8a04fc0ce34bba6e5f4b9d3ded6ed1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae8a04fc0ce34bba6e5f4b9d3ded6ed1"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>missionTime</b></td></tr>
+<tr class="memitem:aae8a04fc0ce34bba6e5f4b9d3ded6ed1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#aae8a04fc0ce34bba6e5f4b9d3ded6ed1">missionTime</a></td></tr>
+<tr class="memdesc:aae8a04fc0ce34bba6e5f4b9d3ded6ed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mission elapsed time, in seconds, maybe?  <a href="#aae8a04fc0ce34bba6e5f4b9d3ded6ed1">More...</a><br /></td></tr>
 <tr class="separator:aae8a04fc0ce34bba6e5f4b9d3ded6ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31c7b4a5a43958e8637b03e4625b96a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31c7b4a5a43958e8637b03e4625b96a7"></a>
 Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>MOI</b></td></tr>
 <tr class="separator:a31c7b4a5a43958e8637b03e4625b96a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdc5f3380273c133018854c591b33fb2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afdc5f3380273c133018854c591b33fb2"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>obt_velocity</b></td></tr>
+<tr class="memitem:afdc5f3380273c133018854c591b33fb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#afdc5f3380273c133018854c591b33fb2">obt_velocity</a></td></tr>
+<tr class="memdesc:afdc5f3380273c133018854c591b33fb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current velocity of the vessel, in world coordinates, in the nonrotating inertial reference frame.  <a href="#afdc5f3380273c133018854c591b33fb2">More...</a><br /></td></tr>
 <tr class="separator:afdc5f3380273c133018854c591b33fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48328b2514bf0e9817b7bd1e7ba69acd"><td class="memItemLeft" align="right" valign="top">FlightInputCallback&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a48328b2514bf0e9817b7bd1e7ba69acd">OnFlyByWire</a></td></tr>
 <tr class="memdesc:a48328b2514bf0e9817b7bd1e7ba69acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">You can add your own function to this callback to register a function that can provide flight control input to the vessel. Once you've registered this callback, it will be called once per FixedUpdate. Provide flight control input by modifying the <a class="el" href="class_flight_ctrl_state.html" title="A FlightCtrlState is a snapshot of the state of all control inputs to a vessel at a given instant in ...">FlightCtrlState</a> passed to your function. This <a class="el" href="class_flight_ctrl_state.html" title="A FlightCtrlState is a snapshot of the state of all control inputs to a vessel at a given instant in ...">FlightCtrlState</a> will already contain the player's input, which you can modify or override as desired.  <a href="#a48328b2514bf0e9817b7bd1e7ba69acd">More...</a><br /></td></tr>
@@ -470,7 +470,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>specificAcceleratio
 <tr class="memdesc:a6bd0409623d69b3346e2ffe949e9d259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the vessel is currently splashed down.  <a href="#a6bd0409623d69b3346e2ffe949e9d259">More...</a><br /></td></tr>
 <tr class="separator:a6bd0409623d69b3346e2ffe949e9d259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad67f4b767f06f8129428e2579e85a30b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#ad67f4b767f06f8129428e2579e85a30b">srf_velocity</a></td></tr>
-<tr class="memdesc:ad67f4b767f06f8129428e2579e85a30b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Presumably, the velocity of the vessel in the "surface" reference frame.  <a href="#ad67f4b767f06f8129428e2579e85a30b">More...</a><br /></td></tr>
+<tr class="memdesc:ad67f4b767f06f8129428e2579e85a30b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The velocity of the vessel in the "surface" reference frame, the reference frame that rotates with the planet.  <a href="#ad67f4b767f06f8129428e2579e85a30b">More...</a><br /></td></tr>
 <tr class="separator:ad67f4b767f06f8129428e2579e85a30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec2097ccd506c5d4494ebc5a92ac0a88"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec2097ccd506c5d4494ebc5a92ac0a88"></a>
 Quaternion&#160;</td><td class="memItemRight" valign="bottom"><b>srfRelRotation</b></td></tr>
@@ -548,10 +548,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isPersistent</b><code
 Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransform</b><code> [get]</code></td></tr>
 <tr class="separator:a21c00f2c3a17b5154ea9f46e1254f049"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a1e31157c85001bef4478c7b96b11ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_part.html">Part</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a8a1e31157c85001bef4478c7b96b11ce">this[int index]</a><code> [get]</code></td></tr>
-<tr class="memdesc:a8a1e31157c85001bef4478c7b96b11ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Presumably, this lets you access the vessel's parts by index.  <a href="#a8a1e31157c85001bef4478c7b96b11ce">More...</a><br /></td></tr>
+<tr class="memdesc:a8a1e31157c85001bef4478c7b96b11ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a part by its index, in some order.  <a href="#a8a1e31157c85001bef4478c7b96b11ce">More...</a><br /></td></tr>
 <tr class="separator:a8a1e31157c85001bef4478c7b96b11ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc19c14e1acdc0bbd34d90fe23dce2b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc19c14e1acdc0bbd34d90fe23dce2b9"></a>
-<a class="el" href="class_part.html">Part</a>&#160;</td><td class="memItemRight" valign="bottom"><b>this[uint flightID]</b><code> [get]</code></td></tr>
+<tr class="memitem:acc19c14e1acdc0bbd34d90fe23dce2b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_part.html">Part</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#acc19c14e1acdc0bbd34d90fe23dce2b9">this[uint flightID]</a><code> [get]</code></td></tr>
+<tr class="memdesc:acc19c14e1acdc0bbd34d90fe23dce2b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a part by its part.flightID value  <a href="#acc19c14e1acdc0bbd34d90fe23dce2b9">More...</a><br /></td></tr>
 <tr class="separator:acc19c14e1acdc0bbd34d90fe23dce2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -677,6 +677,24 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 
 <p>The number of kerbals inside the vessel. This is ONLY reliable when the vessel is loaded (vessel.loaded == true). When the vessel is unloaded you can compute the crew count as </p>
 <p><code>vessel.protoVessel.protoPartSnapshots.Sum(pps =&gt; pps.protoModuleCrew.Count))</code> </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abb683058132dbf7b1a6f940dc57d2973"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Transform Vessel.GetTransform </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the transform of the part the vessel is being controlled from (i.e., the part set by the "control from here" right click option). </p>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
@@ -935,6 +953,20 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 
 </div>
 </div>
+<a class="anchor" id="a19dfac406cfd1dc08ccb585d1d96191c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_flight_ctrl_state.html">FlightCtrlState</a> Vessel.ctrlState</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The set of flight inputs currently being fed to the vessel. For example the current throttle being applied to the vesesl is vessel.ctrlState.mainThrottle. </p>
+
+</div>
+</div>
 <a class="anchor" id="ad58062960e5dfe4e5d50d015bc073712"></a>
 <div class="memitem">
 <div class="memproto">
@@ -977,6 +1009,20 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 
 </div>
 </div>
+<a class="anchor" id="a46e554a370bcf9a9b9f5157c516cb75a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Vessel.horizontalSrfSpeed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Presumably, the horizontal component of srf_velocity, in m/s. </p>
+
+</div>
+</div>
 <a class="anchor" id="ad322e7a6ff07b9dab387d30ad8b5c763"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1015,7 +1061,7 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
       </table>
 </div><div class="memdoc">
 
-<p>Presumably, the current latitude of the vessel in degrees. </p>
+<p>The current latitude of the vessel over the current mainBody, in degrees. </p>
 
 </div>
 </div>
@@ -1044,6 +1090,48 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 </div><div class="memdoc">
 
 <p>Whether the vessel is currently loaded. Vessels are only loaded when they come within about 2.5km of the active vessel. </p>
+
+</div>
+</div>
+<a class="anchor" id="a06440c13d75aca69bba9dd0ffdafb907"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Vessel.longitude</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The current longitude of the vessel over the current mainBody, in degrees </p>
+
+</div>
+</div>
+<a class="anchor" id="aae8a04fc0ce34bba6e5f4b9d3ded6ed1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Vessel.missionTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mission elapsed time, in seconds, maybe? </p>
+
+</div>
+</div>
+<a class="anchor" id="afdc5f3380273c133018854c591b33fb2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Vessel.obt_velocity</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The current velocity of the vessel, in world coordinates, in the nonrotating inertial reference frame. </p>
 
 </div>
 </div>
@@ -1198,7 +1286,7 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
       </table>
 </div><div class="memdoc">
 
-<p>Presumably, the velocity of the vessel in the "surface" reference frame. </p>
+<p>The velocity of the vessel in the "surface" reference frame, the reference frame that rotates with the planet. </p>
 
 </div>
 </div>
@@ -1437,14 +1525,43 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 </table>
 </div><div class="memdoc">
 
-<p>Presumably, this lets you access the vessel's parts by index. </p>
+<p>Get a part by its index, in some order. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td></td></tr>
+    <tr><td class="paramname">index</td><td>Index of the part to get.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The "index"th part in the vessel.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acc19c14e1acdc0bbd34d90fe23dce2b9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_part.html">Part</a> Vessel.this[uint flightID]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a part by its part.flightID value </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flightID</td><td>The flightID value of some part in the vessel</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The matching part, or null if there is no part with that flightID.</dd></dl>
 
 </div>
 </div>
@@ -1454,7 +1571,7 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 6 2014 00:43:21 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 6 2014 01:47:35 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

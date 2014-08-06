@@ -10,5 +10,6 @@ var searchData=
   ['loaded',['loaded',['../class_vessel.html#a5c11a2786e6a09086ad360873db09969',1,'Vessel']]],
   ['loadedsceneiseditor',['LoadedSceneIsEditor',['../class_high_logic.html#ab3013a73baa65b48deff929e4b3a4cbd',1,'HighLogic']]],
   ['loadedsceneisflight',['LoadedSceneIsFlight',['../class_high_logic.html#ae16b6f2a490daac49d69ca4162882f09',1,'HighLogic']]],
-  ['lockstack',['lockStack',['../class_input_lock_manager.html#ae4d41c7325afef71343c77eee894cc20',1,'InputLockManager']]]
+  ['lockstack',['lockStack',['../class_input_lock_manager.html#ae4d41c7325afef71343c77eee894cc20',1,'InputLockManager']]],
+  ['longitude',['longitude',['../class_vessel.html#a06440c13d75aca69bba9dd0ffdafb907',1,'Vessel']]]
 ];

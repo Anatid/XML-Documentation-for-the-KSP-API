@@ -6,5 +6,6 @@ var searchData=
   ['heightfromterrain',['heightFromTerrain',['../class_vessel.html#ae9a93a55eea818b71ff0f37adf6e3626',1,'Vessel']]],
   ['hideuiwhenunavailable',['hideUIwhenUnavailable',['../class_module_science_experiment.html#abd553a0f0d90eb192332137e47a886d7',1,'ModuleScienceExperiment']]],
   ['highestpoint',['highestPoint',['../class_p_asteroid.html#adadce98deedb0007119e1d65a6584e0c',1,'PAsteroid']]],
-  ['hillsphere',['hillSphere',['../class_celestial_body.html#ab4de9a062a1180879d6778699e7eacd7',1,'CelestialBody']]]
+  ['hillsphere',['hillSphere',['../class_celestial_body.html#ab4de9a062a1180879d6778699e7eacd7',1,'CelestialBody']]],
+  ['horizontalsrfspeed',['horizontalSrfSpeed',['../class_vessel.html#a46e554a370bcf9a9b9f5157c516cb75a',1,'Vessel']]]
 ];

@@ -2,6 +2,7 @@ var searchData=
 [
   ['objectsize',['objectSize',['../class_discovery_info.html#aab5d6b5fe3046e4b13f227fbac9a6411',1,'DiscoveryInfo']]],
   ['obt',['ObT',['../class_orbit.html#a1b171937b91935a51a6eb29e037096dd',1,'Orbit']]],
+  ['obt_5fvelocity',['obt_velocity',['../class_vessel.html#afdc5f3380273c133018854c591b33fb2',1,'Vessel']]],
   ['obtatepoch',['ObTAtEpoch',['../class_orbit.html#af4c1c2c656a7fecd6095c3bb79883b9d',1,'Orbit']]],
   ['ocean',['ocean',['../class_celestial_body.html#a1c745c7069956da566ca5fc75057d2a2',1,'CelestialBody']]],
   ['onactive',['OnActive',['../class_module_engines.html#a57f858c5fb9f722d6f47cfd4b4fe7005',1,'ModuleEngines.OnActive()'],['../class_module_science_experiment.html#ac5fa7c9668d4794a894194e9a732a6e8',1,'ModuleScienceExperiment.OnActive()'],['../class_part_module.html#ac07319a028fb17f959e1b732dd6b4709',1,'PartModule.OnActive()']]],

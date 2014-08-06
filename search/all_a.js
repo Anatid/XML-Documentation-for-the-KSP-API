@@ -23,5 +23,6 @@ var searchData=
   ['lockmask',['LockMask',['../class_input_lock_manager.html#a5c93d851999f4be68de37df3c4fe87c5',1,'InputLockManager']]],
   ['lockstack',['lockStack',['../class_input_lock_manager.html#ae4d41c7325afef71343c77eee894cc20',1,'InputLockManager']]],
   ['logentry',['LogEntry',['../class_high_logic_1_1_log_entry.html',1,'HighLogic']]],
+  ['longitude',['longitude',['../class_vessel.html#a06440c13d75aca69bba9dd0ffdafb907',1,'Vessel']]],
   ['low',['LOW',['../class_time_warp.html#aa35d942317381d27dd5ba64316c09123a41bc94cbd8eebea13ce0491b2ac11b88',1,'TimeWarp']]]
 ];
