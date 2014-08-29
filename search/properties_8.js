@@ -1,11 +1,16 @@
 var searchData=
 [
-  ['landedorsplashed',['LandedOrSplashed',['../class_vessel.html#a1b27e6628cb0246f8d71a6c985c0028b',1,'Vessel']]],
-  ['lastevent',['LastEvent',['../class_kerbal_f_s_m.html#a3c27097ab028cd9a6fe17d0b64bef016',1,'KerbalFSM']]],
-  ['lastobservedtime',['lastObservedTime',['../class_discovery_info.html#afd889c46684f1b13c3edaab094c28445',1,'DiscoveryInfo']]],
-  ['laststate',['LastState',['../class_kerbal_f_s_m.html#a1d67291df760512711bc0381b9b96eb4',1,'KerbalFSM']]],
-  ['left',['left',['../struct_vector3d.html#a87e6c4619f64a4229b437fdcc63892f7',1,'Vector3d']]],
-  ['length',['Length',['../class_k_s_p_1_1_i_o_1_1_file_info.html#a45153c2748b237843906746445ed09ed',1,'KSP::IO::FileInfo']]],
-  ['level',['Level',['../class_discovery_info.html#ada95e52e548ab32727a2f8dae6c68776',1,'DiscoveryInfo']]],
-  ['lockmask',['LockMask',['../class_input_lock_manager.html#a5c93d851999f4be68de37df3c4fe87c5',1,'InputLockManager']]]
+  ['id',['id',['../class_part_resource_definition.html#a8693919be31c7974a99c8d34e63a8b71',1,'PartResourceDefinition']]],
+  ['instance',['Instance',['../class_application_launcher.html#a83955a3f17edc075685746065af2edf0',1,'ApplicationLauncher.Instance()'],['../class_part_resource_library.html#ae1ecbac688e794984feaee139ae040f9',1,'PartResourceLibrary.Instance()']]],
+  ['inverserotangle',['InverseRotAngle',['../class_planetarium.html#a615d5728452a9101f4392813203bf338',1,'Planetarium']]],
+  ['inversescalefactor',['InverseScaleFactor',['../class_scaled_space.html#a546aa7536255ae0cc44732ee47c2013f',1,'ScaledSpace']]],
+  ['isactivevessel',['isActiveVessel',['../class_vessel.html#a7c4ae9abd9ef1b30f05e7c231c70d199',1,'Vessel']]],
+  ['isattached',['isAttached',['../class_part.html#a04df449ec946c1cf072ccc90d9e63f02',1,'Part']]],
+  ['iscommandable',['isCommandable',['../class_vessel.html#a9b2c50ec8f0d8e775ab0760ad7ba97bd',1,'Vessel']]],
+  ['isconnected',['isConnected',['../class_part.html#a46f44f3cd7baf21b64aa318cfd50ce76',1,'Part']]],
+  ['iscontrollable',['IsControllable',['../class_vessel.html#aa4895d27f0e3c8342add6b795e3c7ca0',1,'Vessel.IsControllable()'],['../class_part.html#a22036be9eabfa68bd2570df657f44ab7',1,'Part.isControllable()']]],
+  ['isneutral',['isNeutral',['../class_flight_ctrl_state.html#a344560a32a7d8e1c877a77463598ca8d',1,'FlightCtrlState']]],
+  ['ispersistent',['isPersistent',['../class_vessel.html#ab582dbd974352e4e8aee6c9767a5312b',1,'Vessel']]],
+  ['ispositionedattop',['IsPositionedAtTop',['../class_application_launcher.html#a40545fb16ca52f6b57cb363359e1f73e',1,'ApplicationLauncher']]],
+  ['isreadonly',['IsReadOnly',['../class_k_s_p_1_1_i_o_1_1_file_info.html#a937e1bf2271d3d123e88f7c2dcee68db',1,'KSP::IO::FileInfo']]]
 ];

@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -100,71 +101,60 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:acea90b73d9b4523383503ec82f2f63bb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#acea90b73d9b4523383503ec82f2f63bb">Situations</a> { <br />
-&#160;&#160;<b>LANDED</b> = 0, 
-<b>SPLASHED</b> = 1, 
+&#160;&#160;<a class="el" href="class_vessel.html#acea90b73d9b4523383503ec82f2f63bba3d8c894b27670cfcfa85c05331bf6111">Situations.LANDED</a> = 0, 
+<a class="el" href="class_vessel.html#acea90b73d9b4523383503ec82f2f63bbae378bd83e8150f56aa8ea3779b9eea19">Situations.SPLASHED</a> = 1, 
 <a class="el" href="class_vessel.html#acea90b73d9b4523383503ec82f2f63bba1d11f476afcff7157c95b131fb105d64">Situations.PRELAUNCH</a> = 2, 
-<b>FLYING</b> = 3, 
+<a class="el" href="class_vessel.html#acea90b73d9b4523383503ec82f2f63bba0d19465986ce26eceefd63e055ccdeaa">Situations.FLYING</a> = 3, 
 <br />
 &#160;&#160;<a class="el" href="class_vessel.html#acea90b73d9b4523383503ec82f2f63bbab3f3bb2ab0569997e6bc134605d2c9de">Situations.SUB_ORBITAL</a> = 4, 
-<b>ORBITING</b> = 5, 
+<a class="el" href="class_vessel.html#acea90b73d9b4523383503ec82f2f63bba9539ba32a20beb8af72d6dd9233a6fda">Situations.ORBITING</a> = 5, 
 <a class="el" href="class_vessel.html#acea90b73d9b4523383503ec82f2f63bbaf83cab07b6533e9754dd85abd65baf88">Situations.ESCAPING</a> = 6, 
-<b>DOCKED</b> = 7
+<a class="el" href="class_vessel.html#acea90b73d9b4523383503ec82f2f63bba1f264ca99954a37c67489cceee516ef0">Situations.DOCKED</a> = 7
 <br />
  }</td></tr>
 <tr class="memdesc:acea90b73d9b4523383503ec82f2f63bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of <a class="el" href="class_vessel.html#a10f73f5e6a3ed602411a7ffff14206b8" title="Some coarse information about the current state of the vessel. ">Vessel.situation</a>  <a href="class_vessel.html#acea90b73d9b4523383503ec82f2f63bb">More...</a><br /></td></tr>
 <tr class="separator:acea90b73d9b4523383503ec82f2f63bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7d63804a51d0abd2854747e87a824a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7d63804a51d0abd2854747e87a824a4"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>State</b> { <b>INACTIVE</b> = 0, 
-<b>ACTIVE</b> = 1, 
-<b>DEAD</b> = 2
+<tr class="memitem:ab7d63804a51d0abd2854747e87a824a4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#ab7d63804a51d0abd2854747e87a824a4">State</a> { <a class="el" href="class_vessel.html#ab7d63804a51d0abd2854747e87a824a4a6b273343c454f9c53dcfc9c4ccf171d2">State.INACTIVE</a> = 0, 
+<a class="el" href="class_vessel.html#ab7d63804a51d0abd2854747e87a824a4a18ff74f43da410c5529f7d6fca84f115">State.ACTIVE</a> = 1, 
+<a class="el" href="class_vessel.html#ab7d63804a51d0abd2854747e87a824a4abb4784231ff45108ee20bad16e4a2e8c">State.DEAD</a> = 2
  }</td></tr>
 <tr class="separator:ab7d63804a51d0abd2854747e87a824a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adbab00e81ea60a098cc48c6d8d8447f5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adbab00e81ea60a098cc48c6d8d8447f5"></a>
-ProtoVessel&#160;</td><td class="memItemRight" valign="bottom"><b>BackupVessel</b> ()</td></tr>
+<tr class="memitem:a6c1bd6ee048a33c68e83aff8446a817e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a6c1bd6ee048a33c68e83aff8446a817e">Vessel</a> ()</td></tr>
+<tr class="separator:a6c1bd6ee048a33c68e83aff8446a817e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbab00e81ea60a098cc48c6d8d8447f5"><td class="memItemLeft" align="right" valign="top">ProtoVessel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#adbab00e81ea60a098cc48c6d8d8447f5">BackupVessel</a> ()</td></tr>
 <tr class="separator:adbab00e81ea60a098cc48c6d8d8447f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad424c83692b3cbcd162ce7a36a623dce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#ad424c83692b3cbcd162ce7a36a623dce">ChangeWorldVelocity</a> (<a class="el" href="struct_vector3d.html">Vector3d</a> velOffset)</td></tr>
 <tr class="memdesc:ad424c83692b3cbcd162ce7a36a623dce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a given velocity offset to the vessels current velocity, instantaneously (may only work for loaded vessels?)  <a href="#ad424c83692b3cbcd162ce7a36a623dce">More...</a><br /></td></tr>
 <tr class="separator:ad424c83692b3cbcd162ce7a36a623dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bce3545175d57b920cfc60d30d57a18"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7bce3545175d57b920cfc60d30d57a18"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>checkLanded</b> ()</td></tr>
+<tr class="memitem:a7bce3545175d57b920cfc60d30d57a18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a7bce3545175d57b920cfc60d30d57a18">checkLanded</a> ()</td></tr>
 <tr class="separator:a7bce3545175d57b920cfc60d30d57a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a922e5de0e0c23bd9288e1e0eb3cbac5c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a922e5de0e0c23bd9288e1e0eb3cbac5c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>checkSplashed</b> ()</td></tr>
+<tr class="memitem:a922e5de0e0c23bd9288e1e0eb3cbac5c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a922e5de0e0c23bd9288e1e0eb3cbac5c">checkSplashed</a> ()</td></tr>
 <tr class="separator:a922e5de0e0c23bd9288e1e0eb3cbac5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a973774cbacc88d52652bbb71d1b05c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a973774cbacc88d52652bbb71d1b05c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>checkVisibility</b> ()</td></tr>
+<tr class="memitem:a1a973774cbacc88d52652bbb71d1b05c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a1a973774cbacc88d52652bbb71d1b05c">checkVisibility</a> ()</td></tr>
 <tr class="separator:a1a973774cbacc88d52652bbb71d1b05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79e4b682349c008b33b5953fb59c2cc0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79e4b682349c008b33b5953fb59c2cc0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearStaging</b> ()</td></tr>
+<tr class="memitem:a79e4b682349c008b33b5953fb59c2cc0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a79e4b682349c008b33b5953fb59c2cc0">ClearStaging</a> ()</td></tr>
 <tr class="separator:a79e4b682349c008b33b5953fb59c2cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a102484bbb1cefed6fd6e713835a112af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a102484bbb1cefed6fd6e713835a112af"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DespawnCrew</b> ()</td></tr>
+<tr class="memitem:a102484bbb1cefed6fd6e713835a112af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a102484bbb1cefed6fd6e713835a112af">DespawnCrew</a> ()</td></tr>
 <tr class="separator:a102484bbb1cefed6fd6e713835a112af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57f5de016e9c9572d1056db7a5bb8da9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57f5de016e9c9572d1056db7a5bb8da9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DestroyVesselComponents</b> ()</td></tr>
+<tr class="memitem:a57f5de016e9c9572d1056db7a5bb8da9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a57f5de016e9c9572d1056db7a5bb8da9">DestroyVesselComponents</a> ()</td></tr>
 <tr class="separator:a57f5de016e9c9572d1056db7a5bb8da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c63a0687ba958290e2e7ccc832b265c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c63a0687ba958290e2e7ccc832b265c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Die</b> ()</td></tr>
+<tr class="memitem:a8c63a0687ba958290e2e7ccc832b265c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a8c63a0687ba958290e2e7ccc832b265c">Die</a> ()</td></tr>
 <tr class="separator:a8c63a0687ba958290e2e7ccc832b265c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a075c00acf09b4aa65b1a48ea6ba293e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a075c00acf09b4aa65b1a48ea6ba293e1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>FallBackReferenceTransform</b> ()</td></tr>
+<tr class="memitem:a075c00acf09b4aa65b1a48ea6ba293e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a075c00acf09b4aa65b1a48ea6ba293e1">FallBackReferenceTransform</a> ()</td></tr>
 <tr class="separator:a075c00acf09b4aa65b1a48ea6ba293e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6da4244356f694687750a0cc3f9f998f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6da4244356f694687750a0cc3f9f998f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>FeedInputFeed</b> ()</td></tr>
+<tr class="memitem:a6da4244356f694687750a0cc3f9f998f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a6da4244356f694687750a0cc3f9f998f">FeedInputFeed</a> ()</td></tr>
 <tr class="separator:a6da4244356f694687750a0cc3f9f998f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a747d9bb9793621f4155ecd2974473357"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a747d9bb9793621f4155ecd2974473357"></a>
-VesselType&#160;</td><td class="memItemRight" valign="bottom"><b>FindDefaultVesselType</b> ()</td></tr>
+<tr class="memitem:a747d9bb9793621f4155ecd2974473357"><td class="memItemLeft" align="right" valign="top">VesselType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a747d9bb9793621f4155ecd2974473357">FindDefaultVesselType</a> ()</td></tr>
 <tr class="separator:a747d9bb9793621f4155ecd2974473357"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7973e55ee46ecf56e6d9cbe6aa850ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7973e55ee46ecf56e6d9cbe6aa850ac"></a>
-Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>findLocalCenterOfMass</b> ()</td></tr>
+<tr class="memitem:af7973e55ee46ecf56e6d9cbe6aa850ac"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#af7973e55ee46ecf56e6d9cbe6aa850ac">findLocalCenterOfMass</a> ()</td></tr>
 <tr class="separator:af7973e55ee46ecf56e6d9cbe6aa850ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab63c4d6440c37a0a4b71413591a4e599"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#ab63c4d6440c37a0a4b71413591a4e599">findLocalCenterOfPressure</a> ()</td></tr>
 <tr class="memdesc:ab63c4d6440c37a0a4b71413591a4e599"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broken Function with expensive runtime. Do not use. (If it worked it'd do as the name says but it doesn't as of 0.23.5)  <a href="#ab63c4d6440c37a0a4b71413591a4e599">More...</a><br /></td></tr>
 <tr class="separator:ab63c4d6440c37a0a4b71413591a4e599"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5835304c91b48b572749104c6b435810"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5835304c91b48b572749104c6b435810"></a>
-Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>findLocalMOI</b> ()</td></tr>
+<tr class="memitem:a5835304c91b48b572749104c6b435810"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a5835304c91b48b572749104c6b435810">findLocalMOI</a> ()</td></tr>
 <tr class="separator:a5835304c91b48b572749104c6b435810"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0b78359cf0d7a56b0abaaa54b4d32d9"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#ac0b78359cf0d7a56b0abaaa54b4d32d9">findLocalMOI</a> (Vector3 worldCoM)</td></tr>
 <tr class="memdesc:ac0b78359cf0d7a56b0abaaa54b4d32d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the vessel's moment of inertia around its center of mass. <a href="#ac0b78359cf0d7a56b0abaaa54b4d32d9">More...</a><br /></td></tr>
@@ -172,53 +162,39 @@ Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>findLocalMOI</b> (
 <tr class="memitem:a5108be6c5b099031a6e19de163474ce9"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a5108be6c5b099031a6e19de163474ce9">findWorldCenterOfMass</a> ()</td></tr>
 <tr class="memdesc:a5108be6c5b099031a6e19de163474ce9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes and returns the position of the center of mass of the vessel, in world coordinates.  <a href="#a5108be6c5b099031a6e19de163474ce9">More...</a><br /></td></tr>
 <tr class="separator:a5108be6c5b099031a6e19de163474ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc7b2c100ef58f502cc38531f982f7b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc7b2c100ef58f502cc38531f982f7b4"></a>
-List&lt; <a class="el" href="class_part.html">Part</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetActiveParts</b> ()</td></tr>
+<tr class="memitem:afc7b2c100ef58f502cc38531f982f7b4"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_part.html">Part</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#afc7b2c100ef58f502cc38531f982f7b4">GetActiveParts</a> ()</td></tr>
 <tr class="separator:afc7b2c100ef58f502cc38531f982f7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7312ed167c2df3df8f97f600e5c5e081"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7312ed167c2df3df8f97f600e5c5e081"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>GetCrewCapacity</b> ()</td></tr>
+<tr class="memitem:a7312ed167c2df3df8f97f600e5c5e081"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a7312ed167c2df3df8f97f600e5c5e081">GetCrewCapacity</a> ()</td></tr>
 <tr class="separator:a7312ed167c2df3df8f97f600e5c5e081"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10ea8bfa73ddc9f6de860a0fdb4613d8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a10ea8bfa73ddc9f6de860a0fdb4613d8">GetCrewCount</a> ()</td></tr>
 <tr class="memdesc:a10ea8bfa73ddc9f6de860a0fdb4613d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of kerbals inside the vessel. This is ONLY reliable when the vessel is loaded (vessel.loaded == true). When the vessel is unloaded you can compute the crew count as  <a href="#a10ea8bfa73ddc9f6de860a0fdb4613d8">More...</a><br /></td></tr>
 <tr class="separator:a10ea8bfa73ddc9f6de860a0fdb4613d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadf029702f4aa08932620c9d1015a5b3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aadf029702f4aa08932620c9d1015a5b3"></a>
-Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>GetFwdVector</b> ()</td></tr>
+<tr class="memitem:aadf029702f4aa08932620c9d1015a5b3"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#aadf029702f4aa08932620c9d1015a5b3">GetFwdVector</a> ()</td></tr>
 <tr class="separator:aadf029702f4aa08932620c9d1015a5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42e46a2e801f7cf10711c7ccf3b2fddb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42e46a2e801f7cf10711c7ccf3b2fddb"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>GetHeightFromSurface</b> ()</td></tr>
+<tr class="memitem:a42e46a2e801f7cf10711c7ccf3b2fddb"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a42e46a2e801f7cf10711c7ccf3b2fddb">GetHeightFromSurface</a> ()</td></tr>
 <tr class="separator:a42e46a2e801f7cf10711c7ccf3b2fddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af88d08478006630764e50904694d1539"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af88d08478006630764e50904694d1539"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>GetHeightFromTerrain</b> ()</td></tr>
+<tr class="memitem:af88d08478006630764e50904694d1539"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#af88d08478006630764e50904694d1539">GetHeightFromTerrain</a> ()</td></tr>
 <tr class="separator:af88d08478006630764e50904694d1539"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a3639f74f988c6f6385ba7213267153"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a3639f74f988c6f6385ba7213267153"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> ()</td></tr>
+<tr class="memitem:a6a3639f74f988c6f6385ba7213267153"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a6a3639f74f988c6f6385ba7213267153">GetName</a> ()</td></tr>
 <tr class="separator:a6a3639f74f988c6f6385ba7213267153"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe85d42f5cc816fb2bf07843a500f803"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe85d42f5cc816fb2bf07843a500f803"></a>
-Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>GetObtVelocity</b> ()</td></tr>
+<tr class="memitem:afe85d42f5cc816fb2bf07843a500f803"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#afe85d42f5cc816fb2bf07843a500f803">GetObtVelocity</a> ()</td></tr>
 <tr class="separator:afe85d42f5cc816fb2bf07843a500f803"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add89fa64b1fa4fe32c34a50c4e0f9cfa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add89fa64b1fa4fe32c34a50c4e0f9cfa"></a>
-<a class="el" href="class_orbit.html">Orbit</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetOrbit</b> ()</td></tr>
+<tr class="memitem:add89fa64b1fa4fe32c34a50c4e0f9cfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_orbit.html">Orbit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#add89fa64b1fa4fe32c34a50c4e0f9cfa">GetOrbit</a> ()</td></tr>
 <tr class="separator:add89fa64b1fa4fe32c34a50c4e0f9cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f23eae0e16e8e8f37a03ee9c185c377"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f23eae0e16e8e8f37a03ee9c185c377"></a>
-OrbitDriver&#160;</td><td class="memItemRight" valign="bottom"><b>GetOrbitDriver</b> ()</td></tr>
+<tr class="memitem:a3f23eae0e16e8e8f37a03ee9c185c377"><td class="memItemLeft" align="right" valign="top">OrbitDriver&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a3f23eae0e16e8e8f37a03ee9c185c377">GetOrbitDriver</a> ()</td></tr>
 <tr class="separator:a3f23eae0e16e8e8f37a03ee9c185c377"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c859a266705baadd09eff18dc8f3f2b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c859a266705baadd09eff18dc8f3f2b"></a>
-Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>GetSrfVelocity</b> ()</td></tr>
+<tr class="memitem:a7c859a266705baadd09eff18dc8f3f2b"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a7c859a266705baadd09eff18dc8f3f2b">GetSrfVelocity</a> ()</td></tr>
 <tr class="separator:a7c859a266705baadd09eff18dc8f3f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f5aa50edff7f5b58df6fe4ff4ec298c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f5aa50edff7f5b58df6fe4ff4ec298c"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>GetTotalMass</b> ()</td></tr>
+<tr class="memitem:a5f5aa50edff7f5b58df6fe4ff4ec298c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a5f5aa50edff7f5b58df6fe4ff4ec298c">GetTotalMass</a> ()</td></tr>
 <tr class="separator:a5f5aa50edff7f5b58df6fe4ff4ec298c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb683058132dbf7b1a6f940dc57d2973"><td class="memItemLeft" align="right" valign="top">Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#abb683058132dbf7b1a6f940dc57d2973">GetTransform</a> ()</td></tr>
 <tr class="memdesc:abb683058132dbf7b1a6f940dc57d2973"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the transform of the part the vessel is being controlled from (i.e., the part set by the "control from here" right click option).  <a href="#abb683058132dbf7b1a6f940dc57d2973">More...</a><br /></td></tr>
 <tr class="separator:abb683058132dbf7b1a6f940dc57d2973"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0cf9ed9227dc45e31ff708ad3d21c62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0cf9ed9227dc45e31ff708ad3d21c62"></a>
-<a class="el" href="class_vessel.html">Vessel</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetVessel</b> ()</td></tr>
+<tr class="memitem:af0cf9ed9227dc45e31ff708ad3d21c62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vessel.html">Vessel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#af0cf9ed9227dc45e31ff708ad3d21c62">GetVessel</a> ()</td></tr>
 <tr class="separator:af0cf9ed9227dc45e31ff708ad3d21c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4dcf50f446238ee0cb575ec48fed859"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa4dcf50f446238ee0cb575ec48fed859"></a>
-List&lt; ProtoCrewMember &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVesselCrew</b> ()</td></tr>
+<tr class="memitem:aa4dcf50f446238ee0cb575ec48fed859"><td class="memItemLeft" align="right" valign="top">List&lt; ProtoCrewMember &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#aa4dcf50f446238ee0cb575ec48fed859">GetVesselCrew</a> ()</td></tr>
 <tr class="separator:aa4dcf50f446238ee0cb575ec48fed859"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac78298839d7f49f5689b7e837153aaa7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac78298839d7f49f5689b7e837153aaa7"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetWorldPos3D</b> ()</td></tr>
+<tr class="memitem:ac78298839d7f49f5689b7e837153aaa7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#ac78298839d7f49f5689b7e837153aaa7">GetWorldPos3D</a> ()</td></tr>
 <tr class="separator:ac78298839d7f49f5689b7e837153aaa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62c2f48e73bda7e0a4c345084ac29c41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a62c2f48e73bda7e0a4c345084ac29c41">GoOffRails</a> ()</td></tr>
 <tr class="memdesc:a62c2f48e73bda7e0a4c345084ac29c41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pulls the vessel off rails?  <a href="#a62c2f48e73bda7e0a4c345084ac29c41">More...</a><br /></td></tr>
@@ -226,86 +202,60 @@ List&lt; ProtoCrewMember &gt;&#160;</td><td class="memItemRight" valign="bottom"
 <tr class="memitem:a5b433bea63b0e877ae7ae5c691d06d36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a5b433bea63b0e877ae7ae5c691d06d36">GoOnRails</a> ()</td></tr>
 <tr class="memdesc:a5b433bea63b0e877ae7ae5c691d06d36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the vessel on rails?  <a href="#a5b433bea63b0e877ae7ae5c691d06d36">More...</a><br /></td></tr>
 <tr class="separator:a5b433bea63b0e877ae7ae5c691d06d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b81d8ae3f8bb214c1a2ad96ee6e7873"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b81d8ae3f8bb214c1a2ad96ee6e7873"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasControlSources</b> ()</td></tr>
+<tr class="memitem:a0b81d8ae3f8bb214c1a2ad96ee6e7873"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a0b81d8ae3f8bb214c1a2ad96ee6e7873">HasControlSources</a> ()</td></tr>
 <tr class="separator:a0b81d8ae3f8bb214c1a2ad96ee6e7873"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfd83fc150faeb2437b8ee8cad219bf3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfd83fc150faeb2437b8ee8cad219bf3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Initialize</b> (bool fromShipAssembly=false)</td></tr>
+<tr class="memitem:adfd83fc150faeb2437b8ee8cad219bf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#adfd83fc150faeb2437b8ee8cad219bf3">Initialize</a> (bool fromShipAssembly=false)</td></tr>
 <tr class="separator:adfd83fc150faeb2437b8ee8cad219bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d01f1684ef676c59f334d1ce8c2eecf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d01f1684ef676c59f334d1ce8c2eecf"></a>
-ClearToSaveStatus&#160;</td><td class="memItemRight" valign="bottom"><b>IsClearToSave</b> ()</td></tr>
+<tr class="memitem:a2d01f1684ef676c59f334d1ce8c2eecf"><td class="memItemLeft" align="right" valign="top">ClearToSaveStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a2d01f1684ef676c59f334d1ce8c2eecf">IsClearToSave</a> ()</td></tr>
 <tr class="separator:a2d01f1684ef676c59f334d1ce8c2eecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f5cc26078b9d4a7558fe8d11232fe3f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f5cc26078b9d4a7558fe8d11232fe3f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Load</b> ()</td></tr>
+<tr class="memitem:a8f5cc26078b9d4a7558fe8d11232fe3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a8f5cc26078b9d4a7558fe8d11232fe3f">Load</a> ()</td></tr>
 <tr class="separator:a8f5cc26078b9d4a7558fe8d11232fe3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2087f45918c36447bab36e7c2d51a542"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2087f45918c36447bab36e7c2d51a542"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>MakeActive</b> ()</td></tr>
+<tr class="memitem:a2087f45918c36447bab36e7c2d51a542"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a2087f45918c36447bab36e7c2d51a542">MakeActive</a> ()</td></tr>
 <tr class="separator:a2087f45918c36447bab36e7c2d51a542"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3aaa0c84b29a636280c27bfa4dd0101"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3aaa0c84b29a636280c27bfa4dd0101"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>MakeInactive</b> ()</td></tr>
+<tr class="memitem:ae3aaa0c84b29a636280c27bfa4dd0101"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#ae3aaa0c84b29a636280c27bfa4dd0101">MakeInactive</a> ()</td></tr>
 <tr class="separator:ae3aaa0c84b29a636280c27bfa4dd0101"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70710dd0911e91acfeb52e130b9e0c56"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70710dd0911e91acfeb52e130b9e0c56"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDestroy</b> ()</td></tr>
+<tr class="memitem:a70710dd0911e91acfeb52e130b9e0c56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a70710dd0911e91acfeb52e130b9e0c56">OnDestroy</a> ()</td></tr>
 <tr class="separator:a70710dd0911e91acfeb52e130b9e0c56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3a47a0960acc8a1f2a843a629208a06"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3a47a0960acc8a1f2a843a629208a06"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnLoadFlightState</b> (Dictionary&lt; string, KSPParseable &gt; dataPool)</td></tr>
+<tr class="memitem:ac3a47a0960acc8a1f2a843a629208a06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#ac3a47a0960acc8a1f2a843a629208a06">OnLoadFlightState</a> (Dictionary&lt; string, KSPParseable &gt; dataPool)</td></tr>
 <tr class="separator:ac3a47a0960acc8a1f2a843a629208a06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1df3aca965b5f3c7b08ae9e695034415"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1df3aca965b5f3c7b08ae9e695034415"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSaveFlightState</b> (Dictionary&lt; string, KSPParseable &gt; dataPool)</td></tr>
+<tr class="memitem:a1df3aca965b5f3c7b08ae9e695034415"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a1df3aca965b5f3c7b08ae9e695034415">OnSaveFlightState</a> (Dictionary&lt; string, KSPParseable &gt; dataPool)</td></tr>
 <tr class="separator:a1df3aca965b5f3c7b08ae9e695034415"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab96ed1e06fad55c44752d04c098cee46"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab96ed1e06fad55c44752d04c098cee46"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>printCollisions</b> ()</td></tr>
+<tr class="memitem:ab96ed1e06fad55c44752d04c098cee46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#ab96ed1e06fad55c44752d04c098cee46">printCollisions</a> ()</td></tr>
 <tr class="separator:ab96ed1e06fad55c44752d04c098cee46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6841c67d9ff15cc0136273174d7dbf4a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6841c67d9ff15cc0136273174d7dbf4a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>printGroundContacts</b> ()</td></tr>
+<tr class="memitem:a6841c67d9ff15cc0136273174d7dbf4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a6841c67d9ff15cc0136273174d7dbf4a">printGroundContacts</a> ()</td></tr>
 <tr class="separator:a6841c67d9ff15cc0136273174d7dbf4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab275450b9a31144e3bd69fff7d4930fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab275450b9a31144e3bd69fff7d4930fe"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RenameVessel</b> ()</td></tr>
+<tr class="memitem:ab275450b9a31144e3bd69fff7d4930fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#ab275450b9a31144e3bd69fff7d4930fe">RenameVessel</a> ()</td></tr>
 <tr class="separator:ab275450b9a31144e3bd69fff7d4930fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ce52248807912dd443425df00496b00"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ce52248807912dd443425df00496b00"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetCollisionIgnores</b> ()</td></tr>
+<tr class="memitem:a7ce52248807912dd443425df00496b00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a7ce52248807912dd443425df00496b00">ResetCollisionIgnores</a> ()</td></tr>
 <tr class="separator:a7ce52248807912dd443425df00496b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1edd5682c34e18e50555bc87cc967c42"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1edd5682c34e18e50555bc87cc967c42"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ResumeStaging</b> ()</td></tr>
+<tr class="memitem:a1edd5682c34e18e50555bc87cc967c42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a1edd5682c34e18e50555bc87cc967c42">ResumeStaging</a> ()</td></tr>
 <tr class="separator:a1edd5682c34e18e50555bc87cc967c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a416728853b78034b0e1fcccee6579463"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a416728853b78034b0e1fcccee6579463"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetActiveInternalPart</b> ()</td></tr>
+<tr class="memitem:a416728853b78034b0e1fcccee6579463"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a416728853b78034b0e1fcccee6579463">SetActiveInternalPart</a> ()</td></tr>
 <tr class="separator:a416728853b78034b0e1fcccee6579463"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12a3ca960995e7d27492bea91b62bce6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12a3ca960995e7d27492bea91b62bce6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetActiveInternalPart</b> (List&lt; <a class="el" href="class_part.html">Part</a> &gt; visibleParts)</td></tr>
+<tr class="memitem:a12a3ca960995e7d27492bea91b62bce6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a12a3ca960995e7d27492bea91b62bce6">SetActiveInternalPart</a> (List&lt; <a class="el" href="class_part.html">Part</a> &gt; visibleParts)</td></tr>
 <tr class="separator:a12a3ca960995e7d27492bea91b62bce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca18babae2cdd774a37a54f4e4b2c064"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca18babae2cdd774a37a54f4e4b2c064"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetActiveInternalPart</b> (<a class="el" href="class_part.html">Part</a> visiblePart)</td></tr>
+<tr class="memitem:aca18babae2cdd774a37a54f4e4b2c064"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#aca18babae2cdd774a37a54f4e4b2c064">SetActiveInternalPart</a> (<a class="el" href="class_part.html">Part</a> visiblePart)</td></tr>
 <tr class="separator:aca18babae2cdd774a37a54f4e4b2c064"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0934c9c91d2dcb295da5c6f7a6c3e7df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0934c9c91d2dcb295da5c6f7a6c3e7df"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPosition</b> (Vector3 position)</td></tr>
+<tr class="memitem:a0934c9c91d2dcb295da5c6f7a6c3e7df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a0934c9c91d2dcb295da5c6f7a6c3e7df">SetPosition</a> (Vector3 position)</td></tr>
 <tr class="separator:a0934c9c91d2dcb295da5c6f7a6c3e7df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8fe659789f0b43705a902b7bce273a0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8fe659789f0b43705a902b7bce273a0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPosition</b> (Vector3 position, bool usePristineCoords)</td></tr>
+<tr class="memitem:ac8fe659789f0b43705a902b7bce273a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#ac8fe659789f0b43705a902b7bce273a0">SetPosition</a> (Vector3 position, bool usePristineCoords)</td></tr>
 <tr class="separator:ac8fe659789f0b43705a902b7bce273a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48b116323cb6bf218f5dbe8aceafcd96"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48b116323cb6bf218f5dbe8aceafcd96"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetReferenceTransform</b> (<a class="el" href="class_part.html">Part</a> p)</td></tr>
+<tr class="memitem:a48b116323cb6bf218f5dbe8aceafcd96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a48b116323cb6bf218f5dbe8aceafcd96">SetReferenceTransform</a> (<a class="el" href="class_part.html">Part</a> p)</td></tr>
 <tr class="separator:a48b116323cb6bf218f5dbe8aceafcd96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27e9a5217a52df6af57cca4f2cda172a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27e9a5217a52df6af57cca4f2cda172a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetReferenceTransform</b> (Transform t)</td></tr>
+<tr class="memitem:a27e9a5217a52df6af57cca4f2cda172a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a27e9a5217a52df6af57cca4f2cda172a">SetReferenceTransform</a> (Transform t)</td></tr>
 <tr class="separator:a27e9a5217a52df6af57cca4f2cda172a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab78742a75f4ba84dc7b4046fc14c4674"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab78742a75f4ba84dc7b4046fc14c4674"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRotation</b> (Quaternion rotation)</td></tr>
+<tr class="memitem:ab78742a75f4ba84dc7b4046fc14c4674"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#ab78742a75f4ba84dc7b4046fc14c4674">SetRotation</a> (Quaternion rotation)</td></tr>
 <tr class="separator:ab78742a75f4ba84dc7b4046fc14c4674"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97bca2d88f72473acadc57e220e3bd5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a97bca2d88f72473acadc57e220e3bd5a">SetWorldVelocity</a> (<a class="el" href="struct_vector3d.html">Vector3d</a> vel)</td></tr>
 <tr class="memdesc:a97bca2d88f72473acadc57e220e3bd5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the velocity of the vessel to a new value, instantaneously. May only work for loaded vessels?  <a href="#a97bca2d88f72473acadc57e220e3bd5a">More...</a><br /></td></tr>
 <tr class="separator:a97bca2d88f72473acadc57e220e3bd5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab572dbf1a2d70bef358b1710122e28e7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab572dbf1a2d70bef358b1710122e28e7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SpawnCrew</b> ()</td></tr>
+<tr class="memitem:ab572dbf1a2d70bef358b1710122e28e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#ab572dbf1a2d70bef358b1710122e28e7">SpawnCrew</a> ()</td></tr>
 <tr class="separator:ab572dbf1a2d70bef358b1710122e28e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca615cab2e43c6c1d1537040b1e85617"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca615cab2e43c6c1d1537040b1e85617"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>StartFromBackup</b> (ProtoVessel pv)</td></tr>
+<tr class="memitem:aca615cab2e43c6c1d1537040b1e85617"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#aca615cab2e43c6c1d1537040b1e85617">StartFromBackup</a> (ProtoVessel pv)</td></tr>
 <tr class="separator:aca615cab2e43c6c1d1537040b1e85617"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cd6a3ab6a5efb28851e767e52e0f4cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3cd6a3ab6a5efb28851e767e52e0f4cb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Translate</b> (Vector3 offset)</td></tr>
+<tr class="memitem:a3cd6a3ab6a5efb28851e767e52e0f4cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a3cd6a3ab6a5efb28851e767e52e0f4cb">Translate</a> (Vector3 offset)</td></tr>
 <tr class="separator:a3cd6a3ab6a5efb28851e767e52e0f4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab99f780cd5109a2580eda795a43ca4d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab99f780cd5109a2580eda795a43ca4d8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Unload</b> ()</td></tr>
+<tr class="memitem:ab99f780cd5109a2580eda795a43ca4d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#ab99f780cd5109a2580eda795a43ca4d8">Unload</a> ()</td></tr>
 <tr class="separator:ab99f780cd5109a2580eda795a43ca4d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab504c470fffdc8434cfa7892ace28026"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#ab504c470fffdc8434cfa7892ace28026">RevealAltitude</a> ()</td></tr>
 <tr class="memdesc:ab504c470fffdc8434cfa7892ace28026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the vessel's altitude above the reference sphere of the <a class="el" href="class_celestial_body.html" title="The Sun, the planets, and the moons are all CelestialBodies. ">CelestialBody</a> it orbits <a href="#ab504c470fffdc8434cfa7892ace28026">More...</a><br /></td></tr>
@@ -328,14 +278,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Unload</b> ()</td></t
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:adc1126c94472ef5e79cd22af70673727"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc1126c94472ef5e79cd22af70673727"></a>
-static string&#160;</td><td class="memItemRight" valign="bottom"><b>GetMETString</b> (<a class="el" href="class_vessel.html">Vessel</a> v)</td></tr>
+<tr class="memitem:adc1126c94472ef5e79cd22af70673727"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#adc1126c94472ef5e79cd22af70673727">GetMETString</a> (<a class="el" href="class_vessel.html">Vessel</a> v)</td></tr>
 <tr class="separator:adc1126c94472ef5e79cd22af70673727"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c1472eb9911adf311185e75de58d05a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c1472eb9911adf311185e75de58d05a"></a>
-static string&#160;</td><td class="memItemRight" valign="bottom"><b>GetSituationString</b> (<a class="el" href="class_vessel.html">Vessel</a> v)</td></tr>
+<tr class="memitem:a7c1472eb9911adf311185e75de58d05a"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a7c1472eb9911adf311185e75de58d05a">GetSituationString</a> (<a class="el" href="class_vessel.html">Vessel</a> v)</td></tr>
 <tr class="separator:a7c1472eb9911adf311185e75de58d05a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91de3f7815bc1258db41f8be3b910892"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91de3f7815bc1258db41f8be3b910892"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsValidVesselName</b> (string name)</td></tr>
+<tr class="memitem:a91de3f7815bc1258db41f8be3b910892"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a91de3f7815bc1258db41f8be3b910892">IsValidVesselName</a> (string name)</td></tr>
 <tr class="separator:a91de3f7815bc1258db41f8be3b910892"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -364,14 +311,11 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ad58062960e5dfe4e5d50d015bc073712"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#ad58062960e5dfe4e5d50d015bc073712">currentStage</a></td></tr>
 <tr class="memdesc:ad58062960e5dfe4e5d50d015bc073712"><td class="mdescLeft">&#160;</td><td class="mdescRight">Presumably, the current stage of the vessel as seen e.g. in the staging display  <a href="#ad58062960e5dfe4e5d50d015bc073712">More...</a><br /></td></tr>
 <tr class="separator:ad58062960e5dfe4e5d50d015bc073712"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a462bc8a9cc87e1ccb303b53da6d7d159"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a462bc8a9cc87e1ccb303b53da6d7d159"></a>
-FlightIntegrator&#160;</td><td class="memItemRight" valign="bottom"><b>flightIntegrator</b></td></tr>
+<tr class="memitem:a462bc8a9cc87e1ccb303b53da6d7d159"><td class="memItemLeft" align="right" valign="top">FlightIntegrator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a462bc8a9cc87e1ccb303b53da6d7d159">flightIntegrator</a></td></tr>
 <tr class="separator:a462bc8a9cc87e1ccb303b53da6d7d159"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae43f0eb135b81a29255b440c5e10a98c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae43f0eb135b81a29255b440c5e10a98c"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>geeForce</b></td></tr>
+<tr class="memitem:ae43f0eb135b81a29255b440c5e10a98c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#ae43f0eb135b81a29255b440c5e10a98c">geeForce</a></td></tr>
 <tr class="separator:ae43f0eb135b81a29255b440c5e10a98c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68c23575a2b196d9379cf663c3416680"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a68c23575a2b196d9379cf663c3416680"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>geeForce_immediate</b></td></tr>
+<tr class="memitem:a68c23575a2b196d9379cf663c3416680"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a68c23575a2b196d9379cf663c3416680">geeForce_immediate</a></td></tr>
 <tr class="separator:a68c23575a2b196d9379cf663c3416680"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50bd1519d318bc806168fed84a9c81fa"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a50bd1519d318bc806168fed84a9c81fa">heightFromSurface</a></td></tr>
 <tr class="memdesc:a50bd1519d318bc806168fed84a9c81fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appears to always be -1?  <a href="#a50bd1519d318bc806168fed84a9c81fa">More...</a><br /></td></tr>
@@ -382,8 +326,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>geeForce_immediate<
 <tr class="memitem:a46e554a370bcf9a9b9f5157c516cb75a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a46e554a370bcf9a9b9f5157c516cb75a">horizontalSrfSpeed</a></td></tr>
 <tr class="memdesc:a46e554a370bcf9a9b9f5157c516cb75a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Presumably, the horizontal component of srf_velocity, in m/s.  <a href="#a46e554a370bcf9a9b9f5157c516cb75a">More...</a><br /></td></tr>
 <tr class="separator:a46e554a370bcf9a9b9f5157c516cb75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61de1d4ed16ec99c786eff645f692d79"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61de1d4ed16ec99c786eff645f692d79"></a>
-Guid&#160;</td><td class="memItemRight" valign="bottom"><b>id</b></td></tr>
+<tr class="memitem:a61de1d4ed16ec99c786eff645f692d79"><td class="memItemLeft" align="right" valign="top">Guid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a61de1d4ed16ec99c786eff645f692d79">id</a></td></tr>
 <tr class="separator:a61de1d4ed16ec99c786eff645f692d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad322e7a6ff07b9dab387d30ad8b5c763"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#ad322e7a6ff07b9dab387d30ad8b5c763">isEVA</a></td></tr>
 <tr class="memdesc:ad322e7a6ff07b9dab387d30ad8b5c763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Presumably, whether this vessel is an EVAing kerbal.  <a href="#ad322e7a6ff07b9dab387d30ad8b5c763">More...</a><br /></td></tr>
@@ -391,8 +334,7 @@ Guid&#160;</td><td class="memItemRight" valign="bottom"><b>id</b></td></tr>
 <tr class="memitem:aa507f70d19c9421fe97da4d3321d9520"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#aa507f70d19c9421fe97da4d3321d9520">Landed</a></td></tr>
 <tr class="memdesc:aa507f70d19c9421fe97da4d3321d9520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the vessel is currently sitting on the ground.  <a href="#aa507f70d19c9421fe97da4d3321d9520">More...</a><br /></td></tr>
 <tr class="separator:aa507f70d19c9421fe97da4d3321d9520"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad021d4a05ee833c448e8f181207e7f53"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad021d4a05ee833c448e8f181207e7f53"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>landedAt</b></td></tr>
+<tr class="memitem:ad021d4a05ee833c448e8f181207e7f53"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#ad021d4a05ee833c448e8f181207e7f53">landedAt</a></td></tr>
 <tr class="separator:ad021d4a05ee833c448e8f181207e7f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa036adb7118e171cbcc749f64915c80c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#aa036adb7118e171cbcc749f64915c80c">latitude</a></td></tr>
 <tr class="memdesc:aa036adb7118e171cbcc749f64915c80c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current latitude of the vessel over the current mainBody, in degrees.  <a href="#aa036adb7118e171cbcc749f64915c80c">More...</a><br /></td></tr>
@@ -403,8 +345,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>landedAt</b></td></
 <tr class="memitem:a5c11a2786e6a09086ad360873db09969"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a5c11a2786e6a09086ad360873db09969">loaded</a></td></tr>
 <tr class="memdesc:a5c11a2786e6a09086ad360873db09969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the vessel is currently loaded. Vessels are only loaded when they come within about 2.5km of the active vessel.  <a href="#a5c11a2786e6a09086ad360873db09969">More...</a><br /></td></tr>
 <tr class="separator:a5c11a2786e6a09086ad360873db09969"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7271d800ed0f4b07598f41d0026c15a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7271d800ed0f4b07598f41d0026c15a5"></a>
-Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>localCoM</b></td></tr>
+<tr class="memitem:a7271d800ed0f4b07598f41d0026c15a5"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a7271d800ed0f4b07598f41d0026c15a5">localCoM</a></td></tr>
 <tr class="separator:a7271d800ed0f4b07598f41d0026c15a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06440c13d75aca69bba9dd0ffdafb907"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a06440c13d75aca69bba9dd0ffdafb907">longitude</a></td></tr>
 <tr class="memdesc:a06440c13d75aca69bba9dd0ffdafb907"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current longitude of the vessel over the current mainBody, in degrees  <a href="#a06440c13d75aca69bba9dd0ffdafb907">More...</a><br /></td></tr>
@@ -412,8 +353,7 @@ Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>localCoM</b></td><
 <tr class="memitem:aae8a04fc0ce34bba6e5f4b9d3ded6ed1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#aae8a04fc0ce34bba6e5f4b9d3ded6ed1">missionTime</a></td></tr>
 <tr class="memdesc:aae8a04fc0ce34bba6e5f4b9d3ded6ed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mission elapsed time, in seconds, maybe?  <a href="#aae8a04fc0ce34bba6e5f4b9d3ded6ed1">More...</a><br /></td></tr>
 <tr class="separator:aae8a04fc0ce34bba6e5f4b9d3ded6ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31c7b4a5a43958e8637b03e4625b96a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31c7b4a5a43958e8637b03e4625b96a7"></a>
-Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>MOI</b></td></tr>
+<tr class="memitem:a31c7b4a5a43958e8637b03e4625b96a7"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a31c7b4a5a43958e8637b03e4625b96a7">MOI</a></td></tr>
 <tr class="separator:a31c7b4a5a43958e8637b03e4625b96a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdc5f3380273c133018854c591b33fb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#afdc5f3380273c133018854c591b33fb2">obt_velocity</a></td></tr>
 <tr class="memdesc:afdc5f3380273c133018854c591b33fb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current velocity of the vessel, in world coordinates, in the nonrotating inertial reference frame.  <a href="#afdc5f3380273c133018854c591b33fb2">More...</a><br /></td></tr>
@@ -424,11 +364,9 @@ Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>MOI</b></td></tr>
 <tr class="memitem:a5928cb382d5d10120efdc06de378a487"><td class="memItemLeft" align="right" valign="top">Callback&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a5928cb382d5d10120efdc06de378a487">OnJustAboutToBeDestroyed</a></td></tr>
 <tr class="memdesc:a5928cb382d5d10120efdc06de378a487"><td class="mdescLeft">&#160;</td><td class="mdescRight">You can add a function to this callback, and the function will be called when the vessel is "just about to be destroyed."  <a href="#a5928cb382d5d10120efdc06de378a487">More...</a><br /></td></tr>
 <tr class="separator:a5928cb382d5d10120efdc06de378a487"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8601095ab9aa0c21172f3c1836f9920f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8601095ab9aa0c21172f3c1836f9920f"></a>
-OrbitDriver&#160;</td><td class="memItemRight" valign="bottom"><b>orbitDriver</b></td></tr>
+<tr class="memitem:a8601095ab9aa0c21172f3c1836f9920f"><td class="memItemLeft" align="right" valign="top">OrbitDriver&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a8601095ab9aa0c21172f3c1836f9920f">orbitDriver</a></td></tr>
 <tr class="separator:a8601095ab9aa0c21172f3c1836f9920f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88c84c23a40f6d48fda6c09641f9de9b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88c84c23a40f6d48fda6c09641f9de9b"></a>
-OrbitTargeter&#160;</td><td class="memItemRight" valign="bottom"><b>orbitTargeter</b></td></tr>
+<tr class="memitem:a88c84c23a40f6d48fda6c09641f9de9b"><td class="memItemLeft" align="right" valign="top">OrbitTargeter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a88c84c23a40f6d48fda6c09641f9de9b">orbitTargeter</a></td></tr>
 <tr class="separator:a88c84c23a40f6d48fda6c09641f9de9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6865c569aed777265a851a7b23d87bd4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a6865c569aed777265a851a7b23d87bd4">packed</a></td></tr>
 <tr class="memdesc:a6865c569aed777265a851a7b23d87bd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the vessel is currently packed. Vessels are only packed when the come within about 300m of the active vessel.  <a href="#a6865c569aed777265a851a7b23d87bd4">More...</a><br /></td></tr>
@@ -436,14 +374,12 @@ OrbitTargeter&#160;</td><td class="memItemRight" valign="bottom"><b>orbitTargete
 <tr class="memitem:ac7375355e4d264fcfbddc80b4e47ef76"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_part.html">Part</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#ac7375355e4d264fcfbddc80b4e47ef76">parts</a></td></tr>
 <tr class="memdesc:ac7375355e4d264fcfbddc80b4e47ef76"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of the parts in the vessel. Note that when the vessel is not loaded, this list will be empty.  <a href="#ac7375355e4d264fcfbddc80b4e47ef76">More...</a><br /></td></tr>
 <tr class="separator:ac7375355e4d264fcfbddc80b4e47ef76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa49a203a9b4315c5cb4752669dacf11e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa49a203a9b4315c5cb4752669dacf11e"></a>
-PatchedConicRenderer&#160;</td><td class="memItemRight" valign="bottom"><b>patchedConicRenderer</b></td></tr>
+<tr class="memitem:aa49a203a9b4315c5cb4752669dacf11e"><td class="memItemLeft" align="right" valign="top">PatchedConicRenderer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#aa49a203a9b4315c5cb4752669dacf11e">patchedConicRenderer</a></td></tr>
 <tr class="separator:aa49a203a9b4315c5cb4752669dacf11e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fef60d44303f13195dd92d513e5ef80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_patched_conic_solver.html">PatchedConicSolver</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a2fef60d44303f13195dd92d513e5ef80">patchedConicSolver</a></td></tr>
 <tr class="memdesc:a2fef60d44303f13195dd92d513e5ef80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Among other things, the patchedConicSolver stores information about the player's current set of maneuver nodes.  <a href="#a2fef60d44303f13195dd92d513e5ef80">More...</a><br /></td></tr>
 <tr class="separator:a2fef60d44303f13195dd92d513e5ef80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fcb37244719e7e1ee3a14ed812fa18e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6fcb37244719e7e1ee3a14ed812fa18e"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>perturbation</b></td></tr>
+<tr class="memitem:a6fcb37244719e7e1ee3a14ed812fa18e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a6fcb37244719e7e1ee3a14ed812fa18e">perturbation</a></td></tr>
 <tr class="separator:a6fcb37244719e7e1ee3a14ed812fa18e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a780df6cc918f9e3236aa07de50a88905"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a780df6cc918f9e3236aa07de50a88905">pqsAltitude</a></td></tr>
 <tr class="memdesc:a780df6cc918f9e3236aa07de50a88905"><td class="mdescLeft">&#160;</td><td class="mdescRight">Presumably, the height in meters of the planet's terrain QuadSphere directly under the vessel, compared to sea level. This does not take the height of buildings into account. It is generally within +/- 1m of terrainAltitude, except when over buildings (terrainAltitude does account for buildings) or sea with a depth of greater than 600m (terrainAltitude &lt;= -600, heightFromTerrain == -1).  <a href="#a780df6cc918f9e3236aa07de50a88905">More...</a><br /></td></tr>
@@ -451,11 +387,9 @@ PatchedConicRenderer&#160;</td><td class="memItemRight" valign="bottom"><b>patch
 <tr class="memitem:afcf7872a8f86ae6773b2ebb641cd3e9e"><td class="memItemLeft" align="right" valign="top">ProtoVessel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#afcf7872a8f86ae6773b2ebb641cd3e9e">protoVessel</a></td></tr>
 <tr class="memdesc:afcf7872a8f86ae6773b2ebb641cd3e9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The protoVessel can be used to get some saved information about unloaded vessels.  <a href="#afcf7872a8f86ae6773b2ebb641cd3e9e">More...</a><br /></td></tr>
 <tr class="separator:afcf7872a8f86ae6773b2ebb641cd3e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6c2cbf09fddd29471fca6263e168993"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6c2cbf09fddd29471fca6263e168993"></a>
-Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>rb_velocity</b></td></tr>
+<tr class="memitem:ab6c2cbf09fddd29471fca6263e168993"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#ab6c2cbf09fddd29471fca6263e168993">rb_velocity</a></td></tr>
 <tr class="separator:ab6c2cbf09fddd29471fca6263e168993"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a580ddf370c8401e5ef107d6d4896829d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a580ddf370c8401e5ef107d6d4896829d"></a>
-uint&#160;</td><td class="memItemRight" valign="bottom"><b>referenceTransformId</b></td></tr>
+<tr class="memitem:a580ddf370c8401e5ef107d6d4896829d"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a580ddf370c8401e5ef107d6d4896829d">referenceTransformId</a></td></tr>
 <tr class="separator:a580ddf370c8401e5ef107d6d4896829d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27bf773ca0c02137cf78c8c2ff900bc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_part.html">Part</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a27bf773ca0c02137cf78c8c2ff900bc1">rootPart</a></td></tr>
 <tr class="memdesc:a27bf773ca0c02137cf78c8c2ff900bc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The root of the tree of parts that comprises the vessel. Usually this is the original command pod placed when constructing the vessel.  <a href="#a27bf773ca0c02137cf78c8c2ff900bc1">More...</a><br /></td></tr>
@@ -463,8 +397,7 @@ uint&#160;</td><td class="memItemRight" valign="bottom"><b>referenceTransformId<
 <tr class="memitem:a10f73f5e6a3ed602411a7ffff14206b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vessel.html#acea90b73d9b4523383503ec82f2f63bb">Vessel.Situations</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a10f73f5e6a3ed602411a7ffff14206b8">situation</a></td></tr>
 <tr class="memdesc:a10f73f5e6a3ed602411a7ffff14206b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Some coarse information about the current state of the vessel.  <a href="#a10f73f5e6a3ed602411a7ffff14206b8">More...</a><br /></td></tr>
 <tr class="separator:a10f73f5e6a3ed602411a7ffff14206b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32a2885d9d7acb1c151756126c97fb5b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32a2885d9d7acb1c151756126c97fb5b"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>specificAcceleration</b></td></tr>
+<tr class="memitem:a32a2885d9d7acb1c151756126c97fb5b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a32a2885d9d7acb1c151756126c97fb5b">specificAcceleration</a></td></tr>
 <tr class="separator:a32a2885d9d7acb1c151756126c97fb5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bd0409623d69b3346e2ffe949e9d259"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a6bd0409623d69b3346e2ffe949e9d259">Splashed</a></td></tr>
 <tr class="memdesc:a6bd0409623d69b3346e2ffe949e9d259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the vessel is currently splashed down.  <a href="#a6bd0409623d69b3346e2ffe949e9d259">More...</a><br /></td></tr>
@@ -472,11 +405,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>specificAcceleratio
 <tr class="memitem:ad67f4b767f06f8129428e2579e85a30b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#ad67f4b767f06f8129428e2579e85a30b">srf_velocity</a></td></tr>
 <tr class="memdesc:ad67f4b767f06f8129428e2579e85a30b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The velocity of the vessel in the "surface" reference frame, the reference frame that rotates with the planet.  <a href="#ad67f4b767f06f8129428e2579e85a30b">More...</a><br /></td></tr>
 <tr class="separator:ad67f4b767f06f8129428e2579e85a30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec2097ccd506c5d4494ebc5a92ac0a88"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec2097ccd506c5d4494ebc5a92ac0a88"></a>
-Quaternion&#160;</td><td class="memItemRight" valign="bottom"><b>srfRelRotation</b></td></tr>
+<tr class="memitem:aec2097ccd506c5d4494ebc5a92ac0a88"><td class="memItemLeft" align="right" valign="top">Quaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#aec2097ccd506c5d4494ebc5a92ac0a88">srfRelRotation</a></td></tr>
 <tr class="separator:aec2097ccd506c5d4494ebc5a92ac0a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a679303c42ecdb432bb58ed4576f694af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a679303c42ecdb432bb58ed4576f694af"></a>
-Vessel.State&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
+<tr class="memitem:a679303c42ecdb432bb58ed4576f694af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vessel.html#ab7d63804a51d0abd2854747e87a824a4">Vessel.State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a679303c42ecdb432bb58ed4576f694af">state</a></td></tr>
 <tr class="separator:a679303c42ecdb432bb58ed4576f694af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bb263ab191f7f6a66caf575b3c20cbe"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a5bb263ab191f7f6a66caf575b3c20cbe">staticPressure</a></td></tr>
 <tr class="memdesc:a5bb263ab191f7f6a66caf575b3c20cbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Presumably, the atmospheric pressure at the vessel's current location.  <a href="#a5bb263ab191f7f6a66caf575b3c20cbe">More...</a><br /></td></tr>
@@ -484,8 +415,7 @@ Vessel.State&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td
 <tr class="memitem:a3ba7c51bcc746d53a168050615d875a4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a3ba7c51bcc746d53a168050615d875a4">terrainAltitude</a></td></tr>
 <tr class="memdesc:a3ba7c51bcc746d53a168050615d875a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The height in meters of the nearest terrain (including buildings) directly under the vessel, compared to sea level. Ground which is underwater will have a negative terrainAltitude.  <a href="#a3ba7c51bcc746d53a168050615d875a4">More...</a><br /></td></tr>
 <tr class="separator:a3ba7c51bcc746d53a168050615d875a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a398d6e7341a32d88f914812cc239dccb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a398d6e7341a32d88f914812cc239dccb"></a>
-Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>terrainNormal</b></td></tr>
+<tr class="memitem:a398d6e7341a32d88f914812cc239dccb"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a398d6e7341a32d88f914812cc239dccb">terrainNormal</a></td></tr>
 <tr class="separator:a398d6e7341a32d88f914812cc239dccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a317d583cbe03e62a72fb1dd32dae8bc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a317d583cbe03e62a72fb1dd32dae8bc8">upAxis</a></td></tr>
 <tr class="memdesc:a317d583cbe03e62a72fb1dd32dae8bc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Presumably, a unit vector in the up (radially outward from the planet) direction.  <a href="#a317d583cbe03e62a72fb1dd32dae8bc8">More...</a><br /></td></tr>
@@ -502,35 +432,28 @@ Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>terrainNormal</b><
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a58dd5e0fc48abe0147fe1a1ac6d3ecc9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58dd5e0fc48abe0147fe1a1ac6d3ecc9"></a>
-static float&#160;</td><td class="memItemRight" valign="bottom"><b>loadDistance</b></td></tr>
+<tr class="memitem:a58dd5e0fc48abe0147fe1a1ac6d3ecc9"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a58dd5e0fc48abe0147fe1a1ac6d3ecc9">loadDistance</a></td></tr>
 <tr class="separator:a58dd5e0fc48abe0147fe1a1ac6d3ecc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e5f91c9c7ec2d83629f84065513527f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e5f91c9c7ec2d83629f84065513527f"></a>
-static float&#160;</td><td class="memItemRight" valign="bottom"><b>unloadDistance</b></td></tr>
+<tr class="memitem:a9e5f91c9c7ec2d83629f84065513527f"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a9e5f91c9c7ec2d83629f84065513527f">unloadDistance</a></td></tr>
 <tr class="separator:a9e5f91c9c7ec2d83629f84065513527f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:ad39a6f5199e5fe239838071070beb2e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad39a6f5199e5fe239838071070beb2e4"></a>
-ActionGroupList&#160;</td><td class="memItemRight" valign="bottom"><b>ActionGroups</b><code> [get]</code></td></tr>
+<tr class="memitem:ad39a6f5199e5fe239838071070beb2e4"><td class="memItemLeft" align="right" valign="top">ActionGroupList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#ad39a6f5199e5fe239838071070beb2e4">ActionGroups</a><code> [get]</code></td></tr>
 <tr class="separator:ad39a6f5199e5fe239838071070beb2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45f9986cea7e2d785081184065f15867"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_discovery_info.html">DiscoveryInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a45f9986cea7e2d785081184065f15867">DiscoveryInfo</a><code> [get]</code></td></tr>
 <tr class="memdesc:a45f9986cea7e2d785081184065f15867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes to what extent this object has been explored <a href="#a45f9986cea7e2d785081184065f15867">More...</a><br /></td></tr>
 <tr class="separator:a45f9986cea7e2d785081184065f15867"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1f8f04f06bcdcc2cabeeb1f4168310e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1f8f04f06bcdcc2cabeeb1f4168310e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>HoldPhysics</b><code> [get]</code></td></tr>
+<tr class="memitem:ab1f8f04f06bcdcc2cabeeb1f4168310e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#ab1f8f04f06bcdcc2cabeeb1f4168310e">HoldPhysics</a><code> [get]</code></td></tr>
 <tr class="separator:ab1f8f04f06bcdcc2cabeeb1f4168310e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c4ae9abd9ef1b30f05e7c231c70d199"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a7c4ae9abd9ef1b30f05e7c231c70d199">isActiveVessel</a><code> [get]</code></td></tr>
 <tr class="memdesc:a7c4ae9abd9ef1b30f05e7c231c70d199"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the player is currently controlling this vessel.  <a href="#a7c4ae9abd9ef1b30f05e7c231c70d199">More...</a><br /></td></tr>
 <tr class="separator:a7c4ae9abd9ef1b30f05e7c231c70d199"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b2c50ec8f0d8e775ab0760ad7ba97bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b2c50ec8f0d8e775ab0760ad7ba97bd"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isCommandable</b><code> [get]</code></td></tr>
+<tr class="memitem:a9b2c50ec8f0d8e775ab0760ad7ba97bd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a9b2c50ec8f0d8e775ab0760ad7ba97bd">isCommandable</a><code> [get]</code></td></tr>
 <tr class="separator:a9b2c50ec8f0d8e775ab0760ad7ba97bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4895d27f0e3c8342add6b795e3c7ca0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa4895d27f0e3c8342add6b795e3c7ca0"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsControllable</b><code> [get]</code></td></tr>
+<tr class="memitem:aa4895d27f0e3c8342add6b795e3c7ca0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#aa4895d27f0e3c8342add6b795e3c7ca0">IsControllable</a><code> [get]</code></td></tr>
 <tr class="separator:aa4895d27f0e3c8342add6b795e3c7ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab582dbd974352e4e8aee6c9767a5312b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab582dbd974352e4e8aee6c9767a5312b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isPersistent</b><code> [get, set]</code></td></tr>
+<tr class="memitem:ab582dbd974352e4e8aee6c9767a5312b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#ab582dbd974352e4e8aee6c9767a5312b">isPersistent</a><code> [get, set]</code></td></tr>
 <tr class="separator:ab582dbd974352e4e8aee6c9767a5312b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b27e6628cb0246f8d71a6c985c0028b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a1b27e6628cb0246f8d71a6c985c0028b">LandedOrSplashed</a><code> [get]</code></td></tr>
 <tr class="memdesc:a1b27e6628cb0246f8d71a6c985c0028b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Landed || Splashed; use this to determined whether the vessel is on the ground somewhere, whether on land or water.  <a href="#a1b27e6628cb0246f8d71a6c985c0028b">More...</a><br /></td></tr>
@@ -544,8 +467,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isPersistent</b><code
 <tr class="memitem:a3fbd809e39b6d8f147cb19ece4478ea0"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_part.html">Part</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a3fbd809e39b6d8f147cb19ece4478ea0">Parts</a><code> [get]</code></td></tr>
 <tr class="memdesc:a3fbd809e39b6d8f147cb19ece4478ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of the parts this vessel is composed of.  <a href="#a3fbd809e39b6d8f147cb19ece4478ea0">More...</a><br /></td></tr>
 <tr class="separator:a3fbd809e39b6d8f147cb19ece4478ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21c00f2c3a17b5154ea9f46e1254f049"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21c00f2c3a17b5154ea9f46e1254f049"></a>
-Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransform</b><code> [get]</code></td></tr>
+<tr class="memitem:a21c00f2c3a17b5154ea9f46e1254f049"><td class="memItemLeft" align="right" valign="top">Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a21c00f2c3a17b5154ea9f46e1254f049">ReferenceTransform</a><code> [get]</code></td></tr>
 <tr class="separator:a21c00f2c3a17b5154ea9f46e1254f049"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a1e31157c85001bef4478c7b96b11ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_part.html">Part</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a8a1e31157c85001bef4478c7b96b11ce">this[int index]</a><code> [get]</code></td></tr>
 <tr class="memdesc:a8a1e31157c85001bef4478c7b96b11ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a part by its index, in some order.  <a href="#a8a1e31157c85001bef4478c7b96b11ce">More...</a><br /></td></tr>
@@ -569,20 +491,81 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 
 <p>The type of <a class="el" href="class_vessel.html#a10f73f5e6a3ed602411a7ffff14206b8" title="Some coarse information about the current state of the vessel. ">Vessel.situation</a> </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="acea90b73d9b4523383503ec82f2f63bba1d11f476afcff7157c95b131fb105d64"></a>PRELAUNCH&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="acea90b73d9b4523383503ec82f2f63bba3d8c894b27670cfcfa85c05331bf6111"></a>LANDED&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="acea90b73d9b4523383503ec82f2f63bbae378bd83e8150f56aa8ea3779b9eea19"></a>SPLASHED&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="acea90b73d9b4523383503ec82f2f63bba1d11f476afcff7157c95b131fb105d64"></a>PRELAUNCH&#160;</td><td class="fielddoc">
 <p>Waiting on the launchpad, ready to be launched </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="acea90b73d9b4523383503ec82f2f63bba0d19465986ce26eceefd63e055ccdeaa"></a>FLYING&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="acea90b73d9b4523383503ec82f2f63bbab3f3bb2ab0569997e6bc134605d2c9de"></a>SUB_ORBITAL&#160;</td><td class="fielddoc">
 <p>On a collision course with the ground </p>
 </td></tr>
+<tr><td class="fieldname"><a class="anchor" id="acea90b73d9b4523383503ec82f2f63bba9539ba32a20beb8af72d6dd9233a6fda"></a>ORBITING&#160;</td><td class="fielddoc">
+</td></tr>
 <tr><td class="fieldname"><a class="anchor" id="acea90b73d9b4523383503ec82f2f63bbaf83cab07b6533e9754dd85abd65baf88"></a>ESCAPING&#160;</td><td class="fielddoc">
 <p>On a hyperbolic trajectory </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="acea90b73d9b4523383503ec82f2f63bba1f264ca99954a37c67489cceee516ef0"></a>DOCKED&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
 </div>
 </div>
+<a class="anchor" id="ab7d63804a51d0abd2854747e87a824a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_vessel.html#ab7d63804a51d0abd2854747e87a824a4">Vessel.State</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ab7d63804a51d0abd2854747e87a824a4a6b273343c454f9c53dcfc9c4ccf171d2"></a>INACTIVE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab7d63804a51d0abd2854747e87a824a4a18ff74f43da410c5529f7d6fca84f115"></a>ACTIVE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab7d63804a51d0abd2854747e87a824a4abb4784231ff45108ee20bad16e4a2e8c"></a>DEAD&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a6c1bd6ee048a33c68e83aff8446a817e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vessel.Vessel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="adbab00e81ea60a098cc48c6d8d8447f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ProtoVessel Vessel.BackupVessel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ad424c83692b3cbcd162ce7a36a623dce"></a>
 <div class="memitem">
 <div class="memproto">
@@ -607,6 +590,171 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 
 </div>
 </div>
+<a class="anchor" id="a7bce3545175d57b920cfc60d30d57a18"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Vessel.checkLanded </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a922e5de0e0c23bd9288e1e0eb3cbac5c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Vessel.checkSplashed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1a973774cbacc88d52652bbb71d1b05c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Vessel.checkVisibility </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a79e4b682349c008b33b5953fb59c2cc0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.ClearStaging </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a102484bbb1cefed6fd6e713835a112af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.DespawnCrew </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a57f5de016e9c9572d1056db7a5bb8da9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.DestroyVesselComponents </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8c63a0687ba958290e2e7ccc832b265c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.Die </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a075c00acf09b4aa65b1a48ea6ba293e1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.FallBackReferenceTransform </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6da4244356f694687750a0cc3f9f998f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.FeedInputFeed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a747d9bb9793621f4155ecd2974473357"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VesselType Vessel.FindDefaultVesselType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af7973e55ee46ecf56e6d9cbe6aa850ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 Vessel.findLocalCenterOfMass </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ab63c4d6440c37a0a4b71413591a4e599"></a>
 <div class="memitem">
 <div class="memproto">
@@ -622,6 +770,21 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 
 <p>Broken Function with expensive runtime. Do not use. (If it worked it'd do as the name says but it doesn't as of 0.23.5) </p>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5835304c91b48b572749104c6b435810"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 Vessel.findLocalMOI </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -662,6 +825,36 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 
 </div>
 </div>
+<a class="anchor" id="afc7b2c100ef58f502cc38531f982f7b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_part.html">Part</a>&gt; Vessel.GetActiveParts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7312ed167c2df3df8f97f600e5c5e081"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Vessel.GetCrewCapacity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a10ea8bfa73ddc9f6de860a0fdb4613d8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -681,6 +874,189 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 
 </div>
 </div>
+<a class="anchor" id="aadf029702f4aa08932620c9d1015a5b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 Vessel.GetFwdVector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a42e46a2e801f7cf10711c7ccf3b2fddb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Vessel.GetHeightFromSurface </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af88d08478006630764e50904694d1539"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Vessel.GetHeightFromTerrain </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adc1126c94472ef5e79cd22af70673727"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string Vessel.GetMETString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vessel.html">Vessel</a>&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6a3639f74f988c6f6385ba7213267153"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Vessel.GetName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afe85d42f5cc816fb2bf07843a500f803"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 Vessel.GetObtVelocity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="add89fa64b1fa4fe32c34a50c4e0f9cfa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_orbit.html">Orbit</a> Vessel.GetOrbit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3f23eae0e16e8e8f37a03ee9c185c377"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OrbitDriver Vessel.GetOrbitDriver </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7c1472eb9911adf311185e75de58d05a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string Vessel.GetSituationString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vessel.html">Vessel</a>&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7c859a266705baadd09eff18dc8f3f2b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 Vessel.GetSrfVelocity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5f5aa50edff7f5b58df6fe4ff4ec298c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Vessel.GetTotalMass </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="abb683058132dbf7b1a6f940dc57d2973"></a>
 <div class="memitem">
 <div class="memproto">
@@ -696,6 +1072,51 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 
 <p>Gets the transform of the part the vessel is being controlled from (i.e., the part set by the "control from here" right click option). </p>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af0cf9ed9227dc45e31ff708ad3d21c62"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vessel.html">Vessel</a> Vessel.GetVessel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa4dcf50f446238ee0cb575ec48fed859"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;ProtoCrewMember&gt; Vessel.GetVesselCrew </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac78298839d7f49f5689b7e837153aaa7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Vessel.GetWorldPos3D </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -730,6 +1151,243 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 </div><div class="memdoc">
 
 <p>Puts the vessel on rails? </p>
+
+</div>
+</div>
+<a class="anchor" id="a0b81d8ae3f8bb214c1a2ad96ee6e7873"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Vessel.HasControlSources </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adfd83fc150faeb2437b8ee8cad219bf3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.Initialize </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fromShipAssembly</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2d01f1684ef676c59f334d1ce8c2eecf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ClearToSaveStatus Vessel.IsClearToSave </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a91de3f7815bc1258db41f8be3b910892"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool Vessel.IsValidVesselName </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8f5cc26078b9d4a7558fe8d11232fe3f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.Load </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2087f45918c36447bab36e7c2d51a542"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.MakeActive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae3aaa0c84b29a636280c27bfa4dd0101"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.MakeInactive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a70710dd0911e91acfeb52e130b9e0c56"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.OnDestroy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac3a47a0960acc8a1f2a843a629208a06"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.OnLoadFlightState </td>
+          <td>(</td>
+          <td class="paramtype">Dictionary&lt; string, KSPParseable &gt;&#160;</td>
+          <td class="paramname"><em>dataPool</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1df3aca965b5f3c7b08ae9e695034415"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.OnSaveFlightState </td>
+          <td>(</td>
+          <td class="paramtype">Dictionary&lt; string, KSPParseable &gt;&#160;</td>
+          <td class="paramname"><em>dataPool</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab96ed1e06fad55c44752d04c098cee46"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.printCollisions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6841c67d9ff15cc0136273174d7dbf4a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.printGroundContacts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab275450b9a31144e3bd69fff7d4930fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.RenameVessel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7ce52248807912dd443425df00496b00"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.ResetCollisionIgnores </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1edd5682c34e18e50555bc87cc967c42"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.ResumeStaging </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -844,6 +1502,143 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 
 </div>
 </div>
+<a class="anchor" id="a416728853b78034b0e1fcccee6579463"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.SetActiveInternalPart </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a12a3ca960995e7d27492bea91b62bce6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.SetActiveInternalPart </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="class_part.html">Part</a> &gt;&#160;</td>
+          <td class="paramname"><em>visibleParts</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aca18babae2cdd774a37a54f4e4b2c064"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.SetActiveInternalPart </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_part.html">Part</a>&#160;</td>
+          <td class="paramname"><em>visiblePart</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0934c9c91d2dcb295da5c6f7a6c3e7df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.SetPosition </td>
+          <td>(</td>
+          <td class="paramtype">Vector3&#160;</td>
+          <td class="paramname"><em>position</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac8fe659789f0b43705a902b7bce273a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.SetPosition </td>
+          <td>(</td>
+          <td class="paramtype">Vector3&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>usePristineCoords</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a48b116323cb6bf218f5dbe8aceafcd96"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.SetReferenceTransform </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_part.html">Part</a>&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a27e9a5217a52df6af57cca4f2cda172a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.SetReferenceTransform </td>
+          <td>(</td>
+          <td class="paramtype">Transform&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab78742a75f4ba84dc7b4046fc14c4674"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.SetRotation </td>
+          <td>(</td>
+          <td class="paramtype">Quaternion&#160;</td>
+          <td class="paramname"><em>rotation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a97bca2d88f72473acadc57e220e3bd5a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -865,6 +1660,68 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="ab572dbf1a2d70bef358b1710122e28e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.SpawnCrew </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aca615cab2e43c6c1d1537040b1e85617"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.StartFromBackup </td>
+          <td>(</td>
+          <td class="paramtype">ProtoVessel&#160;</td>
+          <td class="paramname"><em>pv</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3cd6a3ab6a5efb28851e767e52e0f4cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.Translate </td>
+          <td>(</td>
+          <td class="paramtype">Vector3&#160;</td>
+          <td class="paramname"><em>offset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab99f780cd5109a2580eda795a43ca4d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vessel.Unload </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -981,6 +1838,42 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 
 </div>
 </div>
+<a class="anchor" id="a462bc8a9cc87e1ccb303b53da6d7d159"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FlightIntegrator Vessel.flightIntegrator</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae43f0eb135b81a29255b440c5e10a98c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Vessel.geeForce</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a68c23575a2b196d9379cf663c3416680"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Vessel.geeForce_immediate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a50bd1519d318bc806168fed84a9c81fa"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1023,6 +1916,18 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 
 </div>
 </div>
+<a class="anchor" id="a61de1d4ed16ec99c786eff645f692d79"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Guid Vessel.id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ad322e7a6ff07b9dab387d30ad8b5c763"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1048,6 +1953,18 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 </div><div class="memdoc">
 
 <p>Whether the vessel is currently sitting on the ground. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad021d4a05ee833c448e8f181207e7f53"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Vessel.landedAt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1079,6 +1996,26 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 
 </div>
 </div>
+<a class="anchor" id="a58dd5e0fc48abe0147fe1a1ac6d3ecc9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Vessel.loadDistance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a5c11a2786e6a09086ad360873db09969"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1090,6 +2027,18 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 </div><div class="memdoc">
 
 <p>Whether the vessel is currently loaded. Vessels are only loaded when they come within about 2.5km of the active vessel. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7271d800ed0f4b07598f41d0026c15a5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 Vessel.localCoM</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1118,6 +2067,18 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 </div><div class="memdoc">
 
 <p>Mission elapsed time, in seconds, maybe? </p>
+
+</div>
+</div>
+<a class="anchor" id="a31c7b4a5a43958e8637b03e4625b96a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 Vessel.MOI</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1164,6 +2125,30 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 
 </div>
 </div>
+<a class="anchor" id="a8601095ab9aa0c21172f3c1836f9920f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OrbitDriver Vessel.orbitDriver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a88c84c23a40f6d48fda6c09641f9de9b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OrbitTargeter Vessel.orbitTargeter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a6865c569aed777265a851a7b23d87bd4"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1192,6 +2177,18 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 
 </div>
 </div>
+<a class="anchor" id="aa49a203a9b4315c5cb4752669dacf11e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PatchedConicRenderer Vessel.patchedConicRenderer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a2fef60d44303f13195dd92d513e5ef80"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1203,6 +2200,18 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 </div><div class="memdoc">
 
 <p>Among other things, the patchedConicSolver stores information about the player's current set of maneuver nodes. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6fcb37244719e7e1ee3a14ed812fa18e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Vessel.perturbation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1234,6 +2243,30 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 
 </div>
 </div>
+<a class="anchor" id="ab6c2cbf09fddd29471fca6263e168993"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 Vessel.rb_velocity</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a580ddf370c8401e5ef107d6d4896829d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint Vessel.referenceTransformId</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a27bf773ca0c02137cf78c8c2ff900bc1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1259,6 +2292,18 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 </div><div class="memdoc">
 
 <p>Some coarse information about the current state of the vessel. </p>
+
+</div>
+</div>
+<a class="anchor" id="a32a2885d9d7acb1c151756126c97fb5b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Vessel.specificAcceleration</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1290,6 +2335,30 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 
 </div>
 </div>
+<a class="anchor" id="aec2097ccd506c5d4494ebc5a92ac0a88"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Quaternion Vessel.srfRelRotation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a679303c42ecdb432bb58ed4576f694af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vessel.html#ab7d63804a51d0abd2854747e87a824a4">Vessel.State</a> Vessel.state</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a5bb263ab191f7f6a66caf575b3c20cbe"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1315,6 +2384,38 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 </div><div class="memdoc">
 
 <p>The height in meters of the nearest terrain (including buildings) directly under the vessel, compared to sea level. Ground which is underwater will have a negative terrainAltitude. </p>
+
+</div>
+</div>
+<a class="anchor" id="a398d6e7341a32d88f914812cc239dccb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 Vessel.terrainNormal</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9e5f91c9c7ec2d83629f84065513527f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Vessel.unloadDistance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1375,6 +2476,26 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
+<a class="anchor" id="ad39a6f5199e5fe239838071070beb2e4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ActionGroupList Vessel.ActionGroups</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a45f9986cea7e2d785081184065f15867"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1397,6 +2518,26 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 
 </div>
 </div>
+<a class="anchor" id="ab1f8f04f06bcdcc2cabeeb1f4168310e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Vessel.HoldPhysics</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a7c4ae9abd9ef1b30f05e7c231c70d199"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1416,6 +2557,66 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 </div><div class="memdoc">
 
 <p>Whether the player is currently controlling this vessel. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9b2c50ec8f0d8e775ab0760ad7ba97bd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Vessel.isCommandable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa4895d27f0e3c8342add6b795e3c7ca0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Vessel.IsControllable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab582dbd974352e4e8aee6c9767a5312b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Vessel.isPersistent</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1507,6 +2708,26 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 
 </div>
 </div>
+<a class="anchor" id="a21c00f2c3a17b5154ea9f46e1254f049"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Transform Vessel.ReferenceTransform</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a8a1e31157c85001bef4478c7b96b11ce"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1566,12 +2787,12 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTransfo
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/Vessel.cs</li>
+<li>src/<a class="el" href="_vessel_8cs.html">Vessel.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 29 2014 00:30:30 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 29 2014 00:44:39 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

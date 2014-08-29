@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -104,6 +105,8 @@ Inheritance diagram for PartResourceLibrary:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a660d1af5ae0357df741822c48e88c710"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part_resource_library.html#a660d1af5ae0357df741822c48e88c710">PartResourceLibrary</a> ()</td></tr>
+<tr class="separator:a660d1af5ae0357df741822c48e88c710"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade682c58a2c6f6719dc798312dc8918e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_part_resource_definition.html">PartResourceDefinition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part_resource_library.html#ade682c58a2c6f6719dc798312dc8918e">GetDefinition</a> (int id)</td></tr>
 <tr class="memdesc:ade682c58a2c6f6719dc798312dc8918e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets information about a resource, specified by its integer ID.  <a href="#ade682c58a2c6f6719dc798312dc8918e">More...</a><br /></td></tr>
 <tr class="separator:ade682c58a2c6f6719dc798312dc8918e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,14 +116,11 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a5e1553a09fc31df31329bac3e019d375"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e1553a09fc31df31329bac3e019d375"></a>
-PartResourceDefinitionList&#160;</td><td class="memItemRight" valign="bottom"><b>resourceDefinitions</b></td></tr>
+<tr class="memitem:a5e1553a09fc31df31329bac3e019d375"><td class="memItemLeft" align="right" valign="top">PartResourceDefinitionList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part_resource_library.html#a5e1553a09fc31df31329bac3e019d375">resourceDefinitions</a></td></tr>
 <tr class="separator:a5e1553a09fc31df31329bac3e019d375"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d722a8be4b31edbe7de3231c29ec86d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d722a8be4b31edbe7de3231c29ec86d"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>resourceExtension</b></td></tr>
+<tr class="memitem:a9d722a8be4b31edbe7de3231c29ec86d"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part_resource_library.html#a9d722a8be4b31edbe7de3231c29ec86d">resourceExtension</a></td></tr>
 <tr class="separator:a9d722a8be4b31edbe7de3231c29ec86d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a766c75823912b17585a8fb63cbe1a0b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a766c75823912b17585a8fb63cbe1a0b6"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>resourcePath</b></td></tr>
+<tr class="memitem:a766c75823912b17585a8fb63cbe1a0b6"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part_resource_library.html#a766c75823912b17585a8fb63cbe1a0b6">resourcePath</a></td></tr>
 <tr class="separator:a766c75823912b17585a8fb63cbe1a0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
@@ -131,7 +131,23 @@ Properties</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_part_resource_library.html" title="The PartResourceLibrary lets you retrieve information about a resource type, given its name or intege...">PartResourceLibrary</a> lets you retrieve information about a resource type, given its name or integer id. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a660d1af5ae0357df741822c48e88c710"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PartResourceLibrary.PartResourceLibrary </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ade682c58a2c6f6719dc798312dc8918e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -182,6 +198,43 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a5e1553a09fc31df31329bac3e019d375"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PartResourceDefinitionList PartResourceLibrary.resourceDefinitions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9d722a8be4b31edbe7de3231c29ec86d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string PartResourceLibrary.resourceExtension</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a766c75823912b17585a8fb63cbe1a0b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string PartResourceLibrary.resourcePath</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Property Documentation</h2>
 <a class="anchor" id="ae1ecbac688e794984feaee139ae040f9"></a>
 <div class="memitem">
@@ -206,12 +259,12 @@ Properties</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/PartResourceLibrary.cs</li>
+<li>src/<a class="el" href="_part_resource_library_8cs.html">PartResourceLibrary.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 29 2014 00:30:30 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 29 2014 00:44:38 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

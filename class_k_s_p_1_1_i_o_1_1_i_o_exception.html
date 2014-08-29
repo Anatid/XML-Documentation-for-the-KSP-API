@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -108,43 +109,191 @@ Inheritance diagram for KSP.IO.IOException:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a14cd3da4c5097cfe61639c4ad1441b41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14cd3da4c5097cfe61639c4ad1441b41"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>IOException</b> (string message, string source, string stack)</td></tr>
+<tr class="memitem:a14cd3da4c5097cfe61639c4ad1441b41"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_s_p_1_1_i_o_1_1_i_o_exception.html#a14cd3da4c5097cfe61639c4ad1441b41">IOException</a> (string <a class="el" href="class_k_s_p_1_1_i_o_1_1_i_o_exception.html#af8ddcdba03fa339fe7134dc530da2a30">message</a>, string <a class="el" href="class_k_s_p_1_1_i_o_1_1_i_o_exception.html#aa11f81dbf351f975c8e339e802a26734">source</a>, string <a class="el" href="class_k_s_p_1_1_i_o_1_1_i_o_exception.html#a4c9ba79fc9723f748a52fa84ea2e351a">stack</a>)</td></tr>
 <tr class="separator:a14cd3da4c5097cfe61639c4ad1441b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:af8ddcdba03fa339fe7134dc530da2a30"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8ddcdba03fa339fe7134dc530da2a30"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>message</b></td></tr>
+<tr class="memitem:af8ddcdba03fa339fe7134dc530da2a30"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_s_p_1_1_i_o_1_1_i_o_exception.html#af8ddcdba03fa339fe7134dc530da2a30">message</a></td></tr>
 <tr class="separator:af8ddcdba03fa339fe7134dc530da2a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa11f81dbf351f975c8e339e802a26734"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa11f81dbf351f975c8e339e802a26734"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>source</b></td></tr>
+<tr class="memitem:aa11f81dbf351f975c8e339e802a26734"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_s_p_1_1_i_o_1_1_i_o_exception.html#aa11f81dbf351f975c8e339e802a26734">source</a></td></tr>
 <tr class="separator:aa11f81dbf351f975c8e339e802a26734"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c9ba79fc9723f748a52fa84ea2e351a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c9ba79fc9723f748a52fa84ea2e351a"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>stack</b></td></tr>
+<tr class="memitem:a4c9ba79fc9723f748a52fa84ea2e351a"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_s_p_1_1_i_o_1_1_i_o_exception.html#a4c9ba79fc9723f748a52fa84ea2e351a">stack</a></td></tr>
 <tr class="separator:a4c9ba79fc9723f748a52fa84ea2e351a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a4671020144747f8ceea6d9e4b002abba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4671020144747f8ceea6d9e4b002abba"></a>
-override string&#160;</td><td class="memItemRight" valign="bottom"><b>Message</b><code> [get]</code></td></tr>
+<tr class="memitem:a4671020144747f8ceea6d9e4b002abba"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_s_p_1_1_i_o_1_1_i_o_exception.html#a4671020144747f8ceea6d9e4b002abba">Message</a><code> [get]</code></td></tr>
 <tr class="separator:a4671020144747f8ceea6d9e4b002abba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bcf31972b81d24c151fc44a76340122"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4bcf31972b81d24c151fc44a76340122"></a>
-override string&#160;</td><td class="memItemRight" valign="bottom"><b>Source</b><code> [get]</code></td></tr>
+<tr class="memitem:a4bcf31972b81d24c151fc44a76340122"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_s_p_1_1_i_o_1_1_i_o_exception.html#a4bcf31972b81d24c151fc44a76340122">Source</a><code> [get]</code></td></tr>
 <tr class="separator:a4bcf31972b81d24c151fc44a76340122"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3cdc897fced350b4208483046c00efb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af3cdc897fced350b4208483046c00efb"></a>
-override string&#160;</td><td class="memItemRight" valign="bottom"><b>StackTrace</b><code> [get]</code></td></tr>
+<tr class="memitem:af3cdc897fced350b4208483046c00efb"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_s_p_1_1_i_o_1_1_i_o_exception.html#af3cdc897fced350b4208483046c00efb">StackTrace</a><code> [get]</code></td></tr>
 <tr class="separator:af3cdc897fced350b4208483046c00efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A surrogate for System.IO.IOException. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/IOException.cs</li>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a14cd3da4c5097cfe61639c4ad1441b41"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KSP.IO.IOException.IOException </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>stack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="af8ddcdba03fa339fe7134dc530da2a30"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string KSP.IO.IOException.message</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa11f81dbf351f975c8e339e802a26734"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string KSP.IO.IOException.source</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4c9ba79fc9723f748a52fa84ea2e351a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string KSP.IO.IOException.stack</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a class="anchor" id="a4671020144747f8ceea6d9e4b002abba"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override string KSP.IO.IOException.Message</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4bcf31972b81d24c151fc44a76340122"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override string KSP.IO.IOException.Source</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af3cdc897fced350b4208483046c00efb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override string KSP.IO.IOException.StackTrace</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>src/<a class="el" href="_i_o_exception_8cs.html">IOException.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 29 2014 00:30:31 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 29 2014 00:44:39 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

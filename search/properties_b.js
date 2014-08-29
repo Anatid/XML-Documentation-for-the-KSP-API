@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['objectsize',['objectSize',['../class_discovery_info.html#aab5d6b5fe3046e4b13f227fbac9a6411',1,'DiscoveryInfo']]],
-  ['onaladder',['OnALadder',['../class_kerbal_e_v_a.html#a0c265aae08b8595cbb371844ee20363e',1,'KerbalEVA']]],
-  ['orbit',['orbit',['../class_celestial_body.html#aee0713b155fadfde0e67356f3c56ffec',1,'CelestialBody.orbit()'],['../class_part.html#a6c318f704311a4e03169b1e57caf6a89',1,'Part.orbit()'],['../class_vessel.html#a6e033170289d392001eb56f2ad7dcc77',1,'Vessel.orbit()']]]
+  ['name',['name',['../class_celestial_body.html#af32684cd2ccddd68effbc0d2333ba026',1,'CelestialBody.name()'],['../class_part_resource_definition.html#ab6b4d9ef6ceb22841c03dea0b5943468',1,'PartResourceDefinition.name()'],['../class_k_s_p_1_1_i_o_1_1_file_info.html#abf86b34dd523851c5f33b891f03b3f49',1,'KSP.IO.FileInfo.Name()']]],
+  ['newline',['NewLine',['../class_k_s_p_1_1_i_o_1_1_text_writer.html#af8d59ca7be4780da9cfe63febd983639',1,'KSP::IO::TextWriter']]],
+  ['nodes',['nodes',['../class_config_node.html#aa827fb9af2e2d566991e26c7b6f0052d',1,'ConfigNode']]],
+  ['normalized',['normalized',['../struct_vector3d.html#a45908a89b3874a4df667b706508a528f',1,'Vector3d']]],
+  ['normalizedthrustoutput',['normalizedThrustOutput',['../class_module_engines.html#a781a4ea518a3c8ee174e75d53a2f279e',1,'ModuleEngines']]]
 ];

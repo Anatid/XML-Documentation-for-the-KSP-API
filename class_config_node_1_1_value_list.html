@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -104,47 +105,249 @@ Inheritance diagram for ConfigNode.ValueList:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a196065912060a2532fc8ba4f762928da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a196065912060a2532fc8ba4f762928da"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Add</b> (<a class="el" href="class_config_node_1_1_value.html">ConfigNode.Value</a> v)</td></tr>
+<tr class="memitem:a1467660144fa844610cae311b0cb6535"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config_node_1_1_value_list.html#a1467660144fa844610cae311b0cb6535">ValueList</a> ()</td></tr>
+<tr class="separator:a1467660144fa844610cae311b0cb6535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a196065912060a2532fc8ba4f762928da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config_node_1_1_value_list.html#a196065912060a2532fc8ba4f762928da">Add</a> (<a class="el" href="class_config_node_1_1_value.html">ConfigNode.Value</a> v)</td></tr>
 <tr class="separator:a196065912060a2532fc8ba4f762928da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fab4b4e446f0eb48e0c68523074d564"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fab4b4e446f0eb48e0c68523074d564"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr>
+<tr class="memitem:a9fab4b4e446f0eb48e0c68523074d564"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config_node_1_1_value_list.html#a9fab4b4e446f0eb48e0c68523074d564">Clear</a> ()</td></tr>
 <tr class="separator:a9fab4b4e446f0eb48e0c68523074d564"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88adb288d3cd3f18a4b90c16ee959b82"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88adb288d3cd3f18a4b90c16ee959b82"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Contains</b> (string name)</td></tr>
+<tr class="memitem:a88adb288d3cd3f18a4b90c16ee959b82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config_node_1_1_value_list.html#a88adb288d3cd3f18a4b90c16ee959b82">Contains</a> (string <a class="el" href="class_config_node.html#ad8bcffd20833771a0710d0f85b661611">name</a>)</td></tr>
 <tr class="separator:a88adb288d3cd3f18a4b90c16ee959b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67f24a4218cc3eb629aff68ea18b1f6d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67f24a4218cc3eb629aff68ea18b1f6d"></a>
-IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><b>GetEnumerator</b> ()</td></tr>
+<tr class="memitem:a67f24a4218cc3eb629aff68ea18b1f6d"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config_node_1_1_value_list.html#a67f24a4218cc3eb629aff68ea18b1f6d">GetEnumerator</a> ()</td></tr>
 <tr class="separator:a67f24a4218cc3eb629aff68ea18b1f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad129a859587fc2a981fdaaac71c64956"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad129a859587fc2a981fdaaac71c64956"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>GetValue</b> (string name)</td></tr>
+<tr class="memitem:ad129a859587fc2a981fdaaac71c64956"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config_node_1_1_value_list.html#ad129a859587fc2a981fdaaac71c64956">GetValue</a> (string <a class="el" href="class_config_node.html#ad8bcffd20833771a0710d0f85b661611">name</a>)</td></tr>
 <tr class="separator:ad129a859587fc2a981fdaaac71c64956"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd4908814601c81c43c0ab404e3dfb84"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd4908814601c81c43c0ab404e3dfb84"></a>
-string[]&#160;</td><td class="memItemRight" valign="bottom"><b>GetValues</b> (string name)</td></tr>
+<tr class="memitem:acd4908814601c81c43c0ab404e3dfb84"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config_node_1_1_value_list.html#acd4908814601c81c43c0ab404e3dfb84">GetValues</a> (string <a class="el" href="class_config_node.html#ad8bcffd20833771a0710d0f85b661611">name</a>)</td></tr>
 <tr class="separator:acd4908814601c81c43c0ab404e3dfb84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab33dcf779d80f431fbd50d286123b6a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab33dcf779d80f431fbd50d286123b6a2"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetValue</b> (string name, string newValue)</td></tr>
+<tr class="memitem:ab33dcf779d80f431fbd50d286123b6a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config_node_1_1_value_list.html#ab33dcf779d80f431fbd50d286123b6a2">SetValue</a> (string <a class="el" href="class_config_node.html#ad8bcffd20833771a0710d0f85b661611">name</a>, string newValue)</td></tr>
 <tr class="separator:ab33dcf779d80f431fbd50d286123b6a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af207ba1a79264668711712ac5cdf71f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af207ba1a79264668711712ac5cdf71f1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetValue</b> (string name, string newValue, int index)</td></tr>
+<tr class="memitem:af207ba1a79264668711712ac5cdf71f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config_node_1_1_value_list.html#af207ba1a79264668711712ac5cdf71f1">SetValue</a> (string <a class="el" href="class_config_node.html#ad8bcffd20833771a0710d0f85b661611">name</a>, string newValue, int index)</td></tr>
 <tr class="separator:af207ba1a79264668711712ac5cdf71f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a012db51d99d666a0a8e57d3d637ec838"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a012db51d99d666a0a8e57d3d637ec838"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>Count</b><code> [get]</code></td></tr>
+<tr class="memitem:a012db51d99d666a0a8e57d3d637ec838"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config_node_1_1_value_list.html#a012db51d99d666a0a8e57d3d637ec838">Count</a><code> [get]</code></td></tr>
 <tr class="separator:a012db51d99d666a0a8e57d3d637ec838"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac896234bdf69f2fc2ea13f0c9424fec4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac896234bdf69f2fc2ea13f0c9424fec4"></a>
-<a class="el" href="class_config_node_1_1_value.html">ConfigNode.Value</a>&#160;</td><td class="memItemRight" valign="bottom"><b>this[int index]</b><code> [get]</code></td></tr>
+<tr class="memitem:ac896234bdf69f2fc2ea13f0c9424fec4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_config_node_1_1_value.html">ConfigNode.Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config_node_1_1_value_list.html#ac896234bdf69f2fc2ea13f0c9424fec4">this[int index]</a><code> [get]</code></td></tr>
 <tr class="separator:ac896234bdf69f2fc2ea13f0c9424fec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a1467660144fa844610cae311b0cb6535"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ConfigNode.ValueList.ValueList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a196065912060a2532fc8ba4f762928da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ConfigNode.ValueList.Add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_config_node_1_1_value.html">ConfigNode.Value</a>&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9fab4b4e446f0eb48e0c68523074d564"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ConfigNode.ValueList.Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a88adb288d3cd3f18a4b90c16ee959b82"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ConfigNode.ValueList.Contains </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a67f24a4218cc3eb629aff68ea18b1f6d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IEnumerator ConfigNode.ValueList.GetEnumerator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad129a859587fc2a981fdaaac71c64956"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string ConfigNode.ValueList.GetValue </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acd4908814601c81c43c0ab404e3dfb84"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string [] ConfigNode.ValueList.GetValues </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab33dcf779d80f431fbd50d286123b6a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ConfigNode.ValueList.SetValue </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>newValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af207ba1a79264668711712ac5cdf71f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ConfigNode.ValueList.SetValue </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>newValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a class="anchor" id="a012db51d99d666a0a8e57d3d637ec838"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ConfigNode.ValueList.Count</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac896234bdf69f2fc2ea13f0c9424fec4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_config_node_1_1_value.html">ConfigNode.Value</a> ConfigNode.ValueList.this[int index]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/ConfigNode.cs</li>
+<li>src/<a class="el" href="_config_node_8cs.html">ConfigNode.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 29 2014 00:30:29 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 29 2014 00:44:37 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

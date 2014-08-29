@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -96,41 +97,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5e44b19c238a124570dec1c81af4c116"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e44b19c238a124570dec1c81af4c116"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearControlLocks</b> ()</td></tr>
+<tr class="memitem:a5e44b19c238a124570dec1c81af4c116"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input_lock_manager.html#a5e44b19c238a124570dec1c81af4c116">ClearControlLocks</a> ()</td></tr>
 <tr class="separator:a5e44b19c238a124570dec1c81af4c116"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af17e31a546a2ef593ddc20b9439337dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af17e31a546a2ef593ddc20b9439337dc"></a>
-static ControlTypes&#160;</td><td class="memItemRight" valign="bottom"><b>GetControlLock</b> (string lockID)</td></tr>
+<tr class="memitem:af17e31a546a2ef593ddc20b9439337dc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217a">ControlTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input_lock_manager.html#af17e31a546a2ef593ddc20b9439337dc">GetControlLock</a> (string lockID)</td></tr>
 <tr class="separator:af17e31a546a2ef593ddc20b9439337dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64134c58b36a7cb458c0d5b8dbc184a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64134c58b36a7cb458c0d5b8dbc184a6"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsLocked</b> (ControlTypes controlType)</td></tr>
+<tr class="memitem:a64134c58b36a7cb458c0d5b8dbc184a6"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input_lock_manager.html#a64134c58b36a7cb458c0d5b8dbc184a6">IsLocked</a> (<a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217a">ControlTypes</a> controlType)</td></tr>
 <tr class="separator:a64134c58b36a7cb458c0d5b8dbc184a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b4d51c8cfbd533b96f6d0edea386c17"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b4d51c8cfbd533b96f6d0edea386c17"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsLocked</b> (ControlTypes controlType, ControlTypes refMask)</td></tr>
+<tr class="memitem:a5b4d51c8cfbd533b96f6d0edea386c17"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input_lock_manager.html#a5b4d51c8cfbd533b96f6d0edea386c17">IsLocked</a> (<a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217a">ControlTypes</a> controlType, <a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217a">ControlTypes</a> refMask)</td></tr>
 <tr class="separator:a5b4d51c8cfbd533b96f6d0edea386c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b737b5d9d379466892b7d4b19418ccc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b737b5d9d379466892b7d4b19418ccc"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsUnlocked</b> (ControlTypes controlType)</td></tr>
+<tr class="memitem:a9b737b5d9d379466892b7d4b19418ccc"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input_lock_manager.html#a9b737b5d9d379466892b7d4b19418ccc">IsUnlocked</a> (<a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217a">ControlTypes</a> controlType)</td></tr>
 <tr class="separator:a9b737b5d9d379466892b7d4b19418ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a093d1c94697ade16937b2d792718afe9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a093d1c94697ade16937b2d792718afe9"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsUnlocked</b> (ControlTypes controlType, ControlTypes refMask)</td></tr>
+<tr class="memitem:a093d1c94697ade16937b2d792718afe9"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input_lock_manager.html#a093d1c94697ade16937b2d792718afe9">IsUnlocked</a> (<a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217a">ControlTypes</a> controlType, <a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217a">ControlTypes</a> refMask)</td></tr>
 <tr class="separator:a093d1c94697ade16937b2d792718afe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79b63beac6f624ef32bd26b98e0b2795"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79b63beac6f624ef32bd26b98e0b2795"></a>
-static string&#160;</td><td class="memItemRight" valign="bottom"><b>PrintLockStack</b> ()</td></tr>
+<tr class="memitem:a79b63beac6f624ef32bd26b98e0b2795"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input_lock_manager.html#a79b63beac6f624ef32bd26b98e0b2795">PrintLockStack</a> ()</td></tr>
 <tr class="separator:a79b63beac6f624ef32bd26b98e0b2795"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5aa318d5b6c28c294363322d55287323"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input_lock_manager.html#a5aa318d5b6c28c294363322d55287323">RemoveControlLock</a> (string lockID)</td></tr>
 <tr class="memdesc:a5aa318d5b6c28c294363322d55287323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock a set of controls that were earlier locked with SetControlLock.  <a href="#a5aa318d5b6c28c294363322d55287323">More...</a><br /></td></tr>
 <tr class="separator:a5aa318d5b6c28c294363322d55287323"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a355eb4a527b409a49d3af01a897feb12"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a355eb4a527b409a49d3af01a897feb12"></a>
-static ControlTypes&#160;</td><td class="memItemRight" valign="bottom"><b>SetControlLock</b> (string lockID)</td></tr>
+<tr class="memitem:a355eb4a527b409a49d3af01a897feb12"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217a">ControlTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input_lock_manager.html#a355eb4a527b409a49d3af01a897feb12">SetControlLock</a> (string lockID)</td></tr>
 <tr class="separator:a355eb4a527b409a49d3af01a897feb12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08c85b946277316c637e656db5ac595b"><td class="memItemLeft" align="right" valign="top">static ControlTypes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input_lock_manager.html#a08c85b946277316c637e656db5ac595b">SetControlLock</a> (ControlTypes locks, string lockID)</td></tr>
+<tr class="memitem:a08c85b946277316c637e656db5ac595b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217a">ControlTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input_lock_manager.html#a08c85b946277316c637e656db5ac595b">SetControlLock</a> (<a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217a">ControlTypes</a> locks, string lockID)</td></tr>
 <tr class="memdesc:a08c85b946277316c637e656db5ac595b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Locks a set of controls.  <a href="#a08c85b946277316c637e656db5ac595b">More...</a><br /></td></tr>
 <tr class="separator:a08c85b946277316c637e656db5ac595b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a76066bb3b0f7763d90edd720865d6f08"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a76066bb3b0f7763d90edd720865d6f08"></a>
-static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>lockMask</b></td></tr>
+<tr class="memitem:a76066bb3b0f7763d90edd720865d6f08"><td class="memItemLeft" align="right" valign="top">static ulong&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input_lock_manager.html#a76066bb3b0f7763d90edd720865d6f08">lockMask</a></td></tr>
 <tr class="separator:a76066bb3b0f7763d90edd720865d6f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4d41c7325afef71343c77eee894cc20"><td class="memItemLeft" align="right" valign="top">static Dictionary&lt; string, ulong &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input_lock_manager.html#ae4d41c7325afef71343c77eee894cc20">lockStack</a></td></tr>
 <tr class="memdesc:ae4d41c7325afef71343c77eee894cc20"><td class="mdescLeft">&#160;</td><td class="mdescRight">The set of locks currently in place?  <a href="#ae4d41c7325afef71343c77eee894cc20">More...</a><br /></td></tr>
@@ -146,6 +138,136 @@ Properties</h2></td></tr>
 <div class="textblock"><p>This class lets you lock the player out of certain controls. It's probably what <a class="el" href="namespace_k_s_p.html">KSP</a> uses internally to lock controls during time warp, or when out of electric charge. </p>
 <p>You can view the current set of locks in-game with the Alt-F12 debug menu. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a5e44b19c238a124570dec1c81af4c116"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void InputLockManager.ClearControlLocks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af17e31a546a2ef593ddc20b9439337dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217a">ControlTypes</a> InputLockManager.GetControlLock </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>lockID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a64134c58b36a7cb458c0d5b8dbc184a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool InputLockManager.IsLocked </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217a">ControlTypes</a>&#160;</td>
+          <td class="paramname"><em>controlType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5b4d51c8cfbd533b96f6d0edea386c17"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool InputLockManager.IsLocked </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217a">ControlTypes</a>&#160;</td>
+          <td class="paramname"><em>controlType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217a">ControlTypes</a>&#160;</td>
+          <td class="paramname"><em>refMask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9b737b5d9d379466892b7d4b19418ccc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool InputLockManager.IsUnlocked </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217a">ControlTypes</a>&#160;</td>
+          <td class="paramname"><em>controlType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a093d1c94697ade16937b2d792718afe9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool InputLockManager.IsUnlocked </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217a">ControlTypes</a>&#160;</td>
+          <td class="paramname"><em>controlType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217a">ControlTypes</a>&#160;</td>
+          <td class="paramname"><em>refMask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a79b63beac6f624ef32bd26b98e0b2795"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string InputLockManager.PrintLockStack </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a5aa318d5b6c28c294363322d55287323"></a>
 <div class="memitem">
 <div class="memproto">
@@ -170,14 +292,30 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a355eb4a527b409a49d3af01a897feb12"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217a">ControlTypes</a> InputLockManager.SetControlLock </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>lockID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a08c85b946277316c637e656db5ac595b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">static ControlTypes InputLockManager.SetControlLock </td>
+          <td class="memname">static <a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217a">ControlTypes</a> InputLockManager.SetControlLock </td>
           <td>(</td>
-          <td class="paramtype">ControlTypes&#160;</td>
+          <td class="paramtype"><a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217a">ControlTypes</a>&#160;</td>
           <td class="paramname"><em>locks</em>, </td>
         </tr>
         <tr>
@@ -207,6 +345,26 @@ Properties</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a76066bb3b0f7763d90edd720865d6f08"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ulong InputLockManager.lockMask</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ae4d41c7325afef71343c77eee894cc20"></a>
 <div class="memitem">
 <div class="memproto">
@@ -254,12 +412,12 @@ Properties</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/InputLockManager.cs</li>
+<li>src/<a class="el" href="_input_lock_manager_8cs.html">InputLockManager.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 29 2014 00:30:30 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 29 2014 00:44:38 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

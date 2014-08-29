@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -107,38 +108,34 @@ Inheritance diagram for FlightGlobals:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ab50e47ef9d99eb711591f9ef94b9194e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab50e47ef9d99eb711591f9ef94b9194e"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>VesselTargetModes</b> { <b>None</b> = 0, 
-<b>Direction</b> = 1, 
-<b>DirectionAndVelocity</b> = 2, 
-<b>DirectionVelocityAndOrientation</b> = 3
+<tr class="memitem:ab50e47ef9d99eb711591f9ef94b9194e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#ab50e47ef9d99eb711591f9ef94b9194e">VesselTargetModes</a> { <a class="el" href="class_flight_globals.html#ab50e47ef9d99eb711591f9ef94b9194ea6adf97f83acf6453d4a6a4b1070f3754">VesselTargetModes.None</a> = 0, 
+<a class="el" href="class_flight_globals.html#ab50e47ef9d99eb711591f9ef94b9194ea02674a4ef33e11c879283629996c8ff8">VesselTargetModes.Direction</a> = 1, 
+<a class="el" href="class_flight_globals.html#ab50e47ef9d99eb711591f9ef94b9194ea933a6f90a0ffc497f4c59649199067af">VesselTargetModes.DirectionAndVelocity</a> = 2, 
+<a class="el" href="class_flight_globals.html#ab50e47ef9d99eb711591f9ef94b9194eadc0ccb9447c518efd009954a839a82c1">VesselTargetModes.DirectionVelocityAndOrientation</a> = 3
  }</td></tr>
 <tr class="separator:ab50e47ef9d99eb711591f9ef94b9194e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0cbf125470d7e66d3d5f966e29c83a87"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0cbf125470d7e66d3d5f966e29c83a87"></a>
-Quaternion&#160;</td><td class="memItemRight" valign="bottom"><b>getFoR</b> (FoRModes mode)</td></tr>
+<tr class="memitem:a9e1af6a07419a9c6f48343fc451fcd92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a9e1af6a07419a9c6f48343fc451fcd92">FlightGlobals</a> ()</td></tr>
+<tr class="separator:a9e1af6a07419a9c6f48343fc451fcd92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cbf125470d7e66d3d5f966e29c83a87"><td class="memItemLeft" align="right" valign="top">Quaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a0cbf125470d7e66d3d5f966e29c83a87">getFoR</a> (FoRModes mode)</td></tr>
 <tr class="separator:a0cbf125470d7e66d3d5f966e29c83a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f8cf6134bbdafdec32f03048f6649d3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f8cf6134bbdafdec32f03048f6649d3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetShipOrbit</b> (int selBodyIndex, double ecc, double sma, double inc, double LAN, double mna, double argPe, double ObT)</td></tr>
+<tr class="memitem:a1f8cf6134bbdafdec32f03048f6649d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a1f8cf6134bbdafdec32f03048f6649d3">SetShipOrbit</a> (int selBodyIndex, double ecc, double sma, double inc, double LAN, double mna, double argPe, double ObT)</td></tr>
 <tr class="separator:a1f8cf6134bbdafdec32f03048f6649d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1792d17424ded4bda94c98e66406badb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a1792d17424ded4bda94c98e66406badb">SetVesselTarget</a> (ITargetable tgt)</td></tr>
 <tr class="memdesc:a1792d17424ded4bda94c98e66406badb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the currently selected target vessel, celestial body, or docking node  <a href="#a1792d17424ded4bda94c98e66406badb">More...</a><br /></td></tr>
 <tr class="separator:a1792d17424ded4bda94c98e66406badb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a093c64a854d1177818466273235515bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a093c64a854d1177818466273235515bc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr>
+<tr class="memitem:a093c64a854d1177818466273235515bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a093c64a854d1177818466273235515bc">Start</a> ()</td></tr>
 <tr class="separator:a093c64a854d1177818466273235515bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a8a495979234fd0995170487d464d092f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a495979234fd0995170487d464d092f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>addPhysicalObject</b> (GameObject pObject)</td></tr>
+<tr class="memitem:a8a495979234fd0995170487d464d092f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a8a495979234fd0995170487d464d092f">addPhysicalObject</a> (GameObject pObject)</td></tr>
 <tr class="separator:a8a495979234fd0995170487d464d092f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf269fbcb3f927e3d91ee6619717ee12"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf269fbcb3f927e3d91ee6619717ee12"></a>
-static ClearToSaveStatus&#160;</td><td class="memItemRight" valign="bottom"><b>ClearToSave</b> ()</td></tr>
+<tr class="memitem:aaf269fbcb3f927e3d91ee6619717ee12"><td class="memItemLeft" align="right" valign="top">static ClearToSaveStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#aaf269fbcb3f927e3d91ee6619717ee12">ClearToSave</a> ()</td></tr>
 <tr class="separator:aaf269fbcb3f927e3d91ee6619717ee12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ae0d96302ddb0a79da16b1a448f8cec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ae0d96302ddb0a79da16b1a448f8cec"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>ForceSetActiveVessel</b> (<a class="el" href="class_vessel.html">Vessel</a> v)</td></tr>
+<tr class="memitem:a4ae0d96302ddb0a79da16b1a448f8cec"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a4ae0d96302ddb0a79da16b1a448f8cec">ForceSetActiveVessel</a> (<a class="el" href="class_vessel.html">Vessel</a> v)</td></tr>
 <tr class="separator:a4ae0d96302ddb0a79da16b1a448f8cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecdbc49ff76f17142642cde808f3882b"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#aecdbc49ff76f17142642cde808f3882b">getAltitudeAtPos</a> (Vector3 position)</td></tr>
 <tr class="memdesc:aecdbc49ff76f17142642cde808f3882b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The altitude above the sea level of the current main body of the given world space position.  <a href="#aecdbc49ff76f17142642cde808f3882b">More...</a><br /></td></tr>
@@ -152,11 +149,9 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>ForceSetActive
 <tr class="memitem:a3683aeda878dc2d8dc36fd52317cec46"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a3683aeda878dc2d8dc36fd52317cec46">getAtmDensity</a> (double pressure)</td></tr>
 <tr class="memdesc:a3683aeda878dc2d8dc36fd52317cec46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an atmospheric pressure into an atmospheric density. Atmospheric density is what appears in the <a class="el" href="namespace_k_s_p.html">KSP</a> drag equation. This function seems to just multiply the input by 1.2230948554874  <a href="#a3683aeda878dc2d8dc36fd52317cec46">More...</a><br /></td></tr>
 <tr class="separator:a3683aeda878dc2d8dc36fd52317cec46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe14583b08f987ba6708e4bfa2bc6967"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe14583b08f987ba6708e4bfa2bc6967"></a>
-static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getCentrifugalAcc</b> (<a class="el" href="struct_vector3d.html">Vector3d</a> pos, <a class="el" href="class_celestial_body.html">CelestialBody</a> body)</td></tr>
+<tr class="memitem:afe14583b08f987ba6708e4bfa2bc6967"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#afe14583b08f987ba6708e4bfa2bc6967">getCentrifugalAcc</a> (<a class="el" href="struct_vector3d.html">Vector3d</a> pos, <a class="el" href="class_celestial_body.html">CelestialBody</a> body)</td></tr>
 <tr class="separator:afe14583b08f987ba6708e4bfa2bc6967"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fdda93bcc56caeb50cfafa966aa3af8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fdda93bcc56caeb50cfafa966aa3af8"></a>
-static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getCoriolisAcc</b> (<a class="el" href="struct_vector3d.html">Vector3d</a> vel, <a class="el" href="class_celestial_body.html">CelestialBody</a> body)</td></tr>
+<tr class="memitem:a9fdda93bcc56caeb50cfafa966aa3af8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a9fdda93bcc56caeb50cfafa966aa3af8">getCoriolisAcc</a> (<a class="el" href="struct_vector3d.html">Vector3d</a> vel, <a class="el" href="class_celestial_body.html">CelestialBody</a> body)</td></tr>
 <tr class="separator:a9fdda93bcc56caeb50cfafa966aa3af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe36c0530106a2b99c3fc3bcf058bc6d"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#afe36c0530106a2b99c3fc3bcf058bc6d">getExternalTemperature</a> (<a class="el" href="struct_vector3d.html">Vector3d</a> pos)</td></tr>
 <tr class="memdesc:afe36c0530106a2b99c3fc3bcf058bc6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the temperature at a given world space position.  <a href="#afe36c0530106a2b99c3fc3bcf058bc6d">More...</a><br /></td></tr>
@@ -164,8 +159,7 @@ static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td clas
 <tr class="memitem:ab4b635a50a2cb908a77c77f27013daa8"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#ab4b635a50a2cb908a77c77f27013daa8">getExternalTemperature</a> (float altitude, <a class="el" href="class_celestial_body.html">CelestialBody</a> body)</td></tr>
 <tr class="memdesc:ab4b635a50a2cb908a77c77f27013daa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the temperature at a given altitude above a given body.  <a href="#ab4b635a50a2cb908a77c77f27013daa8">More...</a><br /></td></tr>
 <tr class="separator:ab4b635a50a2cb908a77c77f27013daa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dacea8a14322fbdd1b7b0b780eaea57"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8dacea8a14322fbdd1b7b0b780eaea57"></a>
-static Quaternion&#160;</td><td class="memItemRight" valign="bottom"><b>GetFoR</b> (FoRModes mode)</td></tr>
+<tr class="memitem:a8dacea8a14322fbdd1b7b0b780eaea57"><td class="memItemLeft" align="right" valign="top">static Quaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a8dacea8a14322fbdd1b7b0b780eaea57">GetFoR</a> (FoRModes mode)</td></tr>
 <tr class="separator:a8dacea8a14322fbdd1b7b0b780eaea57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18a409579d72eeac43da4f525a45630e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a18a409579d72eeac43da4f525a45630e">getGeeForceAtPosition</a> (<a class="el" href="struct_vector3d.html">Vector3d</a> pos)</td></tr>
 <tr class="memdesc:a18a409579d72eeac43da4f525a45630e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the gravitational <em>acceleration</em> vector at a given position. Contrary to its name, it does <em>not</em> return force.  <a href="#a18a409579d72eeac43da4f525a45630e">More...</a><br /></td></tr>
@@ -188,155 +182,108 @@ static Quaternion&#160;</td><td class="memItemRight" valign="bottom"><b>GetFoR</
 <tr class="memitem:a816ea4e7d606ac8572a734bdf61e3d2b"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a816ea4e7d606ac8572a734bdf61e3d2b">getStaticPressure</a> (<a class="el" href="struct_vector3d.html">Vector3d</a> position, <a class="el" href="class_celestial_body.html">CelestialBody</a> body)</td></tr>
 <tr class="memdesc:a816ea4e7d606ac8572a734bdf61e3d2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the atmospheric pressure of a given body's atmopshere at a given position  <a href="#a816ea4e7d606ac8572a734bdf61e3d2b">More...</a><br /></td></tr>
 <tr class="separator:a816ea4e7d606ac8572a734bdf61e3d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad15932411d6b292e93223de4c157e2cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad15932411d6b292e93223de4c157e2cf"></a>
-static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getUpAxis</b> ()</td></tr>
+<tr class="memitem:ad15932411d6b292e93223de4c157e2cf"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#ad15932411d6b292e93223de4c157e2cf">getUpAxis</a> ()</td></tr>
 <tr class="separator:ad15932411d6b292e93223de4c157e2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0aa9ac35cabf011ea5b736e01a8afa32"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0aa9ac35cabf011ea5b736e01a8afa32"></a>
-static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getUpAxis</b> (<a class="el" href="struct_vector3d.html">Vector3d</a> position)</td></tr>
+<tr class="memitem:a0aa9ac35cabf011ea5b736e01a8afa32"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a0aa9ac35cabf011ea5b736e01a8afa32">getUpAxis</a> (<a class="el" href="struct_vector3d.html">Vector3d</a> position)</td></tr>
 <tr class="separator:a0aa9ac35cabf011ea5b736e01a8afa32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af851a723673cb47471a342e73e3cbe48"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af851a723673cb47471a342e73e3cbe48"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>removePhysicalObject</b> (GameObject pObject)</td></tr>
+<tr class="memitem:af851a723673cb47471a342e73e3cbe48"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#af851a723673cb47471a342e73e3cbe48">removePhysicalObject</a> (GameObject pObject)</td></tr>
 <tr class="separator:af851a723673cb47471a342e73e3cbe48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcc33be2934afe677f9912f484880bfa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abcc33be2934afe677f9912f484880bfa"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetActiveVessel</b> (<a class="el" href="class_vessel.html">Vessel</a> v)</td></tr>
+<tr class="memitem:abcc33be2934afe677f9912f484880bfa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#abcc33be2934afe677f9912f484880bfa">SetActiveVessel</a> (<a class="el" href="class_vessel.html">Vessel</a> v)</td></tr>
 <tr class="separator:abcc33be2934afe677f9912f484880bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a442148ee3d8afdeeacb41618f1ef1c87"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a442148ee3d8afdeeacb41618f1ef1c87"></a>
-<a class="el" href="class_vessel.html">Vessel</a>&#160;</td><td class="memItemRight" valign="bottom"><b>activeVessel</b></td></tr>
+<tr class="memitem:a442148ee3d8afdeeacb41618f1ef1c87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vessel.html">Vessel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a442148ee3d8afdeeacb41618f1ef1c87">activeVessel</a></td></tr>
 <tr class="separator:a442148ee3d8afdeeacb41618f1ef1c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2743553f1bdbae52a415ad8ffd1decf6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2743553f1bdbae52a415ad8ffd1decf6"></a>
-List&lt; <a class="el" href="class_celestial_body.html">CelestialBody</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>bodies</b></td></tr>
+<tr class="memitem:a2743553f1bdbae52a415ad8ffd1decf6"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_celestial_body.html">CelestialBody</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a2743553f1bdbae52a415ad8ffd1decf6">bodies</a></td></tr>
 <tr class="separator:a2743553f1bdbae52a415ad8ffd1decf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac907b44ab520bc006328afe7698d5526"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac907b44ab520bc006328afe7698d5526"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>drag_multiplier</b></td></tr>
+<tr class="memitem:ac907b44ab520bc006328afe7698d5526"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#ac907b44ab520bc006328afe7698d5526">drag_multiplier</a></td></tr>
 <tr class="separator:ac907b44ab520bc006328afe7698d5526"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac13039a2268227bfcca7d3d3fe6fc8f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac13039a2268227bfcca7d3d3fe6fc8f1"></a>
-Camera&#160;</td><td class="memItemRight" valign="bottom"><b>mainCameraRef</b></td></tr>
+<tr class="memitem:ac13039a2268227bfcca7d3d3fe6fc8f1"><td class="memItemLeft" align="right" valign="top">Camera&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#ac13039a2268227bfcca7d3d3fe6fc8f1">mainCameraRef</a></td></tr>
 <tr class="separator:ac13039a2268227bfcca7d3d3fe6fc8f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0297efe2b9f587d6430842798dd0a43b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0297efe2b9f587d6430842798dd0a43b"></a>
-List&lt; <a class="el" href="class_vessel.html">Vessel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>vessels</b></td></tr>
+<tr class="memitem:a0297efe2b9f587d6430842798dd0a43b"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_vessel.html">Vessel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a0297efe2b9f587d6430842798dd0a43b">vessels</a></td></tr>
 <tr class="separator:a0297efe2b9f587d6430842798dd0a43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9d251c83914eb07b891fe931ac0ade7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9d251c83914eb07b891fe931ac0ade7"></a>
-Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>vesselTargetDelta</b></td></tr>
+<tr class="memitem:aa9d251c83914eb07b891fe931ac0ade7"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#aa9d251c83914eb07b891fe931ac0ade7">vesselTargetDelta</a></td></tr>
 <tr class="separator:aa9d251c83914eb07b891fe931ac0ade7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2efef35372a2cc3c76ce46aa94e40645"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2efef35372a2cc3c76ce46aa94e40645"></a>
-Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>vesselTargetDirection</b></td></tr>
+<tr class="memitem:a2efef35372a2cc3c76ce46aa94e40645"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a2efef35372a2cc3c76ce46aa94e40645">vesselTargetDirection</a></td></tr>
 <tr class="separator:a2efef35372a2cc3c76ce46aa94e40645"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c00d3bb0a79dc0a7a511bbc38cbfa9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c00d3bb0a79dc0a7a511bbc38cbfa9f"></a>
-Transform&#160;</td><td class="memItemRight" valign="bottom"><b>vesselTargetTransform</b></td></tr>
+<tr class="memitem:a8c00d3bb0a79dc0a7a511bbc38cbfa9f"><td class="memItemLeft" align="right" valign="top">Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a8c00d3bb0a79dc0a7a511bbc38cbfa9f">vesselTargetTransform</a></td></tr>
 <tr class="separator:a8c00d3bb0a79dc0a7a511bbc38cbfa9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a04d4b46890ab2e6a8e27da66a71bc664"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04d4b46890ab2e6a8e27da66a71bc664"></a>
-static <a class="el" href="class_part.html">Part</a>&#160;</td><td class="memItemRight" valign="bottom"><b>activeTarget</b></td></tr>
+<tr class="memitem:a04d4b46890ab2e6a8e27da66a71bc664"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_part.html">Part</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a04d4b46890ab2e6a8e27da66a71bc664">activeTarget</a></td></tr>
 <tr class="separator:a04d4b46890ab2e6a8e27da66a71bc664"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e71e542c5375a9a196fdd02d29f5438"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e71e542c5375a9a196fdd02d29f5438"></a>
-static double&#160;</td><td class="memItemRight" valign="bottom"><b>camera_altitude</b></td></tr>
+<tr class="memitem:a4e71e542c5375a9a196fdd02d29f5438"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a4e71e542c5375a9a196fdd02d29f5438">camera_altitude</a></td></tr>
 <tr class="separator:a4e71e542c5375a9a196fdd02d29f5438"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d2bd99f898c4031a44829bd0fe7cb91"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d2bd99f898c4031a44829bd0fe7cb91"></a>
-static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>camera_position</b></td></tr>
+<tr class="memitem:a7d2bd99f898c4031a44829bd0fe7cb91"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a7d2bd99f898c4031a44829bd0fe7cb91">camera_position</a></td></tr>
 <tr class="separator:a7d2bd99f898c4031a44829bd0fe7cb91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa568e6275ac1cc69db0ccc65d930eaf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa568e6275ac1cc69db0ccc65d930eaf"></a>
-static <a class="el" href="class_celestial_body.html">CelestialBody</a>&#160;</td><td class="memItemRight" valign="bottom"><b>currentMainBody</b></td></tr>
+<tr class="memitem:afa568e6275ac1cc69db0ccc65d930eaf"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_celestial_body.html">CelestialBody</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#afa568e6275ac1cc69db0ccc65d930eaf">currentMainBody</a></td></tr>
 <tr class="separator:afa568e6275ac1cc69db0ccc65d930eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b77d1c3f453a82629236e97dff4417e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_flight_globals.html">FlightGlobals</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a4b77d1c3f453a82629236e97dff4417e">fetch</a></td></tr>
 <tr class="memdesc:a4b77d1c3f453a82629236e97dff4417e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this <a class="el" href="class_flight_globals.html" title="FlightGlobals contains lists of all CelestialBodies and Vessels in the game. It also provides static ...">FlightGlobals</a> instance to access non-static members of <a class="el" href="class_flight_globals.html" title="FlightGlobals contains lists of all CelestialBodies and Vessels in the game. It also provides static ...">FlightGlobals</a>. For example, the current target is FlightGlobals.fetch.VesselTarget.  <a href="#a4b77d1c3f453a82629236e97dff4417e">More...</a><br /></td></tr>
 <tr class="separator:a4b77d1c3f453a82629236e97dff4417e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5624b49cecc30c920f0be085a33b5a61"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5624b49cecc30c920f0be085a33b5a61"></a>
-static FoRModes&#160;</td><td class="memItemRight" valign="bottom"><b>FoRMode</b></td></tr>
+<tr class="memitem:a5624b49cecc30c920f0be085a33b5a61"><td class="memItemLeft" align="right" valign="top">static FoRModes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a5624b49cecc30c920f0be085a33b5a61">FoRMode</a></td></tr>
 <tr class="separator:a5624b49cecc30c920f0be085a33b5a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0629782f088c61f394954ee7e548fb03"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0629782f088c61f394954ee7e548fb03"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>overrideOrbit</b></td></tr>
+<tr class="memitem:a0629782f088c61f394954ee7e548fb03"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a0629782f088c61f394954ee7e548fb03">overrideOrbit</a></td></tr>
 <tr class="separator:a0629782f088c61f394954ee7e548fb03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fea1016a55573f357dd293660ab3e5f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0fea1016a55573f357dd293660ab3e5f"></a>
-static List&lt; GameObject &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>physicalObjects</b></td></tr>
+<tr class="memitem:a0fea1016a55573f357dd293660ab3e5f"><td class="memItemLeft" align="right" valign="top">static List&lt; GameObject &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a0fea1016a55573f357dd293660ab3e5f">physicalObjects</a></td></tr>
 <tr class="separator:a0fea1016a55573f357dd293660ab3e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0722c7b28aa634bfe83f48c26fed6835"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0722c7b28aa634bfe83f48c26fed6835"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>ready</b></td></tr>
+<tr class="memitem:a0722c7b28aa634bfe83f48c26fed6835"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a0722c7b28aa634bfe83f48c26fed6835">ready</a></td></tr>
 <tr class="separator:a0722c7b28aa634bfe83f48c26fed6835"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae58ba0d307b619622cc6c6e6f26e269a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae58ba0d307b619622cc6c6e6f26e269a"></a>
-static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ship_acceleration</b></td></tr>
+<tr class="memitem:ae58ba0d307b619622cc6c6e6f26e269a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#ae58ba0d307b619622cc6c6e6f26e269a">ship_acceleration</a></td></tr>
 <tr class="separator:ae58ba0d307b619622cc6c6e6f26e269a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e538fe53b9b3e208456f812bed6fce4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e538fe53b9b3e208456f812bed6fce4"></a>
-static double&#160;</td><td class="memItemRight" valign="bottom"><b>ship_altitude</b></td></tr>
+<tr class="memitem:a4e538fe53b9b3e208456f812bed6fce4"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a4e538fe53b9b3e208456f812bed6fce4">ship_altitude</a></td></tr>
 <tr class="separator:a4e538fe53b9b3e208456f812bed6fce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5832b8190728ad664187546551df54f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5832b8190728ad664187546551df54f"></a>
-static Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>ship_angularMomentum</b></td></tr>
+<tr class="memitem:af5832b8190728ad664187546551df54f"><td class="memItemLeft" align="right" valign="top">static Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#af5832b8190728ad664187546551df54f">ship_angularMomentum</a></td></tr>
 <tr class="separator:af5832b8190728ad664187546551df54f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12d9c2d1e7e1f9f640ef39a178034d05"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12d9c2d1e7e1f9f640ef39a178034d05"></a>
-static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ship_angularVelocity</b></td></tr>
+<tr class="memitem:a12d9c2d1e7e1f9f640ef39a178034d05"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a12d9c2d1e7e1f9f640ef39a178034d05">ship_angularVelocity</a></td></tr>
 <tr class="separator:a12d9c2d1e7e1f9f640ef39a178034d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe61a0ea5c85a1315f34959a48036e9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe61a0ea5c85a1315f34959a48036e9d"></a>
-static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ship_CoM</b></td></tr>
+<tr class="memitem:afe61a0ea5c85a1315f34959a48036e9d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#afe61a0ea5c85a1315f34959a48036e9d">ship_CoM</a></td></tr>
 <tr class="separator:afe61a0ea5c85a1315f34959a48036e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ea9a91f4f03d3f04d87147adabfbbd1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ea9a91f4f03d3f04d87147adabfbbd1"></a>
-static double&#160;</td><td class="memItemRight" valign="bottom"><b>ship_dns</b></td></tr>
+<tr class="memitem:a5ea9a91f4f03d3f04d87147adabfbbd1"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a5ea9a91f4f03d3f04d87147adabfbbd1">ship_dns</a></td></tr>
 <tr class="separator:a5ea9a91f4f03d3f04d87147adabfbbd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77677249097a989ab2a81631e01463eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a77677249097a989ab2a81631e01463eb"></a>
-static double&#160;</td><td class="memItemRight" valign="bottom"><b>ship_geeForce</b></td></tr>
+<tr class="memitem:a77677249097a989ab2a81631e01463eb"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a77677249097a989ab2a81631e01463eb">ship_geeForce</a></td></tr>
 <tr class="separator:a77677249097a989ab2a81631e01463eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86877e9458a31669ee04d45be5aa6170"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86877e9458a31669ee04d45be5aa6170"></a>
-static float&#160;</td><td class="memItemRight" valign="bottom"><b>ship_heading</b></td></tr>
+<tr class="memitem:a86877e9458a31669ee04d45be5aa6170"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a86877e9458a31669ee04d45be5aa6170">ship_heading</a></td></tr>
 <tr class="separator:a86877e9458a31669ee04d45be5aa6170"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f4e471c09de90e2006bad0a047970f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f4e471c09de90e2006bad0a047970f1"></a>
-static double&#160;</td><td class="memItemRight" valign="bottom"><b>ship_latitude</b></td></tr>
+<tr class="memitem:a8f4e471c09de90e2006bad0a047970f1"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a8f4e471c09de90e2006bad0a047970f1">ship_latitude</a></td></tr>
 <tr class="separator:a8f4e471c09de90e2006bad0a047970f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a494927c42aaae6b38380f94e1ce1969d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a494927c42aaae6b38380f94e1ce1969d"></a>
-static double&#160;</td><td class="memItemRight" valign="bottom"><b>ship_longitude</b></td></tr>
+<tr class="memitem:a494927c42aaae6b38380f94e1ce1969d"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a494927c42aaae6b38380f94e1ce1969d">ship_longitude</a></td></tr>
 <tr class="separator:a494927c42aaae6b38380f94e1ce1969d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6359edd82dc3f254fd7352a310a33940"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6359edd82dc3f254fd7352a310a33940"></a>
-static Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>ship_MOI</b></td></tr>
+<tr class="memitem:a6359edd82dc3f254fd7352a310a33940"><td class="memItemLeft" align="right" valign="top">static Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a6359edd82dc3f254fd7352a310a33940">ship_MOI</a></td></tr>
 <tr class="separator:a6359edd82dc3f254fd7352a310a33940"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8248395b7b5281eadd9c6cddbc7d194"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8248395b7b5281eadd9c6cddbc7d194"></a>
-static double&#160;</td><td class="memItemRight" valign="bottom"><b>ship_obtSpeed</b></td></tr>
+<tr class="memitem:ae8248395b7b5281eadd9c6cddbc7d194"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#ae8248395b7b5281eadd9c6cddbc7d194">ship_obtSpeed</a></td></tr>
 <tr class="separator:ae8248395b7b5281eadd9c6cddbc7d194"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5668c251708dc2a4e873c456ac0e72e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5668c251708dc2a4e873c456ac0e72e3"></a>
-static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ship_obtVelocity</b></td></tr>
+<tr class="memitem:a5668c251708dc2a4e873c456ac0e72e3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a5668c251708dc2a4e873c456ac0e72e3">ship_obtVelocity</a></td></tr>
 <tr class="separator:a5668c251708dc2a4e873c456ac0e72e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41d591729944b51ec62cfcdf6db8c831"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41d591729944b51ec62cfcdf6db8c831"></a>
-static <a class="el" href="class_orbit.html">Orbit</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ship_orbit</b></td></tr>
+<tr class="memitem:a41d591729944b51ec62cfcdf6db8c831"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_orbit.html">Orbit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a41d591729944b51ec62cfcdf6db8c831">ship_orbit</a></td></tr>
 <tr class="separator:a41d591729944b51ec62cfcdf6db8c831"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26ac64add51912ac54f161e89258d10d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26ac64add51912ac54f161e89258d10d"></a>
-static Quaternion&#160;</td><td class="memItemRight" valign="bottom"><b>ship_orientation</b></td></tr>
+<tr class="memitem:a26ac64add51912ac54f161e89258d10d"><td class="memItemLeft" align="right" valign="top">static Quaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a26ac64add51912ac54f161e89258d10d">ship_orientation</a></td></tr>
 <tr class="separator:a26ac64add51912ac54f161e89258d10d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4090df38f35cfd7e3ce40c6cd86c7661"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4090df38f35cfd7e3ce40c6cd86c7661"></a>
-static Quaternion&#160;</td><td class="memItemRight" valign="bottom"><b>ship_orientation_offset</b></td></tr>
+<tr class="memitem:a4090df38f35cfd7e3ce40c6cd86c7661"><td class="memItemLeft" align="right" valign="top">static Quaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a4090df38f35cfd7e3ce40c6cd86c7661">ship_orientation_offset</a></td></tr>
 <tr class="separator:a4090df38f35cfd7e3ce40c6cd86c7661"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10a11fb52e7d92fab578b99ca9c97310"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10a11fb52e7d92fab578b99ca9c97310"></a>
-static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ship_position</b></td></tr>
+<tr class="memitem:a10a11fb52e7d92fab578b99ca9c97310"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a10a11fb52e7d92fab578b99ca9c97310">ship_position</a></td></tr>
 <tr class="separator:a10a11fb52e7d92fab578b99ca9c97310"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79564c9e05fea6a06ab78db0685d6ff9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79564c9e05fea6a06ab78db0685d6ff9"></a>
-static Quaternion&#160;</td><td class="memItemRight" valign="bottom"><b>ship_rotation</b></td></tr>
+<tr class="memitem:a79564c9e05fea6a06ab78db0685d6ff9"><td class="memItemLeft" align="right" valign="top">static Quaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a79564c9e05fea6a06ab78db0685d6ff9">ship_rotation</a></td></tr>
 <tr class="separator:a79564c9e05fea6a06ab78db0685d6ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4c85509e00035bf36f9ea9861643cd7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa4c85509e00035bf36f9ea9861643cd7"></a>
-static double&#160;</td><td class="memItemRight" valign="bottom"><b>ship_srfSpeed</b></td></tr>
+<tr class="memitem:aa4c85509e00035bf36f9ea9861643cd7"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#aa4c85509e00035bf36f9ea9861643cd7">ship_srfSpeed</a></td></tr>
 <tr class="separator:aa4c85509e00035bf36f9ea9861643cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abee6f3e9b86ec14b791bd36f7a355db2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abee6f3e9b86ec14b791bd36f7a355db2"></a>
-static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ship_srfVelocity</b></td></tr>
+<tr class="memitem:abee6f3e9b86ec14b791bd36f7a355db2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#abee6f3e9b86ec14b791bd36f7a355db2">ship_srfVelocity</a></td></tr>
 <tr class="separator:abee6f3e9b86ec14b791bd36f7a355db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a924a6ba290d850e4d00f9fc2af7d3d68"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a924a6ba290d850e4d00f9fc2af7d3d68"></a>
-static double&#160;</td><td class="memItemRight" valign="bottom"><b>ship_stP</b></td></tr>
+<tr class="memitem:a924a6ba290d850e4d00f9fc2af7d3d68"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a924a6ba290d850e4d00f9fc2af7d3d68">ship_stP</a></td></tr>
 <tr class="separator:a924a6ba290d850e4d00f9fc2af7d3d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac97cd09d13aac896cede71a3776aa303"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac97cd09d13aac896cede71a3776aa303"></a>
-static double&#160;</td><td class="memItemRight" valign="bottom"><b>ship_tgtSpeed</b></td></tr>
+<tr class="memitem:ac97cd09d13aac896cede71a3776aa303"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#ac97cd09d13aac896cede71a3776aa303">ship_tgtSpeed</a></td></tr>
 <tr class="separator:ac97cd09d13aac896cede71a3776aa303"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f8b40bd0d54bd71b2af0229b3c06d25"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f8b40bd0d54bd71b2af0229b3c06d25"></a>
-static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ship_tgtVelocity</b></td></tr>
+<tr class="memitem:a0f8b40bd0d54bd71b2af0229b3c06d25"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a0f8b40bd0d54bd71b2af0229b3c06d25">ship_tgtVelocity</a></td></tr>
 <tr class="separator:a0f8b40bd0d54bd71b2af0229b3c06d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc3a977236e1d39d26eb8e7b343591db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc3a977236e1d39d26eb8e7b343591db"></a>
-static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ship_upAxis</b></td></tr>
+<tr class="memitem:afc3a977236e1d39d26eb8e7b343591db"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#afc3a977236e1d39d26eb8e7b343591db">ship_upAxis</a></td></tr>
 <tr class="separator:afc3a977236e1d39d26eb8e7b343591db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a518c22f00fa7048287e6d4e201a906ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a518c22f00fa7048287e6d4e201a906ae"></a>
-static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ship_velocity</b></td></tr>
+<tr class="memitem:a518c22f00fa7048287e6d4e201a906ae"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a518c22f00fa7048287e6d4e201a906ae">ship_velocity</a></td></tr>
 <tr class="separator:a518c22f00fa7048287e6d4e201a906ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe70d04e6d3f4a6a82a2ccbd5c996f71"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe70d04e6d3f4a6a82a2ccbd5c996f71"></a>
-static double&#160;</td><td class="memItemRight" valign="bottom"><b>ship_verticalSpeed</b></td></tr>
+<tr class="memitem:abe70d04e6d3f4a6a82a2ccbd5c996f71"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#abe70d04e6d3f4a6a82a2ccbd5c996f71">ship_verticalSpeed</a></td></tr>
 <tr class="separator:abe70d04e6d3f4a6a82a2ccbd5c996f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae547a2689347eaa2ded68f7fb86adda3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae547a2689347eaa2ded68f7fb86adda3"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>warpDriveActive</b></td></tr>
+<tr class="memitem:ae547a2689347eaa2ded68f7fb86adda3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#ae547a2689347eaa2ded68f7fb86adda3">warpDriveActive</a></td></tr>
 <tr class="separator:ae547a2689347eaa2ded68f7fb86adda3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
@@ -353,14 +300,11 @@ Properties</h2></td></tr>
 <tr class="memitem:a9f87bbc12b5fb4f16e466056a25536b2"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a9f87bbc12b5fb4f16e466056a25536b2">RefFrameIsRotating</a><code> [get]</code></td></tr>
 <tr class="memdesc:a9f87bbc12b5fb4f16e466056a25536b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether <a class="el" href="namespace_k_s_p.html">KSP</a> is doing its computations in an inertial reference frame, or the reference frame that rotates with the current dominant celestial body.  <a href="#a9f87bbc12b5fb4f16e466056a25536b2">More...</a><br /></td></tr>
 <tr class="separator:a9f87bbc12b5fb4f16e466056a25536b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a722b5f2e3564c9d84e6fb52e47d85e51"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a722b5f2e3564c9d84e6fb52e47d85e51"></a>
-static SurfaceRadius&#160;</td><td class="memItemRight" valign="bottom"><b>terrain</b><code> [get]</code></td></tr>
+<tr class="memitem:a722b5f2e3564c9d84e6fb52e47d85e51"><td class="memItemLeft" align="right" valign="top">static SurfaceRadius&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a722b5f2e3564c9d84e6fb52e47d85e51">terrain</a><code> [get]</code></td></tr>
 <tr class="separator:a722b5f2e3564c9d84e6fb52e47d85e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a395c4c98bf9c8f0c1d34d4b67ffaf811"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a395c4c98bf9c8f0c1d34d4b67ffaf811"></a>
-static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>upAxis</b><code> [get]</code></td></tr>
+<tr class="memitem:a395c4c98bf9c8f0c1d34d4b67ffaf811"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a395c4c98bf9c8f0c1d34d4b67ffaf811">upAxis</a><code> [get]</code></td></tr>
 <tr class="separator:a395c4c98bf9c8f0c1d34d4b67ffaf811"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51ed828a3dc9bb49ec4fa4a1e339a937"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51ed828a3dc9bb49ec4fa4a1e339a937"></a>
-static float&#160;</td><td class="memItemRight" valign="bottom"><b>vacuumTemperature</b><code> [get]</code></td></tr>
+<tr class="memitem:a51ed828a3dc9bb49ec4fa4a1e339a937"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a51ed828a3dc9bb49ec4fa4a1e339a937">vacuumTemperature</a><code> [get]</code></td></tr>
 <tr class="separator:a51ed828a3dc9bb49ec4fa4a1e339a937"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e6fd433e47adf7128a78eb977d2bf2a"><td class="memItemLeft" align="right" valign="top">static List&lt; <a class="el" href="class_vessel.html">Vessel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a6e6fd433e47adf7128a78eb977d2bf2a">Vessels</a><code> [get]</code></td></tr>
 <tr class="memdesc:a6e6fd433e47adf7128a78eb977d2bf2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of all the Vessels that currently exist  <a href="#a6e6fd433e47adf7128a78eb977d2bf2a">More...</a><br /></td></tr>
@@ -368,13 +312,122 @@ static float&#160;</td><td class="memItemRight" valign="bottom"><b>vacuumTempera
 <tr class="memitem:a448e6f9d59f5808c17ba8cef008bc4ff"><td class="memItemLeft" align="right" valign="top">ITargetable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a448e6f9d59f5808c17ba8cef008bc4ff">VesselTarget</a><code> [get]</code></td></tr>
 <tr class="memdesc:a448e6f9d59f5808c17ba8cef008bc4ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">The currently selected target vessel, celestial body, or docking node. If no target is selected, this is null.  <a href="#a448e6f9d59f5808c17ba8cef008bc4ff">More...</a><br /></td></tr>
 <tr class="separator:a448e6f9d59f5808c17ba8cef008bc4ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c4b826d03ff9a6c03c693a184d10611"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c4b826d03ff9a6c03c693a184d10611"></a>
-FlightGlobals.VesselTargetModes&#160;</td><td class="memItemRight" valign="bottom"><b>vesselTargetMode</b><code> [get]</code></td></tr>
+<tr class="memitem:a2c4b826d03ff9a6c03c693a184d10611"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_flight_globals.html#ab50e47ef9d99eb711591f9ef94b9194e">FlightGlobals.VesselTargetModes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flight_globals.html#a2c4b826d03ff9a6c03c693a184d10611">vesselTargetMode</a><code> [get]</code></td></tr>
 <tr class="separator:a2c4b826d03ff9a6c03c693a184d10611"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_flight_globals.html" title="FlightGlobals contains lists of all CelestialBodies and Vessels in the game. It also provides static ...">FlightGlobals</a> contains lists of all CelestialBodies and Vessels in the game. It also provides static utility functions for computing the atmospheric and gravitational properties of CelestialBodies. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="ab50e47ef9d99eb711591f9ef94b9194e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_flight_globals.html#ab50e47ef9d99eb711591f9ef94b9194e">FlightGlobals.VesselTargetModes</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ab50e47ef9d99eb711591f9ef94b9194ea6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab50e47ef9d99eb711591f9ef94b9194ea02674a4ef33e11c879283629996c8ff8"></a>Direction&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab50e47ef9d99eb711591f9ef94b9194ea933a6f90a0ffc497f4c59649199067af"></a>DirectionAndVelocity&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab50e47ef9d99eb711591f9ef94b9194eadc0ccb9447c518efd009954a839a82c1"></a>DirectionVelocityAndOrientation&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a9e1af6a07419a9c6f48343fc451fcd92"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FlightGlobals.FlightGlobals </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a8a495979234fd0995170487d464d092f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void FlightGlobals.addPhysicalObject </td>
+          <td>(</td>
+          <td class="paramtype">GameObject&#160;</td>
+          <td class="paramname"><em>pObject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaf269fbcb3f927e3d91ee6619717ee12"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static ClearToSaveStatus FlightGlobals.ClearToSave </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4ae0d96302ddb0a79da16b1a448f8cec"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void FlightGlobals.ForceSetActiveVessel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vessel.html">Vessel</a>&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aecdbc49ff76f17142642cde808f3882b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -518,6 +571,74 @@ FlightGlobals.VesselTargetModes&#160;</td><td class="memItemRight" valign="botto
 
 </div>
 </div>
+<a class="anchor" id="afe14583b08f987ba6708e4bfa2bc6967"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="struct_vector3d.html">Vector3d</a> FlightGlobals.getCentrifugalAcc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_celestial_body.html">CelestialBody</a>&#160;</td>
+          <td class="paramname"><em>body</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9fdda93bcc56caeb50cfafa966aa3af8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="struct_vector3d.html">Vector3d</a> FlightGlobals.getCoriolisAcc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td>
+          <td class="paramname"><em>vel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_celestial_body.html">CelestialBody</a>&#160;</td>
+          <td class="paramname"><em>body</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="afe36c0530106a2b99c3fc3bcf058bc6d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -592,6 +713,46 @@ FlightGlobals.VesselTargetModes&#160;</td><td class="memItemRight" valign="botto
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Temperture</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8dacea8a14322fbdd1b7b0b780eaea57"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Quaternion FlightGlobals.GetFoR </td>
+          <td>(</td>
+          <td class="paramtype">FoRModes&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0cbf125470d7e66d3d5f966e29c83a87"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Quaternion FlightGlobals.getFoR </td>
+          <td>(</td>
+          <td class="paramtype">FoRModes&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -834,6 +995,163 @@ FlightGlobals.VesselTargetModes&#160;</td><td class="memItemRight" valign="botto
 
 </div>
 </div>
+<a class="anchor" id="ad15932411d6b292e93223de4c157e2cf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="struct_vector3d.html">Vector3d</a> FlightGlobals.getUpAxis </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0aa9ac35cabf011ea5b736e01a8afa32"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="struct_vector3d.html">Vector3d</a> FlightGlobals.getUpAxis </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td>
+          <td class="paramname"><em>position</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af851a723673cb47471a342e73e3cbe48"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void FlightGlobals.removePhysicalObject </td>
+          <td>(</td>
+          <td class="paramtype">GameObject&#160;</td>
+          <td class="paramname"><em>pObject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abcc33be2934afe677f9912f484880bfa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void FlightGlobals.SetActiveVessel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vessel.html">Vessel</a>&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1f8cf6134bbdafdec32f03048f6649d3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlightGlobals.SetShipOrbit </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>selBodyIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ecc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>sma</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>inc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>LAN</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>mna</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>argPe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ObT</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a1792d17424ded4bda94c98e66406badb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -858,7 +1176,138 @@ FlightGlobals.VesselTargetModes&#160;</td><td class="memItemRight" valign="botto
 
 </div>
 </div>
+<a class="anchor" id="a093c64a854d1177818466273235515bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlightGlobals.Start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a04d4b46890ab2e6a8e27da66a71bc664"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_part.html">Part</a> FlightGlobals.activeTarget</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a442148ee3d8afdeeacb41618f1ef1c87"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vessel.html">Vessel</a> FlightGlobals.activeVessel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2743553f1bdbae52a415ad8ffd1decf6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_celestial_body.html">CelestialBody</a>&gt; FlightGlobals.bodies</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4e71e542c5375a9a196fdd02d29f5438"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FlightGlobals.camera_altitude</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7d2bd99f898c4031a44829bd0fe7cb91"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> FlightGlobals.camera_position</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afa568e6275ac1cc69db0ccc65d930eaf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_celestial_body.html">CelestialBody</a> FlightGlobals.currentMainBody</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac907b44ab520bc006328afe7698d5526"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float FlightGlobals.drag_multiplier</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a4b77d1c3f453a82629236e97dff4417e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -878,6 +1327,686 @@ FlightGlobals.VesselTargetModes&#160;</td><td class="memItemRight" valign="botto
 </div><div class="memdoc">
 
 <p>Use this <a class="el" href="class_flight_globals.html" title="FlightGlobals contains lists of all CelestialBodies and Vessels in the game. It also provides static ...">FlightGlobals</a> instance to access non-static members of <a class="el" href="class_flight_globals.html" title="FlightGlobals contains lists of all CelestialBodies and Vessels in the game. It also provides static ...">FlightGlobals</a>. For example, the current target is FlightGlobals.fetch.VesselTarget. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5624b49cecc30c920f0be085a33b5a61"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FoRModes FlightGlobals.FoRMode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac13039a2268227bfcca7d3d3fe6fc8f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Camera FlightGlobals.mainCameraRef</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0629782f088c61f394954ee7e548fb03"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FlightGlobals.overrideOrbit</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0fea1016a55573f357dd293660ab3e5f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;GameObject&gt; FlightGlobals.physicalObjects</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0722c7b28aa634bfe83f48c26fed6835"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FlightGlobals.ready</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae58ba0d307b619622cc6c6e6f26e269a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> FlightGlobals.ship_acceleration</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4e538fe53b9b3e208456f812bed6fce4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FlightGlobals.ship_altitude</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af5832b8190728ad664187546551df54f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 FlightGlobals.ship_angularMomentum</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a12d9c2d1e7e1f9f640ef39a178034d05"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> FlightGlobals.ship_angularVelocity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afe61a0ea5c85a1315f34959a48036e9d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> FlightGlobals.ship_CoM</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5ea9a91f4f03d3f04d87147adabfbbd1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FlightGlobals.ship_dns</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a77677249097a989ab2a81631e01463eb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FlightGlobals.ship_geeForce</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a86877e9458a31669ee04d45be5aa6170"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float FlightGlobals.ship_heading</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8f4e471c09de90e2006bad0a047970f1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FlightGlobals.ship_latitude</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a494927c42aaae6b38380f94e1ce1969d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FlightGlobals.ship_longitude</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6359edd82dc3f254fd7352a310a33940"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 FlightGlobals.ship_MOI</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae8248395b7b5281eadd9c6cddbc7d194"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FlightGlobals.ship_obtSpeed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5668c251708dc2a4e873c456ac0e72e3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> FlightGlobals.ship_obtVelocity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a41d591729944b51ec62cfcdf6db8c831"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_orbit.html">Orbit</a> FlightGlobals.ship_orbit</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a26ac64add51912ac54f161e89258d10d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Quaternion FlightGlobals.ship_orientation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4090df38f35cfd7e3ce40c6cd86c7661"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Quaternion FlightGlobals.ship_orientation_offset</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a10a11fb52e7d92fab578b99ca9c97310"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> FlightGlobals.ship_position</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a79564c9e05fea6a06ab78db0685d6ff9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Quaternion FlightGlobals.ship_rotation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa4c85509e00035bf36f9ea9861643cd7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FlightGlobals.ship_srfSpeed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abee6f3e9b86ec14b791bd36f7a355db2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> FlightGlobals.ship_srfVelocity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a924a6ba290d850e4d00f9fc2af7d3d68"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FlightGlobals.ship_stP</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac97cd09d13aac896cede71a3776aa303"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FlightGlobals.ship_tgtSpeed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0f8b40bd0d54bd71b2af0229b3c06d25"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> FlightGlobals.ship_tgtVelocity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afc3a977236e1d39d26eb8e7b343591db"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> FlightGlobals.ship_upAxis</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a518c22f00fa7048287e6d4e201a906ae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> FlightGlobals.ship_velocity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abe70d04e6d3f4a6a82a2ccbd5c996f71"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FlightGlobals.ship_verticalSpeed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0297efe2b9f587d6430842798dd0a43b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_vessel.html">Vessel</a>&gt; FlightGlobals.vessels</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa9d251c83914eb07b891fe931ac0ade7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 FlightGlobals.vesselTargetDelta</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2efef35372a2cc3c76ce46aa94e40645"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 FlightGlobals.vesselTargetDirection</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8c00d3bb0a79dc0a7a511bbc38cbfa9f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Transform FlightGlobals.vesselTargetTransform</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae547a2689347eaa2ded68f7fb86adda3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FlightGlobals.warpDriveActive</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -987,6 +2116,66 @@ FlightGlobals.VesselTargetModes&#160;</td><td class="memItemRight" valign="botto
 
 </div>
 </div>
+<a class="anchor" id="a722b5f2e3564c9d84e6fb52e47d85e51"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SurfaceRadius FlightGlobals.terrain</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a395c4c98bf9c8f0c1d34d4b67ffaf811"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> FlightGlobals.upAxis</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a51ed828a3dc9bb49ec4fa4a1e339a937"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float FlightGlobals.vacuumTemperature</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a6e6fd433e47adf7128a78eb977d2bf2a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1031,13 +2220,33 @@ FlightGlobals.VesselTargetModes&#160;</td><td class="memItemRight" valign="botto
 
 </div>
 </div>
+<a class="anchor" id="a2c4b826d03ff9a6c03c693a184d10611"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_flight_globals.html#ab50e47ef9d99eb711591f9ef94b9194e">FlightGlobals.VesselTargetModes</a> FlightGlobals.vesselTargetMode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/FlightGlobals.cs</li>
+<li>src/<a class="el" href="_flight_globals_8cs.html">FlightGlobals.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 29 2014 00:30:29 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 29 2014 00:44:38 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

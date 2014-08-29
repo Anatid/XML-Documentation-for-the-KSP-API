@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -125,8 +126,7 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a7b8373f804a5460cd82643a2b70666d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b8373f804a5460cd82643a2b70666d5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PluginConfiguration</b> (string pathToFile)</td></tr>
+<tr class="memitem:a7b8373f804a5460cd82643a2b70666d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_s_p_1_1_i_o_1_1_plugin_configuration.html#a7b8373f804a5460cd82643a2b70666d5">PluginConfiguration</a> (string pathToFile)</td></tr>
 <tr class="separator:a7b8373f804a5460cd82643a2b70666d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
@@ -140,7 +140,32 @@ Properties</h2></td></tr>
 <p><code> &lt;config&gt; &lt;int name="int"&amp;gt;4&lt;/int&gt; &lt;long name="long"&gt;45&lt;/long&gt; &lt;short name="short"&gt;4&lt;/short&gt; &lt;byte name="byte"&gt;255&lt;/byte&gt; &lt;bool name="bool"&gt;1&lt;/bool&gt; &lt;vector3 name="vector3"&gt; &lt;x&gt;0&lt;/x&gt; &lt;y&gt;1&lt;/y&gt; &lt;z&gt;2&lt;/z&gt; &lt;/vector3&gt; &lt;vector3d name="vector3d"&gt; &lt;x&gt;0&lt;/x&gt; &lt;y&gt;1&lt;/y&gt; &lt;z&gt;2.05&lt;/z&gt; &lt;/vector3d&gt; &lt;string name="string"&gt;string&lt;/string&gt; &lt;/config&gt; </code></p>
 <p>Despite looking a bit messy, it's actually a lot easier to use and doesn't have as many drawbacks as INI files. Newlines are preserved, and most importantly, types are also preserved. Oh, and it's UTF-8 encoded, so internationalization won't be as much as a problem, theoretically. Here's how to use it:</p>
 <p><code> <a class="el" href="class_k_s_p_1_1_i_o_1_1_plugin_configuration.html" title="From N3X15: PluginConfiguration was something I threw together a while ago to try and improve setting...">PluginConfiguration</a> cfg = PluginConfiguration.CreateForType&lt;MyCoolModule&gt;(); cfg["a string"] = "I love KSP!"; cfg["another setting"] = new <a class="el" href="struct_vector3d.html" title="A Vector3d in 3D space. Vector3d is just like Unity&#39;s Vector3 class, except it uses doubles instead o...">Vector3d(0,1,2)</a>; cfg.save(); // Later... cfg.load(); settingAString = cfg.GetValue&lt;string&gt;("a string"); settingAVector = cfg.GetValue&lt;<a class="el" href="struct_vector3d.html" title="A Vector3d in 3D space. Vector3d is just like Unity&#39;s Vector3 class, except it uses doubles instead o...">Vector3d</a>&gt;("another setting"); </code></p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a7b8373f804a5460cd82643a2b70666d5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KSP.IO.PluginConfiguration.PluginConfiguration </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>pathToFile</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ab62babd67acec55cc6db15aed8d92735"></a>
 <div class="memitem">
 <div class="memproto">
@@ -353,12 +378,12 @@ Properties</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/PluginConfiguration.cs</li>
+<li>src/<a class="el" href="_plugin_configuration_8cs.html">PluginConfiguration.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 29 2014 00:30:31 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 29 2014 00:44:39 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

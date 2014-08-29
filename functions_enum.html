@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -81,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -95,11 +96,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>AppScenes
 : <a class="el" href="class_application_launcher.html#a7a06e87f89d831ed977456f13ca579a0">ApplicationLauncher</a>
 </li>
+<li>DragModel
+: <a class="el" href="class_part.html#a64e1f9b7a9419f736b4446fba5b83d22">Part</a>
+</li>
+<li>EditorMode
+: <a class="el" href="class_editor_logic.html#a9c43b6aa2083cf4f1d69ca0d6604a3d0">EditorLogic</a>
+</li>
+<li>EditorScreen
+: <a class="el" href="class_editor_logic.html#a2be88cd56ab59690b4a8f68edea55e99">EditorLogic</a>
+</li>
+<li>EditorState
+: <a class="el" href="class_editor_logic.html#a14b695667a7a9b7be33fa8409f4af79b">EditorLogic</a>
+</li>
+<li>EncounterSolutionLevel
+: <a class="el" href="class_orbit.html#ab0e2dc2f244a601c6fb6dd1070785580">Orbit</a>
+</li>
+<li>FlowMode
+: <a class="el" href="class_part_resource.html#a09a6f705538d72d7c5cece3c0aa3ab1d">PartResource</a>
+</li>
+<li>FuelFlowDirection
+: <a class="el" href="class_fuel_line.html#a38f5147c73ebfc609daa755bb972ff7d">FuelLine</a>
+</li>
+<li>HighlightType
+: <a class="el" href="class_part.html#a072e778b8c1a1ac2718613fb3409d9cd">Part</a>
+</li>
 <li>Modes
-: <a class="el" href="class_time_warp.html#aa35d942317381d27dd5ba64316c09123">TimeWarp</a>
+: <a class="el" href="class_flight_camera.html#ae90b21deb28ca1978c229f0511116c1a">FlightCamera</a>
+, <a class="el" href="class_planetarium_camera.html#ac2b63b935926584b5644d2c1e03035fe">PlanetariumCamera</a>
+, <a class="el" href="class_time_warp.html#aa35d942317381d27dd5ba64316c09123">TimeWarp</a>
 </li>
 <li>NodeType
 : <a class="el" href="class_attach_node.html#a96e7fbc9722efd10a0e225bb6a6778cc">AttachNode</a>
+</li>
+<li>ObjectType
+: <a class="el" href="class_orbit.html#abe9c150ab071f14fe57cd99eda9ba2ab">Orbit</a>
+</li>
+<li>PatchTransitionType
+: <a class="el" href="class_orbit.html#a96fe2f2e726341f4b6d1342c792712df">Orbit</a>
 </li>
 <li>PhysicalSignificance
 : <a class="el" href="class_part.html#a096ba07cc5a00c2c74bbdd83982c8df5">Part</a>
@@ -113,11 +146,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>Startup
 : <a class="el" href="class_k_s_p_addon.html#aad4794e3fdfd545c576534be224f0b9b">KSPAddon</a>
 </li>
+<li>State
+: <a class="el" href="class_vessel.html#ab7d63804a51d0abd2854747e87a824a4">Vessel</a>
+</li>
+<li>VesselTargetModes
+: <a class="el" href="class_flight_globals.html#ab50e47ef9d99eb711591f9ef94b9194e">FlightGlobals</a>
+</li>
+<li>VK
+: <a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4b">HighLogic</a>
+</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 29 2014 00:30:31 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 29 2014 00:44:39 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,6 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
@@ -102,16 +104,19 @@ Inheritance diagram for ScaledSpace:</div>
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a47886c5bebcaff883049ef602bc12212"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scaled_space.html#a47886c5bebcaff883049ef602bc12212">ScaledSpace</a> ()</td></tr>
+<tr class="separator:a47886c5bebcaff883049ef602bc12212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a1cd0206f7fe460c5cee9b1d79ce8567c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1cd0206f7fe460c5cee9b1d79ce8567c"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>AddScaledSpaceTransform</b> (Transform t)</td></tr>
+<tr class="memitem:a1cd0206f7fe460c5cee9b1d79ce8567c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scaled_space.html#a1cd0206f7fe460c5cee9b1d79ce8567c">AddScaledSpaceTransform</a> (Transform t)</td></tr>
 <tr class="separator:a1cd0206f7fe460c5cee9b1d79ce8567c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab37649714edecc1cad11acfb888ea3a7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scaled_space.html#ab37649714edecc1cad11acfb888ea3a7">LocalToScaledSpace</a> (<a class="el" href="struct_vector3d.html">Vector3d</a> localSpacePoint)</td></tr>
 <tr class="memdesc:ab37649714edecc1cad11acfb888ea3a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a position in world coordinates into a position in planetarium coordinates.  <a href="#ab37649714edecc1cad11acfb888ea3a7">More...</a><br /></td></tr>
 <tr class="separator:ab37649714edecc1cad11acfb888ea3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb3a303ed16a52c09bc5290d3bcdbb4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb3a303ed16a52c09bc5290d3bcdbb4f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveScaledSpaceTransform</b> (Transform t)</td></tr>
+<tr class="memitem:acb3a303ed16a52c09bc5290d3bcdbb4f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scaled_space.html#acb3a303ed16a52c09bc5290d3bcdbb4f">RemoveScaledSpaceTransform</a> (Transform t)</td></tr>
 <tr class="separator:acb3a303ed16a52c09bc5290d3bcdbb4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a664a334dc87ff274ed45695dc10365f2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scaled_space.html#a664a334dc87ff274ed45695dc10365f2">ScaledToLocalSpace</a> (<a class="el" href="struct_vector3d.html">Vector3d</a> scaledSpacePoint)</td></tr>
 <tr class="memdesc:a664a334dc87ff274ed45695dc10365f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a position in planetarium coordinates into a position in world coordinates.  <a href="#a664a334dc87ff274ed45695dc10365f2">More...</a><br /></td></tr>
@@ -119,31 +124,66 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveScaledSp
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ae8b80f839815e636ef67d45e517c000b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8b80f839815e636ef67d45e517c000b"></a>
-Transform&#160;</td><td class="memItemRight" valign="bottom"><b>originTarget</b></td></tr>
+<tr class="memitem:ae8b80f839815e636ef67d45e517c000b"><td class="memItemLeft" align="right" valign="top">Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scaled_space.html#ae8b80f839815e636ef67d45e517c000b">originTarget</a></td></tr>
 <tr class="separator:ae8b80f839815e636ef67d45e517c000b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee706e1851292f29afc24aaeb0f218e7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee706e1851292f29afc24aaeb0f218e7"></a>
-List&lt; Transform &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>scaledSpaceTransforms</b></td></tr>
+<tr class="memitem:aee706e1851292f29afc24aaeb0f218e7"><td class="memItemLeft" align="right" valign="top">List&lt; Transform &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scaled_space.html#aee706e1851292f29afc24aaeb0f218e7">scaledSpaceTransforms</a></td></tr>
 <tr class="separator:aee706e1851292f29afc24aaeb0f218e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade2c5b59309ba08c18f6df575f80a7b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade2c5b59309ba08c18f6df575f80a7b9"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>scaleFactor</b></td></tr>
+<tr class="memitem:ade2c5b59309ba08c18f6df575f80a7b9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scaled_space.html#ade2c5b59309ba08c18f6df575f80a7b9">scaleFactor</a></td></tr>
 <tr class="separator:ade2c5b59309ba08c18f6df575f80a7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a546aa7536255ae0cc44732ee47c2013f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a546aa7536255ae0cc44732ee47c2013f"></a>
-static float&#160;</td><td class="memItemRight" valign="bottom"><b>InverseScaleFactor</b><code> [get]</code></td></tr>
+<tr class="memitem:a546aa7536255ae0cc44732ee47c2013f"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scaled_space.html#a546aa7536255ae0cc44732ee47c2013f">InverseScaleFactor</a><code> [get]</code></td></tr>
 <tr class="separator:a546aa7536255ae0cc44732ee47c2013f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb607935e7cebb31c4bfc8e5a396a819"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scaled_space.html#aeb607935e7cebb31c4bfc8e5a396a819">ScaleFactor</a><code> [get]</code></td></tr>
 <tr class="memdesc:aeb607935e7cebb31c4bfc8e5a396a819"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Scaled space" is the coordinate system used by the planetarium view. It's the same coordinate system as the world coordinates used by the physics, except scaled down by this scale factor.  <a href="#aeb607935e7cebb31c4bfc8e5a396a819">More...</a><br /></td></tr>
 <tr class="separator:aeb607935e7cebb31c4bfc8e5a396a819"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88fbd284af9f824484d984024af7b657"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88fbd284af9f824484d984024af7b657"></a>
-static Transform&#160;</td><td class="memItemRight" valign="bottom"><b>SceneTransform</b><code> [get]</code></td></tr>
+<tr class="memitem:a88fbd284af9f824484d984024af7b657"><td class="memItemLeft" align="right" valign="top">static Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scaled_space.html#a88fbd284af9f824484d984024af7b657">SceneTransform</a><code> [get]</code></td></tr>
 <tr class="separator:a88fbd284af9f824484d984024af7b657"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class that handles the transformations between the scaled-down coordinate system used by the map view and the regular coordinate system used by the main flight view and the physics. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a47886c5bebcaff883049ef602bc12212"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ScaledSpace.ScaledSpace </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a1cd0206f7fe460c5cee9b1d79ce8567c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ScaledSpace.AddScaledSpaceTransform </td>
+          <td>(</td>
+          <td class="paramtype">Transform&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ab37649714edecc1cad11acfb888ea3a7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -174,6 +214,30 @@ static Transform&#160;</td><td class="memItemRight" valign="bottom"><b>SceneTran
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The corresponding position in planetarium coordinates</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acb3a303ed16a52c09bc5290d3bcdbb4f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ScaledSpace.RemoveScaledSpaceTransform </td>
+          <td>(</td>
+          <td class="paramtype">Transform&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -210,7 +274,64 @@ static Transform&#160;</td><td class="memItemRight" valign="bottom"><b>SceneTran
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ae8b80f839815e636ef67d45e517c000b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Transform ScaledSpace.originTarget</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aee706e1851292f29afc24aaeb0f218e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;Transform&gt; ScaledSpace.scaledSpaceTransforms</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ade2c5b59309ba08c18f6df575f80a7b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ScaledSpace.scaleFactor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Property Documentation</h2>
+<a class="anchor" id="a546aa7536255ae0cc44732ee47c2013f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ScaledSpace.InverseScaleFactor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aeb607935e7cebb31c4bfc8e5a396a819"></a>
 <div class="memitem">
 <div class="memproto">
@@ -233,13 +354,33 @@ static Transform&#160;</td><td class="memItemRight" valign="bottom"><b>SceneTran
 
 </div>
 </div>
+<a class="anchor" id="a88fbd284af9f824484d984024af7b657"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Transform ScaledSpace.SceneTransform</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/ScaledSpace.cs</li>
+<li>src/<a class="el" href="_scaled_space_8cs.html">ScaledSpace.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 29 2014 00:30:30 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 29 2014 00:44:38 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

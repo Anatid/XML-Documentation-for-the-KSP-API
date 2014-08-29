@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -101,12 +102,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="class_discovery_info.html#a0afe10d438426a040cacfe42d7051b3b">HaveKnowledgeAbout</a>(DiscoveryLevels lvl)</td><td class="entry"><a class="el" href="class_discovery_info.html">DiscoveryInfo</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_discovery_info.html#afd889c46684f1b13c3edaab094c28445">lastObservedTime</a></td><td class="entry"><a class="el" href="class_discovery_info.html">DiscoveryInfo</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_discovery_info.html#ada95e52e548ab32727a2f8dae6c68776">Level</a></td><td class="entry"><a class="el" href="class_discovery_info.html">DiscoveryInfo</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>Load</b>(ConfigNode node) (defined in <a class="el" href="class_discovery_info.html">DiscoveryInfo</a>)</td><td class="entry"><a class="el" href="class_discovery_info.html">DiscoveryInfo</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_discovery_info.html#a8d39294283ca17ade9b23b4dd6bcf211">Load</a>(ConfigNode node)</td><td class="entry"><a class="el" href="class_discovery_info.html">DiscoveryInfo</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_discovery_info.html#a4dd6960eeba7ac7604931ecd57b6894a">mass</a></td><td class="entry"><a class="el" href="class_discovery_info.html">DiscoveryInfo</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_discovery_info.html#a2e08bba4ba60bed5f55b1326e2dc9b03">name</a></td><td class="entry"><a class="el" href="class_discovery_info.html">DiscoveryInfo</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_discovery_info.html#aab5d6b5fe3046e4b13f227fbac9a6411">objectSize</a></td><td class="entry"><a class="el" href="class_discovery_info.html">DiscoveryInfo</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_discovery_info.html#acc171cf10f3534b152f76a507d9ab84b">referenceLifetime</a></td><td class="entry"><a class="el" href="class_discovery_info.html">DiscoveryInfo</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Save</b>(ConfigNode node) (defined in <a class="el" href="class_discovery_info.html">DiscoveryInfo</a>)</td><td class="entry"><a class="el" href="class_discovery_info.html">DiscoveryInfo</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_discovery_info.html#afa5778017bfbf124c7cff50ab4a6580f">Save</a>(ConfigNode node)</td><td class="entry"><a class="el" href="class_discovery_info.html">DiscoveryInfo</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_discovery_info.html#a3f6ca8d02e900cebd12d7050a06a4811">SetLastObservedTime</a>(double UT)</td><td class="entry"><a class="el" href="class_discovery_info.html">DiscoveryInfo</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_discovery_info.html#a9b6ef5ff80b1c84aa7c709e5774eb5d7">SetLevel</a>(DiscoveryLevels level)</td><td class="entry"><a class="el" href="class_discovery_info.html">DiscoveryInfo</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_discovery_info.html#ab4f2f0d304ca911fec83a81553de2d2e">SetReferenceLifetime</a>(double time)</td><td class="entry"><a class="el" href="class_discovery_info.html">DiscoveryInfo</a></td><td class="entry"></td></tr>
@@ -123,7 +124,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 29 2014 00:30:29 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 29 2014 00:44:38 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

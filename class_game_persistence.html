@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,6 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_game_persistence-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -100,30 +102,224 @@ Inheritance diagram for GamePersistence:</div>
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ae4bd08bc0771686ecaeec44788a752a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_persistence.html#ae4bd08bc0771686ecaeec44788a752a8">GamePersistence</a> ()</td></tr>
+<tr class="separator:ae4bd08bc0771686ecaeec44788a752a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aa2dfe085beb254ce81ec2c84b9a78e11"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2dfe085beb254ce81ec2c84b9a78e11"></a>
-static FlightState&#160;</td><td class="memItemRight" valign="bottom"><b>LoadFlightState</b> (string filename, string saveFolder, bool haltIfIncompatible, bool suppressErrorMessage)</td></tr>
+<tr class="memitem:aa2dfe085beb254ce81ec2c84b9a78e11"><td class="memItemLeft" align="right" valign="top">static FlightState&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_persistence.html#aa2dfe085beb254ce81ec2c84b9a78e11">LoadFlightState</a> (string filename, string saveFolder, bool haltIfIncompatible, bool suppressErrorMessage)</td></tr>
 <tr class="separator:aa2dfe085beb254ce81ec2c84b9a78e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34e7656544dd08d0feb440609c56be6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34e7656544dd08d0feb440609c56be6b"></a>
-static Game&#160;</td><td class="memItemRight" valign="bottom"><b>LoadGame</b> (string filename, string saveFolder, bool haltIfIncompatible, bool suppressErrorMessage)</td></tr>
+<tr class="memitem:a34e7656544dd08d0feb440609c56be6b"><td class="memItemLeft" align="right" valign="top">static Game&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_persistence.html#a34e7656544dd08d0feb440609c56be6b">LoadGame</a> (string filename, string saveFolder, bool haltIfIncompatible, bool suppressErrorMessage)</td></tr>
 <tr class="separator:a34e7656544dd08d0feb440609c56be6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8338ef994526611957bd02264bc9b37"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8338ef994526611957bd02264bc9b37"></a>
-static string&#160;</td><td class="memItemRight" valign="bottom"><b>SaveFlightState</b> (string saveFileName, string saveFolder, SaveMode saveMode)</td></tr>
+<tr class="memitem:ae8338ef994526611957bd02264bc9b37"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_persistence.html#ae8338ef994526611957bd02264bc9b37">SaveFlightState</a> (string saveFileName, string saveFolder, SaveMode saveMode)</td></tr>
 <tr class="separator:ae8338ef994526611957bd02264bc9b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae497033c7f79aa30c10937e8c67d7287"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae497033c7f79aa30c10937e8c67d7287"></a>
-static string&#160;</td><td class="memItemRight" valign="bottom"><b>SaveFlightState</b> (FlightState st, string saveFileName, string saveFolder, SaveMode saveMode)</td></tr>
+<tr class="memitem:ae497033c7f79aa30c10937e8c67d7287"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_persistence.html#ae497033c7f79aa30c10937e8c67d7287">SaveFlightState</a> (FlightState st, string saveFileName, string saveFolder, SaveMode saveMode)</td></tr>
 <tr class="separator:ae497033c7f79aa30c10937e8c67d7287"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2a68a33f91ae000a612000af839e11f"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_persistence.html#ac2a68a33f91ae000a612000af839e11f">SaveGame</a> (string saveFileName, string saveFolder, SaveMode saveMode)</td></tr>
 <tr class="memdesc:ac2a68a33f91ae000a612000af839e11f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a persistence file containing the current game state. Probably persistent.sfs and quicksave.sfs are generated by calls to this function.  <a href="#ac2a68a33f91ae000a612000af839e11f">More...</a><br /></td></tr>
 <tr class="separator:ac2a68a33f91ae000a612000af839e11f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7719be8306b3ee0c9a635b1c56d129f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7719be8306b3ee0c9a635b1c56d129f9"></a>
-static string&#160;</td><td class="memItemRight" valign="bottom"><b>SaveGame</b> (Game game, string saveFileName, string saveFolder, SaveMode saveMode)</td></tr>
+<tr class="memitem:a7719be8306b3ee0c9a635b1c56d129f9"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_persistence.html#a7719be8306b3ee0c9a635b1c56d129f9">SaveGame</a> (Game game, string saveFileName, string saveFolder, SaveMode saveMode)</td></tr>
 <tr class="separator:a7719be8306b3ee0c9a635b1c56d129f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains some functions you can call to save the game state to a persistence file, or load the game state from a persistence file. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ae4bd08bc0771686ecaeec44788a752a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GamePersistence.GamePersistence </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aa2dfe085beb254ce81ec2c84b9a78e11"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static FlightState GamePersistence.LoadFlightState </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>saveFolder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>haltIfIncompatible</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>suppressErrorMessage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a34e7656544dd08d0feb440609c56be6b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Game GamePersistence.LoadGame </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>saveFolder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>haltIfIncompatible</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>suppressErrorMessage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae8338ef994526611957bd02264bc9b37"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string GamePersistence.SaveFlightState </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>saveFileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>saveFolder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SaveMode&#160;</td>
+          <td class="paramname"><em>saveMode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae497033c7f79aa30c10937e8c67d7287"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string GamePersistence.SaveFlightState </td>
+          <td>(</td>
+          <td class="paramtype">FlightState&#160;</td>
+          <td class="paramname"><em>st</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>saveFileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>saveFolder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SaveMode&#160;</td>
+          <td class="paramname"><em>saveMode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ac2a68a33f91ae000a612000af839e11f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -166,7 +362,7 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>SaveGame</b>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">saveFileName</td><td>The name of the persistence file to create (".sfs" will be appended to the file name).</td></tr>
-    <tr><td class="paramname">saveFolder</td><td>The folder in which to create the save file. Try using HighLogic.SaveFolder.</td></tr>
+    <tr><td class="paramname">saveFolder</td><td>The folder in which to create the save file. Try using <a class="el" href="class_high_logic.html#a52215346b3e539e2f2b9931119c816d9">HighLogic.SaveFolder</a>.</td></tr>
     <tr><td class="paramname">saveMode</td><td>Whether to overwrite, append, or abort if the given file already exists.</td></tr>
   </table>
   </dd>
@@ -175,13 +371,59 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>SaveGame</b>
 
 </div>
 </div>
+<a class="anchor" id="a7719be8306b3ee0c9a635b1c56d129f9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string GamePersistence.SaveGame </td>
+          <td>(</td>
+          <td class="paramtype">Game&#160;</td>
+          <td class="paramname"><em>game</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>saveFileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>saveFolder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SaveMode&#160;</td>
+          <td class="paramname"><em>saveMode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/GamePersistence.cs</li>
+<li>src/<a class="el" href="_game_persistence_8cs.html">GamePersistence.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 29 2014 00:30:30 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 29 2014 00:44:38 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

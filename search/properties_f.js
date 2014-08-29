@@ -1,7 +1,19 @@
 var searchData=
 [
-  ['this_5bint_20index_5d',['this[int index]',['../class_vessel.html#a8a1e31157c85001bef4478c7b96b11ce',1,'Vessel']]],
-  ['this_5bstring_20key_5d',['this[string key]',['../class_k_s_p_1_1_i_o_1_1_plugin_config_node.html#af39e90941e157faa3cb75bc2e8c3e834',1,'KSP.IO.PluginConfigNode.this[string key]()'],['../class_k_s_p_1_1_i_o_1_1_plugin_configuration.html#afb6c5c2bb6e51238efbc5ece3b7c144f',1,'KSP.IO.PluginConfiguration.this[string key]()']]],
-  ['this_5buint_20flightid_5d',['this[uint flightID]',['../class_vessel.html#acc19c14e1acdc0bbd34d90fe23dce2b9',1,'Vessel']]],
-  ['timeatcurrentstate',['TimeAtCurrentState',['../class_kerbal_f_s_m.html#a72380905f375d36c49aa326f81cc3725',1,'KerbalFSM']]]
+  ['savefolder',['SaveFolder',['../class_high_logic.html#a52215346b3e539e2f2b9931119c816d9',1,'HighLogic']]],
+  ['scalefactor',['ScaleFactor',['../class_scaled_space.html#aeb607935e7cebb31c4bfc8e5a396a819',1,'ScaledSpace']]],
+  ['scenetransform',['SceneTransform',['../class_scaled_space.html#a88fbd284af9f824484d984024af7b657',1,'ScaledSpace']]],
+  ['selectedpart',['SelectedPart',['../class_editor_logic.html#a3c70da41a41674e727ff9d98573fd652',1,'EditorLogic']]],
+  ['semilatusrectum',['semiLatusRectum',['../class_orbit.html#ac74d23887d855c45e693fcd73c76c389',1,'Orbit']]],
+  ['semiminoraxis',['semiMinorAxis',['../class_orbit.html#abf83362992d32812c1d59e470b1db1cc',1,'Orbit']]],
+  ['shipfileimage',['ShipFileImage',['../class_editor_logic.html#aa14f07aeb198b018f28bdfe63ce7d68c',1,'EditorLogic']]],
+  ['skin',['Skin',['../class_high_logic.html#a71e9896216132f66289be6b17c652a41',1,'HighLogic']]],
+  ['sortedshiplist',['SortedShipList',['../class_editor_logic.html#a3a5eed04360370bfc46f54755e6f9d37',1,'EditorLogic']]],
+  ['source',['Source',['../class_k_s_p_1_1_i_o_1_1_i_o_exception.html#a4bcf31972b81d24c151fc44a76340122',1,'KSP::IO::IOException']]],
+  ['splashed',['Splashed',['../class_part.html#ac81027c5a7433209064d2c2ed6217f9b',1,'Part']]],
+  ['sqrmagnitude',['sqrMagnitude',['../struct_vector3d.html#a697f9819e9645e720c4d721891ac64c5',1,'Vector3d']]],
+  ['stacktrace',['StackTrace',['../class_k_s_p_1_1_i_o_1_1_i_o_exception.html#af3cdc897fced350b4208483046c00efb',1,'KSP::IO::IOException']]],
+  ['started',['Started',['../class_kerbal_f_s_m.html#a01523fbabeec4f926d365a1b12e9d304',1,'KerbalFSM']]],
+  ['state',['State',['../class_editor_logic.html#af5a5b7b5653b542d3a5f8617ea19f848',1,'EditorLogic.State()'],['../class_part.html#ae24d7298eb98c13487d470ad1cbc1d3a',1,'Part.State()']]],
+  ['stateevents',['StateEvents',['../class_k_f_s_m_state.html#a0dc1446b3f4703c4b43a9f24da7dc949',1,'KFSMState']]]
 ];

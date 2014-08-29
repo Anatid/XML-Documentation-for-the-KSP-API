@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,6 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_k_s_p_event-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -89,7 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Apply this attribute to a function in a <a class="el" href="class_part_module.html" title="Extending PartModule lets you add new functionality to parts. The main class of many plugins will be ...">PartModule</a> to make it callable by the player via the right click menu of the part, or from other plugin code via Part.SendEvent.  
+<p>Apply this attribute to a function in a <a class="el" href="class_part_module.html" title="Extending PartModule lets you add new functionality to parts. The main class of many plugins will be ...">PartModule</a> to make it callable by the player via the right click menu of the part, or from other plugin code via <a class="el" href="class_part.html#af945dc7aa79ab95fe7b301a71b71630c">Part.SendEvent</a>.  
  <a href="class_k_s_p_event.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for KSPEvent:</div>
@@ -100,13 +102,17 @@ Inheritance diagram for KSPEvent:</div>
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:affa19e139916fb37d75fa7e93534b906"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_s_p_event.html#affa19e139916fb37d75fa7e93534b906">KSPEvent</a> ()</td></tr>
+<tr class="separator:affa19e139916fb37d75fa7e93534b906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a0f673ba49f60c7308fd650725719e60c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_s_p_event.html#a0f673ba49f60c7308fd650725719e60c">active</a></td></tr>
-<tr class="memdesc:a0f673ba49f60c7308fd650725719e60c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this event can be triggered through Part.SendEvent.  <a href="#a0f673ba49f60c7308fd650725719e60c">More...</a><br /></td></tr>
+<tr class="memdesc:a0f673ba49f60c7308fd650725719e60c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this event can be triggered through <a class="el" href="class_part.html#af945dc7aa79ab95fe7b301a71b71630c">Part.SendEvent</a>.  <a href="#a0f673ba49f60c7308fd650725719e60c">More...</a><br /></td></tr>
 <tr class="separator:a0f673ba49f60c7308fd650725719e60c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a310f28d862e0b2658910b56628199e6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a310f28d862e0b2658910b56628199e6b"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>category</b></td></tr>
+<tr class="memitem:a310f28d862e0b2658910b56628199e6b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_s_p_event.html#a310f28d862e0b2658910b56628199e6b">category</a></td></tr>
 <tr class="separator:a310f28d862e0b2658910b56628199e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09964cff211d82641509a3197ff024e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_s_p_event.html#a09964cff211d82641509a3197ff024e3">externalToEVAOnly</a></td></tr>
 <tr class="memdesc:a09964cff211d82641509a3197ff024e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the event is only available when out on EVA.  <a href="#a09964cff211d82641509a3197ff024e3">More...</a><br /></td></tr>
@@ -117,25 +123,39 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>category</b></td></
 <tr class="memitem:acf4d65c04e690df716621697414a3f22"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_s_p_event.html#acf4d65c04e690df716621697414a3f22">guiActiveUnfocused</a></td></tr>
 <tr class="memdesc:acf4d65c04e690df716621697414a3f22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the event is shown as available in the right click menu even when the part is on a ship not currently being controlled by the player (but close enough to right click).  <a href="#acf4d65c04e690df716621697414a3f22">More...</a><br /></td></tr>
 <tr class="separator:acf4d65c04e690df716621697414a3f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a745922f63f8ea7e6a6f7530b08ad87"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a745922f63f8ea7e6a6f7530b08ad87"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>guiIcon</b></td></tr>
+<tr class="memitem:a4a745922f63f8ea7e6a6f7530b08ad87"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_s_p_event.html#a4a745922f63f8ea7e6a6f7530b08ad87">guiIcon</a></td></tr>
 <tr class="separator:a4a745922f63f8ea7e6a6f7530b08ad87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90414a99fd4ca8b67874464643dd3052"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_s_p_event.html#a90414a99fd4ca8b67874464643dd3052">guiName</a></td></tr>
 <tr class="memdesc:a90414a99fd4ca8b67874464643dd3052"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name shown for the event in the right click menu.  <a href="#a90414a99fd4ca8b67874464643dd3052">More...</a><br /></td></tr>
 <tr class="separator:a90414a99fd4ca8b67874464643dd3052"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae5d46edfe0697528fea9ac0af1c91b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae5d46edfe0697528fea9ac0af1c91b4"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDefault</b></td></tr>
+<tr class="memitem:aae5d46edfe0697528fea9ac0af1c91b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_s_p_event.html#aae5d46edfe0697528fea9ac0af1c91b4">isDefault</a></td></tr>
 <tr class="separator:aae5d46edfe0697528fea9ac0af1c91b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a096cc39c1abba0974d3d47b5b2af2f60"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_s_p_event.html#a096cc39c1abba0974d3d47b5b2af2f60">name</a></td></tr>
-<tr class="memdesc:a096cc39c1abba0974d3d47b5b2af2f60"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the event, which can be used to trigger the event using from plugin code using Part.SendEvent.  <a href="#a096cc39c1abba0974d3d47b5b2af2f60">More...</a><br /></td></tr>
+<tr class="memdesc:a096cc39c1abba0974d3d47b5b2af2f60"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the event, which can be used to trigger the event using from plugin code using <a class="el" href="class_part.html#af945dc7aa79ab95fe7b301a71b71630c">Part.SendEvent</a>.  <a href="#a096cc39c1abba0974d3d47b5b2af2f60">More...</a><br /></td></tr>
 <tr class="separator:a096cc39c1abba0974d3d47b5b2af2f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a644e8f5b1b2bcfca825708e9946ac2b0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_s_p_event.html#a644e8f5b1b2bcfca825708e9946ac2b0">unfocusedRange</a></td></tr>
 <tr class="memdesc:a644e8f5b1b2bcfca825708e9946ac2b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the part is on a ship not being controlled by the player, how close the player needs to be (in meters) in order for the event to appear in the right click menu.  <a href="#a644e8f5b1b2bcfca825708e9946ac2b0">More...</a><br /></td></tr>
 <tr class="separator:a644e8f5b1b2bcfca825708e9946ac2b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Apply this attribute to a function in a <a class="el" href="class_part_module.html" title="Extending PartModule lets you add new functionality to parts. The main class of many plugins will be ...">PartModule</a> to make it callable by the player via the right click menu of the part, or from other plugin code via Part.SendEvent. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+<div class="textblock"><p>Apply this attribute to a function in a <a class="el" href="class_part_module.html" title="Extending PartModule lets you add new functionality to parts. The main class of many plugins will be ...">PartModule</a> to make it callable by the player via the right click menu of the part, or from other plugin code via <a class="el" href="class_part.html#af945dc7aa79ab95fe7b301a71b71630c">Part.SendEvent</a>. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="affa19e139916fb37d75fa7e93534b906"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KSPEvent.KSPEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a0f673ba49f60c7308fd650725719e60c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -146,7 +166,19 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDefault</b></td></t
       </table>
 </div><div class="memdoc">
 
-<p>Whether this event can be triggered through Part.SendEvent. </p>
+<p>Whether this event can be triggered through <a class="el" href="class_part.html#af945dc7aa79ab95fe7b301a71b71630c">Part.SendEvent</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a310f28d862e0b2658910b56628199e6b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string KSPEvent.category</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -192,6 +224,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDefault</b></td></t
 
 </div>
 </div>
+<a class="anchor" id="a4a745922f63f8ea7e6a6f7530b08ad87"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string KSPEvent.guiIcon</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a90414a99fd4ca8b67874464643dd3052"></a>
 <div class="memitem">
 <div class="memproto">
@@ -206,6 +250,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDefault</b></td></t
 
 </div>
 </div>
+<a class="anchor" id="aae5d46edfe0697528fea9ac0af1c91b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KSPEvent.isDefault</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a096cc39c1abba0974d3d47b5b2af2f60"></a>
 <div class="memitem">
 <div class="memproto">
@@ -216,7 +272,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDefault</b></td></t
       </table>
 </div><div class="memdoc">
 
-<p>The name of the event, which can be used to trigger the event using from plugin code using Part.SendEvent. </p>
+<p>The name of the event, which can be used to trigger the event using from plugin code using <a class="el" href="class_part.html#af945dc7aa79ab95fe7b301a71b71630c">Part.SendEvent</a>. </p>
 
 </div>
 </div>
@@ -235,12 +291,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDefault</b></td></t
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/KSPEvent.cs</li>
+<li>src/<a class="el" href="_k_s_p_event_8cs.html">KSPEvent.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 29 2014 00:30:30 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 29 2014 00:44:38 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

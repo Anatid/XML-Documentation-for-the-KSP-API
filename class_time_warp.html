@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -114,6 +115,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a0eae5884b47c0ddee20c831088e76477"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_time_warp.html#a0eae5884b47c0ddee20c831088e76477">TimeWarp</a> ()</td></tr>
+<tr class="separator:a0eae5884b47c0ddee20c831088e76477"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33c19a0597d0fbfedfafcbe321fed298"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_time_warp.html#a33c19a0597d0fbfedfafcbe321fed298">GetAltitudeLimit</a> (int i, <a class="el" href="class_celestial_body.html">CelestialBody</a> body)</td></tr>
 <tr class="memdesc:a33c19a0597d0fbfedfafcbe321fed298"><td class="mdescLeft">&#160;</td><td class="mdescRight">Presumably, gets the minimum altitude in meters above the sea level of the given body at which the given warp rate index is allowed.  <a href="#a33c19a0597d0fbfedfafcbe321fed298">More...</a><br /></td></tr>
 <tr class="separator:a33c19a0597d0fbfedfafcbe321fed298"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,35 +132,26 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a789ad65875b65509649d42aa4bfbe855"><td class="memItemLeft" align="right" valign="top">float[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_time_warp.html#a789ad65875b65509649d42aa4bfbe855">altitudeLimits</a></td></tr>
 <tr class="memdesc:a789ad65875b65509649d42aa4bfbe855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unused? CelestialBodies have their own sets of altitude limits.  <a href="#a789ad65875b65509649d42aa4bfbe855">More...</a><br /></td></tr>
 <tr class="separator:a789ad65875b65509649d42aa4bfbe855"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb1828930466cddd86ccb8ae953591d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb1828930466cddd86ccb8ae953591d5"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>current_rate_index</b></td></tr>
+<tr class="memitem:adb1828930466cddd86ccb8ae953591d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_time_warp.html#adb1828930466cddd86ccb8ae953591d5">current_rate_index</a></td></tr>
 <tr class="separator:adb1828930466cddd86ccb8ae953591d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adec1e1979df0f72007420e8f0683588e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adec1e1979df0f72007420e8f0683588e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>maxModeSwitchRate_index</b></td></tr>
+<tr class="memitem:adec1e1979df0f72007420e8f0683588e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_time_warp.html#adec1e1979df0f72007420e8f0683588e">maxModeSwitchRate_index</a></td></tr>
 <tr class="separator:adec1e1979df0f72007420e8f0683588e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e66230b859672145709b7bd47317609"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e66230b859672145709b7bd47317609"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>maxPhysicsRate_index</b></td></tr>
+<tr class="memitem:a2e66230b859672145709b7bd47317609"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_time_warp.html#a2e66230b859672145709b7bd47317609">maxPhysicsRate_index</a></td></tr>
 <tr class="separator:a2e66230b859672145709b7bd47317609"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae01801000004b1fba54d77f11a196cfa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae01801000004b1fba54d77f11a196cfa"></a>
-<a class="el" href="class_time_warp.html#aa35d942317381d27dd5ba64316c09123">TimeWarp.Modes</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Mode</b></td></tr>
+<tr class="memitem:ae01801000004b1fba54d77f11a196cfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_time_warp.html#aa35d942317381d27dd5ba64316c09123">TimeWarp.Modes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_time_warp.html#ae01801000004b1fba54d77f11a196cfa">Mode</a></td></tr>
 <tr class="separator:ae01801000004b1fba54d77f11a196cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61f4f34c6c49f25973c99072b913924b"><td class="memItemLeft" align="right" valign="top">float[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_time_warp.html#a61f4f34c6c49f25973c99072b913924b">physicsWarpRates</a></td></tr>
 <tr class="memdesc:a61f4f34c6c49f25973c99072b913924b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available physics warp rates. In 0.18.2 these are {1, 2, 3, 4} by default. You can modify the available rates by modifying this array.  <a href="#a61f4f34c6c49f25973c99072b913924b">More...</a><br /></td></tr>
 <tr class="separator:a61f4f34c6c49f25973c99072b913924b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a425fa1488cc653b338e2e79aa0a77645"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a425fa1488cc653b338e2e79aa0a77645"></a>
-GUIStyle&#160;</td><td class="memItemRight" valign="bottom"><b>screenTextStyle</b></td></tr>
+<tr class="memitem:a425fa1488cc653b338e2e79aa0a77645"><td class="memItemLeft" align="right" valign="top">GUIStyle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_time_warp.html#a425fa1488cc653b338e2e79aa0a77645">screenTextStyle</a></td></tr>
 <tr class="separator:a425fa1488cc653b338e2e79aa0a77645"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd7aebbe2f6ee3e625a286485e22dcc0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd7aebbe2f6ee3e625a286485e22dcc0"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>textDuration</b></td></tr>
+<tr class="memitem:afd7aebbe2f6ee3e625a286485e22dcc0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_time_warp.html#afd7aebbe2f6ee3e625a286485e22dcc0">textDuration</a></td></tr>
 <tr class="separator:afd7aebbe2f6ee3e625a286485e22dcc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a5042118a4d23220bba49515dcb78ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a5042118a4d23220bba49515dcb78ed"></a>
-ScreenSafeUISlideTab&#160;</td><td class="memItemRight" valign="bottom"><b>timeQuadrantTab</b></td></tr>
+<tr class="memitem:a1a5042118a4d23220bba49515dcb78ed"><td class="memItemLeft" align="right" valign="top">ScreenSafeUISlideTab&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_time_warp.html#a1a5042118a4d23220bba49515dcb78ed">timeQuadrantTab</a></td></tr>
 <tr class="separator:a1a5042118a4d23220bba49515dcb78ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a259685d7dcf6069192819f0d52bbdd87"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a259685d7dcf6069192819f0d52bbdd87"></a>
-ScreenSafeUISliderButton&#160;</td><td class="memItemRight" valign="bottom"><b>warpHighButton</b></td></tr>
+<tr class="memitem:a259685d7dcf6069192819f0d52bbdd87"><td class="memItemLeft" align="right" valign="top">ScreenSafeUISliderButton&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_time_warp.html#a259685d7dcf6069192819f0d52bbdd87">warpHighButton</a></td></tr>
 <tr class="separator:a259685d7dcf6069192819f0d52bbdd87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c913affafcb09aa90d994195558827d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c913affafcb09aa90d994195558827d"></a>
-ScreenSafeUISliderButton&#160;</td><td class="memItemRight" valign="bottom"><b>warpLowButton</b></td></tr>
+<tr class="memitem:a7c913affafcb09aa90d994195558827d"><td class="memItemLeft" align="right" valign="top">ScreenSafeUISliderButton&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_time_warp.html#a7c913affafcb09aa90d994195558827d">warpLowButton</a></td></tr>
 <tr class="separator:a7c913affafcb09aa90d994195558827d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa14fe71a64694b55d160f5195515a68f"><td class="memItemLeft" align="right" valign="top">float[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_time_warp.html#aa14fe71a64694b55d160f5195515a68f">warpRates</a></td></tr>
 <tr class="memdesc:aa14fe71a64694b55d160f5195515a68f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available regular warp rates. In 0.18.2 these are {1, 5, 10, 50, 100, 1000, 10000, 100000} by default. You can modify the available rates by modifying this array.  <a href="#aa14fe71a64694b55d160f5195515a68f">More...</a><br /></td></tr>
@@ -177,14 +171,12 @@ Properties</h2></td></tr>
 <tr class="memitem:ab64211bc31f0cf862377fc777c0ff918"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_time_warp.html#ab64211bc31f0cf862377fc777c0ff918">CurrentRateIndex</a><code> [get]</code></td></tr>
 <tr class="memdesc:ab64211bc31f0cf862377fc777c0ff918"><td class="mdescLeft">&#160;</td><td class="mdescRight">The index of the current current warp rate in either warpRates or physicsWarpRates, depending on whether WarpMode is HIGH or LOW. Note that CurrentRate may not equal the warp rate indexed by CurrentRateIndex if <a class="el" href="namespace_k_s_p.html">KSP</a> has not finished interpolating the last warp change.  <a href="#ab64211bc31f0cf862377fc777c0ff918">More...</a><br /></td></tr>
 <tr class="separator:ab64211bc31f0cf862377fc777c0ff918"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69dbb75229c46cf9e1687c4a2a71c1fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69dbb75229c46cf9e1687c4a2a71c1fd"></a>
-static float&#160;</td><td class="memItemRight" valign="bottom"><b>deltaTime</b><code> [get]</code></td></tr>
+<tr class="memitem:a69dbb75229c46cf9e1687c4a2a71c1fd"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_time_warp.html#a69dbb75229c46cf9e1687c4a2a71c1fd">deltaTime</a><code> [get]</code></td></tr>
 <tr class="separator:a69dbb75229c46cf9e1687c4a2a71c1fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3240fb7f50651ecb725b19c9af6016a"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_time_warp.html#ac3240fb7f50651ecb725b19c9af6016a">fixedDeltaTime</a><code> [get]</code></td></tr>
 <tr class="memdesc:ac3240fb7f50651ecb725b19c9af6016a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time between FixedUpdate cycles (i.e., the time between physics steps). See the Unity FixedUpdate documentation for more details.  <a href="#ac3240fb7f50651ecb725b19c9af6016a">More...</a><br /></td></tr>
 <tr class="separator:ac3240fb7f50651ecb725b19c9af6016a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2917e5bb9b25277334b9f816d679e550"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2917e5bb9b25277334b9f816d679e550"></a>
-static float&#160;</td><td class="memItemRight" valign="bottom"><b>MaxPhysicsRate</b><code> [get]</code></td></tr>
+<tr class="memitem:a2917e5bb9b25277334b9f816d679e550"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_time_warp.html#a2917e5bb9b25277334b9f816d679e550">MaxPhysicsRate</a><code> [get]</code></td></tr>
 <tr class="separator:a2917e5bb9b25277334b9f816d679e550"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a419004654979bbf56cb751b62838dae2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_time_warp.html#aa35d942317381d27dd5ba64316c09123">TimeWarp.Modes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_time_warp.html#a419004654979bbf56cb751b62838dae2">WarpMode</a><code> [get]</code></td></tr>
 <tr class="memdesc:a419004654979bbf56cb751b62838dae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether we are in regular warp mode or physics warp mode  <a href="#a419004654979bbf56cb751b62838dae2">More...</a><br /></td></tr>
@@ -210,6 +202,22 @@ static float&#160;</td><td class="memItemRight" valign="bottom"><b>MaxPhysicsRat
 <p>Physics warp mode </p>
 </td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a0eae5884b47c0ddee20c831088e76477"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TimeWarp.TimeWarp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -308,6 +316,18 @@ static float&#160;</td><td class="memItemRight" valign="bottom"><b>MaxPhysicsRat
 
 </div>
 </div>
+<a class="anchor" id="adb1828930466cddd86ccb8ae953591d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TimeWarp.current_rate_index</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a26a23e9771e3b52ea6db51ce9d71555b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -330,6 +350,42 @@ static float&#160;</td><td class="memItemRight" valign="bottom"><b>MaxPhysicsRat
 
 </div>
 </div>
+<a class="anchor" id="adec1e1979df0f72007420e8f0683588e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TimeWarp.maxModeSwitchRate_index</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2e66230b859672145709b7bd47317609"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TimeWarp.maxPhysicsRate_index</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae01801000004b1fba54d77f11a196cfa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_time_warp.html#aa35d942317381d27dd5ba64316c09123">TimeWarp.Modes</a> TimeWarp.Mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a61f4f34c6c49f25973c99072b913924b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -341,6 +397,66 @@ static float&#160;</td><td class="memItemRight" valign="bottom"><b>MaxPhysicsRat
 </div><div class="memdoc">
 
 <p>The available physics warp rates. In 0.18.2 these are {1, 2, 3, 4} by default. You can modify the available rates by modifying this array. </p>
+
+</div>
+</div>
+<a class="anchor" id="a425fa1488cc653b338e2e79aa0a77645"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GUIStyle TimeWarp.screenTextStyle</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afd7aebbe2f6ee3e625a286485e22dcc0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float TimeWarp.textDuration</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1a5042118a4d23220bba49515dcb78ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ScreenSafeUISlideTab TimeWarp.timeQuadrantTab</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a259685d7dcf6069192819f0d52bbdd87"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ScreenSafeUISliderButton TimeWarp.warpHighButton</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7c913affafcb09aa90d994195558827d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ScreenSafeUISliderButton TimeWarp.warpLowButton</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -403,6 +519,26 @@ static float&#160;</td><td class="memItemRight" valign="bottom"><b>MaxPhysicsRat
 
 </div>
 </div>
+<a class="anchor" id="a69dbb75229c46cf9e1687c4a2a71c1fd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float TimeWarp.deltaTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ac3240fb7f50651ecb725b19c9af6016a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -422,6 +558,26 @@ static float&#160;</td><td class="memItemRight" valign="bottom"><b>MaxPhysicsRat
 </div><div class="memdoc">
 
 <p>The time between FixedUpdate cycles (i.e., the time between physics steps). See the Unity FixedUpdate documentation for more details. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2917e5bb9b25277334b9f816d679e550"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float TimeWarp.MaxPhysicsRate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -448,12 +604,12 @@ static float&#160;</td><td class="memItemRight" valign="bottom"><b>MaxPhysicsRat
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/TimeWarp.cs</li>
+<li>src/<a class="el" href="_time_warp_8cs.html">TimeWarp.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 29 2014 00:30:30 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 29 2014 00:44:39 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

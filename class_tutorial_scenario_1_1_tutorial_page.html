@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -124,8 +125,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3a4e128f56cf5108058c06bc36ed9cc5 inherit pub_methods_class_k_f_s_m_state"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_f_s_m_state.html#a3a4e128f56cf5108058c06bc36ed9cc5">IsValid</a> (<a class="el" href="class_k_f_s_m_event.html">KFSMEvent</a> ev)</td></tr>
 <tr class="memdesc:a3a4e128f56cf5108058c06bc36ed9cc5 inherit pub_methods_class_k_f_s_m_state"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the given event can be triggered from this state. An event must be added to a state before it can be triggered from that state.  <a href="#a3a4e128f56cf5108058c06bc36ed9cc5">More...</a><br /></td></tr>
 <tr class="separator:a3a4e128f56cf5108058c06bc36ed9cc5 inherit pub_methods_class_k_f_s_m_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4d27af70ced9d3c1457227fcc6382d8 inherit pub_methods_class_k_f_s_m_state"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa4d27af70ced9d3c1457227fcc6382d8"></a>
-override string&#160;</td><td class="memItemRight" valign="bottom"><b>ToString</b> ()</td></tr>
+<tr class="memitem:aa4d27af70ced9d3c1457227fcc6382d8 inherit pub_methods_class_k_f_s_m_state"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_f_s_m_state.html#aa4d27af70ced9d3c1457227fcc6382d8">ToString</a> ()</td></tr>
 <tr class="separator:aa4d27af70ced9d3c1457227fcc6382d8 inherit pub_methods_class_k_f_s_m_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -143,8 +143,7 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a1a2ab5d60e31273cf917a7fbe40e327f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The title displayed for this page.  <a href="#a1a2ab5d60e31273cf917a7fbe40e327f">More...</a><br /></td></tr>
 <tr class="separator:a1a2ab5d60e31273cf917a7fbe40e327f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_k_f_s_m_state"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_k_f_s_m_state')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_k_f_s_m_state.html">KFSMState</a></td></tr>
-<tr class="memitem:a7e5b5dd5b8cd29a3db9280e45f1bd6aa inherit pub_attribs_class_k_f_s_m_state"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e5b5dd5b8cd29a3db9280e45f1bd6aa"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>FrameCountAtStateEnter</b></td></tr>
+<tr class="memitem:a7e5b5dd5b8cd29a3db9280e45f1bd6aa inherit pub_attribs_class_k_f_s_m_state"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_f_s_m_state.html#a7e5b5dd5b8cd29a3db9280e45f1bd6aa">FrameCountAtStateEnter</a></td></tr>
 <tr class="separator:a7e5b5dd5b8cd29a3db9280e45f1bd6aa inherit pub_attribs_class_k_f_s_m_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68d4d7ed7ae436157a678f92de2ffa18 inherit pub_attribs_class_k_f_s_m_state"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_f_s_m_state.html#a68d4d7ed7ae436157a678f92de2ffa18">name</a></td></tr>
 <tr class="memdesc:a68d4d7ed7ae436157a678f92de2ffa18 inherit pub_attribs_class_k_f_s_m_state"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of this state.  <a href="#a68d4d7ed7ae436157a678f92de2ffa18">More...</a><br /></td></tr>
@@ -164,18 +163,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>FrameCountAtStateEnter
 <tr class="memitem:aa665823bf08bdd7f13d354acc59f57ac inherit pub_attribs_class_k_f_s_m_state"><td class="memItemLeft" align="right" valign="top">KFSMCallback&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_f_s_m_state.html#aa665823bf08bdd7f13d354acc59f57ac">OnUpdate</a></td></tr>
 <tr class="memdesc:aa665823bf08bdd7f13d354acc59f57ac inherit pub_attribs_class_k_f_s_m_state"><td class="mdescLeft">&#160;</td><td class="mdescRight">You can assign a delegate to this field, and the delegate will be call during each Update while the state machine is in this state.  <a href="#aa665823bf08bdd7f13d354acc59f57ac">More...</a><br /></td></tr>
 <tr class="separator:aa665823bf08bdd7f13d354acc59f57ac inherit pub_attribs_class_k_f_s_m_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d167f8dab7c4f5b083fd3782998616c inherit pub_attribs_class_k_f_s_m_state"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d167f8dab7c4f5b083fd3782998616c"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>TimeAtStateEnter</b></td></tr>
+<tr class="memitem:a7d167f8dab7c4f5b083fd3782998616c inherit pub_attribs_class_k_f_s_m_state"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_f_s_m_state.html#a7d167f8dab7c4f5b083fd3782998616c">TimeAtStateEnter</a></td></tr>
 <tr class="separator:a7d167f8dab7c4f5b083fd3782998616c inherit pub_attribs_class_k_f_s_m_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae407e468e34c64af76537d90868e7d1f inherit pub_attribs_class_k_f_s_m_state"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae407e468e34c64af76537d90868e7d1f"></a>
-KFSMUpdateMode&#160;</td><td class="memItemRight" valign="bottom"><b>updateMode</b></td></tr>
+<tr class="memitem:ae407e468e34c64af76537d90868e7d1f inherit pub_attribs_class_k_f_s_m_state"><td class="memItemLeft" align="right" valign="top">KFSMUpdateMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_f_s_m_state.html#ae407e468e34c64af76537d90868e7d1f">updateMode</a></td></tr>
 <tr class="separator:ae407e468e34c64af76537d90868e7d1f inherit pub_attribs_class_k_f_s_m_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_k_f_s_m_state"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_k_f_s_m_state')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_k_f_s_m_state.html">KFSMState</a></td></tr>
-<tr class="memitem:afc2f4f2827a6fd7a872852691a635b1b inherit pro_attribs_class_k_f_s_m_state"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc2f4f2827a6fd7a872852691a635b1b"></a>
-List&lt; <a class="el" href="class_k_f_s_m_event.html">KFSMEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>stateEvents</b></td></tr>
+<tr class="memitem:afc2f4f2827a6fd7a872852691a635b1b inherit pro_attribs_class_k_f_s_m_state"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_k_f_s_m_event.html">KFSMEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_f_s_m_state.html#afc2f4f2827a6fd7a872852691a635b1b">stateEvents</a></td></tr>
 <tr class="separator:afc2f4f2827a6fd7a872852691a635b1b inherit pro_attribs_class_k_f_s_m_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_class_k_f_s_m_state"><td colspan="2" onclick="javascript:toggleInherit('properties_class_k_f_s_m_state')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="class_k_f_s_m_state.html">KFSMState</a></td></tr>
 <tr class="memitem:a0dc1446b3f4703c4b43a9f24da7dc949 inherit properties_class_k_f_s_m_state"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_k_f_s_m_event.html">KFSMEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_f_s_m_state.html#a0dc1446b3f4703c4b43a9f24da7dc949">StateEvents</a><code> [get]</code></td></tr>
@@ -293,12 +289,12 @@ List&lt; <a class="el" href="class_k_f_s_m_event.html">KFSMEvent</a> &gt;&#160;<
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/TutorialScenario.cs</li>
+<li>src/<a class="el" href="_tutorial_scenario_8cs.html">TutorialScenario.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 29 2014 00:30:30 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 29 2014 00:44:39 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

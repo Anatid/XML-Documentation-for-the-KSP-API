@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,6 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_screen_messages-members.html">List of all members</a>  </div>
@@ -101,6 +103,11 @@ Inheritance diagram for ScreenMessages:</div>
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:acc45ed10753f10407815b2e17181871b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_screen_messages.html#acc45ed10753f10407815b2e17181871b">ScreenMessages</a> ()</td></tr>
+<tr class="separator:acc45ed10753f10407815b2e17181871b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:adb008cd8c566cc79f361debb9aafa3a1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_screen_messages.html#adb008cd8c566cc79f361debb9aafa3a1">PostScreenMessage</a> (ScreenMessage msg)</td></tr>
@@ -112,7 +119,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a24367618dd4a244376d8428d65789fdc"><td class="memItemLeft" align="right" valign="top">static ScreenMessage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_screen_messages.html#a24367618dd4a244376d8428d65789fdc">PostScreenMessage</a> (string message, float duration)</td></tr>
 <tr class="memdesc:a24367618dd4a244376d8428d65789fdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post a temporary message to the screen. Examples of screen messages are the "Warp = {number}x" message and the "Quicksaving..." message.  <a href="#a24367618dd4a244376d8428d65789fdc">More...</a><br /></td></tr>
 <tr class="separator:a24367618dd4a244376d8428d65789fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac43c7642b265f963ed62ae5563b3484b"><td class="memItemLeft" align="right" valign="top">static ScreenMessage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_screen_messages.html#ac43c7642b265f963ed62ae5563b3484b">PostScreenMessage</a> (string message, float duration, ScreenMessageStyle style)</td></tr>
+<tr class="memitem:ac43c7642b265f963ed62ae5563b3484b"><td class="memItemLeft" align="right" valign="top">static ScreenMessage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_screen_messages.html#ac43c7642b265f963ed62ae5563b3484b">PostScreenMessage</a> (string message, float duration, <a class="el" href="_screen_messages_8cs.html#ac19a4c3800d327889475848ccbbf9317">ScreenMessageStyle</a> style)</td></tr>
 <tr class="memdesc:ac43c7642b265f963ed62ae5563b3484b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post a temporary message to the screen. Examples of screen messages are the "Warp = {number}x" message and the "Quicksaving..." message.  <a href="#ac43c7642b265f963ed62ae5563b3484b">More...</a><br /></td></tr>
 <tr class="separator:ac43c7642b265f963ed62ae5563b3484b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af558f2b761d6b25684e095c2fb7ec15a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_screen_messages.html#af558f2b761d6b25684e095c2fb7ec15a">RemoveMessage</a> (ScreenMessage msg)</td></tr>
@@ -124,16 +131,30 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a2c8e2530562869dc59a0ffd4e2464644"><td class="memItemLeft" align="right" valign="top">List&lt; ScreenMessage &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_screen_messages.html#a2c8e2530562869dc59a0ffd4e2464644">activeMessages</a></td></tr>
 <tr class="memdesc:a2c8e2530562869dc59a0ffd4e2464644"><td class="mdescLeft">&#160;</td><td class="mdescRight">The set of currently active screen messages. This is a non-static member, but you can get a reference to the <a class="el" href="class_screen_messages.html" title="A class that lets you post temporary messages to the screen. If you use this class your messages will...">ScreenMessages</a> instance via  <a href="#a2c8e2530562869dc59a0ffd4e2464644">More...</a><br /></td></tr>
 <tr class="separator:a2c8e2530562869dc59a0ffd4e2464644"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b2bccbd3ef29a7dd043a0d72ab9b650"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b2bccbd3ef29a7dd043a0d72ab9b650"></a>
-GUIStyle[]&#160;</td><td class="memItemRight" valign="bottom"><b>textStyles</b></td></tr>
+<tr class="memitem:a7b2bccbd3ef29a7dd043a0d72ab9b650"><td class="memItemLeft" align="right" valign="top">GUIStyle[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_screen_messages.html#a7b2bccbd3ef29a7dd043a0d72ab9b650">textStyles</a></td></tr>
 <tr class="separator:a7b2bccbd3ef29a7dd043a0d72ab9b650"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a194fefe0e8adccdaa59a64b7fe448c21"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a194fefe0e8adccdaa59a64b7fe448c21"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>useRenderQueue</b></td></tr>
+<tr class="memitem:a194fefe0e8adccdaa59a64b7fe448c21"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_screen_messages.html#a194fefe0e8adccdaa59a64b7fe448c21">useRenderQueue</a></td></tr>
 <tr class="separator:a194fefe0e8adccdaa59a64b7fe448c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class that lets you post temporary messages to the screen. If you use this class your messages will automatically have the same style as regular in-game messages. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="acc45ed10753f10407815b2e17181871b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ScreenMessages.ScreenMessages </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="adb008cd8c566cc79f361debb9aafa3a1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -265,7 +286,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>useRenderQueue</b></t
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ScreenMessageStyle&#160;</td>
+          <td class="paramtype"><a class="el" href="_screen_messages_8cs.html#ac19a4c3800d327889475848ccbbf9317">ScreenMessageStyle</a>&#160;</td>
           <td class="paramname"><em>style</em>&#160;</td>
         </tr>
         <tr>
@@ -342,13 +363,37 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>useRenderQueue</b></t
 
 </div>
 </div>
+<a class="anchor" id="a7b2bccbd3ef29a7dd043a0d72ab9b650"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GUIStyle [] ScreenMessages.textStyles</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a194fefe0e8adccdaa59a64b7fe448c21"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ScreenMessages.useRenderQueue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/ScreenMessages.cs</li>
+<li>src/<a class="el" href="_screen_messages_8cs.html">ScreenMessages.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 29 2014 00:30:30 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 29 2014 00:44:39 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

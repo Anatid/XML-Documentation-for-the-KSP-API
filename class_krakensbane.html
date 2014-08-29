@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -104,8 +105,10 @@ Inheritance diagram for Krakensbane:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ade301880439ef60d1de9c451a3215fd1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_krakensbane.html#ade301880439ef60d1de9c451a3215fd1">Krakensbane</a> ()</td></tr>
+<tr class="separator:ade301880439ef60d1de9c451a3215fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe566b1244759794e5054526801048c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_krakensbane.html#abe566b1244759794e5054526801048c7">setOffset</a> (<a class="el" href="struct_vector3d.html">Vector3d</a> offset)</td></tr>
-<tr class="memdesc:abe566b1244759794e5054526801048c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves all vessels not on rails by the given position offset. This will usually only affect the active vessel, unless there are other vessels nearby. The offset can be very large and the vessels will not break, unlike for Vessel.SetPosition.  <a href="#abe566b1244759794e5054526801048c7">More...</a><br /></td></tr>
+<tr class="memdesc:abe566b1244759794e5054526801048c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves all vessels not on rails by the given position offset. This will usually only affect the active vessel, unless there are other vessels nearby. The offset can be very large and the vessels will not break, unlike for <a class="el" href="class_vessel.html#a0934c9c91d2dcb295da5c6f7a6c3e7df">Vessel.SetPosition</a>.  <a href="#abe566b1244759794e5054526801048c7">More...</a><br /></td></tr>
 <tr class="separator:abe566b1244759794e5054526801048c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -125,28 +128,38 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a5fd932774fc21fba8ed0722bc1c22d02"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5fd932774fc21fba8ed0722bc1c22d02"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>excessV</b></td></tr>
+<tr class="memitem:a5fd932774fc21fba8ed0722bc1c22d02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_krakensbane.html#a5fd932774fc21fba8ed0722bc1c22d02">excessV</a></td></tr>
 <tr class="separator:a5fd932774fc21fba8ed0722bc1c22d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99515ec2e6be455e95de235812922ab0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99515ec2e6be455e95de235812922ab0"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FrameVel</b></td></tr>
+<tr class="memitem:a99515ec2e6be455e95de235812922ab0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_krakensbane.html#a99515ec2e6be455e95de235812922ab0">FrameVel</a></td></tr>
 <tr class="separator:a99515ec2e6be455e95de235812922ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeecdec2f7f1199c07c0a19c8c98e8265"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeecdec2f7f1199c07c0a19c8c98e8265"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>lastCorrection</b></td></tr>
+<tr class="memitem:aeecdec2f7f1199c07c0a19c8c98e8265"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_krakensbane.html#aeecdec2f7f1199c07c0a19c8c98e8265">lastCorrection</a></td></tr>
 <tr class="separator:aeecdec2f7f1199c07c0a19c8c98e8265"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96a57c5de107c4447b3e84d50cd270bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96a57c5de107c4447b3e84d50cd270bc"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>MaxV</b></td></tr>
+<tr class="memitem:a96a57c5de107c4447b3e84d50cd270bc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_krakensbane.html#a96a57c5de107c4447b3e84d50cd270bc">MaxV</a></td></tr>
 <tr class="separator:a96a57c5de107c4447b3e84d50cd270bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca5edb2e2fc2de5bc7dbb64bbff6fb97"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca5edb2e2fc2de5bc7dbb64bbff6fb97"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RBVel</b></td></tr>
+<tr class="memitem:aca5edb2e2fc2de5bc7dbb64bbff6fb97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_krakensbane.html#aca5edb2e2fc2de5bc7dbb64bbff6fb97">RBVel</a></td></tr>
 <tr class="separator:aca5edb2e2fc2de5bc7dbb64bbff6fb97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50ba61a4206befcbf393d41867dc3897"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a50ba61a4206befcbf393d41867dc3897"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>totalVel</b></td></tr>
+<tr class="memitem:a50ba61a4206befcbf393d41867dc3897"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_krakensbane.html#a50ba61a4206befcbf393d41867dc3897">totalVel</a></td></tr>
 <tr class="separator:a50ba61a4206befcbf393d41867dc3897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The physics simulation has problems if vessels move too fast relative to the underlying reference frame used by the simulation, or get too far from the origin of the coordinate system. <a class="el" href="class_krakensbane.html" title="The physics simulation has problems if vessels move too fast relative to the underlying reference fra...">Krakensbane</a> shifts the reference frame origin and velocity so that the active vessel is always near the origin of, and moving slowly with respect to, the underlying coordinate system used by the physics simulation. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ade301880439ef60d1de9c451a3215fd1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Krakensbane.Krakensbane </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="acb1c07aeefa9cd22e622a64aa97f452a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -264,7 +277,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>MaxV</b></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Moves all vessels not on rails by the given position offset. This will usually only affect the active vessel, unless there are other vessels nearby. The offset can be very large and the vessels will not break, unlike for Vessel.SetPosition. </p>
+<p>Moves all vessels not on rails by the given position offset. This will usually only affect the active vessel, unless there are other vessels nearby. The offset can be very large and the vessels will not break, unlike for <a class="el" href="class_vessel.html#a0934c9c91d2dcb295da5c6f7a6c3e7df">Vessel.SetPosition</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">offset</td><td></td></tr>
@@ -274,13 +287,86 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>MaxV</b></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a5fd932774fc21fba8ed0722bc1c22d02"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Krakensbane.excessV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a99515ec2e6be455e95de235812922ab0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Krakensbane.FrameVel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeecdec2f7f1199c07c0a19c8c98e8265"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Krakensbane.lastCorrection</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a96a57c5de107c4447b3e84d50cd270bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Krakensbane.MaxV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aca5edb2e2fc2de5bc7dbb64bbff6fb97"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Krakensbane.RBVel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a50ba61a4206befcbf393d41867dc3897"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Krakensbane.totalVel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/Krakensbane.cs</li>
+<li>src/<a class="el" href="_krakensbane_8cs.html">Krakensbane.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 29 2014 00:30:30 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 29 2014 00:44:38 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

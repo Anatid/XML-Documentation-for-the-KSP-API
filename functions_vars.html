@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -86,6 +87,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_vars_g.html#index_g"><span>g</span></a></li>
       <li><a href="functions_vars_h.html#index_h"><span>h</span></a></li>
       <li><a href="functions_vars_i.html#index_i"><span>i</span></a></li>
+      <li><a href="functions_vars_j.html#index_j"><span>j</span></a></li>
       <li><a href="functions_vars_k.html#index_k"><span>k</span></a></li>
       <li><a href="functions_vars_l.html#index_l"><span>l</span></a></li>
       <li><a href="functions_vars_m.html#index_m"><span>m</span></a></li>
@@ -109,7 +111,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -128,6 +130,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>actionGroup
 : <a class="el" href="class_k_s_p_action.html#a301b3d045f3cc0cd779ea7f2976f9d1d">KSPAction</a>
 </li>
+<li>actionPanelBtn
+: <a class="el" href="class_editor_logic.html#a9408fa0408c0aadcdd72649e0ece9364">EditorLogic</a>
+</li>
 <li>ActivatesEvenIfDisconnected
 : <a class="el" href="class_part.html#a97cc0f47afa3f0c8de78846558bc7ef6">Part</a>
 </li>
@@ -140,14 +145,64 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>activePatch
 : <a class="el" href="class_orbit.html#a488229aa4687ba8ffcd23dce27353eb6">Orbit</a>
 </li>
+<li>activeTarget
+: <a class="el" href="class_flight_globals.html#a04d4b46890ab2e6a8e27da66a71bc664">FlightGlobals</a>
+</li>
+<li>activeVessel
+: <a class="el" href="class_flight_globals.html#a442148ee3d8afdeeacb41618f1ef1c87">FlightGlobals</a>
+</li>
+<li>airlock
+: <a class="el" href="class_part.html#a64455365abca149c70a8debc30c5eb65">Part</a>
+</li>
+<li>allowFlow
+: <a class="el" href="class_fuel_tank.html#aae39545cc2faec1042c5be70eab0529e">FuelTank</a>
+, <a class="el" href="class_fuel_tank_g_u_i.html#a86e25835dab94a86e2b581bd61c2a3bc">FuelTankGUI</a>
+</li>
+<li>allowNodeAttachment
+: <a class="el" href="class_editor_logic.html#a94b3153abea28ced52e08fab344b0bd8">EditorLogic</a>
+</li>
+<li>allowRestart
+: <a class="el" href="class_module_engines.html#a81c39b11a6555fcde29fbeb474b795b6">ModuleEngines</a>
+</li>
+<li>allowShutdown
+: <a class="el" href="class_module_engines.html#ad78c840533a34217e7b083e8fbac8375">ModuleEngines</a>
+</li>
+<li>allowSrfAttachment
+: <a class="el" href="class_editor_logic.html#a879115e20912e7b1572331a2ffabf52f">EditorLogic</a>
+</li>
 <li>altitude
-: <a class="el" href="class_vessel.html#a0f4f74678e47f27bb21c60a7a11b56d2">Vessel</a>
+: <a class="el" href="class_orbit.html#ae001aa0cf604ed46802d0b1d625f4918">Orbit</a>
+, <a class="el" href="class_vessel.html#a0f4f74678e47f27bb21c60a7a11b56d2">Vessel</a>
 </li>
 <li>altitudeLimits
 : <a class="el" href="class_time_warp.html#a789ad65875b65509649d42aa4bfbe855">TimeWarp</a>
 </li>
+<li>altitudeMultiplier
+: <a class="el" href="class_celestial_body.html#acaace7c010d0c5fedcac29d811719a35">CelestialBody</a>
+</li>
+<li>altitudeOffset
+: <a class="el" href="class_celestial_body.html#a7b6f076fc8a0b195f5458163736726ee">CelestialBody</a>
+</li>
 <li>amount
 : <a class="el" href="class_part_resource.html#a932f8497842977e04b2db1182194a3c2">PartResource</a>
+</li>
+<li>amountAvailable
+: <a class="el" href="class_available_part.html#aeccc2c6296e1895fede6bcb90fc96223">AvailablePart</a>
+</li>
+<li>an
+: <a class="el" href="class_orbit.html#aefe2f6a4e65aee883a17cc9cc66ac000">Orbit</a>
+</li>
+<li>anchor
+: <a class="el" href="class_application_launcher.html#a83d8cc66ed2acfff381ae60e0a0e608f">ApplicationLauncher</a>
+</li>
+<li>angleSnapButton
+: <a class="el" href="class_editor_logic.html#a0192e64561db9cbe5f2233bf4f842f2a">EditorLogic</a>
+</li>
+<li>angleSnapSprite
+: <a class="el" href="class_editor_logic.html#a2e11a5bd94f1a75bc3a8b64e84c95609">EditorLogic</a>
+</li>
+<li>angularDrag
+: <a class="el" href="class_part.html#aeb6ba75b709cc219370f9e8829a63f0b">Part</a>
 </li>
 <li>angularMomentum
 : <a class="el" href="class_vessel.html#aa26c594fe4ce92746977edf00606de47">Vessel</a>
@@ -159,14 +214,77 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_celestial_body.html#a3e686d5cc71bb53e1a64b31163ed63a6">CelestialBody</a>
 , <a class="el" href="class_vessel.html#aa4fa9007069fa0c530a8ae5ceb07eb78">Vessel</a>
 </li>
+<li>anim
+: <a class="el" href="class_kerbal_instructor.html#a0f2d8a62b9b69eb2157505bd3afea9b8">KerbalInstructor</a>
+</li>
+<li>anim_false_disagreeA
+: <a class="el" href="class_kerbal_instructor.html#a68a034091d6c04dca9d27440f8af0cc5">KerbalInstructor</a>
+</li>
+<li>anim_false_disagreeB
+: <a class="el" href="class_kerbal_instructor.html#a5013cdbf8e1beab63c8b5fec88d32297">KerbalInstructor</a>
+</li>
+<li>anim_false_disagreeC
+: <a class="el" href="class_kerbal_instructor.html#a544d7b0ce6428623c93d08ee6b5cd8bd">KerbalInstructor</a>
+</li>
+<li>anim_false_disappointed
+: <a class="el" href="class_kerbal_instructor.html#a985deb8ed13ca524e2c23acc6f4db469">KerbalInstructor</a>
+</li>
+<li>anim_false_sadA
+: <a class="el" href="class_kerbal_instructor.html#a6d443705e9d024d24c087668701358c7">KerbalInstructor</a>
+</li>
+<li>anim_idle
+: <a class="el" href="class_kerbal_instructor.html#ad125845c820cbb0ea0fbc1c9bef5369b">KerbalInstructor</a>
+</li>
+<li>anim_idle_lookAround
+: <a class="el" href="class_kerbal_instructor.html#a29c3a6fa1cfce6b9d1b2bdcf6cf9b6ec">KerbalInstructor</a>
+</li>
+<li>anim_idle_sigh
+: <a class="el" href="class_kerbal_instructor.html#af7b653e50b522529f0cecebaaf956617">KerbalInstructor</a>
+</li>
+<li>anim_idle_wonder
+: <a class="el" href="class_kerbal_instructor.html#af18427dde69259eaf95f2285baf85a28">KerbalInstructor</a>
+</li>
+<li>anim_true_nodA
+: <a class="el" href="class_kerbal_instructor.html#a1830c23b045fe23ed08cf6a19b01bbe4">KerbalInstructor</a>
+</li>
+<li>anim_true_nodB
+: <a class="el" href="class_kerbal_instructor.html#ab89bbc723f1a3f3549943b1dff123821">KerbalInstructor</a>
+</li>
+<li>anim_true_smileA
+: <a class="el" href="class_kerbal_instructor.html#a912c7f85285770e823f37676856efb2c">KerbalInstructor</a>
+</li>
+<li>anim_true_smileB
+: <a class="el" href="class_kerbal_instructor.html#a2faac61d5aaed04f773afc1289803660">KerbalInstructor</a>
+</li>
+<li>anim_true_thumbsUp
+: <a class="el" href="class_kerbal_instructor.html#adcf3932c0f488a153584dfb95da788fa">KerbalInstructor</a>
+</li>
+<li>anim_true_thumbUp
+: <a class="el" href="class_kerbal_instructor.html#a6ae442a10bc2c79903a6eb49f956c75b">KerbalInstructor</a>
+</li>
+<li>AnimationRoot
+: <a class="el" href="class_kerbal_instructor.html#af29ea5f8d64dc394a93324828b1b8264">KerbalInstructor</a>
+</li>
+<li>Animations
+: <a class="el" href="class_kerbal_e_v_a.html#ac57ae1fc745111f8d04b0780fd961996">KerbalEVA</a>
+</li>
 <li>argumentOfPeriapsis
 : <a class="el" href="class_orbit.html#a47c12bedc3629c47087fb26d59f08b73">Orbit</a>
+</li>
+<li>arrowPrefab
+: <a class="el" href="class_tutorial_scenario.html#a57cca7889911c67967accd19234244ab">TutorialScenario</a>
+</li>
+<li>arrows
+: <a class="el" href="class_tutorial_scenario.html#a37f0fad892328af137a04d95017385ec">TutorialScenario</a>
 </li>
 <li>AsteroidName
 : <a class="el" href="class_module_asteroid.html#abfd159b9aa8f1cbf843366ca402b725e">ModuleAsteroid</a>
 </li>
 <li>atmDensity
 : <a class="el" href="class_vessel.html#aa3d584fe851e8972d6321933c872502b">Vessel</a>
+</li>
+<li>atmoshpereTemperatureMultiplier
+: <a class="el" href="class_celestial_body.html#aa3b356e30f10623a4dfed4ef1aa0b6f1">CelestialBody</a>
 </li>
 <li>atmosphere
 : <a class="el" href="class_celestial_body.html#a950c756ef7908efcb4facf8b46e5dea4">CelestialBody</a>
@@ -183,20 +301,60 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>atmosphereScaleHeight
 : <a class="el" href="class_celestial_body.html#ade98696c94b8a580c9d37411b7e76059">CelestialBody</a>
 </li>
+<li>atmosphericAmbientColor
+: <a class="el" href="class_celestial_body.html#ade343197027597a0a0a5d2f48f2821e7">CelestialBody</a>
+</li>
+<li>attachClip
+: <a class="el" href="class_editor_logic.html#a68a58eb52b218b6f91e5e996cabc0933">EditorLogic</a>
+</li>
+<li>attached
+: <a class="el" href="class_part.html#a5192152bf99a5282abab75b8d8167a09">Part</a>
+</li>
+<li>attachedGizmo
+: <a class="el" href="class_maneuver_node.html#aa655a3a2daf32c91a19c6119f34bc4bb">ManeuverNode</a>
+</li>
 <li>attachedPart
 : <a class="el" href="class_attach_node.html#a73ff2d81c96a07588ab135cb39696817">AttachNode</a>
+</li>
+<li>attachedPartId
+: <a class="el" href="class_attach_node.html#a65261da4ea27ea1a9c9394c1114aff4b">AttachNode</a>
+</li>
+<li>attachJoint
+: <a class="el" href="class_part.html#a8e589f26e6d9b3669e94e581be38191a">Part</a>
+</li>
+<li>attachMethod
+: <a class="el" href="class_attach_node.html#a16a07e759ceaa4a549ab89fdbebc0469">AttachNode</a>
+, <a class="el" href="class_part.html#a536f9732529fec2e2dc28f371a45cac1">Part</a>
 </li>
 <li>attachMode
 : <a class="el" href="class_part.html#a135ba23b9bc4edaf28ea144ba76aca94">Part</a>
 </li>
+<li>attachNodePrefab
+: <a class="el" href="class_editor_logic.html#a49268af15609e2d4bd2c78219fbb685a">EditorLogic</a>
+</li>
 <li>attachNodes
 : <a class="el" href="class_part.html#a3356eefbac2a63df5131ecbdfcf23660">Part</a>
+</li>
+<li>attachRules
+: <a class="el" href="class_part.html#a9508bf71a970dbed2cf19d61ee90d5b0">Part</a>
+</li>
+<li>attRotation
+: <a class="el" href="class_part.html#a84ddfa0a8f628f6cc63f65dabf19c908">Part</a>
+</li>
+<li>author
+: <a class="el" href="class_available_part.html#aa76232a76aeaa418283b0f50ba5a4b31">AvailablePart</a>
+</li>
+<li>autoMode
+: <a class="el" href="class_flight_camera.html#abd01d7c76e459d218912462b78d387cc">FlightCamera</a>
+</li>
+<li>autoPositionFX
+: <a class="el" href="class_module_engines.html#ad072318a09b179302ca45be500a77c4c">ModuleEngines</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 29 2014 00:30:31 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 29 2014 00:44:39 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['y',['Y',['../class_flight_ctrl_state.html#a29eaec941b069abb57302cffe9750e2f',1,'FlightCtrlState']]],
-  ['yaw',['yaw',['../class_flight_ctrl_state.html#afe4d0dca88f8a371480896557a175e22',1,'FlightCtrlState']]],
-  ['yawtrim',['yawTrim',['../class_flight_ctrl_state.html#adcff7ea1d2bd99af7320e71e0f857e04',1,'FlightCtrlState']]]
+  ['x',['X',['../class_flight_ctrl_state.html#ad3904450c9ac278a4e52c3d88abe39f9',1,'FlightCtrlState.X()'],['../struct_vector3d.html#a8b074c5ebd03db4c04ba78abc574ec9a',1,'Vector3d.x()']]],
+  ['xmitdatascalar',['xmitDataScalar',['../class_module_science_experiment.html#a142e5022a63dd78edb789ea50db5db88',1,'ModuleScienceExperiment']]]
 ];

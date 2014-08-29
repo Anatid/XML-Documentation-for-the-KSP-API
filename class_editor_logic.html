@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -107,277 +108,1204 @@ Inheritance diagram for EditorLogic:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a9c43b6aa2083cf4f1d69ca0d6604a3d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c43b6aa2083cf4f1d69ca0d6604a3d0"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>EditorMode</b> { <b>VAB</b> = 0, 
-<b>SPH</b> = 1
+<tr class="memitem:a9c43b6aa2083cf4f1d69ca0d6604a3d0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a9c43b6aa2083cf4f1d69ca0d6604a3d0">EditorMode</a> { <a class="el" href="class_editor_logic.html#a9c43b6aa2083cf4f1d69ca0d6604a3d0aac33cb153d29743ea3583ffc672d0821">EditorMode.VAB</a> = 0, 
+<a class="el" href="class_editor_logic.html#a9c43b6aa2083cf4f1d69ca0d6604a3d0a1710c052ab1570668ba737824f33b6cb">EditorMode.SPH</a> = 1
  }</td></tr>
 <tr class="separator:a9c43b6aa2083cf4f1d69ca0d6604a3d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2be88cd56ab59690b4a8f68edea55e99"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2be88cd56ab59690b4a8f68edea55e99"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>EditorScreen</b> { <b>Parts</b> = 0, 
-<b>Actions</b> = 1, 
-<b>Staging</b> = 2
+<tr class="memitem:a2be88cd56ab59690b4a8f68edea55e99"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a2be88cd56ab59690b4a8f68edea55e99">EditorScreen</a> { <a class="el" href="class_editor_logic.html#a2be88cd56ab59690b4a8f68edea55e99a9ce2d07469b39a72159ed8b0e0e597ca">EditorScreen.Parts</a> = 0, 
+<a class="el" href="class_editor_logic.html#a2be88cd56ab59690b4a8f68edea55e99a06df33001c1d7187fdd81ea1f5b277aa">EditorScreen.Actions</a> = 1, 
+<a class="el" href="class_editor_logic.html#a2be88cd56ab59690b4a8f68edea55e99a1bee0d8aaede29ac319901e96850adee">EditorScreen.Staging</a> = 2
  }</td></tr>
 <tr class="separator:a2be88cd56ab59690b4a8f68edea55e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14b695667a7a9b7be33fa8409f4af79b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14b695667a7a9b7be33fa8409f4af79b"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>EditorState</b> { <b>GUI_UNSELECTED</b> = 0, 
-<b>GUI_SELECTED</b> = 1, 
-<b>PAD_UNSELECTED</b> = 2, 
-<b>PAD_SELECTED</b> = 3
+<tr class="memitem:a14b695667a7a9b7be33fa8409f4af79b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a14b695667a7a9b7be33fa8409f4af79b">EditorState</a> { <a class="el" href="class_editor_logic.html#a14b695667a7a9b7be33fa8409f4af79ba538b6d068e06c880e428ec62493094a2">EditorState.GUI_UNSELECTED</a> = 0, 
+<a class="el" href="class_editor_logic.html#a14b695667a7a9b7be33fa8409f4af79bac44c232309cd764492acc5ccb3603eef">EditorState.GUI_SELECTED</a> = 1, 
+<a class="el" href="class_editor_logic.html#a14b695667a7a9b7be33fa8409f4af79baa009e4da602c796bf49f94c9300be9d4">EditorState.PAD_UNSELECTED</a> = 2, 
+<a class="el" href="class_editor_logic.html#a14b695667a7a9b7be33fa8409f4af79ba86d745ec0eb96aaf36eeaf846e9a2204">EditorState.PAD_SELECTED</a> = 3
  }</td></tr>
 <tr class="separator:a14b695667a7a9b7be33fa8409f4af79b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aed465734db38333c0bdbde953e995167"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed465734db38333c0bdbde953e995167"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>AreAllPartsConnected</b> ()</td></tr>
+<tr class="memitem:a562629c643a3dbdeb03671dfbed89e66"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a562629c643a3dbdeb03671dfbed89e66">EditorLogic</a> ()</td></tr>
+<tr class="separator:a562629c643a3dbdeb03671dfbed89e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed465734db38333c0bdbde953e995167"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#aed465734db38333c0bdbde953e995167">AreAllPartsConnected</a> ()</td></tr>
 <tr class="separator:aed465734db38333c0bdbde953e995167"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb6e21b7787bdfa68097bc22742e2ebe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb6e21b7787bdfa68097bc22742e2ebe"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>CountAllSceneParts</b> (bool includeSelected)</td></tr>
+<tr class="memitem:adb6e21b7787bdfa68097bc22742e2ebe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#adb6e21b7787bdfa68097bc22742e2ebe">CountAllSceneParts</a> (bool includeSelected)</td></tr>
 <tr class="separator:adb6e21b7787bdfa68097bc22742e2ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af66f66addd5b972b25fcd665467440ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af66f66addd5b972b25fcd665467440ee"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DestroySelectedPart</b> ()</td></tr>
+<tr class="memitem:af66f66addd5b972b25fcd665467440ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#af66f66addd5b972b25fcd665467440ee">DestroySelectedPart</a> ()</td></tr>
 <tr class="separator:af66f66addd5b972b25fcd665467440ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d517e34f04d8090c790c1af5b8df443"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d517e34f04d8090c790c1af5b8df443"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>editText</b> ()</td></tr>
+<tr class="memitem:a8d517e34f04d8090c790c1af5b8df443"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a8d517e34f04d8090c790c1af5b8df443">editText</a> ()</td></tr>
 <tr class="separator:a8d517e34f04d8090c790c1af5b8df443"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa031ec081710b002ae5308c29e55aaf0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa031ec081710b002ae5308c29e55aaf0"></a>
-List&lt; <a class="el" href="class_part.html">Part</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getSortedShipList</b> ()</td></tr>
+<tr class="memitem:aa031ec081710b002ae5308c29e55aaf0"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_part.html">Part</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#aa031ec081710b002ae5308c29e55aaf0">getSortedShipList</a> ()</td></tr>
 <tr class="separator:aa031ec081710b002ae5308c29e55aaf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21ae3126345a9fe50ef46986230f1a41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21ae3126345a9fe50ef46986230f1a41"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Lock</b> (bool lockLoad, bool lockExit, bool lockSave)</td></tr>
+<tr class="memitem:a21ae3126345a9fe50ef46986230f1a41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a21ae3126345a9fe50ef46986230f1a41">Lock</a> (bool lockLoad, bool lockExit, bool lockSave)</td></tr>
 <tr class="separator:a21ae3126345a9fe50ef46986230f1a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2506271abe82a11eddd0bc7aaae087c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2506271abe82a11eddd0bc7aaae087c0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPodSelect</b> (<a class="el" href="class_available_part.html">AvailablePart</a> pod)</td></tr>
+<tr class="memitem:a2506271abe82a11eddd0bc7aaae087c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a2506271abe82a11eddd0bc7aaae087c0">OnPodSelect</a> (<a class="el" href="class_available_part.html">AvailablePart</a> pod)</td></tr>
 <tr class="separator:a2506271abe82a11eddd0bc7aaae087c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a437bcc840a5e005e70e1bfcebad9283f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a437bcc840a5e005e70e1bfcebad9283f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SelectPanelActions</b> ()</td></tr>
+<tr class="memitem:a437bcc840a5e005e70e1bfcebad9283f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a437bcc840a5e005e70e1bfcebad9283f">SelectPanelActions</a> ()</td></tr>
 <tr class="separator:a437bcc840a5e005e70e1bfcebad9283f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a593424ffe5c7a1c612d0a1b5663feb0c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a593424ffe5c7a1c612d0a1b5663feb0c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SelectPanelParts</b> ()</td></tr>
+<tr class="memitem:a593424ffe5c7a1c612d0a1b5663feb0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a593424ffe5c7a1c612d0a1b5663feb0c">SelectPanelParts</a> ()</td></tr>
 <tr class="separator:a593424ffe5c7a1c612d0a1b5663feb0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afaf6ba0d157c5db32c2dcc0cf1ce8e35"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afaf6ba0d157c5db32c2dcc0cf1ce8e35"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBackup</b> ()</td></tr>
+<tr class="memitem:afaf6ba0d157c5db32c2dcc0cf1ce8e35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#afaf6ba0d157c5db32c2dcc0cf1ce8e35">SetBackup</a> ()</td></tr>
 <tr class="separator:afaf6ba0d157c5db32c2dcc0cf1ce8e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0c8d3d962867b9511111e9405fd28a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae0c8d3d962867b9511111e9405fd28a9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetHighlightRecursive</b> (bool recursive, List&lt; <a class="el" href="class_part.html">Part</a> &gt; parts)</td></tr>
+<tr class="memitem:ae0c8d3d962867b9511111e9405fd28a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#ae0c8d3d962867b9511111e9405fd28a9">SetHighlightRecursive</a> (bool recursive, List&lt; <a class="el" href="class_part.html">Part</a> &gt; parts)</td></tr>
 <tr class="separator:ae0c8d3d962867b9511111e9405fd28a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1922992a8c0ddc77828fcb78c72876a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1922992a8c0ddc77828fcb78c72876a2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetHighlightRecursive</b> (bool recursive, <a class="el" href="class_part.html">Part</a> p)</td></tr>
+<tr class="memitem:a1922992a8c0ddc77828fcb78c72876a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a1922992a8c0ddc77828fcb78c72876a2">SetHighlightRecursive</a> (bool recursive, <a class="el" href="class_part.html">Part</a> p)</td></tr>
 <tr class="separator:a1922992a8c0ddc77828fcb78c72876a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a336352218e2da538c83660228645cbac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a336352218e2da538c83660228645cbac"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetHighlightRecursive</b> (bool recursive, <a class="el" href="class_ship_construct.html">ShipConstruct</a> parts)</td></tr>
+<tr class="memitem:a336352218e2da538c83660228645cbac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a336352218e2da538c83660228645cbac">SetHighlightRecursive</a> (bool recursive, <a class="el" href="class_ship_construct.html">ShipConstruct</a> parts)</td></tr>
 <tr class="separator:a336352218e2da538c83660228645cbac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adaf5630f7070b79485bc3d0934277ea2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adaf5630f7070b79485bc3d0934277ea2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>snapButton</b> ()</td></tr>
+<tr class="memitem:adaf5630f7070b79485bc3d0934277ea2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#adaf5630f7070b79485bc3d0934277ea2">snapButton</a> ()</td></tr>
 <tr class="separator:adaf5630f7070b79485bc3d0934277ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a759fbfe62736a2b0f47351f5d2ce759d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a759fbfe62736a2b0f47351f5d2ce759d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SpawnPart</b> (<a class="el" href="class_available_part.html">AvailablePart</a> part)</td></tr>
+<tr class="memitem:a759fbfe62736a2b0f47351f5d2ce759d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a759fbfe62736a2b0f47351f5d2ce759d">SpawnPart</a> (<a class="el" href="class_available_part.html">AvailablePart</a> part)</td></tr>
 <tr class="separator:a759fbfe62736a2b0f47351f5d2ce759d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a3d37169e7c918c0c551587ba31810d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a3d37169e7c918c0c551587ba31810d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>symButton</b> ()</td></tr>
+<tr class="memitem:a0a3d37169e7c918c0c551587ba31810d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a0a3d37169e7c918c0c551587ba31810d">symButton</a> ()</td></tr>
 <tr class="separator:a0a3d37169e7c918c0c551587ba31810d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fdf114b660156fa1ea62ee61eeba0cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6fdf114b660156fa1ea62ee61eeba0cd"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>UndoRedo</b> ()</td></tr>
+<tr class="memitem:a6fdf114b660156fa1ea62ee61eeba0cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a6fdf114b660156fa1ea62ee61eeba0cd">UndoRedo</a> ()</td></tr>
 <tr class="separator:a6fdf114b660156fa1ea62ee61eeba0cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ac04a8533a8a17cb816a9d6b54f9e7f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ac04a8533a8a17cb816a9d6b54f9e7f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Unlock</b> ()</td></tr>
+<tr class="memitem:a4ac04a8533a8a17cb816a9d6b54f9e7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a4ac04a8533a8a17cb816a9d6b54f9e7f">Unlock</a> ()</td></tr>
 <tr class="separator:a4ac04a8533a8a17cb816a9d6b54f9e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aab88b1f282c89e7835d75ed878eff7b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab88b1f282c89e7835d75ed878eff7b6"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>DeletePart</b> (<a class="el" href="class_part.html">Part</a> part)</td></tr>
+<tr class="memitem:aab88b1f282c89e7835d75ed878eff7b6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#aab88b1f282c89e7835d75ed878eff7b6">DeletePart</a> (<a class="el" href="class_part.html">Part</a> part)</td></tr>
 <tr class="separator:aab88b1f282c89e7835d75ed878eff7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a944f737701362f8ac7fef8c1f96f0854"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a944f737701362f8ac7fef8c1f96f0854"></a>
-static T&#160;</td><td class="memItemRight" valign="bottom"><b>GetComponentUpwards&lt; T &gt;</b> (GameObject obj)</td></tr>
+<tr class="memitem:a944f737701362f8ac7fef8c1f96f0854"><td class="memItemLeft" align="right" valign="top">static T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a944f737701362f8ac7fef8c1f96f0854">GetComponentUpwards&lt; T &gt;</a> (GameObject obj)</td></tr>
 <tr class="separator:a944f737701362f8ac7fef8c1f96f0854"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6bd00dfa30a9a3b2f2f97b30c04f44c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6bd00dfa30a9a3b2f2f97b30c04f44c"></a>
-static Component&#160;</td><td class="memItemRight" valign="bottom"><b>GetComponentUpwards</b> (string type, GameObject obj)</td></tr>
+<tr class="memitem:aa6bd00dfa30a9a3b2f2f97b30c04f44c"><td class="memItemLeft" align="right" valign="top">static Component&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#aa6bd00dfa30a9a3b2f2f97b30c04f44c">GetComponentUpwards</a> (string type, GameObject obj)</td></tr>
 <tr class="separator:aa6bd00dfa30a9a3b2f2f97b30c04f44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31c3318fa0d72010668bb605d59b58ea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31c3318fa0d72010668bb605d59b58ea"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadShipFromFile</b> (string path)</td></tr>
+<tr class="memitem:a31c3318fa0d72010668bb605d59b58ea"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a31c3318fa0d72010668bb605d59b58ea">LoadShipFromFile</a> (string path)</td></tr>
 <tr class="separator:a31c3318fa0d72010668bb605d59b58ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a599744202b2694cb8a60ca188d9d851f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a599744202b2694cb8a60ca188d9d851f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLayerRecursive</b> (GameObject part, int layer, int ignoreLayersMask=0)</td></tr>
+<tr class="memitem:a599744202b2694cb8a60ca188d9d851f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a599744202b2694cb8a60ca188d9d851f">SetLayerRecursive</a> (GameObject part, int layer, int ignoreLayersMask=0)</td></tr>
 <tr class="separator:a599744202b2694cb8a60ca188d9d851f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af74f7b31848db02f673de940051f63fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af74f7b31848db02f673de940051f63fd"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSoftLock</b> (bool lockState)</td></tr>
+<tr class="memitem:af74f7b31848db02f673de940051f63fd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#af74f7b31848db02f673de940051f63fd">SetSoftLock</a> (bool lockState)</td></tr>
 <tr class="separator:af74f7b31848db02f673de940051f63fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a9408fa0408c0aadcdd72649e0ece9364"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9408fa0408c0aadcdd72649e0ece9364"></a>
-UIButton&#160;</td><td class="memItemRight" valign="bottom"><b>actionPanelBtn</b></td></tr>
+<tr class="memitem:a9408fa0408c0aadcdd72649e0ece9364"><td class="memItemLeft" align="right" valign="top">UIButton&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a9408fa0408c0aadcdd72649e0ece9364">actionPanelBtn</a></td></tr>
 <tr class="separator:a9408fa0408c0aadcdd72649e0ece9364"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94b3153abea28ced52e08fab344b0bd8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94b3153abea28ced52e08fab344b0bd8"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>allowNodeAttachment</b></td></tr>
+<tr class="memitem:a94b3153abea28ced52e08fab344b0bd8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a94b3153abea28ced52e08fab344b0bd8">allowNodeAttachment</a></td></tr>
 <tr class="separator:a94b3153abea28ced52e08fab344b0bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a879115e20912e7b1572331a2ffabf52f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a879115e20912e7b1572331a2ffabf52f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>allowSrfAttachment</b></td></tr>
+<tr class="memitem:a879115e20912e7b1572331a2ffabf52f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a879115e20912e7b1572331a2ffabf52f">allowSrfAttachment</a></td></tr>
 <tr class="separator:a879115e20912e7b1572331a2ffabf52f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0192e64561db9cbe5f2233bf4f842f2a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0192e64561db9cbe5f2233bf4f842f2a"></a>
-UIButton&#160;</td><td class="memItemRight" valign="bottom"><b>angleSnapButton</b></td></tr>
+<tr class="memitem:a0192e64561db9cbe5f2233bf4f842f2a"><td class="memItemLeft" align="right" valign="top">UIButton&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a0192e64561db9cbe5f2233bf4f842f2a">angleSnapButton</a></td></tr>
 <tr class="separator:a0192e64561db9cbe5f2233bf4f842f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e11a5bd94f1a75bc3a8b64e84c95609"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e11a5bd94f1a75bc3a8b64e84c95609"></a>
-PackedSprite&#160;</td><td class="memItemRight" valign="bottom"><b>angleSnapSprite</b></td></tr>
+<tr class="memitem:a2e11a5bd94f1a75bc3a8b64e84c95609"><td class="memItemLeft" align="right" valign="top">PackedSprite&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a2e11a5bd94f1a75bc3a8b64e84c95609">angleSnapSprite</a></td></tr>
 <tr class="separator:a2e11a5bd94f1a75bc3a8b64e84c95609"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68a58eb52b218b6f91e5e996cabc0933"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a68a58eb52b218b6f91e5e996cabc0933"></a>
-AudioClip&#160;</td><td class="memItemRight" valign="bottom"><b>attachClip</b></td></tr>
+<tr class="memitem:a68a58eb52b218b6f91e5e996cabc0933"><td class="memItemLeft" align="right" valign="top">AudioClip&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a68a58eb52b218b6f91e5e996cabc0933">attachClip</a></td></tr>
 <tr class="separator:a68a58eb52b218b6f91e5e996cabc0933"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49268af15609e2d4bd2c78219fbb685a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49268af15609e2d4bd2c78219fbb685a"></a>
-GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>attachNodePrefab</b></td></tr>
+<tr class="memitem:a49268af15609e2d4bd2c78219fbb685a"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a49268af15609e2d4bd2c78219fbb685a">attachNodePrefab</a></td></tr>
 <tr class="separator:a49268af15609e2d4bd2c78219fbb685a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a569e6913de67bb31ceadb04bbc095f89"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a569e6913de67bb31ceadb04bbc095f89"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>debugFlight</b></td></tr>
+<tr class="memitem:a569e6913de67bb31ceadb04bbc095f89"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a569e6913de67bb31ceadb04bbc095f89">debugFlight</a></td></tr>
 <tr class="separator:a569e6913de67bb31ceadb04bbc095f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53d61976e0acb1c65cb58c019bd58998"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53d61976e0acb1c65cb58c019bd58998"></a>
-AudioClip&#160;</td><td class="memItemRight" valign="bottom"><b>deletePartClip</b></td></tr>
+<tr class="memitem:a53d61976e0acb1c65cb58c019bd58998"><td class="memItemLeft" align="right" valign="top">AudioClip&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a53d61976e0acb1c65cb58c019bd58998">deletePartClip</a></td></tr>
 <tr class="separator:a53d61976e0acb1c65cb58c019bd58998"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91432865c52adbc9bdbc7f8100d50c95"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91432865c52adbc9bdbc7f8100d50c95"></a>
-Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>dragPlaneCenter</b></td></tr>
+<tr class="memitem:a91432865c52adbc9bdbc7f8100d50c95"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a91432865c52adbc9bdbc7f8100d50c95">dragPlaneCenter</a></td></tr>
 <tr class="separator:a91432865c52adbc9bdbc7f8100d50c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af25dc87725a3fa20ad79c6c11025651c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af25dc87725a3fa20ad79c6c11025651c"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>dragSharpness</b></td></tr>
+<tr class="memitem:af25dc87725a3fa20ad79c6c11025651c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#af25dc87725a3fa20ad79c6c11025651c">dragSharpness</a></td></tr>
 <tr class="separator:af25dc87725a3fa20ad79c6c11025651c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5209915f926dc93924d58357e1bcc606"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5209915f926dc93924d58357e1bcc606"></a>
-Camera&#160;</td><td class="memItemRight" valign="bottom"><b>editorCamera</b></td></tr>
+<tr class="memitem:a5209915f926dc93924d58357e1bcc606"><td class="memItemLeft" align="right" valign="top">Camera&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a5209915f926dc93924d58357e1bcc606">editorCamera</a></td></tr>
 <tr class="separator:a5209915f926dc93924d58357e1bcc606"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72a584852de6d5756c881dc2335db036"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72a584852de6d5756c881dc2335db036"></a>
-EditorLogic.EditorScreen&#160;</td><td class="memItemRight" valign="bottom"><b>editorScreen</b></td></tr>
+<tr class="memitem:a72a584852de6d5756c881dc2335db036"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_editor_logic.html#a2be88cd56ab59690b4a8f68edea55e99">EditorLogic.EditorScreen</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a72a584852de6d5756c881dc2335db036">editorScreen</a></td></tr>
 <tr class="separator:a72a584852de6d5756c881dc2335db036"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a949fd4e64264ec8ba0747a2d46b22334"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a949fd4e64264ec8ba0747a2d46b22334"></a>
-EditorLogic.EditorMode&#160;</td><td class="memItemRight" valign="bottom"><b>editorType</b></td></tr>
+<tr class="memitem:a949fd4e64264ec8ba0747a2d46b22334"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_editor_logic.html#a9c43b6aa2083cf4f1d69ca0d6604a3d0">EditorLogic.EditorMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a949fd4e64264ec8ba0747a2d46b22334">editorType</a></td></tr>
 <tr class="separator:a949fd4e64264ec8ba0747a2d46b22334"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b174b6c64e4e9409ff8d0f6b95b895b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b174b6c64e4e9409ff8d0f6b95b895b"></a>
-UIButton&#160;</td><td class="memItemRight" valign="bottom"><b>exitBtn</b></td></tr>
+<tr class="memitem:a4b174b6c64e4e9409ff8d0f6b95b895b"><td class="memItemLeft" align="right" valign="top">UIButton&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a4b174b6c64e4e9409ff8d0f6b95b895b">exitBtn</a></td></tr>
 <tr class="separator:a4b174b6c64e4e9409ff8d0f6b95b895b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a705eec7a385ef8775391bdd7f90bcec8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a705eec7a385ef8775391bdd7f90bcec8"></a>
-Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>initialPodPosition</b></td></tr>
+<tr class="memitem:a705eec7a385ef8775391bdd7f90bcec8"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a705eec7a385ef8775391bdd7f90bcec8">initialPodPosition</a></td></tr>
 <tr class="separator:a705eec7a385ef8775391bdd7f90bcec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2a01cf7c81aa467e039550e050bfd98"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2a01cf7c81aa467e039550e050bfd98"></a>
-Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>initialPodRotation</b></td></tr>
+<tr class="memitem:af2a01cf7c81aa467e039550e050bfd98"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#af2a01cf7c81aa467e039550e050bfd98">initialPodRotation</a></td></tr>
 <tr class="separator:af2a01cf7c81aa467e039550e050bfd98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5912113b92c9682145838c83843a963"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad5912113b92c9682145838c83843a963"></a>
-UIButton&#160;</td><td class="memItemRight" valign="bottom"><b>launchBtn</b></td></tr>
+<tr class="memitem:ad5912113b92c9682145838c83843a963"><td class="memItemLeft" align="right" valign="top">UIButton&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#ad5912113b92c9682145838c83843a963">launchBtn</a></td></tr>
 <tr class="separator:ad5912113b92c9682145838c83843a963"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b027775c75d12634514011efbaf5885"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b027775c75d12634514011efbaf5885"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>launchSiteName</b></td></tr>
+<tr class="memitem:a6b027775c75d12634514011efbaf5885"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a6b027775c75d12634514011efbaf5885">launchSiteName</a></td></tr>
 <tr class="separator:a6b027775c75d12634514011efbaf5885"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affa5b69522e8c9711861b30e189dc043"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="affa5b69522e8c9711861b30e189dc043"></a>
-UIButton&#160;</td><td class="memItemRight" valign="bottom"><b>loadBtn</b></td></tr>
+<tr class="memitem:affa5b69522e8c9711861b30e189dc043"><td class="memItemLeft" align="right" valign="top">UIButton&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#affa5b69522e8c9711861b30e189dc043">loadBtn</a></td></tr>
 <tr class="separator:affa5b69522e8c9711861b30e189dc043"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7ea97f9f221e2ff7772761ab59f87bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7ea97f9f221e2ff7772761ab59f87bd"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>maxHeight</b></td></tr>
+<tr class="memitem:ac7ea97f9f221e2ff7772761ab59f87bd"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#ac7ea97f9f221e2ff7772761ab59f87bd">maxHeight</a></td></tr>
 <tr class="separator:ac7ea97f9f221e2ff7772761ab59f87bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0baf8d9adb7a4b8547a75393af29831"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0baf8d9adb7a4b8547a75393af29831"></a>
-PackedSprite&#160;</td><td class="memItemRight" valign="bottom"><b>mirrorSprite</b></td></tr>
+<tr class="memitem:af0baf8d9adb7a4b8547a75393af29831"><td class="memItemLeft" align="right" valign="top">PackedSprite&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#af0baf8d9adb7a4b8547a75393af29831">mirrorSprite</a></td></tr>
 <tr class="separator:af0baf8d9adb7a4b8547a75393af29831"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22d9e2f2e378a3afbb2b11b9f55483d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22d9e2f2e378a3afbb2b11b9f55483d0"></a>
-GameObject[]&#160;</td><td class="memItemRight" valign="bottom"><b>modalAreas</b></td></tr>
+<tr class="memitem:a22d9e2f2e378a3afbb2b11b9f55483d0"><td class="memItemLeft" align="right" valign="top">GameObject[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a22d9e2f2e378a3afbb2b11b9f55483d0">modalAreas</a></td></tr>
 <tr class="separator:a22d9e2f2e378a3afbb2b11b9f55483d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6fb2a396f63dcbd66e7eb1005fdf5a3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6fb2a396f63dcbd66e7eb1005fdf5a3"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>mouseGrab</b></td></tr>
+<tr class="memitem:ac6fb2a396f63dcbd66e7eb1005fdf5a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#ac6fb2a396f63dcbd66e7eb1005fdf5a3">mouseGrab</a></td></tr>
 <tr class="separator:ac6fb2a396f63dcbd66e7eb1005fdf5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a4e9ace095aa29bfff713a686cd41a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a4e9ace095aa29bfff713a686cd41a4"></a>
-UIButton&#160;</td><td class="memItemRight" valign="bottom"><b>newBtn</b></td></tr>
+<tr class="memitem:a3a4e9ace095aa29bfff713a686cd41a4"><td class="memItemLeft" align="right" valign="top">UIButton&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a3a4e9ace095aa29bfff713a686cd41a4">newBtn</a></td></tr>
 <tr class="separator:a3a4e9ace095aa29bfff713a686cd41a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae45690538a0813b338bfc2d2556a24c9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae45690538a0813b338bfc2d2556a24c9"></a>
-AudioClip&#160;</td><td class="memItemRight" valign="bottom"><b>partGrabClip</b></td></tr>
+<tr class="memitem:ae45690538a0813b338bfc2d2556a24c9"><td class="memItemLeft" align="right" valign="top">AudioClip&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#ae45690538a0813b338bfc2d2556a24c9">partGrabClip</a></td></tr>
 <tr class="separator:ae45690538a0813b338bfc2d2556a24c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a416e2c2a739533d6499d1a3ee0f6459f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a416e2c2a739533d6499d1a3ee0f6459f"></a>
-UIButton&#160;</td><td class="memItemRight" valign="bottom"><b>partPanelBtn</b></td></tr>
+<tr class="memitem:a416e2c2a739533d6499d1a3ee0f6459f"><td class="memItemLeft" align="right" valign="top">UIButton&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a416e2c2a739533d6499d1a3ee0f6459f">partPanelBtn</a></td></tr>
 <tr class="separator:a416e2c2a739533d6499d1a3ee0f6459f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34e6c68db35102ec12c86060aec361bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34e6c68db35102ec12c86060aec361bf"></a>
-AudioClip&#160;</td><td class="memItemRight" valign="bottom"><b>partReleaseClip</b></td></tr>
+<tr class="memitem:a34e6c68db35102ec12c86060aec361bf"><td class="memItemLeft" align="right" valign="top">AudioClip&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a34e6c68db35102ec12c86060aec361bf">partReleaseClip</a></td></tr>
 <tr class="separator:a34e6c68db35102ec12c86060aec361bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a470cbe73570dedb2a5556b6621f05d6f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a470cbe73570dedb2a5556b6621f05d6f"></a>
-Quaternion&#160;</td><td class="memItemRight" valign="bottom"><b>partRotation</b></td></tr>
+<tr class="memitem:a470cbe73570dedb2a5556b6621f05d6f"><td class="memItemLeft" align="right" valign="top">Quaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a470cbe73570dedb2a5556b6621f05d6f">partRotation</a></td></tr>
 <tr class="separator:a470cbe73570dedb2a5556b6621f05d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64b5453f8e35f72b2e40d7573eaf612b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64b5453f8e35f72b2e40d7573eaf612b"></a>
-UIButton&#160;</td><td class="memItemRight" valign="bottom"><b>saveBtn</b></td></tr>
+<tr class="memitem:a64b5453f8e35f72b2e40d7573eaf612b"><td class="memItemLeft" align="right" valign="top">UIButton&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a64b5453f8e35f72b2e40d7573eaf612b">saveBtn</a></td></tr>
 <tr class="separator:a64b5453f8e35f72b2e40d7573eaf612b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e164e2880ac6eb8b12da9f13ef35a15"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e164e2880ac6eb8b12da9f13ef35a15"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceneToLoad</b></td></tr>
+<tr class="memitem:a4e164e2880ac6eb8b12da9f13ef35a15"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a4e164e2880ac6eb8b12da9f13ef35a15">sceneToLoad</a></td></tr>
 <tr class="separator:a4e164e2880ac6eb8b12da9f13ef35a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af58ee52a8141f5b4dd882c733ae7bb6e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af58ee52a8141f5b4dd882c733ae7bb6e"></a>
-Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>selPartGrabOffset</b></td></tr>
+<tr class="memitem:af58ee52a8141f5b4dd882c733ae7bb6e"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#af58ee52a8141f5b4dd882c733ae7bb6e">selPartGrabOffset</a></td></tr>
 <tr class="separator:af58ee52a8141f5b4dd882c733ae7bb6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f8fd6c8d6feaca92c94a19e37a75433"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ship_construct.html">ShipConstruct</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a0f8fd6c8d6feaca92c94a19e37a75433">ship</a></td></tr>
 <tr class="memdesc:a0f8fd6c8d6feaca92c94a19e37a75433"><td class="mdescLeft">&#160;</td><td class="mdescRight">EditorLogic.fetch.ship.parts is a list of the parts in the ship currently under construction, ordered by the order in which they were added to the ship.  <a href="#a0f8fd6c8d6feaca92c94a19e37a75433">More...</a><br /></td></tr>
 <tr class="separator:a0f8fd6c8d6feaca92c94a19e37a75433"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac861389a86636b6a579389c0ec5a20a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac861389a86636b6a579389c0ec5a20a2"></a>
-GUISkin&#160;</td><td class="memItemRight" valign="bottom"><b>shipBrowserSkin</b></td></tr>
+<tr class="memitem:ac861389a86636b6a579389c0ec5a20a2"><td class="memItemLeft" align="right" valign="top">GUISkin&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#ac861389a86636b6a579389c0ec5a20a2">shipBrowserSkin</a></td></tr>
 <tr class="separator:ac861389a86636b6a579389c0ec5a20a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c52bb471cc49f1992c6fe5c1fb0a3d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c52bb471cc49f1992c6fe5c1fb0a3d7"></a>
-Texture2D&#160;</td><td class="memItemRight" valign="bottom"><b>shipFileImage</b></td></tr>
+<tr class="memitem:a4c52bb471cc49f1992c6fe5c1fb0a3d7"><td class="memItemLeft" align="right" valign="top">Texture2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a4c52bb471cc49f1992c6fe5c1fb0a3d7">shipFileImage</a></td></tr>
 <tr class="separator:a4c52bb471cc49f1992c6fe5c1fb0a3d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a031a67a09af23b1d17ed85d7f2011442"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a031a67a09af23b1d17ed85d7f2011442"></a>
-UITextField&#160;</td><td class="memItemRight" valign="bottom"><b>shipNameField</b></td></tr>
+<tr class="memitem:a031a67a09af23b1d17ed85d7f2011442"><td class="memItemLeft" align="right" valign="top">UITextField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a031a67a09af23b1d17ed85d7f2011442">shipNameField</a></td></tr>
 <tr class="separator:a031a67a09af23b1d17ed85d7f2011442"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60f7cc3989f5d03434f23a2cacc7192d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60f7cc3989f5d03434f23a2cacc7192d"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>srfAttachAngleSnap</b></td></tr>
+<tr class="memitem:a60f7cc3989f5d03434f23a2cacc7192d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a60f7cc3989f5d03434f23a2cacc7192d">srfAttachAngleSnap</a></td></tr>
 <tr class="separator:a60f7cc3989f5d03434f23a2cacc7192d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbcfdf076f6980716ad0db430daf0626"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abbcfdf076f6980716ad0db430daf0626"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>startPodId</b></td></tr>
+<tr class="memitem:abbcfdf076f6980716ad0db430daf0626"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#abbcfdf076f6980716ad0db430daf0626">startPodId</a></td></tr>
 <tr class="separator:abbcfdf076f6980716ad0db430daf0626"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4292ba3fbcf57b850641f8dcc2275a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4292ba3fbcf57b850641f8dcc2275a4"></a>
-EditorLogic.EditorState&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
+<tr class="memitem:ab4292ba3fbcf57b850641f8dcc2275a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_editor_logic.html#a14b695667a7a9b7be33fa8409f4af79b">EditorLogic.EditorState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#ab4292ba3fbcf57b850641f8dcc2275a4">state</a></td></tr>
 <tr class="separator:ab4292ba3fbcf57b850641f8dcc2275a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1976b21b6b2d57360e282e462945ba0d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1976b21b6b2d57360e282e462945ba0d"></a>
-UIButton&#160;</td><td class="memItemRight" valign="bottom"><b>symmetryButton</b></td></tr>
+<tr class="memitem:a1976b21b6b2d57360e282e462945ba0d"><td class="memItemLeft" align="right" valign="top">UIButton&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a1976b21b6b2d57360e282e462945ba0d">symmetryButton</a></td></tr>
 <tr class="separator:a1976b21b6b2d57360e282e462945ba0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbf29217ac3f5a8f86216100fef02628"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abbf29217ac3f5a8f86216100fef02628"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>symmetryMode</b></td></tr>
+<tr class="memitem:abbf29217ac3f5a8f86216100fef02628"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#abbf29217ac3f5a8f86216100fef02628">symmetryMode</a></td></tr>
 <tr class="separator:abbf29217ac3f5a8f86216100fef02628"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16a86f4ad4faab273636b1f8bf5ea757"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16a86f4ad4faab273636b1f8bf5ea757"></a>
-PackedSprite&#160;</td><td class="memItemRight" valign="bottom"><b>symmetrySprite</b></td></tr>
+<tr class="memitem:a16a86f4ad4faab273636b1f8bf5ea757"><td class="memItemLeft" align="right" valign="top">PackedSprite&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a16a86f4ad4faab273636b1f8bf5ea757">symmetrySprite</a></td></tr>
 <tr class="separator:a16a86f4ad4faab273636b1f8bf5ea757"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:ad11d4f67c7a23b520af7af9d1d741847"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad11d4f67c7a23b520af7af9d1d741847"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>editorLocked</b></td></tr>
+<tr class="memitem:ad11d4f67c7a23b520af7af9d1d741847"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#ad11d4f67c7a23b520af7af9d1d741847">editorLocked</a></td></tr>
 <tr class="separator:ad11d4f67c7a23b520af7af9d1d741847"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21885533a47e9fad5401b48a21d380cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21885533a47e9fad5401b48a21d380cc"></a>
-static <a class="el" href="class_editor_logic.html">EditorLogic</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fetch</b></td></tr>
+<tr class="memitem:a21885533a47e9fad5401b48a21d380cc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_editor_logic.html">EditorLogic</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a21885533a47e9fad5401b48a21d380cc">fetch</a></td></tr>
 <tr class="separator:a21885533a47e9fad5401b48a21d380cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a870bbfd7cfec2763c71540783fe83cb0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a870bbfd7cfec2763c71540783fe83cb0"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>softLock</b></td></tr>
+<tr class="memitem:a870bbfd7cfec2763c71540783fe83cb0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a870bbfd7cfec2763c71540783fe83cb0">softLock</a></td></tr>
 <tr class="separator:a870bbfd7cfec2763c71540783fe83cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8cb75edf959b5f056a33ab57d78b4ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8cb75edf959b5f056a33ab57d78b4ba"></a>
-static <a class="el" href="class_part.html">Part</a>&#160;</td><td class="memItemRight" valign="bottom"><b>startPod</b></td></tr>
+<tr class="memitem:ab8cb75edf959b5f056a33ab57d78b4ba"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_part.html">Part</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#ab8cb75edf959b5f056a33ab57d78b4ba">startPod</a></td></tr>
 <tr class="separator:ab8cb75edf959b5f056a33ab57d78b4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:afdb95ebaf9d855477a5066793cebe94d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afdb95ebaf9d855477a5066793cebe94d"></a>
-static int&#160;</td><td class="memItemRight" valign="bottom"><b>LayerMask</b><code> [get]</code></td></tr>
+<tr class="memitem:afdb95ebaf9d855477a5066793cebe94d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#afdb95ebaf9d855477a5066793cebe94d">LayerMask</a><code> [get]</code></td></tr>
 <tr class="separator:afdb95ebaf9d855477a5066793cebe94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f4382c8fbb90039a0b236a2cb51f4c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f4382c8fbb90039a0b236a2cb51f4c3"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>mouseOverGUI</b><code> [get]</code></td></tr>
+<tr class="memitem:a7f4382c8fbb90039a0b236a2cb51f4c3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a7f4382c8fbb90039a0b236a2cb51f4c3">mouseOverGUI</a><code> [get]</code></td></tr>
 <tr class="separator:a7f4382c8fbb90039a0b236a2cb51f4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ad10032f10eda85614245cca480684a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ad10032f10eda85614245cca480684a"></a>
-static Quaternion&#160;</td><td class="memItemRight" valign="bottom"><b>PartRotation</b><code> [get]</code></td></tr>
+<tr class="memitem:a2ad10032f10eda85614245cca480684a"><td class="memItemLeft" align="right" valign="top">static Quaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a2ad10032f10eda85614245cca480684a">PartRotation</a><code> [get]</code></td></tr>
 <tr class="separator:a2ad10032f10eda85614245cca480684a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f053aeefae020cff1709e7ea7a3501e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f053aeefae020cff1709e7ea7a3501e"></a>
-<a class="el" href="class_part.html">Part</a>&#160;</td><td class="memItemRight" valign="bottom"><b>PartSelected</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a0f053aeefae020cff1709e7ea7a3501e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_part.html">Part</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a0f053aeefae020cff1709e7ea7a3501e">PartSelected</a><code> [get, set]</code></td></tr>
 <tr class="separator:a0f053aeefae020cff1709e7ea7a3501e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c70da41a41674e727ff9d98573fd652"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c70da41a41674e727ff9d98573fd652"></a>
-static <a class="el" href="class_part.html">Part</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SelectedPart</b><code> [get]</code></td></tr>
+<tr class="memitem:a3c70da41a41674e727ff9d98573fd652"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_part.html">Part</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a3c70da41a41674e727ff9d98573fd652">SelectedPart</a><code> [get]</code></td></tr>
 <tr class="separator:a3c70da41a41674e727ff9d98573fd652"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa14f07aeb198b018f28bdfe63ce7d68c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa14f07aeb198b018f28bdfe63ce7d68c"></a>
-static Texture2D&#160;</td><td class="memItemRight" valign="bottom"><b>ShipFileImage</b><code> [get]</code></td></tr>
+<tr class="memitem:aa14f07aeb198b018f28bdfe63ce7d68c"><td class="memItemLeft" align="right" valign="top">static Texture2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#aa14f07aeb198b018f28bdfe63ce7d68c">ShipFileImage</a><code> [get]</code></td></tr>
 <tr class="separator:aa14f07aeb198b018f28bdfe63ce7d68c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a5eed04360370bfc46f54755e6f9d37"><td class="memItemLeft" align="right" valign="top">static List&lt; <a class="el" href="class_part.html">Part</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#a3a5eed04360370bfc46f54755e6f9d37">SortedShipList</a><code> [get]</code></td></tr>
 <tr class="memdesc:a3a5eed04360370bfc46f54755e6f9d37"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of all parts in the vessel that is being edited.  <a href="#a3a5eed04360370bfc46f54755e6f9d37">More...</a><br /></td></tr>
 <tr class="separator:a3a5eed04360370bfc46f54755e6f9d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5a5b7b5653b542d3a5f8617ea19f848"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5a5b7b5653b542d3a5f8617ea19f848"></a>
-EditorLogic.EditorState&#160;</td><td class="memItemRight" valign="bottom"><b>State</b><code> [get, set]</code></td></tr>
+<tr class="memitem:af5a5b7b5653b542d3a5f8617ea19f848"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_editor_logic.html#a14b695667a7a9b7be33fa8409f4af79b">EditorLogic.EditorState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#af5a5b7b5653b542d3a5f8617ea19f848">State</a><code> [get, set]</code></td></tr>
 <tr class="separator:af5a5b7b5653b542d3a5f8617ea19f848"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5ed4bf144034e1e42b94d2703034c83"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5ed4bf144034e1e42b94d2703034c83"></a>
-static Quaternion&#160;</td><td class="memItemRight" valign="bottom"><b>VesselRotation</b><code> [get]</code></td></tr>
+<tr class="memitem:ab5ed4bf144034e1e42b94d2703034c83"><td class="memItemLeft" align="right" valign="top">static Quaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_editor_logic.html#ab5ed4bf144034e1e42b94d2703034c83">VesselRotation</a><code> [get]</code></td></tr>
 <tr class="separator:ab5ed4bf144034e1e42b94d2703034c83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class has information about what is going on in the editor. In particular see SortedShipList. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="a9c43b6aa2083cf4f1d69ca0d6604a3d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_editor_logic.html#a9c43b6aa2083cf4f1d69ca0d6604a3d0">EditorLogic.EditorMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a9c43b6aa2083cf4f1d69ca0d6604a3d0aac33cb153d29743ea3583ffc672d0821"></a>VAB&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9c43b6aa2083cf4f1d69ca0d6604a3d0a1710c052ab1570668ba737824f33b6cb"></a>SPH&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a2be88cd56ab59690b4a8f68edea55e99"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_editor_logic.html#a2be88cd56ab59690b4a8f68edea55e99">EditorLogic.EditorScreen</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a2be88cd56ab59690b4a8f68edea55e99a9ce2d07469b39a72159ed8b0e0e597ca"></a>Parts&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2be88cd56ab59690b4a8f68edea55e99a06df33001c1d7187fdd81ea1f5b277aa"></a>Actions&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2be88cd56ab59690b4a8f68edea55e99a1bee0d8aaede29ac319901e96850adee"></a>Staging&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a14b695667a7a9b7be33fa8409f4af79b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_editor_logic.html#a14b695667a7a9b7be33fa8409f4af79b">EditorLogic.EditorState</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a14b695667a7a9b7be33fa8409f4af79ba538b6d068e06c880e428ec62493094a2"></a>GUI_UNSELECTED&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a14b695667a7a9b7be33fa8409f4af79bac44c232309cd764492acc5ccb3603eef"></a>GUI_SELECTED&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a14b695667a7a9b7be33fa8409f4af79baa009e4da602c796bf49f94c9300be9d4"></a>PAD_UNSELECTED&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a14b695667a7a9b7be33fa8409f4af79ba86d745ec0eb96aaf36eeaf846e9a2204"></a>PAD_SELECTED&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a562629c643a3dbdeb03671dfbed89e66"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EditorLogic.EditorLogic </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aed465734db38333c0bdbde953e995167"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EditorLogic.AreAllPartsConnected </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adb6e21b7787bdfa68097bc22742e2ebe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int EditorLogic.CountAllSceneParts </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>includeSelected</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aab88b1f282c89e7835d75ed878eff7b6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void EditorLogic.DeletePart </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_part.html">Part</a>&#160;</td>
+          <td class="paramname"><em>part</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af66f66addd5b972b25fcd665467440ee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EditorLogic.DestroySelectedPart </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8d517e34f04d8090c790c1af5b8df443"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EditorLogic.editText </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa6bd00dfa30a9a3b2f2f97b30c04f44c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Component EditorLogic.GetComponentUpwards </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GameObject&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a944f737701362f8ac7fef8c1f96f0854"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static T <a class="el" href="class_editor_logic.html#aa6bd00dfa30a9a3b2f2f97b30c04f44c">EditorLogic.GetComponentUpwards</a>&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">GameObject&#160;</td>
+          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="typeconstraint">
+<dl><dt><b>Type Constraints</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>Component</em></td><td>&#160;</td></tr>
+</table>
+</dl>
+</div>
+
+</div>
+</div>
+<a class="anchor" id="aa031ec081710b002ae5308c29e55aaf0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_part.html">Part</a>&gt; EditorLogic.getSortedShipList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a31c3318fa0d72010668bb605d59b58ea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void EditorLogic.LoadShipFromFile </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a21ae3126345a9fe50ef46986230f1a41"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EditorLogic.Lock </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>lockLoad</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>lockExit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>lockSave</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2506271abe82a11eddd0bc7aaae087c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EditorLogic.OnPodSelect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_available_part.html">AvailablePart</a>&#160;</td>
+          <td class="paramname"><em>pod</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a437bcc840a5e005e70e1bfcebad9283f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EditorLogic.SelectPanelActions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a593424ffe5c7a1c612d0a1b5663feb0c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EditorLogic.SelectPanelParts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afaf6ba0d157c5db32c2dcc0cf1ce8e35"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EditorLogic.SetBackup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae0c8d3d962867b9511111e9405fd28a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EditorLogic.SetHighlightRecursive </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>recursive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; <a class="el" href="class_part.html">Part</a> &gt;&#160;</td>
+          <td class="paramname"><em>parts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1922992a8c0ddc77828fcb78c72876a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EditorLogic.SetHighlightRecursive </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>recursive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_part.html">Part</a>&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a336352218e2da538c83660228645cbac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EditorLogic.SetHighlightRecursive </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>recursive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_ship_construct.html">ShipConstruct</a>&#160;</td>
+          <td class="paramname"><em>parts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a599744202b2694cb8a60ca188d9d851f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void EditorLogic.SetLayerRecursive </td>
+          <td>(</td>
+          <td class="paramtype">GameObject&#160;</td>
+          <td class="paramname"><em>part</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>layer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ignoreLayersMask</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af74f7b31848db02f673de940051f63fd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void EditorLogic.SetSoftLock </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>lockState</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adaf5630f7070b79485bc3d0934277ea2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EditorLogic.snapButton </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a759fbfe62736a2b0f47351f5d2ce759d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EditorLogic.SpawnPart </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_available_part.html">AvailablePart</a>&#160;</td>
+          <td class="paramname"><em>part</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0a3d37169e7c918c0c551587ba31810d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EditorLogic.symButton </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6fdf114b660156fa1ea62ee61eeba0cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EditorLogic.UndoRedo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4ac04a8533a8a17cb816a9d6b54f9e7f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EditorLogic.Unlock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a9408fa0408c0aadcdd72649e0ece9364"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UIButton EditorLogic.actionPanelBtn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a94b3153abea28ced52e08fab344b0bd8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EditorLogic.allowNodeAttachment</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a879115e20912e7b1572331a2ffabf52f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EditorLogic.allowSrfAttachment</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0192e64561db9cbe5f2233bf4f842f2a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UIButton EditorLogic.angleSnapButton</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2e11a5bd94f1a75bc3a8b64e84c95609"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PackedSprite EditorLogic.angleSnapSprite</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a68a58eb52b218b6f91e5e996cabc0933"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AudioClip EditorLogic.attachClip</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a49268af15609e2d4bd2c78219fbb685a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject EditorLogic.attachNodePrefab</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a569e6913de67bb31ceadb04bbc095f89"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EditorLogic.debugFlight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a53d61976e0acb1c65cb58c019bd58998"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AudioClip EditorLogic.deletePartClip</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a91432865c52adbc9bdbc7f8100d50c95"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 EditorLogic.dragPlaneCenter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af25dc87725a3fa20ad79c6c11025651c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float EditorLogic.dragSharpness</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5209915f926dc93924d58357e1bcc606"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Camera EditorLogic.editorCamera</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad11d4f67c7a23b520af7af9d1d741847"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EditorLogic.editorLocked</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a72a584852de6d5756c881dc2335db036"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_editor_logic.html#a2be88cd56ab59690b4a8f68edea55e99">EditorLogic.EditorScreen</a> EditorLogic.editorScreen</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a949fd4e64264ec8ba0747a2d46b22334"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_editor_logic.html#a9c43b6aa2083cf4f1d69ca0d6604a3d0">EditorLogic.EditorMode</a> EditorLogic.editorType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4b174b6c64e4e9409ff8d0f6b95b895b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UIButton EditorLogic.exitBtn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a21885533a47e9fad5401b48a21d380cc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_editor_logic.html">EditorLogic</a> EditorLogic.fetch</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a705eec7a385ef8775391bdd7f90bcec8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 EditorLogic.initialPodPosition</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af2a01cf7c81aa467e039550e050bfd98"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 EditorLogic.initialPodRotation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad5912113b92c9682145838c83843a963"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UIButton EditorLogic.launchBtn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6b027775c75d12634514011efbaf5885"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string EditorLogic.launchSiteName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="affa5b69522e8c9711861b30e189dc043"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UIButton EditorLogic.loadBtn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac7ea97f9f221e2ff7772761ab59f87bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float EditorLogic.maxHeight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af0baf8d9adb7a4b8547a75393af29831"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PackedSprite EditorLogic.mirrorSprite</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a22d9e2f2e378a3afbb2b11b9f55483d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject [] EditorLogic.modalAreas</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac6fb2a396f63dcbd66e7eb1005fdf5a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EditorLogic.mouseGrab</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3a4e9ace095aa29bfff713a686cd41a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UIButton EditorLogic.newBtn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae45690538a0813b338bfc2d2556a24c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AudioClip EditorLogic.partGrabClip</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a416e2c2a739533d6499d1a3ee0f6459f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UIButton EditorLogic.partPanelBtn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a34e6c68db35102ec12c86060aec361bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AudioClip EditorLogic.partReleaseClip</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a470cbe73570dedb2a5556b6621f05d6f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Quaternion EditorLogic.partRotation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a64b5453f8e35f72b2e40d7573eaf612b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UIButton EditorLogic.saveBtn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4e164e2880ac6eb8b12da9f13ef35a15"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int EditorLogic.sceneToLoad</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af58ee52a8141f5b4dd882c733ae7bb6e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 EditorLogic.selPartGrabOffset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a0f8fd6c8d6feaca92c94a19e37a75433"></a>
 <div class="memitem">
 <div class="memproto">
@@ -392,7 +1320,275 @@ static Quaternion&#160;</td><td class="memItemRight" valign="bottom"><b>VesselRo
 
 </div>
 </div>
+<a class="anchor" id="ac861389a86636b6a579389c0ec5a20a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GUISkin EditorLogic.shipBrowserSkin</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4c52bb471cc49f1992c6fe5c1fb0a3d7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Texture2D EditorLogic.shipFileImage</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a031a67a09af23b1d17ed85d7f2011442"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UITextField EditorLogic.shipNameField</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a870bbfd7cfec2763c71540783fe83cb0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EditorLogic.softLock</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a60f7cc3989f5d03434f23a2cacc7192d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float EditorLogic.srfAttachAngleSnap</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab8cb75edf959b5f056a33ab57d78b4ba"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_part.html">Part</a> EditorLogic.startPod</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abbcfdf076f6980716ad0db430daf0626"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string EditorLogic.startPodId</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab4292ba3fbcf57b850641f8dcc2275a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_editor_logic.html#a14b695667a7a9b7be33fa8409f4af79b">EditorLogic.EditorState</a> EditorLogic.state</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1976b21b6b2d57360e282e462945ba0d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UIButton EditorLogic.symmetryButton</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abbf29217ac3f5a8f86216100fef02628"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int EditorLogic.symmetryMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a16a86f4ad4faab273636b1f8bf5ea757"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PackedSprite EditorLogic.symmetrySprite</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Property Documentation</h2>
+<a class="anchor" id="afdb95ebaf9d855477a5066793cebe94d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int EditorLogic.LayerMask</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7f4382c8fbb90039a0b236a2cb51f4c3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EditorLogic.mouseOverGUI</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2ad10032f10eda85614245cca480684a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Quaternion EditorLogic.PartRotation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0f053aeefae020cff1709e7ea7a3501e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_part.html">Part</a> EditorLogic.PartSelected</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3c70da41a41674e727ff9d98573fd652"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_part.html">Part</a> EditorLogic.SelectedPart</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa14f07aeb198b018f28bdfe63ce7d68c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Texture2D EditorLogic.ShipFileImage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a3a5eed04360370bfc46f54755e6f9d37"></a>
 <div class="memitem">
 <div class="memproto">
@@ -415,13 +1611,53 @@ static Quaternion&#160;</td><td class="memItemRight" valign="bottom"><b>VesselRo
 
 </div>
 </div>
+<a class="anchor" id="af5a5b7b5653b542d3a5f8617ea19f848"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_editor_logic.html#a14b695667a7a9b7be33fa8409f4af79b">EditorLogic.EditorState</a> EditorLogic.State</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab5ed4bf144034e1e42b94d2703034c83"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Quaternion EditorLogic.VesselRotation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/EditorLogic.cs</li>
+<li>src/<a class="el" href="_editor_logic_8cs.html">EditorLogic.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 29 2014 00:30:29 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 29 2014 00:44:38 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

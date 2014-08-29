@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -98,143 +99,112 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ab0e2dc2f244a601c6fb6dd1070785580"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0e2dc2f244a601c6fb6dd1070785580"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>EncounterSolutionLevel</b> { <br />
-&#160;&#160;<b>NONE</b> = 0, 
-<b>ESCAPE</b> = 1, 
-<b>ORBIT_INTERSECT</b> = 2, 
-<b>SOI_INTERSECT_2</b> = 3, 
+<tr class="memitem:ab0e2dc2f244a601c6fb6dd1070785580"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#ab0e2dc2f244a601c6fb6dd1070785580">EncounterSolutionLevel</a> { <br />
+&#160;&#160;<a class="el" href="class_orbit.html#ab0e2dc2f244a601c6fb6dd1070785580ab50339a10e1de285ac99d4c3990b8693">EncounterSolutionLevel.NONE</a> = 0, 
+<a class="el" href="class_orbit.html#ab0e2dc2f244a601c6fb6dd1070785580adaaedac409335b869929ea43fa44be5d">EncounterSolutionLevel.ESCAPE</a> = 1, 
+<a class="el" href="class_orbit.html#ab0e2dc2f244a601c6fb6dd1070785580ac6e4ac3de5686818feb0ed59f9258118">EncounterSolutionLevel.ORBIT_INTERSECT</a> = 2, 
+<a class="el" href="class_orbit.html#ab0e2dc2f244a601c6fb6dd1070785580a0513be9a6423b8574f34d648167f704c">EncounterSolutionLevel.SOI_INTERSECT_2</a> = 3, 
 <br />
-&#160;&#160;<b>SOI_INTERSECT_1</b> = 4
+&#160;&#160;<a class="el" href="class_orbit.html#ab0e2dc2f244a601c6fb6dd1070785580ad5a45c8eb7fe3f02c0dd38307fde370a">EncounterSolutionLevel.SOI_INTERSECT_1</a> = 4
 <br />
  }</td></tr>
 <tr class="separator:ab0e2dc2f244a601c6fb6dd1070785580"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe9c150ab071f14fe57cd99eda9ba2ab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe9c150ab071f14fe57cd99eda9ba2ab"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ObjectType</b> { <br />
-&#160;&#160;<b>VESSEL</b> = 0, 
-<b>SPACE_DEBRIS</b> = 1, 
-<b>CELESTIAL_BODIES</b> = 2, 
-<b>UNKNOWN_MISC</b> = 3, 
+<tr class="memitem:abe9c150ab071f14fe57cd99eda9ba2ab"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#abe9c150ab071f14fe57cd99eda9ba2ab">ObjectType</a> { <br />
+&#160;&#160;<a class="el" href="class_orbit.html#abe9c150ab071f14fe57cd99eda9ba2abafc3a069115b4743ae5f7d6b59cbb7de1">ObjectType.VESSEL</a> = 0, 
+<a class="el" href="class_orbit.html#abe9c150ab071f14fe57cd99eda9ba2abac5632fcf0e9cb5e588690ab58d09cb71">ObjectType.SPACE_DEBRIS</a> = 1, 
+<a class="el" href="class_orbit.html#abe9c150ab071f14fe57cd99eda9ba2abad7c1cff4be00b3ec52649d7d0495f96e">ObjectType.CELESTIAL_BODIES</a> = 2, 
+<a class="el" href="class_orbit.html#abe9c150ab071f14fe57cd99eda9ba2abaaeaf35eaa21154ff8b211ffc6a665fe3">ObjectType.UNKNOWN_MISC</a> = 3, 
 <br />
-&#160;&#160;<b>KERBAL</b> = 4
+&#160;&#160;<a class="el" href="class_orbit.html#abe9c150ab071f14fe57cd99eda9ba2abaf7776d9a8724b18bcc6a493253d6f6d8">ObjectType.KERBAL</a> = 4
 <br />
  }</td></tr>
 <tr class="separator:abe9c150ab071f14fe57cd99eda9ba2ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96fe2f2e726341f4b6d1342c792712df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96fe2f2e726341f4b6d1342c792712df"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PatchTransitionType</b> { <br />
-&#160;&#160;<b>INITIAL</b> = 0, 
-<b>FINAL</b> = 1, 
-<b>ENCOUNTER</b> = 2, 
-<b>ESCAPE</b> = 3, 
+<tr class="memitem:a96fe2f2e726341f4b6d1342c792712df"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a96fe2f2e726341f4b6d1342c792712df">PatchTransitionType</a> { <br />
+&#160;&#160;<a class="el" href="class_orbit.html#a96fe2f2e726341f4b6d1342c792712dfa91d26e4b2b105c74655093c9becd30b7">PatchTransitionType.INITIAL</a> = 0, 
+<a class="el" href="class_orbit.html#a96fe2f2e726341f4b6d1342c792712dfa6c8361dc2036c0559376fe4957699f69">PatchTransitionType.FINAL</a> = 1, 
+<a class="el" href="class_orbit.html#a96fe2f2e726341f4b6d1342c792712dfa57c102cdbe7d64441cd90d61d29bcf30">PatchTransitionType.ENCOUNTER</a> = 2, 
+<a class="el" href="class_orbit.html#a96fe2f2e726341f4b6d1342c792712dfadaaedac409335b869929ea43fa44be5d">PatchTransitionType.ESCAPE</a> = 3, 
 <br />
-&#160;&#160;<b>MANEUVER</b> = 4
+&#160;&#160;<a class="el" href="class_orbit.html#a96fe2f2e726341f4b6d1342c792712dfae30fd3901adfda9dc2260d6370961616">PatchTransitionType.MANEUVER</a> = 4
 <br />
  }</td></tr>
 <tr class="separator:a96fe2f2e726341f4b6d1342c792712df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab956e8e0e7e4a146ff8eeea3d05040d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab956e8e0e7e4a146ff8eeea3d05040d6"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Orbit</b> (double inc, double e, double sma, double lan, double w, double mEp, double t, <a class="el" href="class_celestial_body.html">CelestialBody</a> body)</td></tr>
+<tr class="memitem:a4b67a7a4ff2add616b3e17fd30b7b5ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a4b67a7a4ff2add616b3e17fd30b7b5ec">Orbit</a> ()</td></tr>
+<tr class="separator:a4b67a7a4ff2add616b3e17fd30b7b5ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab956e8e0e7e4a146ff8eeea3d05040d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#ab956e8e0e7e4a146ff8eeea3d05040d6">Orbit</a> (double inc, double e, double sma, double lan, double w, double mEp, double t, <a class="el" href="class_celestial_body.html">CelestialBody</a> body)</td></tr>
 <tr class="separator:ab956e8e0e7e4a146ff8eeea3d05040d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c145576d6dae911e8fc8614b45822c1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c145576d6dae911e8fc8614b45822c1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawOrbit</b> ()</td></tr>
+<tr class="memitem:a8c145576d6dae911e8fc8614b45822c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a8c145576d6dae911e8fc8614b45822c1">DrawOrbit</a> ()</td></tr>
 <tr class="separator:a8c145576d6dae911e8fc8614b45822c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8553fe87878acc91d4578af81dd9053e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8553fe87878acc91d4578af81dd9053e"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetANVector</b> ()</td></tr>
+<tr class="memitem:a8553fe87878acc91d4578af81dd9053e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a8553fe87878acc91d4578af81dd9053e">GetANVector</a> ()</td></tr>
 <tr class="separator:a8553fe87878acc91d4578af81dd9053e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9957d30c9aaf337cb7c418cd017fb96"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae9957d30c9aaf337cb7c418cd017fb96"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>GetDTforTrueAnomaly</b> (double tA, double wrapAfterSeconds)</td></tr>
+<tr class="memitem:ae9957d30c9aaf337cb7c418cd017fb96"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#ae9957d30c9aaf337cb7c418cd017fb96">GetDTforTrueAnomaly</a> (double tA, double wrapAfterSeconds)</td></tr>
 <tr class="separator:ae9957d30c9aaf337cb7c418cd017fb96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f077951cf686c380063aa83db91d77c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f077951cf686c380063aa83db91d77c"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>GetEccentricAnomaly</b> (double tA)</td></tr>
+<tr class="memitem:a9f077951cf686c380063aa83db91d77c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a9f077951cf686c380063aa83db91d77c">GetEccentricAnomaly</a> (double tA)</td></tr>
 <tr class="separator:a9f077951cf686c380063aa83db91d77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a114d2c198ce639b5e778a8c977b9e009"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a114d2c198ce639b5e778a8c977b9e009"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetEccVector</b> ()</td></tr>
+<tr class="memitem:a114d2c198ce639b5e778a8c977b9e009"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a114d2c198ce639b5e778a8c977b9e009">GetEccVector</a> ()</td></tr>
 <tr class="separator:a114d2c198ce639b5e778a8c977b9e009"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9ee803a8190bf425c652185697ae58d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9ee803a8190bf425c652185697ae58d"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetFrameVel</b> ()</td></tr>
+<tr class="memitem:ab9ee803a8190bf425c652185697ae58d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#ab9ee803a8190bf425c652185697ae58d">GetFrameVel</a> ()</td></tr>
 <tr class="separator:ab9ee803a8190bf425c652185697ae58d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a346b2dbdd0abba001fb5b5713ae92023"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a346b2dbdd0abba001fb5b5713ae92023"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetFrameVelAtUT</b> (double UT)</td></tr>
+<tr class="memitem:a346b2dbdd0abba001fb5b5713ae92023"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a346b2dbdd0abba001fb5b5713ae92023">GetFrameVelAtUT</a> (double UT)</td></tr>
 <tr class="separator:a346b2dbdd0abba001fb5b5713ae92023"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73c0d35d43212295344883c50bfa27bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73c0d35d43212295344883c50bfa27bf"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>GetMeanAnomaly</b> (double E, double tA)</td></tr>
+<tr class="memitem:a73c0d35d43212295344883c50bfa27bf"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a73c0d35d43212295344883c50bfa27bf">GetMeanAnomaly</a> (double <a class="el" href="class_orbit.html#a6db22ce977b60613d707fafbc44a70b0">E</a>, double tA)</td></tr>
 <tr class="separator:a73c0d35d43212295344883c50bfa27bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34b09764e0095dde3a308714b2fb588f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34b09764e0095dde3a308714b2fb588f"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getObTAtMeanAnomaly</b> (double M)</td></tr>
+<tr class="memitem:a34b09764e0095dde3a308714b2fb588f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a34b09764e0095dde3a308714b2fb588f">getObTAtMeanAnomaly</a> (double M)</td></tr>
 <tr class="separator:a34b09764e0095dde3a308714b2fb588f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa08d2caf7f095264fafecc78f203279"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa08d2caf7f095264fafecc78f203279"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getObtAtUT</b> (double UT)</td></tr>
+<tr class="memitem:afa08d2caf7f095264fafecc78f203279"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#afa08d2caf7f095264fafecc78f203279">getObtAtUT</a> (double UT)</td></tr>
 <tr class="separator:afa08d2caf7f095264fafecc78f203279"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad294ac97fd1f02017cf96b12952d62b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad294ac97fd1f02017cf96b12952d62b9"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getOrbitalSpeedAt</b> (double time)</td></tr>
+<tr class="memitem:ad294ac97fd1f02017cf96b12952d62b9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#ad294ac97fd1f02017cf96b12952d62b9">getOrbitalSpeedAt</a> (double time)</td></tr>
 <tr class="separator:ad294ac97fd1f02017cf96b12952d62b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0793fba394157af2cba7b0c10b7eba19"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0793fba394157af2cba7b0c10b7eba19"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getOrbitalSpeedAtDistance</b> (double d)</td></tr>
+<tr class="memitem:a0793fba394157af2cba7b0c10b7eba19"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a0793fba394157af2cba7b0c10b7eba19">getOrbitalSpeedAtDistance</a> (double d)</td></tr>
 <tr class="separator:a0793fba394157af2cba7b0c10b7eba19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa11c8e059c7b44cf2c70ade503cc797e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa11c8e059c7b44cf2c70ade503cc797e"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getOrbitalSpeedAtPos</b> (<a class="el" href="struct_vector3d.html">Vector3d</a> pos)</td></tr>
+<tr class="memitem:aa11c8e059c7b44cf2c70ade503cc797e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#aa11c8e059c7b44cf2c70ade503cc797e">getOrbitalSpeedAtPos</a> (<a class="el" href="struct_vector3d.html">Vector3d</a> <a class="el" href="class_orbit.html#a1c63a5a9672195bfa06e07b08a2cb5cf">pos</a>)</td></tr>
 <tr class="separator:aa11c8e059c7b44cf2c70ade503cc797e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fdc4927a896fcf07fc4058565c21ee2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1fdc4927a896fcf07fc4058565c21ee2"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getOrbitalSpeedAtRelativePos</b> (<a class="el" href="struct_vector3d.html">Vector3d</a> relPos)</td></tr>
+<tr class="memitem:a1fdc4927a896fcf07fc4058565c21ee2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a1fdc4927a896fcf07fc4058565c21ee2">getOrbitalSpeedAtRelativePos</a> (<a class="el" href="struct_vector3d.html">Vector3d</a> relPos)</td></tr>
 <tr class="separator:a1fdc4927a896fcf07fc4058565c21ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8b367181b31777066ae1ddc1b20a71f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8b367181b31777066ae1ddc1b20a71f"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getOrbitalVelocityAtObT</b> (double <a class="el" href="class_orbit.html#a1b171937b91935a51a6eb29e037096dd">ObT</a>)</td></tr>
+<tr class="memitem:af8b367181b31777066ae1ddc1b20a71f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#af8b367181b31777066ae1ddc1b20a71f">getOrbitalVelocityAtObT</a> (double <a class="el" href="class_orbit.html#a1b171937b91935a51a6eb29e037096dd">ObT</a>)</td></tr>
 <tr class="separator:af8b367181b31777066ae1ddc1b20a71f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a16ae992f244b0fe4b808c85900890b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a16ae992f244b0fe4b808c85900890b"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getOrbitalVelocityAtUT</b> (double UT)</td></tr>
+<tr class="memitem:a4a16ae992f244b0fe4b808c85900890b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a4a16ae992f244b0fe4b808c85900890b">getOrbitalVelocityAtUT</a> (double UT)</td></tr>
 <tr class="separator:a4a16ae992f244b0fe4b808c85900890b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63364d32f3bcf99789f282306f4f9640"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a63364d32f3bcf99789f282306f4f9640">GetOrbitNormal</a> ()</td></tr>
 <tr class="memdesc:a63364d32f3bcf99789f282306f4f9640"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unit vector normal to the plane of the orbit. NOTE: All <a class="el" href="struct_vector3d.html" title="A Vector3d in 3D space. Vector3d is just like Unity&#39;s Vector3 class, except it uses doubles instead o...">Vector3d</a>'s returned by <a class="el" href="class_orbit.html">Orbit</a> class functions have their y and z axes flipped. You have to flip these back to get the vectors in world coordinates.  <a href="#a63364d32f3bcf99789f282306f4f9640">More...</a><br /></td></tr>
 <tr class="separator:a63364d32f3bcf99789f282306f4f9640"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9857d67467eee19260476367bd24293b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9857d67467eee19260476367bd24293b"></a>
-Trajectory&#160;</td><td class="memItemRight" valign="bottom"><b>GetPatchTrajectory</b> (int sampleCount)</td></tr>
+<tr class="memitem:a9857d67467eee19260476367bd24293b"><td class="memItemLeft" align="right" valign="top">Trajectory&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a9857d67467eee19260476367bd24293b">GetPatchTrajectory</a> (int sampleCount)</td></tr>
 <tr class="separator:a9857d67467eee19260476367bd24293b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af636445c2302a4cdd49882de09521b8c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af636445c2302a4cdd49882de09521b8c"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getPositionAtT</b> (double T)</td></tr>
+<tr class="memitem:af636445c2302a4cdd49882de09521b8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#af636445c2302a4cdd49882de09521b8c">getPositionAtT</a> (double T)</td></tr>
 <tr class="separator:af636445c2302a4cdd49882de09521b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cf1851717d50c62ddca45925f52b59d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5cf1851717d50c62ddca45925f52b59d"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getPositionAtUT</b> (double UT)</td></tr>
+<tr class="memitem:a5cf1851717d50c62ddca45925f52b59d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a5cf1851717d50c62ddca45925f52b59d">getPositionAtUT</a> (double UT)</td></tr>
 <tr class="separator:a5cf1851717d50c62ddca45925f52b59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac370e5e614c69fb4a0e5799ed4c82be0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac370e5e614c69fb4a0e5799ed4c82be0"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getPositionFromEccAnomaly</b> (double E)</td></tr>
+<tr class="memitem:ac370e5e614c69fb4a0e5799ed4c82be0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#ac370e5e614c69fb4a0e5799ed4c82be0">getPositionFromEccAnomaly</a> (double <a class="el" href="class_orbit.html#a6db22ce977b60613d707fafbc44a70b0">E</a>)</td></tr>
 <tr class="separator:ac370e5e614c69fb4a0e5799ed4c82be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b5e973dae21adf597b60a7be4bcb865"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b5e973dae21adf597b60a7be4bcb865"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getPositionFromMeanAnomaly</b> (double M)</td></tr>
+<tr class="memitem:a6b5e973dae21adf597b60a7be4bcb865"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a6b5e973dae21adf597b60a7be4bcb865">getPositionFromMeanAnomaly</a> (double M)</td></tr>
 <tr class="separator:a6b5e973dae21adf597b60a7be4bcb865"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af701f03b21ae0acb3dce346acdfa7534"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af701f03b21ae0acb3dce346acdfa7534"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getPositionFromTrueAnomaly</b> (double tA)</td></tr>
+<tr class="memitem:af701f03b21ae0acb3dce346acdfa7534"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#af701f03b21ae0acb3dce346acdfa7534">getPositionFromTrueAnomaly</a> (double tA)</td></tr>
 <tr class="separator:af701f03b21ae0acb3dce346acdfa7534"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e29f8def936608319220a399b9c00fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e29f8def936608319220a399b9c00fb"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getRelativePositionAtT</b> (double T)</td></tr>
+<tr class="memitem:a5e29f8def936608319220a399b9c00fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a5e29f8def936608319220a399b9c00fb">getRelativePositionAtT</a> (double T)</td></tr>
 <tr class="separator:a5e29f8def936608319220a399b9c00fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a707b89ab04b1581cf3241808e499e4be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a707b89ab04b1581cf3241808e499e4be">getRelativePositionAtUT</a> (double UT)</td></tr>
 <tr class="memdesc:a707b89ab04b1581cf3241808e499e4be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the predicted displacement of the orbiting object from the center of the main body at a given universal time. NOTE: All <a class="el" href="struct_vector3d.html" title="A Vector3d in 3D space. Vector3d is just like Unity&#39;s Vector3 class, except it uses doubles instead o...">Vector3d</a>'s returned by <a class="el" href="class_orbit.html">Orbit</a> class functions have their y and z axes flipped. You have to flip these back to get the vectors in world coordinates.  <a href="#a707b89ab04b1581cf3241808e499e4be">More...</a><br /></td></tr>
 <tr class="separator:a707b89ab04b1581cf3241808e499e4be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f2ac1a9bc4db2b22c713da399afe72e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f2ac1a9bc4db2b22c713da399afe72e"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getRelativePositionFromEccAnomaly</b> (double E)</td></tr>
+<tr class="memitem:a5f2ac1a9bc4db2b22c713da399afe72e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a5f2ac1a9bc4db2b22c713da399afe72e">getRelativePositionFromEccAnomaly</a> (double <a class="el" href="class_orbit.html#a6db22ce977b60613d707fafbc44a70b0">E</a>)</td></tr>
 <tr class="separator:a5f2ac1a9bc4db2b22c713da399afe72e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4c030b6013195f4c0bf79753211c4c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4c030b6013195f4c0bf79753211c4c3"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getRelativePositionFromMeanAnomaly</b> (double M)</td></tr>
+<tr class="memitem:ad4c030b6013195f4c0bf79753211c4c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#ad4c030b6013195f4c0bf79753211c4c3">getRelativePositionFromMeanAnomaly</a> (double M)</td></tr>
 <tr class="separator:ad4c030b6013195f4c0bf79753211c4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8ca7f923a1fd230efc4f088ca7aa4ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8ca7f923a1fd230efc4f088ca7aa4ee"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getRelativePositionFromTrueAnomaly</b> (double tA)</td></tr>
+<tr class="memitem:ac8ca7f923a1fd230efc4f088ca7aa4ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#ac8ca7f923a1fd230efc4f088ca7aa4ee">getRelativePositionFromTrueAnomaly</a> (double tA)</td></tr>
 <tr class="separator:ac8ca7f923a1fd230efc4f088ca7aa4ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add39b52d54c01fff9ccc4b575dd44dec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add39b52d54c01fff9ccc4b575dd44dec"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetRelativeVel</b> ()</td></tr>
+<tr class="memitem:add39b52d54c01fff9ccc4b575dd44dec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#add39b52d54c01fff9ccc4b575dd44dec">GetRelativeVel</a> ()</td></tr>
 <tr class="separator:add39b52d54c01fff9ccc4b575dd44dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1aa7e5eaa0ad54f8709d19a2e4d34b3d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1aa7e5eaa0ad54f8709d19a2e4d34b3d"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetRotFrameVel</b> (<a class="el" href="class_celestial_body.html">CelestialBody</a> refBody)</td></tr>
+<tr class="memitem:a1aa7e5eaa0ad54f8709d19a2e4d34b3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a1aa7e5eaa0ad54f8709d19a2e4d34b3d">GetRotFrameVel</a> (<a class="el" href="class_celestial_body.html">CelestialBody</a> refBody)</td></tr>
 <tr class="separator:a1aa7e5eaa0ad54f8709d19a2e4d34b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0c09d6e7be48876f2872bcf44dc5b94"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0c09d6e7be48876f2872bcf44dc5b94"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getTrueAnomaly</b> (double E)</td></tr>
+<tr class="memitem:ab0c09d6e7be48876f2872bcf44dc5b94"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#ab0c09d6e7be48876f2872bcf44dc5b94">getTrueAnomaly</a> (double <a class="el" href="class_orbit.html#a6db22ce977b60613d707fafbc44a70b0">E</a>)</td></tr>
 <tr class="separator:ab0c09d6e7be48876f2872bcf44dc5b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c7874115d0af36579e349be60fb6488"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c7874115d0af36579e349be60fb6488"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>GetTrueAnomalyOfZupVector</b> (<a class="el" href="struct_vector3d.html">Vector3d</a> vector)</td></tr>
+<tr class="memitem:a5c7874115d0af36579e349be60fb6488"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a5c7874115d0af36579e349be60fb6488">GetTrueAnomalyOfZupVector</a> (<a class="el" href="struct_vector3d.html">Vector3d</a> vector)</td></tr>
 <tr class="separator:a5c7874115d0af36579e349be60fb6488"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61d5eaa86089f9d8286b7d2631b40aa6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61d5eaa86089f9d8286b7d2631b40aa6"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getTruePositionAtUT</b> (double UT)</td></tr>
+<tr class="memitem:a61d5eaa86089f9d8286b7d2631b40aa6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a61d5eaa86089f9d8286b7d2631b40aa6">getTruePositionAtUT</a> (double UT)</td></tr>
 <tr class="separator:a61d5eaa86089f9d8286b7d2631b40aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a465681aad2db3169f3b9dfe1189fa09b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a465681aad2db3169f3b9dfe1189fa09b"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>GetUTforTrueAnomaly</b> (double tA, double wrapAfterSeconds)</td></tr>
+<tr class="memitem:a465681aad2db3169f3b9dfe1189fa09b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a465681aad2db3169f3b9dfe1189fa09b">GetUTforTrueAnomaly</a> (double tA, double wrapAfterSeconds)</td></tr>
 <tr class="separator:a465681aad2db3169f3b9dfe1189fa09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa18079fb12ccbe63c1a6b9d75c3ba578"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#aa18079fb12ccbe63c1a6b9d75c3ba578">GetVel</a> ()</td></tr>
 <tr class="memdesc:aa18079fb12ccbe63c1a6b9d75c3ba578"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current orbital velocity of the orbiting body. Unlike most other methods of the orbit class, the returned vector seems to already be in world coordinates and doesn't need to have its Y and Z axes flipped. (Y and Z axes already being flipped is confirmed for V0.23.5)  <a href="#aa18079fb12ccbe63c1a6b9d75c3ba578">More...</a><br /></td></tr>
@@ -242,107 +212,80 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>GetUTforTrueAnomaly
 <tr class="memitem:abcb8420085bdf2915ddd4a3cf9dc5f6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#abcb8420085bdf2915ddd4a3cf9dc5f6f">GetWorldSpaceVel</a> ()</td></tr>
 <tr class="memdesc:abcb8420085bdf2915ddd4a3cf9dc5f6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">like GetVel but adjusted for the rotational velocity of the body the vessel is orbiting, presumably?  <a href="#abcb8420085bdf2915ddd4a3cf9dc5f6f">More...</a><br /></td></tr>
 <tr class="separator:abcb8420085bdf2915ddd4a3cf9dc5f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bee77b7c30964ed62a6a51fd3ce350b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6bee77b7c30964ed62a6a51fd3ce350b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> ()</td></tr>
+<tr class="memitem:a6bee77b7c30964ed62a6a51fd3ce350b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a6bee77b7c30964ed62a6a51fd3ce350b">Init</a> ()</td></tr>
 <tr class="separator:a6bee77b7c30964ed62a6a51fd3ce350b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af581cf4bae5fc1cecb386f110a1dd2e1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#af581cf4bae5fc1cecb386f110a1dd2e1">RadiusAtTrueAnomaly</a> (double tA)</td></tr>
 <tr class="memdesc:af581cf4bae5fc1cecb386f110a1dd2e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The distance the orbiting object will be from the center of the main body when it reaches the given true anomaly.  <a href="#af581cf4bae5fc1cecb386f110a1dd2e1">More...</a><br /></td></tr>
 <tr class="separator:af581cf4bae5fc1cecb386f110a1dd2e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac16dab5b5b35de07038fa0930e6f8499"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac16dab5b5b35de07038fa0930e6f8499"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>solveEccentricAnomaly</b> (double M, double ecc, double maxError, int maxIterations)</td></tr>
+<tr class="memitem:ac16dab5b5b35de07038fa0930e6f8499"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#ac16dab5b5b35de07038fa0930e6f8499">solveEccentricAnomaly</a> (double M, double ecc, double maxError, int maxIterations)</td></tr>
 <tr class="separator:ac16dab5b5b35de07038fa0930e6f8499"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4815e40be78123ea7d780d4b91a769c5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a4815e40be78123ea7d780d4b91a769c5">TrueAnomalyAtRadius</a> (double R)</td></tr>
 <tr class="memdesc:a4815e40be78123ea7d780d4b91a769c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The true anomaly at which the orbiting object will achieve the given distance from the center of the main body.  <a href="#a4815e40be78123ea7d780d4b91a769c5">More...</a><br /></td></tr>
 <tr class="separator:a4815e40be78123ea7d780d4b91a769c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34ce6b1e3429c77d7aff72c2205facd6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34ce6b1e3429c77d7aff72c2205facd6"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>TrueAnomalyAtT</b> (double T)</td></tr>
+<tr class="memitem:a34ce6b1e3429c77d7aff72c2205facd6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a34ce6b1e3429c77d7aff72c2205facd6">TrueAnomalyAtT</a> (double T)</td></tr>
 <tr class="separator:a34ce6b1e3429c77d7aff72c2205facd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78bdc5c929fd8adfa5f3d0605dc3083b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78bdc5c929fd8adfa5f3d0605dc3083b"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>TrueAnomalyAtUT</b> (double UT)</td></tr>
+<tr class="memitem:a78bdc5c929fd8adfa5f3d0605dc3083b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a78bdc5c929fd8adfa5f3d0605dc3083b">TrueAnomalyAtUT</a> (double UT)</td></tr>
 <tr class="separator:a78bdc5c929fd8adfa5f3d0605dc3083b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab02534b069997c1795ada6ba4b21f848"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab02534b069997c1795ada6ba4b21f848"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateFromOrbitAtUT</b> (<a class="el" href="class_orbit.html">Orbit</a> orbit, double UT, <a class="el" href="class_celestial_body.html">CelestialBody</a> toBody)</td></tr>
+<tr class="memitem:ab02534b069997c1795ada6ba4b21f848"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#ab02534b069997c1795ada6ba4b21f848">UpdateFromOrbitAtUT</a> (<a class="el" href="class_orbit.html">Orbit</a> orbit, double UT, <a class="el" href="class_celestial_body.html">CelestialBody</a> toBody)</td></tr>
 <tr class="separator:ab02534b069997c1795ada6ba4b21f848"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bc2b8f61ee091c7317fb7767076f207"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a3bc2b8f61ee091c7317fb7767076f207">UpdateFromStateVectors</a> (<a class="el" href="struct_vector3d.html">Vector3d</a> pos, <a class="el" href="struct_vector3d.html">Vector3d</a> vel, <a class="el" href="class_celestial_body.html">CelestialBody</a> refBody, double UT)</td></tr>
+<tr class="memitem:a3bc2b8f61ee091c7317fb7767076f207"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a3bc2b8f61ee091c7317fb7767076f207">UpdateFromStateVectors</a> (<a class="el" href="struct_vector3d.html">Vector3d</a> <a class="el" href="class_orbit.html#a1c63a5a9672195bfa06e07b08a2cb5cf">pos</a>, <a class="el" href="struct_vector3d.html">Vector3d</a> <a class="el" href="class_orbit.html#a202d30a9d828e267e76e967df9aead97">vel</a>, <a class="el" href="class_celestial_body.html">CelestialBody</a> refBody, double UT)</td></tr>
 <tr class="memdesc:a3bc2b8f61ee091c7317fb7767076f207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates this orbit to reflect the orbit that will be taken around the given body by an object with the given position and velocity at the given universal time.  <a href="#a3bc2b8f61ee091c7317fb7767076f207">More...</a><br /></td></tr>
 <tr class="separator:a3bc2b8f61ee091c7317fb7767076f207"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03e49ebe93555ef975c9386db8b0a629"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03e49ebe93555ef975c9386db8b0a629"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateFromUT</b> (double UT)</td></tr>
+<tr class="memitem:a03e49ebe93555ef975c9386db8b0a629"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a03e49ebe93555ef975c9386db8b0a629">UpdateFromUT</a> (double UT)</td></tr>
 <tr class="separator:a03e49ebe93555ef975c9386db8b0a629"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab8af3bb634e2d76e26856a6767ebd84d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8af3bb634e2d76e26856a6767ebd84d"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>FindClosestPoints</b> (<a class="el" href="class_orbit.html">Orbit</a> p, <a class="el" href="class_orbit.html">Orbit</a> s, ref double CD, ref double CCD, ref double FFp, ref double FFs, ref double SFp, ref double SFs, double epsilon, int maxIterations, ref int iterationCount)</td></tr>
+<tr class="memitem:ab8af3bb634e2d76e26856a6767ebd84d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#ab8af3bb634e2d76e26856a6767ebd84d">FindClosestPoints</a> (<a class="el" href="class_orbit.html">Orbit</a> p, <a class="el" href="class_orbit.html">Orbit</a> s, ref double CD, ref double CCD, ref double FFp, ref double FFs, ref double SFp, ref double SFs, double epsilon, int maxIterations, ref int iterationCount)</td></tr>
 <tr class="separator:ab8af3bb634e2d76e26856a6767ebd84d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abaf424cdbb82e296b84cc1b14fc4bd89"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abaf424cdbb82e296b84cc1b14fc4bd89"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>PeApIntersects</b> (<a class="el" href="class_orbit.html">Orbit</a> primary, <a class="el" href="class_orbit.html">Orbit</a> secondary, double threshold)</td></tr>
+<tr class="memitem:abaf424cdbb82e296b84cc1b14fc4bd89"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#abaf424cdbb82e296b84cc1b14fc4bd89">PeApIntersects</a> (<a class="el" href="class_orbit.html">Orbit</a> primary, <a class="el" href="class_orbit.html">Orbit</a> secondary, double threshold)</td></tr>
 <tr class="separator:abaf424cdbb82e296b84cc1b14fc4bd89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe73bd678a78f6d7650aa6f71c25fac5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe73bd678a78f6d7650aa6f71c25fac5"></a>
-static double&#160;</td><td class="memItemRight" valign="bottom"><b>SolveClosestApproach</b> (<a class="el" href="class_orbit.html">Orbit</a> p, <a class="el" href="class_orbit.html">Orbit</a> s, ref double UT, double dT, double threshold, double MinUT, double MaxUT, double epsilon, int maxIterations, ref int iterationCount)</td></tr>
+<tr class="memitem:abe73bd678a78f6d7650aa6f71c25fac5"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#abe73bd678a78f6d7650aa6f71c25fac5">SolveClosestApproach</a> (<a class="el" href="class_orbit.html">Orbit</a> p, <a class="el" href="class_orbit.html">Orbit</a> s, ref double UT, double dT, double threshold, double MinUT, double MaxUT, double epsilon, int maxIterations, ref int iterationCount)</td></tr>
 <tr class="separator:abe73bd678a78f6d7650aa6f71c25fac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa4f8294ee035f0937bf5646f3fc4288"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa4f8294ee035f0937bf5646f3fc4288"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>SolveSOI_BSP</b> (<a class="el" href="class_orbit.html">Orbit</a> p, <a class="el" href="class_orbit.html">Orbit</a> s, ref double UT, double dT, double Rsoi, double MinUT, double MaxUT, double epsilon, int maxIterations, ref int iterationCount)</td></tr>
+<tr class="memitem:aaa4f8294ee035f0937bf5646f3fc4288"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#aaa4f8294ee035f0937bf5646f3fc4288">SolveSOI_BSP</a> (<a class="el" href="class_orbit.html">Orbit</a> p, <a class="el" href="class_orbit.html">Orbit</a> s, ref double UT, double dT, double Rsoi, double MinUT, double MaxUT, double epsilon, int maxIterations, ref int iterationCount)</td></tr>
 <tr class="separator:aaa4f8294ee035f0937bf5646f3fc4288"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a488229aa4687ba8ffcd23dce27353eb6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a488229aa4687ba8ffcd23dce27353eb6">activePatch</a></td></tr>
-<tr class="memdesc:a488229aa4687ba8ffcd23dce27353eb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this patch actually represents a real orbit patch in the projected flight path. Often Orbit.nextPatch for the last real will not be null, but will be some sort of bogus <a class="el" href="class_orbit.html">Orbit</a> object. You can recognize these because activePatch will be false.  <a href="#a488229aa4687ba8ffcd23dce27353eb6">More...</a><br /></td></tr>
+<tr class="memdesc:a488229aa4687ba8ffcd23dce27353eb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this patch actually represents a real orbit patch in the projected flight path. Often <a class="el" href="class_orbit.html#a289bbf364e11c48f59c60049eb005f37">Orbit.nextPatch</a> for the last real will not be null, but will be some sort of bogus <a class="el" href="class_orbit.html">Orbit</a> object. You can recognize these because activePatch will be false.  <a href="#a488229aa4687ba8ffcd23dce27353eb6">More...</a><br /></td></tr>
 <tr class="separator:a488229aa4687ba8ffcd23dce27353eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae001aa0cf604ed46802d0b1d625f4918"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae001aa0cf604ed46802d0b1d625f4918"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>altitude</b></td></tr>
+<tr class="memitem:ae001aa0cf604ed46802d0b1d625f4918"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#ae001aa0cf604ed46802d0b1d625f4918">altitude</a></td></tr>
 <tr class="separator:ae001aa0cf604ed46802d0b1d625f4918"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefe2f6a4e65aee883a17cc9cc66ac000"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aefe2f6a4e65aee883a17cc9cc66ac000"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>an</b></td></tr>
+<tr class="memitem:aefe2f6a4e65aee883a17cc9cc66ac000"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#aefe2f6a4e65aee883a17cc9cc66ac000">an</a></td></tr>
 <tr class="separator:aefe2f6a4e65aee883a17cc9cc66ac000"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47c12bedc3629c47087fb26d59f08b73"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a47c12bedc3629c47087fb26d59f08b73">argumentOfPeriapsis</a></td></tr>
 <tr class="memdesc:a47c12bedc3629c47087fb26d59f08b73"><td class="mdescLeft">&#160;</td><td class="mdescRight">The angle between the ascending node and the periapsis, in degrees.  <a href="#a47c12bedc3629c47087fb26d59f08b73">More...</a><br /></td></tr>
 <tr class="separator:a47c12bedc3629c47087fb26d59f08b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0ded1189db82f7647f069f6cc8dd271"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae0ded1189db82f7647f069f6cc8dd271"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>ClAppr</b></td></tr>
+<tr class="memitem:ae0ded1189db82f7647f069f6cc8dd271"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#ae0ded1189db82f7647f069f6cc8dd271">ClAppr</a></td></tr>
 <tr class="separator:ae0ded1189db82f7647f069f6cc8dd271"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b74b3daf8d10e30d5e63d04a843c7a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b74b3daf8d10e30d5e63d04a843c7a7"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>ClEctr1</b></td></tr>
+<tr class="memitem:a2b74b3daf8d10e30d5e63d04a843c7a7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a2b74b3daf8d10e30d5e63d04a843c7a7">ClEctr1</a></td></tr>
 <tr class="separator:a2b74b3daf8d10e30d5e63d04a843c7a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7293dd5a1770c536dfa74eafea0a1011"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7293dd5a1770c536dfa74eafea0a1011"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>ClEctr2</b></td></tr>
+<tr class="memitem:a7293dd5a1770c536dfa74eafea0a1011"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a7293dd5a1770c536dfa74eafea0a1011">ClEctr2</a></td></tr>
 <tr class="separator:a7293dd5a1770c536dfa74eafea0a1011"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e7e502e5355be43f5a24b0faf2ec53b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e7e502e5355be43f5a24b0faf2ec53b"></a>
-<a class="el" href="class_celestial_body.html">CelestialBody</a>&#160;</td><td class="memItemRight" valign="bottom"><b>closestEncounterBody</b></td></tr>
+<tr class="memitem:a6e7e502e5355be43f5a24b0faf2ec53b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_celestial_body.html">CelestialBody</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a6e7e502e5355be43f5a24b0faf2ec53b">closestEncounterBody</a></td></tr>
 <tr class="separator:a6e7e502e5355be43f5a24b0faf2ec53b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a190317232981fabf7be657b537909950"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a190317232981fabf7be657b537909950"></a>
-Orbit.EncounterSolutionLevel&#160;</td><td class="memItemRight" valign="bottom"><b>closestEncounterLevel</b></td></tr>
+<tr class="memitem:a190317232981fabf7be657b537909950"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_orbit.html#ab0e2dc2f244a601c6fb6dd1070785580">Orbit.EncounterSolutionLevel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a190317232981fabf7be657b537909950">closestEncounterLevel</a></td></tr>
 <tr class="separator:a190317232981fabf7be657b537909950"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f05e48da72a07be1af33fc50a4fee67"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f05e48da72a07be1af33fc50a4fee67"></a>
-<a class="el" href="class_orbit.html">Orbit</a>&#160;</td><td class="memItemRight" valign="bottom"><b>closestEncounterPatch</b></td></tr>
+<tr class="memitem:a5f05e48da72a07be1af33fc50a4fee67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_orbit.html">Orbit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a5f05e48da72a07be1af33fc50a4fee67">closestEncounterPatch</a></td></tr>
 <tr class="separator:a5f05e48da72a07be1af33fc50a4fee67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7f4667dc18c9713654356a1f98c0b24"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7f4667dc18c9713654356a1f98c0b24"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>closestTgtApprUT</b></td></tr>
+<tr class="memitem:ac7f4667dc18c9713654356a1f98c0b24"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#ac7f4667dc18c9713654356a1f98c0b24">closestTgtApprUT</a></td></tr>
 <tr class="separator:ac7f4667dc18c9713654356a1f98c0b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9332c7bf6c67daae03bdd652f1d425d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9332c7bf6c67daae03bdd652f1d425d2"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>CrAppr</b></td></tr>
+<tr class="memitem:a9332c7bf6c67daae03bdd652f1d425d2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a9332c7bf6c67daae03bdd652f1d425d2">CrAppr</a></td></tr>
 <tr class="separator:a9332c7bf6c67daae03bdd652f1d425d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2452179594c0d2625bf85977c28865f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2452179594c0d2625bf85977c28865f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>debug_returnFullEllipseTrajectory</b></td></tr>
+<tr class="memitem:ac2452179594c0d2625bf85977c28865f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#ac2452179594c0d2625bf85977c28865f">debug_returnFullEllipseTrajectory</a></td></tr>
 <tr class="separator:ac2452179594c0d2625bf85977c28865f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6e6b1e4e4da491005d286cafb64d0e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6e6b1e4e4da491005d286cafb64d0e6"></a>
-Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>debugAN</b></td></tr>
+<tr class="memitem:af6e6b1e4e4da491005d286cafb64d0e6"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#af6e6b1e4e4da491005d286cafb64d0e6">debugAN</a></td></tr>
 <tr class="separator:af6e6b1e4e4da491005d286cafb64d0e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac41bd3037e6936390a120d32351d7df9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac41bd3037e6936390a120d32351d7df9"></a>
-Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>debugEccVec</b></td></tr>
+<tr class="memitem:ac41bd3037e6936390a120d32351d7df9"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#ac41bd3037e6936390a120d32351d7df9">debugEccVec</a></td></tr>
 <tr class="separator:ac41bd3037e6936390a120d32351d7df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e35b9231d3766b997bfe7f6baf6567a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e35b9231d3766b997bfe7f6baf6567a"></a>
-Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>debugH</b></td></tr>
+<tr class="memitem:a9e35b9231d3766b997bfe7f6baf6567a"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a9e35b9231d3766b997bfe7f6baf6567a">debugH</a></td></tr>
 <tr class="separator:a9e35b9231d3766b997bfe7f6baf6567a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0978d14e83f801a2798288194befea2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0978d14e83f801a2798288194befea2"></a>
-Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>debugPos</b></td></tr>
+<tr class="memitem:ab0978d14e83f801a2798288194befea2"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#ab0978d14e83f801a2798288194befea2">debugPos</a></td></tr>
 <tr class="separator:ab0978d14e83f801a2798288194befea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a955f43658b48e7da5b03018d1524a479"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a955f43658b48e7da5b03018d1524a479"></a>
-Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>debugVel</b></td></tr>
+<tr class="memitem:a955f43658b48e7da5b03018d1524a479"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a955f43658b48e7da5b03018d1524a479">debugVel</a></td></tr>
 <tr class="separator:a955f43658b48e7da5b03018d1524a479"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6db22ce977b60613d707fafbc44a70b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6db22ce977b60613d707fafbc44a70b0"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>E</b></td></tr>
+<tr class="memitem:a6db22ce977b60613d707fafbc44a70b0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a6db22ce977b60613d707fafbc44a70b0">E</a></td></tr>
 <tr class="separator:a6db22ce977b60613d707fafbc44a70b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a229e9b865bc1dfc68fb8b0f9733432fc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a229e9b865bc1dfc68fb8b0f9733432fc">eccentricAnomaly</a></td></tr>
 <tr class="memdesc:a229e9b865bc1dfc68fb8b0f9733432fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">A quantity used in the math describing Keplerian orbits; Google it.  <a href="#a229e9b865bc1dfc68fb8b0f9733432fc">More...</a><br /></td></tr>
@@ -359,17 +302,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>E</b></td></tr>
 <tr class="memitem:a1856e63f9a84f12a41299bf8073abadb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a1856e63f9a84f12a41299bf8073abadb">epoch</a></td></tr>
 <tr class="memdesc:a1856e63f9a84f12a41299bf8073abadb"><td class="mdescLeft">&#160;</td><td class="mdescRight">A special UT at which the parameters of the <a class="el" href="class_orbit.html">Orbit</a> are defined. See meanAnomalyAtEpoch.  <a href="#a1856e63f9a84f12a41299bf8073abadb">More...</a><br /></td></tr>
 <tr class="separator:a1856e63f9a84f12a41299bf8073abadb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade7707b9a2257e5e7e26c8d1761738b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade7707b9a2257e5e7e26c8d1761738b0"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>FEVp</b></td></tr>
+<tr class="memitem:ade7707b9a2257e5e7e26c8d1761738b0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#ade7707b9a2257e5e7e26c8d1761738b0">FEVp</a></td></tr>
 <tr class="separator:ade7707b9a2257e5e7e26c8d1761738b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3c1c822fdf8499ef33f6d0614c6bbd7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af3c1c822fdf8499ef33f6d0614c6bbd7"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>FEVs</b></td></tr>
+<tr class="memitem:af3c1c822fdf8499ef33f6d0614c6bbd7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#af3c1c822fdf8499ef33f6d0614c6bbd7">FEVs</a></td></tr>
 <tr class="separator:af3c1c822fdf8499ef33f6d0614c6bbd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70cb69eb2b2bb4b98eda368b233d7300"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70cb69eb2b2bb4b98eda368b233d7300"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>fromE</b></td></tr>
+<tr class="memitem:a70cb69eb2b2bb4b98eda368b233d7300"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a70cb69eb2b2bb4b98eda368b233d7300">fromE</a></td></tr>
 <tr class="separator:a70cb69eb2b2bb4b98eda368b233d7300"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85163a2ee6fd2005478c182efae594e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85163a2ee6fd2005478c182efae594e6"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>fromV</b></td></tr>
+<tr class="memitem:a85163a2ee6fd2005478c182efae594e6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a85163a2ee6fd2005478c182efae594e6">fromV</a></td></tr>
 <tr class="separator:a85163a2ee6fd2005478c182efae594e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a956c6e129cba9ff4afcdd811d04717f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a956c6e129cba9ff4afcdd811d04717f6">h</a></td></tr>
 <tr class="memdesc:a956c6e129cba9ff4afcdd811d04717f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The specific orbital angular momentum  <a href="#a956c6e129cba9ff4afcdd811d04717f6">More...</a><br /></td></tr>
@@ -380,8 +319,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>fromV</b></td></tr>
 <tr class="memitem:a7863ba9163bb190ee831772f37a5dd38"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a7863ba9163bb190ee831772f37a5dd38">LAN</a></td></tr>
 <tr class="memdesc:a7863ba9163bb190ee831772f37a5dd38"><td class="mdescLeft">&#160;</td><td class="mdescRight">The longitude of the ascending node of the orbit, in degrees. The LAN is the angle between the ascending node and <a class="el" href="class_planetarium.html#acb8953402ccf0c815294fe6b4c690aa3" title="Along with &quot;up&quot; and &quot;forward,&quot; one of the three vectors defining the fixed celestial reference frame...">Planetarium.right</a>, as viewed along <a class="el" href="class_planetarium.html#a19176ac1e758068b7f31709ff933aa67" title="Along with &quot;right&quot; and &quot;forward,&quot; one of the three vectors defining the fixed celestial reference fra...">Planetarium.up</a>.  <a href="#a7863ba9163bb190ee831772f37a5dd38">More...</a><br /></td></tr>
 <tr class="separator:a7863ba9163bb190ee831772f37a5dd38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38f211d8f4e8bcc6c1ebbf3a8699e14c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38f211d8f4e8bcc6c1ebbf3a8699e14c"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>mag</b></td></tr>
+<tr class="memitem:a38f211d8f4e8bcc6c1ebbf3a8699e14c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a38f211d8f4e8bcc6c1ebbf3a8699e14c">mag</a></td></tr>
 <tr class="separator:a38f211d8f4e8bcc6c1ebbf3a8699e14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1db80d5901822edbb5a886a07af64625"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a1db80d5901822edbb5a886a07af64625">meanAnomaly</a></td></tr>
 <tr class="memdesc:a1db80d5901822edbb5a886a07af64625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mean anomaly is the fraction of the orbit that has been completed, measured starting from the periapsis, multiplied by 2π. Look it up.  <a href="#a1db80d5901822edbb5a886a07af64625">More...</a><br /></td></tr>
@@ -389,17 +327,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>mag</b></td></tr>
 <tr class="memitem:aefb08c281cc6a7270b83143b4651ecd8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#aefb08c281cc6a7270b83143b4651ecd8">meanAnomalyAtEpoch</a></td></tr>
 <tr class="memdesc:aefb08c281cc6a7270b83143b4651ecd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mean anomaly of the orbit at the special UT given by <a class="el" href="class_orbit.html#a1856e63f9a84f12a41299bf8073abadb" title="A special UT at which the parameters of the Orbit are defined. See meanAnomalyAtEpoch. ">Orbit.epoch</a>.  <a href="#aefb08c281cc6a7270b83143b4651ecd8">More...</a><br /></td></tr>
 <tr class="separator:aefb08c281cc6a7270b83143b4651ecd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf1d6a7555bdbbf70e9895318a012e15"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf1d6a7555bdbbf70e9895318a012e15"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>nearestTT</b></td></tr>
+<tr class="memitem:abf1d6a7555bdbbf70e9895318a012e15"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#abf1d6a7555bdbbf70e9895318a012e15">nearestTT</a></td></tr>
 <tr class="separator:abf1d6a7555bdbbf70e9895318a012e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a289bbf364e11c48f59c60049eb005f37"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a289bbf364e11c48f59c60049eb005f37"></a>
-<a class="el" href="class_orbit.html">Orbit</a>&#160;</td><td class="memItemRight" valign="bottom"><b>nextPatch</b></td></tr>
+<tr class="memitem:a289bbf364e11c48f59c60049eb005f37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_orbit.html">Orbit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a289bbf364e11c48f59c60049eb005f37">nextPatch</a></td></tr>
 <tr class="separator:a289bbf364e11c48f59c60049eb005f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8098b258c48cd09a1363c91cf7a720f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8098b258c48cd09a1363c91cf7a720f"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>nextTT</b></td></tr>
+<tr class="memitem:aa8098b258c48cd09a1363c91cf7a720f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#aa8098b258c48cd09a1363c91cf7a720f">nextTT</a></td></tr>
 <tr class="separator:aa8098b258c48cd09a1363c91cf7a720f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84f5531553063409274e58e3e43704f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84f5531553063409274e58e3e43704f8"></a>
-Orbit.ObjectType&#160;</td><td class="memItemRight" valign="bottom"><b>objectType</b></td></tr>
+<tr class="memitem:a84f5531553063409274e58e3e43704f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_orbit.html#abe9c150ab071f14fe57cd99eda9ba2ab">Orbit.ObjectType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a84f5531553063409274e58e3e43704f8">objectType</a></td></tr>
 <tr class="separator:a84f5531553063409274e58e3e43704f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b171937b91935a51a6eb29e037096dd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a1b171937b91935a51a6eb29e037096dd">ObT</a></td></tr>
 <tr class="memdesc:a1b171937b91935a51a6eb29e037096dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time since periapsis, in seconds.  <a href="#a1b171937b91935a51a6eb29e037096dd">More...</a><br /></td></tr>
@@ -407,56 +341,44 @@ Orbit.ObjectType&#160;</td><td class="memItemRight" valign="bottom"><b>objectTyp
 <tr class="memitem:af4c1c2c656a7fecd6095c3bb79883b9d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#af4c1c2c656a7fecd6095c3bb79883b9d">ObTAtEpoch</a></td></tr>
 <tr class="memdesc:af4c1c2c656a7fecd6095c3bb79883b9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The value of ObT at the universal time given by epoch.  <a href="#af4c1c2c656a7fecd6095c3bb79883b9d">More...</a><br /></td></tr>
 <tr class="separator:af4c1c2c656a7fecd6095c3bb79883b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a784354eb69349bbd16e8a88772fd0397"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a784354eb69349bbd16e8a88772fd0397"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>orbitalEnergy</b></td></tr>
+<tr class="memitem:a784354eb69349bbd16e8a88772fd0397"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a784354eb69349bbd16e8a88772fd0397">orbitalEnergy</a></td></tr>
 <tr class="separator:a784354eb69349bbd16e8a88772fd0397"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73c09432b9052c305b9cf38be231d3c1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73c09432b9052c305b9cf38be231d3c1"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>orbitalSpeed</b></td></tr>
+<tr class="memitem:a73c09432b9052c305b9cf38be231d3c1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a73c09432b9052c305b9cf38be231d3c1">orbitalSpeed</a></td></tr>
 <tr class="separator:a73c09432b9052c305b9cf38be231d3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05ed6d0e9eb71184910e78d2ec96d5c2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a05ed6d0e9eb71184910e78d2ec96d5c2">orbitPercent</a></td></tr>
 <tr class="memdesc:a05ed6d0e9eb71184910e78d2ec96d5c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equal to  <a href="#a05ed6d0e9eb71184910e78d2ec96d5c2">More...</a><br /></td></tr>
 <tr class="separator:a05ed6d0e9eb71184910e78d2ec96d5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85c869d9dd4bff3e0a9e6935bdc187ab"><td class="memItemLeft" align="right" valign="top">Orbit.PatchTransitionType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a85c869d9dd4bff3e0a9e6935bdc187ab">patchEndTransition</a></td></tr>
+<tr class="memitem:a85c869d9dd4bff3e0a9e6935bdc187ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_orbit.html#a96fe2f2e726341f4b6d1342c792712df">Orbit.PatchTransitionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a85c869d9dd4bff3e0a9e6935bdc187ab">patchEndTransition</a></td></tr>
 <tr class="memdesc:a85c869d9dd4bff3e0a9e6935bdc187ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">How the next patch follows onto this one, or FINAL if there is no patch after this one.  <a href="#a85c869d9dd4bff3e0a9e6935bdc187ab">More...</a><br /></td></tr>
 <tr class="separator:a85c869d9dd4bff3e0a9e6935bdc187ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc4bb8148b4070085ebb10cca1b06a2e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc4bb8148b4070085ebb10cca1b06a2e"></a>
-Orbit.PatchTransitionType&#160;</td><td class="memItemRight" valign="bottom"><b>patchStartTransition</b></td></tr>
+<tr class="memitem:acc4bb8148b4070085ebb10cca1b06a2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_orbit.html#a96fe2f2e726341f4b6d1342c792712df">Orbit.PatchTransitionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#acc4bb8148b4070085ebb10cca1b06a2e">patchStartTransition</a></td></tr>
 <tr class="separator:acc4bb8148b4070085ebb10cca1b06a2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b21188489acf2642322ae49dbbfffff"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a3b21188489acf2642322ae49dbbfffff">period</a></td></tr>
 <tr class="memdesc:a3b21188489acf2642322ae49dbbfffff"><td class="mdescLeft">&#160;</td><td class="mdescRight">The period of the orbit, in seconds.  <a href="#a3b21188489acf2642322ae49dbbfffff">More...</a><br /></td></tr>
 <tr class="separator:a3b21188489acf2642322ae49dbbfffff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c63a5a9672195bfa06e07b08a2cb5cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c63a5a9672195bfa06e07b08a2cb5cf"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pos</b></td></tr>
+<tr class="memitem:a1c63a5a9672195bfa06e07b08a2cb5cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a1c63a5a9672195bfa06e07b08a2cb5cf">pos</a></td></tr>
 <tr class="separator:a1c63a5a9672195bfa06e07b08a2cb5cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af365f4e2b7c207a0a47737a954247780"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af365f4e2b7c207a0a47737a954247780"></a>
-<a class="el" href="class_orbit.html">Orbit</a>&#160;</td><td class="memItemRight" valign="bottom"><b>previousPatch</b></td></tr>
+<tr class="memitem:af365f4e2b7c207a0a47737a954247780"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_orbit.html">Orbit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#af365f4e2b7c207a0a47737a954247780">previousPatch</a></td></tr>
 <tr class="separator:af365f4e2b7c207a0a47737a954247780"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42541e2cae189b49c45c0208db267949"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42541e2cae189b49c45c0208db267949"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>radius</b></td></tr>
+<tr class="memitem:a42541e2cae189b49c45c0208db267949"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a42541e2cae189b49c45c0208db267949">radius</a></td></tr>
 <tr class="separator:a42541e2cae189b49c45c0208db267949"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadc55b3f7f9c0aad54fece7dd21951d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_celestial_body.html">CelestialBody</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#aadc55b3f7f9c0aad54fece7dd21951d1">referenceBody</a></td></tr>
 <tr class="memdesc:aadc55b3f7f9c0aad54fece7dd21951d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The body orbited.  <a href="#aadc55b3f7f9c0aad54fece7dd21951d1">More...</a><br /></td></tr>
 <tr class="separator:aadc55b3f7f9c0aad54fece7dd21951d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a960f424aa1df9946164a4f271beedf70"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a960f424aa1df9946164a4f271beedf70"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>sampleInterval</b></td></tr>
+<tr class="memitem:a960f424aa1df9946164a4f271beedf70"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a960f424aa1df9946164a4f271beedf70">sampleInterval</a></td></tr>
 <tr class="separator:a960f424aa1df9946164a4f271beedf70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17edd1d70c66e0840ec82c893ab3066f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17edd1d70c66e0840ec82c893ab3066f"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>secondaryPosAtTransition1</b></td></tr>
+<tr class="memitem:a17edd1d70c66e0840ec82c893ab3066f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a17edd1d70c66e0840ec82c893ab3066f">secondaryPosAtTransition1</a></td></tr>
 <tr class="separator:a17edd1d70c66e0840ec82c893ab3066f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ca1c2b1d80263b441ebda93715f2ef6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ca1c2b1d80263b441ebda93715f2ef6"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>secondaryPosAtTransition2</b></td></tr>
+<tr class="memitem:a3ca1c2b1d80263b441ebda93715f2ef6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a3ca1c2b1d80263b441ebda93715f2ef6">secondaryPosAtTransition2</a></td></tr>
 <tr class="separator:a3ca1c2b1d80263b441ebda93715f2ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe25c458c2fbef9902d72d265919df2f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#abe25c458c2fbef9902d72d265919df2f">semiMajorAxis</a></td></tr>
 <tr class="memdesc:abe25c458c2fbef9902d72d265919df2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The semi-major axis of the orbit, in meters. Equal to (PeR + ApR)/2  <a href="#abe25c458c2fbef9902d72d265919df2f">More...</a><br /></td></tr>
 <tr class="separator:abe25c458c2fbef9902d72d265919df2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac07a2a7cbc076b0960123bf3b172fba5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac07a2a7cbc076b0960123bf3b172fba5"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>SEVp</b></td></tr>
+<tr class="memitem:ac07a2a7cbc076b0960123bf3b172fba5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#ac07a2a7cbc076b0960123bf3b172fba5">SEVp</a></td></tr>
 <tr class="separator:ac07a2a7cbc076b0960123bf3b172fba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a275c77e411e8e12aee9ccd1128470850"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a275c77e411e8e12aee9ccd1128470850"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>SEVs</b></td></tr>
+<tr class="memitem:a275c77e411e8e12aee9ccd1128470850"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a275c77e411e8e12aee9ccd1128470850">SEVs</a></td></tr>
 <tr class="separator:a275c77e411e8e12aee9ccd1128470850"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaef81af080f4f478a74485bdc66d3640"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaef81af080f4f478a74485bdc66d3640"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>StartUT</b></td></tr>
+<tr class="memitem:aaef81af080f4f478a74485bdc66d3640"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#aaef81af080f4f478a74485bdc66d3640">StartUT</a></td></tr>
 <tr class="separator:aaef81af080f4f478a74485bdc66d3640"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef8b4e3eee98db84bb4c554ac9b80e3d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#aef8b4e3eee98db84bb4c554ac9b80e3d">timeToAp</a></td></tr>
 <tr class="memdesc:aef8b4e3eee98db84bb4c554ac9b80e3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time until the object will reach apoapsis, in seconds.  <a href="#aef8b4e3eee98db84bb4c554ac9b80e3d">More...</a><br /></td></tr>
@@ -464,32 +386,23 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>StartUT</b></td></t
 <tr class="memitem:a63f79606447a608d91cc1bd9a9f1420d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a63f79606447a608d91cc1bd9a9f1420d">timeToPe</a></td></tr>
 <tr class="memdesc:a63f79606447a608d91cc1bd9a9f1420d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time unti lthe object will reach periapsis, in seconds.  <a href="#a63f79606447a608d91cc1bd9a9f1420d">More...</a><br /></td></tr>
 <tr class="separator:a63f79606447a608d91cc1bd9a9f1420d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3944633fcb850ae8841798ec0652fae3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3944633fcb850ae8841798ec0652fae3"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>timeToTransition1</b></td></tr>
+<tr class="memitem:a3944633fcb850ae8841798ec0652fae3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a3944633fcb850ae8841798ec0652fae3">timeToTransition1</a></td></tr>
 <tr class="separator:a3944633fcb850ae8841798ec0652fae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab62bb79adc91801ef216b4a35b7d10da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab62bb79adc91801ef216b4a35b7d10da"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>timeToTransition2</b></td></tr>
+<tr class="memitem:ab62bb79adc91801ef216b4a35b7d10da"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#ab62bb79adc91801ef216b4a35b7d10da">timeToTransition2</a></td></tr>
 <tr class="separator:ab62bb79adc91801ef216b4a35b7d10da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af473f3da46241893b9287a017f62bd07"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af473f3da46241893b9287a017f62bd07"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>toE</b></td></tr>
+<tr class="memitem:af473f3da46241893b9287a017f62bd07"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#af473f3da46241893b9287a017f62bd07">toE</a></td></tr>
 <tr class="separator:af473f3da46241893b9287a017f62bd07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a285a3c98e3caea6e088fdb7dd2594455"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a285a3c98e3caea6e088fdb7dd2594455"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>toV</b></td></tr>
+<tr class="memitem:a285a3c98e3caea6e088fdb7dd2594455"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a285a3c98e3caea6e088fdb7dd2594455">toV</a></td></tr>
 <tr class="separator:a285a3c98e3caea6e088fdb7dd2594455"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb8b538891888d3eaa34faadec688960"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb8b538891888d3eaa34faadec688960"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>trueAnomaly</b></td></tr>
+<tr class="memitem:aeb8b538891888d3eaa34faadec688960"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#aeb8b538891888d3eaa34faadec688960">trueAnomaly</a></td></tr>
 <tr class="separator:aeb8b538891888d3eaa34faadec688960"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cb156bbacd2c2434cad3dbd4b0cadde"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3cb156bbacd2c2434cad3dbd4b0cadde"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>UTappr</b></td></tr>
+<tr class="memitem:a3cb156bbacd2c2434cad3dbd4b0cadde"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a3cb156bbacd2c2434cad3dbd4b0cadde">UTappr</a></td></tr>
 <tr class="separator:a3cb156bbacd2c2434cad3dbd4b0cadde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a591a97d8327e1df4fcac6720e5f2e986"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a591a97d8327e1df4fcac6720e5f2e986"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>UTsoi</b></td></tr>
+<tr class="memitem:a591a97d8327e1df4fcac6720e5f2e986"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a591a97d8327e1df4fcac6720e5f2e986">UTsoi</a></td></tr>
 <tr class="separator:a591a97d8327e1df4fcac6720e5f2e986"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85ce609a6c7bfa15eb9a65ef3e425d7d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85ce609a6c7bfa15eb9a65ef3e425d7d"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>V</b></td></tr>
+<tr class="memitem:a85ce609a6c7bfa15eb9a65ef3e425d7d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a85ce609a6c7bfa15eb9a65ef3e425d7d">V</a></td></tr>
 <tr class="separator:a85ce609a6c7bfa15eb9a65ef3e425d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a202d30a9d828e267e76e967df9aead97"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a202d30a9d828e267e76e967df9aead97"></a>
-<a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>vel</b></td></tr>
+<tr class="memitem:a202d30a9d828e267e76e967df9aead97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a202d30a9d828e267e76e967df9aead97">vel</a></td></tr>
 <tr class="separator:a202d30a9d828e267e76e967df9aead97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
@@ -516,7 +429,518 @@ Properties</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An <a class="el" href="class_orbit.html">Orbit</a> class represents a Keplerian orbit. Each <a class="el" href="class_vessel.html" title="A Vessel object represents a single vessel. Parts that break off from a vessel become their own Vesse...">Vessel</a> and each <a class="el" href="class_celestial_body.html" title="The Sun, the planets, and the moons are all CelestialBodies. ">CelestialBody</a> has an <a class="el" href="class_orbit.html">Orbit</a>. CelestialBodies and on-rails Vessels follow their Orbits exactly. Off-rails vessels (the active vessel and any nearby vessels) do not follow their orbits exactly; instead their motion is computed frame-by-frame from the forces acting on them.</p>
 <p>A patched consics trajectory consists of a series of Orbits, called patches.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="ab0e2dc2f244a601c6fb6dd1070785580"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_orbit.html#ab0e2dc2f244a601c6fb6dd1070785580">Orbit.EncounterSolutionLevel</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ab0e2dc2f244a601c6fb6dd1070785580ab50339a10e1de285ac99d4c3990b8693"></a>NONE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab0e2dc2f244a601c6fb6dd1070785580adaaedac409335b869929ea43fa44be5d"></a>ESCAPE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab0e2dc2f244a601c6fb6dd1070785580ac6e4ac3de5686818feb0ed59f9258118"></a>ORBIT_INTERSECT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab0e2dc2f244a601c6fb6dd1070785580a0513be9a6423b8574f34d648167f704c"></a>SOI_INTERSECT_2&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab0e2dc2f244a601c6fb6dd1070785580ad5a45c8eb7fe3f02c0dd38307fde370a"></a>SOI_INTERSECT_1&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="abe9c150ab071f14fe57cd99eda9ba2ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_orbit.html#abe9c150ab071f14fe57cd99eda9ba2ab">Orbit.ObjectType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="abe9c150ab071f14fe57cd99eda9ba2abafc3a069115b4743ae5f7d6b59cbb7de1"></a>VESSEL&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="abe9c150ab071f14fe57cd99eda9ba2abac5632fcf0e9cb5e588690ab58d09cb71"></a>SPACE_DEBRIS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="abe9c150ab071f14fe57cd99eda9ba2abad7c1cff4be00b3ec52649d7d0495f96e"></a>CELESTIAL_BODIES&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="abe9c150ab071f14fe57cd99eda9ba2abaaeaf35eaa21154ff8b211ffc6a665fe3"></a>UNKNOWN_MISC&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="abe9c150ab071f14fe57cd99eda9ba2abaf7776d9a8724b18bcc6a493253d6f6d8"></a>KERBAL&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a96fe2f2e726341f4b6d1342c792712df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_orbit.html#a96fe2f2e726341f4b6d1342c792712df">Orbit.PatchTransitionType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a96fe2f2e726341f4b6d1342c792712dfa91d26e4b2b105c74655093c9becd30b7"></a>INITIAL&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a96fe2f2e726341f4b6d1342c792712dfa6c8361dc2036c0559376fe4957699f69"></a>FINAL&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a96fe2f2e726341f4b6d1342c792712dfa57c102cdbe7d64441cd90d61d29bcf30"></a>ENCOUNTER&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a96fe2f2e726341f4b6d1342c792712dfadaaedac409335b869929ea43fa44be5d"></a>ESCAPE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a96fe2f2e726341f4b6d1342c792712dfae30fd3901adfda9dc2260d6370961616"></a>MANEUVER&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a4b67a7a4ff2add616b3e17fd30b7b5ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Orbit.Orbit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab956e8e0e7e4a146ff8eeea3d05040d6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Orbit.Orbit </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>inc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>sma</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>lan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>mEp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_celestial_body.html">CelestialBody</a>&#160;</td>
+          <td class="paramname"><em>body</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a8c145576d6dae911e8fc8614b45822c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Orbit.DrawOrbit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab8af3bb634e2d76e26856a6767ebd84d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Orbit.FindClosestPoints </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_orbit.html">Orbit</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_orbit.html">Orbit</a>&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref double&#160;</td>
+          <td class="paramname"><em>CD</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref double&#160;</td>
+          <td class="paramname"><em>CCD</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref double&#160;</td>
+          <td class="paramname"><em>FFp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref double&#160;</td>
+          <td class="paramname"><em>FFs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref double&#160;</td>
+          <td class="paramname"><em>SFp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref double&#160;</td>
+          <td class="paramname"><em>SFs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>epsilon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxIterations</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref int&#160;</td>
+          <td class="paramname"><em>iterationCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8553fe87878acc91d4578af81dd9053e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Orbit.GetANVector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae9957d30c9aaf337cb7c418cd017fb96"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.GetDTforTrueAnomaly </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>wrapAfterSeconds</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9f077951cf686c380063aa83db91d77c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.GetEccentricAnomaly </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tA</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a114d2c198ce639b5e778a8c977b9e009"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Orbit.GetEccVector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab9ee803a8190bf425c652185697ae58d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Orbit.GetFrameVel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a346b2dbdd0abba001fb5b5713ae92023"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Orbit.GetFrameVelAtUT </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>UT</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a73c0d35d43212295344883c50bfa27bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.GetMeanAnomaly </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>E</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tA</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a34b09764e0095dde3a308714b2fb588f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.getObTAtMeanAnomaly </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>M</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afa08d2caf7f095264fafecc78f203279"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.getObtAtUT </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>UT</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad294ac97fd1f02017cf96b12952d62b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.getOrbitalSpeedAt </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>time</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0793fba394157af2cba7b0c10b7eba19"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.getOrbitalSpeedAtDistance </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa11c8e059c7b44cf2c70ade503cc797e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.getOrbitalSpeedAtPos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1fdc4927a896fcf07fc4058565c21ee2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.getOrbitalSpeedAtRelativePos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td>
+          <td class="paramname"><em>relPos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af8b367181b31777066ae1ddc1b20a71f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Orbit.getOrbitalVelocityAtObT </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ObT</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4a16ae992f244b0fe4b808c85900890b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Orbit.getOrbitalVelocityAtUT </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>UT</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a63364d32f3bcf99789f282306f4f9640"></a>
 <div class="memitem">
 <div class="memproto">
@@ -532,6 +956,118 @@ Properties</h2></td></tr>
 
 <p>A unit vector normal to the plane of the orbit. NOTE: All <a class="el" href="struct_vector3d.html" title="A Vector3d in 3D space. Vector3d is just like Unity&#39;s Vector3 class, except it uses doubles instead o...">Vector3d</a>'s returned by <a class="el" href="class_orbit.html">Orbit</a> class functions have their y and z axes flipped. You have to flip these back to get the vectors in world coordinates. </p>
 <dl class="section return"><dt>Returns</dt><dd>A unit normal vector.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9857d67467eee19260476367bd24293b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Trajectory Orbit.GetPatchTrajectory </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sampleCount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af636445c2302a4cdd49882de09521b8c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Orbit.getPositionAtT </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>T</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5cf1851717d50c62ddca45925f52b59d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Orbit.getPositionAtUT </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>UT</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac370e5e614c69fb4a0e5799ed4c82be0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Orbit.getPositionFromEccAnomaly </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>E</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6b5e973dae21adf597b60a7be4bcb865"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Orbit.getPositionFromMeanAnomaly </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>M</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af701f03b21ae0acb3dce346acdfa7534"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Orbit.getPositionFromTrueAnomaly </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tA</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5e29f8def936608319220a399b9c00fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Orbit.getRelativePositionAtT </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>T</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -557,6 +1093,159 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Position relative to the main body (YZ flipped)</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5f2ac1a9bc4db2b22c713da399afe72e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Orbit.getRelativePositionFromEccAnomaly </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>E</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad4c030b6013195f4c0bf79753211c4c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Orbit.getRelativePositionFromMeanAnomaly </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>M</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac8ca7f923a1fd230efc4f088ca7aa4ee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Orbit.getRelativePositionFromTrueAnomaly </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tA</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="add39b52d54c01fff9ccc4b575dd44dec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Orbit.GetRelativeVel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1aa7e5eaa0ad54f8709d19a2e4d34b3d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Orbit.GetRotFrameVel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_celestial_body.html">CelestialBody</a>&#160;</td>
+          <td class="paramname"><em>refBody</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab0c09d6e7be48876f2872bcf44dc5b94"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.getTrueAnomaly </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>E</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5c7874115d0af36579e349be60fb6488"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.GetTrueAnomalyOfZupVector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td>
+          <td class="paramname"><em>vector</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a61d5eaa86089f9d8286b7d2631b40aa6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Orbit.getTruePositionAtUT </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>UT</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a465681aad2db3169f3b9dfe1189fa09b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.GetUTforTrueAnomaly </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>wrapAfterSeconds</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -595,6 +1284,61 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a6bee77b7c30964ed62a6a51fd3ce350b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Orbit.Init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abaf424cdbb82e296b84cc1b14fc4bd89"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool Orbit.PeApIntersects </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_orbit.html">Orbit</a>&#160;</td>
+          <td class="paramname"><em>primary</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_orbit.html">Orbit</a>&#160;</td>
+          <td class="paramname"><em>secondary</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>threshold</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="af581cf4bae5fc1cecb386f110a1dd2e1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -620,6 +1364,208 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="abe73bd678a78f6d7650aa6f71c25fac5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double Orbit.SolveClosestApproach </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_orbit.html">Orbit</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_orbit.html">Orbit</a>&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref double&#160;</td>
+          <td class="paramname"><em>UT</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dT</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>threshold</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>MinUT</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>MaxUT</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>epsilon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxIterations</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref int&#160;</td>
+          <td class="paramname"><em>iterationCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac16dab5b5b35de07038fa0930e6f8499"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.solveEccentricAnomaly </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>M</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ecc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>maxError</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxIterations</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaa4f8294ee035f0937bf5646f3fc4288"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool Orbit.SolveSOI_BSP </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_orbit.html">Orbit</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_orbit.html">Orbit</a>&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref double&#160;</td>
+          <td class="paramname"><em>UT</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dT</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Rsoi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>MinUT</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>MaxUT</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>epsilon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxIterations</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref int&#160;</td>
+          <td class="paramname"><em>iterationCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a4815e40be78123ea7d780d4b91a769c5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -642,6 +1588,70 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True anomaly, in radians.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a34ce6b1e3429c77d7aff72c2205facd6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.TrueAnomalyAtT </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>T</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a78bdc5c929fd8adfa5f3d0605dc3083b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.TrueAnomalyAtUT </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>UT</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab02534b069997c1795ada6ba4b21f848"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Orbit.UpdateFromOrbitAtUT </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_orbit.html">Orbit</a>&#160;</td>
+          <td class="paramname"><em>orbit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>UT</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_celestial_body.html">CelestialBody</a>&#160;</td>
+          <td class="paramname"><em>toBody</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -694,6 +1704,22 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a03e49ebe93555ef975c9386db8b0a629"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Orbit.UpdateFromUT </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>UT</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a488229aa4687ba8ffcd23dce27353eb6"></a>
 <div class="memitem">
@@ -705,7 +1731,31 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Whether this patch actually represents a real orbit patch in the projected flight path. Often Orbit.nextPatch for the last real will not be null, but will be some sort of bogus <a class="el" href="class_orbit.html">Orbit</a> object. You can recognize these because activePatch will be false. </p>
+<p>Whether this patch actually represents a real orbit patch in the projected flight path. Often <a class="el" href="class_orbit.html#a289bbf364e11c48f59c60049eb005f37">Orbit.nextPatch</a> for the last real will not be null, but will be some sort of bogus <a class="el" href="class_orbit.html">Orbit</a> object. You can recognize these because activePatch will be false. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae001aa0cf604ed46802d0b1d625f4918"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.altitude</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aefe2f6a4e65aee883a17cc9cc66ac000"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Orbit.an</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -720,6 +1770,186 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The angle between the ascending node and the periapsis, in degrees. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae0ded1189db82f7647f069f6cc8dd271"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.ClAppr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2b74b3daf8d10e30d5e63d04a843c7a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.ClEctr1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7293dd5a1770c536dfa74eafea0a1011"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.ClEctr2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6e7e502e5355be43f5a24b0faf2ec53b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_celestial_body.html">CelestialBody</a> Orbit.closestEncounterBody</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a190317232981fabf7be657b537909950"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_orbit.html#ab0e2dc2f244a601c6fb6dd1070785580">Orbit.EncounterSolutionLevel</a> Orbit.closestEncounterLevel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5f05e48da72a07be1af33fc50a4fee67"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_orbit.html">Orbit</a> Orbit.closestEncounterPatch</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac7f4667dc18c9713654356a1f98c0b24"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.closestTgtApprUT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9332c7bf6c67daae03bdd652f1d425d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.CrAppr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac2452179594c0d2625bf85977c28865f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Orbit.debug_returnFullEllipseTrajectory</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af6e6b1e4e4da491005d286cafb64d0e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 Orbit.debugAN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac41bd3037e6936390a120d32351d7df9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 Orbit.debugEccVec</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9e35b9231d3766b997bfe7f6baf6567a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 Orbit.debugH</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab0978d14e83f801a2798288194befea2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 Orbit.debugPos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a955f43658b48e7da5b03018d1524a479"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 Orbit.debugVel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6db22ce977b60613d707fafbc44a70b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.E</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -793,6 +2023,54 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ade7707b9a2257e5e7e26c8d1761738b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.FEVp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af3c1c822fdf8499ef33f6d0614c6bbd7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.FEVs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a70cb69eb2b2bb4b98eda368b233d7300"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.fromE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a85163a2ee6fd2005478c182efae594e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.fromV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a956c6e129cba9ff4afcdd811d04717f6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -835,6 +2113,18 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a38f211d8f4e8bcc6c1ebbf3a8699e14c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.mag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a1db80d5901822edbb5a886a07af64625"></a>
 <div class="memitem">
 <div class="memproto">
@@ -860,6 +2150,54 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The mean anomaly of the orbit at the special UT given by <a class="el" href="class_orbit.html#a1856e63f9a84f12a41299bf8073abadb" title="A special UT at which the parameters of the Orbit are defined. See meanAnomalyAtEpoch. ">Orbit.epoch</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="abf1d6a7555bdbbf70e9895318a012e15"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.nearestTT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a289bbf364e11c48f59c60049eb005f37"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_orbit.html">Orbit</a> Orbit.nextPatch</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa8098b258c48cd09a1363c91cf7a720f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.nextTT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a84f5531553063409274e58e3e43704f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_orbit.html#abe9c150ab071f14fe57cd99eda9ba2ab">Orbit.ObjectType</a> Orbit.objectType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -891,6 +2229,30 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a784354eb69349bbd16e8a88772fd0397"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.orbitalEnergy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a73c09432b9052c305b9cf38be231d3c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.orbitalSpeed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a05ed6d0e9eb71184910e78d2ec96d5c2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -911,12 +2273,24 @@ Properties</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Orbit.PatchTransitionType Orbit.patchEndTransition</td>
+          <td class="memname"><a class="el" href="class_orbit.html#a96fe2f2e726341f4b6d1342c792712df">Orbit.PatchTransitionType</a> Orbit.patchEndTransition</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>How the next patch follows onto this one, or FINAL if there is no patch after this one. </p>
+
+</div>
+</div>
+<a class="anchor" id="acc4bb8148b4070085ebb10cca1b06a2e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_orbit.html#a96fe2f2e726341f4b6d1342c792712df">Orbit.PatchTransitionType</a> Orbit.patchStartTransition</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -934,6 +2308,42 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a1c63a5a9672195bfa06e07b08a2cb5cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Orbit.pos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af365f4e2b7c207a0a47737a954247780"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_orbit.html">Orbit</a> Orbit.previousPatch</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a42541e2cae189b49c45c0208db267949"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.radius</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aadc55b3f7f9c0aad54fece7dd21951d1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -948,6 +2358,42 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a960f424aa1df9946164a4f271beedf70"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.sampleInterval</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a17edd1d70c66e0840ec82c893ab3066f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Orbit.secondaryPosAtTransition1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3ca1c2b1d80263b441ebda93715f2ef6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Orbit.secondaryPosAtTransition2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="abe25c458c2fbef9902d72d265919df2f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -959,6 +2405,42 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The semi-major axis of the orbit, in meters. Equal to (PeR + ApR)/2 </p>
+
+</div>
+</div>
+<a class="anchor" id="ac07a2a7cbc076b0960123bf3b172fba5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.SEVp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a275c77e411e8e12aee9ccd1128470850"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.SEVs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaef81af080f4f478a74485bdc66d3640"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.StartUT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -987,6 +2469,114 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The time unti lthe object will reach periapsis, in seconds. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3944633fcb850ae8841798ec0652fae3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.timeToTransition1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab62bb79adc91801ef216b4a35b7d10da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.timeToTransition2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af473f3da46241893b9287a017f62bd07"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.toE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a285a3c98e3caea6e088fdb7dd2594455"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.toV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeb8b538891888d3eaa34faadec688960"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.trueAnomaly</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3cb156bbacd2c2434cad3dbd4b0cadde"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.UTappr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a591a97d8327e1df4fcac6720e5f2e986"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.UTsoi</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a85ce609a6c7bfa15eb9a65ef3e425d7d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Orbit.V</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a202d30a9d828e267e76e967df9aead97"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3d.html">Vector3d</a> Orbit.vel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1124,12 +2714,12 @@ Properties</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/Orbit.cs</li>
+<li>src/<a class="el" href="_orbit_8cs.html">Orbit.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 29 2014 00:30:30 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 29 2014 00:44:38 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

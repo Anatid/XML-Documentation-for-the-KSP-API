@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,17 +111,17 @@ Inheritance diagram for PartModule:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ac6597127392e002b92f7427cf50244d3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part_module.html#ac6597127392e002b92f7427cf50244d3">StartState</a> { <br />
-&#160;&#160;<b>None</b> = 0, 
-<b>Editor</b> = 1, 
-<b>PreLaunch</b> = 2, 
-<b>Landed</b> = 4, 
+&#160;&#160;<a class="el" href="class_part_module.html#ac6597127392e002b92f7427cf50244d3a6adf97f83acf6453d4a6a4b1070f3754">StartState.None</a> = 0, 
+<a class="el" href="class_part_module.html#ac6597127392e002b92f7427cf50244d3a344a7f427fb765610ef96eb7bce95257">StartState.Editor</a> = 1, 
+<a class="el" href="class_part_module.html#ac6597127392e002b92f7427cf50244d3af474b3ce9e50f52f23ff7326ea1de9d3">StartState.PreLaunch</a> = 2, 
+<a class="el" href="class_part_module.html#ac6597127392e002b92f7427cf50244d3ad686e9ef2eb30c76874d445ae35bccc2">StartState.Landed</a> = 4, 
 <br />
-&#160;&#160;<b>Docked</b> = 8, 
-<b>Flying</b> = 16, 
-<b>Splashed</b> = 32, 
-<b>SubOrbital</b> = 64, 
+&#160;&#160;<a class="el" href="class_part_module.html#ac6597127392e002b92f7427cf50244d3a30af82f59906891776f27df49f690e82">StartState.Docked</a> = 8, 
+<a class="el" href="class_part_module.html#ac6597127392e002b92f7427cf50244d3a444733081a578880ba8a563d3c59d22d">StartState.Flying</a> = 16, 
+<a class="el" href="class_part_module.html#ac6597127392e002b92f7427cf50244d3acd0c6e01abfb930e1a737253e088360b">StartState.Splashed</a> = 32, 
+<a class="el" href="class_part_module.html#ac6597127392e002b92f7427cf50244d3a886122fca48f9047562c97120fcf3481">StartState.SubOrbital</a> = 64, 
 <br />
-&#160;&#160;<b>Orbital</b> = 128
+&#160;&#160;<a class="el" href="class_part_module.html#ac6597127392e002b92f7427cf50244d3a510b953097388490c29e4e4991fc369e">StartState.Orbital</a> = 128
 <br />
  }</td></tr>
 <tr class="memdesc:ac6597127392e002b92f7427cf50244d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A StartState is passed on OnStart in order to provide the <a class="el" href="class_part_module.html" title="Extending PartModule lets you add new functionality to parts. The main class of many plugins will be ...">PartModule</a> with some information about where it is starting up.  <a href="class_part_module.html#ac6597127392e002b92f7427cf50244d3">More...</a><br /></td></tr>
@@ -128,11 +129,12 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ab01c64b026587bb5e0642a711e88117c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part_module.html#ab01c64b026587bb5e0642a711e88117c">PartModule</a> ()</td></tr>
+<tr class="separator:ab01c64b026587bb5e0642a711e88117c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6514eea67c1241135b6215868ebd3233"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part_module.html#a6514eea67c1241135b6215868ebd3233">GetInfo</a> ()</td></tr>
 <tr class="memdesc:a6514eea67c1241135b6215868ebd3233"><td class="mdescLeft">&#160;</td><td class="mdescRight">The return value of this function appears in the part's description in the editor.  <a href="#a6514eea67c1241135b6215868ebd3233">More...</a><br /></td></tr>
 <tr class="separator:a6514eea67c1241135b6215868ebd3233"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe5f5e035d43bdf82d226b83248aa2da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe5f5e035d43bdf82d226b83248aa2da"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Load</b> (<a class="el" href="class_config_node.html">ConfigNode</a> node)</td></tr>
+<tr class="memitem:afe5f5e035d43bdf82d226b83248aa2da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part_module.html#afe5f5e035d43bdf82d226b83248aa2da">Load</a> (<a class="el" href="class_config_node.html">ConfigNode</a> node)</td></tr>
 <tr class="separator:afe5f5e035d43bdf82d226b83248aa2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac07319a028fb17f959e1b732dd6b4709"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part_module.html#ac07319a028fb17f959e1b732dd6b4709">OnActive</a> ()</td></tr>
 <tr class="memdesc:ac07319a028fb17f959e1b732dd6b4709"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called once when the part gets activated.  <a href="#ac07319a028fb17f959e1b732dd6b4709">More...</a><br /></td></tr>
@@ -158,20 +160,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Load</b> (<a class="e
 <tr class="memitem:a4417636f7c195558e14be57092bc60f6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part_module.html#a4417636f7c195558e14be57092bc60f6">OnUpdate</a> ()</td></tr>
 <tr class="memdesc:a4417636f7c195558e14be57092bc60f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once per Unity Update cycle once the part has been activated. See the Unity documentation on Update for more information. Poll for user input in OnUpdate, not OnFixedUpdate  <a href="#a4417636f7c195558e14be57092bc60f6">More...</a><br /></td></tr>
 <tr class="separator:a4417636f7c195558e14be57092bc60f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07d77371a4ae15818a3ba2c2d634d041"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a07d77371a4ae15818a3ba2c2d634d041"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Save</b> (<a class="el" href="class_config_node.html">ConfigNode</a> node)</td></tr>
+<tr class="memitem:a07d77371a4ae15818a3ba2c2d634d041"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part_module.html#a07d77371a4ae15818a3ba2c2d634d041">Save</a> (<a class="el" href="class_config_node.html">ConfigNode</a> node)</td></tr>
 <tr class="separator:a07d77371a4ae15818a3ba2c2d634d041"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aab6f8aa951ef97d3f29098361f2e7db0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab6f8aa951ef97d3f29098361f2e7db0"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isEnabled</b></td></tr>
+<tr class="memitem:aab6f8aa951ef97d3f29098361f2e7db0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part_module.html#aab6f8aa951ef97d3f29098361f2e7db0">isEnabled</a></td></tr>
 <tr class="separator:aab6f8aa951ef97d3f29098361f2e7db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea768f1f238d04386e2333ca568f7201"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea768f1f238d04386e2333ca568f7201"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>moduleName</b></td></tr>
+<tr class="memitem:aea768f1f238d04386e2333ca568f7201"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part_module.html#aea768f1f238d04386e2333ca568f7201">moduleName</a></td></tr>
 <tr class="separator:aea768f1f238d04386e2333ca568f7201"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ddbed5c48658fb9f4092be7bab21c8f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ddbed5c48658fb9f4092be7bab21c8f"></a>
-ProtoPartModuleSnapshot&#160;</td><td class="memItemRight" valign="bottom"><b>snapshot</b></td></tr>
+<tr class="memitem:a3ddbed5c48658fb9f4092be7bab21c8f"><td class="memItemLeft" align="right" valign="top">ProtoPartModuleSnapshot&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part_module.html#a3ddbed5c48658fb9f4092be7bab21c8f">snapshot</a></td></tr>
 <tr class="separator:a3ddbed5c48658fb9f4092be7bab21c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
@@ -179,11 +177,9 @@ Properties</h2></td></tr>
 <tr class="memitem:ae6fbe773dd61f760aab2cd51f24315ad"><td class="memItemLeft" align="right" valign="top">BaseActionList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part_module.html#ae6fbe773dd61f760aab2cd51f24315ad">Actions</a><code> [get]</code></td></tr>
 <tr class="memdesc:ae6fbe773dd61f760aab2cd51f24315ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of KSPActions which can be added to action groups.  <a href="#ae6fbe773dd61f760aab2cd51f24315ad">More...</a><br /></td></tr>
 <tr class="separator:ae6fbe773dd61f760aab2cd51f24315ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77a54f3e168c2a536936a88f620b2d2b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a77a54f3e168c2a536936a88f620b2d2b"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ClassID</b><code> [get]</code></td></tr>
+<tr class="memitem:a77a54f3e168c2a536936a88f620b2d2b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part_module.html#a77a54f3e168c2a536936a88f620b2d2b">ClassID</a><code> [get]</code></td></tr>
 <tr class="separator:a77a54f3e168c2a536936a88f620b2d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac720d87e643e877eee4f455c69d1aba3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac720d87e643e877eee4f455c69d1aba3"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>ClassName</b><code> [get]</code></td></tr>
+<tr class="memitem:ac720d87e643e877eee4f455c69d1aba3"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part_module.html#ac720d87e643e877eee4f455c69d1aba3">ClassName</a><code> [get]</code></td></tr>
 <tr class="separator:ac720d87e643e877eee4f455c69d1aba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bf7c266e1fb22d770e3981dc320f245"><td class="memItemLeft" align="right" valign="top">BaseEventList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part_module.html#a7bf7c266e1fb22d770e3981dc320f245">Events</a><code> [get]</code></td></tr>
 <tr class="memdesc:a7bf7c266e1fb22d770e3981dc320f245"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of KSPEvents, which can be triggered by code or by the user through the part's right-click menu.  <a href="#a7bf7c266e1fb22d770e3981dc320f245">More...</a><br /></td></tr>
@@ -191,8 +187,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>ClassName</b><code>
 <tr class="memitem:a18ef1ffbbfed4cb1a7aeb9bf6b9bec7a"><td class="memItemLeft" align="right" valign="top">BaseFieldList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part_module.html#a18ef1ffbbfed4cb1a7aeb9bf6b9bec7a">Fields</a><code> [get]</code></td></tr>
 <tr class="memdesc:a18ef1ffbbfed4cb1a7aeb9bf6b9bec7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of the KSPFields which the module lods from the part.cfg file.  <a href="#a18ef1ffbbfed4cb1a7aeb9bf6b9bec7a">More...</a><br /></td></tr>
 <tr class="separator:a18ef1ffbbfed4cb1a7aeb9bf6b9bec7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4623c41e0baf90e45f42ca25ea7fcf6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa4623c41e0baf90e45f42ca25ea7fcf6"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>GUIName</b><code> [get]</code></td></tr>
+<tr class="memitem:aa4623c41e0baf90e45f42ca25ea7fcf6"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part_module.html#aa4623c41e0baf90e45f42ca25ea7fcf6">GUIName</a><code> [get]</code></td></tr>
 <tr class="separator:aa4623c41e0baf90e45f42ca25ea7fcf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6020ba0d98699d09c96931bae237973d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_part.html">Part</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part_module.html#a6020ba0d98699d09c96931bae237973d">part</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a6020ba0d98699d09c96931bae237973d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_part.html" title="Each part on a vessel is represented by a Part object. Plugins can add new functionality to parts by ...">Part</a> to which this <a class="el" href="class_part_module.html" title="Extending PartModule lets you add new functionality to parts. The main class of many plugins will be ...">PartModule</a> is attached. Use this to reference the part from your module code.  <a href="#a6020ba0d98699d09c96931bae237973d">More...</a><br /></td></tr>
@@ -216,6 +211,42 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>GUIName</b><code> [
 </div><div class="memdoc">
 
 <p>A StartState is passed on OnStart in order to provide the <a class="el" href="class_part_module.html" title="Extending PartModule lets you add new functionality to parts. The main class of many plugins will be ...">PartModule</a> with some information about where it is starting up. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ac6597127392e002b92f7427cf50244d3a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac6597127392e002b92f7427cf50244d3a344a7f427fb765610ef96eb7bce95257"></a>Editor&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac6597127392e002b92f7427cf50244d3af474b3ce9e50f52f23ff7326ea1de9d3"></a>PreLaunch&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac6597127392e002b92f7427cf50244d3ad686e9ef2eb30c76874d445ae35bccc2"></a>Landed&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac6597127392e002b92f7427cf50244d3a30af82f59906891776f27df49f690e82"></a>Docked&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac6597127392e002b92f7427cf50244d3a444733081a578880ba8a563d3c59d22d"></a>Flying&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac6597127392e002b92f7427cf50244d3acd0c6e01abfb930e1a737253e088360b"></a>Splashed&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac6597127392e002b92f7427cf50244d3a886122fca48f9047562c97120fcf3481"></a>SubOrbital&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac6597127392e002b92f7427cf50244d3a510b953097388490c29e4e4991fc369e"></a>Orbital&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ab01c64b026587bb5e0642a711e88117c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PartModule.PartModule </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -245,6 +276,22 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>GUIName</b><code> [
 <dl class="section return"><dt>Returns</dt><dd>Editor info for the part</dd></dl>
 
 <p>Reimplemented in <a class="el" href="class_module_engines.html#a9c080ee2d6fbef4160d80fb2b754eee9">ModuleEngines</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afe5f5e035d43bdf82d226b83248aa2da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PartModule.Load </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_config_node.html">ConfigNode</a>&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -479,6 +526,59 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>GUIName</b><code> [
 
 </div>
 </div>
+<a class="anchor" id="a07d77371a4ae15818a3ba2c2d634d041"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PartModule.Save </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_config_node.html">ConfigNode</a>&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="aab6f8aa951ef97d3f29098361f2e7db0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PartModule.isEnabled</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aea768f1f238d04386e2333ca568f7201"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string PartModule.moduleName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3ddbed5c48658fb9f4092be7bab21c8f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ProtoPartModuleSnapshot PartModule.snapshot</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Property Documentation</h2>
 <a class="anchor" id="ae6fbe773dd61f760aab2cd51f24315ad"></a>
 <div class="memitem">
@@ -499,6 +599,46 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>GUIName</b><code> [
 </div><div class="memdoc">
 
 <p>A list of KSPActions which can be added to action groups. </p>
+
+</div>
+</div>
+<a class="anchor" id="a77a54f3e168c2a536936a88f620b2d2b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PartModule.ClassID</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac720d87e643e877eee4f455c69d1aba3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string PartModule.ClassName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -543,6 +683,26 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>GUIName</b><code> [
 </div><div class="memdoc">
 
 <p>A list of the KSPFields which the module lods from the part.cfg file. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa4623c41e0baf90e45f42ca25ea7fcf6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string PartModule.GUIName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -591,12 +751,12 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>GUIName</b><code> [
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/PartModule.cs</li>
+<li>src/<a class="el" href="_part_module_8cs.html">PartModule.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 29 2014 00:30:30 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 29 2014 00:44:38 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

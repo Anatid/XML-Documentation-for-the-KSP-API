@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -107,14 +108,14 @@ Inheritance diagram for ApplicationLauncher:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a7a06e87f89d831ed977456f13ca579a0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#a7a06e87f89d831ed977456f13ca579a0">AppScenes</a> { <br />
-&#160;&#160;<b>NEVER</b> = 0, 
-<b>SPACECENTER</b> = 1, 
-<b>FLIGHT</b> = 2, 
-<b>MAPVIEW</b> = 4, 
+&#160;&#160;<a class="el" href="class_application_launcher.html#a7a06e87f89d831ed977456f13ca579a0a443475558f0168dff92ecde26b98ae5a">AppScenes.NEVER</a> = 0, 
+<a class="el" href="class_application_launcher.html#a7a06e87f89d831ed977456f13ca579a0ae4c13ae9a12231561bcb660f785e2d35">AppScenes.SPACECENTER</a> = 1, 
+<a class="el" href="class_application_launcher.html#a7a06e87f89d831ed977456f13ca579a0a215085d0bbddf29e95a312557210d02c">AppScenes.FLIGHT</a> = 2, 
+<a class="el" href="class_application_launcher.html#a7a06e87f89d831ed977456f13ca579a0a7d3ff301db864b8c5ca2bf3763c83ad3">AppScenes.MAPVIEW</a> = 4, 
 <br />
-&#160;&#160;<b>VAB</b> = 8, 
-<b>SPH</b> = 16, 
-<b>ALWAYS</b> = 31
+&#160;&#160;<a class="el" href="class_application_launcher.html#a7a06e87f89d831ed977456f13ca579a0aac33cb153d29743ea3583ffc672d0821">AppScenes.VAB</a> = 8, 
+<a class="el" href="class_application_launcher.html#a7a06e87f89d831ed977456f13ca579a0a1710c052ab1570668ba737824f33b6cb">AppScenes.SPH</a> = 16, 
+<a class="el" href="class_application_launcher.html#a7a06e87f89d831ed977456f13ca579a0af3fc827ade4b968e50406496907ef962">AppScenes.ALWAYS</a> = 31
 <br />
  }</td></tr>
 <tr class="memdesc:a7a06e87f89d831ed977456f13ca579a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Or together these flags and pass them to AddModApplication to specify when your button should appear on the application launcher toolbar.  <a href="class_application_launcher.html#a7a06e87f89d831ed977456f13ca579a0">More...</a><br /></td></tr>
@@ -122,11 +123,11 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a29c8f46299f35a3ffd21be0fce97b96f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29c8f46299f35a3ffd21be0fce97b96f"></a>
-ApplicationLauncherButton&#160;</td><td class="memItemRight" valign="bottom"><b>AddApplication</b> (RUIToggleButton.OnTrue onTrue, RUIToggleButton.OnFalse onFalse, RUIToggleButton.OnHover onHover, RUIToggleButton.OnHoverOut onHoverOut, RUIToggleButton.OnEnable onEnable, RUIToggleButton.OnDisable onDisable, PackedSprite sprite)</td></tr>
+<tr class="memitem:a7ad46da8d4d09479b90c12cdcf5bc04f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#a7ad46da8d4d09479b90c12cdcf5bc04f">ApplicationLauncher</a> ()</td></tr>
+<tr class="separator:a7ad46da8d4d09479b90c12cdcf5bc04f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29c8f46299f35a3ffd21be0fce97b96f"><td class="memItemLeft" align="right" valign="top">ApplicationLauncherButton&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#a29c8f46299f35a3ffd21be0fce97b96f">AddApplication</a> (RUIToggleButton.OnTrue onTrue, RUIToggleButton.OnFalse onFalse, RUIToggleButton.OnHover onHover, RUIToggleButton.OnHoverOut onHoverOut, RUIToggleButton.OnEnable onEnable, RUIToggleButton.OnDisable onDisable, PackedSprite sprite)</td></tr>
 <tr class="separator:a29c8f46299f35a3ffd21be0fce97b96f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b92aa3a096d377d84fc944ab0cb5fbb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b92aa3a096d377d84fc944ab0cb5fbb"></a>
-ApplicationLauncherButton&#160;</td><td class="memItemRight" valign="bottom"><b>AddApplication</b> (RUIToggleButton.OnTrue onTrue, RUIToggleButton.OnFalse onFalse, RUIToggleButton.OnHover onHover, RUIToggleButton.OnHoverOut onHoverOut, RUIToggleButton.OnEnable onEnable, RUIToggleButton.OnDisable onDisable, Texture texture)</td></tr>
+<tr class="memitem:a1b92aa3a096d377d84fc944ab0cb5fbb"><td class="memItemLeft" align="right" valign="top">ApplicationLauncherButton&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#a1b92aa3a096d377d84fc944ab0cb5fbb">AddApplication</a> (RUIToggleButton.OnTrue onTrue, RUIToggleButton.OnFalse onFalse, RUIToggleButton.OnHover onHover, RUIToggleButton.OnHoverOut onHoverOut, RUIToggleButton.OnEnable onEnable, RUIToggleButton.OnDisable onDisable, Texture texture)</td></tr>
 <tr class="separator:a1b92aa3a096d377d84fc944ab0cb5fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a852d2404c9f2fc0e065ca2ee26e1911a"><td class="memItemLeft" align="right" valign="top">ApplicationLauncherButton&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#a852d2404c9f2fc0e065ca2ee26e1911a">AddModApplication</a> (RUIToggleButton.OnTrue onTrue, RUIToggleButton.OnFalse onFalse, RUIToggleButton.OnHover onHover, RUIToggleButton.OnHoverOut onHoverOut, RUIToggleButton.OnEnable onEnable, RUIToggleButton.OnDisable onDisable, <a class="el" href="class_application_launcher.html#a7a06e87f89d831ed977456f13ca579a0">ApplicationLauncher.AppScenes</a> visibleInScenes, PackedSprite sprite)</td></tr>
 <tr class="memdesc:a852d2404c9f2fc0e065ca2ee26e1911a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a MOD(3rd party) application to the Application Launcher. Use ApplicationLauncherButton.VisibleInScenes to set where the button should be displayed.  <a href="#a852d2404c9f2fc0e065ca2ee26e1911a">More...</a><br /></td></tr>
@@ -134,20 +135,18 @@ ApplicationLauncherButton&#160;</td><td class="memItemRight" valign="bottom"><b>
 <tr class="memitem:a412353755ce6ca0ab547fbc4e23fd865"><td class="memItemLeft" align="right" valign="top">ApplicationLauncherButton&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#a412353755ce6ca0ab547fbc4e23fd865">AddModApplication</a> (RUIToggleButton.OnTrue onTrue, RUIToggleButton.OnFalse onFalse, RUIToggleButton.OnHover onHover, RUIToggleButton.OnHoverOut onHoverOut, RUIToggleButton.OnEnable onEnable, RUIToggleButton.OnDisable onDisable, <a class="el" href="class_application_launcher.html#a7a06e87f89d831ed977456f13ca579a0">ApplicationLauncher.AppScenes</a> visibleInScenes, Texture texture)</td></tr>
 <tr class="memdesc:a412353755ce6ca0ab547fbc4e23fd865"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a MOD(3rd party) application to the Application Launcher. Use ApplicationLauncherButton.VisibleInScenes to set where the button should be displayed.  <a href="#a412353755ce6ca0ab547fbc4e23fd865">More...</a><br /></td></tr>
 <tr class="separator:a412353755ce6ca0ab547fbc4e23fd865"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adee591a41b89025496638510a32f4e24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#adee591a41b89025496638510a32f4e24">AddOnHideCallback</a> (ApplicationLauncher.OnHide del)</td></tr>
+<tr class="memitem:adee591a41b89025496638510a32f4e24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#adee591a41b89025496638510a32f4e24">AddOnHideCallback</a> (<a class="el" href="class_application_launcher.html#a4073f965205ae5c6117570cc3db3007c">ApplicationLauncher.OnHide</a> del)</td></tr>
 <tr class="memdesc:adee591a41b89025496638510a32f4e24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a method that will be called when the <a class="el" href="class_application_launcher.html" title="The application launcher is the set of buttons that appear in the upper right, including for example ...">ApplicationLauncher</a> GUI hides itself.  <a href="#adee591a41b89025496638510a32f4e24">More...</a><br /></td></tr>
 <tr class="separator:adee591a41b89025496638510a32f4e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ca419cb761277ceaee03ed48abad162"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#a6ca419cb761277ceaee03ed48abad162">AddOnRepositionCallback</a> (ApplicationLauncher.OnReposition del)</td></tr>
+<tr class="memitem:a6ca419cb761277ceaee03ed48abad162"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#a6ca419cb761277ceaee03ed48abad162">AddOnRepositionCallback</a> (<a class="el" href="class_application_launcher.html#a253aef8d40601f658f3afee0eb814545">ApplicationLauncher.OnReposition</a> del)</td></tr>
 <tr class="memdesc:a6ca419cb761277ceaee03ed48abad162"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a method that will be called when the <a class="el" href="class_application_launcher.html" title="The application launcher is the set of buttons that appear in the upper right, including for example ...">ApplicationLauncher</a> moves from the top right to the bottom right, or vice versa.  <a href="#a6ca419cb761277ceaee03ed48abad162">More...</a><br /></td></tr>
 <tr class="separator:a6ca419cb761277ceaee03ed48abad162"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50ef35520a2ccb27222e71b795852935"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#a50ef35520a2ccb27222e71b795852935">AddOnShowCallback</a> (ApplicationLauncher.OnShow del)</td></tr>
+<tr class="memitem:a50ef35520a2ccb27222e71b795852935"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#a50ef35520a2ccb27222e71b795852935">AddOnShowCallback</a> (<a class="el" href="class_application_launcher.html#a0693d8f820e21fc12ab8413fdfc1e995">ApplicationLauncher.OnShow</a> del)</td></tr>
 <tr class="memdesc:a50ef35520a2ccb27222e71b795852935"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a method that will be called when the <a class="el" href="class_application_launcher.html" title="The application launcher is the set of buttons that appear in the upper right, including for example ...">ApplicationLauncher</a> GUI shows itself.  <a href="#a50ef35520a2ccb27222e71b795852935">More...</a><br /></td></tr>
 <tr class="separator:a50ef35520a2ccb27222e71b795852935"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a7a90a3ac0847103e7378e790a5aee1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a7a90a3ac0847103e7378e790a5aee1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Contains</b> (ApplicationLauncherButton button, out bool hidden)</td></tr>
+<tr class="memitem:a9a7a90a3ac0847103e7378e790a5aee1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#a9a7a90a3ac0847103e7378e790a5aee1">Contains</a> (ApplicationLauncherButton button, out bool hidden)</td></tr>
 <tr class="separator:a9a7a90a3ac0847103e7378e790a5aee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a036d7d421635eaf5f83950f9b667e9d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a036d7d421635eaf5f83950f9b667e9d0"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>DetermineVisibility</b> (ApplicationLauncherButton button)</td></tr>
+<tr class="memitem:a036d7d421635eaf5f83950f9b667e9d0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#a036d7d421635eaf5f83950f9b667e9d0">DetermineVisibility</a> (ApplicationLauncherButton button)</td></tr>
 <tr class="separator:a036d7d421635eaf5f83950f9b667e9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40630307d6a4ba4e7ec02abc7f9c7949"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#a40630307d6a4ba4e7ec02abc7f9c7949">DisableMutuallyExclusive</a> (ApplicationLauncherButton launcherButton)</td></tr>
 <tr class="memdesc:a40630307d6a4ba4e7ec02abc7f9c7949"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reverses the effect of <a class="el" href="class_application_launcher.html#a6fc205dedd1132d241b4eab93b90fec5" title="Makes your application hide the stock applications when opened, and makes stock applications hide you...">EnableMutuallyExclusive()</a>  <a href="#a40630307d6a4ba4e7ec02abc7f9c7949">More...</a><br /></td></tr>
@@ -155,62 +154,48 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>DetermineVisibility</
 <tr class="memitem:a6fc205dedd1132d241b4eab93b90fec5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#a6fc205dedd1132d241b4eab93b90fec5">EnableMutuallyExclusive</a> (ApplicationLauncherButton launcherButton)</td></tr>
 <tr class="memdesc:a6fc205dedd1132d241b4eab93b90fec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes your application hide the stock applications when opened, and makes stock applications hide your appliction when opened.  <a href="#a6fc205dedd1132d241b4eab93b90fec5">More...</a><br /></td></tr>
 <tr class="separator:a6fc205dedd1132d241b4eab93b90fec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d3b5ce69f65a933ff70466a7058cd52"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d3b5ce69f65a933ff70466a7058cd52"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Hide</b> ()</td></tr>
+<tr class="memitem:a5d3b5ce69f65a933ff70466a7058cd52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#a5d3b5ce69f65a933ff70466a7058cd52">Hide</a> ()</td></tr>
 <tr class="separator:a5d3b5ce69f65a933ff70466a7058cd52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1bab05113cf3150904b4b2fbafc9e82"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1bab05113cf3150904b4b2fbafc9e82"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveApplication</b> (ApplicationLauncherButton button)</td></tr>
+<tr class="memitem:ad1bab05113cf3150904b4b2fbafc9e82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#ad1bab05113cf3150904b4b2fbafc9e82">RemoveApplication</a> (ApplicationLauncherButton button)</td></tr>
 <tr class="separator:ad1bab05113cf3150904b4b2fbafc9e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7da9212693d6327b5e90b027e3638b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#ad7da9212693d6327b5e90b027e3638b2">RemoveModApplication</a> (ApplicationLauncherButton button)</td></tr>
 <tr class="memdesc:ad7da9212693d6327b5e90b027e3638b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes your button from the application launcher toolbar.  <a href="#ad7da9212693d6327b5e90b027e3638b2">More...</a><br /></td></tr>
 <tr class="separator:ad7da9212693d6327b5e90b027e3638b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3e89363332360a7f56f0976ab16adc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#ab3e89363332360a7f56f0976ab16adc5">RemoveOnHideCallback</a> (ApplicationLauncher.OnHide del)</td></tr>
+<tr class="memitem:ab3e89363332360a7f56f0976ab16adc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#ab3e89363332360a7f56f0976ab16adc5">RemoveOnHideCallback</a> (<a class="el" href="class_application_launcher.html#a4073f965205ae5c6117570cc3db3007c">ApplicationLauncher.OnHide</a> del)</td></tr>
 <tr class="memdesc:ab3e89363332360a7f56f0976ab16adc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Un-register a method that will be called when the <a class="el" href="class_application_launcher.html" title="The application launcher is the set of buttons that appear in the upper right, including for example ...">ApplicationLauncher</a> GUI hides itself.  <a href="#ab3e89363332360a7f56f0976ab16adc5">More...</a><br /></td></tr>
 <tr class="separator:ab3e89363332360a7f56f0976ab16adc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d7862af7348a807abe97a50f97ffbfd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#a9d7862af7348a807abe97a50f97ffbfd">RemoveOnRepositionCallback</a> (ApplicationLauncher.OnReposition del)</td></tr>
+<tr class="memitem:a9d7862af7348a807abe97a50f97ffbfd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#a9d7862af7348a807abe97a50f97ffbfd">RemoveOnRepositionCallback</a> (<a class="el" href="class_application_launcher.html#a253aef8d40601f658f3afee0eb814545">ApplicationLauncher.OnReposition</a> del)</td></tr>
 <tr class="memdesc:a9d7862af7348a807abe97a50f97ffbfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Un-register a method that will be called when the <a class="el" href="class_application_launcher.html" title="The application launcher is the set of buttons that appear in the upper right, including for example ...">ApplicationLauncher</a> moves from the top right to the bottom right, or vice versa.  <a href="#a9d7862af7348a807abe97a50f97ffbfd">More...</a><br /></td></tr>
 <tr class="separator:a9d7862af7348a807abe97a50f97ffbfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98768ab32cbf20d02e4a244e779809a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#a98768ab32cbf20d02e4a244e779809a1">RemoveOnShowCallback</a> (ApplicationLauncher.OnShow del)</td></tr>
+<tr class="memitem:a98768ab32cbf20d02e4a244e779809a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#a98768ab32cbf20d02e4a244e779809a1">RemoveOnShowCallback</a> (<a class="el" href="class_application_launcher.html#a0693d8f820e21fc12ab8413fdfc1e995">ApplicationLauncher.OnShow</a> del)</td></tr>
 <tr class="memdesc:a98768ab32cbf20d02e4a244e779809a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Un-register a method that will be called when the <a class="el" href="class_application_launcher.html" title="The application launcher is the set of buttons that appear in the upper right, including for example ...">ApplicationLauncher</a> GUI shows itself.  <a href="#a98768ab32cbf20d02e4a244e779809a1">More...</a><br /></td></tr>
 <tr class="separator:a98768ab32cbf20d02e4a244e779809a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a1ca32f2156bed1ccf113e43c9d87c1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a1ca32f2156bed1ccf113e43c9d87c1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>ShouldBeVisible</b> (ApplicationLauncherButton button)</td></tr>
+<tr class="memitem:a6a1ca32f2156bed1ccf113e43c9d87c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#a6a1ca32f2156bed1ccf113e43c9d87c1">ShouldBeVisible</a> (ApplicationLauncherButton button)</td></tr>
 <tr class="separator:a6a1ca32f2156bed1ccf113e43c9d87c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae984a3f87d97f7b9b2dbca8880e8efb5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae984a3f87d97f7b9b2dbca8880e8efb5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Show</b> ()</td></tr>
+<tr class="memitem:ae984a3f87d97f7b9b2dbca8880e8efb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#ae984a3f87d97f7b9b2dbca8880e8efb5">Show</a> ()</td></tr>
 <tr class="separator:ae984a3f87d97f7b9b2dbca8880e8efb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4073f965205ae5c6117570cc3db3007c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4073f965205ae5c6117570cc3db3007c"></a>
-delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>OnHide</b> ()</td></tr>
+<tr class="memitem:a4073f965205ae5c6117570cc3db3007c"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#a4073f965205ae5c6117570cc3db3007c">OnHide</a> ()</td></tr>
 <tr class="separator:a4073f965205ae5c6117570cc3db3007c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a253aef8d40601f658f3afee0eb814545"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a253aef8d40601f658f3afee0eb814545"></a>
-delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>OnReposition</b> ()</td></tr>
+<tr class="memitem:a253aef8d40601f658f3afee0eb814545"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#a253aef8d40601f658f3afee0eb814545">OnReposition</a> ()</td></tr>
 <tr class="separator:a253aef8d40601f658f3afee0eb814545"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0693d8f820e21fc12ab8413fdfc1e995"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0693d8f820e21fc12ab8413fdfc1e995"></a>
-delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>OnShow</b> ()</td></tr>
+<tr class="memitem:a0693d8f820e21fc12ab8413fdfc1e995"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#a0693d8f820e21fc12ab8413fdfc1e995">OnShow</a> ()</td></tr>
 <tr class="separator:a0693d8f820e21fc12ab8413fdfc1e995"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a83d8cc66ed2acfff381ae60e0a0e608f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83d8cc66ed2acfff381ae60e0a0e608f"></a>
-GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>anchor</b></td></tr>
+<tr class="memitem:a83d8cc66ed2acfff381ae60e0a0e608f"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#a83d8cc66ed2acfff381ae60e0a0e608f">anchor</a></td></tr>
 <tr class="separator:a83d8cc66ed2acfff381ae60e0a0e608f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8a10bbf67c8838706a76915a8105fe1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8a10bbf67c8838706a76915a8105fe1"></a>
-GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>listItemPrefab</b></td></tr>
+<tr class="memitem:ad8a10bbf67c8838706a76915a8105fe1"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#ad8a10bbf67c8838706a76915a8105fe1">listItemPrefab</a></td></tr>
 <tr class="separator:ad8a10bbf67c8838706a76915a8105fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8657d440897e28a0f8334f4c1354a5ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8657d440897e28a0f8334f4c1354a5ca"></a>
-ScrollListResizer&#160;</td><td class="memItemRight" valign="bottom"><b>listResizer</b></td></tr>
+<tr class="memitem:a8657d440897e28a0f8334f4c1354a5ca"><td class="memItemLeft" align="right" valign="top">ScrollListResizer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#a8657d440897e28a0f8334f4c1354a5ca">listResizer</a></td></tr>
 <tr class="separator:a8657d440897e28a0f8334f4c1354a5ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fb9805aa8244237fd55ab659da1ffd9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6fb9805aa8244237fd55ab659da1ffd9"></a>
-UIButton&#160;</td><td class="memItemRight" valign="bottom"><b>modListBtnLeft</b></td></tr>
+<tr class="memitem:a6fb9805aa8244237fd55ab659da1ffd9"><td class="memItemLeft" align="right" valign="top">UIButton&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#a6fb9805aa8244237fd55ab659da1ffd9">modListBtnLeft</a></td></tr>
 <tr class="separator:a6fb9805aa8244237fd55ab659da1ffd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55438fd4989ec1236499cc629ab7971e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55438fd4989ec1236499cc629ab7971e"></a>
-UIButton&#160;</td><td class="memItemRight" valign="bottom"><b>modListBtnRight</b></td></tr>
+<tr class="memitem:a55438fd4989ec1236499cc629ab7971e"><td class="memItemLeft" align="right" valign="top">UIButton&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#a55438fd4989ec1236499cc629ab7971e">modListBtnRight</a></td></tr>
 <tr class="separator:a55438fd4989ec1236499cc629ab7971e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab86f27ae99fe50a13fa5db2661f16e62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab86f27ae99fe50a13fa5db2661f16e62"></a>
-UIButton&#160;</td><td class="memItemRight" valign="bottom"><b>modListDivider</b></td></tr>
+<tr class="memitem:ab86f27ae99fe50a13fa5db2661f16e62"><td class="memItemLeft" align="right" valign="top">UIButton&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#ab86f27ae99fe50a13fa5db2661f16e62">modListDivider</a></td></tr>
 <tr class="separator:ab86f27ae99fe50a13fa5db2661f16e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc7bf797cec182930f7515b63f02a3eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc7bf797cec182930f7515b63f02a3eb"></a>
-ScrollListResizer&#160;</td><td class="memItemRight" valign="bottom"><b>modListResizer</b></td></tr>
+<tr class="memitem:abc7bf797cec182930f7515b63f02a3eb"><td class="memItemLeft" align="right" valign="top">ScrollListResizer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application_launcher.html#abc7bf797cec182930f7515b63f02a3eb">modListResizer</a></td></tr>
 <tr class="separator:abc7bf797cec182930f7515b63f02a3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
@@ -243,10 +228,154 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Or together these flags and pass them to AddModApplication to specify when your button should appear on the application launcher toolbar. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a7a06e87f89d831ed977456f13ca579a0a443475558f0168dff92ecde26b98ae5a"></a>NEVER&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7a06e87f89d831ed977456f13ca579a0ae4c13ae9a12231561bcb660f785e2d35"></a>SPACECENTER&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7a06e87f89d831ed977456f13ca579a0a215085d0bbddf29e95a312557210d02c"></a>FLIGHT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7a06e87f89d831ed977456f13ca579a0a7d3ff301db864b8c5ca2bf3763c83ad3"></a>MAPVIEW&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7a06e87f89d831ed977456f13ca579a0aac33cb153d29743ea3583ffc672d0821"></a>VAB&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7a06e87f89d831ed977456f13ca579a0a1710c052ab1570668ba737824f33b6cb"></a>SPH&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7a06e87f89d831ed977456f13ca579a0af3fc827ade4b968e50406496907ef962"></a>ALWAYS&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a7ad46da8d4d09479b90c12cdcf5bc04f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ApplicationLauncher.ApplicationLauncher </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a29c8f46299f35a3ffd21be0fce97b96f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ApplicationLauncherButton ApplicationLauncher.AddApplication </td>
+          <td>(</td>
+          <td class="paramtype">RUIToggleButton.OnTrue&#160;</td>
+          <td class="paramname"><em>onTrue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RUIToggleButton.OnFalse&#160;</td>
+          <td class="paramname"><em>onFalse</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RUIToggleButton.OnHover&#160;</td>
+          <td class="paramname"><em>onHover</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RUIToggleButton.OnHoverOut&#160;</td>
+          <td class="paramname"><em>onHoverOut</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RUIToggleButton.OnEnable&#160;</td>
+          <td class="paramname"><em>onEnable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RUIToggleButton.OnDisable&#160;</td>
+          <td class="paramname"><em>onDisable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PackedSprite&#160;</td>
+          <td class="paramname"><em>sprite</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1b92aa3a096d377d84fc944ab0cb5fbb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ApplicationLauncherButton ApplicationLauncher.AddApplication </td>
+          <td>(</td>
+          <td class="paramtype">RUIToggleButton.OnTrue&#160;</td>
+          <td class="paramname"><em>onTrue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RUIToggleButton.OnFalse&#160;</td>
+          <td class="paramname"><em>onFalse</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RUIToggleButton.OnHover&#160;</td>
+          <td class="paramname"><em>onHover</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RUIToggleButton.OnHoverOut&#160;</td>
+          <td class="paramname"><em>onHoverOut</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RUIToggleButton.OnEnable&#160;</td>
+          <td class="paramname"><em>onEnable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RUIToggleButton.OnDisable&#160;</td>
+          <td class="paramname"><em>onDisable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Texture&#160;</td>
+          <td class="paramname"><em>texture</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a852d2404c9f2fc0e065ca2ee26e1911a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -412,7 +541,7 @@ Properties</h2></td></tr>
         <tr>
           <td class="memname">void ApplicationLauncher.AddOnHideCallback </td>
           <td>(</td>
-          <td class="paramtype">ApplicationLauncher.OnHide&#160;</td>
+          <td class="paramtype"><a class="el" href="class_application_launcher.html#a4073f965205ae5c6117570cc3db3007c">ApplicationLauncher.OnHide</a>&#160;</td>
           <td class="paramname"><em>del</em></td><td>)</td>
           <td></td>
         </tr>
@@ -436,7 +565,7 @@ Properties</h2></td></tr>
         <tr>
           <td class="memname">void ApplicationLauncher.AddOnRepositionCallback </td>
           <td>(</td>
-          <td class="paramtype">ApplicationLauncher.OnReposition&#160;</td>
+          <td class="paramtype"><a class="el" href="class_application_launcher.html#a253aef8d40601f658f3afee0eb814545">ApplicationLauncher.OnReposition</a>&#160;</td>
           <td class="paramname"><em>del</em></td><td>)</td>
           <td></td>
         </tr>
@@ -460,7 +589,7 @@ Properties</h2></td></tr>
         <tr>
           <td class="memname">void ApplicationLauncher.AddOnShowCallback </td>
           <td>(</td>
-          <td class="paramtype">ApplicationLauncher.OnShow&#160;</td>
+          <td class="paramtype"><a class="el" href="class_application_launcher.html#a0693d8f820e21fc12ab8413fdfc1e995">ApplicationLauncher.OnShow</a>&#160;</td>
           <td class="paramname"><em>del</em></td><td>)</td>
           <td></td>
         </tr>
@@ -474,6 +603,48 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="a9a7a90a3ac0847103e7378e790a5aee1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ApplicationLauncher.Contains </td>
+          <td>(</td>
+          <td class="paramtype">ApplicationLauncherButton&#160;</td>
+          <td class="paramname"><em>button</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out bool&#160;</td>
+          <td class="paramname"><em>hidden</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a036d7d421635eaf5f83950f9b667e9d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ApplicationLauncher.DetermineVisibility </td>
+          <td>(</td>
+          <td class="paramtype">ApplicationLauncherButton&#160;</td>
+          <td class="paramname"><em>button</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -525,6 +696,82 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a5d3b5ce69f65a933ff70466a7058cd52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ApplicationLauncher.Hide </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4073f965205ae5c6117570cc3db3007c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void ApplicationLauncher.OnHide </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a253aef8d40601f658f3afee0eb814545"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void ApplicationLauncher.OnReposition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0693d8f820e21fc12ab8413fdfc1e995"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void ApplicationLauncher.OnShow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad1bab05113cf3150904b4b2fbafc9e82"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ApplicationLauncher.RemoveApplication </td>
+          <td>(</td>
+          <td class="paramtype">ApplicationLauncherButton&#160;</td>
+          <td class="paramname"><em>button</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ad7da9212693d6327b5e90b027e3638b2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -556,7 +803,7 @@ Properties</h2></td></tr>
         <tr>
           <td class="memname">void ApplicationLauncher.RemoveOnHideCallback </td>
           <td>(</td>
-          <td class="paramtype">ApplicationLauncher.OnHide&#160;</td>
+          <td class="paramtype"><a class="el" href="class_application_launcher.html#a4073f965205ae5c6117570cc3db3007c">ApplicationLauncher.OnHide</a>&#160;</td>
           <td class="paramname"><em>del</em></td><td>)</td>
           <td></td>
         </tr>
@@ -580,7 +827,7 @@ Properties</h2></td></tr>
         <tr>
           <td class="memname">void ApplicationLauncher.RemoveOnRepositionCallback </td>
           <td>(</td>
-          <td class="paramtype">ApplicationLauncher.OnReposition&#160;</td>
+          <td class="paramtype"><a class="el" href="class_application_launcher.html#a253aef8d40601f658f3afee0eb814545">ApplicationLauncher.OnReposition</a>&#160;</td>
           <td class="paramname"><em>del</em></td><td>)</td>
           <td></td>
         </tr>
@@ -604,7 +851,7 @@ Properties</h2></td></tr>
         <tr>
           <td class="memname">void ApplicationLauncher.RemoveOnShowCallback </td>
           <td>(</td>
-          <td class="paramtype">ApplicationLauncher.OnShow&#160;</td>
+          <td class="paramtype"><a class="el" href="class_application_launcher.html#a0693d8f820e21fc12ab8413fdfc1e995">ApplicationLauncher.OnShow</a>&#160;</td>
           <td class="paramname"><em>del</em></td><td>)</td>
           <td></td>
         </tr>
@@ -621,7 +868,122 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a6a1ca32f2156bed1ccf113e43c9d87c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ApplicationLauncher.ShouldBeVisible </td>
+          <td>(</td>
+          <td class="paramtype">ApplicationLauncherButton&#160;</td>
+          <td class="paramname"><em>button</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae984a3f87d97f7b9b2dbca8880e8efb5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ApplicationLauncher.Show </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a83d8cc66ed2acfff381ae60e0a0e608f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject ApplicationLauncher.anchor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad8a10bbf67c8838706a76915a8105fe1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject ApplicationLauncher.listItemPrefab</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8657d440897e28a0f8334f4c1354a5ca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ScrollListResizer ApplicationLauncher.listResizer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6fb9805aa8244237fd55ab659da1ffd9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UIButton ApplicationLauncher.modListBtnLeft</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a55438fd4989ec1236499cc629ab7971e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UIButton ApplicationLauncher.modListBtnRight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab86f27ae99fe50a13fa5db2661f16e62"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UIButton ApplicationLauncher.modListDivider</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abc7bf797cec182930f7515b63f02a3eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ScrollListResizer ApplicationLauncher.modListResizer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aea384a13ab78885be4800e2334427700"></a>
 <div class="memitem">
 <div class="memproto">
@@ -690,12 +1052,12 @@ Properties</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/ApplicationLauncher.cs</li>
+<li>src/<a class="el" href="_application_launcher_8cs.html">ApplicationLauncher.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 29 2014 00:30:29 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 29 2014 00:44:37 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

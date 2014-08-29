@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -113,135 +114,126 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aa5b8c862a58dc42ae5743f6c33d1ee4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4b"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>VK</b> { <br />
-&#160;&#160;<b>BACK</b> = 8, 
-<b>TAB</b> = 9, 
-<b>RETURN</b> = 13, 
-<b>SHIFT</b> = 16, 
+<tr class="memitem:aa5b8c862a58dc42ae5743f6c33d1ee4b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4b">VK</a> { <br />
+&#160;&#160;<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba1dd26f1f1790f0b56d5752fb0fbecef0">VK.BACK</a> = 8, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4baf684bf05fa3e81528c84d1d281d839f1">VK.TAB</a> = 9, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4baa2bec276a54439fe011eb523b845dac5">VK.RETURN</a> = 13, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba46afff2b309b8b16a46d812172a9235c">VK.SHIFT</a> = 16, 
 <br />
-&#160;&#160;<b>CONTROL</b> = 17, 
-<b>MENU</b> = 18, 
-<b>ESCAPE</b> = 27, 
-<b>PRIOR</b> = 33, 
+&#160;&#160;<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4bac861cd34025f9002df5912d623326130">VK.CONTROL</a> = 17, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba3ed53fbeb1eab0443561b68ca0c0b5cf">VK.MENU</a> = 18, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4badaaedac409335b869929ea43fa44be5d">VK.ESCAPE</a> = 27, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4bae4bf0e3d9afa4b59492d1f1a22fb6a37">VK.PRIOR</a> = 33, 
 <br />
-&#160;&#160;<b>NEXT</b> = 34, 
-<b>END</b> = 35, 
-<b>HOME</b> = 36, 
-<b>LEFT</b> = 37, 
+&#160;&#160;<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba47559fb833ff58321570e5e877b467f6">VK.NEXT</a> = 34, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4bab1a326c06d88bf042f73d70f50197905">VK.END</a> = 35, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba710533dd879dd1202e5c73b27705bf02">VK.HOME</a> = 36, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba684d325a7303f52e64011467ff5c5758">VK.LEFT</a> = 37, 
 <br />
-&#160;&#160;<b>UP</b> = 38, 
-<b>RIGHT</b> = 39, 
-<b>DOWN</b> = 40, 
-<b>SELECT</b> = 41, 
+&#160;&#160;<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4bafbaedde498cdead4f2780217646e9ba1">VK.UP</a> = 38, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba21507b40c80068eda19865706fdc2403">VK.RIGHT</a> = 39, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4bac4e0e4e3118472beeb2ae75827450f1f">VK.DOWN</a> = 40, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba63225f19fccb18e7c709f1fa11bc738e">VK.SELECT</a> = 41, 
 <br />
-&#160;&#160;<b>PRINT</b> = 42, 
-<b>EXECUTE</b> = 43, 
-<b>SNAPSHOT</b> = 44, 
-<b>INSERT</b> = 45, 
+&#160;&#160;<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4baf96eee4e48ee90430f17fb3a8388507b">VK.PRINT</a> = 42, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba5d76688e2261e6805ee36ad961b3fa7a">VK.EXECUTE</a> = 43, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba46b8744c6bc840d2cb241fa165f3e204">VK.SNAPSHOT</a> = 44, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba61ee777e7f71dc466c3b2c685d8d313b">VK.INSERT</a> = 45, 
 <br />
-&#160;&#160;<b>DELETE</b> = 46, 
-<b>HELP</b> = 47, 
-<b>LWIN</b> = 91, 
-<b>RWIN</b> = 92, 
+&#160;&#160;<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba32f68a60cef40faedbc6af20298c1a1e">VK.DELETE</a> = 46, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba4fc963e213bba362778f5c175eb4d5ff">VK.HELP</a> = 47, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba708f5ef3cba310fb0cb0d6254a71e220">VK.LWIN</a> = 91, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba27cd5c43a8cb2f988335fa57cb0d1a83">VK.RWIN</a> = 92, 
 <br />
-&#160;&#160;<b>NUMPAD0</b> = 96, 
-<b>NUMPAD1</b> = 97, 
-<b>NUMPAD2</b> = 98, 
-<b>NUMPAD3</b> = 99, 
+&#160;&#160;<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba5c9303c9722b2b2c0b6be432b8553b7b">VK.NUMPAD0</a> = 96, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba85363b71c044fcc9b1054994e5afd930">VK.NUMPAD1</a> = 97, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba9d0bcfce0686425072757a4e5338b67a">VK.NUMPAD2</a> = 98, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4bae745d20a1bb5bbd1d5dbc1c3d45cc367">VK.NUMPAD3</a> = 99, 
 <br />
-&#160;&#160;<b>NUMPAD4</b> = 100, 
-<b>NUMPAD5</b> = 101, 
-<b>NUMPAD6</b> = 102, 
-<b>NUMPAD7</b> = 103, 
+&#160;&#160;<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba8692bf75f6b6ccdccacb4237693b0f52">VK.NUMPAD4</a> = 100, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba9f19473b6cdbced0dd74c756218df969">VK.NUMPAD5</a> = 101, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba0de54b8a49d7ef2381db3c2a4fddb921">VK.NUMPAD6</a> = 102, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4baed35ad1bd9d2eee6ceb1005f87d01178">VK.NUMPAD7</a> = 103, 
 <br />
-&#160;&#160;<b>NUMPAD8</b> = 104, 
-<b>NUMPAD9</b> = 105, 
-<b>MULTIPLY</b> = 106, 
-<b>ADD</b> = 107, 
+&#160;&#160;<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba7d4b79e0c3dc50fbce01eba1cb17489a">VK.NUMPAD8</a> = 104, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4baddba9d70ff7b75782aad0b8d17577fd1">VK.NUMPAD9</a> = 105, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba080aaf8d817ada96fca7096b7b55bd30">VK.MULTIPLY</a> = 106, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba9eeb52badb613229884838847294b90d">VK.ADD</a> = 107, 
 <br />
-&#160;&#160;<b>SEPARATOR</b> = 108, 
-<b>SUBTRACT</b> = 109, 
-<b>DECIMAL</b> = 110, 
-<b>DIVIDE</b> = 111, 
+&#160;&#160;<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba70bb8dc90aa233a66b91ae2e9dc1a850">VK.SEPARATOR</a> = 108, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba23ebcc4776b613af25dfbe7c8ce4813e">VK.SUBTRACT</a> = 109, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba13d992d671957e9a2b3e936ca0cf14a4">VK.DECIMAL</a> = 110, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba210c66d794cec40488f3f8f634d6c33b">VK.DIVIDE</a> = 111, 
 <br />
-&#160;&#160;<b>F1</b> = 112, 
-<b>F2</b> = 113, 
-<b>F3</b> = 114, 
-<b>F4</b> = 115, 
+&#160;&#160;<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4bae1dffc8709f31a4987c8a88334107e89">VK.F1</a> = 112, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4bafe5c3684dce76cdd9f7f42430868aa74">VK.F2</a> = 113, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba4b6bf4b531770872d4328ce69bef5627">VK.F3</a> = 114, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4bae7e0e72401a9f2718ed0f39f2861d702">VK.F4</a> = 115, 
 <br />
-&#160;&#160;<b>F5</b> = 116, 
-<b>F6</b> = 117, 
-<b>F7</b> = 118, 
-<b>F8</b> = 119, 
+&#160;&#160;<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba37f438df6a6d5ba4c17ef8ca58562f00">VK.F5</a> = 116, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba1faf42f2823f184eb2c9f0dffe5d73f2">VK.F6</a> = 117, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba47489eb597b7db34caa24b1fc78fc839">VK.F7</a> = 118, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba4787509ad9f9d747a81a30e9dde3d4a7">VK.F8</a> = 119, 
 <br />
-&#160;&#160;<b>F9</b> = 120, 
-<b>F10</b> = 121, 
-<b>F11</b> = 122, 
-<b>F12</b> = 123, 
+&#160;&#160;<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba892a245e287c163080b23db737d3c4c9">VK.F9</a> = 120, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4bab213ce22ca6ad4eda8db82966b9b6e5a">VK.F10</a> = 121, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba643b0662422d1d0dffa3fca2e2bf28a8">VK.F11</a> = 122, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4bae902674982fc99aa343cdd94da7476c3">VK.F12</a> = 123, 
 <br />
-&#160;&#160;<b>MEDIA_NEXT_TRACK</b> = 176, 
-<b>MEDIA_PREV_TRACK</b> = 177, 
-<b>MEDIA_STOP</b> = 178, 
-<b>MEDIA_PLAY_PAUSE</b> = 179, 
+&#160;&#160;<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4bac614057529854f233c412d1a07532081">VK.MEDIA_NEXT_TRACK</a> = 176, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4baddb036ce273fa94a4b1556db4046d158">VK.MEDIA_PREV_TRACK</a> = 177, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4bac0b5dbeb733e6653d4bda740b14b0429">VK.MEDIA_STOP</a> = 178, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba9ef9c6dff07300fccd32e9cfab4975d7">VK.MEDIA_PLAY_PAUSE</a> = 179, 
 <br />
-&#160;&#160;<b>OEM_1</b> = 186, 
-<b>OEM_PLUS</b> = 187, 
-<b>OEM_COMMA</b> = 188, 
-<b>OEM_MINUS</b> = 189, 
+&#160;&#160;<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4bae91938057eb9d9a998fb0c34e759cce3">VK.OEM_1</a> = 186, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba56c34d73a7493ffce83b574976029b33">VK.OEM_PLUS</a> = 187, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba82b25846b12e783db11ea65cb00b6165">VK.OEM_COMMA</a> = 188, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba394d7ff659ae0eb05e57cba3dade96e0">VK.OEM_MINUS</a> = 189, 
 <br />
-&#160;&#160;<b>OEM_PERIOD</b> = 190, 
-<b>OEM_2</b> = 191, 
-<b>OEM_3</b> = 192
+&#160;&#160;<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba9925b2afdc472eb4c262c66028163f63">VK.OEM_PERIOD</a> = 190, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba162a5ad4411bb4afc35aa059cfd9ebbf">VK.OEM_2</a> = 191, 
+<a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4bae3755e95125ee8953e36af77261a51a1">VK.OEM_3</a> = 192
 <br />
  }</td></tr>
 <tr class="separator:aa5b8c862a58dc42ae5743f6c33d1ee4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a18a55d982052cc113984ef416c7ade10"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a18a55d982052cc113984ef416c7ade10"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>printCurrentGame</b> ()</td></tr>
+<tr class="memitem:a72db4e1f3bd1b87d5f6e0a179ea39e33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_logic.html#a72db4e1f3bd1b87d5f6e0a179ea39e33">HighLogic</a> ()</td></tr>
+<tr class="separator:a72db4e1f3bd1b87d5f6e0a179ea39e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18a55d982052cc113984ef416c7ade10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_logic.html#a18a55d982052cc113984ef416c7ade10">printCurrentGame</a> ()</td></tr>
 <tr class="separator:a18a55d982052cc113984ef416c7ade10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a67a1a94843b36394cd793d0d2e3892f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67a1a94843b36394cd793d0d2e3892f3"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadScene</b> (GameScenes scene)</td></tr>
+<tr class="memitem:a67a1a94843b36394cd793d0d2e3892f3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_logic.html#a67a1a94843b36394cd793d0d2e3892f3">LoadScene</a> (<a class="el" href="_game_scenes_8cs.html#a0687e907db3af3681f90377d69f32090">GameScenes</a> scene)</td></tr>
 <tr class="separator:a67a1a94843b36394cd793d0d2e3892f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:af0dc06c5576041361564ac6fb60269ab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0dc06c5576041361564ac6fb60269ab"></a>
-Game&#160;</td><td class="memItemRight" valign="bottom"><b>currentGame</b></td></tr>
+<tr class="memitem:af0dc06c5576041361564ac6fb60269ab"><td class="memItemLeft" align="right" valign="top">Game&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_logic.html#af0dc06c5576041361564ac6fb60269ab">currentGame</a></td></tr>
 <tr class="separator:af0dc06c5576041361564ac6fb60269ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a300a48e0b998599165c7715ba3ce1103"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a300a48e0b998599165c7715ba3ce1103"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>GameSaveFolder</b></td></tr>
+<tr class="memitem:a300a48e0b998599165c7715ba3ce1103"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_logic.html#a300a48e0b998599165c7715ba3ce1103">GameSaveFolder</a></td></tr>
 <tr class="separator:a300a48e0b998599165c7715ba3ce1103"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaba6c71b042bd51de624978e52c615b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaba6c71b042bd51de624978e52c615b7"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>maxLines</b></td></tr>
+<tr class="memitem:aaba6c71b042bd51de624978e52c615b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_logic.html#aaba6c71b042bd51de624978e52c615b7">maxLines</a></td></tr>
 <tr class="separator:aaba6c71b042bd51de624978e52c615b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14dfa5b9dcf3336a8e8651f20b95b6a0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14dfa5b9dcf3336a8e8651f20b95b6a0"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>showConsole</b></td></tr>
+<tr class="memitem:a14dfa5b9dcf3336a8e8651f20b95b6a0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_logic.html#a14dfa5b9dcf3336a8e8651f20b95b6a0">showConsole</a></td></tr>
 <tr class="separator:a14dfa5b9dcf3336a8e8651f20b95b6a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc3cd7060d269d4fd77d91df29586f90"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc3cd7060d269d4fd77d91df29586f90"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>showConsoleOnError</b></td></tr>
+<tr class="memitem:afc3cd7060d269d4fd77d91df29586f90"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_logic.html#afc3cd7060d269d4fd77d91df29586f90">showConsoleOnError</a></td></tr>
 <tr class="separator:afc3cd7060d269d4fd77d91df29586f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7d741ddadd896920c6f5444760da915"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7d741ddadd896920c6f5444760da915"></a>
-GUISkin&#160;</td><td class="memItemRight" valign="bottom"><b>skin</b></td></tr>
+<tr class="memitem:ae7d741ddadd896920c6f5444760da915"><td class="memItemLeft" align="right" valign="top">GUISkin&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_logic.html#ae7d741ddadd896920c6f5444760da915">skin</a></td></tr>
 <tr class="separator:ae7d741ddadd896920c6f5444760da915"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:aa099d8a44dd6030baf2c5bfaab9f5b31"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa099d8a44dd6030baf2c5bfaab9f5b31"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>FastEditorLoading</b></td></tr>
+<tr class="memitem:aa099d8a44dd6030baf2c5bfaab9f5b31"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_logic.html#aa099d8a44dd6030baf2c5bfaab9f5b31">FastEditorLoading</a></td></tr>
 <tr class="separator:aa099d8a44dd6030baf2c5bfaab9f5b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcebcb506def6be91f18eeeb01a8fef2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_high_logic.html">HighLogic</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_logic.html#abcebcb506def6be91f18eeeb01a8fef2">fetch</a></td></tr>
 <tr class="memdesc:abcebcb506def6be91f18eeeb01a8fef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this instance to access non-static members of this class.  <a href="#abcebcb506def6be91f18eeeb01a8fef2">More...</a><br /></td></tr>
 <tr class="separator:abcebcb506def6be91f18eeeb01a8fef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a344e53aee0259560a1f4679654d23ef5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a344e53aee0259560a1f4679654d23ef5"></a>
-static GameScenes&#160;</td><td class="memItemRight" valign="bottom"><b>LoadedScene</b></td></tr>
+<tr class="memitem:a344e53aee0259560a1f4679654d23ef5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_game_scenes_8cs.html#a0687e907db3af3681f90377d69f32090">GameScenes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_logic.html#a344e53aee0259560a1f4679654d23ef5">LoadedScene</a></td></tr>
 <tr class="separator:a344e53aee0259560a1f4679654d23ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b75900463ecc71b244e538a1607628f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b75900463ecc71b244e538a1607628f"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>LoadedSceneHasPlanetarium</b></td></tr>
+<tr class="memitem:a8b75900463ecc71b244e538a1607628f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_logic.html#a8b75900463ecc71b244e538a1607628f">LoadedSceneHasPlanetarium</a></td></tr>
 <tr class="separator:a8b75900463ecc71b244e538a1607628f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3013a73baa65b48deff929e4b3a4cbd"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_logic.html#ab3013a73baa65b48deff929e4b3a4cbd">LoadedSceneIsEditor</a></td></tr>
 <tr class="memdesc:ab3013a73baa65b48deff929e4b3a4cbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the game is currently in the VAB or SPH scenes.  <a href="#ab3013a73baa65b48deff929e4b3a4cbd">More...</a><br /></td></tr>
@@ -252,11 +244,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>LoadedSceneHas
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a440beeca63ded21bdf93d858acfe627b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a440beeca63ded21bdf93d858acfe627b"></a>
-static Game&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentGame</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a440beeca63ded21bdf93d858acfe627b"><td class="memItemLeft" align="right" valign="top">static Game&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_logic.html#a440beeca63ded21bdf93d858acfe627b">CurrentGame</a><code> [get, set]</code></td></tr>
 <tr class="separator:a440beeca63ded21bdf93d858acfe627b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52215346b3e539e2f2b9931119c816d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52215346b3e539e2f2b9931119c816d9"></a>
-static string&#160;</td><td class="memItemRight" valign="bottom"><b>SaveFolder</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a52215346b3e539e2f2b9931119c816d9"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_logic.html#a52215346b3e539e2f2b9931119c816d9">SaveFolder</a><code> [get, set]</code></td></tr>
 <tr class="separator:a52215346b3e539e2f2b9931119c816d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71e9896216132f66289be6b17c652a41"><td class="memItemLeft" align="right" valign="top">static GUISkin&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_logic.html#a71e9896216132f66289be6b17c652a41">Skin</a><code> [get]</code></td></tr>
 <tr class="memdesc:a71e9896216132f66289be6b17c652a41"><td class="mdescLeft">&#160;</td><td class="mdescRight">The GUISkin used by the game. Set GUI.skin = <a class="el" href="class_high_logic.html#a71e9896216132f66289be6b17c652a41" title="The GUISkin used by the game. Set GUI.skin = HighLogic.Skin at the start of your GUI function to use ...">HighLogic.Skin</a> at the start of your GUI function to use it yourself.  <a href="#a71e9896216132f66289be6b17c652a41">More...</a><br /></td></tr>
@@ -264,7 +254,236 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>SaveFolder</
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class stores some very high-level information about the current game state. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4b">HighLogic.VK</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba1dd26f1f1790f0b56d5752fb0fbecef0"></a>BACK&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4baf684bf05fa3e81528c84d1d281d839f1"></a>TAB&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4baa2bec276a54439fe011eb523b845dac5"></a>RETURN&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba46afff2b309b8b16a46d812172a9235c"></a>SHIFT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4bac861cd34025f9002df5912d623326130"></a>CONTROL&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba3ed53fbeb1eab0443561b68ca0c0b5cf"></a>MENU&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4badaaedac409335b869929ea43fa44be5d"></a>ESCAPE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4bae4bf0e3d9afa4b59492d1f1a22fb6a37"></a>PRIOR&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba47559fb833ff58321570e5e877b467f6"></a>NEXT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4bab1a326c06d88bf042f73d70f50197905"></a>END&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba710533dd879dd1202e5c73b27705bf02"></a>HOME&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba684d325a7303f52e64011467ff5c5758"></a>LEFT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4bafbaedde498cdead4f2780217646e9ba1"></a>UP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba21507b40c80068eda19865706fdc2403"></a>RIGHT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4bac4e0e4e3118472beeb2ae75827450f1f"></a>DOWN&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba63225f19fccb18e7c709f1fa11bc738e"></a>SELECT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4baf96eee4e48ee90430f17fb3a8388507b"></a>PRINT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba5d76688e2261e6805ee36ad961b3fa7a"></a>EXECUTE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba46b8744c6bc840d2cb241fa165f3e204"></a>SNAPSHOT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba61ee777e7f71dc466c3b2c685d8d313b"></a>INSERT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba32f68a60cef40faedbc6af20298c1a1e"></a>DELETE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba4fc963e213bba362778f5c175eb4d5ff"></a>HELP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba708f5ef3cba310fb0cb0d6254a71e220"></a>LWIN&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba27cd5c43a8cb2f988335fa57cb0d1a83"></a>RWIN&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba5c9303c9722b2b2c0b6be432b8553b7b"></a>NUMPAD0&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba85363b71c044fcc9b1054994e5afd930"></a>NUMPAD1&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba9d0bcfce0686425072757a4e5338b67a"></a>NUMPAD2&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4bae745d20a1bb5bbd1d5dbc1c3d45cc367"></a>NUMPAD3&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba8692bf75f6b6ccdccacb4237693b0f52"></a>NUMPAD4&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba9f19473b6cdbced0dd74c756218df969"></a>NUMPAD5&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba0de54b8a49d7ef2381db3c2a4fddb921"></a>NUMPAD6&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4baed35ad1bd9d2eee6ceb1005f87d01178"></a>NUMPAD7&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba7d4b79e0c3dc50fbce01eba1cb17489a"></a>NUMPAD8&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4baddba9d70ff7b75782aad0b8d17577fd1"></a>NUMPAD9&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba080aaf8d817ada96fca7096b7b55bd30"></a>MULTIPLY&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba9eeb52badb613229884838847294b90d"></a>ADD&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba70bb8dc90aa233a66b91ae2e9dc1a850"></a>SEPARATOR&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba23ebcc4776b613af25dfbe7c8ce4813e"></a>SUBTRACT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba13d992d671957e9a2b3e936ca0cf14a4"></a>DECIMAL&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba210c66d794cec40488f3f8f634d6c33b"></a>DIVIDE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4bae1dffc8709f31a4987c8a88334107e89"></a>F1&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4bafe5c3684dce76cdd9f7f42430868aa74"></a>F2&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba4b6bf4b531770872d4328ce69bef5627"></a>F3&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4bae7e0e72401a9f2718ed0f39f2861d702"></a>F4&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba37f438df6a6d5ba4c17ef8ca58562f00"></a>F5&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba1faf42f2823f184eb2c9f0dffe5d73f2"></a>F6&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba47489eb597b7db34caa24b1fc78fc839"></a>F7&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba4787509ad9f9d747a81a30e9dde3d4a7"></a>F8&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba892a245e287c163080b23db737d3c4c9"></a>F9&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4bab213ce22ca6ad4eda8db82966b9b6e5a"></a>F10&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba643b0662422d1d0dffa3fca2e2bf28a8"></a>F11&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4bae902674982fc99aa343cdd94da7476c3"></a>F12&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4bac614057529854f233c412d1a07532081"></a>MEDIA_NEXT_TRACK&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4baddb036ce273fa94a4b1556db4046d158"></a>MEDIA_PREV_TRACK&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4bac0b5dbeb733e6653d4bda740b14b0429"></a>MEDIA_STOP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba9ef9c6dff07300fccd32e9cfab4975d7"></a>MEDIA_PLAY_PAUSE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4bae91938057eb9d9a998fb0c34e759cce3"></a>OEM_1&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba56c34d73a7493ffce83b574976029b33"></a>OEM_PLUS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba82b25846b12e783db11ea65cb00b6165"></a>OEM_COMMA&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba394d7ff659ae0eb05e57cba3dade96e0"></a>OEM_MINUS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba9925b2afdc472eb4c262c66028163f63"></a>OEM_PERIOD&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4ba162a5ad4411bb4afc35aa059cfd9ebbf"></a>OEM_2&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa5b8c862a58dc42ae5743f6c33d1ee4bae3755e95125ee8953e36af77261a51a1"></a>OEM_3&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a72db4e1f3bd1b87d5f6e0a179ea39e33"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HighLogic.HighLogic </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a67a1a94843b36394cd793d0d2e3892f3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void HighLogic.LoadScene </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_game_scenes_8cs.html#a0687e907db3af3681f90377d69f32090">GameScenes</a>&#160;</td>
+          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a18a55d982052cc113984ef416c7ade10"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HighLogic.printCurrentGame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="af0dc06c5576041361564ac6fb60269ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Game HighLogic.currentGame</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa099d8a44dd6030baf2c5bfaab9f5b31"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HighLogic.FastEditorLoading</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="abcebcb506def6be91f18eeeb01a8fef2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -284,6 +503,58 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>SaveFolder</
 </div><div class="memdoc">
 
 <p>Use this instance to access non-static members of this class. </p>
+
+</div>
+</div>
+<a class="anchor" id="a300a48e0b998599165c7715ba3ce1103"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string HighLogic.GameSaveFolder</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a344e53aee0259560a1f4679654d23ef5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_game_scenes_8cs.html#a0687e907db3af3681f90377d69f32090">GameScenes</a> HighLogic.LoadedScene</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8b75900463ecc71b244e538a1607628f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HighLogic.LoadedSceneHasPlanetarium</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -331,7 +602,95 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>SaveFolder</
 
 </div>
 </div>
+<a class="anchor" id="aaba6c71b042bd51de624978e52c615b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int HighLogic.maxLines</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a14dfa5b9dcf3336a8e8651f20b95b6a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HighLogic.showConsole</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afc3cd7060d269d4fd77d91df29586f90"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HighLogic.showConsoleOnError</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae7d741ddadd896920c6f5444760da915"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GUISkin HighLogic.skin</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Property Documentation</h2>
+<a class="anchor" id="a440beeca63ded21bdf93d858acfe627b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Game HighLogic.CurrentGame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a52215346b3e539e2f2b9931119c816d9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string HighLogic.SaveFolder</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a71e9896216132f66289be6b17c652a41"></a>
 <div class="memitem">
 <div class="memproto">
@@ -355,12 +714,12 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>SaveFolder</
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/HighLogic.cs</li>
+<li>src/<a class="el" href="_high_logic_8cs.html">HighLogic.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 29 2014 00:30:30 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 29 2014 00:44:38 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
