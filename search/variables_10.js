@@ -25,6 +25,7 @@ var searchData=
   ['srfattachnode',['srfAttachNode',['../class_part.html#af50d7e423f42aa52d1bf18b68ccf5e72',1,'Part']]],
   ['stackicon',['stackIcon',['../class_part.html#acf76c9fa9bb304fe9867961dc32b784d',1,'Part']]],
   ['stagelock',['stageLock',['../class_flight_input_handler.html#af584e6282300b0f0a9de25194d17f113',1,'FlightInputHandler']]],
+  ['startup',['startup',['../class_k_s_p_addon.html#a239a6d57137374ad177de1896d93da45',1,'KSPAddon']]],
   ['state',['state',['../class_flight_input_handler.html#ab309a576ff6585b88866641ea108b86b',1,'FlightInputHandler']]],
   ['staticpressure',['staticPressure',['../class_vessel.html#a5bb263ab191f7f6a66caf575b3c20cbe',1,'Vessel']]],
   ['subjectid',['subjectID',['../class_science_data.html#a9a1694badbc1e1b5af810a5302a0dc1f',1,'ScienceData']]],

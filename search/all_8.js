@@ -7,6 +7,7 @@ var searchData=
   ['inoperable',['Inoperable',['../class_module_science_experiment.html#a00da8629bf216082a210ad8fd4cb9a43',1,'ModuleScienceExperiment']]],
   ['inputlockmanager',['InputLockManager',['../class_input_lock_manager.html',1,'']]],
   ['instance',['Instance',['../class_application_launcher.html#a83955a3f17edc075685746065af2edf0',1,'ApplicationLauncher.Instance()'],['../class_part_resource_library.html#ae1ecbac688e794984feaee139ae040f9',1,'PartResourceLibrary.Instance()']]],
+  ['instantly',['Instantly',['../class_k_s_p_addon.html#aad4794e3fdfd545c576534be224f0b9bad99330f39246e0b64e7a999ac6a0ad24',1,'KSPAddon']]],
   ['instructor',['instructor',['../class_tutorial_scenario.html#a08ba3e6d818106b07d2f9b69c3be970b',1,'TutorialScenario']]],
   ['instructorprefabname',['instructorPrefabName',['../class_tutorial_scenario.html#a484bd7111add3da1b0b751d8e06f1621',1,'TutorialScenario']]],
   ['interactionrange',['interactionRange',['../class_module_science_experiment.html#a5ea9885eb21ec8cbf83b6d34cadf7881',1,'ModuleScienceExperiment']]],
