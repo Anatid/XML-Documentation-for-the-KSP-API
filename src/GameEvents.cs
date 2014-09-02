@@ -456,7 +456,8 @@ public static class GameEvents
 	/// </summary>
 	public static EventData<GameEvents.HostedFromToAction<Vessel, string>> onVesselRename;
 	/// <summary>
-	/// Triggered when vessel is loaded onto the launchpad from the editor/launch window
+	/// Triggered when vessel is loaded onto the launchpad from the editor/launch window;
+	/// called after the transition to flight scene
 	/// </summary>
 	public static EventData<ShipConstruct> OnVesselRollout;
 	/// <summary>
