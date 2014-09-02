@@ -8,9 +8,9 @@ using UnityEngine;
 /// 
 /// Use this type with three accompanying parameters
 /// </summary>
-/// <typeparam name="T">The first type to passed through on EventData.Fire()</typeparam>
-/// <typeparam name="U">The second type to passed through on EventData.Fire()</typeparam>
-/// <typeparam name="V">The third type to passed through on EventData.Fire()</typeparam>
+/// <typeparam name="T">The first type to be passed through on EventData.Fire()</typeparam>
+/// <typeparam name="U">The second type to be passed through on EventData.Fire()</typeparam>
+/// <typeparam name="V">The third type to be passed through on EventData.Fire()</typeparam>
 public class EventData<T, U, V>
 {
 	/// <summary>

@@ -56,6 +56,8 @@ public static class GameEvents
 	public static EventData<GameEvents.FromToAction<Part, Part>> onCrewOnEva;
 	/// <summary>
 	/// Triggered when changing SOI; both objects return the new dominant CelestialBody
+	/// 
+	/// See also onVesselSOIChanged
 	/// </summary>
 	public static EventData<GameEvents.FromToAction<CelestialBody, CelestialBody>> onDominantBodyChange;
 	/// <summary>
@@ -65,7 +67,7 @@ public static class GameEvents
 	/// </summary>
 	public static EventData<ShipConstruct> onEditorShipModified;
 	/// <summary>
-	/// When a flag is plantet by an EVA Kerbal
+	/// When a flag is planted by an EVA Kerbal
 	/// </summary>
 	public static EventData<Vessel> onFlagPlant;
 	/// <summary>
@@ -121,7 +123,7 @@ public static class GameEvents
 	/// </summary>
 	public static EventVoid onGUIApplicationLauncherDestroyed;
 	/// <summary>
-	/// When the application launcher (toolbar) is started
+	/// Called when the ApplicationLauncher toolbar is ready to have buttons added to it.
 	/// </summary>
 	public static EventVoid onGUIApplicationLauncherReady;
 	/// <summary>
@@ -137,7 +139,10 @@ public static class GameEvents
 	/// </summary>
 	public static EventVoid onGUILaunchScreenDespawn;
 	/// <summary>
-	/// When the launch screen is opened; after selecting the launchpad/runway from the space center
+	/// When the launch screen (that allows you to view and select available vessels) is opened;
+	/// after selecting the launchpad/runway from the space center.
+	/// 
+	/// See VesselSpawnInfo for more on what is returned by this callback.
 	/// </summary>
 	public static EventData<GameEvents.VesselSpawnInfo> onGUILaunchScreenSpawn;
 	/// <summary>
@@ -178,7 +183,8 @@ public static class GameEvents
 	/// </summary>
 	public static EventVoid onGUIRnDComplexSpawn;
 	/// <summary>
-	/// Upon hiding UI with Alt + F2
+	/// Called when the player hides the UI by pressing F2. Register for this callback (and for onShowUI)
+	/// so that you can hide your UI too.
 	/// </summary>
 	public static EventVoid onHideUI;
 	/// <summary>
@@ -203,13 +209,14 @@ public static class GameEvents
 	public static EventData<ProtoCrewMember> onKerbalRemoved;
 	/// <summary>
 	/// Triggered when the ProtoCrewMember.RosterStatus changes;
-	/// usualy upon vessel recovery, new crew addition, or death;
+	/// usually upon vessel recovery, new crew addition, or death;
 	/// returns the ProtoCrewMember and its old and new status
 	/// </summary>
 	public static EventData<ProtoCrewMember, ProtoCrewMember.RosterStatus, ProtoCrewMember.RosterStatus> onKerbalStatusChange;
 	/// <summary>
-	/// Triggered when the ProtoCrewMember.KerbatType changes;
-	/// Possibly not fully implemented; occurs upon hiring crew or rescuing Kerbal
+	/// Triggered when the ProtoCrewMember.KerbalType changes;
+	/// KerbalTypes are possibly not fully implemented;
+	/// occurs upon hiring crew or rescuing Kerbal
 	/// </summary>
 	public static EventData<ProtoCrewMember, ProtoCrewMember.KerbalType, ProtoCrewMember.KerbalType> onKerbalTypeChange;
 	/// <summary>
@@ -229,7 +236,8 @@ public static class GameEvents
 	/// </summary>
 	public static EventData<EventReport> onLaunch;
 	/// <summary>
-	/// Triggered when a new scene is loaded; returns that GameScene
+	/// Triggered when a new scene is loaded; returns that GameScene;
+	/// occurs after onGameSceneLoadRequested
 	/// </summary>
 	public static EventData<GameScenes> onLevelWasLoaded;
 	/// <summary>
@@ -238,7 +246,7 @@ public static class GameEvents
 	/// </summary>
 	public static EventData<string> onMissionFlagSelect;
 	/// <summary>
-	/// Triggered when spawning new asteroid or new Kerbal for
+	/// Triggered when spawning a new asteroid or a new Kerbal for
 	/// a rescue Kerbal contract
 	/// </summary>
 	public static EventData<Vessel> onNewVesselCreated;
@@ -267,7 +275,8 @@ public static class GameEvents
 	public static EventData<GameEvents.FromToAction<Part, Part>> onPartCouple;
 	/// <summary>
 	/// Triggered when a part object's OnDestroy method is called;
-	/// any time a part or vessel is unloaded, ie scene changes
+	/// occurs any time a part or vessel is unloaded,
+	/// ie scene changes or vessel moving out of loading distance
 	/// </summary>
 	public static EventData<Part> onPartDestroyed;
 	/// <summary>
@@ -290,7 +299,7 @@ public static class GameEvents
 	public static EventData<Part> onPartPack;
 	/// <summary>
 	/// Triggered when purchasing a part in the R&D center;
-	/// currently called for all parts in a tech node when researching that node
+	/// currently (KSP 0.24.2) called for all parts in a tech node when researching that node
 	/// </summary>
 	public static EventData<AvailablePart> OnPartPurchased;
 	/// <summary>
@@ -298,8 +307,8 @@ public static class GameEvents
 	/// </summary>
 	public static EventData<GameEvents.HostTargetAction<Part, Part>> onPartRemove;
 	/// <summary>
-	/// Triggered upon undock event/action; not triggered by decouple;
-	/// also triggered by asteroid grappling device
+	/// Triggered upon undock event/action; not triggered by a docking node's decouple event;
+	/// also triggered by asteroid grappling device's release event
 	/// </summary>
 	public static EventData<Part> onPartUndock;
 	/// <summary>
@@ -308,8 +317,8 @@ public static class GameEvents
 	public static EventData<Part> onPartUnpack;
 	/// <summary>
 	/// Triggered when the map view or tracking station camera focuses on a new object;
-	/// this can be a Celestial Body or vessel; also triggered when switching to or loading
-	/// a new vessel
+	/// this can be a Celestial Body or vessel;
+	/// also triggered when switching to or loading a new vessel
 	/// </summary>
 	public static EventData<MapObject> onPlanetariumTargetChanged;
 	/// <summary>
@@ -337,7 +346,7 @@ public static class GameEvents
 	/// For instance, when a vessels first enters the SOI of a new Celestial Body
 	/// the event will trigger and a "reached" entry will be added to the persistent.sfs file.
 	/// 
-	/// If a ProgressNode is completed at the same time it is reached (ie has no subnodes)
+	/// If a ProgressNode is completed at the same time it is reached (ie has no ProgressNode subNodes)
 	/// OnProgressCompelete will be triggered at the same time
 	/// 
 	/// See the ProgressTracking module in the persistent.sfs file for more on how ProgressNodes
@@ -351,7 +360,7 @@ public static class GameEvents
 	/// </summary>
 	public static EventData<float> OnReputationChanged;
 	/// <summary>
-	/// Triggered when rotating frame changes (ie from inertial to rotating);
+	/// Triggered when reference frame changes (ie from inertial to rotating);
 	/// this is generally accompanied by a shift in the camera position
 	/// and a debug log message ("Reference Frame: Rotating/Inertial")
 	/// </summary>
@@ -369,11 +378,12 @@ public static class GameEvents
 	/// </summary>
 	public static EventData<float> OnScienceChanged;
 	/// <summary>
-	/// When science data is transmitted or recovered; returns the amount of science and the ScienceSubject
+	/// Triggered science data is transmitted or recovered; returns the amount of science and the ScienceSubject
 	/// </summary>
 	public static EventData<float, ScienceSubject> OnScienceRecieved;
 	/// <summary>
-	/// Upon revealing the UI with Alt + F2
+	/// Called when the player un-hides the UI by pressing F2. Register for this callback (and onHideUI)
+	/// so that you can un-hide your UI too.
 	/// </summary>
 	public static EventVoid onShowUI;
 	/// <summary>
@@ -385,7 +395,8 @@ public static class GameEvents
 	/// </summary>
 	public static EventData<int> onStageActivate;
 	/// <summary>
-	/// Triggered by decoupler staging
+	/// Triggered by decoupler staging;
+	/// also triggered by separation through a decoupler's right-click menu event
 	/// </summary>
 	public static EventData<EventReport> onStageSeparation;
 	/// <summary>
@@ -394,11 +405,12 @@ public static class GameEvents
 	/// </summary>
 	public static EventData<GameEvents.HostTargetAction<RDTech, RDTech.OperationResult>> OnTechnologyResearched;
 	/// <summary>
-	/// Triggered whenever timewarp rate changes; applies to physics and non-physics timewarp
+	/// Triggered whenever timewarp rate changes; applies to physics and non-physics timewarp;
+	/// triggered by the key press also (called even if you are at max/min timewarp already)
 	/// </summary>
 	public static EventVoid onTimeWarpRateChanged;
 	/// <summary>
-	/// Deprecated? Old Part stuff. Use onPartUndock
+	/// Deprecated? Use onPartUndock
 	/// </summary>
 	public static EventData<EventReport> onUndock;
 	/// <summary>
@@ -406,13 +418,13 @@ public static class GameEvents
 	/// </summary>
 	public static EventData<Vessel> onVesselChange;
 	/// <summary>
-	/// Triggered when a vessel is launched or created by undocking, decoupling, planting a flag, or EVA;
-	/// also triggered by new asteroid creation ant rescue Kerbal contracts
+	/// Triggered when a vessel is launched, or created by undocking, decoupling, planting a flag, or EVA;
+	/// also triggered by new asteroid creation and rescue Kerbal contracts
 	/// </summary>
 	public static EventData<Vessel> onVesselCreate;
 	/// <summary>
 	/// Triggered when a vessel instance is destroyed;
-	/// any time a vessel is unloaded, ie scene changes
+	/// any time a vessel is unloaded, ie scene changes, exiting loading distance
 	/// </summary>
 	public static EventData<Vessel> onVesselDestroy;
 	/// <summary>
@@ -433,22 +445,24 @@ public static class GameEvents
 	/// </summary>
 	public static EventData<Vessel> onVesselOrbitClosed;
 	/// <summary>
-	/// Triggered when orbit eccentricity is > 1
+	/// Triggered when orbit eccentricity becomes > 1
 	/// </summary>
 	public static EventData<Vessel> onVesselOrbitEscaped;
 	/// <summary>
-	/// Triggered after vessel has been recovered and the science data
+	/// Triggered after a vessel has been recovered and the science data
 	/// and part values have been accounted for;
-	/// occurs in the space center or tracking station
+	/// occurs in the space center or tracking station.
+	/// 
+	/// Triggered after onVesselRecoveryProcessing
 	/// </summary>
 	public static EventData<ProtoVessel> onVesselRecovered;
 	/// <summary>
-	/// Triggers in the space center or tracking station when a vessel is recovered,
-	/// occurs before science and part processing
+	/// Triggered in the space center or tracking station when a vessel is recovered;
+	/// occurs before onVesselRecovered
 	/// </summary>
 	public static EventData<ProtoVessel, MissionRecoveryDialog, float> onVesselRecoveryProcessing;
 	/// <summary>
-	/// When a vessel is recovered from the flight scene
+	/// Triggered a vessel is recovered (the big green button at the top) from the flight scene
 	/// </summary>
 	public static EventData<Vessel> OnVesselRecoveryRequested;
 	/// <summary>
@@ -456,7 +470,7 @@ public static class GameEvents
 	/// </summary>
 	public static EventData<GameEvents.HostedFromToAction<Vessel, string>> onVesselRename;
 	/// <summary>
-	/// Triggered when vessel is loaded onto the launchpad from the editor/launch window;
+	/// Triggered when vessel is loaded onto the launchpad from the editor/launch selection window;
 	/// called after the transition to flight scene
 	/// </summary>
 	public static EventData<ShipConstruct> OnVesselRollout;
@@ -542,11 +556,13 @@ public static class GameEvents
 	public static class VesselSituation
 	{
 		/// <summary>
-		/// Triggered upon escaping a celestial bodies orbit; when changing SOI
+		/// Triggered upon escaping a celestial body's orbit;
+		/// triggered by onVesselSOIChanged, not by simply attaining an escape trajectory
 		/// </summary>
 		public static EventData<Vessel, CelestialBody> onEscape;
 		/// <summary>
-		/// Triggered upon entering a new celestial bodies SOI, the inverse of onEscape; may not apply to the Sun
+		/// Triggered upon entering a new celestial bodies SOI, the inverse of onEscape;
+		/// may not apply to the Sun, ie requires eccentricity > 1
 		/// </summary>
 		public static EventData<Vessel, CelestialBody> onFlyBy;
 		/// <summary>
@@ -554,11 +570,12 @@ public static class GameEvents
 		/// </summary>
 		public static EventData<Vessel, CelestialBody> onLand;
 		/// <summary>
-		/// Triggered upon entering orbit, must be stable, with periapsis above the max atmospheric height
+		/// Triggered upon entering orbit;
+		/// must be stable, with periapsis above the max atmospheric height and eccentricity < 1
 		/// </summary>
 		public static EventData<Vessel, CelestialBody> onOrbit;
 		/// <summary>
-		/// Triggered the first time a sub-orbital situation is acheived
+		/// Triggered the first time a sub-orbital situation is achieved
 		/// </summary>
 		public static EventData<Vessel> onReachSpace;
 		/// <summary>
@@ -605,7 +622,7 @@ public static class GameEvents
 
 	/// <summary>
 	/// Two potentially different object types;
-	/// the From/To object returns two values, generally the old and new.
+	/// the From/To object (B) returns two values, generally the old and new.
 	/// 
 	/// See onVesselSOIChanged for an example
 	/// </summary>

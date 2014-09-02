@@ -30,7 +30,7 @@ public class EventReport
 	public string sender;
 	/// <summary>
 	/// The active stage number when the EventReport is generated;
-	/// can be set to anything; 0 by default
+	/// can be set to any integer; 0 by default
 	/// </summary>
 	public int stage;
 
