@@ -14,7 +14,7 @@ var searchData=
   ['biomemap',['BiomeMap',['../class_celestial_body.html#a9514787ec77bdb1b5ecc3ee20ab2bed5',1,'CelestialBody']]],
   ['biomemask',['biomeMask',['../class_science_experiment.html#ade4791e76d46bbbc035492839a37caed',1,'ScienceExperiment']]],
   ['boardpart',['BoardPart',['../class_kerbal_e_v_a.html#a32a0382bca76a6f8fb0bdeca6f7eb130',1,'KerbalEVA']]],
-  ['bodies',['Bodies',['../class_flight_globals.html#a813bd19323a0585ebfd6d0eb424afc98',1,'FlightGlobals.Bodies()'],['../class_flight_globals.html#a2743553f1bdbae52a415ad8ffd1decf6',1,'FlightGlobals.bodies()']]],
+  ['bodies',['bodies',['../class_flight_globals.html#a2743553f1bdbae52a415ad8ffd1decf6',1,'FlightGlobals.bodies()'],['../class_flight_globals.html#a813bd19323a0585ebfd6d0eb424afc98',1,'FlightGlobals.Bodies()']]],
   ['bodydescription',['bodyDescription',['../class_celestial_body.html#acfd576b94a9fb8ffd478009afaecf3ce',1,'CelestialBody']]],
   ['bodyname',['bodyName',['../class_celestial_body.html#a123c36f472d161318afb8c76b62f4699',1,'CelestialBody']]],
   ['bodytransform',['bodyTransform',['../class_celestial_body.html#ae0d1d8bf71debdd07e59df1f5c2409a4',1,'CelestialBody']]],

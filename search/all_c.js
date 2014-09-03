@@ -25,7 +25,7 @@ var searchData=
   ['mapcollapse_5fnavball',['MapCollapse_navBall',['../class_map_view.html#ad5baae9897e5df6e5f7da92a3ab24621',1,'MapView']]],
   ['mapicontextoverlap',['MapIconTextOverlap',['../class_map_view.html#a6857fd9904c6588c9b49319185a6284d',1,'MapView']]],
   ['mapisenabled',['MapIsEnabled',['../class_map_view.html#af4e18e2604f6baddb6a0700d7ac1a76d',1,'MapView']]],
-  ['mapview',['MapView',['../class_map_view.html',1,'MapView'],['../class_map_view.html#a160098d153fcc27d8d28cb1bcf030450',1,'MapView.MapView()'],['../class_application_launcher.html#a7a06e87f89d831ed977456f13ca579a0a7d3ff301db864b8c5ca2bf3763c83ad3',1,'ApplicationLauncher.MAPVIEW()']]],
+  ['mapview',['MapView',['../class_map_view.html',1,'MapView'],['../class_application_launcher.html#a7a06e87f89d831ed977456f13ca579a0a7d3ff301db864b8c5ca2bf3763c83ad3',1,'ApplicationLauncher.MAPVIEW()'],['../class_map_view.html#a160098d153fcc27d8d28cb1bcf030450',1,'MapView.MapView()']]],
   ['mapview_2ecs',['MapView.cs',['../_map_view_8cs.html',1,'']]],
   ['mass',['mass',['../class_discovery_info.html#a4dd6960eeba7ac7604931ecd57b6894a',1,'DiscoveryInfo.mass()'],['../class_part.html#a0358ead54bece4092b7f6611ba3e00b1',1,'Part.mass()'],['../class_celestial_body.html#a021299779a00a94408cf43b9f6507548',1,'CelestialBody.Mass()']]],
   ['massmultiplier',['massMultiplier',['../class_kerbal_e_v_a.html#a4ce90fcf6829c1cc36bc165f52ab5f78',1,'KerbalEVA']]],
@@ -64,7 +64,7 @@ var searchData=
   ['memorystream',['MemoryStream',['../class_k_s_p_1_1_i_o_1_1_memory_stream.html',1,'KSP::IO']]],
   ['memorystream_2ecs',['MemoryStream.cs',['../_memory_stream_8cs.html',1,'']]],
   ['menu',['MENU',['../class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba3ed53fbeb1eab0443561b68ca0c0b5cf',1,'HighLogic']]],
-  ['message',['message',['../class_k_s_p_1_1_i_o_1_1_i_o_exception.html#af8ddcdba03fa339fe7134dc530da2a30',1,'KSP.IO.IOException.message()'],['../class_k_s_p_1_1_i_o_1_1_i_o_exception.html#a4671020144747f8ceea6d9e4b002abba',1,'KSP.IO.IOException.Message()']]],
+  ['message',['Message',['../class_k_s_p_1_1_i_o_1_1_i_o_exception.html#a4671020144747f8ceea6d9e4b002abba',1,'KSP.IO.IOException.Message()'],['../class_k_s_p_1_1_i_o_1_1_i_o_exception.html#af8ddcdba03fa339fe7134dc530da2a30',1,'KSP.IO.IOException.message()']]],
   ['min',['Min',['../struct_vector3d.html#adf0e9ae44a42b8c06c844a09fee19086',1,'Vector3d']]],
   ['mindistance',['minDistance',['../class_flight_camera.html#a098554264f55d4730a9ff46db5f29770',1,'FlightCamera.minDistance()'],['../class_planetarium_camera.html#a5875de9b52ff324f621dbe09dc2406ec',1,'PlanetariumCamera.minDistance()']]],
   ['minheight',['minHeight',['../class_flight_camera.html#af1be1de78accf3ede07df18458b12559',1,'FlightCamera.minHeight()'],['../class_planetarium_camera.html#a6bebfcee1493efdbcff9538feaa065cf',1,'PlanetariumCamera.minHeight()']]],
@@ -111,5 +111,6 @@ var searchData=
   ['mousegrab',['mouseGrab',['../class_editor_logic.html#ac6fb2a396f63dcbd66e7eb1005fdf5a3',1,'EditorLogic']]],
   ['mouseovergui',['mouseOverGUI',['../class_editor_logic.html#a7f4382c8fbb90039a0b236a2cb51f4c3',1,'EditorLogic']]],
   ['moveto',['MoveTo',['../class_k_s_p_1_1_i_o_1_1_file_info.html#ab0e5db549343220c7838e039191a4e14',1,'KSP::IO::FileInfo']]],
+  ['msg',['msg',['../class_event_report.html#afbcbad117826a1c00899fbc759bdd113',1,'EventReport']]],
   ['multiply',['MULTIPLY',['../class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4ba080aaf8d817ada96fca7096b7b55bd30',1,'HighLogic']]]
 ];

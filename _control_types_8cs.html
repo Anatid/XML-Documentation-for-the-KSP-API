@@ -161,8 +161,15 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aadcc82597f5bb58f434333f15aacbff90">ControlTypes.EDITOR_LOCK</a> = 68585795879936, 
 <a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa096e64ecf73f724300be6aa4f15cf7a2">ControlTypes.TRACKINGSTATION_UI</a> = 70368744177664, 
+<a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aabd96fd1ea42e95e4c66ec887c9601a97">ControlTypes.TRACKINGSTATION_ALL</a> = 70368744180736, 
+<a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa173cc7df1eff13f658cdf5b4852abd8d">ControlTypes.KSC_FACILITIES</a> = 140737488355328, 
+<br />
+&#160;&#160;<a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aadfa9b6bec0eb38069dc2b4edfc8c235a">ControlTypes.KSC_UI</a> = 281474976710656, 
+<a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aafc78d5ebf60fa5ecda291e353a4a5302">ControlTypes.KSC_ALL</a> = 422212465069056, 
+<a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aab91447b526c72ccde856d379ff752cf5">ControlTypes.APPLAUNCHER_BUTTONS</a> = 562949953421312, 
 <a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aaee4c2963ee3e62d7143f11efdee456d3">ControlTypes.ALL_SHIP_CONTROLS</a> = 18446744073709429439, 
-<a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aab1c94ca2fbc3e78fc30069c8d0f01680">ControlTypes.All</a> = 18446744073709551615
+<br />
+&#160;&#160;<a class="el" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aab1c94ca2fbc3e78fc30069c8d0f01680">ControlTypes.All</a> = 18446744073709551615
 <br />
  }</td></tr>
 <tr class="memdesc:a0119b266bd804d818bf01e957f37217a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The different controls that it is possible to lock the player out of using <a class="el" href="class_input_lock_manager.html" title="This class lets you lock the player out of certain controls. It&#39;s probably what KSP uses internally t...">InputLockManager</a>. You can OR them together to lock the player out of multiple controls at once.  <a href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217a">More...</a><br /></td></tr>
@@ -180,7 +187,69 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The different controls that it is possible to lock the player out of using <a class="el" href="class_input_lock_manager.html" title="This class lets you lock the player out of certain controls. It&#39;s probably what KSP uses internally t...">InputLockManager</a>. You can OR them together to lock the player out of multiple controls at once. </p>
-<table class="fieldtable">
+<p>TaranisElsu compiled this list of the binary values of the enum members as of <a class="el" href="namespace_k_s_p.html">KSP</a> 0.24.2, which makes it clearer which controls are locked in each case:</p>
+<div class="fragment"><div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa6adf97f83acf6453d4a6a4b1070f3754">None</a>                                                                                          0</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa79cc664d2e33a452df89eb4904e8ca1c">PITCH</a>                                                                                         1</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa08cd1a31f17f0247ac89e2fbaadaa9e8">ROLL</a>                                                                                        100</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aac461be1f8daa1e5194bbe058bf311b37">YAW</a>                                                                                        1000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aabb5fe16848dfe42838d7ac353668ae61">THROTTLE</a>                                                                                  10000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa2db46c628cfb3bd1545d3b5a14b4a9c5">SAS</a>                                                                                      100000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa291554596c183e837f0a6bec3767c891">PAUSE</a>                                                                                   1000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aab8a1431064f351dbef92871d02bab8cf">STAGING</a>                                                                                10000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa5a22c9589c4bfd556f06532ba851def7">CAMERAMODES</a>                                                                          1 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aaca5c504c6136e20051be115160b0f0b8">MISC</a>                                                                                10 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aaa4bf5d148479e1ef1cd420acfd78b951">CAMERACONTROLS</a>                                                                     100 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa90cee32fd2239e2a240493c79cc8ddd3">TIMEWARP</a>                                                                          1000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa5af1a3a285c2bdee4192223e31e1f833">MAP</a>                                                                              10000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aaaac544aacc3615aada24897a215f5046">LINEAR</a>                                                                          100000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa04a52d4f6eeaf96be8e5c3b55ae30c31">QUICKSAVE</a>                                                                      1000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa77b74ea9a8af9c5075c40b92276181f8">QUICKLOAD</a>                                                                     10000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aadffd8dc7d91f53834d96faf6c5d881e7">VESSEL_SWITCHING</a>                                                            1 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa0d2bf18d713599037e803df369b204d7">CUSTOM_ACTION_GROUPS</a>                                                       10 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aab86c8fabe8b6c2bbfd6b86cbedbf88c2">GROUP_ABORT</a>                                                               100 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aad08200bf36c27528f4aadae1e68d2c35">GROUP_GEARS</a>                                                              1000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa58756542b6094e8c9370aef7c78f16ad">GROUP_LIGHTS</a>                                                            10000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa38a244522e5e6873b76b1322271b5537">GROUP_BRAKES</a>                                                           100000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa386b185935c2677acfb764937df977eb">GROUP_STAGE</a>                                                           1000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa8dcd7b2d0ae10b4cc5016a87a524c573">GROUPS_ALL</a>                                                            1111110 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa26ed0882555788de57d6b2f8c4143b40">ACTIONS_SHIP</a>                                                         10000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa58e59c13bcd61bc4ec56146e4b1049fe">ACTIONS_EXTERNAL</a>                                                   1 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa8c17759905929bf68b33d57e2d837ff8">ACTIONS_ALL</a>                                                        1 10000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa5852281688f5bba8ddab1a5c7a2a3c6b">RCS</a>                                                               10 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa47bd17586b7e1718e64e516927854de6">WHEEL_STEER</a>                                                      100 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aadca05cfb93ced8dd56dc41da24c284d5">WHEEL_THROTTLE</a>                                                  1000 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa5b6cde7b0a30a981bcc22b61aeeb813d">EVA_INPUT</a>                                                      10000 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aadf40d547aaf646de7b8d879de8c8d147">EDITOR_ICON_HOVER</a>                                             100000 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa5e514919079b7517cb7e5b997333d722">EDITOR_ICON_PICK</a>                                             1000000 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aacf3b3d0fa030023e7cfca719d3ba25a5">EDITOR_TAB_SWITCH</a>                                           10000000 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa721d98e93807857a68f80ef135e4aa53">EDITOR_SAVE</a>                                               1 00000000 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aae3e6889dff4a26db07cda235eed52f5f">EDITOR_LOAD</a>                                              10 00000000 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa290acab3b98fe930d9f39383f8e6629a">EDITOR_EXIT</a>                                             100 00000000 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aad2b40c8ea7bbc4320b3f7f1b36af15e9">EDITOR_NEW</a>                                             1000 00000000 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa7332189c3cf13633714d44631308d97b">EDITOR_LAUNCH</a>                                         10000 00000000 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa93c568f7dfa80d91f59ca99bf2362cb6">EDITOR_UI_TOPRIGHT</a>                                    11111 00000000 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa542d14bfe7f860707768ceaffd4f2a45">EDITOR_PAD_PICK_PLACE</a>                                100000 00000000 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aabd8cda26a7aa8e16009e5bb74a32d5f6">EDITOR_PAD_PICK_COPY</a>                                1000000 00000000 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa90f6f37da0bcb8e70859902b1b1de5fd">EDITOR_EDIT_STAGES</a>                                 10000000 00000000 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa2a23fed4a27e71d62394cce6832ab9bd">EDITOR_EDIT_NAME_FIELDS</a>                          1 00000000 00000000 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa7036293bfc72ba74359939d034dc7116">EDITOR_ROTATE_PARTS</a>                             10 00000000 00000000 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aaf663fbfa14d20480a30660b14c0a8cef">EDITOR_UNDO_REDO</a>                               100 00000000 00000000 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa4b459e12121fc930cdabed2448fd944b">EDITOR_SYM_SNAP</a>                               1000 00000000 00000000 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa3882c9f7dea508c288e2347c16f7d98a">EDITOR_OVERLAYS</a>                              10000 00000000 00000000 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa2c0a8ec6fdb03c136b1e9a71e26b4e89">EDITOR_MODE_SWITCH</a>                          100000 00000000 00000000 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa3e014494528d6b48b23d03ba64209933">EDITOR_UI_TOPBAR</a>                            100001 00011111 00000000 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa78f811ea35ee49f8aa5a7c2d9833b274">EDITOR_UI</a>                                   101101 10011111 00000000 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aaf39dbb37087f6a5e3ffb7c86c1d4f3cd">EDITOR_SOFT_LOCK</a>                            111110 01100000 11100000 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aadcc82597f5bb58f434333f15aacbff90">EDITOR_LOCK</a>                                 111110 01100000 11100000 00000000 00000100 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa096e64ecf73f724300be6aa4f15cf7a2">TRACKINGSTATION_UI</a>                         1000000 00000000 00000000 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aabd96fd1ea42e95e4c66ec887c9601a97">TRACKINGSTATION_ALL</a>                        1000000 00000000 00000000 00000000 00001100 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa173cc7df1eff13f658cdf5b4852abd8d">KSC_FACILITIES</a>                            10000000 00000000 00000000 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aadfa9b6bec0eb38069dc2b4edfc8c235a">KSC_UI</a>                                  1 00000000 00000000 00000000 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aafc78d5ebf60fa5ecda291e353a4a5302">KSC_ALL</a>                                 1 10000000 00000000 00000000 00000000 00001100 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aab91447b526c72ccde856d379ff752cf5">APPLAUNCHER_BUTTONS</a>                    10 00000000 00000000 00000000 00000000 00000000 00000000</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aaee4c2963ee3e62d7143f11efdee456d3">ALL_SHIP_CONTROLS</a>       11111111 11111111 11111111 11111111 11111111 11111110 00100010 10111111</div>
+<div class="line"><a class="code" href="_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aab1c94ca2fbc3e78fc30069c8d0f01680">All</a>                     11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111</div>
+</div><!-- fragment --><table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a0119b266bd804d818bf01e957f37217aa6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a0119b266bd804d818bf01e957f37217aa79cc664d2e33a452df89eb4904e8ca1c"></a>PITCH&#160;</td><td class="fielddoc">
@@ -289,8 +358,17 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a0119b266bd804d818bf01e957f37217aa096e64ecf73f724300be6aa4f15cf7a2"></a>TRACKINGSTATION_UI&#160;</td><td class="fielddoc">
 </td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a0119b266bd804d818bf01e957f37217aabd96fd1ea42e95e4c66ec887c9601a97"></a>TRACKINGSTATION_ALL&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a0119b266bd804d818bf01e957f37217aa173cc7df1eff13f658cdf5b4852abd8d"></a>KSC_FACILITIES&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a0119b266bd804d818bf01e957f37217aadfa9b6bec0eb38069dc2b4edfc8c235a"></a>KSC_UI&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a0119b266bd804d818bf01e957f37217aafc78d5ebf60fa5ecda291e353a4a5302"></a>KSC_ALL&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a0119b266bd804d818bf01e957f37217aab91447b526c72ccde856d379ff752cf5"></a>APPLAUNCHER_BUTTONS&#160;</td><td class="fielddoc">
+</td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a0119b266bd804d818bf01e957f37217aaee4c2963ee3e62d7143f11efdee456d3"></a>ALL_SHIP_CONTROLS&#160;</td><td class="fielddoc">
-<p>Locking ALL_SHIP_CONTROLS will prevent the player from steering the ship, as if they had run out of ElectricCharge. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a0119b266bd804d818bf01e957f37217aab1c94ca2fbc3e78fc30069c8d0f01680"></a>All&#160;</td><td class="fielddoc">
 </td></tr>
@@ -301,7 +379,7 @@ Enumerations</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 29 2014 00:44:37 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 2 2014 23:06:10 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

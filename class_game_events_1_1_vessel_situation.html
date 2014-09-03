@@ -94,34 +94,42 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Lets you register callbacks related to changes in the vessel situation.  
+<p>Game events related to vessel situation changes; mostly related to progress tracking.  
  <a href="class_game_events_1_1_vessel_situation.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:ad5f28c2db7471598b1123ac4a6da0524"><td class="memItemLeft" align="right" valign="top">static EventData&lt; <a class="el" href="class_vessel.html">Vessel</a>, <br class="typebreak" />
 <a class="el" href="class_celestial_body.html">CelestialBody</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_events_1_1_vessel_situation.html#ad5f28c2db7471598b1123ac4a6da0524">onEscape</a></td></tr>
+<tr class="memdesc:ad5f28c2db7471598b1123ac4a6da0524"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered upon escaping a celestial body's orbit; triggered by onVesselSOIChanged, not by simply attaining an escape trajectory  <a href="#ad5f28c2db7471598b1123ac4a6da0524">More...</a><br /></td></tr>
 <tr class="separator:ad5f28c2db7471598b1123ac4a6da0524"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa231ff4cb807532e68c2c3226605b610"><td class="memItemLeft" align="right" valign="top">static EventData&lt; <a class="el" href="class_vessel.html">Vessel</a>, <br class="typebreak" />
 <a class="el" href="class_celestial_body.html">CelestialBody</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_events_1_1_vessel_situation.html#aa231ff4cb807532e68c2c3226605b610">onFlyBy</a></td></tr>
+<tr class="memdesc:aa231ff4cb807532e68c2c3226605b610"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered upon entering a new celestial bodies SOI, the inverse of onEscape; may not apply to the Sun, ie requires eccentricity &gt; 1  <a href="#aa231ff4cb807532e68c2c3226605b610">More...</a><br /></td></tr>
 <tr class="separator:aa231ff4cb807532e68c2c3226605b610"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3a44d0824a586e140dad9eab2737fd3"><td class="memItemLeft" align="right" valign="top">static EventData&lt; <a class="el" href="class_vessel.html">Vessel</a>, <br class="typebreak" />
 <a class="el" href="class_celestial_body.html">CelestialBody</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_events_1_1_vessel_situation.html#ab3a44d0824a586e140dad9eab2737fd3">onLand</a></td></tr>
+<tr class="memdesc:ab3a44d0824a586e140dad9eab2737fd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered upon landing or splashing down  <a href="#ab3a44d0824a586e140dad9eab2737fd3">More...</a><br /></td></tr>
 <tr class="separator:ab3a44d0824a586e140dad9eab2737fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a195424703fd3e6a06384e63cc80b5bdc"><td class="memItemLeft" align="right" valign="top">static EventData&lt; <a class="el" href="class_vessel.html">Vessel</a>, <br class="typebreak" />
 <a class="el" href="class_celestial_body.html">CelestialBody</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_events_1_1_vessel_situation.html#a195424703fd3e6a06384e63cc80b5bdc">onOrbit</a></td></tr>
+<tr class="memdesc:a195424703fd3e6a06384e63cc80b5bdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered upon entering orbit; must be stable, with periapsis above the max atmospheric height and eccentricity &lt; 1  <a href="#a195424703fd3e6a06384e63cc80b5bdc">More...</a><br /></td></tr>
 <tr class="separator:a195424703fd3e6a06384e63cc80b5bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4dcdd70c933a6c0478749056b1e75d1"><td class="memItemLeft" align="right" valign="top">static EventData&lt; <a class="el" href="class_vessel.html">Vessel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_events_1_1_vessel_situation.html#ab4dcdd70c933a6c0478749056b1e75d1">onReachSpace</a></td></tr>
+<tr class="memdesc:ab4dcdd70c933a6c0478749056b1e75d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered the first time a sub-orbital situation is achieved  <a href="#ab4dcdd70c933a6c0478749056b1e75d1">More...</a><br /></td></tr>
 <tr class="separator:ab4dcdd70c933a6c0478749056b1e75d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30c90b8bf191373596788a5d1e86eec0"><td class="memItemLeft" align="right" valign="top">static EventData&lt; <a class="el" href="class_vessel.html">Vessel</a>, <br class="typebreak" />
 <a class="el" href="class_celestial_body.html">CelestialBody</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_events_1_1_vessel_situation.html#a30c90b8bf191373596788a5d1e86eec0">onReturnFromOrbit</a></td></tr>
+<tr class="memdesc:a30c90b8bf191373596788a5d1e86eec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered when landing on Kerbin after a flyby or orbiting a Celestial Body  <a href="#a30c90b8bf191373596788a5d1e86eec0">More...</a><br /></td></tr>
 <tr class="separator:a30c90b8bf191373596788a5d1e86eec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21f644bc44a2340961a0558231ca6abb"><td class="memItemLeft" align="right" valign="top">static EventData&lt; <a class="el" href="class_vessel.html">Vessel</a>, <br class="typebreak" />
 <a class="el" href="class_celestial_body.html">CelestialBody</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_events_1_1_vessel_situation.html#a21f644bc44a2340961a0558231ca6abb">onReturnFromSurface</a></td></tr>
+<tr class="memdesc:a21f644bc44a2340961a0558231ca6abb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered when landing on Kerbin after landing on a Celestial Body  <a href="#a21f644bc44a2340961a0558231ca6abb">More...</a><br /></td></tr>
 <tr class="separator:a21f644bc44a2340961a0558231ca6abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Lets you register callbacks related to changes in the vessel situation. </p>
+<div class="textblock"><p>Game events related to vessel situation changes; mostly related to progress tracking. </p>
+<p>The Celestial Body in question and the vessel being used are returned as EventData in most cases </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="ad5f28c2db7471598b1123ac4a6da0524"></a>
 <div class="memitem">
@@ -140,6 +148,8 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Triggered upon escaping a celestial body's orbit; triggered by onVesselSOIChanged, not by simply attaining an escape trajectory </p>
 
 </div>
 </div>
@@ -161,6 +171,8 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Triggered upon entering a new celestial bodies SOI, the inverse of onEscape; may not apply to the Sun, ie requires eccentricity &gt; 1 </p>
+
 </div>
 </div>
 <a class="anchor" id="ab3a44d0824a586e140dad9eab2737fd3"></a>
@@ -180,6 +192,8 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Triggered upon landing or splashing down </p>
 
 </div>
 </div>
@@ -201,6 +215,8 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Triggered upon entering orbit; must be stable, with periapsis above the max atmospheric height and eccentricity &lt; 1 </p>
+
 </div>
 </div>
 <a class="anchor" id="ab4dcdd70c933a6c0478749056b1e75d1"></a>
@@ -220,6 +236,8 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Triggered the first time a sub-orbital situation is achieved </p>
 
 </div>
 </div>
@@ -241,6 +259,8 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Triggered when landing on Kerbin after a flyby or orbiting a Celestial Body </p>
+
 </div>
 </div>
 <a class="anchor" id="a21f644bc44a2340961a0558231ca6abb"></a>
@@ -261,6 +281,8 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Triggered when landing on Kerbin after landing on a Celestial Body </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -269,7 +291,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 29 2014 00:44:38 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 2 2014 23:06:11 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

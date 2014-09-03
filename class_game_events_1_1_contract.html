@@ -94,43 +94,53 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Lets you register callbacks related to contracts.  
+<p>Game events related to contract status changes; the contract in question is returned as EventData for most events  
  <a href="class_game_events_1_1_contract.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:ace848f23d6d7bc06b86c2c50a2e7c643"><td class="memItemLeft" align="right" valign="top">static EventData<br class="typebreak" />
 &lt; Contracts.Contract &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_events_1_1_contract.html#ace848f23d6d7bc06b86c2c50a2e7c643">onAccepted</a></td></tr>
+<tr class="memdesc:ace848f23d6d7bc06b86c2c50a2e7c643"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered when a contract is accepted through the mission control center  <a href="#ace848f23d6d7bc06b86c2c50a2e7c643">More...</a><br /></td></tr>
 <tr class="separator:ace848f23d6d7bc06b86c2c50a2e7c643"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a164ff487c42260e8918f75a75a16729b"><td class="memItemLeft" align="right" valign="top">static EventData<br class="typebreak" />
 &lt; Contracts.Contract &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_events_1_1_contract.html#a164ff487c42260e8918f75a75a16729b">onCancelled</a></td></tr>
+<tr class="memdesc:a164ff487c42260e8918f75a75a16729b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered upon cancellation of an active contract through the mission control center  <a href="#a164ff487c42260e8918f75a75a16729b">More...</a><br /></td></tr>
 <tr class="separator:a164ff487c42260e8918f75a75a16729b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a220a4c65e02924652a3c29b98152c0c0"><td class="memItemLeft" align="right" valign="top">static EventData<br class="typebreak" />
 &lt; Contracts.Contract &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_events_1_1_contract.html#a220a4c65e02924652a3c29b98152c0c0">onCompleted</a></td></tr>
+<tr class="memdesc:a220a4c65e02924652a3c29b98152c0c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered upon successful contract completion  <a href="#a220a4c65e02924652a3c29b98152c0c0">More...</a><br /></td></tr>
 <tr class="separator:a220a4c65e02924652a3c29b98152c0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad57f63be53edf8abb21ae4cf781e5e1f"><td class="memItemLeft" align="right" valign="top">static EventVoid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_events_1_1_contract.html#ad57f63be53edf8abb21ae4cf781e5e1f">onContractsListChanged</a></td></tr>
+<tr class="memitem:ad57f63be53edf8abb21ae4cf781e5e1f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_event_void.html">EventVoid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_events_1_1_contract.html#ad57f63be53edf8abb21ae4cf781e5e1f">onContractsListChanged</a></td></tr>
+<tr class="memdesc:ad57f63be53edf8abb21ae4cf781e5e1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered when a new contract is offered, or a contract expires or completes  <a href="#ad57f63be53edf8abb21ae4cf781e5e1f">More...</a><br /></td></tr>
 <tr class="separator:ad57f63be53edf8abb21ae4cf781e5e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af112c6e2a0302ea810bd64e787b77f85"><td class="memItemLeft" align="right" valign="top">static EventVoid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_events_1_1_contract.html#af112c6e2a0302ea810bd64e787b77f85">onContractsLoaded</a></td></tr>
+<tr class="memitem:af112c6e2a0302ea810bd64e787b77f85"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_event_void.html">EventVoid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_events_1_1_contract.html#af112c6e2a0302ea810bd64e787b77f85">onContractsLoaded</a></td></tr>
+<tr class="memdesc:af112c6e2a0302ea810bd64e787b77f85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered by the ContractSystem Scenario Module loading existing contracts  <a href="#af112c6e2a0302ea810bd64e787b77f85">More...</a><br /></td></tr>
 <tr class="separator:af112c6e2a0302ea810bd64e787b77f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab390d9279b8acf88e5125d0c555d803a"><td class="memItemLeft" align="right" valign="top">static EventData<br class="typebreak" />
 &lt; Contracts.Contract &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_events_1_1_contract.html#ab390d9279b8acf88e5125d0c555d803a">onDeclined</a></td></tr>
+<tr class="memdesc:ab390d9279b8acf88e5125d0c555d803a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered by declining an offered contract from the mission control center  <a href="#ab390d9279b8acf88e5125d0c555d803a">More...</a><br /></td></tr>
 <tr class="separator:ab390d9279b8acf88e5125d0c555d803a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39ff6f23a20e863573f964c169e5421c"><td class="memItemLeft" align="right" valign="top">static EventData<br class="typebreak" />
 &lt; Contracts.Contract &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_events_1_1_contract.html#a39ff6f23a20e863573f964c169e5421c">onFailed</a></td></tr>
+<tr class="memdesc:a39ff6f23a20e863573f964c169e5421c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered when a contract fails for any reason  <a href="#a39ff6f23a20e863573f964c169e5421c">More...</a><br /></td></tr>
 <tr class="separator:a39ff6f23a20e863573f964c169e5421c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7d89d44eebf818caa7ccdc125324e1d"><td class="memItemLeft" align="right" valign="top">static EventData<br class="typebreak" />
 &lt; Contracts.Contract &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_events_1_1_contract.html#ae7d89d44eebf818caa7ccdc125324e1d">onFinished</a></td></tr>
+<tr class="memdesc:ae7d89d44eebf818caa7ccdc125324e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered when a contract finishes for any reason, success or failure  <a href="#ae7d89d44eebf818caa7ccdc125324e1d">More...</a><br /></td></tr>
 <tr class="separator:ae7d89d44eebf818caa7ccdc125324e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b1119ce392665265243905efbb7db54"><td class="memItemLeft" align="right" valign="top">static EventData<br class="typebreak" />
 &lt; Contracts.Contract &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_events_1_1_contract.html#a8b1119ce392665265243905efbb7db54">onOffered</a></td></tr>
+<tr class="memdesc:a8b1119ce392665265243905efbb7db54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered when the contract is first offered in the mission control center  <a href="#a8b1119ce392665265243905efbb7db54">More...</a><br /></td></tr>
 <tr class="separator:a8b1119ce392665265243905efbb7db54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd97b574d43af6623c07db27d356d3c8"><td class="memItemLeft" align="right" valign="top">static EventData<br class="typebreak" />
+<tr class="memitem:a6da86259529f35b3d5886671efa3e4ef"><td class="memItemLeft" align="right" valign="top">static EventData<br class="typebreak" />
 &lt; Contracts.Contract, <br class="typebreak" />
-Contracts.ContractParameter &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_events_1_1_contract.html#afd97b574d43af6623c07db27d356d3c8">onParameterChange</a></td></tr>
-<tr class="separator:afd97b574d43af6623c07db27d356d3c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+ContractParameter &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_events_1_1_contract.html#a6da86259529f35b3d5886671efa3e4ef">onParameterChange</a></td></tr>
+<tr class="memdesc:a6da86259529f35b3d5886671efa3e4ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered whenever an individual contract parameter changes state; from Incomplete to complete for example  <a href="#a6da86259529f35b3d5886671efa3e4ef">More...</a><br /></td></tr>
+<tr class="separator:a6da86259529f35b3d5886671efa3e4ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Lets you register callbacks related to contracts. </p>
+<div class="textblock"><p>Game events related to contract status changes; the contract in question is returned as EventData for most events </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="ace848f23d6d7bc06b86c2c50a2e7c643"></a>
 <div class="memitem">
@@ -149,6 +159,8 @@ Contracts.ContractParameter &gt;&#160;</td><td class="memItemRight" valign="bott
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Triggered when a contract is accepted through the mission control center </p>
 
 </div>
 </div>
@@ -170,6 +182,8 @@ Contracts.ContractParameter &gt;&#160;</td><td class="memItemRight" valign="bott
 </table>
 </div><div class="memdoc">
 
+<p>Triggered upon cancellation of an active contract through the mission control center </p>
+
 </div>
 </div>
 <a class="anchor" id="a220a4c65e02924652a3c29b98152c0c0"></a>
@@ -190,6 +204,8 @@ Contracts.ContractParameter &gt;&#160;</td><td class="memItemRight" valign="bott
 </table>
 </div><div class="memdoc">
 
+<p>Triggered upon successful contract completion </p>
+
 </div>
 </div>
 <a class="anchor" id="ad57f63be53edf8abb21ae4cf781e5e1f"></a>
@@ -200,7 +216,7 @@ Contracts.ContractParameter &gt;&#160;</td><td class="memItemRight" valign="bott
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">EventVoid GameEvents.Contract.onContractsListChanged</td>
+          <td class="memname"><a class="el" href="class_event_void.html">EventVoid</a> GameEvents.Contract.onContractsListChanged</td>
         </tr>
       </table>
   </td>
@@ -209,6 +225,8 @@ Contracts.ContractParameter &gt;&#160;</td><td class="memItemRight" valign="bott
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Triggered when a new contract is offered, or a contract expires or completes </p>
 
 </div>
 </div>
@@ -220,7 +238,7 @@ Contracts.ContractParameter &gt;&#160;</td><td class="memItemRight" valign="bott
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">EventVoid GameEvents.Contract.onContractsLoaded</td>
+          <td class="memname"><a class="el" href="class_event_void.html">EventVoid</a> GameEvents.Contract.onContractsLoaded</td>
         </tr>
       </table>
   </td>
@@ -229,6 +247,8 @@ Contracts.ContractParameter &gt;&#160;</td><td class="memItemRight" valign="bott
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Triggered by the ContractSystem Scenario Module loading existing contracts </p>
 
 </div>
 </div>
@@ -250,6 +270,8 @@ Contracts.ContractParameter &gt;&#160;</td><td class="memItemRight" valign="bott
 </table>
 </div><div class="memdoc">
 
+<p>Triggered by declining an offered contract from the mission control center </p>
+
 </div>
 </div>
 <a class="anchor" id="a39ff6f23a20e863573f964c169e5421c"></a>
@@ -269,6 +291,8 @@ Contracts.ContractParameter &gt;&#160;</td><td class="memItemRight" valign="bott
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Triggered when a contract fails for any reason </p>
 
 </div>
 </div>
@@ -290,6 +314,8 @@ Contracts.ContractParameter &gt;&#160;</td><td class="memItemRight" valign="bott
 </table>
 </div><div class="memdoc">
 
+<p>Triggered when a contract finishes for any reason, success or failure </p>
+
 </div>
 </div>
 <a class="anchor" id="a8b1119ce392665265243905efbb7db54"></a>
@@ -310,9 +336,11 @@ Contracts.ContractParameter &gt;&#160;</td><td class="memItemRight" valign="bott
 </table>
 </div><div class="memdoc">
 
+<p>Triggered when the contract is first offered in the mission control center </p>
+
 </div>
 </div>
-<a class="anchor" id="afd97b574d43af6623c07db27d356d3c8"></a>
+<a class="anchor" id="a6da86259529f35b3d5886671efa3e4ef"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -320,7 +348,7 @@ Contracts.ContractParameter &gt;&#160;</td><td class="memItemRight" valign="bott
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">EventData&lt;Contracts.Contract, Contracts.ContractParameter&gt; GameEvents.Contract.onParameterChange</td>
+          <td class="memname">EventData&lt;Contracts.Contract, ContractParameter&gt; GameEvents.Contract.onParameterChange</td>
         </tr>
       </table>
   </td>
@@ -330,6 +358,8 @@ Contracts.ContractParameter &gt;&#160;</td><td class="memItemRight" valign="bott
 </table>
 </div><div class="memdoc">
 
+<p>Triggered whenever an individual contract parameter changes state; from Incomplete to complete for example </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -338,7 +368,7 @@ Contracts.ContractParameter &gt;&#160;</td><td class="memItemRight" valign="bott
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 29 2014 00:44:38 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 2 2014 23:06:11 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

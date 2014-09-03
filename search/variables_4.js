@@ -21,6 +21,7 @@ var searchData=
   ['engineignited',['EngineIgnited',['../class_module_engines.html#a6b30194aa379f2bad0491160a4bbf310',1,'ModuleEngines']]],
   ['engineshutdown',['engineShutdown',['../class_module_engines.html#ab96b13fae4bffee9e8aadd4b289261d0',1,'ModuleEngines']]],
   ['epoch',['epoch',['../class_orbit.html#a1856e63f9a84f12a41299bf8073abadb',1,'Orbit']]],
+  ['eventtype',['eventType',['../class_event_report.html#a4beea797a8eaee8e666001de6dd2c077',1,'EventReport']]],
   ['excessv',['excessV',['../class_krakensbane.html#a5fd932774fc21fba8ed0722bc1c22d02',1,'Krakensbane']]],
   ['exhaustdamage',['exhaustDamage',['../class_module_engines.html#a12c3ccc99ccdfe6f387459f2eeb7c20b',1,'ModuleEngines']]],
   ['exitbtn',['exitBtn',['../class_editor_logic.html#a4b174b6c64e4e9409ff8d0f6b95b895b',1,'EditorLogic']]],
