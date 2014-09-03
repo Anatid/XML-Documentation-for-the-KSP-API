@@ -61,8 +61,6 @@ public class TutorialScenario : ScenarioModule
     protected extern virtual void OnTutorialSetup();
     /// <summary>
     /// Sets the location of the GUI window of the tutorial.
-    /// There's no function provided to hide the GUI window, but you
-    /// can effectively hide the window by moving it off the screen.
     /// </summary>
     /// <param name="r"></param>
     protected extern void SetDialogRect(Rect r);

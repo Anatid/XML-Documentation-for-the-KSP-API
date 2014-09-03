@@ -862,12 +862,73 @@
             using InputLockManager. You can OR them together to lock the player
             out of multiple controls at once.
             </summary>
-        </member>
-        <member name="F:ControlTypes.ALL_SHIP_CONTROLS">
-            <summary>
-            Locking ALL_SHIP_CONTROLS will prevent the player from steering the ship,
-            as if they had run out of ElectricCharge.
-            </summary>
+            <remarks>
+            TaranisElsu compiled this list of the binary values of the enum members as of KSP 0.24.2, which makes
+            it clearer which controls are locked in each case:
+            
+            <code>None                                                                                          0
+            PITCH                                                                                         1
+            ROLL                                                                                        100
+            YAW                                                                                        1000
+            THROTTLE                                                                                  10000
+            SAS                                                                                      100000
+            PAUSE                                                                                   1000000
+            STAGING                                                                                10000000
+            CAMERAMODES                                                                          1 00000000
+            MISC                                                                                10 00000000
+            CAMERACONTROLS                                                                     100 00000000
+            TIMEWARP                                                                          1000 00000000
+            MAP                                                                              10000 00000000
+            LINEAR                                                                          100000 00000000
+            QUICKSAVE                                                                      1000000 00000000
+            QUICKLOAD                                                                     10000000 00000000
+            VESSEL_SWITCHING                                                            1 00000000 00000000
+            CUSTOM_ACTION_GROUPS                                                       10 00000000 00000000
+            GROUP_ABORT                                                               100 00000000 00000000
+            GROUP_GEARS                                                              1000 00000000 00000000
+            GROUP_LIGHTS                                                            10000 00000000 00000000
+            GROUP_BRAKES                                                           100000 00000000 00000000
+            GROUP_STAGE                                                           1000000 00000000 00000000
+            GROUPS_ALL                                                            1111110 00000000 00000000
+            ACTIONS_SHIP                                                         10000000 00000000 00000000
+            ACTIONS_EXTERNAL                                                   1 00000000 00000000 00000000
+            ACTIONS_ALL                                                        1 10000000 00000000 00000000
+            RCS                                                               10 00000000 00000000 00000000
+            WHEEL_STEER                                                      100 00000000 00000000 00000000
+            WHEEL_THROTTLE                                                  1000 00000000 00000000 00000000
+            EVA_INPUT                                                      10000 00000000 00000000 00000000
+            EDITOR_ICON_HOVER                                             100000 00000000 00000000 00000000
+            EDITOR_ICON_PICK                                             1000000 00000000 00000000 00000000
+            EDITOR_TAB_SWITCH                                           10000000 00000000 00000000 00000000
+            EDITOR_SAVE                                               1 00000000 00000000 00000000 00000000
+            EDITOR_LOAD                                              10 00000000 00000000 00000000 00000000
+            EDITOR_EXIT                                             100 00000000 00000000 00000000 00000000
+            EDITOR_NEW                                             1000 00000000 00000000 00000000 00000000
+            EDITOR_LAUNCH                                         10000 00000000 00000000 00000000 00000000
+            EDITOR_UI_TOPRIGHT                                    11111 00000000 00000000 00000000 00000000
+            EDITOR_PAD_PICK_PLACE                                100000 00000000 00000000 00000000 00000000
+            EDITOR_PAD_PICK_COPY                                1000000 00000000 00000000 00000000 00000000
+            EDITOR_EDIT_STAGES                                 10000000 00000000 00000000 00000000 00000000
+            EDITOR_EDIT_NAME_FIELDS                          1 00000000 00000000 00000000 00000000 00000000
+            EDITOR_ROTATE_PARTS                             10 00000000 00000000 00000000 00000000 00000000
+            EDITOR_UNDO_REDO                               100 00000000 00000000 00000000 00000000 00000000
+            EDITOR_SYM_SNAP                               1000 00000000 00000000 00000000 00000000 00000000
+            EDITOR_OVERLAYS                              10000 00000000 00000000 00000000 00000000 00000000
+            EDITOR_MODE_SWITCH                          100000 00000000 00000000 00000000 00000000 00000000
+            EDITOR_UI_TOPBAR                            100001 00011111 00000000 00000000 00000000 00000000
+            EDITOR_UI                                   101101 10011111 00000000 00000000 00000000 00000000
+            EDITOR_SOFT_LOCK                            111110 01100000 11100000 00000000 00000000 00000000
+            EDITOR_LOCK                                 111110 01100000 11100000 00000000 00000100 00000000
+            TRACKINGSTATION_UI                         1000000 00000000 00000000 00000000 00000000 00000000
+            TRACKINGSTATION_ALL                        1000000 00000000 00000000 00000000 00001100 00000000
+            KSC_FACILITIES                            10000000 00000000 00000000 00000000 00000000 00000000
+            KSC_UI                                  1 00000000 00000000 00000000 00000000 00000000 00000000
+            KSC_ALL                                 1 10000000 00000000 00000000 00000000 00001100 00000000
+            APPLAUNCHER_BUTTONS                    10 00000000 00000000 00000000 00000000 00000000 00000000
+            ALL_SHIP_CONTROLS       11111111 11111111 11111111 11111111 11111111 11111110 00100010 10111111
+            All                     11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111</code>
+            
+            </remarks>
         </member>
         <member name="T:Decoupler">
             <summary>
@@ -4239,8 +4300,6 @@
         <member name="M:TutorialScenario.SetDialogRect(UnityEngine.Rect)">
             <summary>
             Sets the location of the GUI window of the tutorial.
-            There's no function provided to hide the GUI window, but you
-            can effectively hide the window by moving it off the screen.
             </summary>
             <param name="r"></param>
         </member>
