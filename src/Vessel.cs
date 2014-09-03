@@ -1,8 +1,4 @@
-﻿#region Assembly Assembly-CSharp.dll, v2.0.50727
-// C:\greg\games\KSP 0.18.2\KSP_Data\Managed\Assembly-CSharp.dll
-#endregion
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;

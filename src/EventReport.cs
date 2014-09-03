@@ -46,5 +46,5 @@ public class EventReport
 	/// <param name="otherName"></param>
 	/// <param name="stageNumber"></param>
 	/// <param name="customMsg"></param>
-	public EventReport(FlightEvents type, Part eventCreator, string name = "an unidentified object", string otherName = "an unidentified object", int stageNumber = 0, string customMsg = "");
+    public extern EventReport(FlightEvents type, Part eventCreator, string name = "an unidentified object", string otherName = "an unidentified object", int stageNumber = 0, string customMsg = "");
 }

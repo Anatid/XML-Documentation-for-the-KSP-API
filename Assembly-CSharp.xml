@@ -1207,6 +1207,326 @@
             A list of all parts in the vessel that is being edited.
             </summary>
         </member>
+        <member name="T:EventData`1">
+            <summary>
+            A type used to generate GameEvents
+            
+            Use this type with one accompanying type;
+            GameEvents.FromToAction,
+            GameEvents.HostedFromToAction,
+            GameEvents.HostTargetAction
+            are commonly used
+            
+            See EventVoid for events that require no parameters
+            or EventReport for a different style
+            </summary>
+            <typeparam name="T">The type to be passed through on EventData.Fire()</typeparam>
+        </member>
+        <member name="F:EventData`1.debugEvent">
+            <summary>
+            Generate debug logs if true
+            </summary>
+        </member>
+        <member name="M:EventData`1.#ctor(System.String)">
+            <summary>
+            The constructor used to create a new EventData
+            
+            EventData&lt;Vessel&gt; myNewEvent = new EventData&lt;Vessel&gt;("myNewEvent");
+            </summary>
+            <param name="eventName">Give the event a string name,
+            generally the same as the declared name</param>
+        </member>
+        <member name="M:EventData`1.Add(EventData{`0}.OnEvent)">
+            <summary>
+            Add a method to be run when the EventData is fired.
+            
+            This is generally done in an object's Start or Awake method, or a class' constructor.
+            
+            Can be setup like:
+            
+            GameEvents.someEventDataEvent.Add(yourMethod);
+            
+            or
+            
+            GameEvents.someEventDataEvent.Add(new EventVoid.OnEvent(yourMethod));
+            </summary>
+            <param name="evt">The method you want to add; must contain a single parameter
+            of the type matching that in the host EventData</param>
+        </member>
+        <member name="M:EventData`1.Fire(`0)">
+            <summary>
+            Triggers the EventData
+            
+            All of the methods added using Add are run after this.
+            </summary>
+            <param name="data">Single parameter matching the type of the host EventData
+            Use this to give information relevant to the event</param>
+        </member>
+        <member name="M:EventData`1.Remove(EventData{`0}.OnEvent)">
+            <summary>
+            Remove a method from the list of methods to be run when the EventData is fired.
+            
+            This is generally done in an object's OnDestroy method.
+            </summary>
+            <param name="evt">The method you want to remove; must contain a single parameter
+            of a type matching that in the host EventData</param>
+        </member>
+        <member name="T:EventData`1.OnEvent">
+            <summary>
+            Any methods added to the event must match the delegate's parameters;
+            one parameter of the given type in this case.
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="T:EventData`2">
+            <summary>
+            A type used to generate GameEvents
+            
+            Use this type with two accompanying parameters
+            </summary>
+            <typeparam name="T">The first type to be passed through on EventData.Fire()</typeparam>
+            <typeparam name="U">The second type to be passed through on EventData.Fire()</typeparam>
+        </member>
+        <member name="F:EventData`2.debugEvent">
+            <summary>
+            Generate debug logs if true
+            </summary>
+        </member>
+        <member name="M:EventData`2.#ctor(System.String)">
+            <summary>
+            The constructor used to create a new EventData
+            
+            EventData&lt;Vessel, CelestialBody&gt; myNewEvent = new EventData&lt;Vessel, CelestialBody&gt;("myNewEvent");
+            </summary>
+            <param name="eventName">Give the event a string name,
+            generally the same as the declared name</param>
+        </member>
+        <member name="M:EventData`2.Add(EventData{`0,`1}.OnEvent)">
+            <summary>
+            Add a method to be run when the EventData is fired.
+            
+            This is generally done in an object's Start or Awake method, or a class' constructor.
+            
+            Can be setup like:
+            
+            GameEvents.someEventDataEvent.Add(yourMethod);
+            
+            or
+            
+            GameEvents.someEventDataEvent.Add(new EventVoid.OnEvent(yourMethod));
+            </summary>
+            <param name="evt">The method you want to add; must contain two parameters
+            of types matching those in the host EventData</param>
+        </member>
+        <member name="M:EventData`2.Fire(`0,`1)">
+            <summary>
+            Triggers the EventData
+            
+            All of the methods added using Add are run after this.
+            </summary>
+            <param name="data0">A parameter matching the first type of the host EventData
+            Use this to give information relevant to the event</param>
+            <param name="data1">The second type of the host EventData</param>
+        </member>
+        <member name="M:EventData`2.Remove(EventData{`0,`1}.OnEvent)">
+            <summary>
+            Remove a method from the list of methods to be run when the EventData is fired.
+            
+            This is generally done in an object's OnDestroy method.
+            </summary>
+            <param name="evt">The method you want to remove; must contain two parameters
+            of types matching those in the host EventData</param>
+        </member>
+        <member name="T:EventData`2.OnEvent">
+            <summary>
+            Any methods added to the event must match the delegate's parameters;
+            two parameters of the given types in this case.
+            </summary>
+            <param name="data0"></param>
+            <param name="data1"></param>
+        </member>
+        <member name="T:EventData`3">
+            <summary>
+            A type used to generate GameEvents
+            
+            Use this type with three accompanying parameters
+            </summary>
+            <typeparam name="T">The first type to be passed through on EventData.Fire()</typeparam>
+            <typeparam name="U">The second type to be passed through on EventData.Fire()</typeparam>
+            <typeparam name="V">The third type to be passed through on EventData.Fire()</typeparam>
+        </member>
+        <member name="F:EventData`3.debugEvent">
+            <summary>
+            Generate debug logs if true
+            </summary>
+        </member>
+        <member name="M:EventData`3.#ctor(System.String)">
+            <summary>
+            The constructor used to create a new EventData
+            
+            EventData&lt;Vessel, CelestialBody, String&gt; myNewEvent = new EventData&lt;Vessel, CelestialBody, String&gt;("myNewEvent");
+            </summary>
+            <param name="eventName">Give the event a string name,
+            generally the same as the declared name</param>
+        </member>
+        <member name="M:EventData`3.Add(EventData{`0,`1,`2}.OnEvent)">
+            <summary>
+            Add a method to be run when the EventData is fired.
+            
+            This is generally done in an object's Start or Awake method, or a class' constructor.
+            
+            Can be setup like:
+            
+            GameEvents.someEventDataEvent.Add(yourMethod);
+            
+            or
+            
+            GameEvents.someEventDataEvent.Add(new EventVoid.OnEvent(yourMethod));
+            </summary>
+            <param name="evt">The method you want to add; must contain three parameters
+            matching the types of in the host EventData</param>
+        </member>
+        <member name="M:EventData`3.Fire(`0,`1,`2)">
+            <summary>
+            Triggers the EventData
+            
+            All of the methods added using Add are run after this.
+            </summary>
+            <param name="data0">A parameter matching the first type of the host EventData
+            Use this to give information relevant to the event</param>
+            <param name="data1">The second type of the host EventData</param>
+            <param name="data2">The third type of the host EventData</param>
+        </member>
+        <member name="M:EventData`3.Remove(EventData{`0,`1,`2}.OnEvent)">
+            <summary>
+            Remove a method from the list of methods to be run when the EventData is fired.
+            
+            This is generally done in an object's OnDestroy method.
+            </summary>
+            <param name="evt">The method you want to remove; must contain three parameters
+            matching the types of in the host EventData</param>
+        </member>
+        <member name="T:EventData`3.OnEvent">
+            <summary>
+            Any methods added to the event must match the delegate's parameters;
+            three parameters of the given types in this case.
+            </summary>
+            <param name="data0"></param>
+            <param name="data1"></param>
+            <param name="data2"></param>
+        </member>
+        <member name="T:EventReport">
+            <summary>
+             A type frequently used as a parameter in GameEvents
+            </summary>
+        </member>
+        <member name="F:EventReport.eventType">
+            <summary>
+            An enum used to specify the type of EventReport;
+            see FlightEvents for the available types
+            </summary>
+        </member>
+        <member name="F:EventReport.msg">
+            <summary>
+            A string message that can accompany the EventReport
+            </summary>
+        </member>
+        <member name="F:EventReport.origin">
+            <summary>
+            The Part responsible for generating the EventReport
+            </summary>
+        </member>
+        <member name="F:EventReport.other">
+            <summary>
+            Usually the originating part name
+            </summary>
+        </member>
+        <member name="F:EventReport.sender">
+            <summary>
+            The target of the event;
+            another part's name, the surface, blank, etc...
+            </summary>
+        </member>
+        <member name="F:EventReport.stage">
+            <summary>
+            The active stage number when the EventReport is generated;
+            can be set to any integer; 0 by default
+            </summary>
+        </member>
+        <member name="M:EventReport.#ctor(FlightEvents,Part,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            The EventReport constructor, generally used when firing an EventData event
+            that calls for an EventReport parameter
+            
+            someEvent.Fire(new EventReport(...));
+            </summary>
+            <param name="type"></param>
+            <param name="eventCreator"></param>
+            <param name="name"></param>
+            <param name="otherName"></param>
+            <param name="stageNumber"></param>
+            <param name="customMsg"></param>
+        </member>
+        <member name="T:EventVoid">
+            <summary>
+            A type used to generate GameEvents
+            
+            Use this type when there is no need to accompany the event with any parameters,
+            ie relevant Part, Vessel, CelestialBody, etc...
+            
+            See EventData for events that require such extra information
+            </summary>
+        </member>
+        <member name="F:EventVoid.debugEvent">
+            <summary>
+            Generate debug logs if true
+            </summary>
+        </member>
+        <member name="M:EventVoid.#ctor(System.String)">
+            <summary>
+            The constructor used to create a new EventVoid
+            
+            EventVoid myNewEvent = new EventVoid("myNewEvent");
+            </summary>
+            <param name="eventName">Give the event a string name,
+            generally the same as the declared name</param>
+        </member>
+        <member name="M:EventVoid.Add(EventVoid.OnEvent)">
+            <summary>
+            Add a method to be run when the EventVoid is fired.
+            
+            This is generally done in an object's Start or Awake method, or a class' constructor.
+            
+            Can be setup like:
+            
+            GameEvents.someEventVoidEvent.Add(yourMethod);
+            
+            or
+            
+            GameEvents.someEventVoidEvent.Add(new EventVoid.OnEvent(yourMethod));
+            </summary>
+            <param name="evt">The method you want to add, should contain no parameters</param>
+        </member>
+        <member name="M:EventVoid.Fire">
+            <summary>
+            Triggers the EventVoid
+            
+            All of the methods added using Add are run after this.
+            </summary>
+        </member>
+        <member name="M:EventVoid.Remove(EventVoid.OnEvent)">
+            <summary>
+            Remove a method from the list of methods to be run when the EventVoid is fired.
+            
+            This is generally done in an object's OnDestroy method.
+            </summary>
+            <param name="evt">The method you want to remove, should contain no parameters</param>
+        </member>
+        <member name="T:EventVoid.OnEvent">
+            <summary>
+            Any methods added to the event must match the delegate's parameters; none in this case
+            </summary>
+        </member>
         <member name="M:KSP.IO.File.AppendAllText``1(System.String,System.String,Vessel)">
             <summary>
             Append a string to a file, or creates it if it doesn't exist.
@@ -1865,17 +2185,218 @@
         </member>
         <member name="T:GameEvents">
             <summary>
-            GameEvents lets you register callbacks for lots of in-game events.
+            GameEvents are EventData or EventVoid methods called when certain conditions are met.
+            
+            Many include some relevant data on the objects affected when they are triggered.
+            
+            Use:
+            
+            GameEvents.desiredEvent.Add(yourMethod);
+            
+            and
+            
+            GameEvents.desiredEvent.Removed(yourMethod);
+            
+            to add and remove methods from a list of methods to be called when the event is triggered.
+            
+            Methods are generally added in your object's Start or Awake method and generally removed
+            in your object's OnDestroy method.
+            
+            Be sure not add methods multiple times withoud destroying them between additions.
+            </summary>
+        </member>
+        <member name="F:GameEvents.onActiveJointNeedUpdate">
+            <summary>
+            Triggered when a vessel docks or attaches with the grappling device;
+            fires twice, once for each vessel
+            </summary>
+        </member>
+        <member name="F:GameEvents.onCollision">
+            <summary>
+            Triggered when two parts collide
+            </summary>
+        </member>
+        <member name="F:GameEvents.onCrash">
+            <summary>
+            Triggered when a part or vessel crashes into the terrain
+            </summary>
+        </member>
+        <member name="F:GameEvents.onCrashSplashdown">
+            <summary>
+            Triggered when a part crashes into the ocean
+            </summary>
+        </member>
+        <member name="F:GameEvents.onCrewBoardVessel">
+            <summary>
+            Triggered when an EVA Kerbal boards a vessel
+            </summary>
+        </member>
+        <member name="F:GameEvents.onCrewKilled">
+            <summary>
+            Triggered whenever a Kerbal dies; either on EVA or in a crashing vessel
+            </summary>
+        </member>
+        <member name="F:GameEvents.onCrewOnEva">
+            <summary>
+            Triggered when a Kerbal goes on EVA
+            </summary>
+        </member>
+        <member name="F:GameEvents.onDominantBodyChange">
+            <summary>
+            Triggered when changing SOI; both objects return the new dominant CelestialBody
+            
+            See also onVesselSOIChanged
+            </summary>
+        </member>
+        <member name="F:GameEvents.onEditorShipModified">
+            <summary>
+            Triggered when any part is added or removed from a vessel in the editor;
+            also triggered when any tweakable settings are changed;
+            also when undo is called
+            </summary>
+        </member>
+        <member name="F:GameEvents.onFlagPlant">
+            <summary>
+            When a flag is planted by an EVA Kerbal
+            </summary>
+        </member>
+        <member name="F:GameEvents.onFlagSelect">
+            <summary>
+            Triggered when a flag is selected from the space center's flag pole
+            </summary>
+        </member>
+        <member name="F:GameEvents.onFlightReady">
+            <summary>
+            Triggered when a vessel is fully loaded
+            </summary>
+        </member>
+        <member name="F:GameEvents.onFloatingOriginShift">
+            <summary>
+            Deprecated?
+            </summary>
+        </member>
+        <member name="F:GameEvents.OnFundsChanged">
+            <summary>
+            When Funds level changes, returns total Funds amount
+            </summary>
+        </member>
+        <member name="F:GameEvents.onGamePause">
+            <summary>
+            When the game is paused
+            </summary>
+        </member>
+        <member name="F:GameEvents.onGameSceneLoadRequested">
+            <summary>
+            Triggered upon scene change requests; returns the target GameScene
+            </summary>
+        </member>
+        <member name="F:GameEvents.OnGameSettingsApplied">
+            <summary>
+            When Game Settings are applied in the main settings menu, or the in-game settings menu
+            </summary>
+        </member>
+        <member name="F:GameEvents.onGameStateCreated">
+            <summary>
+            When a game is first created or loaded; returns the Game object
+            </summary>
+        </member>
+        <member name="F:GameEvents.onGameStateLoad">
+            <summary>
+            Triggered on loading a game, returns the game's full ConfigNode from the persistent file
+            </summary>
+        </member>
+        <member name="F:GameEvents.onGameStateSave">
+            <summary>
+            Triggered on saving a game, returns the game's full ConfigNode from the persistent file
+            </summary>
+        </member>
+        <member name="F:GameEvents.onGameStateSaved">
+            <summary>
+            Triggered when a game is saved, returns the Game object;
+            </summary>
+        </member>
+        <member name="F:GameEvents.onGameUnpause">
+            <summary>
+            When the game is unpaused
             </summary>
         </member>
         <member name="F:GameEvents.onGUIApplicationLauncherDestroyed">
             <summary>
-            Called when the player exits to the main menu and the ApplicationLauncher toolbar is destroyed.
+            When the application launcher (toolbar) is closed
             </summary>
         </member>
         <member name="F:GameEvents.onGUIApplicationLauncherReady">
             <summary>
             Called when the ApplicationLauncher toolbar is ready to have buttons added to it.
+            </summary>
+        </member>
+        <member name="F:GameEvents.onGUIAstronautComplexDespawn">
+            <summary>
+            When the astronaut complex window closes
+            </summary>
+        </member>
+        <member name="F:GameEvents.onGUIAstronautComplexSpawn">
+            <summary>
+            When the astronaut complex window opens; from the space center or editor
+            </summary>
+        </member>
+        <member name="F:GameEvents.onGUILaunchScreenDespawn">
+            <summary>
+            When the vessel selection screen is closed or a vessel is selected and launched
+            </summary>
+        </member>
+        <member name="F:GameEvents.onGUILaunchScreenSpawn">
+            <summary>
+            When the launch screen (that allows you to view and select available vessels) is opened;
+            after selecting the launchpad/runway from the space center.
+            
+            See VesselSpawnInfo for more on what is returned by this callback.
+            </summary>
+        </member>
+        <member name="F:GameEvents.onGUILaunchScreenVesselSelected">
+            <summary>
+            When a vessel is selected from the vessel selection screen at the space center
+            </summary>
+        </member>
+        <member name="F:GameEvents.onGUIMessageSystemReady">
+            <summary>
+            When the application launcher's message button is ready
+            </summary>
+        </member>
+        <member name="F:GameEvents.onGUIMissionControlDespawn">
+            <summary>
+            When the mission control center window closes
+            </summary>
+        </member>
+        <member name="F:GameEvents.onGUIMissionControlSpawn">
+            <summary>
+            When the mission control center window opens
+            </summary>
+        </member>
+        <member name="F:GameEvents.onGUIPrefabLauncherReady">
+            <summary>
+            When the application launcher (toolbar) loads;
+            triggers before onGUIApplicationLauncherReady and onGUIMessageSystemReady
+            </summary>
+        </member>
+        <member name="F:GameEvents.onGUIRecoveryDialogDespawn">
+            <summary>
+            When the recovery dialog window closes
+            </summary>
+        </member>
+        <member name="F:GameEvents.onGUIRecoveryDialogSpawn">
+            <summary>
+            When the recovery dialog window opens
+            </summary>
+        </member>
+        <member name="F:GameEvents.onGUIRnDComplexDespawn">
+            <summary>
+            When the R&amp;D center window closes
+            </summary>
+        </member>
+        <member name="F:GameEvents.onGUIRnDComplexSpawn">
+            <summary>
+            When the R&amp;D center window opens
             </summary>
         </member>
         <member name="F:GameEvents.onHideUI">
@@ -1884,11 +2405,235 @@
             so that you can hide your UI too.
             </summary>
         </member>
+        <member name="F:GameEvents.onInputLocksModified">
+            <summary>
+            Triggered when input locks are activated or deactivated;
+            when putting the mouse over one window/button locks the controls
+            of another window/button
+            </summary>
+        </member>
+        <member name="F:GameEvents.onJointBreak">
+            <summary>
+            Deprecated? Use onPartJointBreak
+            </summary>
+        </member>
+        <member name="F:GameEvents.onKerbalAdded">
+            <summary>
+            Triggered when a new Kerbal is added in the astronaut complex scene;
+            also triggered when a rescue Kerbal contract is generated
+            </summary>
+        </member>
+        <member name="F:GameEvents.onKerbalRemoved">
+            <summary>
+            Triggered when a Kerbal is removed from the roster in the astronaut complex;
+            also triggered when a rescue Kerbal contract is failed, expires, or declined
+            </summary>
+        </member>
+        <member name="F:GameEvents.onKerbalStatusChange">
+            <summary>
+            Triggered when the ProtoCrewMember.RosterStatus changes;
+            usually upon vessel recovery, new crew addition, or death;
+            returns the ProtoCrewMember and its old and new status
+            </summary>
+        </member>
+        <member name="F:GameEvents.onKerbalTypeChange">
+            <summary>
+            Triggered when the ProtoCrewMember.KerbalType changes;
+            KerbalTypes are possibly not fully implemented;
+            occurs upon hiring crew or rescuing Kerbal
+            </summary>
+        </member>
+        <member name="F:GameEvents.onKnowledgeChanged">
+            <summary>
+            Triggered upon starting or stopping asteroid tracking, or when approaching an asteroid
+            </summary>
+        </member>
+        <member name="F:GameEvents.onKrakensbaneDisengage">
+            <summary>
+            Triggered when a vessel's velocity falls below ~750m/s
+            </summary>
+        </member>
+        <member name="F:GameEvents.onKrakensbaneEngage">
+            <summary>
+            Triggered when a vessel's velocity reaches ~750m/s
+            </summary>
+        </member>
+        <member name="F:GameEvents.onLaunch">
+            <summary>
+            Triggered when launching by activating the first stage
+            </summary>
+        </member>
+        <member name="F:GameEvents.onLevelWasLoaded">
+            <summary>
+            Triggered when a new scene is loaded; returns that GameScene;
+            occurs after onGameSceneLoadRequested
+            </summary>
+        </member>
+        <member name="F:GameEvents.onMissionFlagSelect">
+            <summary>
+            Triggered when selecting a new flag from in the editor;
+            returns the flag texture's GameDatabse URL
+            </summary>
+        </member>
+        <member name="F:GameEvents.onNewVesselCreated">
+            <summary>
+            Triggered when spawning a new asteroid or a new Kerbal for
+            a rescue Kerbal contract
+            </summary>
+        </member>
+        <member name="F:GameEvents.onOverheat">
+            <summary>
+            Triggered when a part overheats; returns an EventReport with the part name
+            </summary>
+        </member>
+        <member name="F:GameEvents.onPartActionUICreate">
+            <summary>
+            Triggered when right-clicking a part; returns that part;
+            triggered every time a part event is selected
+            </summary>
+        </member>
+        <member name="F:GameEvents.onPartActionUIDismiss">
+            <summary>
+            Triggered when closing the right-click menu of a part
+            </summary>
+        </member>
+        <member name="F:GameEvents.onPartAttach">
+            <summary>
+            Triggered when adding a part in the editor, or when docking;
+            returns the part and its new parent part
+            </summary>
+        </member>
         <member name="F:GameEvents.onPartCouple">
             <summary>
-            Called on docking. Passes your event handler a FromToAction&lt;Part, Part&gt; ev.
-            ev.from and ev.to are the two parts (docking nodes) that have been coupled together.
-            Actually this event fires twice on docking, with ev.from and ev.to swapped the second time.
+            Triggered when a docking port or asteroid grappling device attaches;
+            returns the host part and the target part
+            </summary>
+        </member>
+        <member name="F:GameEvents.onPartDestroyed">
+            <summary>
+            Triggered when a part object's OnDestroy method is called;
+            occurs any time a part or vessel is unloaded,
+            ie scene changes or vessel moving out of loading distance
+            </summary>
+        </member>
+        <member name="F:GameEvents.onPartDie">
+            <summary>
+            Triggered when a part is destroyed, usually by exploding/crashing
+            </summary>
+        </member>
+        <member name="F:GameEvents.onPartExplode">
+            <summary>
+            Triggered when a part explodes, usually due to crashing into the ground or into another part;
+            also triggered by a part overheating and exploding
+            </summary>
+        </member>
+        <member name="F:GameEvents.onPartJointBreak">
+            <summary>
+            Triggered when a part decouples, undocks, a grappling device undocks, a strut breaks,
+            a part is destroyed, or when a part is removed in the editor
+            </summary>
+        </member>
+        <member name="F:GameEvents.onPartPack">
+            <summary>
+            Triggered when a part goes on rails (enters timewarp) or exits loading distance
+            </summary>
+        </member>
+        <member name="F:GameEvents.OnPartPurchased">
+            <summary>
+            Triggered when purchasing a part in the R&amp;D center;
+            currently (KSP 0.24.2) called for all parts in a tech node when researching that node
+            </summary>
+        </member>
+        <member name="F:GameEvents.onPartRemove">
+            <summary>
+            Triggered when removing a part in the editor
+            </summary>
+        </member>
+        <member name="F:GameEvents.onPartUndock">
+            <summary>
+            Triggered upon undock event/action; not triggered by a docking node's decouple event;
+            also triggered by asteroid grappling device's release event
+            </summary>
+        </member>
+        <member name="F:GameEvents.onPartUnpack">
+            <summary>
+            Triggered when a part goes off rails (exits timewarp) or comes into loading distance
+            </summary>
+        </member>
+        <member name="F:GameEvents.onPlanetariumTargetChanged">
+            <summary>
+            Triggered when the map view or tracking station camera focuses on a new object;
+            this can be a Celestial Body or vessel;
+            also triggered when switching to or loading a new vessel
+            </summary>
+        </member>
+        <member name="F:GameEvents.OnProgressAchieved">
+            <summary>
+            Triggered when a ProgressNode and all of its subNodes are completed.
+            
+            See also OnProgressReached and OnProgressComplete
+            </summary>
+        </member>
+        <member name="F:GameEvents.OnProgressComplete">
+            <summary>
+            Triggered when all sub ProgressNodes within a given ProgressNode are completed;
+            records the UT of node completion and returns the ProgressNode
+            
+            See the ProgressTracking module in the persistent.sfs file for more on how ProgressNodes
+            are setup and saved.
+            
+            If the ProgressNode is completed upon first achievement this will also trigger OnProgressReached.
+            
+            See also OnProgressReached and OnProgressAchieved
+            </summary>
+        </member>
+        <member name="F:GameEvents.OnProgressReached">
+            <summary>
+            Triggered when a ProgressNode is first reached but not completed;
+            records the UT of node achievement and returns the ProgressNode.
+            
+            For instance, when a vessels first enters the SOI of a new Celestial Body
+            the event will trigger and a "reached" entry will be added to the persistent.sfs file.
+            
+            If a ProgressNode is completed at the same time it is reached (ie has no ProgressNode subNodes)
+            OnProgressCompelete will be triggered at the same time
+            
+            See the ProgressTracking module in the persistent.sfs file for more on how ProgressNodes
+            are setup and saved.
+            
+            See also OnProgressComplete and OnProgressAchieved
+            </summary>
+        </member>
+        <member name="F:GameEvents.OnReputationChanged">
+            <summary>
+            When reputation level changes; returns total rep amount
+            </summary>
+        </member>
+        <member name="F:GameEvents.onRotatingFrameTransition">
+            <summary>
+            Triggered when reference frame changes (ie from inertial to rotating);
+            this is generally accompanied by a shift in the camera position
+            and a debug log message ("Reference Frame: Rotating/Inertial")
+            </summary>
+        </member>
+        <member name="F:GameEvents.onSameVesselDock">
+            <summary>
+            Triggered when two docking ports on the same vessel dock together
+            </summary>
+        </member>
+        <member name="F:GameEvents.onSameVesselUndock">
+            <summary>
+            Triggered when two docking ports on the same vessel undock
+            </summary>
+        </member>
+        <member name="F:GameEvents.OnScienceChanged">
+            <summary>
+            When science level changes; returns total science amount
+            </summary>
+        </member>
+        <member name="F:GameEvents.OnScienceRecieved">
+            <summary>
+            Triggered science data is transmitted or recovered; returns the amount of science and the ScienceSubject
             </summary>
         </member>
         <member name="F:GameEvents.onShowUI">
@@ -1897,14 +2642,293 @@
             so that you can un-hide your UI too.
             </summary>
         </member>
+        <member name="F:GameEvents.onSplashDamage">
+            <summary>
+            Triggered when engine exhaust damages another part
+            </summary>
+        </member>
+        <member name="F:GameEvents.onStageActivate">
+            <summary>
+            Triggered upon staging, returns the stage number
+            </summary>
+        </member>
+        <member name="F:GameEvents.onStageSeparation">
+            <summary>
+            Triggered by decoupler staging;
+            also triggered by separation through a decoupler's right-click menu event
+            </summary>
+        </member>
+        <member name="F:GameEvents.OnTechnologyResearched">
+            <summary>
+            Triggered when researching a tech node in the R&amp;D center;
+            triggers whether or not you have enough science to unlock the node
+            </summary>
+        </member>
+        <member name="F:GameEvents.onTimeWarpRateChanged">
+            <summary>
+            Triggered whenever timewarp rate changes; applies to physics and non-physics timewarp;
+            triggered by the key press also (called even if you are at max/min timewarp already)
+            </summary>
+        </member>
+        <member name="F:GameEvents.onUndock">
+            <summary>
+            Deprecated? Use onPartUndock
+            </summary>
+        </member>
+        <member name="F:GameEvents.onVesselChange">
+            <summary>
+            Triggered when switching to a different vessel, loading a vessel, or launching
+            </summary>
+        </member>
+        <member name="F:GameEvents.onVesselCreate">
+            <summary>
+            Triggered when a vessel is launched, or created by undocking, decoupling, planting a flag, or EVA;
+            also triggered by new asteroid creation and rescue Kerbal contracts
+            </summary>
+        </member>
+        <member name="F:GameEvents.onVesselDestroy">
+            <summary>
+            Triggered when a vessel instance is destroyed;
+            any time a vessel is unloaded, ie scene changes, exiting loading distance
+            </summary>
+        </member>
+        <member name="F:GameEvents.onVesselGoOffRails">
+            <summary>
+            Triggered when a vessel is loaded on the launchpad, when a vessel enters within loading distance,
+            or when a vessel goes off of time warp
+            </summary>
+        </member>
+        <member name="F:GameEvents.onVesselGoOnRails">
+            <summary>
+            Triggered when a vessel exits loading distance or enters time warp
+            </summary>
+        </member>
+        <member name="F:GameEvents.onVesselLoaded">
+            <summary>
+            Triggered whenever a vessel's load method is called
+            </summary>
+        </member>
+        <member name="F:GameEvents.onVesselOrbitClosed">
+            <summary>
+            Triggered when a closed orbit is reached
+            </summary>
+        </member>
+        <member name="F:GameEvents.onVesselOrbitEscaped">
+            <summary>
+            Triggered when orbit eccentricity becomes > 1
+            </summary>
+        </member>
+        <member name="F:GameEvents.onVesselRecovered">
+            <summary>
+            Triggered after a vessel has been recovered and the science data
+            and part values have been accounted for;
+            occurs in the space center or tracking station.
+            
+            Triggered after onVesselRecoveryProcessing
+            </summary>
+        </member>
+        <member name="F:GameEvents.onVesselRecoveryProcessing">
+            <summary>
+            Triggered in the space center or tracking station when a vessel is recovered;
+            occurs before onVesselRecovered
+            </summary>
+        </member>
+        <member name="F:GameEvents.OnVesselRecoveryRequested">
+            <summary>
+            Triggered a vessel is recovered (the big green button at the top) from the flight scene
+            </summary>
+        </member>
+        <member name="F:GameEvents.onVesselRename">
+            <summary>
+            Returns old 'from' vessel name and new 'to' vessel name
+            </summary>
+        </member>
+        <member name="F:GameEvents.OnVesselRollout">
+            <summary>
+            Triggered when vessel is loaded onto the launchpad from the editor/launch selection window;
+            called after the transition to flight scene
+            </summary>
+        </member>
+        <member name="F:GameEvents.onVesselSituationChange">
+            <summary>
+            Returns old and new vessel situations
+            </summary>
+        </member>
+        <member name="F:GameEvents.onVesselSOIChanged">
+            <summary>
+            Returns old and new Celestial Body
+            </summary>
+        </member>
+        <member name="F:GameEvents.onVesselTerminated">
+            <summary>
+            Triggered when a vessel is deleted from the tracking station
+            </summary>
+        </member>
+        <member name="F:GameEvents.onVesselWasModified">
+            <summary>
+            Triggered when any aspect of a vessel changes;
+            docking, undocking, decoupling, parts breaking, crash, etc...
+            </summary>
+        </member>
+        <member name="F:GameEvents.onVesselWillDestroy">
+            <summary>
+            Triggered when a vessel crashes, or passes into the atmosphere;
+            when an EVA Kerbal boards, or when an asteroid is despawned
+            </summary>
+        </member>
         <member name="T:GameEvents.Contract">
             <summary>
-            Lets you register callbacks related to contracts.
+            Game events related to contract status changes;
+            the contract in question is returned as EventData for most events
+            </summary>
+        </member>
+        <member name="F:GameEvents.Contract.onAccepted">
+            <summary>
+            Triggered when a contract is accepted through the mission control center
+            </summary>
+        </member>
+        <member name="F:GameEvents.Contract.onCancelled">
+            <summary>
+            Triggered upon cancellation of an active contract through the mission control center
+            </summary>
+        </member>
+        <member name="F:GameEvents.Contract.onCompleted">
+            <summary>
+            Triggered upon successful contract completion
+            </summary>
+        </member>
+        <member name="F:GameEvents.Contract.onContractsListChanged">
+            <summary>
+            Triggered when a new contract is offered, or a contract expires or completes
+            </summary>
+        </member>
+        <member name="F:GameEvents.Contract.onContractsLoaded">
+            <summary>
+            Triggered by the ContractSystem Scenario Module loading existing contracts
+            </summary>
+        </member>
+        <member name="F:GameEvents.Contract.onDeclined">
+            <summary>
+            Triggered by declining an offered contract from the mission control center
+            </summary>
+        </member>
+        <member name="F:GameEvents.Contract.onFailed">
+            <summary>
+            Triggered when a contract fails for any reason
+            </summary>
+        </member>
+        <member name="F:GameEvents.Contract.onFinished">
+            <summary>
+            Triggered when a contract finishes for any reason, success or failure
+            </summary>
+        </member>
+        <member name="F:GameEvents.Contract.onOffered">
+            <summary>
+            Triggered when the contract is first offered in the mission control center
+            </summary>
+        </member>
+        <member name="F:GameEvents.Contract.onParameterChange">
+            <summary>
+            Triggered whenever an individual contract parameter changes state;
+            from Incomplete to complete for example
             </summary>
         </member>
         <member name="T:GameEvents.VesselSituation">
             <summary>
-            Lets you register callbacks related to changes in the vessel situation.
+            Game events related to vessel situation changes;
+            mostly related to progress tracking.
+            
+            The Celestial Body in question and the vessel being
+            used are returned as EventData in most cases
+            </summary>
+        </member>
+        <member name="F:GameEvents.VesselSituation.onEscape">
+            <summary>
+            Triggered upon escaping a celestial body's orbit;
+            triggered by onVesselSOIChanged, not by simply attaining an escape trajectory
+            </summary>
+        </member>
+        <member name="F:GameEvents.VesselSituation.onFlyBy">
+            <summary>
+            Triggered upon entering a new celestial bodies SOI, the inverse of onEscape;
+            may not apply to the Sun, ie requires eccentricity > 1
+            </summary>
+        </member>
+        <member name="F:GameEvents.VesselSituation.onLand">
+            <summary>
+            Triggered upon landing or splashing down
+            </summary>
+        </member>
+        <member name="F:GameEvents.VesselSituation.onOrbit">
+            <summary>
+            Triggered upon entering orbit;
+            must be stable, with periapsis above the max atmospheric height and eccentricity &lt; 1
+            </summary>
+        </member>
+        <member name="F:GameEvents.VesselSituation.onReachSpace">
+            <summary>
+            Triggered the first time a sub-orbital situation is achieved
+            </summary>
+        </member>
+        <member name="F:GameEvents.VesselSituation.onReturnFromOrbit">
+            <summary>
+            Triggered when landing on Kerbin after a flyby or orbiting a Celestial Body
+            </summary>
+        </member>
+        <member name="F:GameEvents.VesselSituation.onReturnFromSurface">
+            <summary>
+            Triggered when landing on Kerbin after landing on a Celestial Body
+            </summary>
+        </member>
+        <member name="T:GameEvents.ExplosionReaction">
+            <summary>
+            Used by onPartExplode
+            </summary>
+        </member>
+        <member name="F:GameEvents.ExplosionReaction.distance">
+            <summary>
+            The distance between the exploding part and the active vessel
+            </summary>
+        </member>
+        <member name="F:GameEvents.ExplosionReaction.magnitude">
+            <summary>
+            Some explosion magnitude variable; related to fuel content of the exploding part
+            </summary>
+        </member>
+        <member name="T:GameEvents.FromToAction`2">
+            <summary>
+            Two objects; of the same type in all stock uses.
+            
+            See onPartCouple for an example
+            </summary>
+            <typeparam name="A">The "originating" object</typeparam>
+            <typeparam name="B">The "target" object</typeparam>
+        </member>
+        <member name="T:GameEvents.HostedFromToAction`2">
+            <summary>
+            Two potentially different object types;
+            the From/To object (B) returns two values, generally the old and new.
+            
+            See onVesselSOIChanged for an example
+            </summary>
+            <typeparam name="A">Host object</typeparam>
+            <typeparam name="B">From/To Object</typeparam>
+        </member>
+        <member name="T:GameEvents.HostTargetAction`2">
+            <summary>
+            Two objects of the same or different type;
+            used generally in a manner similar to FromToAction.
+            
+            See OnTechnologyResearched for an example
+            </summary>
+            <typeparam name="A">Host object</typeparam>
+            <typeparam name="B">Target object</typeparam>
+        </member>
+        <member name="T:GameEvents.VesselSpawnInfo">
+            <summary>
+            Used by onGUILaunchScreenSpawn
+            
+            Exposes information on saved .craft files
             </summary>
         </member>
         <member name="T:GamePersistence">

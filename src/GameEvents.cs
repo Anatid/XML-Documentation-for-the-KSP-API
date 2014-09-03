@@ -175,11 +175,11 @@ public static class GameEvents
 	/// </summary>
 	public static EventData<MissionRecoveryDialog> onGUIRecoveryDialogSpawn;
 	/// <summary>
-	/// When the R&D center window closes
+	/// When the R&amp;D center window closes
 	/// </summary>
 	public static EventVoid onGUIRnDComplexDespawn;
 	/// <summary>
-	/// When the R&D center window opens
+	/// When the R&amp;D center window opens
 	/// </summary>
 	public static EventVoid onGUIRnDComplexSpawn;
 	/// <summary>
@@ -298,7 +298,7 @@ public static class GameEvents
 	/// </summary>
 	public static EventData<Part> onPartPack;
 	/// <summary>
-	/// Triggered when purchasing a part in the R&D center;
+	/// Triggered when purchasing a part in the R&amp;D center;
 	/// currently (KSP 0.24.2) called for all parts in a tech node when researching that node
 	/// </summary>
 	public static EventData<AvailablePart> OnPartPurchased;
@@ -400,7 +400,7 @@ public static class GameEvents
 	/// </summary>
 	public static EventData<EventReport> onStageSeparation;
 	/// <summary>
-	/// Triggered when researching a tech node in the R&D center;
+	/// Triggered when researching a tech node in the R&amp;D center;
 	/// triggers whether or not you have enough science to unlock the node
 	/// </summary>
 	public static EventData<GameEvents.HostTargetAction<RDTech, RDTech.OperationResult>> OnTechnologyResearched;
@@ -506,15 +506,15 @@ public static class GameEvents
 		/// <summary>
 		/// Triggered when a contract is accepted through the mission control center
 		/// </summary>
-		public static EventData<Contract> onAccepted;
+		public static EventData<Contracts.Contract> onAccepted;
 		/// <summary>
 		/// Triggered upon cancellation of an active contract through the mission control center
 		/// </summary>
-		public static EventData<Contract> onCancelled;
+        public static EventData<Contracts.Contract> onCancelled;
 		/// <summary>
 		/// Triggered upon successful contract completion
 		/// </summary>
-		public static EventData<Contract> onCompleted;
+        public static EventData<Contracts.Contract> onCompleted;
 		/// <summary>
 		/// Triggered when a new contract is offered, or a contract expires or completes
 		/// </summary>
@@ -526,24 +526,24 @@ public static class GameEvents
 		/// <summary>
 		/// Triggered by declining an offered contract from the mission control center
 		/// </summary>
-		public static EventData<Contract> onDeclined;
+        public static EventData<Contracts.Contract> onDeclined;
 		/// <summary>
 		/// Triggered when a contract fails for any reason
 		/// </summary>
-		public static EventData<Contract> onFailed;
+        public static EventData<Contracts.Contract> onFailed;
 		/// <summary>
 		/// Triggered when a contract finishes for any reason, success or failure
 		/// </summary>
-		public static EventData<Contract> onFinished;
+        public static EventData<Contracts.Contract> onFinished;
 		/// <summary>
 		/// Triggered when the contract is first offered in the mission control center
 		/// </summary>
-		public static EventData<Contract> onOffered;
+        public static EventData<Contracts.Contract> onOffered;
 		/// <summary>
 		/// Triggered whenever an individual contract parameter changes state;
 		/// from Incomplete to complete for example
 		/// </summary>
-		public static EventData<Contract, ContractParameter> onParameterChange;
+        public static EventData<Contracts.Contract, ContractParameter> onParameterChange;
 	}
 
 	/// <summary>
@@ -571,7 +571,7 @@ public static class GameEvents
 		public static EventData<Vessel, CelestialBody> onLand;
 		/// <summary>
 		/// Triggered upon entering orbit;
-		/// must be stable, with periapsis above the max atmospheric height and eccentricity < 1
+		/// must be stable, with periapsis above the max atmospheric height and eccentricity &lt; 1
 		/// </summary>
 		public static EventData<Vessel, CelestialBody> onOrbit;
 		/// <summary>
@@ -602,7 +602,7 @@ public static class GameEvents
 		/// </summary>
 		public float magnitude;
 
-		public ExplosionReaction(float distance, float magnitude);
+		public extern ExplosionReaction(float distance, float magnitude);
 	}
 
 	/// <summary>
@@ -617,7 +617,7 @@ public static class GameEvents
 		public A from;
 		public B to;
 
-		public FromToAction(A from, B to);
+		public extern FromToAction(A from, B to);
 	}
 
 	/// <summary>
@@ -634,7 +634,7 @@ public static class GameEvents
 		public A host;
 		public B to;
 
-		public HostedFromToAction(A host, B from, B to);
+        public extern HostedFromToAction(A host, B from, B to);
 	}
 
 	/// <summary>
@@ -650,7 +650,7 @@ public static class GameEvents
 		public A host;
 		public B target;
 
-		public HostTargetAction(A host, B target);
+        public extern HostTargetAction(A host, B target);
 	}
 
 	/// <summary>
@@ -664,6 +664,6 @@ public static class GameEvents
 		public VesselSpawnDialog.CraftSelectedCallback OnFileSelected;
 		public string profileName;
 
-		public VesselSpawnInfo(string craftSubfolder, string profileName, VesselSpawnDialog.CraftSelectedCallback OnFileSelected);
+        public extern VesselSpawnInfo(string craftSubfolder, string profileName, VesselSpawnDialog.CraftSelectedCallback OnFileSelected);
 	}
 }

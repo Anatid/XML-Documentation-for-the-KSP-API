@@ -21,11 +21,11 @@ public class EventData<T, U, V>
 	/// <summary>
 	/// The constructor used to create a new EventData
 	/// 
-	/// EventData<Vessel, CelestialBody, String> myNewEvent = new EventData<Vessel, CelestialBody, String>("myNewEvent");
+	/// EventData&lt;Vessel, CelestialBody, String&gt; myNewEvent = new EventData&lt;Vessel, CelestialBody, String&gt;("myNewEvent");
 	/// </summary>
 	/// <param name="eventName">Give the event a string name,
 	/// generally the same as the declared name</param>
-	public EventData(string eventName);
+    public extern EventData(string eventName);
 
 	/// <summary>
 	/// Add a method to be run when the EventData is fired.
@@ -42,13 +42,13 @@ public class EventData<T, U, V>
 	/// </summary>
 	/// <param name="evt">The method you want to add; must contain three parameters
 	/// matching the types of in the host EventData</param>
-	public void Add(EventData<T, U, V>.OnEvent evt);
-	public static bool AddEventScene(string eventName, EventData<T, U, V>.OnEvent evt, bool addToAll);
-	public static bool AddEventUpwards(Transform transform, string eventName, EventData<T, U, V>.OnEvent evt, bool addToAll);
-	public static EventData<T, U, V> FindEventScene(string eventName);
-	public static List<EventData<T, U, V>> FindEventsScene(string eventName);
-	public static List<EventData<T, U, V>> FindEventsUpwards(Transform transform, string eventName);
-	public static EventData<T, U, V> FindEventUpwards(Transform transform, string eventName);
+    public extern void Add(EventData<T, U, V>.OnEvent evt);
+    public extern static bool AddEventScene(string eventName, EventData<T, U, V>.OnEvent evt, bool addToAll);
+    public extern static bool AddEventUpwards(Transform transform, string eventName, EventData<T, U, V>.OnEvent evt, bool addToAll);
+    public extern static EventData<T, U, V> FindEventScene(string eventName);
+    public extern static List<EventData<T, U, V>> FindEventsScene(string eventName);
+    public extern static List<EventData<T, U, V>> FindEventsUpwards(Transform transform, string eventName);
+    public extern static EventData<T, U, V> FindEventUpwards(Transform transform, string eventName);
 	/// <summary>
 	/// Triggers the EventData
 	/// 
@@ -58,7 +58,7 @@ public class EventData<T, U, V>
 	/// Use this to give information relevant to the event</param>
 	/// <param name="data1">The second type of the host EventData</param>
 	/// <param name="data2">The third type of the host EventData</param>
-	public void Fire(T data0, U data1, V data2);
+    public extern void Fire(T data0, U data1, V data2);
 	/// <summary>
 	/// Remove a method from the list of methods to be run when the EventData is fired.
 	/// 
@@ -66,9 +66,9 @@ public class EventData<T, U, V>
 	/// </summary>
 	/// <param name="evt">The method you want to remove; must contain three parameters
 	/// matching the types of in the host EventData</param>
-	public void Remove(EventData<T, U, V>.OnEvent evt);
-	public static bool RemoveEventScene(string eventName, EventData<T, U, V>.OnEvent evt, bool removeFromAll);
-	public static bool RemoveEventUpwards(Transform transform, string eventName, EventData<T, U, V>.OnEvent evt, bool removeFromAll);
+    public extern void Remove(EventData<T, U, V>.OnEvent evt);
+    public extern static bool RemoveEventScene(string eventName, EventData<T, U, V>.OnEvent evt, bool removeFromAll);
+    public extern static bool RemoveEventUpwards(Transform transform, string eventName, EventData<T, U, V>.OnEvent evt, bool removeFromAll);
 
 	/// <summary>
 	/// Any methods added to the event must match the delegate's parameters;
