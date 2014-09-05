@@ -11,6 +11,7 @@ public class ShipConstruct /*: IEnumerable, IShipconstruct, IEnumerable<Part>*/
     public static int lastCompatibleRev;
     /// <summary>
     /// A list of all the parts in the ShipConstruct.
+    /// The parts are listed in the same order in which they were added to the ship in the editor.
     /// </summary>
     public List<Part> parts;
     public string shipDescription;

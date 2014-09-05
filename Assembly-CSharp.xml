@@ -5167,6 +5167,7 @@
         <member name="F:ShipConstruct.parts">
             <summary>
             A list of all the parts in the ShipConstruct.
+            The parts are listed in the same order in which they were added to the ship in the editor.
             </summary>
         </member>
         <member name="T:KSP.IO.TextReader">
