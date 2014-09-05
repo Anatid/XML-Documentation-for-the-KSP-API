@@ -186,6 +186,13 @@
             Unused?
             </summary>
         </member>
+        <member name="F:Part.flightID">
+            <summary>
+            A unique identifider for this part. Note that despite the name, each part on the same vessel will still have a different value in this field.
+            This value is persistent and not affected by game load or docking/undocking or similar.
+            This is the 'uid' value at the PART level of the persistent.sfs file.
+            </summary>
+        </member>
         <member name="F:Part.fuelCrossFeed">
             <summary>
             Whether this part allows fuel crossfeed.
@@ -223,6 +230,14 @@
         <member name="F:Part.minimum_drag">
             <summary>
             Unused.
+            </summary>
+        </member>
+        <member name="F:Part.missionID">
+            <summary>
+            A unique identifier assigned to the part when the vessel it is a part of is created.
+            All parts on the vessel get the same missionID and it does not change.
+            Splitting a vessel with a decoupler will result with two vessels whose parts have the same missionID.
+            When two vessels spawned seperately dock, each part keeps its original missionID, undocking does not change this field either.
             </summary>
         </member>
         <member name="F:Part.NoCrossFeedNodeKey">
@@ -286,6 +301,13 @@
         <member name="F:Part.temperature">
             <summary>
             The temperature of this part, in some arbitrary units.
+            </summary>
+        </member>
+        <member name="F:Part.uid">
+            <summary>
+            The purpose of uid is unknown. It changes everytime a vessel is swithched to, even within the same flight scene. 
+            Swith to a nearby vessel and back with [ and ] and the uid of the parts on a vessel will change.
+            This value does not save to persistent.sfs, the uid value at the PART level is the part.flightID value instead.
             </summary>
         </member>
         <member name="F:Part.vessel">
@@ -5552,6 +5574,14 @@
             Presumably, the horizontal component of srf_velocity, in m/s.
             </summary>
         </member>
+        <member name="F:Vessel.id">
+            <summary>
+            A unique identifier assigned to a vessel. When two vessels dock, the combined vessel has the id of the vessel docked to.
+            On undock, the vessel undocked from keeps its id, the vessel that undocks gets a new id. 
+            Note that this id is always fresh, a vessel gets a different id when it undocks then it had before docking.
+            This is the pid value in the persistent.sfs at the VESSEL level.
+            </summary>
+        </member>
         <member name="F:Vessel.isEVA">
             <summary>
             Presumably, whether this vessel is an EVAing kerbal.
@@ -5642,6 +5672,14 @@
         <member name="F:Vessel.protoVessel">
             <summary>
             The protoVessel can be used to get some saved information about unloaded vessels.
+            </summary>
+        </member>
+        <member name="F:Vessel.referenceTransformId">
+            <summary>
+            This is the flightID of the part that is the current 'Control from Here' part.
+            This is the root part until changed by the player.
+            The vessel transform is set to the transform of this part.
+            This is the 'ref' value in the persistent.sfs at the VESSEL level.
             </summary>
         </member>
         <member name="F:Vessel.rootPart">
