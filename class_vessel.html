@@ -327,6 +327,7 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a46e554a370bcf9a9b9f5157c516cb75a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Presumably, the horizontal component of srf_velocity, in m/s.  <a href="#a46e554a370bcf9a9b9f5157c516cb75a">More...</a><br /></td></tr>
 <tr class="separator:a46e554a370bcf9a9b9f5157c516cb75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61de1d4ed16ec99c786eff645f692d79"><td class="memItemLeft" align="right" valign="top">Guid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a61de1d4ed16ec99c786eff645f692d79">id</a></td></tr>
+<tr class="memdesc:a61de1d4ed16ec99c786eff645f692d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unique identifier assigned to a vessel. When two vessels dock, the combined vessel has the id of the vessel docked to. On undock, the vessel undocked from keeps its id, the vessel that undocks gets a new id. Note that this id is always fresh, a vessel gets a different id when it undocks then it had before docking. This is the pid value in the persistent.sfs at the VESSEL level.  <a href="#a61de1d4ed16ec99c786eff645f692d79">More...</a><br /></td></tr>
 <tr class="separator:a61de1d4ed16ec99c786eff645f692d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad322e7a6ff07b9dab387d30ad8b5c763"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#ad322e7a6ff07b9dab387d30ad8b5c763">isEVA</a></td></tr>
 <tr class="memdesc:ad322e7a6ff07b9dab387d30ad8b5c763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Presumably, whether this vessel is an EVAing kerbal.  <a href="#ad322e7a6ff07b9dab387d30ad8b5c763">More...</a><br /></td></tr>
@@ -390,6 +391,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ab6c2cbf09fddd29471fca6263e168993"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#ab6c2cbf09fddd29471fca6263e168993">rb_velocity</a></td></tr>
 <tr class="separator:ab6c2cbf09fddd29471fca6263e168993"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a580ddf370c8401e5ef107d6d4896829d"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a580ddf370c8401e5ef107d6d4896829d">referenceTransformId</a></td></tr>
+<tr class="memdesc:a580ddf370c8401e5ef107d6d4896829d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the flightID of the part that is the current 'Control from Here' part. This is the root part until changed by the player. The vessel transform is set to the transform of this part. This is the 'ref' value in the persistent.sfs at the VESSEL level.  <a href="#a580ddf370c8401e5ef107d6d4896829d">More...</a><br /></td></tr>
 <tr class="separator:a580ddf370c8401e5ef107d6d4896829d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27bf773ca0c02137cf78c8c2ff900bc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_part.html">Part</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vessel.html#a27bf773ca0c02137cf78c8c2ff900bc1">rootPart</a></td></tr>
 <tr class="memdesc:a27bf773ca0c02137cf78c8c2ff900bc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The root of the tree of parts that comprises the vessel. Usually this is the original command pod placed when constructing the vessel.  <a href="#a27bf773ca0c02137cf78c8c2ff900bc1">More...</a><br /></td></tr>
@@ -1926,6 +1928,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>A unique identifier assigned to a vessel. When two vessels dock, the combined vessel has the id of the vessel docked to. On undock, the vessel undocked from keeps its id, the vessel that undocks gets a new id. Note that this id is always fresh, a vessel gets a different id when it undocks then it had before docking. This is the pid value in the persistent.sfs at the VESSEL level. </p>
+
 </div>
 </div>
 <a class="anchor" id="ad322e7a6ff07b9dab387d30ad8b5c763"></a>
@@ -2264,6 +2268,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This is the flightID of the part that is the current 'Control from Here' part. This is the root part until changed by the player. The vessel transform is set to the transform of this part. This is the 'ref' value in the persistent.sfs at the VESSEL level. </p>
 
 </div>
 </div>
@@ -2792,7 +2798,7 @@ Properties</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 2 2014 23:06:12 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 4 2014 22:08:48 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

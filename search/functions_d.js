@@ -12,7 +12,7 @@ var searchData=
   ['oncollisionenter',['OnCollisionEnter',['../class_kerbal_e_v_a.html#a860e2d942750769384a4101661e23785',1,'KerbalEVA.OnCollisionEnter()'],['../class_part.html#a8c034ccadad0ae2d052439dab87e30bd',1,'Part.OnCollisionEnter()']]],
   ['oncollisionexit',['OnCollisionExit',['../class_kerbal_e_v_a.html#afb47204f9d8cbed50ee4f628038a8762',1,'KerbalEVA.OnCollisionExit()'],['../class_part.html#a89ae4150f70b6a4d5c126369543f73d7',1,'Part.OnCollisionExit()']]],
   ['oncollisionstay',['OnCollisionStay',['../class_kerbal_e_v_a.html#aa738844294489e3fe4ce0f7c2daae053',1,'KerbalEVA.OnCollisionStay()'],['../class_part.html#a060001bcab27accaf30aac3bf2311f49',1,'Part.OnCollisionStay()']]],
-  ['oncopy',['OnCopy',['../class_part.html#aae2c617a79d3fe67c0338c9660013428',1,'Part.OnCopy()'],['../class_fuel_line.html#a739a3a1e217506ebd84e18c45234f2d7',1,'FuelLine.onCopy()'],['../class_part.html#ab06b10318888b9bae609326f803e8229',1,'Part.onCopy()']]],
+  ['oncopy',['onCopy',['../class_fuel_line.html#a739a3a1e217506ebd84e18c45234f2d7',1,'FuelLine.onCopy()'],['../class_part.html#ab06b10318888b9bae609326f803e8229',1,'Part.onCopy(Part original, bool asSymCounterpart)'],['../class_part.html#aae2c617a79d3fe67c0338c9660013428',1,'Part.OnCopy(Part original, bool asSymCounterpart)']]],
   ['onctrlupd',['onCtrlUpd',['../class_part.html#a594f7cda1ee6dbc89f7d48ff8634306e',1,'Part']]],
   ['ondecouple',['onDecouple',['../class_fuel_tank.html#a3f504a351de7a1f50115280147376df5',1,'FuelTank.onDecouple()'],['../class_fuel_tank_g_u_i.html#a19ef76870a305fc734e07058d8fea8d2',1,'FuelTankGUI.onDecouple()'],['../class_part.html#a63ee683ce335adb98503441bbdb6b620',1,'Part.onDecouple()']]],
   ['ondelete',['OnDelete',['../class_part.html#ae4060ee652701dd297755038f449ae79',1,'Part']]],

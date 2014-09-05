@@ -14,7 +14,7 @@ var searchData=
   ['unpack',['Unpack',['../class_part.html#a28665e69fa6cac2f2af365c1c25451f3',1,'Part']]],
   ['untrackedobjectclass',['UntrackedObjectClass',['../_untracked_object_class_8cs.html#aa4534f4ef35a5b44e916abb50aa15070',1,'UntrackedObjectClass.cs']]],
   ['untrackedobjectclass_2ecs',['UntrackedObjectClass.cs',['../_untracked_object_class_8cs.html',1,'']]],
-  ['up',['up',['../class_planetarium.html#a19176ac1e758068b7f31709ff933aa67',1,'Planetarium.up()'],['../struct_vector3d.html#a428090eca0977f79d3a8fd02bb196d44',1,'Vector3d.up()'],['../class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4bafbaedde498cdead4f2780217646e9ba1',1,'HighLogic.UP()']]],
+  ['up',['UP',['../class_high_logic.html#aa5b8c862a58dc42ae5743f6c33d1ee4bafbaedde498cdead4f2780217646e9ba1',1,'HighLogic.UP()'],['../class_planetarium.html#a19176ac1e758068b7f31709ff933aa67',1,'Planetarium.up()'],['../struct_vector3d.html#a428090eca0977f79d3a8fd02bb196d44',1,'Vector3d.up()']]],
   ['upaxis',['upAxis',['../class_flight_globals.html#a395c4c98bf9c8f0c1d34d4b67ffaf811',1,'FlightGlobals.upAxis()'],['../class_vessel.html#a317d583cbe03e62a72fb1dd32dae8bc8',1,'Vessel.upAxis()']]],
   ['update',['Update',['../class_patched_conic_solver.html#a4c6d4383b6f476119d51da558690718a',1,'PatchedConicSolver']]],
   ['updateactive',['updateActive',['../class_flight_camera.html#a29040043b93c91580f7c79976519e643',1,'FlightCamera']]],

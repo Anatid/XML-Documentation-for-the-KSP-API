@@ -418,6 +418,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a3ec122965bdb56248663d251d461dadd inherit pub_attribs_class_part"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part.html#a3ec122965bdb56248663d251d461dadd">explosionPotential</a></td></tr>
 <tr class="separator:a3ec122965bdb56248663d251d461dadd inherit pub_attribs_class_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5a7a3be3f8eb3d7b7b878e51b9fdd28 inherit pub_attribs_class_part"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part.html#ae5a7a3be3f8eb3d7b7b878e51b9fdd28">flightID</a></td></tr>
+<tr class="memdesc:ae5a7a3be3f8eb3d7b7b878e51b9fdd28 inherit pub_attribs_class_part"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unique identifider for this part. Note that despite the name, each part on the same vessel will still have a different value in this field. This value is persistent and not affected by game load or docking/undocking or similar. This is the 'uid' value at the PART level of the persistent.sfs file.  <a href="#ae5a7a3be3f8eb3d7b7b878e51b9fdd28">More...</a><br /></td></tr>
 <tr class="separator:ae5a7a3be3f8eb3d7b7b878e51b9fdd28 inherit pub_attribs_class_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0202fcb239b2d3fb82a09a8cc067b71d inherit pub_attribs_class_part"><td class="memItemLeft" align="right" valign="top">FlightIntegrator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part.html#a0202fcb239b2d3fb82a09a8cc067b71d">flightIntegrator</a></td></tr>
 <tr class="separator:a0202fcb239b2d3fb82a09a8cc067b71d inherit pub_attribs_class_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -482,6 +483,9 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ae07fb6a33388323b0f3241e66521d16d inherit pub_attribs_class_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac825f8fca05172e1e6ab763e6e400718 inherit pub_attribs_class_part"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part.html#ac825f8fca05172e1e6ab763e6e400718">mirrorVector</a></td></tr>
 <tr class="separator:ac825f8fca05172e1e6ab763e6e400718 inherit pub_attribs_class_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a502fd796980f9aeb9f91f9adf6be4c3f inherit pub_attribs_class_part"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part.html#a502fd796980f9aeb9f91f9adf6be4c3f">missionID</a></td></tr>
+<tr class="memdesc:a502fd796980f9aeb9f91f9adf6be4c3f inherit pub_attribs_class_part"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unique identifier assigned to the part when the vessel it is a part of is created. All parts on the vessel get the same missionID and it does not change. Splitting a vessel with a decoupler will result with two vessels whose parts have the same missionID. When two vessels spawned seperately dock, each part keeps its original missionID, undocking does not change this field either.  <a href="#a502fd796980f9aeb9f91f9adf6be4c3f">More...</a><br /></td></tr>
+<tr class="separator:a502fd796980f9aeb9f91f9adf6be4c3f inherit pub_attribs_class_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a151c7b842d1d5531a56d65068472e3f0 inherit pub_attribs_class_part"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part.html#a151c7b842d1d5531a56d65068472e3f0">NoCrossFeedNodeKey</a></td></tr>
 <tr class="memdesc:a151c7b842d1d5531a56d65068472e3f0 inherit pub_attribs_class_part"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the name of a node through which this part will NOT draw resources. See the part.cfg of the stock tricoupler for an example of using this to prevent fuel from flowing backwards.  <a href="#a151c7b842d1d5531a56d65068472e3f0">More...</a><br /></td></tr>
 <tr class="separator:a151c7b842d1d5531a56d65068472e3f0 inherit pub_attribs_class_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -571,6 +575,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a4f8b1d26360bbd79c33e6b6cab6bfbc8 inherit pub_attribs_class_part"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_attach_node.html">AttachNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part.html#a4f8b1d26360bbd79c33e6b6cab6bfbc8">topNode</a></td></tr>
 <tr class="separator:a4f8b1d26360bbd79c33e6b6cab6bfbc8 inherit pub_attribs_class_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03ddae8c852025f871d5e602065d967c inherit pub_attribs_class_part"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part.html#a03ddae8c852025f871d5e602065d967c">uid</a></td></tr>
+<tr class="memdesc:a03ddae8c852025f871d5e602065d967c inherit pub_attribs_class_part"><td class="mdescLeft">&#160;</td><td class="mdescRight">The purpose of uid is unknown. It changes everytime a vessel is swithched to, even within the same flight scene. Swith to a nearby vessel and back with [ and ] and the uid of the parts on a vessel will change. This value does not save to persistent.sfs, the uid value at the PART level is the part.flightID value instead.  <a href="#a03ddae8c852025f871d5e602065d967c">More...</a><br /></td></tr>
 <tr class="separator:a03ddae8c852025f871d5e602065d967c inherit pub_attribs_class_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01b0a639ea7d87e29f7aaa0b48d097c1 inherit pub_attribs_class_part"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part.html#a01b0a639ea7d87e29f7aaa0b48d097c1">vel</a></td></tr>
 <tr class="separator:a01b0a639ea7d87e29f7aaa0b48d097c1 inherit pub_attribs_class_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -884,7 +889,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 2 2014 23:06:11 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 4 2014 22:08:47 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
