@@ -75,6 +75,11 @@ public class Part : MonoBehaviour
     public Part editorCollision;
     public List<Part> editorLinks;
     public float explosionPotential;
+    /// <summary>
+    /// A unique identifider for this part. Note that despite the name, each part on the same vessel will still have a different value in this field.
+    /// This value is persistent and not affected by game load or docking/undocking or similar.
+    /// This is the 'uid' value at the PART level of the persistent.sfs file.
+    /// </summary>
     public uint flightID;
     public FlightIntegrator flightIntegrator;
     public bool frozen;
@@ -132,6 +137,13 @@ public class Part : MonoBehaviour
     public Vector3 mirrorAxis;
     public Vector3 mirrorRefAxis;
     public Vector3 mirrorVector;
+    /// <summary>
+    /// A unique identifier assigned to the part when the vessel it is a part of is created.
+    /// All parts on the vessel get the same missionID and it does not change.
+    /// Splitting a vessel with a decoupler will result with two vessels whose parts have the same missionID.
+    /// When two vessels spawned seperately dock, each part keeps its original missionID, undocking does not change this field either.
+    /// </summary>
+    public uint missionID;
     /// <summary>
     /// Specifies the name of a node through which this part will NOT draw resources. See the part.cfg of the 
     /// stock tricoupler for an example of using this to prevent fuel from flowing backwards.
@@ -211,6 +223,11 @@ public class Part : MonoBehaviour
     public float temperature;
     public PQS_PartCollider terrainCollider;
     public AttachNode topNode;
+    /// <summary>
+    /// The purpose of uid is unknown. It changes everytime a vessel is swithched to, even within the same flight scene. 
+    /// Swith to a nearby vessel and back with [ and ] and the uid of the parts on a vessel will change.
+    /// This value does not save to persistent.sfs, the uid value at the PART level is the part.flightID value instead.
+    /// </summary>
     public uint uid;
     public Vector3 vel;
     /// <summary>

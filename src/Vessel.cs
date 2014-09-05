@@ -59,6 +59,12 @@ public class Vessel /*: MonoBehaviour, ITargetable, IShipconstruct, IDiscoverabl
     /// Presumably, the horizontal component of srf_velocity, in m/s.
     /// </summary>
     public double horizontalSrfSpeed;
+    /// <summary>
+    /// A unique identifier assigned to a vessel. When two vessels dock, the combined vessel has the id of the vessel docked to.
+    /// On undock, the vessel undocked from keeps its id, the vessel that undocks gets a new id. 
+    /// Note that this id is always fresh, a vessel gets a different id when it undocks then it had before docking.
+    /// This is the pid value in the persistent.sfs at the VESSEL level.
+    /// </summary>
     public Guid id;
     /// <summary>
     /// Presumably, whether this vessel is an EVAing kerbal.
@@ -146,6 +152,12 @@ public class Vessel /*: MonoBehaviour, ITargetable, IShipconstruct, IDiscoverabl
     /// </summary>
     public ProtoVessel protoVessel;
     public Vector3 rb_velocity;
+    /// <summary>
+    /// This is the flightID of the part that is the current 'Control from Here' part.
+    /// This is the root part until changed by the player.
+    /// The vessel transform is set to the transform of this part.
+    /// This is the 'ref' value in the persistent.sfs at the VESSEL level.
+    /// </summary>
     public uint referenceTransformId;
     /// <summary>
     /// The root of the tree of parts that comprises the vessel. Usually this is the original command pod placed when constructing the vessel.
