@@ -30,7 +30,7 @@ public class CelestialBody /*: MonoBehaviour, ITargetable, IDiscoverable*/
     public bool atmosphereContainsOxygen;
     /// <summary>
     /// Seems to be the pressure of the body's atmosphere at sea level, in units of Kerbin atmospheres at sea level.
-	/// Appears to only have an effect when useLegacyAtmosphere is toggled on
+    /// Appears to only have an effect when useLegacyAtmosphere is toggled on
     /// </summary>
     public float atmosphereMultiplier;
     /// <summary>
@@ -83,9 +83,9 @@ public class CelestialBody /*: MonoBehaviour, ITargetable, IDiscoverable*/
     /// Whether this planet has an ocean at "sea level"
     /// </summary>
     public bool ocean;
-	/// <summary>
-	/// this is what gives the celestial body its orbit and makes it go along the orbit as well
-	/// </summary>
+    /// <summary>
+    /// this is what gives the celestial body its orbit and makes it go along the orbit as well
+    /// </summary>
     public OrbitDriver orbitDriver;
     /// <summary>
     /// A list of this body's moons (or, in the case of the Sun, a list of the planets).
@@ -126,9 +126,9 @@ public class CelestialBody /*: MonoBehaviour, ITargetable, IDiscoverable*/
     /// </summary>
     public float[] timeWarpAltitudeLimits;
     public bool use_The_InName;
-	/// <summary>
-	/// It appears that this setting toggles between old and new atmosphere system
-	/// </summary>
+    /// <summary>
+    /// It appears that this setting toggles between old and new atmosphere system
+    /// </summary>
     public bool useLegacyAtmosphere;
     public Vector3d zUpAngularVelocity;
 
