@@ -237,7 +237,7 @@ public class Orbit
     /// <returns>Orbital velocity vector at current time.</returns>
     public extern Vector3d GetVel();
     /// <summary>
-	/// like GetVel but adjusted for the rotational velocity of the body the vessel is orbiting, presumably?
+    /// like GetVel but adjusted for the rotational velocity of the body the vessel is orbiting, presumably?
     /// </summary>
     public extern Vector3d GetWorldSpaceVel();
     public extern void Init();
