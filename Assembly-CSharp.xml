@@ -663,6 +663,12 @@
             <param name="worldPos">A position in world coordinates</param>
             <returns>Altitude in meters</returns>
         </member>
+        <member name="M:CelestialBody.GetFrameVel">
+            <summary>
+            The velocity of the CelestialBody, {AliceWorld, Sun}. (See Orbit.cs for
+            the reference frame definitions).
+            </summary>
+        </member>
         <member name="M:CelestialBody.GetLatitude(Vector3d)">
             <summary>
             Gets the latitude of a given position, in degrees.
@@ -4221,6 +4227,49 @@
             on-rails Vessels follow their Orbits exactly. Off-rails vessels (the active vessel and any nearby vessels) 
             do not follow their orbits exactly; instead their motion is computed frame-by-frame from the forces acting on them.</para>
             <para>A patched consics trajectory consists of a series of Orbits, called patches.</para>
+            <para>This class uses multiple axes and reference frames to describe
+            positions and velocities.
+            <para>We call the choices of axes
+            <list type="bullet">
+            <item>
+            <description>World: world coordinates. Left-handed.</description>
+            </item>
+            <item>
+            <description>AliceWorld: world coordinates with the y and z axes flipped. Right-handed.</description>
+            </item>
+            </list>
+            </para>
+            <para>We call the reference frames used
+            <list type="bullet">
+            <item>
+            <description>BodyCentre[foo]: position and velocity relative to the centre of the CelestialBody |foo|.</description>
+            </item>
+            <item>
+            <description>BodyRotating[foo]: position relative to the centre of the CelestialBody |foo|,
+            velocity relative to its rotating surface.</description>
+            </item>
+            <item>
+            <description>ConditionallyRotating[foo]: If |foo.inverseRotation|, BodyRotating[foo],
+            otherwise BodyCentre[foo].</description>
+            </item>
+            <item>
+            <description>Sun: BodyCentre[Planetarium.fetch.Sun].</description>
+            </item>
+            <item>
+            <description>Primary: BodyCentre[this.referenceBody].</description>
+            </item>
+             <item>
+            <description>ActiveVesselPrimary: If the active vessel is not null,
+            BodyCentre[FlightGlobals.ActiveVessel.orbit.referenceBody], otherwise Sun.</description>
+            </item>
+            <item>
+            <description>ActiveVesselPrimaryConditionallyRotating: If the active vessel is not null,
+            ConditionallyRotating[FlightGlobals.ActiveVessel.orbit.referenceBody], otherwise Sun.</description>>
+            </item>
+            </list>
+            </para>
+            We use the concise notation {Axes, Frame}
+            for describing the reference frame and axes used.</para>
             </summary>
         </member>
         <member name="F:Orbit.activePatch">
@@ -4315,6 +4364,11 @@
             The period of the orbit, in seconds.
             </summary>
         </member>
+        <member name="F:Orbit.pos">
+            <summary>
+            The position of the orbiting object, {AliceWorld, Primary}.
+            </summary>
+        </member>
         <member name="F:Orbit.referenceBody">
             <summary>
             The body orbited.
@@ -4335,6 +4389,16 @@
             The time unti lthe object will reach periapsis, in seconds.
             </summary>
         </member>
+        <member name="F:Orbit.vel">
+            <summary>
+            The velocity of the orbiting object, {AliceWorld, Primary}.
+            </summary>
+        </member>
+        <member name="M:Orbit.GetFrameVel">
+            <summary>
+            The velocity of the orbiting object, {AliceWorld, Sun}.
+            </summary>
+        </member>
         <member name="M:Orbit.GetOrbitNormal">
             <summary>
             A unit vector normal to the plane of the orbit. NOTE: All Vector3d's returned by Orbit class functions have their y and z axes flipped. You have
@@ -4351,17 +4415,29 @@
             <param name="UT">A univeral time.</param>
             <returns>Position relative to the main body (YZ flipped)</returns>
         </member>
+        <member name="M:Orbit.GetRelativeVel">
+            <summary>
+            The velocity of the orbiting object, {World, Primary}.
+            </summary>
+        </member>
+        <member name="M:Orbit.GetRotFrameVel(CelestialBody)">
+            <summary>
+            The velocity of a hypothetical object, located where the orbiting object
+            is, and at rest in the ConditionallyRotating[refBody] frame,
+            {AliceWorld, BodyCentre[refBody]}.
+            In other words, velocity of the ConditionallyRotating[refBody] frame in the
+            BodyCentre[refBody] frame at the position of the orbiting object (AliceWorld axes).
+            Note: this only depends on the orbital position, not on the orbital velocity.
+            </summary>
+        </member>
         <member name="M:Orbit.GetVel">
             <summary>
-            The current orbital velocity of the orbiting body. Unlike most other methods of the orbit
-            class, the returned vector seems to already be in world coordinates and doesn't need to have
-            its Y and Z axes flipped. (Y and Z axes already being flipped is confirmed for V0.23.5)
+            The velocity of the orbiting object, {World, ActiveVesselPrimary}.
             </summary>
-            <returns>Orbital velocity vector at current time.</returns>
         </member>
         <member name="M:Orbit.GetWorldSpaceVel">
             <summary>
-            like GetVel but adjusted for the rotational velocity of the body the vessel is orbiting, presumably?
+            The velocity of the orbiting object, {World, ActiveVesselPrimaryConditionallyRotating}.
             </summary>
         </member>
         <member name="M:Orbit.RadiusAtTrueAnomaly(System.Double)">

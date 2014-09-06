@@ -1,8 +1,4 @@
-﻿#region Assembly Assembly-CSharp.dll, v2.0.50727
-// C:\greg\games\KSP 0.18.2\KSP_Data\Managed\Assembly-CSharp.dll
-#endregion
-
-using System;
+﻿using System;
 using UnityEngine;
 
 /// <summary>
@@ -20,6 +16,7 @@ using UnityEngine;
 /// <item>
 /// <description>AliceWorld: world coordinates with the y and z axes flipped. Right-handed.</description>
 /// </item>
+/// </list>
 /// </para>
 /// <para>We call the reference frames used
 /// <list type="bullet">
@@ -37,7 +34,6 @@ using UnityEngine;
 /// <item>
 /// <description>Sun: BodyCentre[Planetarium.fetch.Sun].</description>
 /// </item>
-/// </list>
 /// <item>
 /// <description>Primary: BodyCentre[this.referenceBody].</description>
 /// </item>
@@ -49,6 +45,7 @@ using UnityEngine;
 /// <description>ActiveVesselPrimaryConditionallyRotating: If the active vessel is not null,
 /// ConditionallyRotating[FlightGlobals.ActiveVessel.orbit.referenceBody], otherwise Sun.</description>>
 /// </item>
+/// </list>
 /// </para>
 /// We use the concise notation {Axes, Frame}
 /// for describing the reference frame and axes used.</para>
