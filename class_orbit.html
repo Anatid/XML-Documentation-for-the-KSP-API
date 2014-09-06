@@ -147,6 +147,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a114d2c198ce639b5e778a8c977b9e009"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a114d2c198ce639b5e778a8c977b9e009">GetEccVector</a> ()</td></tr>
 <tr class="separator:a114d2c198ce639b5e778a8c977b9e009"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9ee803a8190bf425c652185697ae58d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#ab9ee803a8190bf425c652185697ae58d">GetFrameVel</a> ()</td></tr>
+<tr class="memdesc:ab9ee803a8190bf425c652185697ae58d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The velocity of the orbiting object, {AliceWorld, Sun}.  <a href="#ab9ee803a8190bf425c652185697ae58d">More...</a><br /></td></tr>
 <tr class="separator:ab9ee803a8190bf425c652185697ae58d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a346b2dbdd0abba001fb5b5713ae92023"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a346b2dbdd0abba001fb5b5713ae92023">GetFrameVelAtUT</a> (double UT)</td></tr>
 <tr class="separator:a346b2dbdd0abba001fb5b5713ae92023"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,8 +196,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac8ca7f923a1fd230efc4f088ca7aa4ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#ac8ca7f923a1fd230efc4f088ca7aa4ee">getRelativePositionFromTrueAnomaly</a> (double tA)</td></tr>
 <tr class="separator:ac8ca7f923a1fd230efc4f088ca7aa4ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add39b52d54c01fff9ccc4b575dd44dec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#add39b52d54c01fff9ccc4b575dd44dec">GetRelativeVel</a> ()</td></tr>
+<tr class="memdesc:add39b52d54c01fff9ccc4b575dd44dec"><td class="mdescLeft">&#160;</td><td class="mdescRight">The velocity of the orbiting object, {World, Primary}.  <a href="#add39b52d54c01fff9ccc4b575dd44dec">More...</a><br /></td></tr>
 <tr class="separator:add39b52d54c01fff9ccc4b575dd44dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1aa7e5eaa0ad54f8709d19a2e4d34b3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a1aa7e5eaa0ad54f8709d19a2e4d34b3d">GetRotFrameVel</a> (<a class="el" href="class_celestial_body.html">CelestialBody</a> refBody)</td></tr>
+<tr class="memdesc:a1aa7e5eaa0ad54f8709d19a2e4d34b3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The velocity of a hypothetical object, located where the orbiting object is, and at rest in the ConditionallyRotating[refBody] frame, {AliceWorld, BodyCentre[refBody]}. In other words, velocity of the ConditionallyRotating[refBody] frame in the BodyCentre[refBody] frame at the position of the orbiting object (AliceWorld axes). Note: this only depends on the orbital position, not on the orbital velocity.  <a href="#a1aa7e5eaa0ad54f8709d19a2e4d34b3d">More...</a><br /></td></tr>
 <tr class="separator:a1aa7e5eaa0ad54f8709d19a2e4d34b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0c09d6e7be48876f2872bcf44dc5b94"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#ab0c09d6e7be48876f2872bcf44dc5b94">getTrueAnomaly</a> (double <a class="el" href="class_orbit.html#a6db22ce977b60613d707fafbc44a70b0">E</a>)</td></tr>
 <tr class="separator:ab0c09d6e7be48876f2872bcf44dc5b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,10 +210,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a465681aad2db3169f3b9dfe1189fa09b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a465681aad2db3169f3b9dfe1189fa09b">GetUTforTrueAnomaly</a> (double tA, double wrapAfterSeconds)</td></tr>
 <tr class="separator:a465681aad2db3169f3b9dfe1189fa09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa18079fb12ccbe63c1a6b9d75c3ba578"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#aa18079fb12ccbe63c1a6b9d75c3ba578">GetVel</a> ()</td></tr>
-<tr class="memdesc:aa18079fb12ccbe63c1a6b9d75c3ba578"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current orbital velocity of the orbiting body. Unlike most other methods of the orbit class, the returned vector seems to already be in world coordinates and doesn't need to have its Y and Z axes flipped. (Y and Z axes already being flipped is confirmed for V0.23.5)  <a href="#aa18079fb12ccbe63c1a6b9d75c3ba578">More...</a><br /></td></tr>
+<tr class="memdesc:aa18079fb12ccbe63c1a6b9d75c3ba578"><td class="mdescLeft">&#160;</td><td class="mdescRight">The velocity of the orbiting object, {World, ActiveVesselPrimary}.  <a href="#aa18079fb12ccbe63c1a6b9d75c3ba578">More...</a><br /></td></tr>
 <tr class="separator:aa18079fb12ccbe63c1a6b9d75c3ba578"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcb8420085bdf2915ddd4a3cf9dc5f6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#abcb8420085bdf2915ddd4a3cf9dc5f6f">GetWorldSpaceVel</a> ()</td></tr>
-<tr class="memdesc:abcb8420085bdf2915ddd4a3cf9dc5f6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">like GetVel but adjusted for the rotational velocity of the body the vessel is orbiting, presumably?  <a href="#abcb8420085bdf2915ddd4a3cf9dc5f6f">More...</a><br /></td></tr>
+<tr class="memdesc:abcb8420085bdf2915ddd4a3cf9dc5f6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The velocity of the orbiting object, {World, ActiveVesselPrimaryConditionallyRotating}.  <a href="#abcb8420085bdf2915ddd4a3cf9dc5f6f">More...</a><br /></td></tr>
 <tr class="separator:abcb8420085bdf2915ddd4a3cf9dc5f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bee77b7c30964ed62a6a51fd3ce350b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a6bee77b7c30964ed62a6a51fd3ce350b">Init</a> ()</td></tr>
 <tr class="separator:a6bee77b7c30964ed62a6a51fd3ce350b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -357,6 +360,7 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a3b21188489acf2642322ae49dbbfffff"><td class="mdescLeft">&#160;</td><td class="mdescRight">The period of the orbit, in seconds.  <a href="#a3b21188489acf2642322ae49dbbfffff">More...</a><br /></td></tr>
 <tr class="separator:a3b21188489acf2642322ae49dbbfffff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c63a5a9672195bfa06e07b08a2cb5cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a1c63a5a9672195bfa06e07b08a2cb5cf">pos</a></td></tr>
+<tr class="memdesc:a1c63a5a9672195bfa06e07b08a2cb5cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The position of the orbiting object, {AliceWorld, Primary}.  <a href="#a1c63a5a9672195bfa06e07b08a2cb5cf">More...</a><br /></td></tr>
 <tr class="separator:a1c63a5a9672195bfa06e07b08a2cb5cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af365f4e2b7c207a0a47737a954247780"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_orbit.html">Orbit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#af365f4e2b7c207a0a47737a954247780">previousPatch</a></td></tr>
 <tr class="separator:af365f4e2b7c207a0a47737a954247780"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -403,6 +407,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a85ce609a6c7bfa15eb9a65ef3e425d7d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a85ce609a6c7bfa15eb9a65ef3e425d7d">V</a></td></tr>
 <tr class="separator:a85ce609a6c7bfa15eb9a65ef3e425d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a202d30a9d828e267e76e967df9aead97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a202d30a9d828e267e76e967df9aead97">vel</a></td></tr>
+<tr class="memdesc:a202d30a9d828e267e76e967df9aead97"><td class="mdescLeft">&#160;</td><td class="mdescRight">The velocity of the orbiting object, {AliceWorld, Primary}.  <a href="#a202d30a9d828e267e76e967df9aead97">More...</a><br /></td></tr>
 <tr class="separator:a202d30a9d828e267e76e967df9aead97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
@@ -429,6 +434,30 @@ Properties</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An <a class="el" href="class_orbit.html">Orbit</a> class represents a Keplerian orbit. Each <a class="el" href="class_vessel.html" title="A Vessel object represents a single vessel. Parts that break off from a vessel become their own Vesse...">Vessel</a> and each <a class="el" href="class_celestial_body.html" title="The Sun, the planets, and the moons are all CelestialBodies. ">CelestialBody</a> has an <a class="el" href="class_orbit.html">Orbit</a>. CelestialBodies and on-rails Vessels follow their Orbits exactly. Off-rails vessels (the active vessel and any nearby vessels) do not follow their orbits exactly; instead their motion is computed frame-by-frame from the forces acting on them.</p>
 <p>A patched consics trajectory consists of a series of Orbits, called patches.</p>
+<p>This class uses multiple axes and reference frames to describe positions and velocities. </p>
+<p>We call the choices of axes </p><ul>
+<li>
+World: world coordinates. Left-handed.  </li>
+<li>
+AliceWorld: world coordinates with the y and z axes flipped. Right-handed.  </li>
+</ul>
+<p>We call the reference frames used </p><ul>
+<li>
+BodyCentre[foo]: position and velocity relative to the centre of the <a class="el" href="class_celestial_body.html" title="The Sun, the planets, and the moons are all CelestialBodies. ">CelestialBody</a> |foo|.  </li>
+<li>
+BodyRotating[foo]: position relative to the centre of the <a class="el" href="class_celestial_body.html" title="The Sun, the planets, and the moons are all CelestialBodies. ">CelestialBody</a> |foo|, velocity relative to its rotating surface.  </li>
+<li>
+ConditionallyRotating[foo]: If |foo.inverseRotation|, BodyRotating[foo], otherwise BodyCentre[foo].  </li>
+<li>
+Sun: BodyCentre[Planetarium.fetch.Sun].  </li>
+<li>
+Primary: BodyCentre[this.referenceBody].  </li>
+<li>
+ActiveVesselPrimary: If the active vessel is not null, BodyCentre[FlightGlobals.ActiveVessel.orbit.referenceBody], otherwise Sun.  </li>
+<li>
+ActiveVesselPrimaryConditionallyRotating: If the active vessel is not null, ConditionallyRotating[FlightGlobals.ActiveVessel.orbit.referenceBody], otherwise Sun.&gt;  </li>
+</ul>
+<p>We use the concise notation {Axes, Frame} for describing the reference frame and axes used.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="ab0e2dc2f244a601c6fb6dd1070785580"></a>
 <div class="memitem">
@@ -768,6 +797,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The velocity of the orbiting object, {AliceWorld, Sun}. </p>
 
 </div>
 </div>
@@ -1157,6 +1188,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>The velocity of the orbiting object, {World, Primary}. </p>
+
 </div>
 </div>
 <a class="anchor" id="a1aa7e5eaa0ad54f8709d19a2e4d34b3d"></a>
@@ -1172,6 +1205,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The velocity of a hypothetical object, located where the orbiting object is, and at rest in the ConditionallyRotating[refBody] frame, {AliceWorld, BodyCentre[refBody]}. In other words, velocity of the ConditionallyRotating[refBody] frame in the BodyCentre[refBody] frame at the position of the orbiting object (AliceWorld axes). Note: this only depends on the orbital position, not on the orbital velocity. </p>
 
 </div>
 </div>
@@ -1262,8 +1297,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The current orbital velocity of the orbiting body. Unlike most other methods of the orbit class, the returned vector seems to already be in world coordinates and doesn't need to have its Y and Z axes flipped. (Y and Z axes already being flipped is confirmed for V0.23.5) </p>
-<dl class="section return"><dt>Returns</dt><dd>Orbital velocity vector at current time.</dd></dl>
+<p>The velocity of the orbiting object, {World, ActiveVesselPrimary}. </p>
 
 </div>
 </div>
@@ -1280,7 +1314,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>like GetVel but adjusted for the rotational velocity of the body the vessel is orbiting, presumably? </p>
+<p>The velocity of the orbiting object, {World, ActiveVesselPrimaryConditionallyRotating}. </p>
 
 </div>
 </div>
@@ -2318,6 +2352,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>The position of the orbiting object, {AliceWorld, Primary}. </p>
+
 </div>
 </div>
 <a class="anchor" id="af365f4e2b7c207a0a47737a954247780"></a>
@@ -2578,6 +2614,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>The velocity of the orbiting object, {AliceWorld, Primary}. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
@@ -2719,7 +2757,7 @@ Properties</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 4 2014 22:08:48 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 6 2014 17:27:07 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
