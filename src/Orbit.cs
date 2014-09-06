@@ -10,6 +10,48 @@ using UnityEngine;
 /// on-rails Vessels follow their Orbits exactly. Off-rails vessels (the active vessel and any nearby vessels) 
 /// do not follow their orbits exactly; instead their motion is computed frame-by-frame from the forces acting on them.</para>
 /// <para>A patched consics trajectory consists of a series of Orbits, called patches.</para>
+/// <para>This class uses multiple axes and reference frames to describe
+/// positions and velocities.
+/// <para>We call the choices of axes
+/// <list type="bullet">
+/// <item>
+/// <description>World: world coordinates. Left-handed.</description>
+/// </item>
+/// <item>
+/// <description>AliceWorld: world coordinates with the y and z axes flipped. Right-handed.</description>
+/// </item>
+/// </para>
+/// <para>We call the reference frames used
+/// <list type="bullet">
+/// <item>
+/// <description>BodyCentre[foo]: position and velocity relative to the centre of the CelestialBody |foo|.</description>
+/// </item>
+/// <item>
+/// <description>BodyRotating[foo]: position relative to the centre of the CelestialBody |foo|,
+/// velocity relative to its rotating surface.</description>
+/// </item>
+/// <item>
+/// <description>ConditionallyRotating[foo]: If |foo.inverseRotation|, BodyRotating[foo],
+/// otherwise BodyCentre[foo].</description>
+/// </item>
+/// <item>
+/// <description>Sun: BodyCentre[Planetarium.fetch.Sun].</description>
+/// </item>
+/// </list>
+/// <item>
+/// <description>Primary: BodyCentre[this.referenceBody].</description>
+/// </item>
+///  <item>
+/// <description>ActiveVesselPrimary: If the active vessel is not null,
+/// BodyCentre[FlightGlobals.ActiveVessel.orbit.referenceBody], otherwise Sun.</description>
+/// </item>
+/// <item>
+/// <description>ActiveVesselPrimaryConditionallyRotating: If the active vessel is not null,
+/// ConditionallyRotating[FlightGlobals.ActiveVessel.orbit.referenceBody], otherwise Sun.</description>>
+/// </item>
+/// </para>
+/// We use the concise notation {Axes, Frame}
+/// for describing the reference frame and axes used.</para>
 /// </summary>
 [Serializable]
 public class Orbit
@@ -119,6 +161,9 @@ public class Orbit
     /// The period of the orbit, in seconds.
     /// </summary>
     public double period;
+    /// <summary>
+    /// The position of the orbiting object, {AliceWorld, Primary}.
+    /// </summary>
     public Vector3d pos;
     public Orbit previousPatch;
     public double radius;
@@ -152,6 +197,9 @@ public class Orbit
     public double UTappr;
     public double UTsoi;
     public double V;
+    /// <summary>
+    /// The velocity of the orbiting object, {AliceWorld, Primary}.
+    /// </summary>
     public Vector3d vel;
 
     public extern Orbit();
@@ -188,6 +236,9 @@ public class Orbit
     public extern double GetDTforTrueAnomaly(double tA, double wrapAfterSeconds);
     public extern double GetEccentricAnomaly(double tA);
     public extern Vector3d GetEccVector();
+    /// <summary>
+    /// The velocity of the orbiting object, {AliceWorld, Sun}.
+    /// </summary>
     public extern Vector3d GetFrameVel();
     public extern Vector3d GetFrameVelAtUT(double UT);
     public extern double GetMeanAnomaly(double E, double tA);
@@ -223,21 +274,29 @@ public class Orbit
     public extern Vector3d getRelativePositionFromEccAnomaly(double E);
     public extern Vector3d getRelativePositionFromMeanAnomaly(double M);
     public extern Vector3d getRelativePositionFromTrueAnomaly(double tA);
+    /// <summary>
+    /// The velocity of the orbiting object, {World, Primary}.
+    /// </summary>
     public extern Vector3d GetRelativeVel();
+    /// <summary>
+    /// The velocity of a hypothetical object, located where the orbiting object
+    /// is, and at rest in the ConditionallyRotating[refBody] frame,
+    /// {AliceWorld, BodyCentre[refBody]}.
+    /// In other words, velocity of the ConditionallyRotating[refBody] frame in the
+    /// BodyCentre[refBody] frame at the position of the orbiting object (AliceWorld axes).
+    /// Note: this only depends on the orbital position, not on the orbital velocity.
+    /// </summary>
     public extern Vector3d GetRotFrameVel(CelestialBody refBody);
     public extern double getTrueAnomaly(double E);
     public extern double GetTrueAnomalyOfZupVector(Vector3d vector);
     public extern Vector3d getTruePositionAtUT(double UT);
     public extern double GetUTforTrueAnomaly(double tA, double wrapAfterSeconds);
     /// <summary>
-    /// The current orbital velocity of the orbiting body. Unlike most other methods of the orbit
-    /// class, the returned vector seems to already be in world coordinates and doesn't need to have
-    /// its Y and Z axes flipped. (Y and Z axes already being flipped is confirmed for V0.23.5)
+    /// The velocity of the orbiting object, {World, ActiveVesselPrimary}.
     /// </summary>
-    /// <returns>Orbital velocity vector at current time.</returns>
     public extern Vector3d GetVel();
     /// <summary>
-    /// like GetVel but adjusted for the rotational velocity of the body the vessel is orbiting, presumably?
+    /// The velocity of the orbiting object, {World, ActiveVesselPrimaryConditionallyRotating}.
     /// </summary>
     public extern Vector3d GetWorldSpaceVel();
     public extern void Init();
