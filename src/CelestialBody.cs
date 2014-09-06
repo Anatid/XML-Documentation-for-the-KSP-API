@@ -165,6 +165,10 @@ public class CelestialBody /*: MonoBehaviour, ITargetable, IDiscoverable*/
     /// <returns>Altitude in meters</returns>
     public extern double GetAltitude(Vector3d worldPos);
     public extern Bounds getBounds();
+    /// <summary>
+    /// The velocity of the CelestialBody, {AliceWorld, Sun}. (See Orbit.cs for
+    /// the reference frame definitions).
+    /// </summary>
     public extern Vector3d GetFrameVel();
     public extern Vector3d GetFrameVelAtUT(double UT);
     public extern Vector3 GetFwdVector();
