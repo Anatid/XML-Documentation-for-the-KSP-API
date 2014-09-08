@@ -1,8 +1,4 @@
-﻿#region Assembly Assembly-CSharp.dll, v1.0.0.0
-// H:\0.24.2 dev\KSP_x64_Data\Managed\Assembly-CSharp.dll
-#endregion
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
 
@@ -21,11 +17,11 @@ public class BaseActionList : List<BaseAction>
     /// </summary>
     public Part part;
 
-    public BaseActionList(Part part, PartModule module);
+    public extern BaseActionList(Part part, PartModule module);
 
-    public BaseAction this[string name] { get; }
+    public extern BaseAction this[string name] { get; }
 
-    public bool Contains(KSPActionGroup group);
-    public void OnLoad(ConfigNode node);
-    public void OnSave(ConfigNode node);
+    public extern bool Contains(KSPActionGroup group);
+    public extern void OnLoad(ConfigNode node);
+    public extern void OnSave(ConfigNode node);
 }

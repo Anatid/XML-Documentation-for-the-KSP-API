@@ -477,6 +477,79 @@
             The object that gets cloned when you create a new instance of this part in the editor?
             </summary>
         </member>
+        <member name="T:BaseAction">
+            <summary>
+            A BaseAction object is the basic action object.
+            There is one of these automatically created for each 'KSPAction' field in a partModule
+            </summary>
+        </member>
+        <member name="F:BaseAction.actionGroup">
+            <summary>
+            Unconfirmed: The action groups this action is currently assigned to.
+            </summary>
+        </member>
+        <member name="F:BaseAction.active">
+            <summary>
+            Is this action activated?
+            </summary>
+        </member>
+        <member name="F:BaseAction.defaultActionGroup">
+             <summary>
+            Unconfirmed: Assign this action to action groups upon creation ('Gear' group for landing legs)
+             </summary>
+        </member>
+        <member name="F:BaseAction.guiName">
+            <summary>
+            Name shown in editor action groups panel
+            </summary>
+        </member>
+        <member name="F:BaseAction.listParent">
+            <summary>
+            Information about what the action is attached to.
+            listParent.module = partModule this action is a memeber of
+            listParent.part = part this action is a member of
+            </summary>
+        </member>
+        <member name="F:BaseAction.name">
+            <summary>
+            Name of the action group as seen in code where the KSPAction field exists
+            </summary>
+        </member>
+        <member name="M:BaseAction.Invoke(KSPActionParam)">
+            <summary>
+            Activate this action. Note that there is no toggle activation, you must check state yourself in code
+            and activate or deactivate as appropriate
+            
+            **Example code start to activate an action: KSP version 0.24.2**
+            
+            <code>
+            KSPActionParam actParam = new KSPActionParam(KSPActionGroup.None, KSPActionType.Activate); //okay to create this new just before invoking
+            exampleAction.Invoke(actParam); //action defined as a KSPAction in a partModule
+            </code>
+            
+            **Example code start to deactivate an action: KSP version 0.24.2**
+            
+            <code>
+            KSPActionParam actParam = new KSPActionParam(KSPActionGroup.None, KSPActionType.Deactivate); //okay to create this new just before invoking
+            exampleAction.Invoke(actParam); //action defined as a KSPAction in a partModule
+            </code>
+            </summary>
+        </member>
+        <member name="T:BaseActionList">
+            <summary>
+            A BaseActionList is an object to manipulate actions.
+            </summary>
+        </member>
+        <member name="F:BaseActionList.module">
+            <summary>
+            The partModule this list of actions belongs to
+            </summary>
+        </member>
+        <member name="F:BaseActionList.part">
+            <summary>
+            The Part this list of actions belongs to
+            </summary>
+        </member>
         <member name="T:KSP.IO.BinaryReader">
             <summary>
             Identical to System.IO.BinaryReader, but with added IDisposable methods (for use in using structures), and a factory method instead of constructors.

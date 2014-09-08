@@ -1,8 +1,4 @@
-﻿#region Assembly Assembly-CSharp.dll, v1.0.0.0
-// H:\0.24.2 dev\KSP_x64_Data\Managed\Assembly-CSharp.dll
-#endregion
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 /// <summary>
@@ -39,33 +35,37 @@ public class BaseAction
     /// </summary>
     public string name;
 
-    public BaseAction(BaseActionList listParent, string name, BaseActionDelegate onEvent, KSPAction actionAttr);
+    public extern BaseAction(BaseActionList listParent, string name, BaseActionDelegate onEvent, KSPAction actionAttr);
 
-    public static int ActionGroupsLength { get; }
-    protected BaseActionDelegate onEvent { get; }
+    public static extern int ActionGroupsLength { get; }
+    protected extern BaseActionDelegate onEvent { get; }
 
-    public static bool ContainsNonDefaultActions(Part p);
-    public static List<BaseAction> CreateActionList(List<Part> parts, KSPActionGroup group, bool include);
-    public static List<BaseAction> CreateActionList(Part p, KSPActionGroup group, bool include);
-    public static List<bool> CreateGroupList(List<Part> parts);
-    public static List<bool> CreateGroupList(Part p);
-    public static void FireAction(List<Part> parts, KSPActionGroup group, KSPActionType type);
-    public static int GetGroupIndex(KSPActionGroup group);
+    public static extern bool ContainsNonDefaultActions(Part p);
+    public static extern List<BaseAction> CreateActionList(List<Part> parts, KSPActionGroup group, bool include);
+    public static extern List<BaseAction> CreateActionList(Part p, KSPActionGroup group, bool include);
+    public static extern List<bool> CreateGroupList(List<Part> parts);
+    public static extern List<bool> CreateGroupList(Part p);
+    public static extern void FireAction(List<Part> parts, KSPActionGroup group, KSPActionType type);
+    public static extern int GetGroupIndex(KSPActionGroup group);
     /// <summary>
     /// Activate this action. Note that there is no toggle activation, you must check state yourself in code
     /// and activate or deactivate as appropriate
     /// 
     /// **Example code start to activate an action: KSP version 0.24.2**
+    /// 
+    /// <code>
     /// KSPActionParam actParam = new KSPActionParam(KSPActionGroup.None, KSPActionType.Activate); //okay to create this new just before invoking
     /// exampleAction.Invoke(actParam); //action defined as a KSPAction in a partModule
-    /// **End example code**
+    /// </code>
     /// 
     /// **Example code start to deactivate an action: KSP version 0.24.2**
+    /// 
+    /// <code>
     /// KSPActionParam actParam = new KSPActionParam(KSPActionGroup.None, KSPActionType.Deactivate); //okay to create this new just before invoking
     /// exampleAction.Invoke(actParam); //action defined as a KSPAction in a partModule
-    /// **End example code**
+    /// </code>
     /// </summary>
-    public void Invoke(KSPActionParam param);
-    public void OnLoad(ConfigNode node);
-    public void OnSave(ConfigNode node);
+    public extern void Invoke(KSPActionParam param);
+    public extern void OnLoad(ConfigNode node);
+    public extern void OnSave(ConfigNode node);
 }
