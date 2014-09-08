@@ -1,10 +1,10 @@
 var searchData=
 [
   ['acceleration',['acceleration',['../class_vessel.html#a2147b89ed4895e8f1a8b8d2f38a356dd',1,'Vessel']]],
-  ['actiongroup',['actionGroup',['../class_k_s_p_action.html#a301b3d045f3cc0cd779ea7f2976f9d1d',1,'KSPAction']]],
+  ['actiongroup',['actionGroup',['../class_base_action.html#ae406fd4aa6a3393e566a1c2b6f8959f4',1,'BaseAction.actionGroup()'],['../class_k_s_p_action.html#a301b3d045f3cc0cd779ea7f2976f9d1d',1,'KSPAction.actionGroup()']]],
   ['actionpanelbtn',['actionPanelBtn',['../class_editor_logic.html#a9408fa0408c0aadcdd72649e0ece9364',1,'EditorLogic']]],
   ['activatesevenifdisconnected',['ActivatesEvenIfDisconnected',['../class_part.html#a97cc0f47afa3f0c8de78846558bc7ef6',1,'Part']]],
-  ['active',['active',['../class_k_s_p_event.html#a0f673ba49f60c7308fd650725719e60c',1,'KSPEvent']]],
+  ['active',['active',['../class_base_action.html#a3f8f7ae1e59178e1cf015653a74cb323',1,'BaseAction.active()'],['../class_k_s_p_event.html#a0f673ba49f60c7308fd650725719e60c',1,'KSPEvent.active()']]],
   ['activemessages',['activeMessages',['../class_screen_messages.html#a2c8e2530562869dc59a0ffd4e2464644',1,'ScreenMessages']]],
   ['activepatch',['activePatch',['../class_orbit.html#a488229aa4687ba8ffcd23dce27353eb6',1,'Orbit']]],
   ['activetarget',['activeTarget',['../class_flight_globals.html#a04d4b46890ab2e6a8e27da66a71bc664',1,'FlightGlobals']]],

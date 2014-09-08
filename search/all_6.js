@@ -50,6 +50,7 @@ var searchData=
   ['getfuelreqid',['getFuelReqId',['../class_part.html#a47d06f12b920d8f6dbb87b1f54fff31d',1,'Part']]],
   ['getfwdvector',['GetFwdVector',['../class_celestial_body.html#a3933c2b48e6f6fa3143f29daf0b55ab9',1,'CelestialBody.GetFwdVector()'],['../class_vessel.html#aadf029702f4aa08932620c9d1015a5b3',1,'Vessel.GetFwdVector()']]],
   ['getgeeforceatposition',['getGeeForceAtPosition',['../class_flight_globals.html#a18a409579d72eeac43da4f525a45630e',1,'FlightGlobals']]],
+  ['getgroupindex',['GetGroupIndex',['../class_base_action.html#a74d5935f73c848fab128d9a377483b41',1,'BaseAction']]],
   ['gethashcode',['GetHashCode',['../struct_vector3d.html#ae5f767fee1fd6c803c88fba7584271d2',1,'Vector3d']]],
   ['getheightfromsurface',['GetHeightFromSurface',['../class_vessel.html#a42e46a2e801f7cf10711c7ccf3b2fddb',1,'Vessel']]],
   ['getheightfromterrain',['GetHeightFromTerrain',['../class_vessel.html#af88d08478006630764e50904694d1539',1,'Vessel']]],
@@ -148,7 +149,7 @@ var searchData=
   ['guidecouple',['GUIDecouple',['../class_decoupler_g_u_i.html#ab876f3a061cab7e464ec89f6abbe404c',1,'DecouplerGUI']]],
   ['guiformat',['guiFormat',['../class_k_s_p_field.html#a0da463365b5491ebd182a81a8962ab1d',1,'KSPField']]],
   ['guiicon',['guiIcon',['../class_k_s_p_event.html#a4a745922f63f8ea7e6a6f7530b08ad87',1,'KSPEvent']]],
-  ['guiname',['guiName',['../class_k_s_p_action.html#a9b7249bacd3a8d42468a0c0fef8b7bc7',1,'KSPAction.guiName()'],['../class_k_s_p_event.html#a90414a99fd4ca8b67874464643dd3052',1,'KSPEvent.guiName()'],['../class_k_s_p_field.html#aeea531bfa5f20ab5618f8d2a4fb0c688',1,'KSPField.guiName()'],['../class_part_module.html#aa4623c41e0baf90e45f42ca25ea7fcf6',1,'PartModule.GUIName()']]],
+  ['guiname',['guiName',['../class_base_action.html#a2260774fbc93d7b4f64368fa27357d28',1,'BaseAction.guiName()'],['../class_k_s_p_action.html#a9b7249bacd3a8d42468a0c0fef8b7bc7',1,'KSPAction.guiName()'],['../class_k_s_p_event.html#a90414a99fd4ca8b67874464643dd3052',1,'KSPEvent.guiName()'],['../class_k_s_p_field.html#aeea531bfa5f20ab5618f8d2a4fb0c688',1,'KSPField.guiName()'],['../class_part_module.html#aa4623c41e0baf90e45f42ca25ea7fcf6',1,'PartModule.GUIName()']]],
   ['guiskinname',['guiSkinName',['../class_tutorial_scenario.html#a313da02d0d548f98436e2f24e07724ec',1,'TutorialScenario']]],
   ['guiunits',['guiUnits',['../class_k_s_p_field.html#a440cf52a12bfd30d9c13bb713b927609',1,'KSPField']]]
 ];

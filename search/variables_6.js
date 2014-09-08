@@ -16,7 +16,7 @@ var searchData=
   ['guiactiveunfocused',['guiActiveUnfocused',['../class_k_s_p_event.html#acf4d65c04e690df716621697414a3f22',1,'KSPEvent']]],
   ['guiformat',['guiFormat',['../class_k_s_p_field.html#a0da463365b5491ebd182a81a8962ab1d',1,'KSPField']]],
   ['guiicon',['guiIcon',['../class_k_s_p_event.html#a4a745922f63f8ea7e6a6f7530b08ad87',1,'KSPEvent']]],
-  ['guiname',['guiName',['../class_k_s_p_action.html#a9b7249bacd3a8d42468a0c0fef8b7bc7',1,'KSPAction.guiName()'],['../class_k_s_p_event.html#a90414a99fd4ca8b67874464643dd3052',1,'KSPEvent.guiName()'],['../class_k_s_p_field.html#aeea531bfa5f20ab5618f8d2a4fb0c688',1,'KSPField.guiName()']]],
+  ['guiname',['guiName',['../class_base_action.html#a2260774fbc93d7b4f64368fa27357d28',1,'BaseAction.guiName()'],['../class_k_s_p_action.html#a9b7249bacd3a8d42468a0c0fef8b7bc7',1,'KSPAction.guiName()'],['../class_k_s_p_event.html#a90414a99fd4ca8b67874464643dd3052',1,'KSPEvent.guiName()'],['../class_k_s_p_field.html#aeea531bfa5f20ab5618f8d2a4fb0c688',1,'KSPField.guiName()']]],
   ['guiskinname',['guiSkinName',['../class_tutorial_scenario.html#a313da02d0d548f98436e2f24e07724ec',1,'TutorialScenario']]],
   ['guiunits',['guiUnits',['../class_k_s_p_field.html#a440cf52a12bfd30d9c13bb713b927609',1,'KSPField']]]
 ];

@@ -36,6 +36,7 @@ var searchData=
   ['getfuelreqid',['getFuelReqId',['../class_part.html#a47d06f12b920d8f6dbb87b1f54fff31d',1,'Part']]],
   ['getfwdvector',['GetFwdVector',['../class_celestial_body.html#a3933c2b48e6f6fa3143f29daf0b55ab9',1,'CelestialBody.GetFwdVector()'],['../class_vessel.html#aadf029702f4aa08932620c9d1015a5b3',1,'Vessel.GetFwdVector()']]],
   ['getgeeforceatposition',['getGeeForceAtPosition',['../class_flight_globals.html#a18a409579d72eeac43da4f525a45630e',1,'FlightGlobals']]],
+  ['getgroupindex',['GetGroupIndex',['../class_base_action.html#a74d5935f73c848fab128d9a377483b41',1,'BaseAction']]],
   ['gethashcode',['GetHashCode',['../struct_vector3d.html#ae5f767fee1fd6c803c88fba7584271d2',1,'Vector3d']]],
   ['getheightfromsurface',['GetHeightFromSurface',['../class_vessel.html#a42e46a2e801f7cf10711c7ccf3b2fddb',1,'Vessel']]],
   ['getheightfromterrain',['GetHeightFromTerrain',['../class_vessel.html#af88d08478006630764e50904694d1539',1,'Vessel']]],

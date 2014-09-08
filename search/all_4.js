@@ -35,7 +35,7 @@ var searchData=
   ['editorlogic',['EditorLogic',['../class_editor_logic.html',1,'EditorLogic'],['../class_editor_logic.html#a562629c643a3dbdeb03671dfbed89e66',1,'EditorLogic.EditorLogic()']]],
   ['editorlogic_2ecs',['EditorLogic.cs',['../_editor_logic_8cs.html',1,'']]],
   ['editormode',['EditorMode',['../class_editor_logic.html#a9c43b6aa2083cf4f1d69ca0d6604a3d0',1,'EditorLogic']]],
-  ['editorscreen',['editorScreen',['../class_editor_logic.html#a72a584852de6d5756c881dc2335db036',1,'EditorLogic.editorScreen()'],['../class_editor_logic.html#a2be88cd56ab59690b4a8f68edea55e99',1,'EditorLogic.EditorScreen()']]],
+  ['editorscreen',['EditorScreen',['../class_editor_logic.html#a2be88cd56ab59690b4a8f68edea55e99',1,'EditorLogic.EditorScreen()'],['../class_editor_logic.html#a72a584852de6d5756c881dc2335db036',1,'EditorLogic.editorScreen()']]],
   ['editorsph',['EditorSPH',['../class_k_s_p_addon.html#aad4794e3fdfd545c576534be224f0b9ba67819461a756e3d53dac04dbd3a8f38c',1,'KSPAddon']]],
   ['editorstate',['EditorState',['../class_editor_logic.html#a14b695667a7a9b7be33fa8409f4af79b',1,'EditorLogic']]],
   ['editortype',['editorType',['../class_editor_logic.html#a949fd4e64264ec8ba0747a2d46b22334',1,'EditorLogic']]],

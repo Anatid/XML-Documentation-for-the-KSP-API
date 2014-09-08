@@ -10,5 +10,5 @@ var searchData=
   ['pea',['PeA',['../class_orbit.html#a5d2fc15df21ea351193124dc73939192',1,'Orbit']]],
   ['per',['PeR',['../class_orbit.html#a5834c2b15205c7a07032c2b2a653da1b',1,'Orbit']]],
   ['pivotrotation',['pivotRotation',['../class_flight_camera.html#a46e961a6b215bba841b5a3ace99efff6',1,'FlightCamera.pivotRotation()'],['../class_planetarium_camera.html#a8602494117c20ae9df164723d47bc444',1,'PlanetariumCamera.pivotRotation()']]],
-  ['position',['position',['../class_celestial_body.html#a4901f4a6f4e3d6d77b7b5bcb99ccee58',1,'CelestialBody.position()'],['../class_k_s_p_1_1_i_o_1_1_memory_stream.html#a5150d415061374b1dbb1b4c85ef860c9',1,'KSP.IO.MemoryStream.Position()']]]
+  ['position',['Position',['../class_k_s_p_1_1_i_o_1_1_memory_stream.html#a5150d415061374b1dbb1b4c85ef860c9',1,'KSP.IO.MemoryStream.Position()'],['../class_celestial_body.html#a4901f4a6f4e3d6d77b7b5bcb99ccee58',1,'CelestialBody.position()']]]
 ];

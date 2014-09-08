@@ -30,7 +30,7 @@ var searchData=
   ['highestpoint',['highestPoint',['../class_p_asteroid.html#adadce98deedb0007119e1d65a6584e0c',1,'PAsteroid']]],
   ['highlightcolor',['highlightColor',['../class_part.html#a4c0c85306edf017c16a1fc67a455541b',1,'Part']]],
   ['highlightrecurse',['highlightRecurse',['../class_part.html#af69f399afb9fca387ac40d4a588e2327',1,'Part']]],
-  ['highlighttype',['HighlightType',['../class_part.html#a072e778b8c1a1ac2718613fb3409d9cd',1,'Part.HighlightType()'],['../class_part.html#ae5256e344902aec6db79ab92a3c54d0e',1,'Part.highlightType()']]],
+  ['highlighttype',['highlightType',['../class_part.html#ae5256e344902aec6db79ab92a3c54d0e',1,'Part.highlightType()'],['../class_part.html#a072e778b8c1a1ac2718613fb3409d9cd',1,'Part.HighlightType()']]],
   ['highlogic',['HighLogic',['../class_high_logic.html',1,'HighLogic'],['../class_high_logic.html#a72db4e1f3bd1b87d5f6e0a179ea39e33',1,'HighLogic.HighLogic()']]],
   ['highlogic_2ecs',['HighLogic.cs',['../_high_logic_8cs.html',1,'']]],
   ['hillsphere',['hillSphere',['../class_celestial_body.html#ab4de9a062a1180879d6778699e7eacd7',1,'CelestialBody']]],

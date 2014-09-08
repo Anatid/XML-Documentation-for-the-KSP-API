@@ -27,7 +27,7 @@ var searchData=
   ['frozen',['frozen',['../class_part.html#ae3942685347672c9d63b587006351226',1,'Part']]],
   ['fsm',['fsm',['../class_kerbal_e_v_a.html#a11b2fb277b51a1d007140303c94185b6',1,'KerbalEVA']]],
   ['fsmstarted',['fsmStarted',['../class_kerbal_f_s_m.html#a3e470b9a02be6f0bf9e4d4577aa4c484',1,'KerbalFSM']]],
-  ['fuel',['fuel',['../class_fuel_tank.html#a56a2e9d5f7951267a8197ea2472c0c3c',1,'FuelTank.fuel()'],['../class_fuel_tank_g_u_i.html#adb7dcb5b7840112820f42caba603661f',1,'FuelTankGUI.fuel()'],['../class_kerbal_e_v_a.html#a73371b6f91e364d4e8a63c010dbe5a4e',1,'KerbalEVA.Fuel()']]],
+  ['fuel',['Fuel',['../class_kerbal_e_v_a.html#a73371b6f91e364d4e8a63c010dbe5a4e',1,'KerbalEVA.Fuel()'],['../class_fuel_tank.html#a56a2e9d5f7951267a8197ea2472c0c3c',1,'FuelTank.fuel()'],['../class_fuel_tank_g_u_i.html#adb7dcb5b7840112820f42caba603661f',1,'FuelTankGUI.fuel()']]],
   ['fuelcapacity',['FuelCapacity',['../class_kerbal_e_v_a.html#ae6e0ff834d122662b565c6724f3672c1',1,'KerbalEVA']]],
   ['fuelconsumption',['FuelConsumption',['../class_kerbal_e_v_a.html#ad3a821dbeea93cc7fee6b9b4919e6070',1,'KerbalEVA']]],
   ['fuelcrossfeed',['fuelCrossFeed',['../class_part.html#a04e43bc62d055740f516700081012a16',1,'Part']]],
