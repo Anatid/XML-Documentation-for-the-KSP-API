@@ -1,19 +1,21 @@
 You can find me on #kspmodders or the KSP forums as **The_Duck**.
 
-How to use this documentation
------------------------------
+Web documentation
+-----------------
+
+This project is used to build the **[web documentation](http://anatid.github.io/XML-Documentation-for-the-KSP-API/index.html)** using Doxygen.
+
+IDE integration
+---------------
+
+To get documentation in tooltips and the object browser in Visual Studio or MonoDevelop:
 
 1. Download **[Assembly-CSharp.xml](https://raw.githubusercontent.com/Anatid/XML-Documentation-for-the-KSP-API/master/Assembly-CSharp.xml)** and **[UnityEngine.xml](https://raw.githubusercontent.com/Anatid/XML-Documentation-for-the-KSP-API/master/UnityEngine.xml)**
 2. Place Assembly-CSharp.xml and UnityEngine.xml in the same place as the Assembly-CSharp.dll and UnityEngine.dll that you link to when building your KSP plugin (the KSP_Data/Managed folder). 
-3. Restart Visual Studio.
+3. Restart your IDE.
 
-Now when you use the Object Browser to examine the contents of Assembly-CSharp.dll you will find helpful comments for some classes. These comments will also show up through IntelliSense when writing code.
+Now when you use the object browser to examine the contents of Assembly-CSharp.dll you will find helpful comments for some classes. These comments will also show up through IntelliSense when writing code.
 
-Probably you can use Assembly-CSharp.xml in MonoDevelop too but I don't use MonoDevelop so I don't know.
-
-### Web documentation
-
-You can also check out **[this web version](http://anatid.github.io/XML-Documentation-for-the-KSP-API/annotated.html)** of the documentation, generated using Doxygen. Currently only classes that have at least some documentation appear in the web documentation.
 
 How to contribute to this documentation
 ---------------------------------------
