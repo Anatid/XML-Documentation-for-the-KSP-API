@@ -186,12 +186,13 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ad072318a09b179302ca45be500a77c4c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module_engines.html#ad072318a09b179302ca45be500a77c4c">autoPositionFX</a></td></tr>
 <tr class="separator:ad072318a09b179302ca45be500a77c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ab480829cca3a4a45edd4579182c0dc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module_engines.html#a6ab480829cca3a4a45edd4579182c0dc">currentThrottle</a></td></tr>
+<tr class="memdesc:a6ab480829cca3a4a45edd4579182c0dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current <em>internal</em> throttle of the engine, which may be different from the current throttle set by the player if the  <a href="#a6ab480829cca3a4a45edd4579182c0dc">More...</a><br /></td></tr>
 <tr class="separator:a6ab480829cca3a4a45edd4579182c0dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ea45fd55aaf2293a1f2d48da4f23287"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module_engines.html#a0ea45fd55aaf2293a1f2d48da4f23287">engineAccelerationSpeed</a></td></tr>
-<tr class="memdesc:a0ea45fd55aaf2293a1f2d48da4f23287"><td class="mdescLeft">&#160;</td><td class="mdescRight">How quickly the engine spools up? (in what units?)  <a href="#a0ea45fd55aaf2293a1f2d48da4f23287">More...</a><br /></td></tr>
+<tr class="memdesc:a0ea45fd55aaf2293a1f2d48da4f23287"><td class="mdescLeft">&#160;</td><td class="mdescRight">How quickly the engine spools up when the user-set throttle is higher than <code>currentThrottle</code>.  <a href="#a0ea45fd55aaf2293a1f2d48da4f23287">More...</a><br /></td></tr>
 <tr class="separator:a0ea45fd55aaf2293a1f2d48da4f23287"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd32cda26c05d88bde7cba63e82060ac"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module_engines.html#abd32cda26c05d88bde7cba63e82060ac">engineDecelerationSpeed</a></td></tr>
-<tr class="memdesc:abd32cda26c05d88bde7cba63e82060ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">How quickly the eninge spools down? (in what units?)  <a href="#abd32cda26c05d88bde7cba63e82060ac">More...</a><br /></td></tr>
+<tr class="memdesc:abd32cda26c05d88bde7cba63e82060ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">How quickly the engine spools down when the user-set throttle is higher than <code>currentThrottle</code>.  <a href="#abd32cda26c05d88bde7cba63e82060ac">More...</a><br /></td></tr>
 <tr class="separator:abd32cda26c05d88bde7cba63e82060ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b30194aa379f2bad0491160a4bbf310"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module_engines.html#a6b30194aa379f2bad0491160a4bbf310">EngineIgnited</a></td></tr>
 <tr class="memdesc:a6b30194aa379f2bad0491160a4bbf310"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the engine has ever been turned on?  <a href="#a6b30194aa379f2bad0491160a4bbf310">More...</a><br /></td></tr>
@@ -249,12 +250,13 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a681c620cac75f2f139e624bef68fef01"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module_engines.html#a681c620cac75f2f139e624bef68fef01">thrustVectorTransformName</a></td></tr>
 <tr class="separator:a681c620cac75f2f139e624bef68fef01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1b8f56b118007f60f0ece60f50391dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module_engines.html#ab1b8f56b118007f60f0ece60f50391dd">useEngineResponseTime</a></td></tr>
+<tr class="memdesc:ab1b8f56b118007f60f0ece60f50391dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the engine has a nonzero spool-up and spool-down time.  <a href="#ab1b8f56b118007f60f0ece60f50391dd">More...</a><br /></td></tr>
 <tr class="separator:ab1b8f56b118007f60f0ece60f50391dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00b44aa87967aee97834ec74b03dd15e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module_engines.html#a00b44aa87967aee97834ec74b03dd15e">useVelocityCurve</a></td></tr>
 <tr class="memdesc:a00b44aa87967aee97834ec74b03dd15e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this engine's thrust varies with airspeed?  <a href="#a00b44aa87967aee97834ec74b03dd15e">More...</a><br /></td></tr>
 <tr class="separator:a00b44aa87967aee97834ec74b03dd15e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaec330ee4df1d7a1834e76537e6c2e56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_float_curve.html">FloatCurve</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module_engines.html#aaec330ee4df1d7a1834e76537e6c2e56">velocityCurve</a></td></tr>
-<tr class="memdesc:aaec330ee4df1d7a1834e76537e6c2e56"><td class="mdescLeft">&#160;</td><td class="mdescRight">How this engines thrust varies with airspeed?  <a href="#aaec330ee4df1d7a1834e76537e6c2e56">More...</a><br /></td></tr>
+<tr class="memdesc:aaec330ee4df1d7a1834e76537e6c2e56"><td class="mdescLeft">&#160;</td><td class="mdescRight">How this engine's thrust varies with airspeed?  <a href="#aaec330ee4df1d7a1834e76537e6c2e56">More...</a><br /></td></tr>
 <tr class="separator:aaec330ee4df1d7a1834e76537e6c2e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_part_module"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_part_module')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_part_module.html">PartModule</a></td></tr>
 <tr class="memitem:aab6f8aa951ef97d3f29098361f2e7db0 inherit pub_attribs_class_part_module"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_part_module.html#aab6f8aa951ef97d3f29098361f2e7db0">isEnabled</a></td></tr>
@@ -776,6 +778,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>The current <em>internal</em> throttle of the engine, which may be different from the current throttle set by the player if the </p>
+<p><code>useEngineResponseTime</code> is true. </p>
+
 </div>
 </div>
 <a class="anchor" id="a0ea45fd55aaf2293a1f2d48da4f23287"></a>
@@ -788,7 +793,10 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>How quickly the engine spools up? (in what units?) </p>
+<p>How quickly the engine spools up when the user-set throttle is higher than <code>currentThrottle</code>. </p>
+<p>Each frame, if the user throttle is higher than the engine's <code>currentThrottle</code>, <code>currentThrottle</code> is updated according to the formula</p>
+<div class="fragment"><div class="line"><a class="code" href="class_module_engines.html#a6ab480829cca3a4a45edd4579182c0dc">currentThrottle</a> += (user throttle - <a class="code" href="class_module_engines.html#a6ab480829cca3a4a45edd4579182c0dc">currentThrottle</a>) * <a class="code" href="class_module_engines.html#a0ea45fd55aaf2293a1f2d48da4f23287">engineAccelerationSpeed</a> * dt</div>
+</div><!-- fragment --><p><code>engineAccelerationSpeed</code> has units of inverse seconds. </p>
 
 </div>
 </div>
@@ -802,7 +810,10 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>How quickly the eninge spools down? (in what units?) </p>
+<p>How quickly the engine spools down when the user-set throttle is higher than <code>currentThrottle</code>. </p>
+<p>Each frame, if the user throttle is lower than the engine's <code>currentThrottle</code>, <code>currentThrottle</code> is updated according to the formula</p>
+<div class="fragment"><div class="line"><a class="code" href="class_module_engines.html#a6ab480829cca3a4a45edd4579182c0dc">currentThrottle</a> += (user throttle - <a class="code" href="class_module_engines.html#a6ab480829cca3a4a45edd4579182c0dc">currentThrottle</a>) * <a class="code" href="class_module_engines.html#abd32cda26c05d88bde7cba63e82060ac">engineDecelerationSpeed</a> * dt</div>
+</div><!-- fragment --><p><code>engineDecelerationSpeed</code> has units of inverse seconds. </p>
 
 </div>
 </div>
@@ -1121,6 +1132,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Whether the engine has a nonzero spool-up and spool-down time. </p>
+<p>If <code>useEngineResponseTime</code> is true, then the engine does not spool up or down instantly when the throttle changes, but uses the <code>engineAccelerationSpeed</code> and <code>engineDecelerationSpeed</code> variables. </p>
+
 </div>
 </div>
 <a class="anchor" id="a00b44aa87967aee97834ec74b03dd15e"></a>
@@ -1147,7 +1161,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>How this engines thrust varies with airspeed? </p>
+<p>How this engine's thrust varies with airspeed? </p>
 
 </div>
 </div>
@@ -1220,7 +1234,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 7 2014 23:25:06 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 15 2014 19:41:39 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
