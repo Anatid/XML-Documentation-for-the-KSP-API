@@ -25,15 +25,39 @@ public class ModuleEngines : PartModule
     [KSPField]
     public bool autoPositionFX;
     [KSPField(isPersistant = true)]
+    /// <summary>
+    /// The current *internal* throttle of the engine, which may be different from the current
+    /// throttle set by the player if the <code>useEngineResponseTime</code> is true.
+    /// </summary>
     public float currentThrottle;
     /// <summary>
-    /// How quickly the engine spools up? (in what units?)
+    /// How quickly the engine spools up when the user-set throttle is higher than 
+    /// <c>currentThrottle</c>. 
     /// </summary>
+    /// <remarks>
+    /// Each frame, if the user throttle is higher than
+    /// the engine's <c>currentThrottle</c>, <c>currentThrottle</c>
+    /// is updated according to the formula
+    /// 
+    /// <code>currentThrottle += (user throttle - currentThrottle) * engineAccelerationSpeed * dt</code>
+    /// 
+    /// <c>engineAccelerationSpeed</c> has units of inverse seconds.
+    /// </remarks>
     [KSPField]
     public float engineAccelerationSpeed;
     /// <summary>
-    /// How quickly the eninge spools down? (in what units?)
+    /// How quickly the engine spools down when the user-set throttle is higher than 
+    /// <c>currentThrottle</c>. 
     /// </summary>
+    /// <remarks>
+    /// Each frame, if the user throttle is lower than
+    /// the engine's <c>currentThrottle</c>, <c>currentThrottle</c>
+    /// is updated according to the formula
+    /// 
+    /// <code>currentThrottle += (user throttle - currentThrottle) * engineDecelerationSpeed * dt</code>
+    /// 
+    /// <c>engineDecelerationSpeed</c> has units of inverse seconds.
+    /// </remarks>
     [KSPField]
     public float engineDecelerationSpeed;
     /// <summary>
@@ -105,6 +129,15 @@ public class ModuleEngines : PartModule
     public List<Transform> thrustTransforms;
     [KSPField]
     public string thrustVectorTransformName;
+    /// <summary>
+    /// Whether the engine has a nonzero spool-up and spool-down time.
+    /// </summary>
+    /// <remarks>
+    /// If <c>useEngineResponseTime</c> is true, then the engine does not
+    /// spool up or down instantly when the throttle changes, but uses the
+    /// <c>engineAccelerationSpeed</c> and <c>engineDecelerationSpeed</c>
+    /// variables.
+    /// </remarks>
     [KSPField]
     public bool useEngineResponseTime;
     /// <summary>
@@ -113,7 +146,7 @@ public class ModuleEngines : PartModule
     [KSPField]
     public bool useVelocityCurve;
     /// <summary>
-    /// How this engines thrust varies with airspeed?
+    /// How this engine's thrust varies with airspeed?
     /// </summary>
     [KSPField]
     public FloatCurve velocityCurve;

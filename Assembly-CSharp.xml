@@ -4017,13 +4017,33 @@
         </member>
         <member name="F:ModuleEngines.engineAccelerationSpeed">
             <summary>
-            How quickly the engine spools up? (in what units?)
+            How quickly the engine spools up when the user-set throttle is higher than 
+            <c>currentThrottle</c>. 
             </summary>
+            <remarks>
+            Each frame, if the user throttle is higher than
+            the engine's <c>currentThrottle</c>, <c>currentThrottle</c>
+            is updated according to the formula
+            
+            <code>currentThrottle += (user throttle - currentThrottle) * engineAccelerationSpeed * dt</code>
+            
+            <c>engineAccelerationSpeed</c> has units of inverse seconds.
+            </remarks>
         </member>
         <member name="F:ModuleEngines.engineDecelerationSpeed">
             <summary>
-            How quickly the eninge spools down? (in what units?)
+            How quickly the engine spools down when the user-set throttle is higher than 
+            <c>currentThrottle</c>. 
             </summary>
+            <remarks>
+            Each frame, if the user throttle is lower than
+            the engine's <c>currentThrottle</c>, <c>currentThrottle</c>
+            is updated according to the formula
+            
+            <code>currentThrottle += (user throttle - currentThrottle) * engineDecelerationSpeed * dt</code>
+            
+            <c>engineDecelerationSpeed</c> has units of inverse seconds.
+            </remarks>
         </member>
         <member name="F:ModuleEngines.EngineIgnited">
             <summary>
@@ -4068,6 +4088,17 @@
             Which component of the transform rotation gives the thrust vector?
             </summary>
         </member>
+        <member name="F:ModuleEngines.useEngineResponseTime">
+            <summary>
+            Whether the engine has a nonzero spool-up and spool-down time.
+            </summary>
+            <remarks>
+            If <c>useEngineResponseTime</c> is true, then the engine does not
+            spool up or down instantly when the throttle changes, but uses the
+            <c>engineAccelerationSpeed</c> and <c>engineDecelerationSpeed</c>
+            variables.
+            </remarks>
+        </member>
         <member name="F:ModuleEngines.useVelocityCurve">
             <summary>
             Whether this engine's thrust varies with airspeed?
@@ -4075,7 +4106,7 @@
         </member>
         <member name="F:ModuleEngines.velocityCurve">
             <summary>
-            How this engines thrust varies with airspeed?
+            How this engine's thrust varies with airspeed?
             </summary>
         </member>
         <member name="P:ModuleEngines.getFlameoutState">
