@@ -139,10 +139,6 @@ public class CelestialBody /*: MonoBehaviour, ITargetable, IDiscoverable*/
     public extern int flightGlobalsIndex { get; set; }
     public extern string name { get; }
     /// <summary>
-    /// Describes the orbit of this body around its primary.
-    /// </summary>
-    public extern Orbit orbit { get; }
-    /// <summary>
     /// The position of the center of the body, in world coordinates.
     /// </summary>
     public extern Vector3d position { get; set; }
@@ -188,6 +184,7 @@ public class CelestialBody /*: MonoBehaviour, ITargetable, IDiscoverable*/
     public extern double GetLongitude(Vector3d worldPos);
     public extern string GetName();
     public extern Vector3 GetObtVelocity();
+    /// <summary>Deprecated function that throws a NullReferenceException when called. Use GetOrbitDriver() instead.</summary>
     public extern Orbit GetOrbit();
     public extern OrbitDriver GetOrbitDriver();
     public extern Vector3d getPositionAtUT(double UT);
