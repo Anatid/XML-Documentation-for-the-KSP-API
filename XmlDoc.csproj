@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="KspPath.props" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{167FF5EC-2696-46DA-B68B-F90A33F631DF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XmlDoc</RootNamespace>
+    <AssemblyName>XmlDoc</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(KspPath)\KSP_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="UnityEngine">
+      <HintPath>$(KspPath)\KSP_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\ApplicationLauncher.cs" />
+    <Compile Include="src\AtmosphericEngine.cs" />
+    <Compile Include="src\AttachNode.cs" />
+    <Compile Include="src\AvailablePart.cs" />
+    <Compile Include="src\BaseAction.cs" />
+    <Compile Include="src\BaseActionList.cs" />
+    <Compile Include="src\BinaryReader.cs" />
+    <Compile Include="src\BinaryWriter.cs" />
+    <Compile Include="src\CelestialBody.cs" />
+    <Compile Include="src\ConfigNode.cs" />
+    <Compile Include="src\ControlTypes.cs" />
+    <Compile Include="src\Decoupler.cs" />
+    <Compile Include="src\DecouplerGUI.cs" />
+    <Compile Include="src\DiscoverableObjectUtil.cs" />
+    <Compile Include="src\DiscoveryInfo.cs" />
+    <Compile Include="src\DiscoveryLevels.cs" />
+    <Compile Include="src\DockingPort.cs" />
+    <Compile Include="src\EditorLogic.cs" />
+    <Compile Include="src\EventDataT.cs" />
+    <Compile Include="src\EventDataTU.cs" />
+    <Compile Include="src\EventDataTUV.cs" />
+    <Compile Include="src\EventReport.cs" />
+    <Compile Include="src\EventVoid.cs" />
+    <Compile Include="src\File.cs" />
+    <Compile Include="src\FileInfo.cs" />
+    <Compile Include="src\FlightCamera.cs" />
+    <Compile Include="src\FlightCtrlState.cs" />
+    <Compile Include="src\FlightGlobals.cs" />
+    <Compile Include="src\FlightInputHandler.cs" />
+    <Compile Include="src\FloatCurve.cs" />
+    <Compile Include="src\FuelLine.cs" />
+    <Compile Include="src\FuelTank.cs" />
+    <Compile Include="src\FuelTankGUI.cs" />
+    <Compile Include="src\GameEvents.cs" />
+    <Compile Include="src\GamePersistence.cs" />
+    <Compile Include="src\GameScenes.cs" />
+    <Compile Include="src\HighLogic.cs" />
+    <Compile Include="src\IDiscoverable.cs" />
+    <Compile Include="src\InputLockManager.cs" />
+    <Compile Include="src\IOException.cs" />
+    <Compile Include="src\IOUtils.cs" />
+    <Compile Include="src\IScienceDataContainer.cs" />
+    <Compile Include="src\KerbalEVA.cs" />
+    <Compile Include="src\KerbalFSM.cs" />
+    <Compile Include="src\KerbalInstructor.cs" />
+    <Compile Include="src\KFSMEvent.cs" />
+    <Compile Include="src\KFSMState.cs" />
+    <Compile Include="src\Krakensbane.cs" />
+    <Compile Include="src\KSPAction.cs" />
+    <Compile Include="src\KSPAddon.cs" />
+    <Compile Include="src\KSPAssembly.cs" />
+    <Compile Include="src\KSPAssemblyDependency.cs" />
+    <Compile Include="src\KSPEvent.cs" />
+    <Compile Include="src\KSPField.cs" />
+    <Compile Include="src\KSPScenario.cs" />
+    <Compile Include="src\ManeuverNode.cs" />
+    <Compile Include="src\MapView.cs" />
+    <Compile Include="src\MemoryStream.cs" />
+    <Compile Include="src\ModuleAsteroid.cs" />
+    <Compile Include="src\ModuleEngines.cs" />
+    <Compile Include="src\ModuleScienceExperiment.cs" />
+    <Compile Include="src\Orbit.cs" />
+    <Compile Include="src\Part.cs" />
+    <Compile Include="src\PartModule.cs" />
+    <Compile Include="src\PartResource.cs" />
+    <Compile Include="src\PartResourceDefinition.cs" />
+    <Compile Include="src\PartResourceLibrary.cs" />
+    <Compile Include="src\PAsteroid.cs" />
+    <Compile Include="src\PatchedConicSolver.cs" />
+    <Compile Include="src\Planetarium.cs" />
+    <Compile Include="src\PlanetariumCamera.cs" />
+    <Compile Include="src\PluginConfigNode.cs" />
+    <Compile Include="src\PluginConfiguration.cs" />
+    <Compile Include="src\ProceduralAsteroid.cs" />
+    <Compile Include="src\ResourceFlowMode.cs" />
+    <Compile Include="src\ScaledSpace.cs" />
+    <Compile Include="src\ScenarioCreationOptions.cs" />
+    <Compile Include="src\ScenarioDiscoverableObjects.cs" />
+    <Compile Include="src\ScienceData.cs" />
+    <Compile Include="src\ScienceExperiment.cs" />
+    <Compile Include="src\ScienceSubject.cs" />
+    <Compile Include="src\ScreenMessages.cs" />
+    <Compile Include="src\SeekOrigin.cs" />
+    <Compile Include="src\ShipConstruct.cs" />
+    <Compile Include="src\TextReader.cs" />
+    <Compile Include="src\TextWriter.cs" />
+    <Compile Include="src\TimeWarp.cs" />
+    <Compile Include="src\TutorialScenario.cs" />
+    <Compile Include="src\UntrackedObjectClass.cs" />
+    <Compile Include="src\Vector3d.cs" />
+    <Compile Include="src\Vessel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Doxyfile" />
+    <None Include="KspPath.props" />
+    <None Include="README.md" />
+    <None Include="src\main.md" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
