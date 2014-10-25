@@ -84,6 +84,7 @@
     <Compile Include="src\IOException.cs" />
     <Compile Include="src\IOUtils.cs" />
     <Compile Include="src\IScienceDataContainer.cs" />
+    <Compile Include="src\ITargetable.cs" />
     <Compile Include="src\KerbalEVA.cs" />
     <Compile Include="src\KerbalFSM.cs" />
     <Compile Include="src\KerbalInstructor.cs" />
@@ -133,6 +134,7 @@
     <Compile Include="src\UntrackedObjectClass.cs" />
     <Compile Include="src\Vector3d.cs" />
     <Compile Include="src\Vessel.cs" />
+    <Compile Include="src\VesselTargetModes.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Doxyfile" />
