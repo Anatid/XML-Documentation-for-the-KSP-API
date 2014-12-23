@@ -301,7 +301,7 @@ public class Orbit
     /// <summary>
     /// The distance the orbiting object will be from the center of the main body when it reaches the given true anomaly.
     /// </summary>
-    /// <param name="tA">True anomaly (in degrees or radians?)</param>
+    /// <param name="tA">True anomaly (in degrees)</param>
     /// <returns>Distance from the main body's center, in meters</returns>
     public extern double RadiusAtTrueAnomaly(double tA);
     public extern static double SolveClosestApproach(Orbit p, Orbit s, ref double UT, double dT, double threshold, double MinUT, double MaxUT, double epsilon, int maxIterations, ref int iterationCount);
