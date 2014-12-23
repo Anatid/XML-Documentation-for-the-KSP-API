@@ -259,6 +259,13 @@ public class Orbit
     public extern Vector3d getPositionFromEccAnomaly(double E);
     public extern Vector3d getPositionFromMeanAnomaly(double M);
     public extern Vector3d getPositionFromTrueAnomaly(double tA);
+    /// <summary>
+    /// Gets the predicted displacement of the orbiting object from the center of the main
+    /// body at a given time since perigee passage. NOTE: All Vector3d's returned by Orbit class functions have their y and z axes flipped. You have
+    /// to flip these back to get the vectors in world coordinates.
+    /// </summary>
+    /// <param name="T">Time since perigee passage (seconds)</params>
+    /// <returns>Position relative to the main body (YZ flipped)</returns>
     public extern Vector3d getRelativePositionAtT(double T);
     /// <summary>
     /// Gets the predicted displacement of the orbiting object from the center of the main
