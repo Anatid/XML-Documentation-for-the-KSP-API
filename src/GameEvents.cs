@@ -264,7 +264,7 @@ public static class GameEvents
 	/// </summary>
 	public static EventData<Part> onPartActionUIDismiss;
 	/// <summary>
-	/// Triggered when adding a part in the editor, or when docking;
+	/// Triggered when adding a part in the editor, when docking, and when another vessel comes into range and is loaded;
 	/// returns the part and its new parent part
 	/// </summary>
 	public static EventData<GameEvents.HostTargetAction<Part, Part>> onPartAttach;
