@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['data',['data',['../struct_r_d_archives_controller_1_1_report_data.html#a5011d6913581df6f55d12540880ff172',1,'RDArchivesController::ReportData']]],
   ['dataamount',['dataAmount',['../class_science_data.html#a2accf24a1112bfdfcc6a0e4c6139c444',1,'ScienceData']]],
   ['dataiscollectable',['dataIsCollectable',['../class_module_science_experiment.html#a81e42fa31b9b074ca52d08b58d231667',1,'ModuleScienceExperiment']]],
   ['datascale',['dataScale',['../class_science_experiment.html#a95c7062658a9b91b1e438f3fdd36d040',1,'ScienceExperiment.dataScale()'],['../class_science_subject.html#a6a888479023bf63ffd9dd9c4174bf3e0',1,'ScienceSubject.dataScale()']]],
@@ -22,7 +23,7 @@ var searchData=
   ['deltav',['DeltaV',['../class_maneuver_node.html#a75a0905cb441d1e37698a82776b190ae',1,'ManeuverNode']]],
   ['density',['density',['../class_module_asteroid.html#a9f367f63ede0f89c68947550553adc57',1,'ModuleAsteroid']]],
   ['deployed',['Deployed',['../class_module_science_experiment.html#a8900672f990d4c6b28cd08213e81f764',1,'ModuleScienceExperiment']]],
-  ['description',['description',['../class_available_part.html#ab540bb89a14c83592355ba444b62cc0f',1,'AvailablePart']]],
+  ['description',['description',['../class_available_part.html#ab540bb89a14c83592355ba444b62cc0f',1,'AvailablePart.description()'],['../struct_r_d_archives_controller_1_1_report_data.html#a56f88140d247e753c60ebb288cb72214',1,'RDArchivesController.ReportData.description()']]],
   ['direction',['direction',['../class_fuel_line.html#a82e4455b87e2f7dfa802a6fa8702880a',1,'FuelLine']]],
   ['directrotangle',['directRotAngle',['../class_celestial_body.html#aaac9b675d8fb8c942881ceff42e86fe8',1,'CelestialBody']]],
   ['distance',['distance',['../class_discovery_info.html#afe8a0520fa587fd697d6ee47225b4ad5',1,'DiscoveryInfo.distance()'],['../struct_game_events_1_1_explosion_reaction.html#a24de826507944cc9032acbc4c4ce7b56',1,'GameEvents.ExplosionReaction.distance()']]],
@@ -39,6 +40,8 @@ var searchData=
   ['draw3dlines',['draw3Dlines',['../class_map_view.html#a067417bde5e0a677b40f59859cfafa7e',1,'MapView']]],
   ['drawdebugpanel',['DrawDebugPanel',['../class_kerbal_instructor.html#ab4fae89d9fd953f471a6714068948236',1,'KerbalInstructor']]],
   ['drawstackgauge',['drawStackGauge',['../class_module_engines_1_1_propellant.html#a8b14201883989373fb68e85af636f29d',1,'ModuleEngines::Propellant']]],
+  ['dropdownlistcontainer',['dropdownListContainer',['../class_r_d_archives_controller.html#a421ade7fa1d8eabcce8c7735037aa6fb',1,'RDArchivesController']]],
   ['drymass',['dryMass',['../class_fuel_tank.html#abd1b8ef4772fd9389c845082136f49f5',1,'FuelTank.dryMass()'],['../class_fuel_tank_g_u_i.html#aff606d195eaa5262a84b56eda92110a0',1,'FuelTankGUI.dryMass()']]],
+  ['duration',['duration',['../class_screen_message.html#abb4e2851a59f2c44f94bc030e533699d',1,'ScreenMessage']]],
   ['dynamicpressureatm',['dynamicPressureAtm',['../class_part.html#ad892a7544bb71494374fe9f31edf5db8',1,'Part']]]
 ];

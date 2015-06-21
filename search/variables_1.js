@@ -18,5 +18,8 @@ var searchData=
   ['boundthreshold',['boundThreshold',['../class_kerbal_e_v_a.html#af4ba7f78423c7d84ccafa232c0bbc9c5',1,'KerbalEVA']]],
   ['breakingforce',['breakingForce',['../class_attach_node.html#a913c8aaaf2a4b2cafb0f0b38ab60eef5',1,'AttachNode.breakingForce()'],['../class_part.html#a5f8a2d04d632c54c000172a5dcb10765',1,'Part.breakingForce()']]],
   ['breakingtorque',['breakingTorque',['../class_attach_node.html#a120e19800b51dfe26e00f269868e56fd',1,'AttachNode.breakingTorque()'],['../class_part.html#a126303550d6dbc5b0408ee37f8843660',1,'Part.breakingTorque()']]],
+  ['brightnesscurve',['brightnessCurve',['../class_sun.html#ac39563c970a66fce4e6fdc388fc5b32b',1,'Sun']]],
+  ['btnexpand',['btnExpand',['../class_r_d_archives_controller.html#a1362f32e6835622177b44ce472aef491',1,'RDArchivesController']]],
+  ['btnreset',['btnReset',['../class_r_d_archives_controller.html#a851af6b2ff2dacd37a552d434b5fd823',1,'RDArchivesController']]],
   ['buoyancy',['buoyancy',['../class_part.html#ae80a7974c749e83d6bc5f7560bc65a75',1,'Part']]]
 ];

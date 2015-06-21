@@ -92,7 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>The Sun, the planets, and the moons are all CelestialBodies.  
+<p>The <a class="el" href="class_sun.html">Sun</a>, the planets, and the moons are all CelestialBodies.  
  <a href="class_celestial_body.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -111,7 +111,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7dda5764c61f467de2a888beda4c1745"><td class="memItemLeft" align="right" valign="top">Bounds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_celestial_body.html#a7dda5764c61f467de2a888beda4c1745">getBounds</a> ()</td></tr>
 <tr class="separator:a7dda5764c61f467de2a888beda4c1745"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b0f7f75cda9b65de2bd967bcd8e7865"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_celestial_body.html#a9b0f7f75cda9b65de2bd967bcd8e7865">GetFrameVel</a> ()</td></tr>
-<tr class="memdesc:a9b0f7f75cda9b65de2bd967bcd8e7865"><td class="mdescLeft">&#160;</td><td class="mdescRight">The velocity of the <a class="el" href="class_celestial_body.html" title="The Sun, the planets, and the moons are all CelestialBodies. ">CelestialBody</a>, {AliceWorld, Sun}. (See <a class="el" href="_orbit_8cs.html">Orbit.cs</a> for the reference frame definitions).  <a href="#a9b0f7f75cda9b65de2bd967bcd8e7865">More...</a><br /></td></tr>
+<tr class="memdesc:a9b0f7f75cda9b65de2bd967bcd8e7865"><td class="mdescLeft">&#160;</td><td class="mdescRight">The velocity of the <a class="el" href="class_celestial_body.html" title="The Sun, the planets, and the moons are all CelestialBodies. ">CelestialBody</a>, {AliceWorld, <a class="el" href="class_sun.html">Sun</a>}. (See <a class="el" href="_orbit_8cs.html">Orbit.cs</a> for the reference frame definitions).  <a href="#a9b0f7f75cda9b65de2bd967bcd8e7865">More...</a><br /></td></tr>
 <tr class="separator:a9b0f7f75cda9b65de2bd967bcd8e7865"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a415f490a0fb476c6f1621b5e26dc6ede"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_celestial_body.html#a415f490a0fb476c6f1621b5e26dc6ede">GetFrameVelAtUT</a> (double UT)</td></tr>
 <tr class="separator:a415f490a0fb476c6f1621b5e26dc6ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,10 +258,10 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:ac9472c0aa1f1edf6ac45d18495237d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">this is what gives the celestial body its orbit and makes it go along the orbit as well  <a href="#ac9472c0aa1f1edf6ac45d18495237d31">More...</a><br /></td></tr>
 <tr class="separator:ac9472c0aa1f1edf6ac45d18495237d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae77adca32fa91cb1d2811c465f90c364"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_celestial_body.html">CelestialBody</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_celestial_body.html#ae77adca32fa91cb1d2811c465f90c364">orbitingBodies</a></td></tr>
-<tr class="memdesc:ae77adca32fa91cb1d2811c465f90c364"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of this body's moons (or, in the case of the Sun, a list of the planets).  <a href="#ae77adca32fa91cb1d2811c465f90c364">More...</a><br /></td></tr>
+<tr class="memdesc:ae77adca32fa91cb1d2811c465f90c364"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of this body's moons (or, in the case of the <a class="el" href="class_sun.html">Sun</a>, a list of the planets).  <a href="#ae77adca32fa91cb1d2811c465f90c364">More...</a><br /></td></tr>
 <tr class="separator:ae77adca32fa91cb1d2811c465f90c364"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef5a747528fd9559c567d6b5b426c7b1"><td class="memItemLeft" align="right" valign="top">PQS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_celestial_body.html#aef5a747528fd9559c567d6b5b426c7b1">pqsController</a></td></tr>
-<tr class="memdesc:aef5a747528fd9559c567d6b5b426c7b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The pqsController computes the terrain of the planet. Note that for the Sun, pqsController = null.  <a href="#aef5a747528fd9559c567d6b5b426c7b1">More...</a><br /></td></tr>
+<tr class="memdesc:aef5a747528fd9559c567d6b5b426c7b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The pqsController computes the terrain of the planet. Note that for the <a class="el" href="class_sun.html">Sun</a>, pqsController = null.  <a href="#aef5a747528fd9559c567d6b5b426c7b1">More...</a><br /></td></tr>
 <tr class="separator:aef5a747528fd9559c567d6b5b426c7b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72f67065d4827287b39407e9776960d5"><td class="memItemLeft" align="right" valign="top">AnimationCurve&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_celestial_body.html#a72f67065d4827287b39407e9776960d5">pressureCurve</a></td></tr>
 <tr class="separator:a72f67065d4827287b39407e9776960d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -288,8 +288,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a03b201333db953d6efcc35caa518790f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bb2312259bf011d3f414002b2d24cd7"><td class="memItemLeft" align="right" valign="top">AnimationCurve&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_celestial_body.html#a5bb2312259bf011d3f414002b2d24cd7">temperatureCurve</a></td></tr>
 <tr class="separator:a5bb2312259bf011d3f414002b2d24cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a0d7efe550e1e4f4d8f53dd526617d0"><td class="memItemLeft" align="right" valign="top">PlanetQuadTreeController&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_celestial_body.html#a0a0d7efe550e1e4f4d8f53dd526617d0">terrainController</a></td></tr>
-<tr class="separator:a0a0d7efe550e1e4f4d8f53dd526617d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c44ed8a1aa05f6bf7875b62e93fc8e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_celestial_body.html#a9c44ed8a1aa05f6bf7875b62e93fc8e9">tidallyLocked</a></td></tr>
 <tr class="memdesc:a9c44ed8a1aa05f6bf7875b62e93fc8e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Presumably, whether this body is tidally locked to the body around with it orbits.  <a href="#a9c44ed8a1aa05f6bf7875b62e93fc8e9">More...</a><br /></td></tr>
 <tr class="separator:a9c44ed8a1aa05f6bf7875b62e93fc8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -330,7 +328,7 @@ Properties</h2></td></tr>
 <tr class="separator:ad31e12d70152b2721c2876b7c0292566"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The Sun, the planets, and the moons are all CelestialBodies. </p>
+<div class="textblock"><p>The <a class="el" href="class_sun.html">Sun</a>, the planets, and the moons are all CelestialBodies. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ab8f3128ca7af572d0981ce895fb13fdf"></a>
 <div class="memitem">
@@ -447,7 +445,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The velocity of the <a class="el" href="class_celestial_body.html" title="The Sun, the planets, and the moons are all CelestialBodies. ">CelestialBody</a>, {AliceWorld, Sun}. (See <a class="el" href="_orbit_8cs.html">Orbit.cs</a> for the reference frame definitions). </p>
+<p>The velocity of the <a class="el" href="class_celestial_body.html" title="The Sun, the planets, and the moons are all CelestialBodies. ">CelestialBody</a>, {AliceWorld, <a class="el" href="class_sun.html">Sun</a>}. (See <a class="el" href="_orbit_8cs.html">Orbit.cs</a> for the reference frame definitions). </p>
 
 </div>
 </div>
@@ -1412,7 +1410,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>A list of this body's moons (or, in the case of the Sun, a list of the planets). </p>
+<p>A list of this body's moons (or, in the case of the <a class="el" href="class_sun.html">Sun</a>, a list of the planets). </p>
 
 </div>
 </div>
@@ -1426,7 +1424,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The pqsController computes the terrain of the planet. Note that for the Sun, pqsController = null. </p>
+<p>The pqsController computes the terrain of the planet. Note that for the <a class="el" href="class_sun.html">Sun</a>, pqsController = null. </p>
 
 </div>
 </div>
@@ -1562,18 +1560,6 @@ Properties</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">AnimationCurve CelestialBody.temperatureCurve</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a0a0d7efe550e1e4f4d8f53dd526617d0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">PlanetQuadTreeController CelestialBody.terrainController</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1841,7 +1827,7 @@ Properties</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 15 2014 19:41:39 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 21 2015 12:51:43 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

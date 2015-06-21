@@ -34,6 +34,8 @@ var searchData=
   ['loadedsceneiseditor',['LoadedSceneIsEditor',['../class_high_logic.html#ab3013a73baa65b48deff929e4b3a4cbd',1,'HighLogic']]],
   ['loadedsceneisflight',['LoadedSceneIsFlight',['../class_high_logic.html#ae16b6f2a490daac49d69ca4162882f09',1,'HighLogic']]],
   ['localcom',['localCoM',['../class_vessel.html#a7271d800ed0f4b07598f41d0026c15a5',1,'Vessel']]],
+  ['localspacename',['localSpaceName',['../class_p_system_manager.html#ae0adfdfdc0452561482ea4e75b1e27ff',1,'PSystemManager']]],
+  ['localtime',['localTime',['../class_sun.html#a30c10468eb4a61386689892f1efb684f',1,'Sun']]],
   ['lockmask',['lockMask',['../class_input_lock_manager.html#a76066bb3b0f7763d90edd720865d6f08',1,'InputLockManager']]],
   ['lockstack',['lockStack',['../class_input_lock_manager.html#ae4d41c7325afef71343c77eee894cc20',1,'InputLockManager']]],
   ['logtype',['logType',['../class_high_logic_1_1_log_entry.html#a4e45022403dce781f175d899abfa5b19',1,'HighLogic::LogEntry']]],

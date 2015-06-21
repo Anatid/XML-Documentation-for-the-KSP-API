@@ -1,6 +1,7 @@
 var searchData=
 [
   ['d',['D',['../_untracked_object_class_8cs.html#aa4534f4ef35a5b44e916abb50aa15070af623e75af30e62bbd73d6df5b50bb7b5',1,'UntrackedObjectClass.cs']]],
+  ['data',['data',['../struct_r_d_archives_controller_1_1_report_data.html#a5011d6913581df6f55d12540880ff172',1,'RDArchivesController::ReportData']]],
   ['dataamount',['dataAmount',['../class_science_data.html#a2accf24a1112bfdfcc6a0e4c6139c444',1,'ScienceData']]],
   ['dataiscollectable',['dataIsCollectable',['../class_module_science_experiment.html#a81e42fa31b9b074ca52d08b58d231667',1,'ModuleScienceExperiment']]],
   ['datascale',['dataScale',['../class_science_experiment.html#a95c7062658a9b91b1e438f3fdd36d040',1,'ScienceExperiment.dataScale()'],['../class_science_subject.html#a6a888479023bf63ffd9dd9c4174bf3e0',1,'ScienceSubject.dataScale()']]],
@@ -45,7 +46,7 @@ var searchData=
   ['deployaction',['DeployAction',['../class_module_science_experiment.html#aa3ddf1cf066a7a561708f47f4e6c5420',1,'ModuleScienceExperiment']]],
   ['deployed',['Deployed',['../class_module_science_experiment.html#a8900672f990d4c6b28cd08213e81f764',1,'ModuleScienceExperiment']]],
   ['deployexperiment',['DeployExperiment',['../class_module_science_experiment.html#aa2386a6654bf7c5db6b1330c79d05319',1,'ModuleScienceExperiment']]],
-  ['description',['description',['../class_available_part.html#ab540bb89a14c83592355ba444b62cc0f',1,'AvailablePart']]],
+  ['description',['description',['../class_available_part.html#ab540bb89a14c83592355ba444b62cc0f',1,'AvailablePart.description()'],['../struct_r_d_archives_controller_1_1_report_data.html#a56f88140d247e753c60ebb288cb72214',1,'RDArchivesController.ReportData.description()']]],
   ['deserializefrombinary',['DeserializeFromBinary',['../class_k_s_p_1_1_i_o_1_1_i_o_utils.html#ac5befd79b65b5f516d26aca0678b39c7',1,'KSP::IO::IOUtils']]],
   ['despawnallcrew',['DespawnAllCrew',['../class_part.html#a00ff6a0087b0158680c4f1978d906c92',1,'Part']]],
   ['despawncrew',['DespawnCrew',['../class_vessel.html#a102484bbb1cefed6fd6e713835a112af',1,'Vessel']]],
@@ -99,7 +100,9 @@ var searchData=
   ['draworbit',['DrawOrbit',['../class_orbit.html#a8c145576d6dae911e8fc8614b45822c1',1,'Orbit']]],
   ['drawstackgauge',['drawStackGauge',['../class_module_engines_1_1_propellant.html#a8b14201883989373fb68e85af636f29d',1,'ModuleEngines::Propellant']]],
   ['drawstats',['drawStats',['../class_part.html#af850df8df0a318f169ed0284c8ddf7b0',1,'Part']]],
+  ['dropdownlistcontainer',['dropdownListContainer',['../class_r_d_archives_controller.html#a421ade7fa1d8eabcce8c7735037aa6fb',1,'RDArchivesController']]],
   ['drymass',['dryMass',['../class_fuel_tank.html#abd1b8ef4772fd9389c845082136f49f5',1,'FuelTank.dryMass()'],['../class_fuel_tank_g_u_i.html#aff606d195eaa5262a84b56eda92110a0',1,'FuelTankGUI.dryMass()']]],
   ['dumpdata',['DumpData',['../interface_i_science_data_container.html#ad0e51c8c6fb042ca5837296412ff7d23',1,'IScienceDataContainer.DumpData()'],['../class_module_science_experiment.html#abf814b16653576fc6c5fc61e12339b5d',1,'ModuleScienceExperiment.DumpData()']]],
+  ['duration',['duration',['../class_screen_message.html#abb4e2851a59f2c44f94bc030e533699d',1,'ScreenMessage']]],
   ['dynamicpressureatm',['dynamicPressureAtm',['../class_part.html#ad892a7544bb71494374fe9f31edf5db8',1,'Part']]]
 ];

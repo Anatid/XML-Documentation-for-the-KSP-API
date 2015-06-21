@@ -58,6 +58,7 @@ var searchData=
   ['getinfo',['GetInfo',['../class_module_engines.html#a9c080ee2d6fbef4160d80fb2b754eee9',1,'ModuleEngines.GetInfo()'],['../class_part_module.html#a6514eea67c1241135b6215868ebd3233',1,'PartModule.GetInfo()'],['../class_part_resource.html#a3a39f1b6cfc2c5fed598d162a6138f38',1,'PartResource.GetInfo()']]],
   ['getlastcorrection',['GetLastCorrection',['../class_krakensbane.html#ab249810c25ecd3c160e0d89f0d86b249',1,'Krakensbane']]],
   ['getlatitude',['GetLatitude',['../class_celestial_body.html#ae084e8b618ff694477a707ee812c7724',1,'CelestialBody']]],
+  ['getlocaltimeatposition',['GetLocalTimeAtPosition',['../class_sun.html#a83009028f88ae3a43938cc6e7cbadb96',1,'Sun']]],
   ['getlongitude',['GetLongitude',['../class_celestial_body.html#aa0183a32e4003bcd9f29fe0bb7a56c20',1,'CelestialBody']]],
   ['getmainbody',['getMainBody',['../class_flight_globals.html#a696ec83be815d52f9bb9200804481fad',1,'FlightGlobals.getMainBody()'],['../class_flight_globals.html#a2f1edccc8d65f3a80319583fb3d869ff',1,'FlightGlobals.getMainBody(Vector3d refPos)']]],
   ['getmeananomaly',['GetMeanAnomaly',['../class_orbit.html#a73c0d35d43212295344883c50bfa27bf',1,'Orbit']]],
@@ -135,6 +136,7 @@ var searchData=
   ['gotonextpage',['GoToNextPage',['../class_tutorial_scenario_1_1_tutorial_f_s_m.html#a449780663b305ccd47aa5a5661080be2',1,'TutorialScenario::TutorialFSM']]],
   ['gotostateonevent',['GoToStateOnEvent',['../class_k_f_s_m_event.html#a231dc4925c081314a8e3543e296d9e51',1,'KFSMEvent']]],
   ['gravparameter',['gravParameter',['../class_celestial_body.html#ac26b72af5325ff4d3c83ae9a9b6923d1',1,'CelestialBody']]],
+  ['greatcircledistance',['GreatCircleDistance',['../class_space_center.html#a5a7ba55e9d11bfe1fd34eae0e5c20465',1,'SpaceCenter']]],
   ['groundcontact',['GroundContact',['../class_part.html#aa9eeb5535b88befd304c641da3e42b55',1,'Part']]],
   ['group_5fabort',['GROUP_ABORT',['../_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aab86c8fabe8b6c2bbfd6b86cbedbf88c2',1,'ControlTypes.cs']]],
   ['group_5fbrakes',['GROUP_BRAKES',['../_control_types_8cs.html#a0119b266bd804d818bf01e957f37217aa38a244522e5e6873b76b1322271b5537',1,'ControlTypes.cs']]],
@@ -151,5 +153,6 @@ var searchData=
   ['guiicon',['guiIcon',['../class_k_s_p_event.html#a4a745922f63f8ea7e6a6f7530b08ad87',1,'KSPEvent']]],
   ['guiname',['guiName',['../class_base_action.html#a2260774fbc93d7b4f64368fa27357d28',1,'BaseAction.guiName()'],['../class_k_s_p_action.html#a9b7249bacd3a8d42468a0c0fef8b7bc7',1,'KSPAction.guiName()'],['../class_k_s_p_event.html#a90414a99fd4ca8b67874464643dd3052',1,'KSPEvent.guiName()'],['../class_k_s_p_field.html#aeea531bfa5f20ab5618f8d2a4fb0c688',1,'KSPField.guiName()'],['../class_part_module.html#aa4623c41e0baf90e45f42ca25ea7fcf6',1,'PartModule.GUIName()']]],
   ['guiskinname',['guiSkinName',['../class_tutorial_scenario.html#a313da02d0d548f98436e2f24e07724ec',1,'TutorialScenario']]],
+  ['guistyleoverride',['guiStyleOverride',['../class_screen_message.html#a2b4d75b09c205f76cb27467b4b2900a0',1,'ScreenMessage']]],
   ['guiunits',['guiUnits',['../class_k_s_p_field.html#a440cf52a12bfd30d9c13bb713b927609',1,'KSPField']]]
 ];

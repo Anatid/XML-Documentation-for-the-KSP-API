@@ -139,6 +139,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Apply this attribute to a function in a <a class="el" href="class_part_module.html" title="Extending PartModule lets you add new functionality to parts. The main class of many plugins will be ...">PartModule</a> to make it callable by the player via the right click menu of the part, or from other plugin code via <a class="el" href="class_part.html#af945dc7aa79ab95fe7b301a71b71630c">Part.SendEvent</a>. </p>
+<p>It seems like this attribute is NOT refreshed on parts already in flight when you rebuild your module DLL! You need to launch a new ship with your part. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="affa19e139916fb37d75fa7e93534b906"></a>
 <div class="memitem">
@@ -296,7 +297,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 15 2014 19:41:39 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 21 2015 12:51:43 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

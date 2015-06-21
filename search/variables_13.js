@@ -12,6 +12,7 @@ var searchData=
   ['useactiongroups',['useActionGroups',['../class_module_science_experiment.html#a27e9cb574ffe90a05503133378c4231d',1,'ModuleScienceExperiment']]],
   ['useengineresponsetime',['useEngineResponseTime',['../class_module_engines.html#ab1b8f56b118007f60f0ece60f50391dd',1,'ModuleEngines']]],
   ['uselegacyatmosphere',['useLegacyAtmosphere',['../class_celestial_body.html#a6d777241c845e5c26f1f5489e0bd6e9c',1,'CelestialBody']]],
+  ['uselocalspacesunlight',['useLocalSpaceSunLight',['../class_sun.html#a885dbeb558b2acc1e5ac435774b33111',1,'Sun']]],
   ['userenderqueue',['useRenderQueue',['../class_screen_messages.html#a194fefe0e8adccdaa59a64b7fe448c21',1,'ScreenMessages']]],
   ['usestaging',['useStaging',['../class_module_science_experiment.html#a8f5eea4727ec47bd947c3ff4c5f331d1',1,'ModuleScienceExperiment']]],
   ['usevelocitycurve',['useVelocityCurve',['../class_module_engines.html#a00b44aa87967aee97834ec74b03dd15e',1,'ModuleEngines']]],

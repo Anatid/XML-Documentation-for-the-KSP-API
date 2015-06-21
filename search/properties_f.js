@@ -1,6 +1,7 @@
 var searchData=
 [
   ['savefolder',['SaveFolder',['../class_high_logic.html#a52215346b3e539e2f2b9931119c816d9',1,'HighLogic']]],
+  ['scaledbodies',['scaledBodies',['../class_p_system_manager.html#a481685b353f2637e1c722c7a38ea3a6f',1,'PSystemManager']]],
   ['scalefactor',['ScaleFactor',['../class_scaled_space.html#aeb607935e7cebb31c4bfc8e5a396a819',1,'ScaledSpace']]],
   ['scenetransform',['SceneTransform',['../class_scaled_space.html#a88fbd284af9f824484d984024af7b657',1,'ScaledSpace']]],
   ['selectedpart',['SelectedPart',['../class_editor_logic.html#a3c70da41a41674e727ff9d98573fd652',1,'EditorLogic']]],
@@ -10,8 +11,10 @@ var searchData=
   ['skin',['Skin',['../class_high_logic.html#a71e9896216132f66289be6b17c652a41',1,'HighLogic']]],
   ['sortedshiplist',['SortedShipList',['../class_editor_logic.html#a3a5eed04360370bfc46f54755e6f9d37',1,'EditorLogic']]],
   ['source',['Source',['../class_k_s_p_1_1_i_o_1_1_i_o_exception.html#a4bcf31972b81d24c151fc44a76340122',1,'KSP::IO::IOException']]],
+  ['spacecentertransform',['SpaceCenterTransform',['../class_space_center.html#a7b07efc42e8e8f528e7d3023de7e636e',1,'SpaceCenter']]],
   ['splashed',['Splashed',['../class_part.html#ac81027c5a7433209064d2c2ed6217f9b',1,'Part']]],
   ['sqrmagnitude',['sqrMagnitude',['../struct_vector3d.html#a697f9819e9645e720c4d721891ac64c5',1,'Vector3d']]],
+  ['srfnvector',['SrfNVector',['../class_space_center.html#ad4c3f83e8fa1bd7dbb34f506690a5715',1,'SpaceCenter']]],
   ['stacktrace',['StackTrace',['../class_k_s_p_1_1_i_o_1_1_i_o_exception.html#af3cdc897fced350b4208483046c00efb',1,'KSP::IO::IOException']]],
   ['started',['Started',['../class_kerbal_f_s_m.html#a01523fbabeec4f926d365a1b12e9d304',1,'KerbalFSM']]],
   ['state',['State',['../class_editor_logic.html#af5a5b7b5653b542d3a5f8617ea19f848',1,'EditorLogic.State()'],['../class_part.html#ae24d7298eb98c13487d470ad1cbc1d3a',1,'Part.State()']]],

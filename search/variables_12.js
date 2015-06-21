@@ -1,7 +1,7 @@
 var searchData=
 [
   ['tabswitchtargets',['TabSwitchTargets',['../class_planetarium_camera.html#a047aabda4afe329dead3ffe69197284a',1,'PlanetariumCamera']]],
-  ['target',['target',['../class_fuel_line.html#a71e65a212eb3dee42245f2d326b6dfb7',1,'FuelLine.target()'],['../struct_game_events_1_1_host_target_action_3_01_a_00_01_b_01_4.html#af3c58a99b2f921bf4c3f2f52ee24f4e3',1,'GameEvents.HostTargetAction&lt; A, B &gt;.target()'],['../class_planetarium_camera.html#ae79405d5b408502eaf6d3d8955d4c62d',1,'PlanetariumCamera.target()']]],
+  ['target',['target',['../class_fuel_line.html#a71e65a212eb3dee42245f2d326b6dfb7',1,'FuelLine.target()'],['../struct_game_events_1_1_host_target_action_3_01_a_00_01_b_01_4.html#af3c58a99b2f921bf4c3f2f52ee24f4e3',1,'GameEvents.HostTargetAction&lt; A, B &gt;.target()'],['../class_planetarium_camera.html#ae79405d5b408502eaf6d3d8955d4c62d',1,'PlanetariumCamera.target()'],['../class_sun.html#ad9ead774b09f1d18d63f3a707ecfd242',1,'Sun.target()']]],
   ['targetanchor',['targetAnchor',['../class_fuel_line.html#afc84b7f8c3931add8710a41e602669ac',1,'FuelLine']]],
   ['targetbody',['targetBody',['../class_patched_conic_solver.html#a6d305f228ed6b6d41f4cfd5020b602c9',1,'PatchedConicSolver']]],
   ['targetdirection',['targetDirection',['../class_flight_camera.html#a3e9c852e00d5cc26ba87c06ed489a1d0',1,'FlightCamera']]],
@@ -12,7 +12,6 @@ var searchData=
   ['temperaturecurve',['temperatureCurve',['../class_celestial_body.html#a5bb2312259bf011d3f414002b2d24cd7',1,'CelestialBody']]],
   ['terrainaltitude',['terrainAltitude',['../class_vessel.html#a3ba7c51bcc746d53a168050615d875a4',1,'Vessel']]],
   ['terraincollider',['terrainCollider',['../class_part.html#a45794e379e139d11332a3f30359786c1',1,'Part']]],
-  ['terraincontroller',['terrainController',['../class_celestial_body.html#a0a0d7efe550e1e4f4d8f53dd526617d0',1,'CelestialBody']]],
   ['terrainnormal',['terrainNormal',['../class_vessel.html#a398d6e7341a32d88f914812cc239dccb',1,'Vessel']]],
   ['textduration',['textDuration',['../class_time_warp.html#afd7aebbe2f6ee3e625a286485e22dcc0',1,'TimeWarp']]],
   ['textstyles',['textStyles',['../class_screen_messages.html#a7b2bccbd3ef29a7dd043a0d72ab9b650',1,'ScreenMessages']]],

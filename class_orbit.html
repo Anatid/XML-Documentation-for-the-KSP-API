@@ -147,7 +147,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a114d2c198ce639b5e778a8c977b9e009"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a114d2c198ce639b5e778a8c977b9e009">GetEccVector</a> ()</td></tr>
 <tr class="separator:a114d2c198ce639b5e778a8c977b9e009"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9ee803a8190bf425c652185697ae58d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#ab9ee803a8190bf425c652185697ae58d">GetFrameVel</a> ()</td></tr>
-<tr class="memdesc:ab9ee803a8190bf425c652185697ae58d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The velocity of the orbiting object, {AliceWorld, Sun}.  <a href="#ab9ee803a8190bf425c652185697ae58d">More...</a><br /></td></tr>
+<tr class="memdesc:ab9ee803a8190bf425c652185697ae58d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The velocity of the orbiting object, {AliceWorld, <a class="el" href="class_sun.html">Sun</a>}.  <a href="#ab9ee803a8190bf425c652185697ae58d">More...</a><br /></td></tr>
 <tr class="separator:ab9ee803a8190bf425c652185697ae58d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a346b2dbdd0abba001fb5b5713ae92023"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a346b2dbdd0abba001fb5b5713ae92023">GetFrameVelAtUT</a> (double UT)</td></tr>
 <tr class="separator:a346b2dbdd0abba001fb5b5713ae92023"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,6 +185,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af701f03b21ae0acb3dce346acdfa7534"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#af701f03b21ae0acb3dce346acdfa7534">getPositionFromTrueAnomaly</a> (double tA)</td></tr>
 <tr class="separator:af701f03b21ae0acb3dce346acdfa7534"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e29f8def936608319220a399b9c00fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a5e29f8def936608319220a399b9c00fb">getRelativePositionAtT</a> (double T)</td></tr>
+<tr class="memdesc:a5e29f8def936608319220a399b9c00fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the predicted displacement of the orbiting object from the center of the main body at a given time since perigee passage. NOTE: All <a class="el" href="struct_vector3d.html" title="A Vector3d in 3D space. Vector3d is just like Unity&#39;s Vector3 class, except it uses doubles instead o...">Vector3d</a>'s returned by <a class="el" href="class_orbit.html">Orbit</a> class functions have their y and z axes flipped. You have to flip these back to get the vectors in world coordinates.  <a href="#a5e29f8def936608319220a399b9c00fb">More...</a><br /></td></tr>
 <tr class="separator:a5e29f8def936608319220a399b9c00fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a707b89ab04b1581cf3241808e499e4be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orbit.html#a707b89ab04b1581cf3241808e499e4be">getRelativePositionAtUT</a> (double UT)</td></tr>
 <tr class="memdesc:a707b89ab04b1581cf3241808e499e4be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the predicted displacement of the orbiting object from the center of the main body at a given universal time. NOTE: All <a class="el" href="struct_vector3d.html" title="A Vector3d in 3D space. Vector3d is just like Unity&#39;s Vector3 class, except it uses doubles instead o...">Vector3d</a>'s returned by <a class="el" href="class_orbit.html">Orbit</a> class functions have their y and z axes flipped. You have to flip these back to get the vectors in world coordinates.  <a href="#a707b89ab04b1581cf3241808e499e4be">More...</a><br /></td></tr>
@@ -449,13 +450,13 @@ BodyRotating[foo]: position relative to the centre of the <a class="el" href="cl
 <li>
 ConditionallyRotating[foo]: If |foo.inverseRotation|, BodyRotating[foo], otherwise BodyCentre[foo].  </li>
 <li>
-Sun: BodyCentre[Planetarium.fetch.Sun].  </li>
+<a class="el" href="class_sun.html">Sun</a>: BodyCentre[Planetarium.fetch.Sun].  </li>
 <li>
 Primary: BodyCentre[this.referenceBody].  </li>
 <li>
-ActiveVesselPrimary: If the active vessel is not null, BodyCentre[FlightGlobals.ActiveVessel.orbit.referenceBody], otherwise Sun.  </li>
+ActiveVesselPrimary: If the active vessel is not null, BodyCentre[FlightGlobals.ActiveVessel.orbit.referenceBody], otherwise <a class="el" href="class_sun.html">Sun</a>.  </li>
 <li>
-ActiveVesselPrimaryConditionallyRotating: If the active vessel is not null, ConditionallyRotating[FlightGlobals.ActiveVessel.orbit.referenceBody], otherwise Sun.&gt;  </li>
+ActiveVesselPrimaryConditionallyRotating: If the active vessel is not null, ConditionallyRotating[FlightGlobals.ActiveVessel.orbit.referenceBody], otherwise <a class="el" href="class_sun.html">Sun</a>.&gt;  </li>
 </ul>
 <p>We use the concise notation {Axes, Frame} for describing the reference frame and axes used.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
@@ -798,7 +799,7 @@ ActiveVesselPrimaryConditionallyRotating: If the active vessel is not null, Cond
       </table>
 </div><div class="memdoc">
 
-<p>The velocity of the orbiting object, {AliceWorld, Sun}. </p>
+<p>The velocity of the orbiting object, {AliceWorld, <a class="el" href="class_sun.html">Sun</a>}. </p>
 
 </div>
 </div>
@@ -1100,6 +1101,15 @@ ActiveVesselPrimaryConditionallyRotating: If the active vessel is not null, Cond
       </table>
 </div><div class="memdoc">
 
+<p>Gets the predicted displacement of the orbiting object from the center of the main body at a given time since perigee passage. NOTE: All <a class="el" href="struct_vector3d.html" title="A Vector3d in 3D space. Vector3d is just like Unity&#39;s Vector3 class, except it uses doubles instead o...">Vector3d</a>'s returned by <a class="el" href="class_orbit.html">Orbit</a> class functions have their y and z axes flipped. You have to flip these back to get the vectors in world coordinates. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">T</td><td>Time since perigee passage (seconds)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Position relative to the main body (YZ flipped)</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a707b89ab04b1581cf3241808e499e4be"></a>
@@ -1390,7 +1400,7 @@ ActiveVesselPrimaryConditionallyRotating: If the active vessel is not null, Cond
 <p>The distance the orbiting object will be from the center of the main body when it reaches the given true anomaly. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tA</td><td>True anomaly (in degrees or radians?)</td></tr>
+    <tr><td class="paramname">tA</td><td>True anomaly (in degrees)</td></tr>
   </table>
   </dd>
 </dl>
@@ -2757,7 +2767,7 @@ ActiveVesselPrimaryConditionallyRotating: If the active vessel is not null, Cond
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 15 2014 19:41:40 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 21 2015 12:51:44 for KSP API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

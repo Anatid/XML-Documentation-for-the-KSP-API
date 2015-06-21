@@ -43,6 +43,7 @@ var searchData=
   ['getinfo',['GetInfo',['../class_module_engines.html#a9c080ee2d6fbef4160d80fb2b754eee9',1,'ModuleEngines.GetInfo()'],['../class_part_module.html#a6514eea67c1241135b6215868ebd3233',1,'PartModule.GetInfo()'],['../class_part_resource.html#a3a39f1b6cfc2c5fed598d162a6138f38',1,'PartResource.GetInfo()']]],
   ['getlastcorrection',['GetLastCorrection',['../class_krakensbane.html#ab249810c25ecd3c160e0d89f0d86b249',1,'Krakensbane']]],
   ['getlatitude',['GetLatitude',['../class_celestial_body.html#ae084e8b618ff694477a707ee812c7724',1,'CelestialBody']]],
+  ['getlocaltimeatposition',['GetLocalTimeAtPosition',['../class_sun.html#a83009028f88ae3a43938cc6e7cbadb96',1,'Sun']]],
   ['getlongitude',['GetLongitude',['../class_celestial_body.html#aa0183a32e4003bcd9f29fe0bb7a56c20',1,'CelestialBody']]],
   ['getmainbody',['getMainBody',['../class_flight_globals.html#a696ec83be815d52f9bb9200804481fad',1,'FlightGlobals.getMainBody()'],['../class_flight_globals.html#a2f1edccc8d65f3a80319583fb3d869ff',1,'FlightGlobals.getMainBody(Vector3d refPos)']]],
   ['getmeananomaly',['GetMeanAnomaly',['../class_orbit.html#a73c0d35d43212295344883c50bfa27bf',1,'Orbit']]],
@@ -117,5 +118,6 @@ var searchData=
   ['goonrails',['GoOnRails',['../class_vessel.html#a5b433bea63b0e877ae7ae5c691d06d36',1,'Vessel']]],
   ['gotolastpage',['GoToLastPage',['../class_tutorial_scenario_1_1_tutorial_f_s_m.html#aa4db2d2bfc486639fa36d4f9317741da',1,'TutorialScenario::TutorialFSM']]],
   ['gotonextpage',['GoToNextPage',['../class_tutorial_scenario_1_1_tutorial_f_s_m.html#a449780663b305ccd47aa5a5661080be2',1,'TutorialScenario::TutorialFSM']]],
+  ['greatcircledistance',['GreatCircleDistance',['../class_space_center.html#a5a7ba55e9d11bfe1fd34eae0e5c20465',1,'SpaceCenter']]],
   ['guidecouple',['GUIDecouple',['../class_decoupler_g_u_i.html#ab876f3a061cab7e464ec89f6abbe404c',1,'DecouplerGUI']]]
 ];

@@ -1,10 +1,5 @@
 var searchData=
 [
-  ['scaledspace',['ScaledSpace',['../class_scaled_space.html',1,'']]],
-  ['scenariodiscoverableobjects',['ScenarioDiscoverableObjects',['../class_scenario_discoverable_objects.html',1,'']]],
-  ['sciencedata',['ScienceData',['../class_science_data.html',1,'']]],
-  ['scienceexperiment',['ScienceExperiment',['../class_science_experiment.html',1,'']]],
-  ['sciencesubject',['ScienceSubject',['../class_science_subject.html',1,'']]],
-  ['screenmessages',['ScreenMessages',['../class_screen_messages.html',1,'']]],
-  ['shipconstruct',['ShipConstruct',['../class_ship_construct.html',1,'']]]
+  ['rdarchivescontroller',['RDArchivesController',['../class_r_d_archives_controller.html',1,'']]],
+  ['reportdata',['ReportData',['../struct_r_d_archives_controller_1_1_report_data.html',1,'RDArchivesController']]]
 ];

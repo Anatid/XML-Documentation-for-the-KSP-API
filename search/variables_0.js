@@ -47,6 +47,7 @@ var searchData=
   ['anim_5ftrue_5fthumbup',['anim_true_thumbUp',['../class_kerbal_instructor.html#a6ae442a10bc2c79903a6eb49f956c75b',1,'KerbalInstructor']]],
   ['animationroot',['AnimationRoot',['../class_kerbal_instructor.html#af29ea5f8d64dc394a93324828b1b8264',1,'KerbalInstructor']]],
   ['animations',['Animations',['../class_kerbal_e_v_a.html#ac57ae1fc745111f8d04b0780fd961996',1,'KerbalEVA']]],
+  ['arearadius',['AreaRadius',['../class_space_center.html#ab68fa4d7f8ba9f930914e06610732c6b',1,'SpaceCenter']]],
   ['argumentofperiapsis',['argumentOfPeriapsis',['../class_orbit.html#a47c12bedc3629c47087fb26d59f08b73',1,'Orbit']]],
   ['arrowprefab',['arrowPrefab',['../class_tutorial_scenario.html#a57cca7889911c67967accd19234244ab',1,'TutorialScenario']]],
   ['arrows',['arrows',['../class_tutorial_scenario.html#a37f0fad892328af137a04d95017385ec',1,'TutorialScenario']]],
@@ -71,6 +72,7 @@ var searchData=
   ['attachnodes',['attachNodes',['../class_part.html#a3356eefbac2a63df5131ecbdfcf23660',1,'Part']]],
   ['attachrules',['attachRules',['../class_part.html#a9508bf71a970dbed2cf19d61ee90d5b0',1,'Part']]],
   ['attrotation',['attRotation',['../class_part.html#a84ddfa0a8f628f6cc63f65dabf19c908',1,'Part']]],
+  ['au',['AU',['../class_sun.html#a0ef6f3cf551a5101159d2dc9ff06cde3',1,'Sun']]],
   ['author',['author',['../class_available_part.html#aa76232a76aeaa418283b0f50ba5a4b31',1,'AvailablePart']]],
   ['automode',['autoMode',['../class_flight_camera.html#abd01d7c76e459d218912462b78d387cc',1,'FlightCamera']]],
   ['autopositionfx',['autoPositionFX',['../class_module_engines.html#ad072318a09b179302ca45be500a77c4c',1,'ModuleEngines']]]

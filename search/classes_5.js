@@ -2,6 +2,7 @@ var searchData=
 [
   ['file',['File',['../class_k_s_p_1_1_i_o_1_1_file.html',1,'KSP::IO']]],
   ['fileinfo',['FileInfo',['../class_k_s_p_1_1_i_o_1_1_file_info.html',1,'KSP::IO']]],
+  ['filter',['Filter',['../struct_r_d_archives_controller_1_1_filter.html',1,'RDArchivesController']]],
   ['flightcamera',['FlightCamera',['../class_flight_camera.html',1,'']]],
   ['flightctrlstate',['FlightCtrlState',['../class_flight_ctrl_state.html',1,'']]],
   ['flightglobals',['FlightGlobals',['../class_flight_globals.html',1,'']]],
