@@ -13,7 +13,7 @@ public class BaseAction
     /// </summary>
     public KSPActionGroup actionGroup;
     /// <summary>
-    /// Is this action activated?
+    /// Is this action available? Setting this false disables the action so it will not show in the available actions list.
     /// </summary>
     public bool active;
     /// <summary>
