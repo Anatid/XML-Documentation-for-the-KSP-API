@@ -24,11 +24,11 @@ public class ModuleEngines : PartModule
     public FloatCurve atmosphereCurve;
     [KSPField]
     public bool autoPositionFX;
-    [KSPField(isPersistant = true)]
     /// <summary>
     /// The current *internal* throttle of the engine, which may be different from the current
-    /// throttle set by the player if the <code>useEngineResponseTime</code> is true.
+    /// throttle set by the player if <c>useEngineResponseTime</c> is true.
     /// </summary>
+    [KSPField(isPersistant = true)]
     public float currentThrottle;
     /// <summary>
     /// How quickly the engine spools up when the user-set throttle is higher than 

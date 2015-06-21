@@ -3269,9 +3269,13 @@
         <member name="M:PartModule.OnFixedUpdate">
             <summary>
             This function gets called once every Unity FixedUpdate cycle (once per physics frame) once the part has been activated. 
+            If you want to be called even if the part has not been activated, define a function called <c>void FixedUpdate()</c> instead
+            of overriding OnFixedUpdate
+            </summary>
+            <remarks>
             See the Unity documentation on FixedUpdate for more information. You can get the time between FixedUpdates from 
             TimeWarp.fixedDeltaTime. Do any physics stuff in OnFixedUpdate, not OnUpdate.
-            </summary>
+            </remarks>
         </member>
         <member name="M:PartModule.OnInactive">
             <summary>
@@ -3302,13 +3306,29 @@
         </member>
         <member name="M:PartModule.OnUpdate">
             <summary>
-            Called once per Unity Update cycle once the part has been activated. See the
-            Unity documentation on Update for more information. Poll for user input in OnUpdate, not OnFixedUpdate
+            Called once per Unity Update cycle once the part has been activated. 
+            If you want to be called even if the part has not been activated, define a function called <c>void Update()</c> instead
+            of overriding OnFixedUpdate.
             </summary>
+            <remarks>
+            See the
+            Unity documentation on Update for more information. Poll for user input in OnUpdate, not OnFixedUpdate.
+            </remarks>
         </member>
         <member name="P:PartModule.Actions">
             <summary>
             A list of KSPActions which can be added to action groups.
+            </summary>
+        </member>
+        <member name="P:PartModule.ClassID">
+            <summary>
+            A hash of <c>ClassName</c>?
+            </summary>
+        </member>
+        <member name="P:PartModule.ClassName">
+            <summary>
+            In any subclass of PartModule, <c>ClassName</c> will be the name of the subclass.
+            It gets set by the PartModule loading process.
             </summary>
         </member>
         <member name="P:PartModule.Events">
@@ -3318,7 +3338,7 @@
         </member>
         <member name="P:PartModule.Fields">
             <summary>
-            A list of the KSPFields which the module lods from the part.cfg file.
+            A list of the KSPFields which the module loads from the part.cfg file.
             </summary>
         </member>
         <member name="P:PartModule.part">
@@ -4013,6 +4033,12 @@
             <summary>
             Represents the specific impulse (Isp) of the engine as a function of altitude. To get
             the Isp at a certain height h (in meters), use <code>atmosphereCurve.Evaluate(h)</code>.
+            </summary>
+        </member>
+        <member name="F:ModuleEngines.currentThrottle">
+            <summary>
+            The current *internal* throttle of the engine, which may be different from the current
+            throttle set by the player if <c>useEngineResponseTime</c> is true.
             </summary>
         </member>
         <member name="F:ModuleEngines.engineAccelerationSpeed">

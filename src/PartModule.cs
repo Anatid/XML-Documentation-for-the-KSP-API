@@ -24,14 +24,21 @@ public class PartModule : MonoBehaviour
     /// A list of KSPActions which can be added to action groups.
     /// </summary>
     public extern BaseActionList Actions { get; }
+    /// <summary>
+    /// A hash of <c>ClassName</c>?
+    /// </summary>
     public extern int ClassID { get; }
+    /// <summary>
+    /// In any subclass of PartModule, <c>ClassName</c> will be the name of the subclass.
+    /// It gets set by the PartModule loading process.
+    /// </summary>
     public extern string ClassName { get; }
     /// <summary>
     /// A list of KSPEvents, which can be triggered by code or by the user through the part's right-click menu.
     /// </summary>
     public extern BaseEventList Events { get; }
     /// <summary>
-    /// A list of the KSPFields which the module lods from the part.cfg file.
+    /// A list of the KSPFields which the module loads from the part.cfg file.
     /// </summary>
     public extern BaseFieldList Fields { get; }
     public extern string GUIName { get; }
@@ -60,9 +67,13 @@ public class PartModule : MonoBehaviour
     public extern virtual void OnAwake();
     /// <summary>
     /// This function gets called once every Unity FixedUpdate cycle (once per physics frame) once the part has been activated. 
+    /// If you want to be called even if the part has not been activated, define a function called <c>void FixedUpdate()</c> instead
+    /// of overriding OnFixedUpdate
+    /// </summary>
+    /// <remarks>
     /// See the Unity documentation on FixedUpdate for more information. You can get the time between FixedUpdates from 
     /// TimeWarp.fixedDeltaTime. Do any physics stuff in OnFixedUpdate, not OnUpdate.
-    /// </summary>
+    /// </remarks>
     public extern virtual void OnFixedUpdate();
     /// <summary>
     /// When does this get called?
@@ -88,9 +99,14 @@ public class PartModule : MonoBehaviour
     /// <param name="state">Some information about what situation the vessel is starting in.</param>
     public extern virtual void OnStart(PartModule.StartState state);
     /// <summary>
-    /// Called once per Unity Update cycle once the part has been activated. See the
-    /// Unity documentation on Update for more information. Poll for user input in OnUpdate, not OnFixedUpdate
+    /// Called once per Unity Update cycle once the part has been activated. 
+    /// If you want to be called even if the part has not been activated, define a function called <c>void Update()</c> instead
+    /// of overriding OnFixedUpdate.
     /// </summary>
+    /// <remarks>
+    /// See the
+    /// Unity documentation on Update for more information. Poll for user input in OnUpdate, not OnFixedUpdate.
+    /// </remarks>
     public extern virtual void OnUpdate();
     public extern void Save(ConfigNode node);
 
