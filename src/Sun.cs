@@ -15,8 +15,8 @@ public class Sun : MonoBehaviour
     public Transform target;
     public bool useLocalSpaceSunLight;
 
-    public Sun();
+    public extern Sun();
 
-    public float GetLocalTimeAtPosition(Vector3d wPos, CelestialBody cb);
-    public void SunlightEnabled(bool state);
+    public extern float GetLocalTimeAtPosition(Vector3d wPos, CelestialBody cb);
+    public extern void SunlightEnabled(bool state);
 }

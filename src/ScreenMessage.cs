@@ -13,8 +13,8 @@ public class ScreenMessage
     public float startTime;
     public ScreenMessageStyle style;
 
-    public ScreenMessage(string msg, float dur, ScreenMessageStyle s);
-    public ScreenMessage(string msg, float dur, bool persistAcrossScenes, ScreenMessageStyle s);
-    public ScreenMessage(string msg, float dur, ScreenMessageStyle s, GUIStyle guiStyle);
-    public ScreenMessage(string msg, float dur, bool persistAcrossScenes, ScreenMessageStyle s, GUIStyle guiStyle);
+    public extern ScreenMessage(string msg, float dur, ScreenMessageStyle s);
+    public extern ScreenMessage(string msg, float dur, bool persistAcrossScenes, ScreenMessageStyle s);
+    public extern ScreenMessage(string msg, float dur, ScreenMessageStyle s, GUIStyle guiStyle);
+    public extern ScreenMessage(string msg, float dur, bool persistAcrossScenes, ScreenMessageStyle s, GUIStyle guiStyle);
 }

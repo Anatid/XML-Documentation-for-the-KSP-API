@@ -490,7 +490,7 @@
         </member>
         <member name="F:BaseAction.active">
             <summary>
-            Is this action activated?
+            Is this action available? Setting this false disables the action so it will not show in the available actions list.
             </summary>
         </member>
         <member name="F:BaseAction.defaultActionGroup">
@@ -2600,7 +2600,7 @@
         </member>
         <member name="F:GameEvents.onPartAttach">
             <summary>
-            Triggered when adding a part in the editor, or when docking;
+            Triggered when adding a part in the editor, when docking, and when another vessel comes into range and is loaded;
             returns the part and its new parent part
             </summary>
         </member>
@@ -3802,10 +3802,14 @@
              </remarks>
         </member>
         <member name="T:KSPEvent">
-            <summary>
-            Apply this attribute to a function in a PartModule to make it callable by the player via
-            the right click menu of the part, or from other plugin code via Part.SendEvent.
-            </summary>
+             <summary>
+             Apply this attribute to a function in a PartModule to make it callable by the player via
+             the right click menu of the part, or from other plugin code via Part.SendEvent.
+             </summary>
+            
+             It seems like this attribute is NOT refreshed on parts already in flight when you rebuild 
+             your module DLL! You need to launch a new ship with your part.
+            
         </member>
         <member name="F:KSPEvent.active">
             <summary>
@@ -4536,6 +4540,15 @@
             </summary>
             <returns>A unit normal vector.</returns>
         </member>
+        <member name="M:Orbit.getRelativePositionAtT(System.Double)">
+            <summary>
+            Gets the predicted displacement of the orbiting object from the center of the main
+            body at a given time since perigee passage. NOTE: All Vector3d's returned by Orbit class functions have their y and z axes flipped. You have
+            to flip these back to get the vectors in world coordinates.
+            </summary>
+            <param name="T">Time since perigee passage (seconds)</param>
+            <returns>Position relative to the main body (YZ flipped)</returns>
+        </member>
         <member name="M:Orbit.getRelativePositionAtUT(System.Double)">
             <summary>
             Gets the predicted displacement of the orbiting object from the center of the main
@@ -4574,7 +4587,7 @@
             <summary>
             The distance the orbiting object will be from the center of the main body when it reaches the given true anomaly.
             </summary>
-            <param name="tA">True anomaly (in degrees or radians?)</param>
+            <param name="tA">True anomaly (in degrees)</param>
             <returns>Distance from the main body's center, in meters</returns>
         </member>
         <member name="M:Orbit.TrueAnomalyAtRadius(System.Double)">
@@ -4994,6 +5007,11 @@
         <member name="F:ProceduralAsteroid.ModValue.radiusFactor">
             <summary>Size multiplier in addition to ProceduralAsteroid.radius</summary>
         </member>
+        <member name="T:PSystemManager">
+            <summary>
+            A class for managing planetary systems. Ask the Kopernicus guys/look at their code for details.
+            </summary>
+        </member>
         <member name="T:ResourceFlowMode">
             <summary>
             An enumeration of the different behaviors resources can have with respect to fuel flow.
@@ -5293,6 +5311,11 @@
             <param name="sit">Current experimantal situation, based on VesselSituation</param>
             <param name="body">Current Celestial Body</param>
             <param name="biome">Current biome if applicable, empty string if not</param>
+        </member>
+        <member name="T:ScreenMessage">
+            <summary>
+            A class representing temporary messages posted to the screen. Don't use this class, use the static methods in ScreenMessages instead.
+            </summary>
         </member>
         <member name="T:ScreenMessages">
             <summary>

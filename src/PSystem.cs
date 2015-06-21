@@ -11,12 +11,12 @@ public class PSystem : MonoBehaviour
     public double systemScale;
     public double systemTimeScale;
 
-    public PSystem();
+    public extern PSystem();
 
-    public PSystemBody AddBody(PSystemBody parent);
+    public extern PSystemBody AddBody(PSystemBody parent);
     [ContextMenu("Load Celestial Bodies Database")]
-    public void LoadDatabase();
-    public void Reset();
+    public extern void LoadDatabase();
+    public extern void Reset();
     [ContextMenu("Save Celestial Bodies Database")]
-    public void SaveDatabase();
+    public extern void SaveDatabase();
 }

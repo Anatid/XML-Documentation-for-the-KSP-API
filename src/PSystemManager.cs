@@ -16,10 +16,10 @@ public class PSystemManager : MonoBehaviour
     public Sun sun;
     public PSystem systemPrefab;
 
-    public PSystemManager();
+    public extern PSystemManager();
 
-    public static PSystemManager Instance { get; }
-    public List<CelestialBody> localBodies { get; }
-    public EventVoid OnPSystemReady { get; }
-    public List<GameObject> scaledBodies { get; }
+    public extern static PSystemManager Instance { get; }
+    public extern List<CelestialBody> localBodies { get; }
+    public extern EventVoid OnPSystemReady { get; }
+    public extern List<GameObject> scaledBodies { get; }
 }
