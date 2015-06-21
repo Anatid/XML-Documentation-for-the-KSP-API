@@ -115,7 +115,7 @@ public class CelestialBody /*: MonoBehaviour, ITargetable, IDiscoverable*/
     public double sphereOfInfluence;
     public double staticPressureASL;
     public AnimationCurve temperatureCurve;
-    public PlanetQuadTreeController terrainController;
+    // commented out to fix build error: public PlanetQuadTreeController terrainController;
     /// <summary>
     /// Presumably, whether this body is tidally locked to the body around with it orbits.
     /// </summary>

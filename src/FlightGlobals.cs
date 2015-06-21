@@ -100,7 +100,7 @@ public class FlightGlobals : MonoBehaviour
     /// rotates with the current dominant celestial body.
     /// </summary>
     public extern static bool RefFrameIsRotating { get; }
-    public extern static SurfaceRadius terrain { get; }
+    // commented out to fix build error: public extern static SurfaceRadius terrain { get; }
     public extern static Vector3d upAxis { get; }
     public extern static float vacuumTemperature { get; }
     /// <summary>
