@@ -1,4 +1,10 @@
 ﻿using System;
+//0.90 Update:
+//The high end mask locks have changed, notable a ControlTypes.AppLauncher_Buttons has been added.
+//The commented out list looks to be from 24.2, but the list at the bottom appears to be up to date for 0.90
+//However, despite the name, ControlTypes.AppLauncher_Buttons does not lock the buttons on the toolbar.
+//To lock out, or not lock out, the toolbar when you engage the control log, ControlTypes.GUI is the mask to reference.
+//I assume this is a typo on Squads part and will probably be fixed in a future update.
 
 /// <summary>
 /// The different controls that it is possible to lock the player out of
