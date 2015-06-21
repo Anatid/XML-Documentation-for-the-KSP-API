@@ -259,6 +259,13 @@ public class Orbit
     public extern Vector3d getPositionFromEccAnomaly(double E);
     public extern Vector3d getPositionFromMeanAnomaly(double M);
     public extern Vector3d getPositionFromTrueAnomaly(double tA);
+    /// <summary>
+    /// Gets the predicted displacement of the orbiting object from the center of the main
+    /// body at a given time since perigee passage. NOTE: All Vector3d's returned by Orbit class functions have their y and z axes flipped. You have
+    /// to flip these back to get the vectors in world coordinates.
+    /// </summary>
+    /// <param name="T">Time since perigee passage (seconds)</params>
+    /// <returns>Position relative to the main body (YZ flipped)</returns>
     public extern Vector3d getRelativePositionAtT(double T);
     /// <summary>
     /// Gets the predicted displacement of the orbiting object from the center of the main
@@ -301,7 +308,7 @@ public class Orbit
     /// <summary>
     /// The distance the orbiting object will be from the center of the main body when it reaches the given true anomaly.
     /// </summary>
-    /// <param name="tA">True anomaly (in degrees or radians?)</param>
+    /// <param name="tA">True anomaly (in degrees)</param>
     /// <returns>Distance from the main body's center, in meters</returns>
     public extern double RadiusAtTrueAnomaly(double tA);
     public extern static double SolveClosestApproach(Orbit p, Orbit s, ref double UT, double dT, double threshold, double MinUT, double MaxUT, double epsilon, int maxIterations, ref int iterationCount);
