@@ -8,6 +8,10 @@ using System;
 /// Apply this attribute to a function in a PartModule to make it callable by the player via
 /// the right click menu of the part, or from other plugin code via Part.SendEvent.
 /// </summary>
+///
+/// It seems like this attribute is NOT refreshed on parts already in flight when you rebuild 
+/// your module DLL! You need to launch a new ship with your part.
+///
 [AttributeUsage(AttributeTargets.Method, AllowMultiple = true)]
 public class KSPEvent : Attribute
 {
