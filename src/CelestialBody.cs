@@ -110,6 +110,16 @@ public class CelestialBody /*: MonoBehaviour, ITargetable, IDiscoverable*/
     public double rotationPeriod;
     public CelestialBodyScienceParams scienceValues;
     /// <summary>
+    /// Average duration in seconds between two successive "local apparent noons" (= time at which the sun is straight
+    /// overhead a geostationary observer). For Kerbin, this value is lightly greater than "rotationPeriod". Used to
+    /// perform correct Kerbin calendar calculations where the sun raises always at the same "time".
+    /// </summary>
+    public double solarDayLength;
+    /// <summary>
+    /// Wheter this celestial body has a valid solar day.
+    /// </summary>
+    public bool solarRotationPeriod;
+    /// <summary>
     /// The radius of this body's sphere of influence (measured from the center of the body), in meters.
     /// </summary>
     public double sphereOfInfluence;
