@@ -18,19 +18,19 @@ public class UTClock : MonoBehaviour
 {
 	/// <summary>
 	/// Whether to include seconds in the text field (false).
-	/// <summary>
+	/// </summary>
 	public bool includeSeconds;
 	
 	/// <summary>
 	/// Whether to include hours and minutes in the text field (true).
-	/// <summary>
+	/// </summary>
 	public bool includeTimeOfDay;
 	
 	public double Tdawn;
 
 	/// <summary>
 	/// The button 'Warp to next Morning' to the right of the text field.
-	/// <summary>
+	/// </summary>
 	public ScreenSafeUIButton warpToDaylight;
 
 	public UTClock();
