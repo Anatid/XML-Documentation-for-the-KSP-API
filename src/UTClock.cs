@@ -3,15 +3,11 @@ using UnityEngine;
 
 /// <summary>
 /// Controls the date/time display at the bottom center of the space center.
-/// Can be retrieved as shown below.
-/// The actual text field containting the text is a private member of this behavior but
-/// can be retrieved as shown below.
+/// Can be retrieved with <code>UTClock utClock = GameObject.FindObjectOfType<UTClock>();</code>.
 ///
-/// Sample code:
-/// 
-///         UTClock utClock = GameObject.FindObjectOfType<UTClock>();
-///         ScreenSafeTextField textField = utClock.gameObject.GetComponent<ScreenSafeTextField>();
-///     
+/// The actual text field containting the text is a private member of this behavior but
+/// can be retrieved with <code>ScreenSafeTextField textField =
+/// utClock.gameObject.GetComponent<ScreenSafeTextField>();</code>.
 /// </summary>
 [RequireComponent(typeof(ScreenSafeTextField))]
 public class UTClock : MonoBehaviour
