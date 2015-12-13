@@ -14,9 +14,6 @@ using UnityEngine;
 /// asteroids already in the game exceeds spawnGroupMaxLimit. Because spawn checks happen 
 /// very frequently, the number of detected asteroids in a game where the player never 
 /// tracks an asteroid will almost always be close to spawnGroupMaxLimit.
-/// 
-/// The timing of spawn checks appears to be independent of the warp rate, but at high time warp 
-/// multiple asteroids may be spawned per check. (Needs confirmation)
 /// </remarks>
 public class ScenarioDiscoverableObjects : ScenarioModule
 {
@@ -52,11 +49,11 @@ public class ScenarioDiscoverableObjects : ScenarioModule
 	/// <summary>Number of seconds between asteroid checks</summary>
 	///
 	/// <remarks>
-	/// These are seconds of time spent playing KSP, regardless of the time warp rate. The faster 
-	///	your time warp, the longer the in-game interval between asteroid detections.
+	/// These are approximately seconds of in-game time, but if you make sudden changes 
+	/// in the time warp rate the spawner may need some time to catch up.
 	///
 	/// Since asteroids are removed during spawn checks, spawnInterval also controls the 
-	/// 	asteroid removal rate.
+	/// asteroid removal rate.
 	/// </remarks>
 	public float spawnInterval = 15.0f;
 
