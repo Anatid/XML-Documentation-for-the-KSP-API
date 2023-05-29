@@ -65,6 +65,9 @@ public class Orbit
     /// The angle between the ascending node and the periapsis, in degrees.
     /// </summary>
     public double argumentOfPeriapsis;
+    /// <summary>
+    /// Closest approach distance, in meters.
+    /// </summary>
     public double ClAppr;
     public double ClEctr1;
     public double ClEctr2;
@@ -195,7 +198,7 @@ public class Orbit
     /// </summary>
     public double timeToAp;
     /// <summary>
-    /// The time unti lthe object will reach periapsis, in seconds.
+    /// The time until the object will reach periapsis, in seconds.
     /// </summary>
     public double timeToPe;
     public double timeToTransition1;
@@ -203,6 +206,9 @@ public class Orbit
     public double toE;
     public double toV;
     public double trueAnomaly;
+    /// <summary>
+    /// The universal time at the next closest approach, in seconds.
+    /// </summary>
     public double UTappr;
     public double UTsoi;
     public double V;
