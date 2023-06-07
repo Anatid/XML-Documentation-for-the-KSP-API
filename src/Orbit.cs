@@ -65,6 +65,9 @@ public class Orbit
     /// The angle between the ascending node and the periapsis, in degrees.
     /// </summary>
     public double argumentOfPeriapsis;
+    /// <summary>
+    /// Closest approach distance, in meters.
+    /// </summary>
     public double ClAppr;
     public double ClEctr1;
     public double ClEctr2;
@@ -102,7 +105,13 @@ public class Orbit
     /// A special UT at which the parameters of the Orbit are defined. See meanAnomalyAtEpoch.
     /// </summary>
     public double epoch;
+    /// <summary>
+    /// The true anomaly of the first encounter from the prior orbit. This is the true anomoly on the prior orbit as you just reach the SOI for the encountered body.
+    /// </summary>
     public double FEVp;
+    /// <summary>
+    /// The true anomaly of the first encounter after the second orbit. This is the true anomoly on the second orbit as you just leave the SOI for the encountered body.
+    /// </summary>
     public double FEVs;
     public double fromE;
     public double fromV;
@@ -175,7 +184,13 @@ public class Orbit
     /// The semi-major axis of the orbit, in meters. Equal to (PeR + ApR)/2
     /// </summary>
     public double semiMajorAxis;
+    /// <summary>
+    /// The true anomaly of the second encounter from the prior orbit. This is the true anomoly on the prior orbit as you just reach the SOI for the encountered body at the second encoutner.
+    /// </summary>
     public double SEVp;
+    /// <summary>
+    /// The true anomaly of the second encounter after the second orbit. This is the true anomoly on the second orbit as you just leave the SOI for the encountered body after the seoncd encounter.
+    /// </summary>
     public double SEVs;
     public double StartUT;
     /// <summary>
@@ -183,7 +198,7 @@ public class Orbit
     /// </summary>
     public double timeToAp;
     /// <summary>
-    /// The time unti lthe object will reach periapsis, in seconds.
+    /// The time until the object will reach periapsis, in seconds.
     /// </summary>
     public double timeToPe;
     public double timeToTransition1;
@@ -191,6 +206,9 @@ public class Orbit
     public double toE;
     public double toV;
     public double trueAnomaly;
+    /// <summary>
+    /// The universal time at the next closest approach, in seconds.
+    /// </summary>
     public double UTappr;
     public double UTsoi;
     public double V;
